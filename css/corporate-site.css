@@ -84,6 +84,10 @@ p.intro{
 .pull-left{float:left}
 .pull-right{float:right}
 
+.pull-me-right{
+  float: right;
+}
+
 .align-center{
     text-align: center;
 }
@@ -5349,7 +5353,7 @@ a.past-list-link:visited h5{
 }
 
 #cs-main-content{
-    margin-top: 280px;
+    margin-top: 400px;
 }
 
 .cs-title-box-botbar{
@@ -5966,7 +5970,7 @@ input.gsc-search-button:hover {
     position: absolute;
     background-color: #FFF;
     z-index: 999999999999999;
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lamp&amp;v=20140313115955');  
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lamp&v=20140311141000');  
     background-position: left;
     background-repeat: no-repeat;  
     padding-bottom: 30px;
@@ -6021,8 +6025,165 @@ input.gsc-search-button:hover {
 
 /************End Sub Menu Hover ********/
 
-/**** Fix links on it-resources for ie ****/
+/** solutions **/
 
+.solution-hero {
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-singular-indu-dcddde&v=20140311141000');
+    background-color: #dcddde;
+    background-repeat: no-repeat;
+    height: 370px;
+    background-position: top center;
+    filter: none;
+    -moz-box-shadow: none; 
+    -webkit-box-shadow: none; 
+    box-shadow: none;
+    border-bottom: 1px solid #aaa;
+}
+
+.solution-hero h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.solution-hero p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.solution-all-hero {
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-all-indu-dcddde&v=20140311141000');
+    background-color: #dcddde;
+    background-repeat: no-repeat;
+    height: 290px;
+    background-position: top center;
+    filter: none;
+    -moz-box-shadow: none; 
+    -webkit-box-shadow: none; 
+    box-shadow: none;
+    border-bottom: 1px solid #aaa;
+}
+
+.solution-all-hero h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#solutions-content{
+    background-color: #ccc;
+    margin-bottom: -70px;
+    padding-bottom: 70px;
+}
+
+.solutions-single-box{
+    background-color: white;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.solutions-single-box h2 {
+  margin-bottom: 30px;
+  color: #c20;
+  text-align:center;
+}
+
+.solutions-single-box .text-block{
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.solutions-single-box .text-block.last{
+  padding-right: 20px;
+}
+
+.solutions-all-box{
+    background-color: white;
+    margin-top: 30px;
+    position: relative;
+}
+
+.solutions-all-box h2 {
+    margin-bottom: 10px;
+    color: #c20;
+    text-align:left;
+}
+
+.solutions-all-box .text-block{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.solutions-all-box .text-block a {
+    white-space: nowrap;
+}
+
+.solutions-all-box .top-image{
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.solutions-all-box .top-image img{
+    width: 100%;
+}
+
+.solutions-all-box .line{
+    width: 100%;
+    border-top: 1px solid #ccc;
+    margin-top:20px;
+    height:0;
+}
+
+#solutions-content .solutions-all-box .logos{
+    height: 60px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#solutions-content .solutions-all-box .logos img{
+    width: 50%;
+    float: left;
+}
+
+.solutions-cta-bar {
+    height: 80px;
+    background-color: #808080;
+    line-height: 80px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #fff;
+    margin-top: 30px;
+    text-align: center;
+    color: #606060;
+    font-size: 21px;
+    font-family: 'myriad-pro', Arial, sans-serif; 
+    font-weight: 600;
+}
+
+.solutions-cta-bar:before {
+    content: "";
+    height: 0;
+    width:100%;
+    display:block;
+    border-bottom: 1px solid #fff;
+}
+
+.solutions-cta-bar:after {
+    content: "";
+    height: 0;
+    width: 100%;
+    display: block;
+    border-top: 1px solid #fff;
+    margin-top: -1px;
+}
+
+.solutions-all-index{
+    display: none;
+}
+
+/**** Fix links on it-resources for ie ****/
 a.ressourcelink{
     display:table;
 }
