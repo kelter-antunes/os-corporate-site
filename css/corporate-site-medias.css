@@ -229,7 +229,7 @@ v=20140311141000
   }
   .customer-matrix-entry-nodetail img,
   .customer-matrix-entry img {
-    width: 130px;
+    width: 100px;
     height: auto;
   }
   .customer-line-wrapper {
@@ -728,7 +728,7 @@ div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimo
   background-color: white;
 }
 .solutions-all-index li:nth-child(odd) {
-  background-color: rgba(220, 221, 222, 0.5);
+  background-color: #F0F0F0;
 }
 .solutions-all-index li {
   padding: 5px 20px;

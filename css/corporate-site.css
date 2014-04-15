@@ -3292,9 +3292,9 @@ a.ViewMoreLink {
 }
 
 .customers-industry-title a, .customers-industry-title a:hover, .customers-industry-title a:visited, .customers-industry-title a:active {
- border:none;
- outline:none;
- text-decoration: none;
+   border:none;
+   outline:none;
+   text-decoration: none;
 }
 
 .customers-industry-title h5 {
@@ -4508,7 +4508,7 @@ h4 a.press-list-link:hover{
 /* mobile */
 
 ul.mobile-bullets {
-   list-style: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=20140311141000');
+ list-style: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=20140311141000');
 }
 
 .more-resources-back{
@@ -6047,7 +6047,6 @@ input.gsc-search-button:hover {
 
 .solution-hero p {
     text-align: center;
-    font-size: 18px;
 }
 
 .solution-all-hero {
@@ -6077,11 +6076,11 @@ input.gsc-search-button:hover {
 .solutions-single-box{
     background-color: white;
     margin-top: 30px;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .solutions-single-box h2 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #c20;
   text-align:center;
 }
@@ -6093,6 +6092,15 @@ input.gsc-search-button:hover {
 
 .solutions-single-box .text-block.last{
   padding-right: 20px;
+}
+
+.solutions-featured-thumb {
+    float: left;
+}
+.solutions-featured-link {
+    float: left;
+    line-height: 60px;
+    margin-left: 15px;
 }
 
 .solutions-all-box{
@@ -6150,7 +6158,7 @@ input.gsc-search-button:hover {
 
 .solutions-cta-bar {
     height: 80px;
-    background-color: #808080;
+    background-color: #AAAAAA;
     line-height: 80px;
     border-top: 1px solid #333;
     border-bottom: 1px solid #fff;
@@ -6159,7 +6167,11 @@ input.gsc-search-button:hover {
     color: #606060;
     font-size: 21px;
     font-family: 'myriad-pro', Arial, sans-serif; 
-    font-weight: 600;
+    font-weight: 400;
+}
+
+.solutions-cta-bar a{
+  margin-left:15px
 }
 
 .solutions-cta-bar:before {

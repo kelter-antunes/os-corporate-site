@@ -174,7 +174,7 @@ osjs(function(a) {
     }
 
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    if ((/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) || width < 767) {} else {
+    if ((/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) && width < 767) {} else {
         a(".popup_link").each(function() {
             if (!osjs(this).attr("id"))
                 osjs(this).attr("id", Math.random().toString().replace(".", ""));
