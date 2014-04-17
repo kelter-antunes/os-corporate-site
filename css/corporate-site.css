@@ -5254,7 +5254,8 @@ a.past-list-link:visited h5{
 }
 
 .case-study-customer-quote-arrow_span12 {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-arrow_span12&amp;v=20140311141000');
+    /*background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-arrow_span12&amp;v=20140311141000');*/
+    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=arrow-span5&v=20140416101624);
     background-repeat: no-repeat;
     background-position: left top;
     position: relative;
@@ -6152,8 +6153,7 @@ input.gsc-search-button:hover {
 }
 
 #solutions-content .solutions-all-box .logos img{
-    width: 50%;
-    float: left;
+    width: auto;
 }
 
 .solutions-cta-bar {
@@ -6201,3 +6201,14 @@ a.ressourcelink{
 }
 
 /**** End of Fix *****/
+
+
+/**to fix companie logos position on website*/
+@media only screen and (min-device-width: 767px) {
+
+    .case-study-customer-logo{
+        bottom: 15px;
+    }
+}
+
+/** End of fix*///

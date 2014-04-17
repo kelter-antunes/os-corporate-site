@@ -892,7 +892,7 @@ a.solutions-index-toggler.open > .osicon-close {
 
 }
 
-/* Landscape */
+/* portrait */
 @media only screen and (max-device-width: 767px) and (orientation: portrait) {
 
   div.case-study-landscape-landscape{
@@ -903,5 +903,14 @@ a.solutions-index-toggler.open > .osicon-close {
     display:block;
   }
 
+}
+
+
+/**to fix companie logos position on website*/
+@media only screen and (min-device-width: 767px) {
+
+  .case-study-customer-logo{
+    bottom: 10px;
+  }
 }
 
