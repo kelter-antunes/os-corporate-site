@@ -122,6 +122,10 @@ a.byline:hover{
     text-decoration:underline;
 }
 
+.mobile-only{
+    display: none;
+}
+
 .contact_us{
     position: fixed;
     top: 370px;
@@ -3292,9 +3296,9 @@ a.ViewMoreLink {
 }
 
 .customers-industry-title a, .customers-industry-title a:hover, .customers-industry-title a:visited, .customers-industry-title a:active {
-   border:none;
-   outline:none;
-   text-decoration: none;
+ border:none;
+ outline:none;
+ text-decoration: none;
 }
 
 .customers-industry-title h5 {
@@ -4508,7 +4512,7 @@ h4 a.press-list-link:hover{
 /* mobile */
 
 ul.mobile-bullets {
- list-style: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=20140311141000');
+   list-style: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=20140311141000');
 }
 
 .more-resources-back{
@@ -5970,7 +5974,7 @@ input.gsc-search-button:hover {
 .submenuhoverbox{
     position: absolute;
     background-color: #FFF;
-    z-index: 999999999999999;
+    z-index: 999;
     background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lamp&v=20140311141000');  
     background-position: left;
     background-repeat: no-repeat;  
@@ -5989,7 +5993,11 @@ input.gsc-search-button:hover {
     width: 308px;
     margin-left: 120px;
     float: left;
-    margin-top: 20px;
+    margin-top: 0;
+}
+
+.submenuhoverbox-firstcontent h1 {
+    margin-bottom: 30px;
 }
 
 .submenuhoverbox-secondcontent {
@@ -6074,6 +6082,14 @@ input.gsc-search-button:hover {
     padding-bottom: 70px;
 }
 
+.solutions-title-bot-box {
+    background-color: #F2F2F2;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 15px;
+    text-align: center;
+}
+
 .solutions-single-box{
     background-color: white;
     margin-top: 30px;
@@ -6151,9 +6167,15 @@ input.gsc-search-button:hover {
     left: 0;
     right: 0;
 }
-
 #solutions-content .solutions-all-box .logos img{
     width: auto;
+}
+
+#solutions-content .case-study-customers-author-name {
+    color: #666;
+}
+#solutions-content .case-study-customers-author-role {
+    color: #666;
 }
 
 .solutions-cta-bar {

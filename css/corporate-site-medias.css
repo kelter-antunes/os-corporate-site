@@ -40,6 +40,10 @@ v=20140311141000
     margin-bottom: 10px;
   }
 
+  .mobile-only{
+    display: block;
+  }
+
   .header-hero-wrapper {
     padding-top: 0;
   }
