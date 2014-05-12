@@ -742,6 +742,42 @@ a.tooltip-link{text-decoration:none;}
     background-color: #000;
 }
 
+.osbtn-gray {
+    display: inline-block;  
+    font-family: 'myriad-pro', Arial, sans-serif;
+    padding: 10px 20px;
+    margin-bottom: 0;
+    font-weight: normal;  
+    line-height: inherit;  
+    text-align: center;  
+    white-space: nowrap;  
+    vertical-align: middle;  
+    cursor: pointer;  
+    margin: 0;
+    color: white;
+    font-size: 18px;
+    background-color: #808080;
+    background-image: -moz-linear-gradient(top, #606060, #808080);  
+    background-image: -ms-linear-gradient(top, #606060, #808080);  
+    background-image: -o-linear-gradient(top, #606060, #808080);  
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#606060), to(#808080));  
+    background-image: -webkit-linear-gradient(top, #606060, #808080);  
+    background-image: linear-gradient(top, #606060, #808080); 
+    -moz-border-radius: 5px;  
+    -webkit-border-radius: 5px;  
+    border-radius: 5px;
+}
+
+.osbtn-gray:hover {
+    filter: none;
+    background-image: none;
+    color: white;
+    background-color: #606060;
+}
+.osbtn-gray:active {
+    background-color: #808080;
+}
+
 .osbtn-blue {
     display: inline-block;  
     font-family: 'myriad-pro', Arial, sans-serif;
@@ -775,6 +811,11 @@ a.tooltip-link{text-decoration:none;}
     font-size: 26px;
     line-height: 1.33;
     border-radius: 6px;
+}
+
+.osbtn-wide {
+    padding: 5px 32px;
+    font-size: 16px;
 }
 
 .btn {
@@ -1751,8 +1792,8 @@ body.landing-no-top{
 }
 .how-circles-top {
   position: absolute;
-  top: -160px;
-  left: 422px;
+  top: -135px;
+  left: 425px;
   z-index: 0;
 }
 .how-circle-user-interface {
@@ -1762,7 +1803,7 @@ body.landing-no-top{
   width: 115px;
   position: absolute;
   z-index: 1;
-  left: 230px;
+  left: 195px;
 }
 .how-circle-logic {
   background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-logic&v=20140311141000');
@@ -1771,8 +1812,8 @@ body.landing-no-top{
   width: 115px;
   position: absolute;
   z-index: 1;
-  left: 40px;
-  top: 85px;
+  left: 25px;
+  top: 30px;
 }
 .how-circle-processes {
   background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-Processes&v=20140311141000');
@@ -1781,8 +1822,8 @@ body.landing-no-top{
   width: 115px;
   position: absolute;
   z-index: 1;
-  top: 178px;
-  left: 240px;
+  top: 224px;
+  left: 420px;
 }
 .how-circle-data-model {
   background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-data&v=20140311141000');
@@ -1791,8 +1832,8 @@ body.landing-no-top{
   width: 115px;
   position: absolute;
   z-index: 1;
-  top: 85px;
-  left: 365px;
+  top: 75px;
+  left: 350px;
 }
 .how-circles-bot {
     position: absolute;  
@@ -4645,6 +4686,126 @@ h4.bot-line{
 }
 
 
+/* ---- button-isotype ---- */
+
+.button-isotype {
+    display: inline-block;
+    padding: 0.5em 1.0em;
+    background: #aaa;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-family: 'myriad-pro';
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.button-isotype:hover {
+    background-color: #808080;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-isotype:active,
+.button-isotype.is-checked {
+    background-color: #c20;
+}
+
+.button-isotype.is-checked {
+    color: white;
+}
+
+.button-isotype:active {
+    box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* ---- button-isotype-group ---- */
+
+.button-isotype-group:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.button-isotype-group .button-isotype {
+    float: left;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/* ---- isotype-resource-cards ---- */
+
+.isotype-resource-cards {
+    margin-top: 40px;
+}
+
+/* clear fix */
+.isotype-resource-cards:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.isotype-resource-cards .highlight-box-inner p {
+    font-size: 14px;
+
+}
+
+
+/* ---- .element-item ---- */
+
+.element-item {
+    position: relative;
+    float: left;
+    margin-bottom: 30px;
+}
+
+/* ---- social share ---- */
+
+.resources-social-share-buttons {
+    font-size: 30px;
+}
+.resources-social-share-buttons span {
+    display: block;
+    width: 30px;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer
+}
+
+.resources-social-share-buttons span[data-type="facebook"] {
+    color:#3375A1
+}
+
+.resources-social-share-buttons span[data-type="facebook"]:hover {
+    color: #224F6D
+}
+
+.resources-social-share-buttons span[data-type="twitter"] {
+    color:#43b1fb
+}
+
+.resources-social-share-buttons span[data-type="twitter"]:hover {
+    color:#3188C2
+}
+
+.resources-social-share-buttons span[data-type="google"] {
+    color:#d84d2f
+}
+
+.resources-social-share-buttons span[data-type="google"]:hover {
+    color:#A53B25
+}
+
+.resources-social-share-buttons span[data-type="linkedin"] {
+    color:#0375b3
+}
+
+.resources-social-share-buttons span[data-type="linkedin"]:hover {
+    color:#015B8B
+}
+
+
 /** events **/
 
 .event-list-image{
@@ -6001,7 +6162,6 @@ input.gsc-search-button:hover {
 }
 
 .submenuhoverbox-secondcontent {
-    width: 224px;
     text-align: left;
     float: left;
     margin-left: 30px;
@@ -6166,6 +6326,7 @@ input.gsc-search-button:hover {
     bottom: 0;
     left: 0;
     right: 0;
+    text-align: center;
 }
 #solutions-content .solutions-all-box .logos img{
     width: auto;

@@ -650,13 +650,16 @@ div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimo
 }
 
 .submenuhover {
-  display: block;
+  display: inline;
   position: relative;
   top: 0;
   margin-left: 0;
-  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=mobile_solutions_img&v=20140311141000');
-  background-repeat: no-repeat;
-  background-position: right 70px;
+  margin-right: 0;
+  /* background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=mobile_solutions_img&v=20140311141000'); */
+  /* background-repeat: no-repeat; */
+  /* background-position: right 70px; */
+  width: auto;
+  /* padding-right: 10px; */
 }
 .submenuhoverbox {
   position: relative;
@@ -674,7 +677,6 @@ div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimo
   margin: 0;
   float: none;
   padding-bottom: 30px;
-  border-bottom: 1px solid #e6e6e6;
 }
 .submenuhoverbox-line {
   display: none;
@@ -710,7 +712,6 @@ div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimo
 }
 
 #solutions-content .solutions-all-box .logos{
-  height: 60px;
   border-top: 1px solid #ccc;
   margin-top: 20px;
   bottom: 0;
@@ -718,6 +719,11 @@ div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimo
   right: 0;
   display: block;
   height: 50px;
+}
+
+#solutions-content .solutions-all-box .logos img {
+  width: auto;
+  max-height: 50px;
 }
 
 .solutions-cta-bar{
