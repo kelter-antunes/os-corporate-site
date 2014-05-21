@@ -1,165 +1,7 @@
 var debugEnabled = window.location.hostname != "outsystems.com";
 
-(function(d, b, h) {
-    var c = a("html", "body"),
-        g = f(location.pathname);
 
-    function f(i) {
-        return i.replace(/^\//, "").replace(/(index|default).[a-zA-Z]{3,4}$/, "").replace(/\/$/, "")
-    }
-
-    function a(m) {
-        var l = 0,
-            o = arguments.length,
-            j, k, n;
-        for (; l < o; l++) {
-            n = arguments[l], j = d(n);
-            if (j.scrollTop() > 0) {
-                return n
-            } else {
-                j.scrollTop(1);
-                k = j.scrollTop() > 0;
-                j.scrollTop(0);
-                if (k) {
-                    return n
-                }
-            }
-        }
-        return []
-    }
-
-    function e(l) {
-        var k = 17,
-            j = 100,
-            i = 50 * 1000 / 34;
-        return (l / i) * 1000
-    }
-    d.fn.smoothScrollTrigger = function(i) {
-        return this.each(function(l, k) {
-            var m = f(this.pathname) || g,
-                o, j, n;
-            if (g == m && (location.hostname == this.hostname || !this.hostname) && this.hash.replace(/#/, "")) {
-                j = d(this.hash);
-                n = this.hash;
-                o = n && j.length ? j.offset().top : null
-            }
-            d(this).bind("click", function(p) {
-                p.preventDefault();
-                osjs('#device').css('height', '200px');
-                d.smoothScrollTo(j, function() {
-                    if (n) {
-                        location.hash = n
-                    }
-                })
-            })
-        })
-    };
-    d.smoothScrollTo = function(i, m) {
-        var j = d(i).offset().top,
-            l = d(i).attr("id") || null,
-            k;
-        k = e(Math.abs(j - d(b).scrollTop()));
-        if (!c.length) {
-            c = a("html", "body")
-        }
-        if (c.length) {
-            d(c).stop().animate({
-                scrollTop: j
-            }, k, function() {
-                osjs('#device').css('height', '0px');
-                if (m && typeof m === "function") {
-                    m()
-                }
-            })
-        } else {
-            d("html, body").stop().animate({
-                scrollTop: j
-            }, k, function() {
-                if (m && typeof m === "function") {
-                    m()
-                }
-            })
-        }
-    }
-})(osjs, this);
-osjs(document).ready(function() {
-    osjs(".hist-back-link").click(function(event) {
-        event.preventDefault();
-        history.back(1);
-    });
-
-    var stickyPoints = [{
-        'id': 'sticky',
-        'class': 'sticky',
-        'offset': 0
-    }, {
-        'id': 'development',
-        'class': 'development',
-        'offset': 0
-    }, {
-        'id': 'integrations',
-        'class': 'integrations',
-        'offset': 0
-    }, {
-        'id': 'change-management',
-        'class': 'change-management',
-        'offset': 0
-    }, {
-        'id': 'operations',
-        'class': 'operations',
-        'offset': 0
-    }],
-        sticky = osjs('#sticky');
-    osjs.each(stickyPoints, function(i, point) {
-        if (osjs('#' + point.id).length) {
-            point.offset = osjs('#' + point.id).offset().top;
-        }
-    });
-    var ua = navigator.userAgent.toLowerCase();
-    var isAndroid = ua.indexOf("android") > -1;
-    var isipad = ua.search("ipad") > -1;
-    if (isipad) {
-        osjs('.sticky-mist').remove();
-    }
-    var update = function(e) {
-        var currentPosition = osjs(window).scrollTop();
-        osjs.each(stickyPoints, function(i, point) {
-            if (osjs('#sticky').hasClass('sticky')) {
-                osjs('.sticky-mist').show();
-            } else {
-                osjs('.sticky-mist').hide();
-            }
-            if (osjs('.TopSlider').is(":visible")) {
-                if (osjs('#sticky').hasClass('sticky')) {
-                    osjs('#sticky').css('top', '30px');
-                    osjs('.sticky-mist').css('top', '30px');
-                } else {
-                    osjs('#sticky').css('top', '');
-                    osjs('.sticky-mist').css('top', '');
-                }
-            } else {
-                osjs('#sticky').css('top', '');
-                osjs('.sticky-mist').css('top', '');
-            }
-            if (currentPosition >= (point.offset - 10)) {
-                sticky.removeClass();
-                if (i != 0) {
-                    sticky.addClass('sticky ' + point['class']);
-                } else {
-                    sticky.addClass(point['class']);
-                }
-                if (isAndroid) {
-                    osjs('#sticky').css('top', window.pageYOffset + 'px');
-                }
-            } else {
-                sticky.removeClass(point['class']);
-            }
-        });
-    }
-    osjs(window).bind("touchmove", update).bind("scroll", update);
-    osjs("a.scroll-to").smoothScrollTrigger();
-});
-
+var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 osjs(function(a) {
     var b = document.location.href;
     if (b.indexOf("#") != -1) {
@@ -169,17 +11,17 @@ osjs(function(a) {
 
         if (c != "_")
             setTimeout(function() {
-                osjs("a[href$=\"" + c + "\"]").click()
+                osjs("a[href$=\"" + c + "\"]")[0].click()
             }, 1e3)
     }
 
-    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     if ((/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) && width < 767) {} else {
         a(".popup_link").each(function() {
             if (!osjs(this).attr("id"))
                 osjs(this).attr("id", Math.random().toString().replace(".", ""));
             RichWidgets_Popup_Editor_init(osjs(this).attr("id"), "", " ", -1, -1, osjs(this).attr("href"))
         });
+
     }
     a(".tooltip_link").each(function() {
         if (!osjs(this).attr("id"))
@@ -191,16 +33,9 @@ osjs(function(a) {
         var b = a(this).attr("id");
         if (typeof pageTracker != "undefined")
             pageTracker._trackPageview(a("#" + b).attr("href"));
-
-        setTimeout(function() {
-            osjs(".Popup").live("dialogclose", function() {
-                //document.location.href = "#_";
-            })
-        }, 1e3)
     })
 
 });
-
 
 osjs(".Popup").live("dialogopen", function(a, b) {
     osjs("iframe").load(function() {
@@ -219,13 +54,70 @@ osjs(".Popup").live("dialogopen", function(a, b) {
     })
 });
 
+$(function() {
+    if ((/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) && width < 767) {} else {
+
+        $('.magnific_popup_link').magnificPopup({
+            type: 'ajax',
+            alignTop: true,
+            showCloseBtn: false,
+            modal: true,
+            tClose: 'Close',
+            callbacks: {
+                open: function() {},
+                ajaxContentAdded: function() {
+                    var content;
+                    if ($('.mfp-os-popup-content').find('iframe').length == 1) {
+                        //is video
+                        content = $('.mfp-os-popup-content').find('iframe');
+                        if (content.height() != 0) {
+                            $('.mfp-os-thumbs').height(content.height())
+                        };
+
+                    } else {
+                        //is screenshot
+                        content = $('.mfp-os-popup-content').find('img');
+                        if (content.height() != 0) {
+                            $('.mfp-os-thumbs').height(content.height())
+                        };
+
+                    }
+                },
+                close: function() {
+                    window.location.hash = '';
+                }
+            }
+        });
+
+        $('.magnific_popup_link').click(function(event) {
+            window.location.hash = $(this).attr('href');
+        });
+
+        $(window).resize(function() {
+            $('.mfp-os-main-content').width($('.mfp-os-left').width() - 80);
+        });
+
+    }
+});
+
+$(document).mouseup(function(e) {
+    var container = $('.mfp-back');
+    if ((!container.is(e.target) && container.has(e.target).length === 0)) {
+        $.magnificPopup.close();
+    }
+});
+
+$(document).keyup(function(e) {
+    if (e.keyCode == 27) {
+        $.magnificPopup.close();
+    }
+});
+
 
 // Create IE + others compatible event handler
 var eventMethod_Global = window.addEventListener ? "addEventListener" : "attachEvent";
 var eventer_Global = window[eventMethod_Global];
 var messageEvent_Global = eventMethod_Global == "attachEvent" ? "onmessage" : "message";
-
-//var eventFirstRun = true;
 
 // Listen to message from child window
 eventer_Global(messageEvent_Global, function(e) {
