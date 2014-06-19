@@ -24,9 +24,8 @@
             var albumItem = [],
                 currentIndex = 0,
                 $ul = $('<ul>').addClass(settings.ulClass);
-            $.each(json.data, function() {
+            $.each(json.data, function(i, val) {
                 if (typeof this.picture !== "undefined") {
-                    console.log(this.images);
                     var getThumbnail = function(context) {
                         var n = 9,
                             thumb = context.images[n - settings.thumbSize];
@@ -34,7 +33,6 @@
                             return context.picture;
                         }
                         while (!thumb) {
-                            console.log(thumb);
                             n--;
                             thumb = context.images[n - settings.thumbSize];
                         }
@@ -53,7 +51,8 @@
                             'class': 'imageLink',
                             'rel': settings.rel,
                             'title': title,
-                            'href': fullImg
+                            'href': fullImg,
+                            'data-index': i
                         }),
                         $li = $('<li>').addClass($noThumb ? 'noThumb' : settings.liClass);
                     $ul.append($li.append($a.append($img, $caption)));

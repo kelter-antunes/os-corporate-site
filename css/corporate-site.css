@@ -1245,9 +1245,18 @@ body.landing-no-top{
     background-position: top left;
     background-repeat: repeat-x;
 }
+body.landing-slim form#WebForm1 {
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=light-grey-bg-mobile&v=20140311141000');
+}
 
 .header-hero-wrapper.landing-no-top{
     padding-top: 10px;
+    height: auto;
+    box-shadow: none;
+    filter: none;
+}
+
+.header-hero-wrapper.landing-slim{
     height: auto;
     box-shadow: none;
     filter: none;
@@ -3325,9 +3334,9 @@ a.ViewMoreLink {
 }
 
 .customers-industry-title a, .customers-industry-title a:hover, .customers-industry-title a:visited, .customers-industry-title a:active {
-   border:none;
-   outline:none;
-   text-decoration: none;
+ border:none;
+ outline:none;
+ text-decoration: none;
 }
 
 .customers-industry-title h5 {
@@ -3809,6 +3818,72 @@ ul{
 }
 
 /** landings **/
+.landing-slim-content-wrapper {
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=top&v=20140311141000');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: bottom;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.landing-slim-title {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.landing-slim-title .sub-header span{
+    text-decoration: line-through; 
+}
+
+.landing-slim-title h1 {
+    margin-bottom: 10px;
+}
+.landing-slim-title .sub-header h4 {
+    color: gray;
+    font-weight: 400;
+}
+
+.landing-slim .bullets {
+    font-weight: 600;
+}
+ol.circles-list {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+    
+    margin: 0;
+    margin-left: 25px;
+    padding: 0;
+    
+    counter-reset: li-counter;
+}
+ol.circles-list > li{
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    min-height: 35px;
+}
+ol.circles-list > li:before {
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: 20px;
+    height: 20px;
+    
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #f5f5f5;
+    
+    border: 3px solid #c5c5c5;
+    border-radius: 50%;
+    background-color: #464646;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+
 .lp-heading {
     font-size: 36px;
     margin-top: 35px;
@@ -4541,7 +4616,7 @@ h4 a.press-list-link:hover{
 /* mobile */
 
 ul.mobile-bullets {
- list-style: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=20140311141000');
+   list-style: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=20140311141000');
 }
 
 .more-resources-back{
@@ -5646,6 +5721,16 @@ div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimo
 }
 .header-login:hover {
     background-color: #AD1F02;
+}
+
+.header-contacts {
+    font-family: 'myriad-pro';
+    font-size: 13px;
+    padding: 0 15px 3px;
+    line-height: 20px;
+    display: inline-block;
+    font-weight: 400;
+    margin-right: 1px;
 }
 
 

@@ -136,6 +136,11 @@ osjs(function(a) {
     });
 });
 $(document).ready(function() {
+    $(".hist-back-link").click(function(event) {
+        event.preventDefault();
+        history.back(1);
+    });
+
     $('.tooltip-link').mouseover(function(e) {
         var tip = $(this).attr('title');
         $(this).attr('title', '');
