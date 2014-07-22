@@ -1,6 +1,5 @@
 var debugEnabled = window.location.hostname != "outsystems.com";
 
-
 var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 osjs(function(a) {
     var b = document.location.href;
