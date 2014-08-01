@@ -3364,9 +3364,9 @@ a.ViewMoreLink {
 }
 
 .customers-industry-title a, .customers-industry-title a:hover, .customers-industry-title a:visited, .customers-industry-title a:active {
- border:none;
- outline:none;
- text-decoration: none;
+   border:none;
+   outline:none;
+   text-decoration: none;
 }
 
 .customers-industry-title h5 {
@@ -4647,7 +4647,7 @@ h4 a.press-list-link:hover{
 /* mobile */
 
 ul.mobile-bullets {
-   list-style: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=201401081312');
+ list-style: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=201401081312');
 }
 
 .more-resources-back{
@@ -6279,7 +6279,7 @@ form input.st-search-input {
   color: #CCC;
   outline: none;
   line-height: 22px;
-  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=271220131042') no-repeat 111px 3px;
+  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat 111px 3px;
   background-color: transparent;
 }
 form input.st-search-input-inpage {

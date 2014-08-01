@@ -15,8 +15,6 @@ $(function() {
         return out;
     };
 
-
-
     $("#st-search-input").keydown(function(ev) {
         if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
             window.location = '/search/#stq=' + $(this).val() + '&stp=1';
@@ -34,8 +32,6 @@ $(function() {
         $("#st-search-input").val($.hashParams().stq);
         $("#st-search-input-2").val($.hashParams().stq);
     }
-
-
 
     $('#st-search-input').swiftypeSearch({
         resultContainingElement: '#st-results-container',
