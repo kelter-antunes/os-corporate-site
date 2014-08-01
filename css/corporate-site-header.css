@@ -1,7 +1,7 @@
 /*
 cache invalidator 
 
-v=271220131042
+v=201401081312
 */
 
 .navigation-outter{
@@ -121,7 +121,7 @@ v=271220131042
 
 .navigation-bar li a span {
   display: block;
-  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=nav&v=271220131042') no-repeat;
+  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=nav&v=201401081312') no-repeat;
   background-position: top;
   margin-left: -5px;
 }
@@ -145,7 +145,7 @@ noindex:-o-prefocus, .navigation-bar li.spacer {
    }*/
 
    .navigation-bar li a:hover span, .navigation-bar li.active a span {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=nav&v=271220131042') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=nav&v=201401081312') no-repeat;
     background-position: center;
   }
 
@@ -179,7 +179,7 @@ noindex:-o-prefocus, .navigation-bar li.spacer {
   .search_field .button {
     border: none;
     background: none;
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=271220131042') no-repeat -1px -1px;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat -1px -1px;
     width: 14px;
     height: 15px;
     border: 0;
@@ -188,7 +188,7 @@ noindex:-o-prefocus, .navigation-bar li.spacer {
   }
 
   .search_field .button:hover {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=271220131042') no-repeat -1px -21px;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat -1px -21px;
     width: 14px;
     height: 15px;
   }
