@@ -1,0 +1,62 @@
+<style type="text/css">
+body.landing-no-top {
+	background: none;
+	background-color: #E6E6E6;
+}
+</style>
+<div class="it-resources">
+	<div class="container">
+		<div class="row">
+			<div class="span12 align-center">
+				<h1>
+					All OutSystems resources at your fingertips
+				</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span8" style="    %MOBILE%  margin-bottom:0  %/MOBILE%    ">
+				<div class="  %MOBILE%  align-center  %/MOBILE%   ">
+					<h5>
+						Click the tags below to filter resources:
+					</h5>
+				</div>
+				<div class="  %MOBILE%  align-center  %/MOBILE%   ">
+					<div class="button-isotype-group" id="filters">
+						<a class="button-isotype" data-filter=".filter-mobile" href="#">Mobile</a> <a class="button-isotype" data-filter=".filter-cloud" href="#">Cloud</a> <a class="button-isotype" data-filter=".filter-strategy" href="#">IT Strategy</a> <a class="button-isotype" data-filter=".filter-platform" href="#">OutSystems Platform</a> <a class="button-isotype" data-filter=".filter-agile" href="#">Agile</a>
+					</div>
+				</div>
+			</div>
+			<div class="span4 hide-in-mobile">
+				<div class="row">
+					<div class="span2">
+						<div>
+							<h5>
+								Follow us online:
+							</h5>
+						</div>
+						<div>
+							<div class="resources-social-share-buttons">
+								<a href="http://www.facebook.com/OutSystems" target="_blank"><span class="osicon-facebook" data-type="facebook">&nbsp;</span> </a> <a href="http://twitter.com/outsystems" target="_blank"> <span class="osicon-twitter" data-type="twitter">&nbsp;</span> </a> <a href="https://plus.google.com/109413553666968033951?prsrc=3" target="_blank"> <span class="osicon-google" data-type="google">&nbsp;</span> </a> <a href="http://www.linkedin.com/companies/outsystems?trk=fc_badge" target="_blank"> <span class="osicon-linkedin" data-type="linkedin">&nbsp;</span> </a>
+							</div>
+						</div>
+					</div>
+					<div class="span2">
+						<div class="pull-right">
+							<div>
+								<h5>
+									Get our updates!
+								</h5>
+							</div>
+							<div>
+								<a class="osbtn osbtn-gray osbtn-wide" href="http://go1.outsystems.com/outsystems-preference-center.html">Subscribe</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+var filterValueArray=new Array;$(window).load(function(){var e=$(".isotype-resource-cards").isotope({itemSelector:".element-item",layoutMode:"masonry"});$("#filters").on("click","a",function(){var r=$(this).attr("data-filter"),t=filterValueArray.indexOf(r);-1===t?filterValueArray.push(r):filterValueArray.splice(t,1),filterValueArray=$.unique(filterValueArray),filterValue=filterValueArray.toString(),e.isotope({filter:filterValue})}),$(".button-isotype-group").each(function(e,r){var t=$(r);t.on("click","a",function(e){e.preventDefault(),e.stopPropagation(),$(this).toggleClass("is-checked")})})});
+</script>

@@ -1,0 +1,105 @@
+<style type="text/css">
+.app-card {
+
+}
+a.app-card:hover {
+  text-decoration: none;
+  background-color:#ededed;
+}
+.app-card h5.card-h {
+
+}
+.app-card .card-desc {
+  font-size: 14px;
+  color: #333333;
+  display: table;
+}
+
+.apps-top {
+  position: relative;
+  margin-bottom: 50px;
+}
+.apps-top .image-holder {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.apps-top h1 {
+  margin-bottom: 35px;
+}
+
+</style>
+
+<script>
+var biggestHeight = "0";
+$(".apps-top *").each(function(){
+ if ($(this).height() > biggestHeight ) {
+   biggestHeight = $(this).height()
+ }
+});
+
+$(".apps-top").height(biggestHeight);
+</script>
+
+<div class="container">
+  <div class="row">
+
+    <div class="span12">
+      <h2>
+        Sales and Marketing Apps
+      </h2>
+    </div>
+    <div class="span3">
+      <div class="app-card">
+        <h5 class="card-h"><span class="osicon-order-mngmt"></span>Order Management</h5>
+        <span class="card-desc">Give your sales team a fully integrated&nbsp;order management process solution.</span>
+        <a href="order-management-app/">Learn more</a>
+      </div>
+    </div>
+    <div class="span3">
+      <a class="app-card" href="mobile-order-management-app/"><img alt="Mobile Order Management App" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=order-management-mobile-app&amp;v=20140803202529" style="width: 50px; height: 50px;" /> <span class="card-h">Mobile Order Mgmt</span> <span class="card-desc">Speed up the entire quote to order process for your sales reps, right from&nbsp;their mobile devices.&nbsp;</span> </a>
+    </div>
+    <div class="span3">
+      <a class="app-card" href="car-insurance-app/"><img alt="Car Insurance Mobile App" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=car-insurance-mobile-app&amp;v=20140803202529" style="width: 50px; height: 50px;" /> <span class="card-h">Mobile Car Insurance</span> <span class="card-desc">Provide awesome customer care when most needed - reporting an&nbsp;accident on their mobile app. </span> </a>
+    </div>
+    <div class="span3">
+      <a class="app-card" href="credit-request-app/"><img alt="Credit Request App" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=credit-request-app&amp;v=20140803202529" style="width: 50px; height: 50px;" /> <span class="card-h">Credit Request</span> <span class="card-desc">Manage the&nbsp;credit initiation process of your&nbsp;financial services organization.&nbsp;</span> </a>
+    </div>
+    <div class="span3">
+      <a class="app-card" href="sales-app/"><img alt="Sales" height="50" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=sales-app&amp;v=20140803202529" width="50" /> <span class="card-h">Sales</span> <span class="card-desc">Get your own custom CRM app to manage your&nbsp;sales opportunities and forecasts.</span> </a>
+    </div>
+    <div class="span3">
+      <a class="app-card" href="campaigns-app"><img alt="Campaigns" height="50" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=campaigns-app&amp;v=20140803202529" width="50" /> <span class="card-h">Campaigns</span> <span class="card-desc"> Create and manage your email campaigns and track results.&nbsp;</span> </a>
+    </div>
+    <div class="span3">
+      <a class="app-card" href="ecommerce-app"><img alt="eCommerce" height="50" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=ecommerce-app&amp;v=20140803202529" width="50" /> <span class="card-h">eCommerce</span> <span class="card-desc">Everything you need to set-up your eCommerce store.&nbsp;&nbsp;</span> </a>
+    </div>
+    <div class="span12 top40">
+      <h2>
+        Intranet, HR and Portal Apps
+      </h2>
+    </div>
+    <div class="span3">
+      <a class="app-card" href="cases-app/"><img alt="Cases" height="50" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=cases-app&amp;v=20140803202529" width="50" /> <span class="card-h">Cases</span> <span class="card-desc">Get all your customer interactions under control.&nbsp;</span> </a>
+    </div>
+    <div class="span3">
+      <a class="app-card" href="customer-portal-app/"><img alt="Customer Portal" height="50" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=customer-portal-app&amp;v=20140803202529" width="50" /> <span class="card-h">Customer Portal</span> <span class="card-desc">Improve the communication with your customers.</span> </a>
+    </div>
+    <div class="span3">
+      <a class="app-card" href="directory-app/"><img alt="Directory" height="50" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=directory-app&amp;v=20140803202529" width="50" /> <span class="card-h">Directory</span> <span class="card-desc"> All your employee contact info accessible on all your devices. </span> </a>
+    </div>
+    <div class="span3">
+      <a class="app-card" href="documents-app"><img alt="Documents" height="50" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=documents-app&amp;v=20140803202529" width="50" /> <span class="card-h">Documents</span> <span class="card-desc">All your documents centralized, accessible and safe anytime, anywhere.</span> </a>
+    </div>
+    <div class="span3">
+      <a class="app-card" href="expenses-app/"><img alt="Expenses" height="50" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=expenses-app&amp;v=20140803202529" width="50" /> <span class="card-h">Expenses</span> <span class="card-desc"> Create, submit and approve your expenses online.</span> </a>
+    </div>
+    <div class="span3">
+      <a class="app-card" href="time-sheets-app/"><img alt="Timesheets" height="50" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=time-sheets-app&amp;v=20140803202529" width="50" /> <span class="card-h">Time Sheets</span> <span class="card-desc">Track your team and project time allocations.&nbsp;</span> </a>
+    </div>
+    <div class="span3">
+      <a class="app-card" href="vacations-app/"><img alt="Vacations" height="50" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=vacations-app&amp;v=20140803202529" width="50" /> <span class="card-h">Vacations</span> <span class="card-desc">Submit, check and approve your team&#39;s absences </span> </a>
+    </div>
+  </div>
+</div>
