@@ -1,7 +1,7 @@
 /*
 cache invalidator, find and replace for new one
 
-v=201401081312
+v=201406081625
 */
 html,body { height: 100%;}
 
@@ -133,13 +133,13 @@ a.byline:hover{
 }
 
 #aside {
-    background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg_section.png&v=201401081312") repeat-x scroll left top rgba(0, 0, 0, 0);
+    background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg_section.png&v=201406081625") repeat-x scroll left top rgba(0, 0, 0, 0);
     clear: both;
     margin-top: 0px;
 }
 
 .separator-line{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=linha1&v=201401081312') no-repeat left center;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=linha1&v=201406081625') no-repeat left center;
     padding: 40px 0;
     height: 10px;
     margin: 0 auto;
@@ -149,7 +149,7 @@ a.byline:hover{
 .contact_us_link {
     width: 40px;
     height: 132px;
-    background-image:url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=Contact-Us-Side-Tab&v=201401081312');
+    background-image:url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=Contact-Us-Side-Tab&v=201406081625');
     background-position: 0px 0px;
     position: absolute;
 }
@@ -164,14 +164,14 @@ a.byline:hover{
 
 /* CTA's */
 .cta-wrapper-small-line{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=stripes&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=stripes&v=201406081625');
     height: 5px;
     width: 100%;
     margin: 20px 0 10px 0;
 }
 
 .cta-wrapper{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=stripes&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=stripes&v=201406081625');
     height: 110px;
     width: 100%
 }
@@ -185,7 +185,7 @@ a.byline:hover{
     margin-right: 35px;
 }
 .cta-wrapper a{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201406081625') no-repeat;
     background-position: -191px -1px;
     width: 326px;
     height: 51px;
@@ -216,7 +216,7 @@ a.byline:hover{
 }
 #cta-wrapper-home .cta-button a.learn-more,
 #cta-wrapper-home .cta-button a:link.learn-more{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201406081625') no-repeat;
     background-position: -1px -1px;
     width: 181px;
     height: 57px;
@@ -233,7 +233,7 @@ a.byline:hover{
 
 #cta-wrapper-home .cta-button a.learn-more-red,
 #cta-wrapper-home .cta-button a:link.learn-more-red{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201406081625') no-repeat;
     background-position: -2326px -1px;
     width: 181px;
     height: 57px;
@@ -249,7 +249,7 @@ a.byline:hover{
 }
 
 .cta-download-page-contact-us a{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201406081625') no-repeat;
     background-position: -1266px -1px;
     width: 308px;
     height: 41px;
@@ -270,7 +270,7 @@ a.byline:hover{
 }
 
 .cta-download-community-edition a{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201406081625') no-repeat;
     background-position: -1581px -1px;
     width: 308px;
     height: 41px;
@@ -296,7 +296,7 @@ a.byline:hover{
 
 
 .cta-registernow-blue a{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201406081625') no-repeat;
     background-position: -3587px -1px;
     width: 166px;
     height: 37px;
@@ -320,7 +320,7 @@ a.byline:hover{
     text-align: center;
 }
 .cta-small-blue-no-txt a{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201406081625') no-repeat;
     background-position: -2674px 0;
     width: 151px;
     height: 36px;
@@ -342,7 +342,7 @@ a.byline:hover{
 }
 
 .cta-learnmore-blue a{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201406081625') no-repeat;
     background-position: -2836px 0px;
     width: 154px;
     height: 37px;
@@ -362,7 +362,7 @@ a.byline:hover{
 
 
 .cta-readmore-blue a{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201406081625') no-repeat;
     background-position: -3005px 0;
     width: 154px;
     height: 37px;
@@ -382,7 +382,7 @@ a.byline:hover{
 
 
 .cta-downloadhere-blue a{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201406081625') no-repeat;
     background-position: -3174px 0;
     width: 184px;
     height: 37px;
@@ -476,21 +476,21 @@ a.byline:hover{
 }
 
 .quote-1 {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=headshot-1&v=201401081312'),url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-bubble&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=headshot-1&v=201406081625'),url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-bubble&v=201406081625');
     background-position: -90px 130px, center top;
     background-repeat: no-repeat, no-repeat;
     height: 310px;
 }
 
 .quote-2 {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=headshot-2&v=201401081312'),url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-bubble&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=headshot-2&v=201406081625'),url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-bubble&v=201406081625');
     background-position: -35px 130px, center top;
     background-repeat: no-repeat, no-repeat;
     height: 310px;
 }
 
 .quote-3 {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=headshot-3&v=201401081312'),url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-bubble&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=headshot-3&v=201406081625'),url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-bubble&v=201406081625');
     background-position: -25px 130px, center top;
     background-repeat: no-repeat, no-repeat;
     height: 310px;
@@ -521,7 +521,7 @@ a.byline:hover{
 }
 
 .home-mid-section{
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-lightgrey-d9d9d9&v=201401081312');
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-lightgrey-d9d9d9&v=201406081625');
     background-repeat: repeat-y;
     background-position: top center;
     background-color: #c9c9c9;
@@ -531,7 +531,7 @@ a.byline:hover{
 
 
 .home-bot-section {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-grey-909090&v=201401081312');
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-grey-909090&v=201406081625');
     background-repeat: repeat-y;
     background-position: top center;
     background-color: #909090;
@@ -620,7 +620,7 @@ a.tooltip-link{text-decoration:none;}
 
 #powerTip.n:before, #powerTip.e:before, #powerTip.s:before, #powerTip.w:before,
 #powerTip.ne:before, #powerTip.nw:before, #powerTip.se:before, #powerTip.sw:before {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     display: inline-block;
     content: "";
     position: absolute;
@@ -1190,7 +1190,7 @@ a.tooltip-link{text-decoration:none;}
 }
 
 .header-hero-wrapper.home {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-top-home&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-top-home&v=201406081625');
     background-position: bottom;
     background-repeat: no-repeat;
     height: 420px;
@@ -1202,7 +1202,7 @@ a.tooltip-link{text-decoration:none;}
 }
 
 .hero-home-back {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=slide1&v=201401081312');
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=slide1&v=201406081625');
     background-repeat: no-repeat;
     background-position: bottom;
     height: 310px;
@@ -1213,11 +1213,11 @@ a.tooltip-link{text-decoration:none;}
 }
 
 .header-hero-wrapper.product{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-diagram&v=201401081312') repeat-x;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-diagram&v=201406081625') repeat-x;
     height: 500px;
 }
 .header-hero-wrapper.download{
-    background: url('/img/bg_body.png?v=201401081312');
+    background: url('/img/bg_body.png?v=201406081625');
     background-position: top left;
     background-repeat: repeat-x;
     box-shadow: none;
@@ -1225,7 +1225,7 @@ a.tooltip-link{text-decoration:none;}
     filter: none;
 }
 .header-hero-wrapper.case-studies{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=customers-top-bg&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=customers-top-bg&v=201406081625');
     background-repeat: repeat-x;
     background-position: center;
     height: 330px;
@@ -1239,7 +1239,7 @@ a.tooltip-link{text-decoration:none;}
 }
 
 .header-hero-wrapper.case-studies-category{
-    background: url('/img/bg_body.png?v=201401081312');
+    background: url('/img/bg_body.png?v=201406081625');
     background-position: top left;
     background-repeat: repeat-x;
     height: auto;
@@ -1256,7 +1256,7 @@ a.tooltip-link{text-decoration:none;}
 }
 
 .header-hero-wrapper.news{
-    background: url('/img/bg_body.png?v=201401081312');
+    background: url('/img/bg_body.png?v=201406081625');
     background-position: top left;
     background-repeat: repeat-x;
     height: 150px;
@@ -1271,12 +1271,12 @@ a.tooltip-link{text-decoration:none;}
 }
 
 body.landing-no-top{
-    background: url('/img/bg_body.png?v=201401081312');
+    background: url('/img/bg_body.png?v=201406081625');
     background-position: top left;
     background-repeat: repeat-x;
 }
 body.landing-slim form#WebForm1 {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=light-grey-bg-mobile&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=light-grey-bg-mobile&v=201406081625');
 }
 
 .header-hero-wrapper.landing-no-top{
@@ -1293,7 +1293,7 @@ body.landing-slim form#WebForm1 {
 }
 
 .header-hero-wrapper.hero-krug{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=Steve-Krug_LPbanner&v=201401081312') center;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=Steve-Krug_LPbanner&v=201406081625') center;
     background-repeat: no-repeat;
     background-color: #69c;
     height: 390px;
@@ -1302,7 +1302,7 @@ body.landing-slim form#WebForm1 {
 }
 
 .header-hero-wrapper.hero-ux-it-uk{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=ux-it-bg-uk&v=201401081312') center bottom;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=ux-it-bg-uk&v=201406081625') center bottom;
     background-repeat: no-repeat;
     background-color: #dedfe1;
     height: 260px;
@@ -1322,7 +1322,7 @@ body.landing-slim form#WebForm1 {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201401081312') top center;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201406081625') top center;
     background-repeat: repeat-x;
 }
 
@@ -1335,7 +1335,7 @@ body.landing-slim form#WebForm1 {
 }
 
 .header-hero-wrapper.customers-hero{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=top-prov&v=201401081312') center;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=top-prov&v=201406081625') center;
     background-repeat: no-repeat;
     background-color: #DCDDDE;
     height: 387px;
@@ -1355,7 +1355,7 @@ body.landing-slim form#WebForm1 {
 
 
 .page-header {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-diagram&v=201401081312') repeat-x;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-diagram&v=201406081625') repeat-x;
     -moz-box-shadow: 0px 3px 3px #ebebeb;
     -webkit-box-shadow: 0px 3px 3px #ebebeb;
     box-shadow: 0px 3px 3px #ebebeb;
@@ -1439,7 +1439,7 @@ body.landing-slim form#WebForm1 {
 }
 
 .hero-details-video-holder{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-screen&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-screen&v=201406081625');
     background-position: top center;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0);
@@ -1471,7 +1471,7 @@ body.landing-slim form#WebForm1 {
 
 .sticky-mist{
     height: 100px;
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=white-gradient&v=201401081312') repeat-x;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=white-gradient&v=201406081625') repeat-x;
     background-color: rgba(0, 0, 0, 0);
     position: fixed;
     top: 0;
@@ -1517,7 +1517,7 @@ body.landing-slim form#WebForm1 {
 }
 
 #sticky a {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-blue&v=201401081312') repeat-x;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-blue&v=201406081625') repeat-x;
     background-color: #69C;
     font-family: 'myriad-pro', Arial, sans-serif; 
     font-size: 18px;
@@ -1551,7 +1551,7 @@ body.landing-slim form#WebForm1 {
     display:none;
 }
 #sticky a.arrow > .scrollup-arrow{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     background-position: -20px 3px;
     width: 11px;
     height: 20px;
@@ -1579,7 +1579,7 @@ body.landing-slim form#WebForm1 {
     text-shadow: none;
 }
 #sticky a.arrow:hover > .scrollup-arrow{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     background-position: -20px -17px;
     width: 11px;
     height: 20px;
@@ -1589,7 +1589,7 @@ body.landing-slim form#WebForm1 {
 }
 
 #sticky a:hover, #sticky a:active {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-navy&v=201401081312') repeat-x;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-navy&v=201406081625') repeat-x;
     background-color: #4673A7;
     color: white;
 }
@@ -1617,14 +1617,14 @@ body.landing-slim form#WebForm1 {
 }
 
 #sticky.development .development, #sticky.change-management .change-management, #sticky.operations .operations, #sticky.integrations .integrations {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-red&v=201401081312') repeat-x;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-red&v=201406081625') repeat-x;
     background-color: #C20;
     color: white;
 }
 
 
 #sticky .development i {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     background-position: -1px -91px;
     width: 21px;
     height: 20px;
@@ -1637,7 +1637,7 @@ body.landing-slim form#WebForm1 {
 
 
 #sticky .change-management i {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     background-position: -1px -181px;
     width: 25px;
     height: 21px;
@@ -1650,7 +1650,7 @@ body.landing-slim form#WebForm1 {
 
 
 #sticky .operations i {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     background-position: -1px -361px;
     width: 20px;
     height: 20px
@@ -1663,7 +1663,7 @@ body.landing-slim form#WebForm1 {
 
 
 #sticky .integrations i {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     background-position: -1px -270px;
     width: 34px;
     height: 21px;
@@ -1701,10 +1701,10 @@ body.landing-slim form#WebForm1 {
     margin-bottom: 25px;
 }
 
-.hero-details-video-overlay {background:url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-play-gray&v=201401081312') no-repeat scroll -16px -70px transparent; height: 190px; margin-left: 0;width: 372px;}
+.hero-details-video-overlay {background:url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-play-gray&v=201406081625') no-repeat scroll -16px -70px transparent; height: 190px; margin-left: 0;width: 372px;}
 .hero-details-video-overlay:hover {background-position: -16px -70px;}
 
-.hero-details-video-holder {background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-app-examples&v=201401081312'); margin-top:23px; height:243px; width:476px;}
+.hero-details-video-holder {background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-app-examples&v=201406081625'); margin-top:23px; height:243px; width:476px;}
 
 
 .hero-list li {
@@ -1724,14 +1724,14 @@ body.landing-slim form#WebForm1 {
 /*how-it-works*/
 
 .how-first-section{
-  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=award-top2-repeat&v=201401081312'), url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-lightgrey-d9d9d9&v=201401081312');
+  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=award-top2-repeat&v=201406081625'), url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-lightgrey-d9d9d9&v=201406081625');
   background-repeat: repeat-x,repeat-y;
   background-position: center top, top center;
   border-top: 0;
   background-color: #c9c9c9;
 }
 .how-bg-gray-dark {
-  background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-grey-909090&v=201401081312');
+  background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-grey-909090&v=201406081625');
   background-repeat: repeat-y;
   background-position: top center;
   background-color: #909090;
@@ -1752,7 +1752,7 @@ body.landing-slim form#WebForm1 {
   margin-left: auto;
 }
 .how-bg-gray-light {
-  background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-lightgrey-d9d9d9&v=201401081312');
+  background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-lightgrey-d9d9d9&v=201406081625');
   background-repeat: repeat-y;
   background-position: top center;
   background-color: #c9c9c9;
@@ -1780,7 +1780,7 @@ body.landing-slim form#WebForm1 {
   height: 450px;
 }
 .cta-wrapper-how {
-  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=stripes&v=201401081312');
+  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=stripes&v=201406081625');
   height: 80px;
   width: 100%;
   border-top: 1px solid #909090;
@@ -1796,7 +1796,7 @@ body.landing-slim form#WebForm1 {
   margin-right: 35px;
 }
 .cta-wrapper-how a{
-  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201401081312') no-repeat;
+  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201406081625') no-repeat;
   background-position: -4844px 0;
   width: 134px;
   height: 37px;
@@ -1824,7 +1824,7 @@ body.landing-slim form#WebForm1 {
   z-index: 0;
 }
 .how-circle-user-interface {
-  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-interface&v=201401081312') ;
+  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-interface&v=201406081625') ;
   background-position: 6px 190px;
   height: 110px;
   width: 115px;
@@ -1833,7 +1833,7 @@ body.landing-slim form#WebForm1 {
   left: 195px;
 }
 .how-circle-logic {
-  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-logic&v=201401081312');
+  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-logic&v=201406081625');
   background-position: 6px 190px;
   height: 110px;
   width: 115px;
@@ -1843,7 +1843,7 @@ body.landing-slim form#WebForm1 {
   top: 30px;
 }
 .how-circle-processes {
-  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-Processes&v=201401081312');
+  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-Processes&v=201406081625');
   background-position: 6px 190px;
   height: 110px;
   width: 115px;
@@ -1853,7 +1853,7 @@ body.landing-slim form#WebForm1 {
   left: 420px;
 }
 .how-circle-data-model {
-  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-data&v=201401081312');
+  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-data&v=201406081625');
   background-position: 6px 190px;
   height: 110px;
   width: 115px;
@@ -1869,20 +1869,20 @@ body.landing-slim form#WebForm1 {
     z-index: 0;
 }
 .how-circle-java {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-java&v=201401081312');  height: 110px;  width: 115px;  position: absolute;  z-index: 1;  
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-java&v=201406081625');  height: 110px;  width: 115px;  position: absolute;  z-index: 1;  
     background-position: 6px 190px;
     left: 20px;  
     top: 20px;
 }
 .how-circle-csharp {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-csharp&v=201401081312');  height: 110px;  width: 115px;  position: absolute;  z-index: 1;  left: 20px;  
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-csharp&v=201406081625');  height: 110px;  width: 115px;  position: absolute;  z-index: 1;  left: 20px;  
     background-position: 6px 190px;
     top: 170px;
 }
 
 /* product tour */
 [class^="icon-"] {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     display: inline-block;
 }
 
@@ -2050,7 +2050,7 @@ body.landing-slim form#WebForm1 {
 }
 
 .icon-platform-video {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     margin-right: 10px;
     width: 32px;
     height: 22px;
@@ -2234,7 +2234,7 @@ body.landing-slim form#WebForm1 {
 
 
 .product-media-thumb{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=shadow-short&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=shadow-short&v=201406081625') no-repeat;
     background-position: 0 100%;
     height: 120px;
 }
@@ -2252,7 +2252,7 @@ body.landing-slim form#WebForm1 {
 }
 
 .canvas-hot-spot{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=plus&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=plus&v=201406081625') no-repeat;
     width: 40px;
     height: 40px;
     position: absolute;
@@ -2271,7 +2271,7 @@ body.landing-slim form#WebForm1 {
 
 /*base homepage*/
 .canvas .base.platform{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=diagram-platform&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=diagram-platform&v=201406081625') no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2281,7 +2281,7 @@ body.landing-slim form#WebForm1 {
 
 /*base service-studio*/
 .canvas .base.ss.all{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-studio&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-studio&v=201406081625') no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2290,7 +2290,7 @@ body.landing-slim form#WebForm1 {
 }
 
 .canvas .base.ss.net{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-studio-net&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-studio-net&v=201406081625') no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2298,7 +2298,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0;
 }
 .canvas .base.ss.weblogic{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-studio-weblogic&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-studio-weblogic&v=201406081625') no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2306,7 +2306,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0;
 }
 .canvas .base.ss.java{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-studio-jboss&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-studio-jboss&v=201406081625') no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2317,7 +2317,7 @@ body.landing-slim form#WebForm1 {
 
 /*base service-center*/
 .canvas .base.sc.all{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-all&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-all&v=201406081625') no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2325,7 +2325,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0;
 }
 .canvas .base.sc.configuration{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-configuration&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-configuration&v=201406081625') no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2333,7 +2333,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0;
 }
 .canvas .base.sc.monitoring{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-monitoring&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-monitoring&v=201406081625') no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2342,7 +2342,7 @@ body.landing-slim form#WebForm1 {
 }
 
 .canvas .base.sc.farm{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-web-farm&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-web-farm&v=201406081625') no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2350,7 +2350,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0;
 }
 .canvas .base.sc.cloud{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-cloud-farm&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-cloud-farm&v=201406081625') no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2361,7 +2361,7 @@ body.landing-slim form#WebForm1 {
 
 /*base lifetime*/
 .canvas .base.lt{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lifetime&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lifetime&v=201406081625') no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2369,7 +2369,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0;
 }
 .canvas .base.lt.staging{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lifetime-deploy-cloud&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lifetime-deploy-cloud&v=201406081625') no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2377,7 +2377,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0;
 }
 .canvas .base.lt.hybrid{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lifetime-deploy-cloud-premises&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lifetime-deploy-cloud-premises&v=201406081625') no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2389,7 +2389,7 @@ body.landing-slim form#WebForm1 {
 
 /*base integration-studio*/
 .canvas .base.is.all{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=integration-studio1&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=integration-studio1&v=201406081625') no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2398,7 +2398,7 @@ body.landing-slim form#WebForm1 {
 }
 
 .canvas .base.is.net{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=integration-studio-net&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=integration-studio-net&v=201406081625') no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2406,7 +2406,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0;
 }
 .canvas .base.is.java{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=integration-studio-java&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=integration-studio-java&v=201406081625') no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2417,7 +2417,7 @@ body.landing-slim form#WebForm1 {
 
 /* service-studio */
 .canvas .service-studio, .canvas .service-studio.active:hover{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-service-studio&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-service-studio&v=201406081625') no-repeat;
     background-position: 0px 0px;
     width: 122px;
     height: 150px;
@@ -2428,14 +2428,14 @@ body.landing-slim form#WebForm1 {
 }
 
 .canvas .service-studio.inactive{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-service-studio&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-service-studio&v=201406081625') no-repeat;
     background-position: 0px -325px;
     width: 122px;
     height: 144px;
 }
 
 .canvas .service-studio:hover, .canvas .service-studio.inactive:hover{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-service-studio&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-service-studio&v=201406081625') no-repeat;
     background-position: 0px -161px;
     width: 122px;
     height: 149px;
@@ -2443,7 +2443,7 @@ body.landing-slim form#WebForm1 {
 
 /* service center */
 .canvas .service-center, .canvas .service-center.active:hover{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-service-center&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-service-center&v=201406081625') no-repeat;
     background-position: 0px 0px;
     width: 122px;
     height: 130px;
@@ -2454,14 +2454,14 @@ body.landing-slim form#WebForm1 {
 }
 
 .canvas .service-center.inactive{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-service-center&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-service-center&v=201406081625') no-repeat;
     background-position: 0px -319px;
     width: 122px;
     height: 130px;
 }
 
 .canvas .service-center:hover, .canvas .service-center.inactive:hover{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-service-center&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-service-center&v=201406081625') no-repeat;
     background-position: 0px -160px;
     width: 122px;
     height: 130px;
@@ -2469,7 +2469,7 @@ body.landing-slim form#WebForm1 {
 
 /* lifetime */
 .canvas .lifetime, .canvas .lifetime.active:hover{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-lifetime&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-lifetime&v=201406081625') no-repeat;
     background-position: 0px 0px;
     width: 122px;
     height: 130px;
@@ -2480,14 +2480,14 @@ body.landing-slim form#WebForm1 {
 }
 
 .canvas .lifetime.inactive{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-lifetime&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-lifetime&v=201406081625') no-repeat;
     background-position: 0px -319px;
     width: 122px;
     height: 130px;
 }
 
 .canvas .lifetime:hover, .canvas .lifetime.inactive:hover{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-lifetime&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-lifetime&v=201406081625') no-repeat;
     background-position: 0px -160px;
     width: 122px;
     height: 130px;
@@ -2495,7 +2495,7 @@ body.landing-slim form#WebForm1 {
 
 /* Integration Studio */
 .canvas .integration-studio{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201406081625') no-repeat;
     background-position: 0px -480px;
     width: 122px;
     height: 140px;
@@ -2505,7 +2505,7 @@ body.landing-slim form#WebForm1 {
     z-index: 90;
 }
 .canvas .integration-studio:hover{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201406081625') no-repeat;
     background-position: 0px -634px;
     width: 122px;
     height: 150px;
@@ -2521,7 +2521,7 @@ body.landing-slim form#WebForm1 {
 }
 
 .canvas .integration-studio.on-overview{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201406081625') no-repeat;
     background-position: 0px -3px;
     width: 122px;
     height: 145px;
@@ -2532,14 +2532,14 @@ body.landing-slim form#WebForm1 {
 }
 
 .canvas .integration-studio.inactive{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201406081625') no-repeat;
     background-position: 0px -323px;
     width: 122px;
     height: 145px;
     top: -5px;
 }
 .canvas .integration-studio.inactive:hover, .canvas .integration-studio.on-overview:hover{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201406081625') no-repeat;
     background-position: 0px -164px;
     width: 122px;
     height: 145px;
@@ -2548,7 +2548,7 @@ body.landing-slim form#WebForm1 {
 
 
 .canvas .integration-studio.net {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201406081625') no-repeat;
     background-position: 0px -797px;
     width: 122px;
     height: 145px;
@@ -2558,7 +2558,7 @@ body.landing-slim form#WebForm1 {
     z-index: 90;
 }
 .canvas .integration-studio.net:hover{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201406081625') no-repeat;
     background-position: 0px -953px;
     width: 122px;
     height: 145px;
@@ -2569,7 +2569,7 @@ body.landing-slim form#WebForm1 {
 }
 
 .canvas .integration-studio.java{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201406081625') no-repeat;
     background-position: 0px -1118px;
     width: 122px;
     height: 145px;
@@ -2579,7 +2579,7 @@ body.landing-slim form#WebForm1 {
     z-index: 90;
 }
 .canvas .integration-studio.java:hover{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201406081625') no-repeat;
     background-position: 0px -1276px;
     width: 122px;
     height: 145px;
@@ -2590,7 +2590,7 @@ body.landing-slim form#WebForm1 {
 }
 
 .canvas .diagram-hint{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=hint&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=hint&v=201406081625') no-repeat;
     background-position: 0px 0px;
     width: 115px;
     height: 115px;
@@ -2624,7 +2624,7 @@ body.landing-slim form#WebForm1 {
 }
 
 .platform-cta-video a:hover > .icon-platform-video {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     background-position:-44px -1591px;
     width: 32px;
     height: 23px;
@@ -3036,7 +3036,7 @@ a.ViewMoreLink {
 .overview-desc {width: 640px;} 
 .overview-socials {width: 300px; float: left;}
 .overview-details-box {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-box-cs-detail&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-box-cs-detail&v=201406081625');
     background-position: 0 -200px;
     background-color: #FFF;
     height: 410px;
@@ -3195,7 +3195,7 @@ a.ViewMoreLink {
 }
 
 .download-box-shadow{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=shadow-span5&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=shadow-span5&v=201406081625') no-repeat;
     background-position: 0 100%;
     height: 343px;
 }
@@ -3211,7 +3211,7 @@ a.ViewMoreLink {
 }
 
 #download-box-community a{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-green&v=201401081312') repeat-x;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-green&v=201406081625') repeat-x;
     background-color: #83BF00;
     font-family: 'myriad-pro', Arial, sans-serif;
     font-size: 16px;
@@ -3225,12 +3225,12 @@ a.ViewMoreLink {
     left: 0;
 }
 #download-box-community a:hover{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-darkgreen&v=201401081312') repeat-x;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-darkgreen&v=201406081625') repeat-x;
     background-color: #83BF00;
 }
 
 #download-box-enterprise a{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-blue&v=201401081312') repeat-x;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-blue&v=201406081625') repeat-x;
     background-color: #69C;
     font-family: 'myriad-pro', Arial, sans-serif;
     font-size: 16px;
@@ -3244,7 +3244,7 @@ a.ViewMoreLink {
     left: 0;
 }
 #download-box-enterprise a:hover{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-navy&v=201401081312') repeat-x;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-navy&v=201406081625') repeat-x;
     background-color: #69C;
 }
 
@@ -3331,7 +3331,7 @@ a.ViewMoreLink {
 
 
 #continue-trial-or-upgrade{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=community-or-upgrade&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=community-or-upgrade&v=201406081625');
     background-position: center top;
     background-repeat: no-repeat;
     height: 360px;
@@ -3355,7 +3355,7 @@ a.ViewMoreLink {
 
 
 .customers-industry-title {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=industry_arrow&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=industry_arrow&v=201406081625');
     background-repeat: no-repeat;
     background-position: center;
     height: 100px;
@@ -3400,7 +3400,7 @@ a.ViewMoreLink {
 }
 
 .customer-matrix-entry.expand > i {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     display: inline-block;
     background-position:-51px -280px;
     width: 25px;
@@ -3412,7 +3412,7 @@ a.ViewMoreLink {
 
 .customer-matrix-entry.collapse > i,
 .customer-matrix-entry:hover.collapse > i{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     display: inline-block;
     background-position: -51px -356px;
     width: 25px;
@@ -3425,7 +3425,7 @@ a.ViewMoreLink {
 
 
 .customer-matrix-entry:hover > i {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     display: inline-block;
     background-position: -51px -318px;
     width: 25px;
@@ -3439,7 +3439,7 @@ a.ViewMoreLink {
 }
 
 .customers-matrix-entry-details {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-line-span6&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-line-span6&v=201406081625');
     background-repeat: no-repeat;
     padding-top: 12px;
     margin-top: 10px;
@@ -3461,7 +3461,7 @@ a.ViewMoreLink {
 
 
 .customers-case-study-preview {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=headshot-placeholder&v=201401081312');
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=headshot-placeholder&v=201406081625');
     background-repeat: no-repeat;
     background-position: bottom left;
     padding: 20px;
@@ -3575,7 +3575,7 @@ ul{
 }
 
 #footer-top-wrapper {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=footeg-gradient-top&v=201401081312') repeat-x;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=footeg-gradient-top&v=201406081625') repeat-x;
     background-position: bottom;
     border-bottom: 1px solid #111;
     display: block;
@@ -3590,7 +3590,7 @@ ul{
 }
 
 #footer-mid-wrapper {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-gradient&v=201401081312') repeat-x;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-gradient&v=201406081625') repeat-x;
     background-position: top;
     border-top: 1px solid #333;
     display: block;
@@ -3665,7 +3665,7 @@ ul{
 }
 
 #footer-mid a.twitter, #footer-mid a.facebook, #footer-mid a.google, #footer-mid a.linkedin {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     width: 21px;
     height: 21px;
     text-indent: -9999px;
@@ -3744,7 +3744,7 @@ ul{
 }
 
 #footer-mid.us{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-us&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-us&v=201406081625') no-repeat;
     background-position: right bottom;
 }
 #footer-mid.us .contact-us-more a{
@@ -3752,7 +3752,7 @@ ul{
 }
 
 #footer-mid.pt{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-pt&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-pt&v=201406081625') no-repeat;
     background-position: right bottom;
 }
 #footer-mid.pt .contact-us-more a{
@@ -3760,7 +3760,7 @@ ul{
 }
 
 #footer-mid.au{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-au&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-au&v=201406081625') no-repeat;
     background-position: right bottom;
 }
 #footer-mid.au .contact-us-more a{
@@ -3768,7 +3768,7 @@ ul{
 }
 
 #footer-mid.br{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-br&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-br&v=201406081625') no-repeat;
     background-position: right bottom;
 }
 #footer-mid.br .contact-us-more a{
@@ -3776,7 +3776,7 @@ ul{
 }
 
 #footer-mid.nl{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-nl&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-nl&v=201406081625') no-repeat;
     background-position: right bottom;
 }
 #footer-mid.nl .contact-us-more a{
@@ -3849,7 +3849,7 @@ ul{
 
 /** landings **/
 .landing-slim-content-wrapper {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=top&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=top&v=201406081625');
     background-repeat: no-repeat;
     background-color: transparent;
     background-position: bottom;
@@ -3923,7 +3923,7 @@ ol.circles-list > li:before {
 }
 
 .hero-ga-lp {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bigtop&v=201401081312'), url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=big-top-repeat&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bigtop&v=201406081625'), url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=big-top-repeat&v=201406081625');
     background-position: center;
     background-repeat: no-repeat, repeat-x;
     background-color: rgba(0, 0, 0, 0);
@@ -3933,7 +3933,7 @@ ol.circles-list > li:before {
 }
 
 .hero-ga-lp-1 {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=biggesttop&v=201401081312'), url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=big-top-repeat&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=biggesttop&v=201406081625'), url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=big-top-repeat&v=201406081625');
     background-position: center;
     background-repeat: no-repeat, repeat-x;
     background-color: rgba(0, 0, 0, 0);
@@ -3951,7 +3951,7 @@ ol.circles-list > li:before {
 }
 
 .lp-quote-line {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-line&v=201401081312') no-repeat left center;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-line&v=201406081625') no-repeat left center;
     display: block;
     height: 12px;
     margin-top: 10px;
@@ -3959,7 +3959,7 @@ ol.circles-list > li:before {
 }
 
 .lp-vid-placeholder img {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lp-video&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lp-video&v=201406081625');
 }
 
 .iconlp-fontcolor{
@@ -4209,7 +4209,7 @@ h1.landing{
 }
 
 ul.checkmarks {
-    list-style: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=check.png&v=201401081312');
+    list-style: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=check.png&v=201406081625');
     margin-left: 28px;
 }
 
@@ -4358,7 +4358,7 @@ a.app-card:hover {
     overflow:hidden;
 }
 .pxs_bg{
-    background:transparent url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-slides&v=201401081312') repeat top left;
+    background:transparent url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-slides&v=201406081625') repeat top left;
     height: 440px;
 }
 .pxs_bg div{
@@ -4372,15 +4372,15 @@ a.app-card:hover {
     background-color:transparent;
 }
 .pxs_bg .pxs_bg1{
-    /*background-image:url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-grey&v=201401081312');*/
+    /*background-image:url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-grey&v=201406081625');*/
     /*left negative 1/8 of ww*/
 }
 .pxs_bg .pxs_bg2{
-    background-image:url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-grey&v=201401081312');
+    background-image:url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-grey&v=201406081625');
     /*left negative 1/4 of ww*/
 }
 .pxs_bg .pxs_bg3{
-    background-image:url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-red&v=201401081312');
+    background-image:url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-red&v=201406081625');
     /*left negative 1/2 of ww*/
 }
 .pxs_slider_wrapper{
@@ -4429,11 +4429,11 @@ ul.pxs_slider ul.list li {
 }
 
 ul.pxs_slider ul.list {
-    list-style: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=201401081312');
+    list-style: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=201406081625');
 }
 
 ul.pxs_thumbnails{
-    /*background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-nav-slider&v=201401081312');
+    /*background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-nav-slider&v=201406081625');
     background-repeat: no-repeat;
     background-position: top;*/
     width: 100%;
@@ -4442,7 +4442,7 @@ ul.pxs_thumbnails{
 }
 
 ul.pxs_thumbnails li:first-child:before {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     background-position: -2px -2185px;
     width: 32px;
     height: 35px;
@@ -4455,7 +4455,7 @@ ul.pxs_thumbnails li:first-child:before {
 }
 
 ul.pxs_thumbnails li:last-child:after {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     background-position: -49px -2185px;
     width: 31px;
     height: 35px;
@@ -4483,7 +4483,7 @@ ul.pxs_thumbnails li{
     position:relative;
 }
 ul.pxs_thumbnails li img{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     background-position: -56px -81px;
     width: 28px;
     height: 25px;
@@ -4493,7 +4493,7 @@ ul.pxs_thumbnails li img{
 }
 
 ul.pxs_thumbnails li.selected img{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     background-position: -56px -131px;
     width: 28px;
     height: 28px;
@@ -4514,7 +4514,7 @@ ul.pxs_thumbnails li.selected img{
     font-size:20px;
     padding:15px 15px 15px 50px;
     position:absolute;
-    background:#333 url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=ajax-loader&v=201401081312') no-repeat 10px 50%;
+    background:#333 url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=ajax-loader&v=201406081625') no-repeat 10px 50%;
     -moz-border-radius:15px;
     -webkit-border-radius:15px;
     border-radius:15px;
@@ -4528,7 +4528,7 @@ ul.pxs_thumbnails li.selected img{
 
 
 .play-video-overview {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video&v=201401081312') no-repeat -1px -1px;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video&v=201406081625') no-repeat -1px -1px;
     background-color: rgba(0, 0, 0, 0);
     width: 271px;
     height: 46px;
@@ -4538,7 +4538,7 @@ ul.pxs_thumbnails li.selected img{
     font-size: 0px;
 }
 .play-video-overview:hover {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video&v=201401081312') no-repeat  -1px -50px;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video&v=201406081625') no-repeat  -1px -50px;
     width: 271px;
     height: 46px;
     background-color: rgba(0, 0, 0, 0);
@@ -4550,7 +4550,7 @@ ul.pxs_thumbnails li.selected img{
 
 /**BR**/
 .play-video-overview-br {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video_BR&v=201401081312') no-repeat -32px -1px;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video_BR&v=201406081625') no-repeat -32px -1px;
     width: 210px;
     height: 45px;
     background-color: rgba(0, 0, 0, 0);
@@ -4560,7 +4560,7 @@ ul.pxs_thumbnails li.selected img{
     font-size: 0px;
 }
 .play-video-overview-br:hover {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video_BR&v=201401081312') no-repeat  -32px -50px;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video_BR&v=201406081625') no-repeat  -32px -50px;
     width: 210px;
     height: 45px;
     background-color: rgba(0, 0, 0, 0);
@@ -4572,7 +4572,7 @@ ul.pxs_thumbnails li.selected img{
 
 /**NL**/
 .play-video-overview-nl {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video_NL&v=201401081312') no-repeat -22px -1px;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video_NL&v=201406081625') no-repeat -22px -1px;
     width: 230px;
     height: 45px;
     background-color: rgba(0, 0, 0, 0);
@@ -4582,7 +4582,7 @@ ul.pxs_thumbnails li.selected img{
     font-size: 0px;
 }
 .play-video-overview-nl:hover {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video_NL&v=201401081312') no-repeat  -22px -50px;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video_NL&v=201406081625') no-repeat  -22px -50px;
     width: 230px;
     height: 45px;
     background-color: rgba(0, 0, 0, 0);
@@ -4593,7 +4593,7 @@ ul.pxs_thumbnails li.selected img{
 }
 
 .play-video-overview-product {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video&v=201401081312') no-repeat -280px -1px;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video&v=201406081625') no-repeat -280px -1px;
     background-color: rgba(0, 0, 0, 0);
     width: 271px;
     height: 46px;
@@ -4604,7 +4604,7 @@ ul.pxs_thumbnails li.selected img{
     margin-bottom: 5px;
 }
 .play-video-overview-product:hover {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video&v=201401081312') no-repeat -280px -50px;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video&v=201406081625') no-repeat -280px -50px;
     background-color: rgba(0, 0, 0, 0);
     width: 271px;
     height: 46px;
@@ -4660,7 +4660,7 @@ h4 a.press-list-link:hover{
 }
 
 .press-list-content-highlight{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-line-span6&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-line-span6&v=201406081625');
     background-repeat: no-repeat;
     padding-top: 12px;
     margin-top: 10px;
@@ -4694,7 +4694,7 @@ h4 a.press-list-link:hover{
 }
 
 .main-quote-background:after{
-    content: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=news-FICO-page3&v=201401081312');
+    content: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=news-FICO-page3&v=201406081625');
     position: relative;
     z-index: 999 !important;
     left: -35px;
@@ -4709,7 +4709,7 @@ h4 a.press-list-link:hover{
     padding-bottom: 0px;
 }
 .sidebar-quote-background:after{
-    content: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=news-FICO-page4&v=201401081312');
+    content: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=news-FICO-page4&v=201406081625');
     position: relative;
     z-index: 999 !important;
     left: 0px;
@@ -4720,7 +4720,7 @@ h4 a.press-list-link:hover{
 /* mobile */
 
 ul.mobile-bullets {
- list-style: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=201401081312');
+ list-style: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=201406081625');
 }
 
 .more-resources-back{
@@ -4788,7 +4788,7 @@ ul.mobile-bullets {
 }
 
 .col-back {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=careers-fundo_coluna&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=careers-fundo_coluna&v=201406081625');
     background-repeat: repeat-y;
     background-color: rgba(0, 0, 0, 0);
     height: 390px;
@@ -4799,7 +4799,7 @@ ul.mobile-bullets {
 
 /** mangment **/
 .management-box {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=Mteam-fundo-coluna&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=Mteam-fundo-coluna&v=201406081625');
     background-repeat: repeat-x;
     background-position: top;
     background-color: rgba(0, 0, 0, 0);
@@ -5150,19 +5150,19 @@ a.past-list-link:visited h5{
 }
 
 .book-ux-it-uk{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=ux-kit-icons&v=201401081312') no-repeat -4px -4px;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=ux-kit-icons&v=201406081625') no-repeat -4px -4px;
     width: 35px;
     height: 31px;
     display: block;
 }
 .doc-ux-it-uk{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=ux-kit-icons&v=201401081312') no-repeat -9px -50px;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=ux-kit-icons&v=201406081625') no-repeat -9px -50px;
     width: 25px;
     height: 31px;
     display: block;
 }
 .check-ux-it-uk{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=ux-kit-icons&v=201401081312') no-repeat -8px -91px;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=ux-kit-icons&v=201406081625') no-repeat -8px -91px;
     width: 26px;
     height: 26px;
     display: block;
@@ -5183,7 +5183,7 @@ a.past-list-link:visited h5{
 
 /** try section **/
 .try-main-content {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cloud-portal-img&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cloud-portal-img&v=201406081625');
     background-repeat: no-repeat;
     background-position: right 45px;
     min-height: 340px;
@@ -5256,7 +5256,7 @@ a.past-list-link:visited h5{
 }
 
 .try-list {
-    list-style: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=201401081312');
+    list-style: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=201406081625');
     font-size: 14px;
 }
 
@@ -5266,7 +5266,7 @@ a.past-list-link:visited h5{
 }
 
 .try-setup-content {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=slide1&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=slide1&v=201406081625');
     background-repeat: no-repeat;
     background-position: right 80%;
     min-height: 340px;
@@ -5274,7 +5274,7 @@ a.past-list-link:visited h5{
 
 /**  innovation **/
 .innovation-top {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=award-top2-repeat&v=201401081312'),url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=award-top2&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=award-top2-repeat&v=201406081625'),url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=award-top2&v=201406081625');
     background-repeat: no-repeat, no-repeat;
     background-position: center top,center top;
     background-color: #f4f4f4;
@@ -5283,7 +5283,7 @@ a.past-list-link:visited h5{
 }
 
 .innovation-apply {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-apply&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-apply&v=201406081625');
     background-color: #000;
     background-position: center top;
     height: 165px;
@@ -5299,7 +5299,7 @@ a.past-list-link:visited h5{
 }
 
 .innovation-cta-btn {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201406081625') no-repeat;
     background-position: -3386px -1px;
     width: 191px;
     height: 51px;
@@ -5312,14 +5312,14 @@ a.past-list-link:visited h5{
 }
 
 .innovation-cta-btn:hover {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201406081625') no-repeat;
     background-position: -3386px -61px;
     width: 191px;
     height: 51px;
 }
 
 .innovation-cta-btn:active {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201406081625') no-repeat;
     background-position: -3386px -121px;
     width: 191px;
     height: 51px;
@@ -5327,7 +5327,7 @@ a.past-list-link:visited h5{
 
 
 .innovation-case-study-preview {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=christopher_playright320x210&v=201401081312');
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=christopher_playright320x210&v=201406081625');
     background-repeat: no-repeat;
     background-position: 90% 100%;
     border: 10px solid #e6e6e6;
@@ -5337,7 +5337,7 @@ a.past-list-link:visited h5{
 }
 
 .innovation-case-study-preview:after {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=card-shadow&v=201401081312');
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=card-shadow&v=201406081625');
     background-repeat: no-repeat;
     background-position: center bottom;
     display: block;
@@ -5391,7 +5391,7 @@ a.past-list-link:visited h5{
 }
 
 .innovation-case-study-canitbeyou:after {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=card-shadow&v=201401081312');
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=card-shadow&v=201406081625');
     background-repeat: no-repeat;
     background-position: center bottom;
     display: block;
@@ -5410,14 +5410,14 @@ a.past-list-link:visited h5{
 }
 
 .innovation-submission-project-step1 {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=nr1&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=nr1&v=201406081625');
     background-repeat: no-repeat;
     height: 80px;
     margin-left: 100px;
 }
 
 .innovation-submission-project-step2 {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=nr2&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=nr2&v=201406081625');
     background-repeat: no-repeat;
     height: 80px;
     margin-left: 100px;
@@ -5470,7 +5470,7 @@ a.past-list-link:visited h5{
 }
 
 .innovationawards-matrix-entry.expand > i {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     display: inline-block;
     background-position:-51px -280px;
     width: 25px;
@@ -5482,7 +5482,7 @@ a.past-list-link:visited h5{
 
 .innovationawards-matrix-entry.collapse > i,
 .innovationawards-matrix-entry:hover.collapse > i{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     display: inline-block;
     background-position: -51px -356px;
     width: 25px;
@@ -5494,7 +5494,7 @@ a.past-list-link:visited h5{
 
 
 .innovationawards-matrix-entry:hover > i {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat;
     display: inline-block;
     background-position: -51px -318px;
     width: 25px;
@@ -5508,7 +5508,7 @@ a.past-list-link:visited h5{
 }
 
 .innovationawards-matrix-entry-details {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-line-span6&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-line-span6&v=201406081625');
     background-repeat: no-repeat;
     padding-top: 12px;
     margin-top: 10px;
@@ -5550,7 +5550,7 @@ a.past-list-link:visited h5{
 }
 
 .innovationawards-year.active{
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=timeline-arrow&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=timeline-arrow&v=201406081625');
     background-position: bottom;
     background-repeat: no-repeat;
     height: 76px;
@@ -5577,7 +5577,7 @@ a.past-list-link:visited h5{
 }
 
 .case-study-customer-image {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=christopher_playright3&v=201401081312');  
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=christopher_playright3&v=201406081625');  
     background-repeat: no-repeat;  
     height: 210px;  
     margin-left: 0px;
@@ -5589,7 +5589,7 @@ a.past-list-link:visited h5{
     position: relative;
 }
 .case-study-customer-quote {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote&amp;v=201401081312');  background-repeat: no-repeat;  
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote&amp;v=201406081625');  background-repeat: no-repeat;  
     background-position: left top;  
     position: absolute;
     top: 0;
@@ -5598,7 +5598,7 @@ a.past-list-link:visited h5{
     height: 30px;
 }
 .case-study-project-timeline {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=timeline&v=201401081312') no-repeat;  height: 267px;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=timeline&v=201406081625') no-repeat;  height: 267px;
 }
 
 .case-study-sidebar {
@@ -5692,7 +5692,7 @@ a.past-list-link:visited h5{
 }
 
 .case-study-customer-quote-arrow_span12 {
-    /*background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-arrow_span12&amp;v=201401081312');*/
+    /*background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-arrow_span12&amp;v=201406081625');*/
     background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=arrow-span5&v=20140416101624);
     background-repeat: no-repeat;
     background-position: left top;
@@ -5736,7 +5736,7 @@ a.past-list-link:visited h5{
 }
 
 .case-study-screenshot-thumb {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=shadow-short&v=201401081312') no-repeat;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=shadow-short&v=201406081625') no-repeat;
     background-position: 0 100%;
     height: 139px;
 }
@@ -5838,7 +5838,7 @@ div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimo
 
 
 .cs-innovation-award-winner-badge {
-    background-image: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=innovation-award-winner&v=201401081312");
+    background-image: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=innovation-award-winner&v=201406081625");
     height: 125px;
     width: 125px;
     position: absolute;
@@ -5855,7 +5855,7 @@ div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimo
 }
 
 .hero-section-get-started{
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg_top_try-now&v=201401081312');
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg_top_try-now&v=201406081625');
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #DEDEDE;
@@ -6352,7 +6352,7 @@ form input.st-search-input {
   color: #CCC;
   outline: none;
   line-height: 22px;
-  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201401081312') no-repeat 111px 3px;
+  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') no-repeat 111px 3px;
   background-color: transparent;
 }
 form input.st-search-input-inpage {
@@ -6636,7 +6636,7 @@ div.st-result .st-date {
     position: absolute;
     background-color: #FFF;
     z-index: 999;
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lamp&v=201401081312');  
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lamp&v=201406081625');  
     background-position: left;
     background-repeat: no-repeat;  
     padding-bottom: 30px;
@@ -6697,7 +6697,7 @@ div.st-result .st-date {
 /** solutions **/
 
 .solution-hero {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-singular-indu-dcddde&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-singular-indu-dcddde&v=201406081625');
     background-color: #dcddde;
     background-repeat: no-repeat;
     height: 370px;
@@ -6719,7 +6719,7 @@ div.st-result .st-date {
 }
 
 .solution-all-hero {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-all-indu-dcddde&v=201401081312');
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-all-indu-dcddde&v=201406081625');
     background-color: #dcddde;
     background-repeat: no-repeat;
     height: 290px;
