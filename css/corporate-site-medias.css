@@ -491,7 +491,7 @@ v=201401081312
   .Menu_Container
   {
     margin-bottom:44px;
-  /* iphone bottom toolbar */
+    /* iphone bottom toolbar */
     width:100%
   }
   
@@ -505,19 +505,19 @@ v=201401081312
     height:100%;
     overflow:hidden;
     padding-left:45px;
-  /* Animate the menu when opening and closing */
+    /* Animate the menu when opening and closing */
     -webkit-transition:all .3s ease-out;
     -moz-transition:all .3s ease-out;
     -ms-transition:all .3s ease-out;
     -o-transition:all .3s ease-out;
     transition:all .3s ease-out;
-  /* Enable hardware acceleration */
+    /* Enable hardware acceleration */
     -webkit-transform:translateZ(0);
     -moz-transform:translateZ(0);
     -ms-transform:translateZ(0);
     -o-transform:translateZ(0);
     transform:translateZ(0);
-  /* reduce animation flickering */
+    /* reduce animation flickering */
     -webkit-backface-visibility:hidden;
     -moz-backface-visibility:hidden;
     -ms-backface-visibility:hidden;
@@ -817,11 +817,11 @@ v=201401081312
     top:0;
     margin-left:0;
     margin-right:0;
-  /* background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=mobile_solutions_img&v=201401081312'); */
-  /* background-repeat: no-repeat; */
-  /* background-position: right 70px; */
+    /* background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=mobile_solutions_img&v=201401081312'); */
+    /* background-repeat: no-repeat; */
+    /* background-position: right 70px; */
     width:auto
-  /* padding-right: 10px; */
+    /* padding-right: 10px; */
   }
   
   .submenuhoverbox
@@ -1001,7 +1001,7 @@ v=201401081312
     -moz-transform:rotate(45deg);
     -o-transform:rotate(45deg);
     -ms-transform:rotate(45deg);
-  /* Animate the menu when opening and closing */
+    /* Animate the menu when opening and closing */
     -webkit-transition:all .3s ease-out;
     -moz-transition:all .3s ease-out;
     -ms-transition:all .3s ease-out;
@@ -1016,7 +1016,7 @@ v=201401081312
     -moz-transform:rotate(0);
     -o-transform:rotate(0);
     -ms-transform:rotate(0);
-  /* Animate the menu when opening and closing */
+    /* Animate the menu when opening and closing */
     -webkit-transition:all .3s ease-out;
     -moz-transition:all .3s ease-out;
     -ms-transition:all .3s ease-out;
@@ -1463,6 +1463,49 @@ v=201401081312
   {
     -webkit-mask-image:-webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,1) 5%,rgba(0,0,0,1) 95%,rgba(0,0,0,0) 100%)
   }
+
+
+  .apps-top .image-holder {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  .apps-top {
+    margin-bottom: 0;
+  }
+  .header-hero-wrapper.apps-home-hero {
+    margin-top: 80px;
+  }
+  .osicon-arrow-down.apps-icon-toggle,
+  .osicon-arrow-up.apps-icon-toggle {
+    display: table-cell;
+    position: absolute;
+    right: 0;
+    top: 5px;
+  }
+  .apps-body h2 {
+    font-size: 21px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    color: #0088cc;
+    cursor: pointer;
+  }
+  .apps-mobile-toggle-sales,
+  .apps-mobile-toggle-intra {
+    display: none;
+  }
+  .apps-body h2 {
+    margin-bottom: 0;
+  }
+  .apps-body {
+    padding-top: 20px;
+    border-top: 1px solid #C2C2C2;
+  }
+}
+
+
+
 }
 
 /* Landscape */
@@ -1545,6 +1588,14 @@ v=201401081312
   .solution-hero
   {
     height:185px
+  }
+
+
+  .apps-body .span3 {
+    width: 224px;
+    float: left;
+    margin-left: 0;
+    margin-right: 5px;
   }
 }
 

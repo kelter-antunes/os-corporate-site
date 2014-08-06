@@ -4277,6 +4277,79 @@ ul.checkmarks {
     margin-left: 40px;
 }
 
+.apps-body {
+  background-color: #f2f2f2;
+}
+.apps-body h2 {
+  margin-bottom: 30px;
+}
+.app-card {
+  background: white;
+  margin-bottom: 28px
+}
+a.app-card:hover {
+  text-decoration: none;
+  background-color:#ededed;
+}
+.app-card h5.card-h {
+  color: white;
+  display: table;
+  width: 100%;
+  padding: 10px 10px 10px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+.app-card h5 span:nth-child(2){
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+.app-card-icon {
+  width: 80px;
+  float: left;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+.app-card-icon:before {
+  display: block;
+}
+.card-bottom {
+  padding: 0 10px 10px;
+}
+.app-card .card-desc {
+  font-size: 14px;
+  color: #333333;
+  display: table;
+  margin-bottom: 5px;
+}
+.apps-top {
+  position: relative;
+  margin-bottom: 50px;
+}
+.apps-top .image-holder {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.apps-top h1 {
+  margin-bottom: 35px;
+}
+.apps-icon-toggle {
+  display: none;
+}
+
+
+
+
+
+
+
 /* Slider Style */
 .pxs_container{
     width:100%;
