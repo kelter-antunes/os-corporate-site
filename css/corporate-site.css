@@ -3364,9 +3364,9 @@ a.ViewMoreLink {
 }
 
 .customers-industry-title a, .customers-industry-title a:hover, .customers-industry-title a:visited, .customers-industry-title a:active {
-   border:none;
-   outline:none;
-   text-decoration: none;
+ border:none;
+ outline:none;
+ text-decoration: none;
 }
 
 .customers-industry-title h5 {
@@ -3894,9 +3894,9 @@ ol.circles-list > li{
 }
 
 .landing-slim-icon {
- font-size: 22px;
- display: table-cell;
- vertical-align: top;
+   font-size: 22px;
+   display: table-cell;
+   vertical-align: top;
 }
 
 
@@ -4705,7 +4705,7 @@ h4 a.press-list-link:hover{
 /* mobile */
 
 ul.mobile-bullets {
- list-style: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=201406081625');
+   list-style: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=201406081625');
 }
 
 .more-resources-back{
