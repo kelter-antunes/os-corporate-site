@@ -4294,6 +4294,7 @@ a.app-card:hover {
 h5.card-h a {
     color: white;
     text-decoration: none;
+    display: table;
 }
 .app-card-icon {
   width: 80px;
