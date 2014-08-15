@@ -243,11 +243,12 @@ $().ready(function () {
 /** market iframe resize hack **/
 var mktoH = function marketoHeight(){
     $('#mkto_frame').height($('#mkto_frame').contents().height()+'px');
+    console.log('mkto-resized');
 }; 
 $(document).ready(function() {
 
     if ($("iframe[src*='http://go1.outsystems.com/']").length !== 0) {
-        setTimeout( mktoH() , 1000);
+        setInterval( mktoH() , 1000);
     }
 
 });
