@@ -2,8 +2,8 @@ var nodes = $('[cms=true]');
 var currentElement = null;
 
 nodes.each(function(index, el) {
-    
-    $(this).mouseover(function(event) {
+
+    $(this).mouseenter(function(event) {
         var element = $(this);
 
         if (element.attr('cms') === null)
@@ -32,6 +32,20 @@ nodes.each(function(index, el) {
         $('#" + cmsProps.Id + "').css({top: (mTop - 10) + 'px' });
         $('#" + cmsProps.Id + "').css({top: (mLeft + 10) + 'px' });
     });
+
+    $(this).mouseleave(function(event) {
+       var element = $(this);
+
+        element.css({
+            borderStyle: 'none'
+        });
+
+        $('" + cmsProps.Id + "').css({
+            display: 'none'
+        });
+
+   });
+
 });
 
 
@@ -51,22 +65,6 @@ function getParent(element) {
     return element;
 }
 
-
-function respondToMouseOver(event) {
-
-
-}
-
-function respondToMouseOut(event) {
-
-    var element = $(this);
-    element.css({
-        borderStyle: 'none'
-    });
-    $('" + cmsProps.Id + "').css({
-        display: 'none'
-    });
-}
 
 function CMSRedirect() {
     window.open(currentElement.attr('url'), 'CMS', 'scrollbars=yes,resizable=yes,modal=yes');

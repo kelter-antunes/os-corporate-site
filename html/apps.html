@@ -38,15 +38,17 @@ $(document).ready(function() {
   setSameHeight();
 });
 $(window).load(function() {
-  $('.apps-body h2').on('click touch', function(event) {
-    $this = $(this);
-    $this.children('span').toggleClass('osicon-arrow-down osicon-arrow-up');
-    if ($this.hasClass('apps-h-sales') ) {
-      $('.apps-mobile-toggle-sales').slideToggle();
-    } else if ($this.hasClass('apps-h-intra') ){
-      $('.apps-mobile-toggle-intra').slideToggle();
-    }
-  });
+  if ($(window).width() < 767) {
+    $('.apps-body h2').on('click touch', function(event) {
+      $this = $(this);
+      $this.children('span').toggleClass('osicon-arrow-down osicon-arrow-up');
+      if ($this.hasClass('apps-h-sales') ) {
+        $('.apps-mobile-toggle-sales').slideToggle();
+      } else if ($this.hasClass('apps-h-intra') ){
+        $('.apps-mobile-toggle-intra').slideToggle();
+      }
+    });
+  }
 });
 </script>
 <div class="apps-body" style="%WEB% padding-top: 70px; %/WEB%">
