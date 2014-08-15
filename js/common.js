@@ -248,7 +248,7 @@ var mktoH = function marketoHeight(){
 $(document).ready(function() {
 
     if ($("iframe[src*='http://go1.outsystems.com/']").length !== 0) {
-        setInterval( mktoH() , 1000);
+        setInterval( mktoH , 1000);
     }
 
 });
