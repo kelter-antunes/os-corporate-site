@@ -243,7 +243,7 @@ $().ready(function () {
 /** market iframe resize hack **/
 var mktoH = function marketoHeight(){
     $('#mkto_frame').height($('#mkto_frame').contents().height()+'px');
-    console.log('mkto-resized');
+    console.log('mkto-resized'); 
 }; 
 $(document).ready(function() {
 
