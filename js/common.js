@@ -241,14 +241,17 @@ $().ready(function () {
 });
 
 /** market iframe resize hack **/
+var initialH;
 var mktoH = function marketoHeight(){
-    $('#mkto_frame').height($('#mkto_frame').contents().height()+'px');
-    console.log('mkto-resized'); 
+
+    initialH = $('#mkto_frame').contents().height()+'px';
+
+    $('#mkto_frame').height(initialH);
 }; 
 $(document).ready(function() {
 
     if ($("iframe[src*='http://go1.outsystems.com/']").length !== 0) {
-        setInterval( mktoH , 1000);
+        setTimeout( mktoH , 2500);
     }
 
 });
