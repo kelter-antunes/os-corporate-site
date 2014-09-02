@@ -58,7 +58,7 @@ $(function() {
             type: 'ajax',
             alignTop: true,
             showCloseBtn: false,
-            modal: true,
+            modal: false,
             tClose: 'Close',
             callbacks: {
                 open: function() {},
@@ -97,18 +97,18 @@ $(window).resize(function() {
 }
 });
 
-$(document).mouseup(function(e) {
-    var container = $('.mfp-back');
-    if ((!container.is(e.target) && container.has(e.target).length === 0)) {
-        $.magnificPopup.close();
-    }
-});
+// $(document).mouseup(function(e) {
+//     var container = $('.mfp-back');
+//     if ((!container.is(e.target) && container.has(e.target).length === 0)) {
+//         $.magnificPopup.close();
+//     }
+// });
 
-$(document).keyup(function(e) {
-    if (e.keyCode == 27) {
-        $.magnificPopup.close();
-    }
-});
+// $(document).keyup(function(e) {
+//     if (e.keyCode == 27) {
+//         $.magnificPopup.close();
+//     }
+// });
 
 
 // Create IE + others compatible event handler
@@ -240,7 +240,7 @@ $().ready(function () {
     }
 });
 
-/** market iframe resize hack **/
+/** marketo iframe resize hack **/
 var initialH;
 var mktoH = function marketoHeight(){
 
