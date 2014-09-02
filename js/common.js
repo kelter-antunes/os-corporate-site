@@ -139,8 +139,13 @@ $(document).ready(function() {
         fixedContentPos: true,
         fixedBgPos: true,
 
-        modal: true
-    });
+        modal: true,
+        callbacks: {
+            open: function() {
+              $('.mfp-iframe-scaler .mfp-close').css({display: 'none'});
+          }
+      }
+  });
 });
 
 // Create IE + others compatible event handler
