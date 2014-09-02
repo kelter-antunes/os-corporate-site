@@ -74,9 +74,9 @@ $(function() {
                     } else {
                         //is screenshot
                         content = $('.mfp-os-popup-content').find('img');
-                        if (content.height() != 0) {
-                            $('.mfp-os-thumbs').height(content.height())
-                        };
+                        if (content.height() !== 0) {
+                            $('.mfp-os-thumbs').height(content.height());
+                        }
 
                     }
                 },
