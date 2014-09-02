@@ -59,6 +59,7 @@ $(function() {
             alignTop: true,
             showCloseBtn: false,
             modal: false,
+            closeOnContentClick: false,
             tClose: 'Close',
             callbacks: {
                 open: function() {},
