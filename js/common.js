@@ -60,6 +60,8 @@ $(function() {
             showCloseBtn: false,
             modal: false,
             closeOnContentClick: false,
+            fixedContentPos: true,
+            fixedBgPos: true,
             tClose: 'Close',
             callbacks: {
                 open: function() {},
