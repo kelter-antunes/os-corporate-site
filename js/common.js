@@ -58,10 +58,7 @@ $(function() {
             type: 'ajax',
             alignTop: true,
             showCloseBtn: false,
-            modal: false,
-            closeOnContentClick: false,
-            fixedContentPos: true,
-            fixedBgPos: true,
+            modal: true,
             tClose: 'Close',
             callbacks: {
                 open: function() {},
@@ -100,18 +97,25 @@ $(window).resize(function() {
 }
 });
 
-// $(document).mouseup(function(e) {
-//     var container = $('.mfp-back');
-//     if ((!container.is(e.target) && container.has(e.target).length === 0)) {
-//         $.magnificPopup.close();
-//     }
-// });
+$(document).mouseup(function(e) {
 
-// $(document).keyup(function(e) {
-//     if (e.keyCode == 27) {
-//         $.magnificPopup.close();
-//     }
-// });
+    if ($.magnificPopup.instance.currItem.type === 'ajax') {
+        var container = $('.mfp-back');
+        if ((!container.is(e.target) && container.has(e.target).length === 0)) {
+            $.magnificPopup.close();
+        }
+    }
+
+});
+
+$(document).keyup(function(e) {
+
+    if ($.magnificPopup.instance.currItem.type === 'ajax') {
+        if (e.keyCode == 27) {
+            $.magnificPopup.close();
+        }
+    }
+});
 
 
 // Create IE + others compatible event handler
@@ -237,8 +241,8 @@ function checkhttps(){
 $().ready(function () {
     if ("https:" == document.location.protocol) {
         setInterval(function() {
-           checkhttps();
-       }, 1000);
+         checkhttps();
+     }, 1000);
         checkhttps();
     }
 });
