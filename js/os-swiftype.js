@@ -7,7 +7,7 @@ $(function() {
     var customRendererSearch = function(documentType, item) {
         console.log('highlight: '+ item.highlight['body']);
 
-        var out = '<div class="st-result"><h4 class="title"><a href="' + item['url'] + '" class="st-search-result-link">' + item['title'] + '</a></h4><div class="st-metadata"><span class="st-url">' + item['url'] + '</span><span class="st-snippet">' + item.highlight['body'] !== '' ? item.highlight['body'] : htmlEscape(item['body'].substring(0, 300)) + '</span></div></div>';
+        var out = '<div class="st-result"><h4 class="title"><a href="' + item['url'] + '" class="st-search-result-link">' + item['title'] + '</a></h4><div class="st-metadata"><span class="st-url">' + item['url'] + '</span><span class="st-snippet">' + item.highlight['body'] === undefined ? item.highlight['body'] : htmlEscape(item['body'].substring(0, 300)) + '</span></div></div>';
 
         return out;
     };
