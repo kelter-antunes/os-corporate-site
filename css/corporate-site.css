@@ -5195,6 +5195,7 @@ a.app-card:hover
 
 .app-card h5.card-h
 {
+    color:#fff;
     display:table;
     width:100%;
     padding:10px 10px 10px 0;
@@ -5213,7 +5214,6 @@ a.app-card:hover
 
 h5.card-h a
 {
-    color:#fff;
     text-decoration:none;
     display:table
 }
