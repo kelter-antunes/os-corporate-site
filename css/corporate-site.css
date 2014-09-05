@@ -5232,8 +5232,8 @@ h5.card-h a
     line-height:60px;
     border-radius:15%;
     -moz-border-radius:15%;
-    -webkit-border-radius:15%
-    min-width: 60px;
+    -webkit-border-radius:15%;
+    min-width:60px
 }
 
 .app-card-icon:before
@@ -5313,14 +5313,14 @@ h5.card-h a
 
 .pxs_bg .pxs_bg2
 {
-    background-image:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-grey&v=201406081625)
-/*left negative 1/4 of ww*/
+    background-image:/*left negative 1/4 of ww*/
+url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-grey&v=201406081625)
 }
 
 .pxs_bg .pxs_bg3
 {
-    background-image:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-red&v=201406081625)
-/*left negative 1/2 of ww*/
+    background-image:/*left negative 1/2 of ww*/
+url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-red&v=201406081625)
 }
 
 .pxs_slider_wrapper
@@ -7139,8 +7139,8 @@ div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimo
 
 .Menu_TopMenuActive
 {
-    border-bottom:none
-/* background: #393939; */
+    border-bottom:/* background: #393939; */
+none
 }
 
 .Menu_TopMenu
@@ -7382,8 +7382,8 @@ body > div.Application_Menu
     display:inline-block;
     *display:inline;
     *zoom:1;
-    *z-index:200
-/* required for IE7 */
+    *z-index:/* required for IE7 */
+200
 }
 
 .Menu_DropDownButton.open
