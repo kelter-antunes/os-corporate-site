@@ -124,6 +124,7 @@ $(document).keyup(function(e) {
     }
 });
 
+
 $(document).ready(function() {
     $('.gotomagnific').magnificPopup({
 
