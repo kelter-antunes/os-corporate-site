@@ -1,6 +1,6 @@
 $(function() {
     var customRendererSearch = function(documentType, item) {
-        var out = '<div class="st-result"><h4 class="title"><a href="' + item['url'] + '" class="st-search-result-link">' + item['title'] + '</a></h4><div class="st-metadata"><span class="st-url">' + item['url'] + '</span><span class="st-snippet">' + item.highlight['body'] !=='' ? item.highlight['body'] : item['body'].substring(0, 300) + '</span></div></div>';
+        var out = '<div class="st-result"><h4 class="title"><a href="' + item['url'] + '" class="st-search-result-link">' + item['title'] + '</a></h4><div class="st-metadata"><span class="st-url">' + item['url'] + '</span><span class="st-snippet">' + item.highlight['body'] !=='' ? item.highlight['body'] : escape( item['body'].substring(0, 300) ) + '</span></div></div>';
 
         return out;
     };
