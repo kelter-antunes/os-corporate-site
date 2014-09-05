@@ -5224,7 +5224,6 @@ h5.card-h a
     font-size:40px;
     padding:0;
     text-align:center;
-    line-height:50px;
     text-shadow:1px 2px 0 rgba(0,0,0,0.3);
     background-color:#000;
     margin:0 15px;
@@ -5234,6 +5233,7 @@ h5.card-h a
     border-radius:15%;
     -moz-border-radius:15%;
     -webkit-border-radius:15%
+    min-width: 60px;
 }
 
 .app-card-icon:before
