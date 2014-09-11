@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <div class="banner" id="banner">
+        <noscript>
+          <h1>
+            <img id ="quote-image-customers" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-wodify&v=20140211145025" alt="With the OutSystems Platform we are able to turn our application on its head without risking the data or experience of 60,000 users."></h1>
+          </noscript>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script language="javascript">
+
+  var images = {
+    img: [
+    {
+      src: '/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-wodify&v=20140211145025',
+      alt: 'With the OutSystems Platform we are able to turn our application on its head without risking the data or experience of 60,000 users.'
+    }, 
+    {
+      src: '/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-crl&v=20140211145025',
+      alt: 'With the OutSystems Platform we have delivered custom applications that are giving us a significant competitive advantage.'
+    }, 
+    {
+      src: '/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-wodify&v=20140211145025',
+      alt: 'With the OutSystems Platform we are able to turn our application on its head without risking the data or experience of 60,000 users.'
+    }
+    ]
+  }
+
+  var pos = Math.floor(Math.random() * images.img.length);
+  var alt;
+  $('<h1><img src="' + images.img[pos].src + '" alt="' + images.img[pos].alt + '"></h1>').appendTo('#banner');
+  </script>

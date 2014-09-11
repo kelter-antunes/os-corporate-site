@@ -156,6 +156,11 @@ a.byline:hover
     display:none
 }
 
+.Invisible
+{
+    display:none
+}
+
 .contact_us
 {
     position:fixed;
