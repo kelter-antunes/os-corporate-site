@@ -5,32 +5,35 @@ osjs(function(a) {
         b = b.replace("agile-platform", "platform");
         var c = b.replace(/.*#/, "");
         c = c.replace(/&_=.*/, "");
-
+        var lastChar = c.substr(-1);
+        if (lastChar !== '/') {
+            c = c + '/';
+        }
         if (c != "_")
             setTimeout(function() {
-                osjs("a[href$=\"" + c + "\"]")[0].click()
-            }, 1e3)
+                osjs("a[href$=\"" + c + "\"]")[0].click();
+            }, 1e3);
     }
 
     if ((/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) && width < 767) {} else {
         a(".popup_link").each(function() {
             if (!osjs(this).attr("id"))
                 osjs(this).attr("id", Math.random().toString().replace(".", ""));
-            RichWidgets_Popup_Editor_init(osjs(this).attr("id"), "", " ", -1, -1, osjs(this).attr("href"))
+            RichWidgets_Popup_Editor_init(osjs(this).attr("id"), "", " ", -1, -1, osjs(this).attr("href"));
         });
 
     }
     a(".tooltip_link").each(function() {
         if (!osjs(this).attr("id"))
             osjs(this).attr("id", Math.random().toString().replace(".", ""));
-        RichWidgets_Popup_Editor_init(osjs(this).attr("id"), "", " ", -1, -1, osjs(this).attr("href"))
+        RichWidgets_Popup_Editor_init(osjs(this).attr("id"), "", " ", -1, -1, osjs(this).attr("href"));
     });
 
     a(".popup_link").click(function() {
         var b = a(this).attr("id");
         if (typeof pageTracker != "undefined")
             pageTracker._trackPageview(a("#" + b).attr("href"));
-    })
+    });
 
 });
 
@@ -45,10 +48,10 @@ osjs(".Popup").live("dialogopen", function(a, b) {
                 osjs(".Popup").animate({
                     top: $(window).scrollTop() + 30
                 }, 200);
-        }, 1e3)
+        }, 1e3);
 
 
-    })
+    });
 });
 
 $(function() {
@@ -67,9 +70,9 @@ $(function() {
                     if ($('.mfp-os-popup-content').find('iframe').length == 1) {
                         //is video
                         content = $('.mfp-os-popup-content').find('iframe');
-                        if (content.height() != 0) {
-                            $('.mfp-os-thumbs').height(content.height())
-                        };
+                        if (content.height() !== 0) {
+                            $('.mfp-os-thumbs').height(content.height());
+                        }
 
                     } else {
                         //is screenshot
@@ -156,7 +159,7 @@ var messageEvent_Global = eventMethod_Global == "attachEvent" ? "onmessage" : "m
 
 // Listen to message from child window
 eventer_Global(messageEvent_Global, function(e) {
-    if (e.data != "") {
+    if (e.data !== "") {
         $("#pd_frame").css('height', e.data);
     }
 }, false);
@@ -203,7 +206,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-    if (osjs.cookie('OS_AcceptCookies') == null) {
+    if (osjs.cookie('OS_AcceptCookies') === null) {
 
         $.getJSON("http://www.telize.com/geoip?callback=?",
             function(json) {
@@ -247,7 +250,7 @@ $(document).ready(function() {
             $('.warning_EU_cookiemsg').slideDown(500);
         }
 
-    };
+    }
 
 
 });
@@ -260,15 +263,15 @@ function checkhttps() {
 
     $("iframe").each(function() {
         if ($(this).attr("src").match('^http://go.outsystems.com')) {
-            $(this).attr("src", $(this).attr("src").replace("http://go.outsystems.com", "https://go.pardot.com"))
+            $(this).attr("src", $(this).attr("src").replace("http://go.outsystems.com", "https://go.pardot.com"));
         }
     });
     $("iframe").each(function() {
-        if ($(this).attr("src").indexOf("/") == 0) {
+        if ($(this).attr("src").indexOf("/") === 0) {
 
             $(this).contents().find('iframe').each(function() {
                 if ($(this).attr("src").match('^http://go.outsystems.com')) {
-                    $(this).attr("src", $(this).attr("src").replace("http://go.outsystems.com", "https://go.pardot.com"))
+                    $(this).attr("src", $(this).attr("src").replace("http://go.outsystems.com", "https://go.pardot.com"));
                 }
             });
         }
