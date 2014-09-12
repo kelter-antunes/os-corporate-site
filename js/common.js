@@ -293,7 +293,9 @@ var mktoH = function marketoHeight() {
 };
 $(document).ready(function() {
 
-    if ($("iframe[src*='http://go1.outsystems.com/']").length !== 0) {
+    var mktoFrame = $("iframe[src*='http://go1.outsystems.com/']");
+    if (mktoFrame.length !== 0) {
+        mktoFrame.parent().css('overflow-x', 'hidden');
         setTimeout(mktoH, 2500);
     }
 

@@ -878,7 +878,7 @@ a.tooltip-link
     vertical-align:middle;
     cursor:pointer;
     margin:0;
-    color:#fff !important;
+    color:#fff!important;
     font-size:18px;
     background-color:#c20;
     background-image:-moz-linear-gradient(top,#c20,#ac1e01);
@@ -7943,6 +7943,15 @@ div.st-result .st-date
 .submenuhoverbox-firstcontent h1
 {
     margin-bottom:30px
+}
+
+.submenuhoverbox-firstcontent p.h1
+{
+    margin-bottom:30px;
+    line-height:40px;
+    font-size:36px;
+    font-weight:600;
+    color:#333
 }
 
 .submenuhoverbox-secondcontent
