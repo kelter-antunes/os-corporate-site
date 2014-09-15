@@ -124,6 +124,7 @@
             $(window).hashchange(function() {
                 var params = $.hashParams();
                 var queryP = $.queryParams();
+                 if (params.stq || queryP.tag) {
                     submitSearch(params.stq, {
                         page: params.stp
                     });
