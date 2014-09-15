@@ -49,6 +49,7 @@ $(function() {
         renderFunction: customRendererSearch,
         perPage: 10,
         resultPageURL: '/search/',
+        searchFields: {'page': ['title', 'sections']},
         filters: function() {
             return {
                 'page': {
