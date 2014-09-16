@@ -10,7 +10,6 @@ var RichWidgets_Popup_Editor_ClosingValue = 'true';
 
 
 function RichWidgets_Popup_Editor_init(linkId, notifyId, setTitle, setHeight, setWidth, parentUrl, useModal, autoResize, recenterOnResize, hideCloseButton) {
-
     var GetLinkHref = function(widget) {
         var linkHref;
         var isAButton = false;
@@ -119,55 +118,63 @@ function RichWidgets_Popup_Editor_init(linkId, notifyId, setTitle, setHeight, se
 
 
 
-function OpenPopup(divToPopup, setTitle, setHeight, setWidth, divPleaseWait, hideCloseButton) {
-    RichWidgets_Popup_Editor_Close(null);
+        function OpenPopup(divToPopup, setTitle, setHeight, setWidth, divPleaseWait, hideCloseButton) {
+            RichWidgets_Popup_Editor_Close(null);
+
+            var closingPopups = $('.ui-dialog-content');
+            for (var i = 0; i < closingPopups.length; i++) {
+                if (osjs.data(closingPopups.get(i), RichWidgets_Popup_Editor_ClosingTag) == RichWidgets_Popup_Editor_ClosingValue) {
+                    setTimeout(function() {
+                        OpenPopup(divToPopup, setTitle, setHeight, setWidth, divPleaseWait, hideCloseButton);
+                    }, 13);
+                    return false;
+                }
+            }
+
+            $(divPleaseWait).show();
+            if (setHeight == -1) setHeight = RichWidgets_Popup_Editor_InitialHeight;
+            $(divToPopup).show().dialog({
+                dialogClass: 'Popup',
+                resizable: false,
+                autoResize: false,
+                closeOnEscape: !hideCloseButton,
+                bgiframe: true,
+                draggable: false,
+                autoOpen: true,
+                title: setTitle,
+                modal: (useModal !== false),
+                height: setHeight,
+                position: 'center',
+                width: ((setWidth == -1) ? RichWidgets_Popup_Editor_InitialWidth : setWidth),
+                zIndex: RichWidgets_Popup_Editor_Index,
+                close: function() {
+                    $(divToPopup).find('iframe').unbind("load");
+                    $(divToPopup).find('iframe').attr('src', 'about:blank');
+                    document.location.href = "#_";
+                    setTimeout(function() {
+                        $(divToPopup).find('iframe').empty();
+                        $(divToPopup).empty();
+
+                    }, 13);
+                }
+            });
+            $(divToPopup).find('iframe').height(0);
+            document.location.replace("#" + linkHrefClicked);
 
 
-
-    $(divPleaseWait).show();
-    if (setHeight == -1) setHeight = RichWidgets_Popup_Editor_InitialHeight;
-    $(divToPopup).show().dialog({
-        dialogClass: 'Popup',
-        resizable: false,
-        autoResize: false,
-        closeOnEscape: !hideCloseButton,
-        bgiframe: true,
-        draggable: false,
-        autoOpen: true,
-        title: setTitle,
-        modal: (useModal !== false),
-        height: setHeight,
-        position: 'center',
-        width: ((setWidth == -1) ? RichWidgets_Popup_Editor_InitialWidth : setWidth),
-        zIndex: RichWidgets_Popup_Editor_Index,
-        close: function() {
-            $(divToPopup).find('iframe').unbind("load");
-            $(divToPopup).find('iframe').attr('src', 'about:blank');
-            document.location.href = "#_";
-            setTimeout(function() {
-                $(divToPopup).find('iframe').empty();
-                $(divToPopup).empty();
-
-            }, 13);
+            if (setTitle == " ") {
+                $(".ui-dialog-titlebar").height(0);
+                $(".ui-dialog-titlebar-close").attr("class", "ui-dialog-titlebar-close-no-title").html("").hide();
+                $(".ui-dialog").css("overflow", "visible");
+            } else {
+                var titleHeight = $('.ui-dialog-titlebar').height();
+                $(divToPopup).parents('.Popup').height(setHeight + titleHeight);
+            }
+            if (hideCloseButton) {
+                $(".ui-dialog-titlebar-close, .ui-dialog-titlebar-close-no-title").remove();
+            }
         }
     });
-    $(divToPopup).find('iframe').height(0);
-    document.location.replace("#" + linkHrefClicked);
-
-
-    if (setTitle == " ") {
-        $(".ui-dialog-titlebar").height(0);
-        $(".ui-dialog-titlebar-close").attr("class", "ui-dialog-titlebar-close-no-title").html("").hide();
-        $(".ui-dialog").css("overflow", "visible");
-    } else {
-        var titleHeight = $('.ui-dialog-titlebar').height();
-        $(divToPopup).parents('.Popup').height(setHeight + titleHeight);
-    }
-    if (hideCloseButton) {
-        $(".ui-dialog-titlebar-close, .ui-dialog-titlebar-close-no-title").remove();
-    }
-}
-});
 
 
 }
@@ -178,10 +185,10 @@ function RichWidgets_Popup_Editor_Close(iFrame) {
     popupToClose = osjs('.ui-dialog-content');
     osjs(popupToClose).data(RichWidgets_Popup_Editor_ClosingTag, RichWidgets_Popup_Editor_ClosingValue);
     setTimeout(function() {
-        osjs(popupToClose).dialog('close');
-        osjs(popupToClose).remove();
-    },
-    0);
+            osjs(popupToClose).dialog('close');
+            osjs(popupToClose).remove();
+        },
+        0);
 }
 
 function RichWidgets_Popup_Editor_resize(divToPopup, setWidth, setHeight, recenter) {
@@ -243,29 +250,29 @@ function RichWidgets_Popup_Editor_resize(divToPopup, setWidth, setHeight, recent
     if (divPopupOuterWindow.width() == animateFinal.width &&
         divPopupOuterWindow.height() == (animateFinal.height - (osjs.browser.msie ? 1 : 0))) {
         osjs("#pleaseWaitDiv").hide();
-    osjs(divToPopup).height(height - (osjs.browser.msie ? 1 : 0));
-    return true;
-}
+        osjs(divToPopup).height(height - (osjs.browser.msie ? 1 : 0));
+        return true;
+    }
 
-if (divPopupOuterWindow.width() == RichWidgets_Popup_Editor_InitialWidth &&
-    divPopupOuterWindow.height() == RichWidgets_Popup_Editor_InitialHeight) {
-    osjs(frameObj).height(0);
-}
-var onAnimationComplete = function() {
-    setTimeout(function() {
-        osjs(divToPopup).dialog('size');
-        osjs('.ui-dialog-titlebar-close-no-title').css('display', 'block');
-        osjs(divToPopup).find('iframe').height("100%").width(animateFinal.width);
+    if (divPopupOuterWindow.width() == RichWidgets_Popup_Editor_InitialWidth &&
+        divPopupOuterWindow.height() == RichWidgets_Popup_Editor_InitialHeight) {
+        osjs(frameObj).height(0);
+    }
+    var onAnimationComplete = function() {
+        setTimeout(function() {
+            osjs(divToPopup).dialog('size');
+            osjs('.ui-dialog-titlebar-close-no-title').css('display', 'block');
+            osjs(divToPopup).find('iframe').height("100%").width(animateFinal.width);
 
-    }, 13);
-};
-var divPleaseWait = osjs("#pleaseWaitDiv");
-divPleaseWait.hide();
+        }, 13);
+    };
+    var divPleaseWait = osjs("#pleaseWaitDiv");
+    divPleaseWait.hide();
 
-if (setHeight == -1 || setWidth == -1) divPopupOuterWindow.animate(animateFinal, {
-    duration: 200,
-    complete: onAnimationComplete
-});
+    if (setHeight == -1 || setWidth == -1) divPopupOuterWindow.animate(animateFinal, {
+        duration: 200,
+        complete: onAnimationComplete
+    });
     else onAnimationComplete();
 
     innerDoc = null;
