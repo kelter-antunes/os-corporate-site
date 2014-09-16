@@ -102,7 +102,7 @@ $(window).resize(function() {
 
 $(document).mouseup(function(e) {
 
-    if ($.magnificPopup.instance.currItem !== undefined) {
+    if ($.magnificPopup.instance.currItem !== undefined || $.magnificPopup.instance.currItem !== null) {
 
         if ($.magnificPopup.instance.currItem.type === 'ajax') {
             var container = $('.mfp-back');
