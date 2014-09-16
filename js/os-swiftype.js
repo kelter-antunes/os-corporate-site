@@ -91,6 +91,7 @@ $('#st-search-input').swiftype({
     engineKey: 'GZhgtDYXiyvDjz48t2SP',
     resultRenderFunction: customResultRenderFunction,
     setWidth: false,
+    fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight']},
     resultLimit : 15  
 });
 
