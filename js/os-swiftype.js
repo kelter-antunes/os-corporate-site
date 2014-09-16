@@ -87,9 +87,9 @@ $(function() {
             }
 
         });
-        if(leaf !== '') 
-            ctx.registerResult($(leaf).appendTo(WebSiteList), item);
-
+        if(leaf !== '') {
+            ctx.registerResult($("'" + leaf + "'").appendTo(WebSiteList), item);
+        }
 
         $.each(Blog, function(idx, item) {
             var out = '<p class="title">' + item['title'] + '</p>';
