@@ -34,17 +34,22 @@ $(function() {
         $.each(data, function(docType, results) {
           $.each(results, function(idx, result) {
               WebSite.push(result);
-      });
+          });
       });
 
         var WebSiteList = $('<ul class="WebSite"></ul>'),
         BlogList = $('<ul class="Blog"></ul>');
 
         $.each(WebSite, function(idx, item) {
-          ctx.registerResult($('<li class="result"><p>' + item['name'] + '</p></li>').appendTo(WebSiteList), item);
-      });
+            var out = '<p class="title">' + item['title'] + '</p>';
+            if (item.highlight.sections) {
+                var i = '<span class="section">' + item.highlight.sections + "</span>";
+                out = out.concat('<p class="sections">' + i + "</p>");
+            }
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
+        });
         $.each(Blog, function(idx, item) {
-          ctx.registerResult($('<li class="result"><p>' + item['name'] + '</p></li>').appendTo(BlogList), item);
+          ctx.registerResult($('<li class="result">' + '<p class="title">' + item['title'] + '</p>' + '</li>').appendTo(BlogList), item);
       });
         if (WebSite.length > 0) {
           WebSiteList.appendTo(ctx.list);
@@ -91,7 +96,7 @@ $('#st-search-input').swiftype({
     engineKey: 'GZhgtDYXiyvDjz48t2SP',
     resultRenderFunction: customResultRenderFunction,
     setWidth: false,
-    fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight']},
+    fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']},
     resultLimit : 15  
 });
 
