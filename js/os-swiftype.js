@@ -81,7 +81,6 @@ $(function() {
 
             leaf = leaf.concat(out);
 
-            //ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
             if(WebSite.length-1){
                 leaf = leaf.concat('</div>');
             }
