@@ -87,7 +87,7 @@ $(function() {
             }
 
         });
-        if(leaf<>'') 
+        if(leaf !== '') 
             ctx.registerResult($(leaf).appendTo(WebSiteList), item);
 
 
