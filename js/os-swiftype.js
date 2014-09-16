@@ -78,7 +78,7 @@ $(function() {
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
             out = out.concat('<p class="sections">' + item['type'] + "</p>");
-            ctx.registerResult($('<li class="result">' + '<p class="title">' + item['title'] + '</p>' + '</li>').appendTo(BlogList), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(BlogList), item);
         });
 
         $.each(Forge, function(idx, item) {
@@ -88,7 +88,7 @@ $(function() {
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
             out = out.concat('<p class="sections">' + item['type'] + "</p>");
-            ctx.registerResult($('<li class="result">' + '<p class="title">' + item['title'] + '</p>' + '</li>').appendTo(ForgeList), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(ForgeList), item);
         });
 
         $.each(Academy, function(idx, item) {
@@ -98,7 +98,7 @@ $(function() {
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
             out = out.concat('<p class="sections">' + item['type'] + "</p>");
-            ctx.registerResult($('<li class="result">' + '<p class="title">' + item['title'] + '</p>' + '</li>').appendTo(AcademyList), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(AcademyList), item);
         });
 
         $.each(Help, function(idx, item) {
@@ -108,7 +108,7 @@ $(function() {
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
             out = out.concat('<p class="sections">' + item['type'] + "</p>");
-            ctx.registerResult($('<li class="result">' + '<p class="title">' + item['title'] + '</p>' + '</li>').appendTo(HelpList), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(HelpList), item);
         });
         $.each(Ideas, function(idx, item) {
             var out = '<p class="title">' + item['title'] + '</p>';
@@ -117,7 +117,7 @@ $(function() {
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
             out = out.concat('<p class="sections">' + item['type'] + "</p>");
-            ctx.registerResult($('<li class="result">' + '<p class="title">' + item['title'] + '</p>' + '</li>').appendTo(IdeasList), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(IdeasList), item);
         });
 
 
