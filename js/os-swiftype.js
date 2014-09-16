@@ -65,15 +65,31 @@ $(function() {
         IdeasList = $('<ul class="Ideas"></ul>'),
         ForumsList = $('<ul class="Forums"></ul>');
 
+        
+        var leaf = '';
         $.each(WebSite, function(idx, item) {
+
+            if(idx===0){
+                leaf = '<div class="column1" > <p class="sections">' + item['type'] + "</p> </div> <div class='column2'>";
+            }
+          
             var out = '<p class="title">' + item['title'] + '</p>';
             if (item.highlight.sections) {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
-            out = out.concat('<p class="sections">' + item['type'] + "</p>");
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
+
+            leaf = leaf.concat(out);
+
+            //ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
+            if(WebSite.length-1){
+                leaf = leaf.concat('</div>');
+            }
+
         });
+        if(leaf<>'') 
+            ctx.registerResult($(leaf).appendTo(WebSiteList), item);
+
 
         $.each(Blog, function(idx, item) {
             var out = '<p class="title">' + item['title'] + '</p>';
@@ -195,7 +211,7 @@ $('#st-search-input').swiftype({
     engineKey: 'GZhgtDYXiyvDjz48t2SP',
     resultRenderFunction: customResultRenderFunction,
     setWidth: false,
-    resultLimit: 1000,
+    resultLimit: 100,
     fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']},
 });
 

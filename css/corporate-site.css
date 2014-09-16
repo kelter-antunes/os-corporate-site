@@ -523,7 +523,7 @@ a.byline:hover
 .parallax-viewport
 {
     position:relative;
-/* relative, absolute, fixed */
+    /* relative, absolute, fixed */
     overflow:hidden
 }
 
@@ -4065,7 +4065,7 @@ a.ViewMoreLink
 {
     display:block;
     display:none\9;
-/* IE8 and below */
+    /* IE8 and below */
     content:"";
     border-color:#fff rgba(0,0,0,0) rgba(0,0,0,0);
     border-style:solid;
@@ -5303,7 +5303,7 @@ h5.card-h a
     top:0;
     left:0;
     width:7584px;
-/*1264px window width times number of images*/
+    /*1264px window width times number of images*/
     height:440px;
     background-repeat:repeat;
     background-position:top left;
@@ -5312,20 +5312,20 @@ h5.card-h a
 
 .pxs_bg .pxs_bg1
 {
-/*background-image:url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-grey&v=201406081625');*/
-/*left negative 1/8 of ww*/
+    /*background-image:url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-grey&v=201406081625');*/
+    /*left negative 1/8 of ww*/
 }
 
 .pxs_bg .pxs_bg2
 {
     background-image:/*left negative 1/4 of ww*/
-url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-grey&v=201406081625)
+    url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-grey&v=201406081625)
 }
 
 .pxs_bg .pxs_bg3
 {
     background-image:/*left negative 1/2 of ww*/
-url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-red&v=201406081625)
+    url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-red&v=201406081625)
 }
 
 .pxs_slider_wrapper
@@ -6629,7 +6629,7 @@ a.past-list-link:link h5,a.past-list-link:hover h5,a.past-list-link:active h5,a.
 
 .innovationawards-matrix-entry-details-inner a
 {
-/*margin-right: 30px;*/
+    /*margin-right: 30px;*/
 }
 
 .innovationawards-matrix-entry-details-inner ul
@@ -6830,7 +6830,7 @@ a.past-list-link:link h5,a.past-list-link:hover h5,a.past-list-link:active h5,a.
 
 .case-study-customer-quote-arrow_span12
 {
-/*background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-arrow_span12&amp;v=201406081625');*/
+    /*background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-arrow_span12&amp;v=201406081625');*/
     background-image:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=arrow-span5&v=20140416101624);
     background-repeat:no-repeat;
     background-position:left top;
@@ -7118,7 +7118,7 @@ div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimo
 
 .header-contacts
 {
-/*width: 172px;*/
+    /*width: 172px;*/
     height:15px;
     background-color:#f9f9fb;
     border:2px;
@@ -7145,7 +7145,7 @@ div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimo
 .Menu_TopMenuActive
 {
     border-bottom:/* background: #393939; */
-none
+    none
 }
 
 .Menu_TopMenu
@@ -7295,19 +7295,19 @@ a.Menu_SubMenuItem,a.Menu_SubMenuItem:hover,a.Menu_SubMenuItem:link,a.Menu_SubMe
     padding-left:0;
     padding-top:0;
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr = '#000000',endColorstr = '#313131');
-/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
-/*Element must have a height (not auto)*/
-/*All filters must be placed together*/
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
     -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr = '#000000',endColorstr = '#313131')";
-/*Element must have a height (not auto)*/
-/*All filters must be placed together*/
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
     background-image:-moz-linear-gradient(top,#000,#313131);
     background-image:-ms-linear-gradient(top,#000,#313131);
     background-image:-o-linear-gradient(top,#000,#313131);
     background-image:-webkit-gradient(linear,center top,center bottom,from(#000),to(#313131));
     background-image:-webkit-linear-gradient(top,#000,#313131);
     background-image:linear-gradient(top,#000,#313131);
-/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+    /*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
     border:1px solid #fff;
     border-top:0;
     box-shadow:-1px 0 10px 1px #000
@@ -7388,7 +7388,7 @@ body > div.Application_Menu
     *display:inline;
     *zoom:1;
     *z-index:/* required for IE7 */
-200
+    200
 }
 
 .Menu_DropDownButton.open
@@ -7717,6 +7717,22 @@ div.st-result .st-date
     -o-border-radius:3px;
     border-radius:3px;
     text-align:left
+}
+
+.swiftype-widget .autocomplete div.column1
+{
+    margin-top: 30px;
+    float: left;
+    width: 40px;
+    text-align: left;
+}
+
+.swiftype-widget .autocomplete div.column1
+{
+    float: left;
+    width: 500px;
+    padding-left: 10px;
+    border-left: 1px solid #ccc;
 }
 
 .swiftype-widget .autocomplete li
