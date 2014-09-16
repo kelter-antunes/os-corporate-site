@@ -104,13 +104,16 @@ $(document).mouseup(function(e) {
 
     if ($.magnificPopup.instance.currItem !== undefined) {
 
-        if ($.magnificPopup.instance.currItem.type === 'ajax') {
-            var container = $('.mfp-back');
-            if ((!container.is(e.target) && container.has(e.target).length === 0)) {
-                $.magnificPopup.close();
-            }
-        }
+        if ($.magnificPopup.instance.currItem !== null) {
 
+            if ($.magnificPopup.instance.currItem.type === 'ajax') {
+                var container = $('.mfp-back');
+                if ((!container.is(e.target) && container.has(e.target).length === 0)) {
+                    $.magnificPopup.close();
+                }
+            }
+
+        }
     }
 
 
@@ -118,13 +121,16 @@ $(document).mouseup(function(e) {
 
 $(document).keyup(function(e) {
 
-    if ($.magnificPopup.instance.currItem !== undefined) {
+ if ($.magnificPopup.instance.currItem !== undefined) {
+
+    if ($.magnificPopup.instance.currItem !== null) {
         if ($.magnificPopup.instance.currItem.type === 'ajax') {
             if (e.keyCode == 27) {
                 $.magnificPopup.close();
             }
         }
     }
+}
 });
 
 
