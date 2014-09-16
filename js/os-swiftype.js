@@ -70,7 +70,7 @@ $(function() {
         $.each(WebSite, function(idx, item) {
 
             if(idx===0){
-                leaf = '<div class="column1" > <p class="sections">' + item['type'] + "</p> </div> <div class='column2'>";
+                leaf = '<div class="column1" > <p class="sections">' + item['type'] + '</p> </div> <div class="column2>';
             }
           
             var out = '<p class="title">' + item['title'] + '</p>';
