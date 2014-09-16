@@ -28,23 +28,38 @@ $(function() {
 
 
     var customResultRenderFunction = function(ctx, data) {
-        var WebSite = [],
-        Blog = [];
+        var WebSite = [], Blog = [], Forge = [], Academy = [],
+        Help = [], Ideas = []; 
 
         $.each(data, function(docType, results) {
           $.each(results, function(idx, result) {
             if(result.type && result.type === 'website' && WebSite.length < 5){
               WebSite.push(result);
           }
-          if(result.type && result.type === 'blog' && Blog.length < 5){
+            if(result.type && result.type === 'blog' && Blog.length < 5){
               Blog.push(result);
+          }            
+            if(result.type && result.type === 'forge' && Forge.length < 5){
+              Forge.push(result);
+          }            
+            if(result.type && result.type === 'academy' && Academy.length < 5){
+              Academy.push(result);
+          }            
+            if(result.type && result.type === 'help' && Help.length < 5){
+              Help.push(result);
+          }            
+            if(result.type && result.type === 'ideas' && Ideas.length < 5){
+              Ideas.push(result);
           }
-
       });
       });
 
         var WebSiteList = $('<ul class="WebSite"></ul>'),
-        BlogList = $('<ul class="Blog"></ul>');
+        BlogList = $('<ul class="Blog"></ul>'),
+        ForgeList = $('<ul class="Forge"></ul>'),
+        AcademyList = $('<ul class="Academy"></ul>'),
+        HelpList = $('<ul class="Help"></ul>'),
+        IdeasList = $('<ul class="Ideas"></ul>');
 
         $.each(WebSite, function(idx, item) {
             var out = '<p class="title">' + item['title'] + '</p>';
@@ -66,11 +81,63 @@ $(function() {
             ctx.registerResult($('<li class="result">' + '<p class="title">' + item['title'] + '</p>' + '</li>').appendTo(BlogList), item);
         });
 
+        $.each(Forge, function(idx, item) {
+            var out = '<p class="title">' + item['title'] + '</p>';
+            if (item.highlight.sections) {
+                var i = '<span class="section">' + item.highlight.sections + "</span>";
+                out = out.concat('<p class="sections">' + i + "</p>");
+            }
+            out = out.concat('<p class="sections">' + item['type'] + "</p>");
+            ctx.registerResult($('<li class="result">' + '<p class="title">' + item['title'] + '</p>' + '</li>').appendTo(ForgeList), item);
+        });
+
+        $.each(Academy, function(idx, item) {
+            var out = '<p class="title">' + item['title'] + '</p>';
+            if (item.highlight.sections) {
+                var i = '<span class="section">' + item.highlight.sections + "</span>";
+                out = out.concat('<p class="sections">' + i + "</p>");
+            }
+            out = out.concat('<p class="sections">' + item['type'] + "</p>");
+            ctx.registerResult($('<li class="result">' + '<p class="title">' + item['title'] + '</p>' + '</li>').appendTo(AcademyList), item);
+        });
+
+        $.each(Help, function(idx, item) {
+            var out = '<p class="title">' + item['title'] + '</p>';
+            if (item.highlight.sections) {
+                var i = '<span class="section">' + item.highlight.sections + "</span>";
+                out = out.concat('<p class="sections">' + i + "</p>");
+            }
+            out = out.concat('<p class="sections">' + item['type'] + "</p>");
+            ctx.registerResult($('<li class="result">' + '<p class="title">' + item['title'] + '</p>' + '</li>').appendTo(HelpList), item);
+        });
+        $.each(Ideas, function(idx, item) {
+            var out = '<p class="title">' + item['title'] + '</p>';
+            if (item.highlight.sections) {
+                var i = '<span class="section">' + item.highlight.sections + "</span>";
+                out = out.concat('<p class="sections">' + i + "</p>");
+            }
+            out = out.concat('<p class="sections">' + item['type'] + "</p>");
+            ctx.registerResult($('<li class="result">' + '<p class="title">' + item['title'] + '</p>' + '</li>').appendTo(IdeasList), item);
+        });
+
+
         if (WebSite.length > 0) {
           WebSiteList.appendTo(ctx.list);
       }
-      if (Blog.length > 0) {
+        if (Blog.length > 0) {
           BlogList.appendTo(ctx.list);
+      }
+        if (Forge.length > 0) {
+          ForgeList.appendTo(ctx.list);
+      }
+        if (Academy.length > 0) {
+          AcademyList.appendTo(ctx.list);
+      }
+        if (Help.length > 0) {
+          HelpList.appendTo(ctx.list);
+      }
+        if (Ideas.length > 0) {
+          IdeasList.appendTo(ctx.list);
       }
   };
 
