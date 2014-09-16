@@ -29,7 +29,7 @@ $(function() {
 
     var customResultRenderFunction = function(ctx, data) {
         var WebSite = [], Blog = [], Forge = [], Academy = [],
-        Help = [], Ideas = []; 
+        Help = [], Ideas = [], Forums = []; 
 
         $.each(data, function(docType, results) {
           $.each(results, function(idx, result) {
@@ -50,6 +50,9 @@ $(function() {
           }            
             if(result.type && result.type === 'ideas' && Ideas.length < 5){
               Ideas.push(result);
+          }            
+            if(result.type && result.type === 'forums' && Forums.length < 5){
+              Forums.push(result);
           }
       });
       });
@@ -59,7 +62,8 @@ $(function() {
         ForgeList = $('<ul class="Forge"></ul>'),
         AcademyList = $('<ul class="Academy"></ul>'),
         HelpList = $('<ul class="Help"></ul>'),
-        IdeasList = $('<ul class="Ideas"></ul>');
+        IdeasList = $('<ul class="Ideas"></ul>'),
+        ForumsList = $('<ul class="Forums"></ul>');
 
         $.each(WebSite, function(idx, item) {
             var out = '<p class="title">' + item['title'] + '</p>';
@@ -110,6 +114,7 @@ $(function() {
             out = out.concat('<p class="sections">' + item['type'] + "</p>");
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(HelpList), item);
         });
+
         $.each(Ideas, function(idx, item) {
             var out = '<p class="title">' + item['title'] + '</p>';
             if (item.highlight.sections) {
@@ -120,6 +125,15 @@ $(function() {
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(IdeasList), item);
         });
 
+        $.each(Forums, function(idx, item) {
+            var out = '<p class="title">' + item['title'] + '</p>';
+            if (item.highlight.sections) {
+                var i = '<span class="section">' + item.highlight.sections + "</span>";
+                out = out.concat('<p class="sections">' + i + "</p>");
+            }
+            out = out.concat('<p class="sections">' + item['type'] + "</p>");
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(ForumsList), item);
+        });
 
         if (WebSite.length > 0) {
           WebSiteList.appendTo(ctx.list);
@@ -138,6 +152,9 @@ $(function() {
       }
         if (Ideas.length > 0) {
           IdeasList.appendTo(ctx.list);
+      }
+      if (Forums.length > 0) {
+          ForumsList.appendTo(ctx.list);
       }
   };
 
@@ -178,6 +195,7 @@ $('#st-search-input').swiftype({
     engineKey: 'GZhgtDYXiyvDjz48t2SP',
     resultRenderFunction: customResultRenderFunction,
     setWidth: false,
+    perPage: 100,
     fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']},
 });
 
