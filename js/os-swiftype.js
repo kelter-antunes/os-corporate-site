@@ -33,10 +33,7 @@ $(function() {
 
         $.each(data, function(docType, results) {
           $.each(results, function(idx, result) {
-            if (result.type && result.type === 'website' && WebSite.length < 15) {
               WebSite.push(result);
-          } 
-
       });
       });
 
@@ -93,9 +90,6 @@ $('#st-search-input').swiftypeSearch({
 $('#st-search-input').swiftype({
     engineKey: 'GZhgtDYXiyvDjz48t2SP',
     resultRenderFunction: customResultRenderFunction,
-    suggestionListType: 'div',
-    resultListSelector: '.result',
-    fetchFields: {page: ['url', 'title']},
     setWidth: false,
     resultLimit : 15  
 });
