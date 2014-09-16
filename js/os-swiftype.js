@@ -28,33 +28,34 @@ $(function() {
 
 
     var customResultRenderFunction = function(ctx, data) {
-        var withSections = [],
-        noSections = [];
+        var WebSite = [],
+        Blog = [];
 
         $.each(data, function(docType, results) {
           $.each(results, function(idx, result) {
-            if (result.sections && result.sections.length > 15) {
-              withSections.push(result);
-          } else {
-              noSections.push(result);
+            if (result.type && result.type === 'website' && WebSite.length < 5) {
+              WebSite.push(result);
+          } 
+          if (result.type && result.type === 'blog' && Blog.length < 5) {
+              Blog.push(result);
           }
       });
       });
 
-        var withSectionsList = $('<ul class="with_sections"></ul>'),
-        noSectionsList = $('<ul class="no_sections"></ul>');
+        var WebSiteList = $('<ul class="WebSite"></ul>'),
+        BlogList = $('<ul class="Blog"></ul>');
 
-        $.each(withSections, function(idx, item) {
-          ctx.registerResult($('<li class="result"><p>' + item['name'] + '</p></li>').appendTo(withSectionsList), item);
+        $.each(WebSite, function(idx, item) {
+          ctx.registerResult($('<li class="result"><p>' + item['name'] + '</p></li>').appendTo(WebSiteList), item);
       });
-        $.each(noSections, function(idx, item) {
-          ctx.registerResult($('<li class="result"><p>' + item['name'] + '</p></li>').appendTo(noSectionsList), item);
+        $.each(Blog, function(idx, item) {
+          ctx.registerResult($('<li class="result"><p>' + item['name'] + '</p></li>').appendTo(BlogList), item);
       });
-        if (withSections.length > 0) {
-          withSectionsList.appendTo(ctx.list);
+        if (WebSite.length > 0) {
+          WebSiteList.appendTo(ctx.list);
       }
-      if (noSections.length > 0) {
-          noSectionsList.appendTo(ctx.list);
+      if (Blog.length > 0) {
+          BlogList.appendTo(ctx.list);
       }
   };
 
