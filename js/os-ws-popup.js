@@ -94,7 +94,7 @@ function RichWidgets_Popup_Editor_init(linkId, notifyId, setTitle, setHeight, se
             }
             var popupDiv = $("<div style='text-align: center; display: none;'></div>").appendTo("body");
             popupDiv.append('<iframe width="100%" scrolling="auto" height="100%" frameborder="0" src="javascript:void(0);"/>');
-            var waitText = "Loading content...";
+            var waitText =  "Loading content...";
             var pleaseWaitDiv = popupDiv.prepend("<div id='pleaseWaitDiv' style='text-align: center; color: #FFF; font-size: 18px; padding: 15px 15px 15px 50px; position: absolute; background: #333 url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=ajax-loader) no-repeat 10px 50%; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; opacity: 0.7; width: 150px; left: 50%; margin-left: -107px;'>" + waitText + "</div>")
 
             OpenPopup(popupDiv, setTitle, setHeight, setWidth, pleaseWaitDiv, hideCloseButton);
@@ -202,13 +202,12 @@ function RichWidgets_Popup_Editor_resize(divToPopup, setWidth, setHeight, recent
         return false;
     }
     var frameObj = divToPopup.find('iframe')[0];
-    var innerDoc;
     var documentServer = document.location.href.replace(/(https?:\/\/[^\/]*).*/, '$1');
     var frameServer = frameObj.src.replace(/(https?:\/\/[^\/]*).*/, '$1');
     var sameOrigin = (frameServer.toLowerCase() == documentServer.toLowerCase() || frameServer.indexOf("http") != 0);
     if (!sameOrigin && (setWidth == -1 || setHeight == -1)) throw (new Error("A Popup with a screen from a different server (or https) needs explicict width, height set."));
     if (sameOrigin) {
-        innerDoc = (frameObj.contentDocument) ? frameObj.contentDocument : frameObj.contentWindow.document;
+        var innerDoc = (frameObj.contentDocument) ? frameObj.contentDocument : frameObj.contentWindow.document;
         if (innerDoc.documentElement.scrollHeight == 0) // strangely this event is also triggered on close
             return false;
     }
@@ -298,4 +297,4 @@ function RichWidgets_Popup_Editor_Close(iFrame) {
             osjs(popupToClose).remove();
         },
         0);
-}
+};
