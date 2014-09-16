@@ -33,8 +33,14 @@ $(function() {
 
         $.each(data, function(docType, results) {
           $.each(results, function(idx, result) {
+            if(result.type && result.type === 'website' && WebSite.length < 5){
               WebSite.push(result);
-          });
+          }
+          if(result.type && result.type === 'blog' && Blog.length < 5){
+              Blog.push(result);
+          }
+
+      });
       });
 
         var WebSiteList = $('<ul class="WebSite"></ul>'),
@@ -46,11 +52,20 @@ $(function() {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
+            out = out.concat('<p class="sections">' + item['type'] + "</p>");
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
         });
+
         $.each(Blog, function(idx, item) {
-          ctx.registerResult($('<li class="result">' + '<p class="title">' + item['title'] + '</p>' + '</li>').appendTo(BlogList), item);
-      });
+            var out = '<p class="title">' + item['title'] + '</p>';
+            if (item.highlight.sections) {
+                var i = '<span class="section">' + item.highlight.sections + "</span>";
+                out = out.concat('<p class="sections">' + i + "</p>");
+            }
+            out = out.concat('<p class="sections">' + item['type'] + "</p>");
+            ctx.registerResult($('<li class="result">' + '<p class="title">' + item['title'] + '</p>' + '</li>').appendTo(BlogList), item);
+        });
+
         if (WebSite.length > 0) {
           WebSiteList.appendTo(ctx.list);
       }
@@ -97,7 +112,6 @@ $('#st-search-input').swiftype({
     resultRenderFunction: customResultRenderFunction,
     setWidth: false,
     fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']},
-    resultLimit : 15  
 });
 
 $('#st-search-input-2').swiftype({
