@@ -94,7 +94,7 @@ function RichWidgets_Popup_Editor_init(linkId, notifyId, setTitle, setHeight, se
             }
             var popupDiv = $("<div style='text-align: center; display: none;'></div>").appendTo("body");
             popupDiv.append('<iframe width="100%" scrolling="auto" height="100%" frameborder="0" src="javascript:void(0);"/>');
-            var waitText = Â "Loading content...";
+            var waitText =  "Loading content...";
             var pleaseWaitDiv = popupDiv.prepend("<div id='pleaseWaitDiv' style='text-align: center; color: #FFF; font-size: 18px; padding: 15px 15px 15px 50px; position: absolute; background: #333 url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=ajax-loader) no-repeat 10px 50%; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; opacity: 0.7; width: 150px; left: 50%; margin-left: -107px;'>" + waitText + "</div>")
 
             OpenPopup(popupDiv, setTitle, setHeight, setWidth, pleaseWaitDiv, hideCloseButton);
