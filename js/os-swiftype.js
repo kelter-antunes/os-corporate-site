@@ -93,18 +93,16 @@ $('#st-search-input').swiftypeSearch({
 
 $('#st-search-input').swiftype({
     engineKey: 'GZhgtDYXiyvDjz48t2SP',
-    renderFunction: customRenderAutoComplete,
     resultRenderFunction: customResultRenderFunction,
     setWidth: false,
-    perPage: 15  
+    resultLimit : 15  
 });
 
 $('#st-search-input-2').swiftype({
     engineKey: 'GZhgtDYXiyvDjz48t2SP',
     renderFunction: customRenderAutoComplete,
-    resultRenderFunction: customResultRenderFunction,
     setWidth: false,
-    perPage: 15,
+    resultLimit : 15,
     filters: function() {
         return {
             'page': {
