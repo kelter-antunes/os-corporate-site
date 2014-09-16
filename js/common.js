@@ -102,26 +102,30 @@ $(window).resize(function() {
 
 $(document).mouseup(function(e) {
 
-    if ($.magnificPopup.instance.currItem !== undefined || $.magnificPopup.instance.currItem !== null) {
+    if ($.magnificPopup.instance.currItem !== undefined) {
 
-        if ($.magnificPopup.instance.currItem.type === 'ajax') {
-            var container = $('.mfp-back');
-            if ((!container.is(e.target) && container.has(e.target).length === 0)) {
-                $.magnificPopup.close();
+        if ($.magnificPopup.instance.currItem !== null) {
+
+            if ($.magnificPopup.instance.currItem.type === 'ajax') {
+                var container = $('.mfp-back');
+                if ((!container.is(e.target) && container.has(e.target).length === 0)) {
+                    $.magnificPopup.close();
+                }
             }
         }
-
     }
-
-
 });
 
 $(document).keyup(function(e) {
 
     if ($.magnificPopup.instance.currItem !== undefined) {
-        if ($.magnificPopup.instance.currItem.type === 'ajax') {
-            if (e.keyCode == 27) {
-                $.magnificPopup.close();
+
+        if ($.magnificPopup.instance.currItem !== null) {
+
+            if ($.magnificPopup.instance.currItem.type === 'ajax') {
+                if (e.keyCode == 27) {
+                    $.magnificPopup.close();
+                }
             }
         }
     }
@@ -201,9 +205,7 @@ $(document).ready(function() {
 });
 
 
-
 /** cookie message **/
-
 $(document).ready(function() {
 
     if (osjs.cookie('OS_AcceptCookies') === null) {
@@ -228,7 +230,6 @@ $(document).ready(function() {
                 }
             }
             );
-
 
         if ($('.warning_EU_cookiemsg').length >= 1) {
             $('.CloseArea').click(function() {
@@ -256,9 +257,7 @@ $(document).ready(function() {
 });
 
 
-
 /** pardot protocol fix **/
-
 function checkhttps() {
 
     $("iframe").each(function() {

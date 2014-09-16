@@ -211,7 +211,7 @@ function RichWidgets_Popup_Editor_resize(divToPopup, setWidth, setHeight, recent
         if (innerDoc.documentElement.scrollHeight == 0) // strangely this event is also triggered on close
             return false;
     }
-    var oldHeight = osjs(divToPopup).parents('.Popup').outerHeight();
+    var oldHeight = $(divToPopup).parents('.Popup').outerHeight();
     var width = ((setWidth == -1) ? osjs(innerDoc).width() : setWidth);
     var height = ((setHeight == -1) ? osjs(innerDoc).height() : setHeight);
 
@@ -225,12 +225,12 @@ function RichWidgets_Popup_Editor_resize(divToPopup, setWidth, setHeight, recent
         if (sameOrigin) innerDoc.body.style.height = 'auto';
     }
 
-    osjs(divToPopup).height(height);
+    $(divToPopup).height(height);
 
 
     //Hide ECT
     osjs(innerDoc).find('.ECT_FeedbackContainer').hide();
-    var divPopupOuterWindow = osjs(divToPopup).parents('.Popup');
+    var divPopupOuterWindow = $(divToPopup).parents('.Popup');
 
     var animateFinal = {};
 
@@ -251,7 +251,7 @@ function RichWidgets_Popup_Editor_resize(divToPopup, setWidth, setHeight, recent
     if (divPopupOuterWindow.width() == animateFinal.width &&
         divPopupOuterWindow.height() == (animateFinal.height - (osjs.browser.msie ? 1 : 0))) {
         osjs("#pleaseWaitDiv").hide();
-        osjs(divToPopup).height(height - (osjs.browser.msie ? 1 : 0)); // restore size
+        $(divToPopup).height(height - (osjs.browser.msie ? 1 : 0)); // restore size
         return true; // nothing to do...
     }
 
@@ -262,12 +262,12 @@ function RichWidgets_Popup_Editor_resize(divToPopup, setWidth, setHeight, recent
     }
     var onAnimationComplete = function() {
         setTimeout(function() {
-            osjs(divToPopup).dialog('size');
+            $(divToPopup).dialog('size');
             osjs('.ui-dialog-titlebar-close-no-title').css('display', 'block');
-            osjs(divToPopup).find('iframe').height("100%").width(animateFinal.width);
+            $(divToPopup).find('iframe').height("100%").width(animateFinal.width);
 
-            //osjs(divToPopup).dropShadow();
-            //osjs(divToPopup).css('background', '#fff');
+            //$(divToPopup).dropShadow();
+            //$(divToPopup).css('background', '#fff');
 
         }, 13);
     };
@@ -293,8 +293,8 @@ function RichWidgets_Popup_Editor_Close(iFrame) {
     popupToClose = osjs('.ui-dialog-content');
     osjs(popupToClose).data(RichWidgets_Popup_Editor_ClosingTag, RichWidgets_Popup_Editor_ClosingValue);
     setTimeout(function() {
-            osjs(popupToClose).dialog('close');
-            osjs(popupToClose).remove();
+            $(popupToClose).dialog('close');
+            $(popupToClose).remove();
         },
         0);
 };
