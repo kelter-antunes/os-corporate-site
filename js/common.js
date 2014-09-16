@@ -84,7 +84,7 @@ $(function() {
                     }
                 },
                 close: function() {
-                    window.location.hash = '';
+                    window.location.hash = '_';
                 }
             }
         });
