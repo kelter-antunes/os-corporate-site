@@ -10,6 +10,9 @@ var RichWidgets_Popup_Editor_ClosingTag = 'closing';
 var RichWidgets_Popup_Editor_ClosingValue = 'true';
 
 
+var popupDialog;
+
+
 function RichWidgets_Popup_Editor_init(linkId, notifyId, setTitle, setHeight, setWidth, parentUrl, useModal, autoResize, recenterOnResize, hideCloseButton) {
     var GetLinkHref = function(widget) {
         var linkHref;
@@ -34,11 +37,11 @@ function RichWidgets_Popup_Editor_init(linkId, notifyId, setTitle, setHeight, se
         } catch (e) {}
 
         return [linkHref, isAButton];
-    }
+    };
 
 
 
-    osjs().ready(function($) {
+    osjs().ready(function($){
 
         linkId = '#' + linkId;
 
@@ -72,14 +75,14 @@ function RichWidgets_Popup_Editor_init(linkId, notifyId, setTitle, setHeight, se
         }
 
         // if there's a confirmation message, store in an attribute the result
-        if (linkWidget.getAttribute('onclick') != null) {
+        if (linkWidget.getAttribute('onclick') !== null) {
             linkWidget.setAttribute('onclick', linkWidget.getAttribute('onclick').toString().replace("if( ret != true )", "osjs('" + linkId + "').get(0).setAttribute('confirmed', ret); if( ret != true )"));
         }
 
         $(linkWidget).click(function(event) {
 
             //Check if the clicked link is disabled
-            if (linkWidget.getAttribute('disabled') != null) {
+            if (linkWidget.getAttribute('disabled') !== null) {
                 var linkDisabled = linkWidget.getAttribute('disabled').toString().toLowerCase();
                 if (linkDisabled == 'disabled' || linkDisabled.indexOf('true') != -1) {
                     return false;
@@ -95,14 +98,14 @@ function RichWidgets_Popup_Editor_init(linkId, notifyId, setTitle, setHeight, se
             var popupDiv = $("<div style='text-align: center; display: none;'></div>").appendTo("body");
             popupDiv.append('<iframe width="100%" scrolling="auto" height="100%" frameborder="0" src="javascript:void(0);"/>');
             var waitText =  "Loading content...";
-            var pleaseWaitDiv = popupDiv.prepend("<div id='pleaseWaitDiv' style='text-align: center; color: #FFF; font-size: 18px; padding: 15px 15px 15px 50px; position: absolute; background: #333 url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=ajax-loader) no-repeat 10px 50%; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; opacity: 0.7; width: 150px; left: 50%; margin-left: -107px;'>" + waitText + "</div>")
+            var pleaseWaitDiv = popupDiv.prepend("<div id='pleaseWaitDiv' style='text-align: center; color: #FFF; font-size: 18px; padding: 15px 15px 15px 50px; position: absolute; background: #333 url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=ajax-loader) no-repeat 10px 50%; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; opacity: 0.7; width: 150px; left: 50%; margin-left: -107px;'>" + waitText + "</div>");
 
             OpenPopup(popupDiv, setTitle, setHeight, setWidth, pleaseWaitDiv, hideCloseButton);
             RichWidgets_Popup_Editor_notifyWidget = notifyId;
             //load target page
             var ohref = GetLinkHref(linkWidget)[0];
             var rhref = ohref.replace(/(\?|&)_=.*?(&|$)/, "$1_=" + (+new Date().now) + "$2");
-            var xhref = rhref + ((rhref == ohref) ? (rhref.indexOf('?') >= 0 ? "&" : "?") + "_=" + (+new Date) : '');
+            var xhref = rhref + ((rhref == ohref) ? (rhref.indexOf('?') >= 0 ? "&" : "?") + "_=" + (+new Date()) : '');
             popupDiv.find('iframe').attr('src', xhref);
             (function(popupDiv) {
                 popupDiv.find('iframe').load(function() {
@@ -124,7 +127,7 @@ function RichWidgets_Popup_Editor_init(linkId, notifyId, setTitle, setHeight, se
 
 
 
-        function OpenPopup(divToPopup, setTitle, setHeight, setWidth, divPleaseWait, hideCloseButton) {
+function OpenPopup(divToPopup, setTitle, setHeight, setWidth, divPleaseWait, hideCloseButton) {
             //destroy any previous dialog 
             RichWidgets_Popup_Editor_Close(null);
             // if any close is pending, schedule to execute itself asynchronously exit
@@ -133,7 +136,7 @@ function RichWidgets_Popup_Editor_init(linkId, notifyId, setTitle, setHeight, se
             for (var i = 0; i < closingPopups.length; i++) {
                 if (osjs.data(closingPopups.get(i), RichWidgets_Popup_Editor_ClosingTag) == RichWidgets_Popup_Editor_ClosingValue) {
                     setTimeout(function() {
-                        OpenPopup(divToPopup, setTitle, setHeight, setWidth, divPleaseWait, hideCloseButton)
+                        OpenPopup(divToPopup, setTitle, setHeight, setWidth, divPleaseWait, hideCloseButton);
                     }, 13);
                     return false;
                 }
@@ -141,7 +144,7 @@ function RichWidgets_Popup_Editor_init(linkId, notifyId, setTitle, setHeight, se
 
             $(divPleaseWait).show();
             if (setHeight == -1) setHeight = RichWidgets_Popup_Editor_InitialHeight;
-            $(divToPopup).show().dialog({
+            popupDialog = $(divToPopup).show().dialog({
                 dialogClass: 'Popup',
                 resizable: false,
                 autoResize: false,
@@ -166,23 +169,23 @@ function RichWidgets_Popup_Editor_init(linkId, notifyId, setTitle, setHeight, se
                     }, 13); //We need to delay this! or IE7 crashes
                 }
             });
-            $(divToPopup).find('iframe').height(0);
-            document.location.replace("#" + linkHrefClicked);
+$(divToPopup).find('iframe').height(0);
+document.location.replace("#" + linkHrefClicked);
 
 
-            if (setTitle == " ") {
-                $(".ui-dialog-titlebar").height(0);
-                $(".ui-dialog-titlebar-close").attr("class", "ui-dialog-titlebar-close-no-title").html("").hide();
-                $(".ui-dialog").css("overflow", "visible");
-            } else {
-                var titleHeight = $('.ui-dialog-titlebar').height();
-                $(divToPopup).parents('.Popup').height(setHeight + titleHeight);
-            }
-            if (hideCloseButton) {
-                $(".ui-dialog-titlebar-close, .ui-dialog-titlebar-close-no-title").remove();
-            }
-        };
-    });
+if (setTitle == " ") {
+    $(".ui-dialog-titlebar").height(0);
+    $(".ui-dialog-titlebar-close").attr("class", "ui-dialog-titlebar-close-no-title").html("").hide();
+    $(".ui-dialog").css("overflow", "visible");
+} else {
+    var titleHeight = $('.ui-dialog-titlebar').height();
+    $(divToPopup).parents('.Popup').height(setHeight + titleHeight);
+}
+if (hideCloseButton) {
+    $(".ui-dialog-titlebar-close, .ui-dialog-titlebar-close-no-title").remove();
+}
+}
+});
 
 
 
@@ -202,13 +205,14 @@ function RichWidgets_Popup_Editor_resize(divToPopup, setWidth, setHeight, recent
         return false;
     }
     var frameObj = divToPopup.find('iframe')[0];
+    var innerDoc;
     var documentServer = document.location.href.replace(/(https?:\/\/[^\/]*).*/, '$1');
     var frameServer = frameObj.src.replace(/(https?:\/\/[^\/]*).*/, '$1');
-    var sameOrigin = (frameServer.toLowerCase() == documentServer.toLowerCase() || frameServer.indexOf("http") != 0);
+    var sameOrigin = (frameServer.toLowerCase() == documentServer.toLowerCase() || frameServer.indexOf("http") !== 0);
     if (!sameOrigin && (setWidth == -1 || setHeight == -1)) throw (new Error("A Popup with a screen from a different server (or https) needs explicict width, height set."));
     if (sameOrigin) {
-        var innerDoc = (frameObj.contentDocument) ? frameObj.contentDocument : frameObj.contentWindow.document;
-        if (innerDoc.documentElement.scrollHeight == 0) // strangely this event is also triggered on close
+        innerDoc = (frameObj.contentDocument) ? frameObj.contentDocument : frameObj.contentWindow.document;
+        if (innerDoc.documentElement.scrollHeight === 0) // strangely this event is also triggered on close
             return false;
     }
     var oldHeight = osjs(divToPopup).parents('.Popup').outerHeight();
@@ -259,25 +263,25 @@ function RichWidgets_Popup_Editor_resize(divToPopup, setWidth, setHeight, recent
     if (divPopupOuterWindow.width() == RichWidgets_Popup_Editor_InitialWidth &&
         divPopupOuterWindow.height() == RichWidgets_Popup_Editor_InitialHeight) {
         osjs(frameObj).height(0);
-    }
-    var onAnimationComplete = function() {
-        setTimeout(function() {
-            osjs(divToPopup).dialog('size');
-            osjs('.ui-dialog-titlebar-close-no-title').css('display', 'block');
-            osjs(divToPopup).find('iframe').height("100%").width(animateFinal.width);
+}
+var onAnimationComplete = function() {
+    setTimeout(function() {
+        osjs(divToPopup).dialog('size');
+        osjs('.ui-dialog-titlebar-close-no-title').css('display', 'block');
+        osjs(divToPopup).find('iframe').height("100%").width(animateFinal.width);
 
             //osjs(divToPopup).dropShadow();
             //osjs(divToPopup).css('background', '#fff');
 
         }, 13);
-    };
-    var divPleaseWait = osjs("#pleaseWaitDiv");
-    divPleaseWait.hide();
+};
+var divPleaseWait = osjs("#pleaseWaitDiv");
+divPleaseWait.hide();
 
-    if (setHeight == -1 || setWidth == -1) divPopupOuterWindow.animate(animateFinal, {
-        duration: 200,
-        complete: onAnimationComplete
-    });
+if (setHeight == -1 || setWidth == -1) divPopupOuterWindow.animate(animateFinal, {
+    duration: 200,
+    complete: onAnimationComplete
+});
     else onAnimationComplete();
 
     innerDoc = null;
@@ -288,13 +292,14 @@ function RichWidgets_Popup_Editor_resize(divToPopup, setWidth, setHeight, recent
 
 var popupToClose;
 
+
 function RichWidgets_Popup_Editor_Close(iFrame) {
     // Any close requests must immediately (synchronously) tag the closing element, marking it as closing. The cleanup must be done asynchronously due to IE7..
     popupToClose = osjs('.ui-dialog-content');
     osjs(popupToClose).data(RichWidgets_Popup_Editor_ClosingTag, RichWidgets_Popup_Editor_ClosingValue);
     setTimeout(function() {
-            osjs(popupToClose).dialog('close');
-            osjs(popupToClose).remove();
-        },
-        0);
+     popupDialog.dialog('close');
+     osjs(popupToClose).remove();
+ },
+ 0);
 };
