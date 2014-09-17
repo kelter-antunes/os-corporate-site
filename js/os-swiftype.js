@@ -75,7 +75,7 @@ $(function() {
             }
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
         });
-        WSdiv.appendTo(WebSiteList);
+        WebSiteList.appendTo(WSdiv);
         WSdiv.before('<div class="column1">Website</div>');
 
 
