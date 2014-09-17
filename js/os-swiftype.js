@@ -151,22 +151,22 @@ $(function() {
           WSdiv.appendTo(ctx.list);
       }
         if (Blog.length > 0) {
-          BlogList.appendTo(ctx.list);
+          Bdiv.appendTo(ctx.list);
       }
         if (Forge.length > 0) {
-          ForgeList.appendTo(ctx.list);
+          Fgdiv.appendTo(ctx.list);
       }
         if (Academy.length > 0) {
-          AcademyList.appendTo(ctx.list);
+          Adiv.appendTo(ctx.list);
       }
         if (Help.length > 0) {
-          HelpList.appendTo(ctx.list);
+          Hdiv.appendTo(ctx.list);
       }
         if (Ideas.length > 0) {
-          IdeasList.appendTo(ctx.list);
+          Idiv.appendTo(ctx.list);
       }
       if (Forums.length > 0) {
-          ForumsList.appendTo(ctx.list);
+          Fmdiv.appendTo(ctx.list);
       }
   };
 
