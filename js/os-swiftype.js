@@ -66,29 +66,22 @@ $(function() {
         ForumsList = $('<ul class="Forums"></ul>');
 
         
-        var leaf = '';
-        $.each(WebSite, function(idx, item) {
 
-            if(idx===0){
-                leaf = '<div class="column1" > <p class="sections">' + item['type'] + '</p> </div> <div class="column2">';
+        $.each(WebSite, function(idx, item) {
+            var out = '';
+            if(idx===0){                            
+                out = out.concat('<p class="sections column1">' + item['type'] + '</p>');          
             }
-          
-            var out = '<p class="title">' + item['title'] + '</p>';
+            out = out.concat('<p class="title column2">' + item['title'] + '</p>');
             if (item.highlight.sections) {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
-                out = out.concat('<p class="sections">' + i + "</p>");
+                out = out.concat('<p class="sections column2">' + i + "</p>");
             }
-
-            leaf = leaf.concat(out);
-
-            if(WebSite.length-1){
-                leaf = leaf.concat('</div>');
-            }
-
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
         });
-        if(leaf !== '') {
-            ctx.registerResult($("'" + leaf + "'").appendTo(WebSiteList), item);
-        }
+
+
+
 
         $.each(Blog, function(idx, item) {
             var out = '<p class="title">' + item['title'] + '</p>';
