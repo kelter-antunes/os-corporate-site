@@ -57,13 +57,13 @@ $(function() {
       });
       });
 
-        var WebSiteList = $('<ul id="double" class="WebSite"></ul>'),
-        BlogList = $('<ul id="double" class="Blog"></ul>'),
-        ForgeList = $('<ul id="double" class="Forge"></ul>'),
-        AcademyList = $('<ul id="double" class="Academy"></ul>'),
-        HelpList = $('<ul id="double" class="Help"></ul>'),
-        IdeasList = $('<ul id="double" class="Ideas"></ul>'),
-        ForumsList = $('<ul id="double" class="Forums"></ul>');
+        var WebSiteList = $('<ul class="WebSite"></ul>'),
+        BlogList = $('<ul class="Blog"></ul>'),
+        ForgeList = $('<ul class="Forge"></ul>'),
+        AcademyList = $('<ul class="Academy"></ul>'),
+        HelpList = $('<ul class="Help"></ul>'),
+        IdeasList = $('<ul class="Ideas"></ul>'),
+        ForumsList = $('<ul class="Forums"></ul>');
 
         
 

@@ -7716,9 +7716,7 @@ div.st-result .st-date
     -ms-border-radius:3px;
     -o-border-radius:3px;
     border-radius:3px;
-    text-align:left
-
-    overflow:hidden;
+    text-align:left;
     border-top:1px solid #e5e5e5;
     border-bottom:1px solid #e5e5e5;
 }
@@ -7822,15 +7820,6 @@ div.st-result .st-date
     padding-left: 10px;
     border-left: 1px solid #ccc;
 }
-
-
-.swiftype-widget .autocomplete li{
-  float:left;
-  display:inline;
-}
-#double .swiftype-widget .autocomplete li  { width:50%;}
-
-
 
 
 .swiftype-widget .autocomplete li .sections
