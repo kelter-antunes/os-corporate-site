@@ -131,7 +131,7 @@ $(function() {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(Ideas), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(IdeasList), item);
         });
         IdeasList.appendTo(Idiv);
         Idiv.before('<div class="column1">Ideas</div>');
