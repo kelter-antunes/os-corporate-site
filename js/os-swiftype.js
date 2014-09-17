@@ -57,6 +57,7 @@ $(function() {
       });
       });
 
+        var badruz = $('<div class="oioi"></div>');
 
         var WebSiteList = $('<ul class="WebSite"></ul>'), WSdiv =  $('<div class="column2"></div>'),
         BlogList = $('<ul class="Blog"></ul>'), Bdiv = $('<div class="column2"></div>'),
@@ -76,7 +77,9 @@ $(function() {
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
         });
         WebSiteList.appendTo(WSdiv);
-        WSdiv[0] = '<div class="column1">Website</div>' + WSdiv[0];
+        $('<div class="column1">Website</div>').appendTo(badruz);
+        WSdiv.appendTo(badruz);
+        //WSdiv[0] = '<div class="column1">Website</div>' + WSdiv[0];
         //WSdiv.before('<div class="column1">Website</div>');
 
 
@@ -149,7 +152,7 @@ $(function() {
         Fmdiv.before('<div class="column1">Forums</div>');
 
         if (WebSite.length > 0) {
-          WSdiv.appendTo(ctx.list);
+          badruz.appendTo(ctx.list);
       }
         if (Blog.length > 0) {
           Bdiv.appendTo(ctx.list);
