@@ -59,12 +59,12 @@ $(function() {
 
 
         var WebSiteList = $('<ul class="WebSite"></ul>'), WSdiv =  $('<div class="column2"></div>'),
-        BlogList = $('<div class="column1">Blog</div><div class="column2"><ul class="Blog"></ul></div>'),
-        ForgeList = $('<div class="column1">Forge</div><div class="column2"><ul class="Forge"></ul></div>'),
-        AcademyList = $('<div class="column1">Academy</div><div class="column2"><ul class="Academy"></ul></div>'),
-        HelpList = $('<div class="column1">Help</div><div class="column2"><ul class="Help"></ul></div>'),
-        IdeasList = $('<div class="column1">Ideas</div><div class="column2"><ul class="Ideas"></ul></div>'),
-        ForumsList = $('<div class="column1">Forums</div><div class="column2"><ul class="Forums"></ul></div>');
+        BlogList = $('<ul class="Blog"></ul>'), Bdiv = $('<div class="column2"></div>'),
+        ForgeList = $('<ul class="Forge"></ul>'), Fgdiv = $('<div class="column2"></div>'),
+        AcademyList = $('<ul class="Academy"></ul>'), Adiv = $('<div class="column2"></div>'),
+        HelpList = $('<ul class="Help"></ul>'), Hdiv = $('<div class="column2"></div>'),
+        IdeasList = $('<ul class="Ideas"></ul>'), Idiv = $('<div class="column2"></div>'),
+        ForumsList = $('<ul class="Forums"></ul>'), Fmdiv = $('<div class="column2"></div>');
  
 
         $.each(WebSite, function(idx, item) {
@@ -85,8 +85,11 @@ $(function() {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(".Blog"), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(BlogList), item);
         });
+        BlogList.appendTo(Bdiv);
+        Bdiv.before('<div class="column1">Blog</div>');
+
 
         $.each(Forge, function(idx, item) {
             var out = '<p class="title">' + item['title'] + '</p>';
@@ -94,8 +97,11 @@ $(function() {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(".Forge"), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(ForgeList), item);
         });
+        ForgeList.appendTo(Fgdiv);
+        Fgdiv.before('<div class="column1">Forge</div>');
+
 
         $.each(Academy, function(idx, item) {
             var out = '<p class="title">' + item['title'] + '</p>';
@@ -103,8 +109,10 @@ $(function() {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(".Academy"), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(AcademyList), item);
         });
+        AcademyList.appendTo(Adiv);
+        Adiv.before('<div class="column1">Academy</div>');
 
         $.each(Help, function(idx, item) {
             var out = '<p class="title">' + item['title'] + '</p>';
@@ -112,8 +120,10 @@ $(function() {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(".Help"), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(HelpList), item);
         });
+        HelpList.appendTo(Hdiv);
+        Hdiv.before('<div class="column1">Help</div>');
 
         $.each(Ideas, function(idx, item) {
             var out = '<p class="title">' + item['title'] + '</p>';
@@ -121,8 +131,10 @@ $(function() {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(".Ideas"), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(Ideas), item);
         });
+        IdeasList.appendTo(Idiv);
+        Idiv.before('<div class="column1">Ideas</div>');
 
         $.each(Forums, function(idx, item) {
             var out = '<p class="title">' + item['title'] + '</p>';
@@ -130,8 +142,10 @@ $(function() {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(".Forums"), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(ForumsList), item);
         });
+        ForumsList.appendTo(Fmdiv);
+        Fmdiv.before('<div class="column1">Forums</div>');
 
         if (WebSite.length > 0) {
           WSdiv.appendTo(ctx.list);
