@@ -143,7 +143,9 @@ $(function() {
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(IdeasList), item);
         });
         IdeasList.appendTo(Idiv);
-        Idiv.before('<div class="column1">Ideas</div>');
+        $('<div class="column1">Ideas</div>').appendTo(badruz);
+        Idiv.appendTo(badruz);
+
 
         $.each(Forums, function(idx, item) {
             var out = '<p class="title">' + item['title'] + '</p>';
@@ -154,10 +156,19 @@ $(function() {
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(ForumsList), item);
         });
         ForumsList.appendTo(Fmdiv);
-        Fmdiv.before('<div class="column1">Forums</div>');
+        $('<div class="column1">Forums</div>').appendTo(badruz);
+        Fmdiv.appendTo(badruz);
 
+
+        if(WebSite.length > 0 || Blog.length > 0 || Forge.length > 0 || Academy.length > 0 ||
+            Help.length > 0 ||Ideas.length > 0 || Forums.length > 0){
+
+            badruz.appendTo(ctx.list);
+        }
+
+/*
         if (WebSite.length > 0) {
-          badruz.appendTo(ctx.list);
+          WSdiv.appendTo(ctx.list);
       }
         if (Blog.length > 0) {
           Bdiv.appendTo(ctx.list);
@@ -177,6 +188,7 @@ $(function() {
       if (Forums.length > 0) {
           Fmdiv.appendTo(ctx.list);
       }
+      */
   };
 
 
