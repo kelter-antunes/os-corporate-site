@@ -57,25 +57,25 @@ $(function() {
       });
       });
 
-        var WebSiteList = $('<ul class="WebSite"></ul>'),
-        BlogList = $('<ul class="Blog"></ul>'),
-        ForgeList = $('<ul class="Forge"></ul>'),
-        AcademyList = $('<ul class="Academy"></ul>'),
-        HelpList = $('<ul class="Help"></ul>'),
-        IdeasList = $('<ul class="Ideas"></ul>'),
-        ForumsList = $('<ul class="Forums"></ul>');
+        var WebSiteList = $('<ul id="double" class="WebSite"></ul>'),
+        BlogList = $('<ul id="double" class="Blog"></ul>'),
+        ForgeList = $('<ul id="double" class="Forge"></ul>'),
+        AcademyList = $('<ul id="double" class="Academy"></ul>'),
+        HelpList = $('<ul id="double" class="Help"></ul>'),
+        IdeasList = $('<ul id="double" class="Ideas"></ul>'),
+        ForumsList = $('<ul id="double" class="Forums"></ul>');
 
         
 
         $.each(WebSite, function(idx, item) {
             var out = '';
             if(idx===0){                            
-                out = out.concat('<p class="sections column1">' + item['type'] + '</p>');          
+                out = out.concat('<p class="sections">' + item['type'] + '</p>');          
             }
-            out = out.concat('<p class="title column2">' + item['title'] + '</p>');
+            out = out.concat('<p class="title">' + item['title'] + '</p>');
             if (item.highlight.sections) {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
-                out = out.concat('<p class="sections column2">' + i + "</p>");
+                out = out.concat('<p class="sections">' + i + "</p>");
             }
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
         });
