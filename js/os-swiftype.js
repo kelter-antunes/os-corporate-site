@@ -58,13 +58,13 @@ $(function() {
       });
 
 
-        var WebSiteList = $('<div class="column1 ">Website</div><div class="column2"><ul class="WebSite"></ul></div>'),
-        BlogList = $('<div class="column1 ">Blog</div><div class="column2"><ul class="Blog"></ul></div>'),
-        ForgeList = $('<div class="column1 ">Forge</div><div class="column2"><ul class="Forge"></ul></div>'),
-        AcademyList = $('<div class="column1 ">Academy</div><div class="column2"><ul class="Academy"></ul></div>'),
-        HelpList = $('<div class="column1 ">Help</div><div class="column2"><ul class="Help"></ul></div>'),
-        IdeasList = $('<div class="column1 ">Ideas</div><div class="column2"><ul class="Ideas"></ul></div>'),
-        ForumsList = $('<div class="column1 ">Forums</div><div class="column2"><ul class="Forums"></ul></div>');
+        var WebSiteList = $('<div class="column1">Website</div><div class="column2"><ul class="WebSite"></ul></div>'),
+        BlogList = $('<div class="column1">Blog</div><div class="column2"><ul class="Blog"></ul></div>'),
+        ForgeList = $('<div class="column1">Forge</div><div class="column2"><ul class="Forge"></ul></div>'),
+        AcademyList = $('<div class="column1">Academy</div><div class="column2"><ul class="Academy"></ul></div>'),
+        HelpList = $('<div class="column1">Help</div><div class="column2"><ul class="Help"></ul></div>'),
+        IdeasList = $('<div class="column1">Ideas</div><div class="column2"><ul class="Ideas"></ul></div>'),
+        ForumsList = $('<div class="column1">Forums</div><div class="column2"><ul class="Forums"></ul></div>');
  
 
         $.each(WebSite, function(idx, item) {

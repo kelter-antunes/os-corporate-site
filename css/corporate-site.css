@@ -7805,7 +7805,7 @@ div.st-result .st-date
 
 
 
-.swiftype-widget .autocomplete div.column1
+.swiftype-widget .autocomplete div .column1
 {
     margin-top: 30px;
     float: left;
@@ -7813,7 +7813,7 @@ div.st-result .st-date
     text-align: left;
 }
 
-.swiftype-widget .autocomplete div.column2
+.swiftype-widget .autocomplete div .column2
 {
     float: left;
     width: 500px;
