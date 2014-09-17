@@ -76,7 +76,7 @@ $(function() {
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
         });
         WebSiteList.appendTo(WSdiv);
-        $('<div class="column1">Website</div>').insertbefore(WSdiv);
+        WSdiv.before('<div class="column1">Website</div>');
 
 
         $.each(Blog, function(idx, item) {
@@ -88,7 +88,7 @@ $(function() {
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(BlogList), item);
         });
         BlogList.appendTo(Bdiv);
-        $('<div class="column1">Blog</div>').insertbefore(Bdiv);
+        Bdiv.before('<div class="column1">Blog</div>');
 
 
         $.each(Forge, function(idx, item) {
@@ -100,7 +100,7 @@ $(function() {
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(ForgeList), item);
         });
         ForgeList.appendTo(Fgdiv);
-        $('<div class="column1">Forge</div>').insertbefore(Fgdiv);
+        Fgdiv.before('<div class="column1">Forge</div>');
 
 
         $.each(Academy, function(idx, item) {
@@ -112,7 +112,7 @@ $(function() {
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(AcademyList), item);
         });
         AcademyList.appendTo(Adiv);
-        $('<div class="column1">Academy</div>').insertbefore(Adiv);
+        Adiv.before('<div class="column1">Academy</div>');
 
         $.each(Help, function(idx, item) {
             var out = '<p class="title">' + item['title'] + '</p>';
@@ -123,7 +123,7 @@ $(function() {
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(HelpList), item);
         });
         HelpList.appendTo(Hdiv);
-        $('<div class="column1">Help</div>').insertbefore(Hdiv);
+        Hdiv.before('<div class="column1">Help</div>');
 
         $.each(Ideas, function(idx, item) {
             var out = '<p class="title">' + item['title'] + '</p>';
@@ -134,7 +134,7 @@ $(function() {
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(IdeasList), item);
         });
         IdeasList.appendTo(Idiv);
-        $('<div class="column1">Ideas</div>').insertbefore(Idiv);
+        Idiv.before('<div class="column1">Ideas</div>');
 
         $.each(Forums, function(idx, item) {
             var out = '<p class="title">' + item['title'] + '</p>';
@@ -145,7 +145,7 @@ $(function() {
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(ForumsList), item);
         });
         ForumsList.appendTo(Fmdiv);
-        $('<div class="column1">Forums</div>').insertbefore(Fmdiv);
+        Fmdiv.before('<div class="column1">Forums</div>');
 
         if (WebSite.length > 0) {
           WSdiv.appendTo(ctx.list);
