@@ -7809,9 +7809,12 @@ div.st-result .st-date
     width: 10%;
     float: left;
     margin-top: 10px;
+    margin-left: 5px;
     text-align: left;
     color:#999;
     font-size:11px;
+    clear:both;
+
 }
 
 .swiftype-widget .autocomplete div .column2
@@ -7819,6 +7822,7 @@ div.st-result .st-date
     float: left;
     padding-left: 10px;
     border-left: 1px solid #ccc;
+    width:85%;
 }
 
 
