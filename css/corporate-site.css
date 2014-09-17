@@ -7804,19 +7804,19 @@ div.st-result .st-date
 
 
 
-
 .swiftype-widget .autocomplete div .column1
 {
-    margin-top: 30px;
+    width: 10%;
     float: left;
-    width: 100px;
+    margin-top: 10px;
     text-align: left;
+    color:#999;
+    font-size:11px;
 }
 
 .swiftype-widget .autocomplete div .column2
 {
     float: left;
-    width: 500px;
     padding-left: 10px;
     border-left: 1px solid #ccc;
 }

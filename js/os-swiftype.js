@@ -27,7 +27,7 @@ $(function() {
 
 
 
-    var customResultRenderFunction = function(ctx, data) {
+var customResultRenderFunction = function(ctx, data) {
         var WebSite = [], Blog = [], Forge = [], Academy = [],
         Help = [], Ideas = [], Forums = []; 
 
@@ -36,159 +36,182 @@ $(function() {
             if(result.type && result.type === 'website' && WebSite.length < 5){
               WebSite.push(result);
           }
-            if(result.type && result.type === 'blog' && Blog.length < 5){
+          if(result.type && result.type === 'blog' && Blog.length < 5){
               Blog.push(result);
           }            
-            if(result.type && result.type === 'forge' && Forge.length < 5){
+          if(result.type && result.type === 'forge' && Forge.length < 5){
               Forge.push(result);
           }            
-            if(result.type && result.type === 'academy' && Academy.length < 5){
+          if(result.type && result.type === 'academy' && Academy.length < 5){
               Academy.push(result);
           }            
-            if(result.type && result.type === 'help' && Help.length < 5){
+          if(result.type && result.type === 'help' && Help.length < 5){
               Help.push(result);
           }            
-            if(result.type && result.type === 'ideas' && Ideas.length < 5){
+          if(result.type && result.type === 'ideas' && Ideas.length < 5){
               Ideas.push(result);
           }            
-            if(result.type && result.type === 'forums' && Forums.length < 5){
+          if(result.type && result.type === 'forums' && Forums.length < 5){
               Forums.push(result);
           }
       });
       });
 
-        var badruz = $('<div class="oioi"></div>');
+    var badruz = $('<div class="oioi"></div>');
 
-        var WebSiteList = $('<ul class="WebSite"></ul>'), WSdiv =  $('<div class="column2"></div>'),
-        BlogList = $('<ul class="Blog"></ul>'), Bdiv = $('<div class="column2"></div>'),
-        ForgeList = $('<ul class="Forge"></ul>'), Fgdiv = $('<div class="column2"></div>'),
-        AcademyList = $('<ul class="Academy"></ul>'), Adiv = $('<div class="column2"></div>'),
-        HelpList = $('<ul class="Help"></ul>'), Hdiv = $('<div class="column2"></div>'),
-        IdeasList = $('<ul class="Ideas"></ul>'), Idiv = $('<div class="column2"></div>'),
-        ForumsList = $('<ul class="Forums"></ul>'), Fmdiv = $('<div class="column2"></div>');
- 
+    var WebSiteList = $('<ul class="WebSite"></ul>'), WSdiv =  $('<div class="column2"></div>'),
+    BlogList = $('<ul class="Blog"></ul>'), Bdiv = $('<div class="column2"></div>'),
+    ForgeList = $('<ul class="Forge"></ul>'), Fgdiv = $('<div class="column2"></div>'),
+    AcademyList = $('<ul class="Academy"></ul>'), Adiv = $('<div class="column2"></div>'),
+    HelpList = $('<ul class="Help"></ul>'), Hdiv = $('<div class="column2"></div>'),
+    IdeasList = $('<ul class="Ideas"></ul>'), Idiv = $('<div class="column2"></div>'),
+    ForumsList = $('<ul class="Forums"></ul>'), Fmdiv = $('<div class="column2"></div>');
 
-        $.each(WebSite, function(idx, item) {
-            var out = '<p class="title">' + item['title'] + '</p>';
-            if (item.highlight.sections) {
-                var i = '<span class="section">' + item.highlight.sections + "</span>";
-                out = out.concat('<p class="sections">' + i + "</p>");
-            }
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
-        });
+
+    $.each(WebSite, function(idx, item) {
+        var out = '<p class="title">' + item['title'] + '</p>';
+        if (item.highlight.sections) {
+            var i = '<span class="section">' + item.highlight.sections + "</span>";
+            out = out.concat('<p class="sections">' + i + "</p>");
+        }
+        ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
+    });
+    if(WebSite.length>0){
         WebSiteList.appendTo(WSdiv);
         $('<div class="column1">Website</div>').appendTo(badruz);
         WSdiv.appendTo(badruz);
-        //WSdiv[0] = '<div class="column1">Website</div>' + WSdiv[0];
-        //WSdiv.before('<div class="column1">Website</div>');
+    }
 
 
-        $.each(Blog, function(idx, item) {
-            var out = '<p class="title">' + item['title'] + '</p>';
-            if (item.highlight.sections) {
-                var i = '<span class="section">' + item.highlight.sections + "</span>";
-                out = out.concat('<p class="sections">' + i + "</p>");
-            }
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(BlogList), item);
-        });
+
+    $.each(Blog, function(idx, item) {
+        var out = '<p class="title">' + item['title'] + '</p>';
+        if (item.highlight.sections) {
+            var i = '<span class="section">' + item.highlight.sections + "</span>";
+            out = out.concat('<p class="sections">' + i + "</p>");
+        }
+        ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(BlogList), item);
+    });
+    if(Blog.length>0){
         BlogList.appendTo(Bdiv);
         $('<div class="column1">Blog</div>').appendTo(badruz);
         Bdiv.appendTo(badruz);
+    }
 
 
-        $.each(Forge, function(idx, item) {
-            var out = '<p class="title">' + item['title'] + '</p>';
-            if (item.highlight.sections) {
-                var i = '<span class="section">' + item.highlight.sections + "</span>";
-                out = out.concat('<p class="sections">' + i + "</p>");
-            }
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(ForgeList), item);
-        });
+
+    $.each(Forge, function(idx, item) {
+        var out = '<p class="title">' + item['title'] + '</p>';
+        if (item.highlight.sections) {
+            var i = '<span class="section">' + item.highlight.sections + "</span>";
+            out = out.concat('<p class="sections">' + i + "</p>");
+        }
+        ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(ForgeList), item);
+    });
+    if(Forge.length>0){
         ForgeList.appendTo(Fgdiv);
         $('<div class="column1">Forge</div>').appendTo(badruz);
         Fgdiv.appendTo(badruz);
+    }
 
 
 
-        $.each(Academy, function(idx, item) {
-            var out = '<p class="title">' + item['title'] + '</p>';
-            if (item.highlight.sections) {
-                var i = '<span class="section">' + item.highlight.sections + "</span>";
-                out = out.concat('<p class="sections">' + i + "</p>");
-            }
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(AcademyList), item);
-        });
+
+    $.each(Academy, function(idx, item) {
+        var out = '<p class="title">' + item['title'] + '</p>';
+        if (item.highlight.sections) {
+            var i = '<span class="section">' + item.highlight.sections + "</span>";
+            out = out.concat('<p class="sections">' + i + "</p>");
+        }
+        ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(AcademyList), item);
+    });
+    if(Academy.length>0){
         AcademyList.appendTo(Adiv);
         $('<div class="column1">Academy</div>').appendTo(badruz);
         Adiv.appendTo(badruz);
+    }
 
-        $.each(Help, function(idx, item) {
-            var out = '<p class="title">' + item['title'] + '</p>';
-            if (item.highlight.sections) {
-                var i = '<span class="section">' + item.highlight.sections + "</span>";
-                out = out.concat('<p class="sections">' + i + "</p>");
-            }
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(HelpList), item);
-        });
+
+
+
+    $.each(Help, function(idx, item) {
+        var out = '<p class="title">' + item['title'] + '</p>';
+        if (item.highlight.sections) {
+            var i = '<span class="section">' + item.highlight.sections + "</span>";
+            out = out.concat('<p class="sections">' + i + "</p>");
+        }
+        ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(HelpList), item);
+    });
+    if(Help.length>0){
         HelpList.appendTo(Hdiv);
         $('<div class="column1">Help</div>').appendTo(badruz);
         Hdiv.appendTo(badruz);
+    }
 
-        $.each(Ideas, function(idx, item) {
-            var out = '<p class="title">' + item['title'] + '</p>';
-            if (item.highlight.sections) {
-                var i = '<span class="section">' + item.highlight.sections + "</span>";
-                out = out.concat('<p class="sections">' + i + "</p>");
-            }
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(IdeasList), item);
-        });
+
+
+
+    $.each(Ideas, function(idx, item) {
+        var out = '<p class="title">' + item['title'] + '</p>';
+        if (item.highlight.sections) {
+            var i = '<span class="section">' + item.highlight.sections + "</span>";
+            out = out.concat('<p class="sections">' + i + "</p>");
+        }
+        ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(IdeasList), item);
+    });
+    if(Ideas.length>0){
         IdeasList.appendTo(Idiv);
         $('<div class="column1">Ideas</div>').appendTo(badruz);
         Idiv.appendTo(badruz);
+    }
 
 
-        $.each(Forums, function(idx, item) {
-            var out = '<p class="title">' + item['title'] + '</p>';
-            if (item.highlight.sections) {
-                var i = '<span class="section">' + item.highlight.sections + "</span>";
-                out = out.concat('<p class="sections">' + i + "</p>");
-            }
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(ForumsList), item);
-        });
+
+    $.each(Forums, function(idx, item) {
+        var out = '<p class="title">' + item['title'] + '</p>';
+        if (item.highlight.sections) {
+            var i = '<span class="section">' + item.highlight.sections + "</span>";
+            out = out.concat('<p class="sections">' + i + "</p>");
+        }
+        ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(ForumsList), item);
+    });
+    if(Forums.length>0){
         ForumsList.appendTo(Fmdiv);
         $('<div class="column1">Forums</div>').appendTo(badruz);
         Fmdiv.appendTo(badruz);
+    }
 
 
-        if(WebSite.length > 0 || Blog.length > 0 || Forge.length > 0 || Academy.length > 0 ||
-            Help.length > 0 ||Ideas.length > 0 || Forums.length > 0){
 
-            badruz.appendTo(ctx.list);
-        }
+    if(WebSite.length > 0 || Blog.length > 0 || Forge.length > 0 || Academy.length > 0 ||
+        Help.length > 0 ||Ideas.length > 0 || Forums.length > 0){
 
-/*
-        if (WebSite.length > 0) {
-          WSdiv.appendTo(ctx.list);
-      }
-        if (Blog.length > 0) {
-          Bdiv.appendTo(ctx.list);
-      }
-        if (Forge.length > 0) {
-          Fgdiv.appendTo(ctx.list);
-      }
-        if (Academy.length > 0) {
-          Adiv.appendTo(ctx.list);
-      }
-        if (Help.length > 0) {
-          Hdiv.appendTo(ctx.list);
-      }
-        if (Ideas.length > 0) {
-          Idiv.appendTo(ctx.list);
-      }
-      if (Forums.length > 0) {
-          Fmdiv.appendTo(ctx.list);
-      }
-      */
+        badruz.appendTo(ctx.list);
+    }
+
+    /*
+            if (WebSite.length > 0) {
+              WSdiv.appendTo(ctx.list);
+          }
+            if (Blog.length > 0) {
+              Bdiv.appendTo(ctx.list);
+          }
+            if (Forge.length > 0) {
+              Fgdiv.appendTo(ctx.list);
+          }
+            if (Academy.length > 0) {
+              Adiv.appendTo(ctx.list);
+          }
+            if (Help.length > 0) {
+              Hdiv.appendTo(ctx.list);
+          }
+            if (Ideas.length > 0) {
+              Idiv.appendTo(ctx.list);
+          }
+          if (Forums.length > 0) {
+              Fmdiv.appendTo(ctx.list);
+          }
+          */
   };
 
 
