@@ -92,7 +92,8 @@ $(function() {
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(BlogList), item);
         });
         BlogList.appendTo(Bdiv);
-        Bdiv.before('<div class="column1">Blog</div>');
+        $('<div class="column1">Blog</div>').appendTo(badruz);
+        WSdiv.appendTo(badruz);
 
 
         $.each(Forge, function(idx, item) {
