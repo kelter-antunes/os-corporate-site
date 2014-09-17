@@ -7805,21 +7805,22 @@ div.st-result .st-date
 
 
 
-.swiftype-widget .autocomplete li p.column1
+.swiftype-widget .autocomplete div.column1
 {
     margin-top: 30px;
     float: left;
-    width: 40px;
+    width: 100px;
     text-align: left;
 }
 
-.swiftype-widget .autocomplete li p.column2
+.swiftype-widget .autocomplete div.column2
 {
     float: left;
     width: 500px;
     padding-left: 10px;
     border-left: 1px solid #ccc;
 }
+
 
 
 .swiftype-widget .autocomplete li .sections

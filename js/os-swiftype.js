@@ -57,31 +57,24 @@ $(function() {
       });
       });
 
-        var WebSiteList = $('<ul class="WebSite"></ul>'),
-        BlogList = $('<ul class="Blog"></ul>'),
-        ForgeList = $('<ul class="Forge"></ul>'),
-        AcademyList = $('<ul class="Academy"></ul>'),
-        HelpList = $('<ul class="Help"></ul>'),
-        IdeasList = $('<ul class="Ideas"></ul>'),
-        ForumsList = $('<ul class="Forums"></ul>');
 
-        
+        var WebSiteList = $('<div class="column1 ">Website</div><div class="column2"><ul class="WebSite"></ul></div>'),
+        BlogList = $('<div class="column1 ">Blog</div><div class="column2"><ul class="Blog"></ul></div>'),
+        ForgeList = $('<div class="column1 ">Forge</div><div class="column2"><ul class="Forge"></ul></div>'),
+        AcademyList = $('<div class="column1 ">Academy</div><div class="column2"><ul class="Academy"></ul></div>'),
+        HelpList = $('<div class="column1 ">Help</div><div class="column2"><ul class="Help"></ul></div>'),
+        IdeasList = $('<div class="column1 ">Ideas</div><div class="column2"><ul class="Ideas"></ul></div>'),
+        ForumsList = $('<div class="column1 ">Forums</div><div class="column2"><ul class="Forums"></ul></div>');
+ 
 
         $.each(WebSite, function(idx, item) {
-            var out = '';
-            if(idx===0){                            
-                out = out.concat('<p class="sections">' + item['type'] + '</p>');          
-            }
-            out = out.concat('<p class="title">' + item['title'] + '</p>');
+            var out = '<p class="title">' + item['title'] + '</p>';
             if (item.highlight.sections) {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(".WebSite"), item);
         });
-
-
-
 
         $.each(Blog, function(idx, item) {
             var out = '<p class="title">' + item['title'] + '</p>';
@@ -89,8 +82,7 @@ $(function() {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
-            out = out.concat('<p class="sections">' + item['type'] + "</p>");
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(BlogList), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(".Blog"), item);
         });
 
         $.each(Forge, function(idx, item) {
@@ -99,8 +91,7 @@ $(function() {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
-            out = out.concat('<p class="sections">' + item['type'] + "</p>");
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(ForgeList), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(".Forge"), item);
         });
 
         $.each(Academy, function(idx, item) {
@@ -109,8 +100,7 @@ $(function() {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
-            out = out.concat('<p class="sections">' + item['type'] + "</p>");
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(AcademyList), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(".Academy"), item);
         });
 
         $.each(Help, function(idx, item) {
@@ -119,8 +109,7 @@ $(function() {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
-            out = out.concat('<p class="sections">' + item['type'] + "</p>");
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(HelpList), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(".Help"), item);
         });
 
         $.each(Ideas, function(idx, item) {
@@ -129,8 +118,7 @@ $(function() {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
-            out = out.concat('<p class="sections">' + item['type'] + "</p>");
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(IdeasList), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(".Ideas"), item);
         });
 
         $.each(Forums, function(idx, item) {
@@ -139,8 +127,7 @@ $(function() {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
-            out = out.concat('<p class="sections">' + item['type'] + "</p>");
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(ForumsList), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(".Forums"), item);
         });
 
         if (WebSite.length > 0) {
