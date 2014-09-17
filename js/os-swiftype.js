@@ -58,7 +58,7 @@ $(function() {
       });
 
 
-        var WebSiteList = $('<div class="column1">Website</div><div class="column2"><ul class="WebSite"></ul></div>'),
+        var WebSiteList = $('<ul class="WebSite"></ul>'), WSdiv =  $('<div class="column2"></div>'),
         BlogList = $('<div class="column1">Blog</div><div class="column2"><ul class="Blog"></ul></div>'),
         ForgeList = $('<div class="column1">Forge</div><div class="column2"><ul class="Forge"></ul></div>'),
         AcademyList = $('<div class="column1">Academy</div><div class="column2"><ul class="Academy"></ul></div>'),
@@ -73,8 +73,11 @@ $(function() {
                 var i = '<span class="section">' + item.highlight.sections + "</span>";
                 out = out.concat('<p class="sections">' + i + "</p>");
             }
-            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(".WebSite"), item);
+            ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
         });
+        WSdiv.appendTo(WebSiteList);
+        WSdiv.before('<div class="column1">Website</div>');
+
 
         $.each(Blog, function(idx, item) {
             var out = '<p class="title">' + item['title'] + '</p>';
@@ -131,7 +134,7 @@ $(function() {
         });
 
         if (WebSite.length > 0) {
-          WebSiteList.appendTo(ctx.list);
+          WSdiv.appendTo(ctx.list);
       }
         if (Blog.length > 0) {
           BlogList.appendTo(ctx.list);
