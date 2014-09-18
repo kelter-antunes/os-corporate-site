@@ -34,27 +34,34 @@ var customResultRenderFunction = function(ctx, data) {
         $.each(data, function(docType, results) {
           $.each(results, function(idx, result) {
             if(result.type && result.type === 'website' && WebSite.length < 5){
-              WebSite.push(result);
-          }
-          if(result.type && result.type === 'blog' && Blog.length < 5){
-              Blog.push(result);
-          }            
-          if(result.type && result.type === 'forge' && Forge.length < 5){
-              Forge.push(result);
-          }            
-          if(result.type && result.type === 'academy' && Academy.length < 5){
-              Academy.push(result);
-          }            
-          if(result.type && result.type === 'help' && Help.length < 5){
-              Help.push(result);
-          }            
-          if(result.type && result.type === 'ideas' && Ideas.length < 5){
-              Ideas.push(result);
-          }            
-          if(result.type && result.type === 'forums' && Forums.length < 5){
-              Forums.push(result);
-          }
-      });
+                  WebSite.push(result);
+                  return;
+              }
+              if(result.type && result.type === 'blog' && Blog.length < 5){
+                  Blog.push(result);
+                  return;
+              }            
+              if(result.type && result.type === 'forge' && Forge.length < 5){
+                  Forge.push(result);
+                  return;
+              }            
+              if(result.type && result.type === 'academy' && Academy.length < 5){
+                  Academy.push(result);
+                  return;
+              }            
+              if(result.type && result.type === 'help' && Help.length < 5){
+                  Help.push(result);
+                  return;
+              }            
+              if(result.type && result.type === 'ideas' && Ideas.length < 5){
+                  Ideas.push(result);
+                  return;
+              }            
+              if(result.type && result.type === 'forums' && Forums.length < 5){
+                  Forums.push(result);
+                  return;
+              }
+        });
       });
 
     var badruz = $('<div class="oioi"></div>');
@@ -189,29 +196,6 @@ var customResultRenderFunction = function(ctx, data) {
         badruz.appendTo(ctx.list);
     }
 
-    /*
-            if (WebSite.length > 0) {
-              WSdiv.appendTo(ctx.list);
-          }
-            if (Blog.length > 0) {
-              Bdiv.appendTo(ctx.list);
-          }
-            if (Forge.length > 0) {
-              Fgdiv.appendTo(ctx.list);
-          }
-            if (Academy.length > 0) {
-              Adiv.appendTo(ctx.list);
-          }
-            if (Help.length > 0) {
-              Hdiv.appendTo(ctx.list);
-          }
-            if (Ideas.length > 0) {
-              Idiv.appendTo(ctx.list);
-          }
-          if (Forums.length > 0) {
-              Fmdiv.appendTo(ctx.list);
-          }
-          */
   };
 
 
@@ -251,13 +235,17 @@ $('#st-search-input').swiftype({
     engineKey: 'GZhgtDYXiyvDjz48t2SP',
     resultRenderFunction: customResultRenderFunction,
     setWidth: false,
-    resultLimit: 100,
-    fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']},
+    resultLimit: 35,
+    fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']}
 });
 
 $('#st-search-input-2').swiftype({
     engineKey: 'GZhgtDYXiyvDjz48t2SP',
-    renderFunction: customRenderAutoComplete,
+    resultRenderFunction: customResultRenderFunction,
+    setWidth: false,
+    resultLimit: 35,
+    fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']}
+    /*renderFunction: customRenderAutoComplete,
     setWidth: false,
     resultLimit : 15,
     filters: function() {
@@ -266,6 +254,6 @@ $('#st-search-input-2').swiftype({
                 'type': ['website', 'blog']
             }
         };
-    }
+    }*/
 });
 });
