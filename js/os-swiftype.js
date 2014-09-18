@@ -64,7 +64,7 @@ var customResultRenderFunction = function(ctx, data) {
         });
       });
 
-    var badruz = $('<div class="oioi"></div>');
+    var badruz = $('<div class="autocompbox"></div>');
 
     var WebSiteList = $('<ul class="WebSite"></ul>'), WSdiv =  $('<div class="column2"></div>'),
     BlogList = $('<ul class="Blog"></ul>'), Bdiv = $('<div class="column2"></div>'),
