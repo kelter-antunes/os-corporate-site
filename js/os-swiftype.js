@@ -226,9 +226,9 @@ $('#st-search-input').swiftypeSearch({
     renderFunction: customRendererSearch,
     perPage: 10,
     resultPageURL: '/search/',
-    searchFields: {
+    /*searchFields: {
         'page': ['body^2', 'title^2.5', 'sections^3.5', 'tags^1.5', 'url^1']
-    }
+    }*/
 });
 
 $('#st-search-input').swiftype({
