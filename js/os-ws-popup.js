@@ -38,7 +38,7 @@ function RichWidgets_Popup_Editor_init(linkId, notifyId, setTitle, setHeight, se
 
 
 
-    osjs().ready(function($) {
+var osPopup = osjs().ready(function($) {
 
         linkId = '#' + linkId;
 
