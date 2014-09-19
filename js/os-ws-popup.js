@@ -34,7 +34,8 @@ function RichWidgets_Popup_Editor_init(linkId, notifyId, setTitle, setHeight, se
         } catch (e) {}
 
         return [linkHref, isAButton];
-    };
+    }
+
 
 
     osjs().ready(function($) {
@@ -128,19 +129,19 @@ function RichWidgets_Popup_Editor_init(linkId, notifyId, setTitle, setHeight, se
             RichWidgets_Popup_Editor_Close(null);
             // if any close is pending, schedule to execute itself asynchronously exit
             // if no close is pending, continue with open operation
-            // var closingPopups = $('.ui-dialog-content');
-            // for (var i = 0; i < closingPopups.length; i++) {
-            //     if (osjs.data(closingPopups.get(i), RichWidgets_Popup_Editor_ClosingTag) == RichWidgets_Popup_Editor_ClosingValue) {
-            //         setTimeout(function() {
-            //             OpenPopup(divToPopup, setTitle, setHeight, setWidth, divPleaseWait, hideCloseButton)
-            //         }, 13);
-            //         return false;
-            //     }
-            // }
+            var closingPopups = $('.ui-dialog-content');
+            for (var i = 0; i < closingPopups.length; i++) {
+                if (osjs.data(closingPopups.get(i), RichWidgets_Popup_Editor_ClosingTag) == RichWidgets_Popup_Editor_ClosingValue) {
+                    setTimeout(function() {
+                        OpenPopup(divToPopup, setTitle, setHeight, setWidth, divPleaseWait, hideCloseButton)
+                    }, 13);
+                    return false;
+                }
+            }
 
             $(divPleaseWait).show();
             if (setHeight == -1) setHeight = RichWidgets_Popup_Editor_InitialHeight;
-            osjs(divToPopup).show().dialog({
+            $(divToPopup).show().dialog({
                 dialogClass: 'Popup',
                 resizable: false,
                 autoResize: false,
@@ -180,27 +181,11 @@ function RichWidgets_Popup_Editor_init(linkId, notifyId, setTitle, setHeight, se
             if (hideCloseButton) {
                 $(".ui-dialog-titlebar-close, .ui-dialog-titlebar-close-no-title").remove();
             }
-        }
-
-
+        };
     });
 
 
 
-}
-
-
-var popupToClose;
-
-function RichWidgets_Popup_Editor_Close(iFrame) {
-    // Any close requests must immediately (synchronously) tag the closing element, marking it as closing. The cleanup must be done asynchronously due to IE7..
-    popupToClose = osjs('.ui-dialog-content');
-    osjs(popupToClose).data(RichWidgets_Popup_Editor_ClosingTag, RichWidgets_Popup_Editor_ClosingValue);
-    setTimeout(function() {
-            osjs(popupToClose).dialog('close');
-            osjs(popupToClose).remove();
-        },
-        0);
 }
 
 function RichWidgets_Popup_Editor_resize(divToPopup, setWidth, setHeight, recenter) {
@@ -299,3 +284,17 @@ function RichWidgets_Popup_Editor_resize(divToPopup, setWidth, setHeight, recent
     divPopupOuterWindow = null;
     return true;
 }
+
+
+var popupToClose;
+
+function RichWidgets_Popup_Editor_Close(iFrame) {
+    // Any close requests must immediately (synchronously) tag the closing element, marking it as closing. The cleanup must be done asynchronously due to IE7..
+    popupToClose = osjs('.ui-dialog-content');
+    osjs(popupToClose).data(RichWidgets_Popup_Editor_ClosingTag, RichWidgets_Popup_Editor_ClosingValue);
+    setTimeout(function() {
+            osjs(popupToClose).dialog('close');
+            osjs(popupToClose).remove();
+        },
+        0);
+};
