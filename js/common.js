@@ -83,9 +83,17 @@ $(function() {
 
                     }
                 },
-                elementParse: function(item) {
-                    console.log('Parsing content. Item object that is being parsed:', item);
-                },
+                  parseAjax: function(mfpResponse) {
+    // mfpResponse.data is a "data" object from ajax "success" callback
+    // for simple HTML file, it will be just String
+    // You may modify it to change contents of the popup
+    // For example, to show just #some-element:
+     mfpResponse.data = $(mfpResponse.data).find('#WebForm1');
+    
+    // mfpResponse.data must be a String or a DOM (jQuery) element
+    
+    console.log('Ajax content loaded:', mfpResponse);
+  },
                 close: function() {
                     window.location.hash = '_';
                 }
