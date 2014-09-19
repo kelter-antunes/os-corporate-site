@@ -141,7 +141,7 @@ function RichWidgets_Popup_Editor_init(linkId, notifyId, setTitle, setHeight, se
 
             $(divPleaseWait).show();
             if (setHeight == -1) setHeight = RichWidgets_Popup_Editor_InitialHeight;
-            $(divToPopup).show().dialog({
+            osjs(divToPopup).show().dialog({
                 dialogClass: 'Popup',
                 resizable: false,
                 autoResize: false,
