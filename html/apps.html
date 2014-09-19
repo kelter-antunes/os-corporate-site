@@ -1,12 +1,12 @@
 <style type="text/css">
-@media only screen and (max-device-width: 767px) and (orientation: landscape) {
-  .apps-body .span3 {
-    width: 224px;
-    float: left;
-    margin-left: 0;
-    margin-right: 5px;
+  @media only screen and (max-device-width: 767px) and (orientation: landscape) {
+    .apps-body .span3 {
+      width: 49%;
+      float: left;
+      margin-left: 0;
+      margin-right: 5px;
+    }
   }
-}
 </style>
 <script>
 function _orientationHandler(event){
@@ -16,6 +16,7 @@ function _orientationHandler(event){
     }
     else if(event.orientation == 'landscape') {
       setSameHeight();
+      $('.apps-body .span3').width( ($(window).width() / 2)-15 ) 
     }
   }
 }
@@ -31,7 +32,7 @@ function setSameHeight(){
 }
 $(document).ready(function() {
   if ($(window).width() > 767) {
-    $('.apps-home-hero').height( $('.apps-top').height() + 160 );
+    $('.apps-home-hero').height( $('.apps-top').height() + 127 );
   }else {
     $(window).bind('orientationchange', _orientationHandler); 
   }
@@ -51,7 +52,7 @@ $(window).load(function() {
   }
 });
 </script>
-<div class="apps-body" style="%WEB% padding-top: 70px; %/WEB%">
+<div class="apps-body" style="%WEB% padding-top: 50px; %/WEB%">
   <div class="container ">
     <div class="row">
       <div class="span12">
@@ -63,41 +64,37 @@ $(window).load(function() {
         <div class="span3">
           <div class="app-card">
             <h5 class="card-h">
-              <a href="order-management-app/">
-                <img alt="Order Management App" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=order-management-app&amp;v=20140829162308" class="app-card-icon"><span>Order Management</span> </a>
+              <a href="order-management-app/"><img alt="Order Management App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=order-management-app&amp;v=20140919180340" /><span>Order Management</span> </a>
             </h5>
             <div class="card-bottom">
-              <span class="card-desc">Give your sales team a fully integrated order management solution.</span> <a href="order-management-app/">Learn more</a>
+              <span class="card-desc">Fully integrated order management solution for sales teams.</span> <a href="order-management-app/">Learn more</a>
             </div>
           </div>
         </div>
         <div class="span3">
           <div class="app-card">
             <h5 class="card-h">
-              <a href="mobile-order-management-app/"><span class="osicon-mobile-order-mngmt app-card-icon">&nbsp;</span><span>Mobile Order Management</span> </a>
+              <a href="mobile-order-management-app/"><img alt="Mobile Order Management App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=order-management-mobile-app&amp;v=20140919180340" /><span>Mobile Order Management</span> </a>
             </h5>
             <div class="card-bottom">
-              <span class="card-desc">Speed up the entire quote to order process for your sales reps, right from their mobile devices.</span> <a href="mobile-order-management-app/">Learn more</a>
+              <span class="card-desc">Mobile app to speed up the entire quote to order process for your sales force.</span> <a href="mobile-order-management-app/">Learn more</a>
             </div>
           </div>
         </div>
         <div class="span3">
           <div class="app-card">
             <h5 class="card-h">
-              <a href="accident-reporting-app/"><span class="osicon-car-insurance app-card-icon">&nbsp;</span><span>Car Accident Reporting</span></a>
+              <a href="accident-reporting-app/"><img alt="Car Accident Reporting App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=car-insurance-mobile-app&amp;v=20140919180340" /><span>Car Accident Reporting</span></a>
             </h5>
             <div class="card-bottom">
-              <span class="card-desc">Provide loyalty-creating customer care when it is needed the most - reporting an accident from a mobile device.</span> <a href="accident-reporting-app/">Learn more</a>
+              <span class="card-desc">Mobile app for insurance companies customer care.</span> <a href="accident-reporting-app/">Learn more</a>
             </div>
           </div>
         </div>
         <div class="span3">
           <div class="app-card">
             <h5 class="card-h">
-              <a href="credit-request-app/"><span class="osicon-credit-request app-card-icon" style="
-    color: white;
-    background-color: brown;
-">&nbsp;</span><span>Credit Request</span> </a>
+              <a href="credit-request-app/"><img alt="Credit Request App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=credit-request-app&amp;v=20140919180340" /><span>Credit Request</span> </a>
             </h5>
             <div class="card-bottom">
               <span class="card-desc">Manage the credit initiation process of your financial services organization.</span> <a href="credit-request-app/">Learn more</a>
@@ -107,7 +104,7 @@ $(window).load(function() {
         <div class="span3">
           <div class="app-card">
             <h5 class="card-h">
-              <a href="sales-app/"><span class="osicon-sales app-card-icon">&nbsp;</span><span>Sales</span> </a>
+              <a href="sales-app/"><img alt="Sales App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=sales-app&amp;v=20140919180340" /><span>Sales</span> </a>
             </h5>
             <div class="card-bottom">
               <span class="card-desc">Get your own custom CRM app to manage your sales opportunities and forecasts.</span> <a href="sales-app/">Learn more</a>
@@ -117,20 +114,10 @@ $(window).load(function() {
         <div class="span3">
           <div class="app-card">
             <h5 class="card-h">
-              <a href="sales-app/"><span class="osicon-sales app-card-icon">&nbsp;</span><span>Executive Dashboard</span> </a>
+              <a href="exec-dashboard-app/"><img alt="Executive Dashboard App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=exec-dashboard&amp;v=20140919180340" /><span>Executive Dashboard</span> </a>
             </h5>
             <div class="card-bottom">
-              <span class="card-desc">Stay on top of your key business information anytime, anywhere.</span> <a href="sales-app/">Learn more</a>
-            </div>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="app-card">
-            <h5 class="card-h">
-              <a href="sales-app/"><span class="osicon-sales app-card-icon">&nbsp;</span><span>Personal Homepage</span> </a>
-            </h5>
-            <div class="card-bottom">
-              <span class="card-desc">Get your own custom CRM app to manage your sales opportunities and forecasts.</span> <a href="sales-app/">Learn more</a>
+              <span class="card-desc">Stay on top of your key business information anytime, anywhere.</span> <a href="exec-dashboard-app/">Learn more</a>
             </div>
           </div>
         </div>
@@ -149,27 +136,27 @@ $(window).load(function() {
           <div class="span3">
             <div class="app-card">
               <h5 class="card-h">
-                <a href="cases-app/"><span class="osicon-cases app-card-icon">&nbsp;</span><span>Cases</span> </a>
+                <a href="cases-app/"><img alt="Cases App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=cases-app&amp;v=20140919180340" /><span>Cases</span> </a>
               </h5>
               <div class="card-bottom">
-                <span class="card-desc">Get all your customer interactions under control.</span> <a href="cases-app/">Learn more</a>
+                <span class="card-desc">Ticketing app to&nbsp;manage your customer support interactions.</span> <a href="cases-app/">Learn more</a>
               </div>
             </div>
           </div>
           <div class="span3">
             <div class="app-card">
               <h5 class="card-h">
-                <a href="customer-portal-app/"><span class="osicon-customer-portal app-card-icon">&nbsp;</span><span>Customer Portal</span> </a>
+                <a href="customer-portal-app/"><img alt="Customer Portal" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=customer-portal-app&amp;v=20140919180340" /><span>Energy Customer Portal</span> </a>
               </h5>
               <div class="card-bottom">
-                <span class="card-desc">Improve communication with your customers.</span> <a href="customer-portal-app/">Learn more</a>
+                <span class="card-desc">Mobile app to improve communication and customer care.</span> <a href="customer-portal-app/">Learn more</a>
               </div>
             </div>
           </div>
           <div class="span3">
             <div class="app-card">
               <h5 class="card-h">
-                <a href="directory-app/"><span class="osicon-directory app-card-icon">&nbsp;</span><span>Directory</span> </a>
+                <a href="directory-app/"><img alt="Directory App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=directory-app&amp;v=20140919180340" /><span>Directory</span> </a>
               </h5>
               <div class="card-bottom">
                 <span class="card-desc">Employee contact info accessible on all your devices.</span> <a href="directory-app/">Learn more</a>
@@ -179,7 +166,7 @@ $(window).load(function() {
           <div class="span3">
             <div class="app-card">
               <h5 class="card-h">
-                <a href="documents-app/"><span class="osicon-documents app-card-icon">&nbsp;</span><span>Documents</span> </a>
+                <a href="documents-app/"><img alt="Documents App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=documents-app&amp;v=20140919180340" /><span>Documents</span> </a>
               </h5>
               <div class="card-bottom">
                 <span class="card-desc">All your documents centralized, accessible and safe. Anytime, anywhere.</span> <a href="documents-app/">Learn more</a>
@@ -189,17 +176,17 @@ $(window).load(function() {
           <div class="span3">
             <div class="app-card">
               <h5 class="card-h">
-                <a href="expenses-app/"><span class="osicon-expenses app-card-icon">&nbsp;</span><span>Expenses</span> </a>
+                <a href="expenses-app/"><img alt="Expenses App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=expenses-app&amp;v=20140919180340" /><span>Expenses</span> </a>
               </h5>
               <div class="card-bottom">
-                <span class="card-desc">Create, submit and approve your expenses online.</span> <a href="expenses-app/">Learn more</a>
+                <span class="card-desc">Create, submit and approve employee expenses online.</span> <a href="expenses-app/">Learn more</a>
               </div>
             </div>
           </div>
           <div class="span3">
             <div class="app-card">
               <h5 class="card-h">
-                <a href="time-sheets-app/"><span class="osicon-timesheets app-card-icon">&nbsp;</span><span>Time Sheets</span> </a>
+                <a href="time-sheets-app/"><img alt="Time Sheets App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=time-sheets-app&amp;v=20140919180340" /><span>Time Sheets</span> </a>
               </h5>
               <div class="card-bottom">
                 <span class="card-desc">Track your team and project time allocations.</span> <a href="time-sheets-app/">Learn more</a>
@@ -209,10 +196,10 @@ $(window).load(function() {
           <div class="span3">
             <div class="app-card">
               <h5 class="card-h">
-                <a href="time-sheets-app/"><span class="osicon-timesheets app-card-icon">&nbsp;</span><span>Telco Services</span> </a>
+                <a href="field-services-app/"><img alt="Telco Services" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=play4telco-icon&amp;v=20140919180340" /><span>Field Services</span> </a>
               </h5>
               <div class="card-bottom">
-                <span class="card-desc">Track your team and project time allocations.</span> <a href="time-sheets-app/">Learn more</a>
+                <span class="card-desc">Tablet&nbsp;app to support field personel activities.</span> <a href="field-services-app/">Learn more</a>
               </div>
             </div>
           </div>
