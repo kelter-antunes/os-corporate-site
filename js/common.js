@@ -83,6 +83,9 @@ $(function() {
 
                     }
                 },
+                elementParse: function(item) {
+                    console.log('Parsing content. Item object that is being parsed:', item);
+                },
                 close: function() {
                     window.location.hash = '_';
                 }
