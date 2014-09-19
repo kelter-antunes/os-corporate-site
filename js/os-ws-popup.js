@@ -183,23 +183,24 @@ function RichWidgets_Popup_Editor_init(linkId, notifyId, setTitle, setHeight, se
         }
 
 
-        var popupToClose;
-
-        function RichWidgets_Popup_Editor_Close(iFrame) {
-            // Any close requests must immediately (synchronously) tag the closing element, marking it as closing. The cleanup must be done asynchronously due to IE7..
-            popupToClose = osjs('.ui-dialog-content');
-            osjs(popupToClose).data(RichWidgets_Popup_Editor_ClosingTag, RichWidgets_Popup_Editor_ClosingValue);
-            setTimeout(function() {
-                    osjs(popupToClose).dialog('close');
-                    osjs(popupToClose).remove();
-                },
-                0);
-        }
-
     });
 
 
 
+}
+
+
+var popupToClose;
+
+function RichWidgets_Popup_Editor_Close(iFrame) {
+    // Any close requests must immediately (synchronously) tag the closing element, marking it as closing. The cleanup must be done asynchronously due to IE7..
+    popupToClose = osjs('.ui-dialog-content');
+    osjs(popupToClose).data(RichWidgets_Popup_Editor_ClosingTag, RichWidgets_Popup_Editor_ClosingValue);
+    setTimeout(function() {
+            osjs(popupToClose).dialog('close');
+            osjs(popupToClose).remove();
+        },
+        0);
 }
 
 function RichWidgets_Popup_Editor_resize(divToPopup, setWidth, setHeight, recenter) {
