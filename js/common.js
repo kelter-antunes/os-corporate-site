@@ -328,12 +328,13 @@ $(document).ready(function() {
 /** dropdown menus **/
 var currentActive;
 function toggleDropdowMenu(_elem) {
-    $('#submenu-solutions').toggle();
-    if (_elem.parent().parent().hasClass('active')) {
-        _elem.parent().parent().removeClass('active');
+    $("[data-dropdown-wrapper='"+ $(_elem).attr('data-name') +"']").toggle();
+
+    if (_elem.parent().hasClass('active')) {
+        _elem.parent().removeClass('active');
         currentActive.addClass('active');
     } else {
-        _elem.parent().parent().addClass('active');
+        _elem.parent().addClass('active');
         currentActive.removeClass('active');
     };
 }

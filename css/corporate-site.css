@@ -7929,9 +7929,12 @@ div.st-result .st-date
 
 /*********Cookies Message *************/
 /************Start Sub Menu Hover ********/
+[data-dropdown-wrapper] {
+display: none;
+}
+
 .submenuhover
 {
-    display:none;
     position:absolute;
     top:50px;
     margin-left:28px
