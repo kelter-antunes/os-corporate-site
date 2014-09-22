@@ -83,22 +83,22 @@ $(function() {
 
                     }
                 },
-                  parseAjax: function(mfpResponse) {
+                parseAjax: function(mfpResponse) {
     // mfpResponse.data is a "data" object from ajax "success" callback
     // for simple HTML file, it will be just String
     // You may modify it to change contents of the popup
     // For example, to show just #some-element:
      //mfpResponse.data = $(mfpResponse.data).find('#WebForm1');
-    
+
     // mfpResponse.data must be a String or a DOM (jQuery) element
     
     console.log('Ajax content loaded:', mfpResponse);
-  },
-                close: function() {
-                    window.location.hash = '_';
-                }
-            }
-        });
+},
+close: function() {
+    window.location.hash = '_';
+}
+}
+});
 
 $('.magnific_popup_link').click(function(event) {
     window.location.hash = $(this).attr('href');
@@ -338,7 +338,7 @@ function toggleDropdowMenu(_elem) {
     } else {
         _elem.parent().addClass('active');
         currentActive.removeClass('active');
-    };
+    }
 }
 $(document).ready(function() {
     currentActive = $('.navigation-bar li[class=active]');
@@ -349,14 +349,15 @@ $(document).ready(function() {
         clicked = $(this);
 
         toggleDropdowMenu( clicked );
-        var handler = function(e) {
-            if ( $("[data-dropdown-wrapper]").is(':visible') && 
-                 $("[data-dropdown-wrapper]").has(e.target).length === 0) {
-                toggleDropdowMenu( clicked );
-                $('body').unbind('click', handler);
-            };
-        };
-        $('body').bind('click', handler);
+
+        $('[data-dropdown-wrapper]').click(function(event) {
+            event.stopPropagation();
+        });
+
+
+        $(document).on('click', function (e) {
+            toggleDropdowMenu( clicked );
+        });
     });
 });
 

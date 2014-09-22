@@ -7949,7 +7949,7 @@ display: none;
 {
     position:absolute;
     background-color:#FFF;
-    z-index:999;
+    z-index:10000;
     background-image:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=lamp&v=201406081625);
     background-position:left;
     background-repeat:no-repeat;
