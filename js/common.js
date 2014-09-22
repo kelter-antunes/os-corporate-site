@@ -328,6 +328,8 @@ $(document).ready(function() {
 /** dropdown menus **/
 var currentActive;
 function toggleDropdowMenu(_elem) {
+    $('.navigation-bar li[class=active]').removeClass('active');
+    $('[data-dropdown-wrapper]').hide();
     $("[data-dropdown-wrapper='"+ $(_elem).attr('data-name') +"']").toggle();
 
     if (_elem.parent().hasClass('active')) {
