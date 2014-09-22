@@ -350,8 +350,8 @@ $(document).ready(function() {
 
         toggleDropdowMenu( clicked );
         var handler = function(e) {
-            if ( $("[data-dropdown-wrapper='"+ $(clicked).attr('data-name') +"']").is(':visible') && 
-                 $("[data-dropdown-wrapper='"+ $(clicked).attr('data-name') +"']").has(e.target).length === 0) {
+            if ( $("[data-dropdown-wrapper]").is(':visible') && 
+                 $("[data-dropdown-wrapper]").has(e.target).length === 0) {
                 toggleDropdowMenu( clicked );
                 $('body').unbind('click', handler);
             };
