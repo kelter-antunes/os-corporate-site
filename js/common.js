@@ -330,7 +330,6 @@ var currentActive;
 function hideDropDown(_elem){
     $('.navigation-bar li[class=active]').removeClass('active');
     $('[data-dropdown-wrapper]').hide();
-    $("[data-dropdown-wrapper='"+ $(_elem).attr('data-name') +"']").toggle();
 }
 
 function toggleDropdowMenu(_elem) {
