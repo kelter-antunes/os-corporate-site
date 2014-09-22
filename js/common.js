@@ -83,23 +83,11 @@ $(function() {
 
                     }
                 },
-                parseAjax: function(mfpResponse) {
-    // mfpResponse.data is a "data" object from ajax "success" callback
-    // for simple HTML file, it will be just String
-    // You may modify it to change contents of the popup
-    // For example, to show just #some-element:
-     //mfpResponse.data = $(mfpResponse.data).find('#WebForm1');
-
-    // mfpResponse.data must be a String or a DOM (jQuery) element
-    
-    //mfpResponse.data = $(mfpResponse.data).find('.mfp-os-wrapper')
-    console.log('Ajax content loaded:', mfpResponse);
-},
-close: function() {
-    window.location.hash = '_';
-}
-}
-});
+                close: function() {
+                    window.location.hash = '_';
+                }
+            }
+        });
 
 $('.magnific_popup_link').click(function(event) {
     window.location.hash = $(this).attr('href');
@@ -133,7 +121,7 @@ $(document).mouseup(function(e) {
 
 $(document).keyup(function(e) {
 
-   if ($.magnificPopup.instance.currItem !== undefined) {
+ if ($.magnificPopup.instance.currItem !== undefined) {
 
     if ($.magnificPopup.instance.currItem !== null) {
         if ($.magnificPopup.instance.currItem.type === 'ajax') {
