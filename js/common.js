@@ -322,6 +322,46 @@ $(document).ready(function() {
 });
 
 
+
+
+
+/** dropdown menus **/
+var currentActive;
+function toggleDropdowMenu(_elem) {
+    $('#submenu-solutions').toggle();
+    if (_elem.parent().parent().hasClass('active')) {
+        _elem.parent().parent().removeClass('active');
+        currentActive.addClass('active');
+    } else {
+        _elem.parent().parent().addClass('active');
+        currentActive.removeClass('active');
+    };
+}
+$(document).ready(function() {
+    currentActive = $('.navigation-bar li[class=active]');
+    $('[data-option=dropdown]').click(function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        clicked = $(this);
+
+        toggleDropdowMenu( clicked );
+        var handler = function(e) {
+            if ( $("[data-dropdown-wrapper='"+ $(clicked).attr('data-name') +"']").is(':visible') && 
+                 $("[data-dropdown-wrapper='"+ $(clicked).attr('data-name') +"']").has(e.target).length === 0) {
+                toggleDropdowMenu( clicked );
+                $('body').unbind('click', handler);
+            };
+        };
+        $('body').bind('click', handler);
+    });
+});
+
+
+
+
+
+
 /**
  * jQuery.browser.mobile (http://detectmobilebrowser.com/)
  *
