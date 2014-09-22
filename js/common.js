@@ -92,7 +92,7 @@ $(function() {
 
     // mfpResponse.data must be a String or a DOM (jQuery) element
     
-    mfpResponse.data = $(mfpResponse.data).find('.mfp-os-wrapper')
+    //mfpResponse.data = $(mfpResponse.data).find('.mfp-os-wrapper')
     console.log('Ajax content loaded:', mfpResponse);
 },
 close: function() {
