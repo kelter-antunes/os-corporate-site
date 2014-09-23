@@ -1,0 +1,80 @@
+<style type="text/css">
+body.landing-no-top {
+  background: white;
+}
+.submenuhoverbox.product {
+  background-image: none;
+  padding-top: 0;
+}
+.light-back {
+ background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-hover-lamp&v=20140923161018") no-repeat;
+ background-position: 25px 0;
+ margin-left: 0;
+ padding-left: 200px;
+ padding-top: 30px;
+}
+.mobile-back {
+  background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-hover-mobile&v=20140923161018") no-repeat;
+  background-position: 5px 0;
+  margin-left: 0;
+  padding-left: 140px;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .header-hero-wrapper {
+    %MOBILE%   height: 80px !important;
+    %/MOBILE%  
+  }
+
+  .light-back {
+    background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-hover-lamp&v=20140923164916") no-repeat;
+    background-position: -15px 22px;
+    background-size: 40%;
+    margin-left: 0;
+    padding-left: 100px;
+  }
+  .mobile-back {
+    background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-hover-mobile&v=20140923164916") no-repeat;
+    padding-top: 30px;
+    background-position: -12px 13px;
+    background-size: 40%;
+    margin-left: 0;
+    padding-left: 100px;
+    padding-bottom: 10px;
+  }
+
+}
+</style>
+<div class="magiccontainer">
+  <div class="submenuhover">
+    <div class="container">
+      <div class="row">
+        <div class="span12 align-center submenuhoverbox product">
+          <div class="row">
+            <div class="span6">
+              <div class="submenuhoverbox-firstcontent light-back">
+                <h3>
+                  Enterprise Rapid App Delivery Platform
+                </h3>
+                <h6>
+                  %WEB% <a href="/platform/" style="display: block;">Learn More...</a> %/WEB% %MOBILE% <a href="/platform/m" style="display: block;">Learn More...</a> %/MOBILE%
+                </h6>
+              </div>
+            </div>
+            <div class="span6">
+              <div class="submenuhoverbox-secondcontent mobile-back">
+                <h3>
+                  Mobile Application Delivery Platform
+                </h3>
+                <h6>
+                  %WEB% <a href="/platform/madp" style="display: block;">Learn More ...</a> %/WEB% %MOBILE% <a href="/platform/madp/m" style="display: block;">Learn More ...</a> %/MOBILE%
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
