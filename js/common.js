@@ -330,7 +330,7 @@ $(document).ready(function() {
 
         clicked = $(this);
 
-        if ($("[data-dropdown-wrapper='" + $(_elem).attr('data-name') + "']").is(":visible")) {
+        if ($("[data-dropdown-wrapper='" + $(clicked).attr('data-name') + "']").is(":visible")) {
             hideDropDown(clicked);
         } else {
             toggleDropdowMenu(clicked);
