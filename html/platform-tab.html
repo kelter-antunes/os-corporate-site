@@ -7,18 +7,50 @@ body.landing-no-top {
   padding-top: 0;
 }
 .light-back {
- background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-hover-lamp&v=20140923161018") no-repeat;
- background-position: 25px 0;
- margin-left: 0;
- padding-left: 200px;
- padding-top: 30px;
+  background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-hover-lamp&v=20140923165642") no-repeat;
+  background-position: 25px 0;
+  margin-left: 0;
+  padding-left: 200px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .mobile-back {
-  background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-hover-mobile&v=20140923161018") no-repeat;
+  background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-hover-mobile&v=20140923165642") no-repeat;
   background-position: 5px 0;
   margin-left: 0;
   padding-left: 140px;
   padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.h3-product-tab {
+  font-size: 24px; 
+  line-height: 28px;
+  font-weight: 600; 
+  color: #333; 
+  margin-top: 0;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.h6-product-tab {
+  font-size: 16px; 
+  line-height: 22px; 
+  font-weight: 400;  
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.submenuhoverbox-firstcontent.light-back a,
+.submenuhoverbox-secondcontent.mobile-back a {
+  text-decoration: none;
+  display: block;
+  font-family: 'myriad-pro',Helvetica,Arial,sans-serif;
+}
+
+a:hover span.h6-product-tab {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 767px) {
@@ -26,25 +58,50 @@ body.landing-no-top {
     %MOBILE%   height: 80px !important;
     %/MOBILE%  
   }
-
   .light-back {
-    background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-hover-lamp&v=20140923164916") no-repeat;
+    background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-hover-lamp&v=20140923165642") no-repeat;
     background-position: -15px 22px;
     background-size: 40%;
     margin-left: 0;
-    padding-left: 100px;
+    padding-left: 0;
   }
   .mobile-back {
-    background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-hover-mobile&v=20140923164916") no-repeat;
+    background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-hover-mobile&v=20140923165642") no-repeat;
     padding-top: 30px;
     background-position: -12px 13px;
     background-size: 40%;
     margin-left: 0;
-    padding-left: 100px;
+    padding-left: 0;
     padding-bottom: 10px;
   }
 
+  .submenuhoverbox-firstcontent.light-back a,
+  .submenuhoverbox-secondcontent.mobile-back a {
+    padding-left: 100px;
+  }
 }
+
+/* Landscape */
+@media only screen and (max-device-width: 767px) and (orientation: landscape) {
+
+  .submenuhoverbox-firstcontent {
+    display: inline-block;
+    text-align: left;
+    width: auto;
+    margin-left: 0;
+    float: none;
+    margin-top: 0;
+    background-position: -15px 0px;
+    background-size: 24%;
+  }
+
+  .submenuhoverbox-secondcontent {
+    background-position: -15px 0px !important;
+    background-size: 24% !important;
+  }
+
+}
+
 </style>
 <div class="magiccontainer">
   <div class="submenuhover">
@@ -54,22 +111,22 @@ body.landing-no-top {
           <div class="row">
             <div class="span6">
               <div class="submenuhoverbox-firstcontent light-back">
-                <h3>
-                  Enterprise Rapid App Delivery Platform
-                </h3>
-                <h6>
-                  %WEB% <a href="/platform/" style="display: block;">Learn More...</a> %/WEB% %MOBILE% <a href="/platform/m" style="display: block;">Learn More...</a> %/MOBILE%
-                </h6>
+                <a href="/platform/">
+                  <span class="h3-product-tab">
+                    Enterprise Rapid App Delivery Platform
+                  </span>
+                  <span class="h6-product-tab" style="display: block;">Learn More...</span>
+                </a>
               </div>
             </div>
             <div class="span6">
               <div class="submenuhoverbox-secondcontent mobile-back">
-                <h3>
-                  Mobile Application Delivery Platform
-                </h3>
-                <h6>
-                  %WEB% <a href="/platform/madp" style="display: block;">Learn More ...</a> %/WEB% %MOBILE% <a href="/platform/madp/m" style="display: block;">Learn More ...</a> %/MOBILE%
-                </h6>
+                <a href="/platform/madp">
+                  <span class="h3-product-tab">
+                    Mobile Application Delivery Platform
+                  </span>
+                  <span class="h6-product-tab" style="display: block;">Learn More...</span>
+                </a> 
               </div>
             </div>
           </div>
