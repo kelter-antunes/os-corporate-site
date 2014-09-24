@@ -222,4 +222,10 @@ div.mktoButtonRow
 		resize:none;
 		width:auto!important
 	}
+	
+	.mktoButtonRow:last-of-type span
+	{
+		display:block;
+		clear:both
+	}
 }
