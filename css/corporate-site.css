@@ -7664,7 +7664,8 @@ div.st-result .st-date
 {
     display:block;
     color:#00832A;
-    font-style:normal
+    font-style:normal;
+    word-break: break-all
 }
 
 .st-result h4.title
