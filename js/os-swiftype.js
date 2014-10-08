@@ -234,10 +234,13 @@ $('#st-search-input').swiftypeSearch({
 $('#st-search-input').swiftype({
     engineKey: 'GZhgtDYXiyvDjz48t2SP',
     resultRenderFunction: customResultRenderFunction,
-    setWidth: false,
+    setWidth: 980,
     resultLimit: 35,
-    fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']}
+    fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']},
+    autocompleteContainingElement: '.navigation-inner.container'
 });
+
+
 
 $('#st-search-input-2').swiftype({
     engineKey: 'GZhgtDYXiyvDjz48t2SP',
