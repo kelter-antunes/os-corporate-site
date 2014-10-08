@@ -198,7 +198,16 @@ var customResultRenderFunction = function(ctx, data) {
 
   };
 
-
+var customResultStyle = function($this) {
+        var styles = {
+            'position': 'absolute',
+            'z-index': 9999,
+            'top': '80px',
+            'left': 'auto',
+            'width': '980px'
+        };
+        return styles;
+    };
 
   $("#st-search-input").keydown(function(ev) {
     if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
@@ -234,10 +243,11 @@ $('#st-search-input').swiftypeSearch({
 $('#st-search-input').swiftype({
     engineKey: 'GZhgtDYXiyvDjz48t2SP',
     resultRenderFunction: customResultRenderFunction,
-    setWidth: 980,
+    setWidth: '980px',
     resultLimit: 35,
     fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']},
-    autocompleteContainingElement: '.navigation-inner.container'
+    autocompleteContainingElement: '.navigation-inner.container',
+    dropdownStylesFunction: customResultStyle
 });
 
 
