@@ -5,24 +5,20 @@ osjs(function(a) {
         b = b.replace("agile-platform", "platform");
         var c = b.replace(/.*#/, "");
         c = c.replace(/&_=.*/, "");
-        var lastChar = c.substr(-1);
-        if (lastChar !== '/') {
 
-            if (osjs("a[href$=\"" + c + "\"]").length !== 0){
-                if (c != "_"){
-                    setTimeout(function() {
-                        osjs("a[href$=\"" + c + "\"]")[0].click();
-                    }, 1e3);
-                }
-            }else{
-                c = c + '/';
-                if (c != "_"){
-                    setTimeout(function() {
-                        osjs("a[href$=\"" + c + "\"]")[0].click();
-                    }, 1e3);
-                }
+        if (osjs("a[href$=\"" + c + "\"]").length !== 0){
+            if (c != "_"){
+                setTimeout(function() {
+                    osjs("a[href$=\"" + c + "\"]")[0].click();
+                }, 1e3);
             }
-            
+        }else{
+            c = c + '/';
+            if (c != "_"){
+                setTimeout(function() {
+                    osjs("a[href$=\"" + c + "\"]")[0].click();
+                }, 1e3);
+            }
         }
         
     }
