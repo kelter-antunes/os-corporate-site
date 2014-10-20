@@ -57,11 +57,9 @@ var customResultRenderFunction = function(ctx, data) {
     if(WebSite.length>0){
         //WebSiteList.appendTo(WSdiv);
         //$('<div class="column1">Website</div>').appendTo(badruz);
+        $('<li class="swtpbutton">See all results</li>').appendTo(WebSiteList);
         WebSiteList.appendTo(badruz);
     }
-
-  
-    $('<li class="swtpbutton">See all results</li>').appendTo(badruz);
 
 
     if(WebSite.length > 0){
@@ -131,7 +129,7 @@ $('#st-search-input-2').swiftype({
     resultRenderFunction: customResultRenderFunction,
     setWidth: false,
     resultLimit: 35,
-    fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']}
+    fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']},
     /*renderFunction: customRenderAutoComplete,
     setWidth: false,
     resultLimit : 15,*/
