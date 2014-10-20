@@ -7869,7 +7869,7 @@ div.st-result .st-date
 }
 
 
-.swiftype-widget .autocomplete li .swtpbutton {
+.swiftype-widget .autocomplete li.swtpbutton {
     font-size: 14px;
     color: #0088cc;
     background-color: rgba(255,255,255,0.8);
