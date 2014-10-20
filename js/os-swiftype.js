@@ -83,13 +83,14 @@ var customResultRenderFunction = function(ctx, data) {
         BlogList.appendTo(badruz);
     }
 
+  
+    $('<li class="swtpbutton">See all results</li>').appendTo.(badruz);
 
 
     if(WebSite.length > 0 || Blog.length > 0){
         badruz.appendTo(ctx.list);
     }
 
-    $('<li class="swtpbutton">See all results</li>').appendTo(ctx.list);
 
   };
 
