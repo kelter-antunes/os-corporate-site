@@ -51,7 +51,10 @@ var customResultRenderFunction = function(ctx, data) {
 
     $.each(WebSite, function(idx, item) {
         var out = '<p class="title">' + item['title'] + '</p>';
-        if (item.highlight.body) {
+        if (item['description']) {
+            out = out.concat('<p class="body">' + item['description'] + "</p>");
+        }
+        else{
             out = out.concat('<p class="body">' + item.highlight.body + "</p>");
         }
         ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
@@ -66,7 +69,10 @@ var customResultRenderFunction = function(ctx, data) {
 
     $.each(Blog, function(idx, item) {
         var out = '<p class="title">' + item['title'] + '</p>';
-        if (item.highlight.body) {
+        if (item['description']) {
+            out = out.concat('<p class="body">' + item['description'] + "</p>");
+        }
+        else{
             out = out.concat('<p class="body">' + item.highlight.body + "</p>");
         }
         ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(BlogList), item);
@@ -82,6 +88,8 @@ var customResultRenderFunction = function(ctx, data) {
     if(WebSite.length > 0 || Blog.length > 0){
         badruz.appendTo(ctx.list);
     }
+
+    $('<li class="swtpbutton">See all results</li>').appendTo(ctx.list);
 
   };
 

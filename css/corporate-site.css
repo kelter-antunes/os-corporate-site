@@ -7868,6 +7868,20 @@ div.st-result .st-date
     font-style:normal
 }
 
+
+.swiftype-widget .autocomplete li .swtpbutton {
+    font-size: 14px;
+    color: #0088cc;
+    background-color: rgba(255,255,255,0.8);
+    vertical-align: center;
+    text-align: center;
+    border-top: 1px #e6e6e6;
+    padding: 20px 0px;
+    top: -20px;
+    height: 50px;
+
+}
+
 /*********Cookies Message *************/
 .warning_EU_cookiemsg,.warning_EU_cookiemsg *
 {
