@@ -62,11 +62,10 @@ var customResultRenderFunction = function(ctx, data) {
     if(WebSite.length>0){
         //WebSiteList.appendTo(WSdiv);
         //$('<div class="column1">Website</div>').appendTo(badruz);
-        ctx.registerResult($('<li id="allresults" class="swtpbutton"><p>See all results 2</p></li>').appendTo(WebSiteList), seeallres);
-        $('<li class="swtpbutton"><a href="/search/#stq=' + $("#st-search-input").val() + '&stp=1"><p>See all results</p></a></li>').appendTo(WebSiteList);
+        ctx.registerResult($('<li class="swtpbutton"><a href="/search/#stq=' + $("#st-search-input").val() + '&stp=1"><p>See all results</p></a></li>').appendTo(WebSiteList),seeallres);
         WebSiteList.appendTo(badruz);
     }
-    
+
 
 
     if(WebSite.length > 0){
@@ -105,7 +104,7 @@ if ($.hashParams().stq !== "") {
     $("#st-search-input-2").val($.hashParams().stq);
 };
 
-
+/*
 $('#allresults').unbind('click').bind('click' , function(ev) {
     ev.preventDefault();
     window.location.hash = '/search/#stq=' + $("#st-search-input").val() + '&stp=1';
@@ -119,6 +118,7 @@ $('.swtpbutton').on('click' , function(ev) {
     window.location.hash = '/search/#stq=' + $("#st-search-input").val() + '&stp=1';
     $("#st-search-input-2").val($("#st-search-input").val());
 });
+*/
 
 
 $('#st-search-input').swiftypeSearch({

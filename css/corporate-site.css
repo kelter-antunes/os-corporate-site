@@ -7886,7 +7886,9 @@ div.st-result .st-date
      background-color:#e6e6e6!important;
 }
 
-
+.swiftype-widget .autocomplete a:hover {
+     text-decoration: none !important;
+}
 
 .swiftype-widget .autocomplete ul.WebSite {
     padding-top:5px;
