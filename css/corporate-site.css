@@ -7687,7 +7687,7 @@ div.st-result .st-date
 /***  autocomplete  ***/
 .swiftype-widget .autocomplete
 {
-    font-family:"Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-family:'myriad-pro';
     background-color:#fff;
     display:block;
     list-style-type:none;
@@ -7707,7 +7707,8 @@ div.st-result .st-date
 
 .swiftype-widget .autocomplete ul
 {
-    font-family:"Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-family: 'myriad-pro';
+    font-weight: normal;
     background-color:#fff;
     display:block;
     list-style-type:none;
@@ -7729,11 +7730,11 @@ div.st-result .st-date
     /*border-top:1px solid #e5e5e5;
     border-bottom:1px solid #fff;*/
     cursor:pointer;
-    padding:10px 8px;
-    font-size:13px;
+    padding:0px 15px;
     list-style-type:none;
     background-image:none;
-    margin:0
+    margin:15px 0px;
+
 }
 
 .swiftype-widget .autocomplete li:first-child
@@ -7757,9 +7758,9 @@ div.st-result .st-date
 
 .swiftype-widget .autocomplete li.active
 {
-    border-top:1px solid #145A93;
+    background-color:#e6e6e6;
+    /*border-top:1px solid #145A93;
     border-bottom:1px solid #086aa8;
-    background-color:#1285d5;
     background:-webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#37a3e9),color-stop(100%,#1285d5));
     background:-webkit-linear-gradient(#37a3e9,#1285d5);
     background:-moz-linear-gradient(#37a3e9,#1285d5);
@@ -7767,42 +7768,51 @@ div.st-result .st-date
     background:linear-gradient(#37a3e9,#1285d5);
     -webkit-box-shadow:0 1px 0 #69bdf3 inset;
     -moz-box-shadow:0 1px 0 #69bdf3 inset;
-    box-shadow:0 1px 0 #69bdf3 inset
+    box-shadow:0 1px 0 #69bdf3 inset*/
 }
 
 .swiftype-widget .autocomplete li p
 {
-    font-size:13px;
+    /*font-size:13px;
     line-height:16px;
     margin:0;
-    padding:0
+    padding:0*/
 }
 
 .swiftype-widget .autocomplete li p.title
 {
-    font-weight:700;
-    color:#1c6cb5
+    font-size: 14px;
+    color:#0088cc
 }
 
 .swiftype-widget .autocomplete li p.title em
 {
-    color:#0b2644;
+   /* color:#0b2644;
     font-style:normal;
-    font-weight:700
+    font-weight:700*/
 }
+
+
 
 .swiftype-widget .autocomplete li.active p.title
 {
-    text-shadow:0 -1px 0 rgba(0,0,0,0.3);
-    color:#fff
+    color:#0066aa;
+    /*text-shadow:0 -1px 0 rgba(0,0,0,0.3);
+    color:#fff*/
 }
 
 .swiftype-widget .autocomplete li.active p.title em
 {
-    color:#fff;
-    font-style:normal
+    /*color:#fff;
+    font-style:normal*/
 }
 
+
+.swiftype-widget .autocomplete li p.body
+{
+    font-size: 12px;
+    color:#808080
+}
 
 
 
