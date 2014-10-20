@@ -62,7 +62,7 @@ var customResultRenderFunction = function(ctx, data) {
     if(WebSite.length>0){
         //WebSiteList.appendTo(WSdiv);
         //$('<div class="column1">Website</div>').appendTo(badruz);
-        ctx.registerResult($('<li class="result">See all results 2</li>').appendTo(WebSiteList), seeallres);
+        ctx.registerResult($('<li id="allresults" class="swtpbutton"><p>See all results 2</p></li>').appendTo(WebSiteList), seeallres);
         $('<li class="swtpbutton"><p>See all results</p></li>').appendTo(WebSiteList);
         WebSiteList.appendTo(badruz);
     }
@@ -104,10 +104,19 @@ if ($.hashParams().stq !== "") {
     $("#st-search-input-2").val($.hashParams().stq);
 };
 
-$('.swtpbutton').onclick = function(ev) {
+$('.allresults').unbind("click");
+
+$('.allresults').on('click' , function(ev) {
     ev.preventDefault();
     window.location.hash = '#stq=' + $("#st-search-input").val() + '&stp=1';
-    $("#st-search-input-2").val($(this).val());
+    $("#st-search-input-2").val($("#st-search-input").val());
+};
+
+
+$('.swtpbutton').on('click' , function(ev) {
+    ev.preventDefault();
+    window.location.hash = '#stq=' + $("#st-search-input").val() + '&stp=1';
+    $("#st-search-input-2").val($("#st-search-input").val());
 };
 
 
