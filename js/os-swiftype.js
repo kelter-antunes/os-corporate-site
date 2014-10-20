@@ -113,6 +113,7 @@ $('.allresults').on('click' , function(ev) {
 });
 
 
+
 $('.swtpbutton').on('click' , function(ev) {
     ev.preventDefault();
     window.location.hash = '#stq=' + $("#st-search-input").val() + '&stp=1';
