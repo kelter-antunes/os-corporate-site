@@ -66,6 +66,7 @@ var customResultRenderFunction = function(ctx, data) {
         $('<li class="swtpbutton"><a href="/search/#stq=' + $("#st-search-input").val() + '&stp=1"><p>See all results</p></a></li>').appendTo(WebSiteList);
         WebSiteList.appendTo(badruz);
     }
+    
 
 
     if(WebSite.length > 0){
