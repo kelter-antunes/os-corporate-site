@@ -63,7 +63,7 @@ var customResultRenderFunction = function(ctx, data) {
         //WebSiteList.appendTo(WSdiv);
         //$('<div class="column1">Website</div>').appendTo(badruz);
         ctx.registerResult($('<li id="allresults" class="swtpbutton"><p>See all results 2</p></li>').appendTo(WebSiteList), seeallres);
-        $('<li class="swtpbutton"><p>See all results</p></li>').appendTo(WebSiteList);
+        $('<li class="swtpbutton"><a href=' + window.location.hash = '#stq=' + $("#st-search-input").val() + '&stp=1' +' ><p>See all results</p></a></li>').appendTo(WebSiteList);
         WebSiteList.appendTo(badruz);
     }
 
