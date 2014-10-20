@@ -7714,11 +7714,11 @@ div.st-result .st-date
     list-style-type:none;
     margin:0;
     padding:0;
-    -webkit-border-radius:3px;
+    /*-webkit-border-radius:3px;
     -moz-border-radius:3px;
     -ms-border-radius:3px;
     -o-border-radius:3px;
-    border-radius:3px;
+    border-radius:3px;*/
     text-align:left;
     border-top:1px solid #e5e5e5;
     border-bottom:1px solid #e5e5e5;
@@ -7758,7 +7758,7 @@ div.st-result .st-date
 
 .swiftype-widget .autocomplete li.active
 {
-    background-color:#e6e6e6;
+    background-color:#e6e6e6!important;
     /*border-top:1px solid #145A93;
     border-bottom:1px solid #086aa8;
     background:-webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#37a3e9),color-stop(100%,#1285d5));
