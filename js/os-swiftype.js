@@ -28,16 +28,12 @@ $(function() {
 
 
 var customResultRenderFunction = function(ctx, data) {
-        var WebSite = [], Blog = [];
+        var WebSite = [];
 
         $.each(data, function(docType, results) {
           $.each(results, function(idx, result) {
-            if(result.type && result.type === 'website' && WebSite.length < 5){
+            if(result.type && WebSite.length < 5){
                   WebSite.push(result);
-                  return;
-              }
-              if(result.type && result.type === 'blog' && Blog.length < 5){
-                  Blog.push(result);
                   return;
               }
         });
@@ -45,8 +41,7 @@ var customResultRenderFunction = function(ctx, data) {
 
     var badruz = $('<div class="autocompbox"></div>');
 
-    var WebSiteList = $('<ul class="WebSite"></ul>'),
-    BlogList = $('<ul class="Blog"></ul>');
+    var WebSiteList = $('<ul class="WebSite"></ul>');
 
 
     $.each(WebSite, function(idx, item) {
@@ -65,26 +60,8 @@ var customResultRenderFunction = function(ctx, data) {
         WebSiteList.appendTo(badruz);
     }
 
-
-
-    $.each(Blog, function(idx, item) {
-        var out = '<p class="title">' + item['title'] + '</p>';
-        if (item['description']) {
-            out = out.concat('<p class="body">' + item['description'] + "</p>");
-        }
-        else{
-            out = out.concat('<p class="body">' + item.highlight.body + "</p>");
-        }
-        ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(BlogList), item);
-    });
-    if(Blog.length>0){
-       // BlogList.appendTo(Bdiv);
-       // $('<div class="column1">Blog</div>').appendTo(badruz);
-        BlogList.appendTo(badruz);
-    }
-
   
-    $('<li class="swtpbutton">See all results</li>').appendTo.(badruz);
+    $('<li class="swtpbutton">See all results</li>').appendTo(badruz);
 
 
     if(WebSite.length > 0 || Blog.length > 0){
@@ -158,13 +135,13 @@ $('#st-search-input-2').swiftype({
     fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']}
     /*renderFunction: customRenderAutoComplete,
     setWidth: false,
-    resultLimit : 15,
+    resultLimit : 15,*/
     filters: function() {
         return {
             'page': {
                 'type': ['website', 'blog']
             }
         };
-    }*/
+    }
 });
 });
