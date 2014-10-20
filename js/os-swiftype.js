@@ -104,9 +104,8 @@ if ($.hashParams().stq !== "") {
     $("#st-search-input-2").val($.hashParams().stq);
 };
 
-$('.allresults').unbind("click");
 
-$('.allresults').on('click' , function(ev) {
+$('#allresults').unbind('click').bind('click' , function(ev) {
     ev.preventDefault();
     window.location.hash = '#stq=' + $("#st-search-input").val() + '&stp=1';
     $("#st-search-input-2").val($("#st-search-input").val());
