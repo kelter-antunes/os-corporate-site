@@ -46,7 +46,7 @@ var customResultRenderFunction = function(ctx, data) {
 
     $.each(WebSite, function(idx, item) {
         var out = '<p class="title">' + item['title'] + '</p>';
-        if (item['description']) {
+        if (item['description'] !== undefined) {
             out = out.concat('<p class="body">' + item['description'] + "</p>");
         }
         else{
