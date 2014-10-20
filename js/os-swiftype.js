@@ -64,10 +64,9 @@ var customResultRenderFunction = function(ctx, data) {
     $('<li class="swtpbutton">See all results</li>').appendTo(badruz);
 
 
-    if(WebSite.length > 0 || Blog.length > 0){
+    if(WebSite.length > 0){
         badruz.appendTo(ctx.list);
     }
-
 
   };
 
