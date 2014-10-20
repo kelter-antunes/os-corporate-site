@@ -29,14 +29,15 @@ $(function() {
 
 var customResultRenderFunction = function(ctx, data) {
         var WebSite = [];
-        var seeallres = data;
-        
+        var seeallres;
+
         $.each(data, function(docType, results) {
-          $.each(results, function(idx, result) {
-            if(result.type && WebSite.length < 5){
-                  WebSite.push(result);
-                  return;
-              }
+            seeallres=results;
+            $.each(results, function(idx, result) {
+                if(result.type && WebSite.length < 5){
+                      WebSite.push(result);
+                      return;
+                  }
         });
       });
 
