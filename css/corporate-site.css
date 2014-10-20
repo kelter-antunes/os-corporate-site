@@ -7882,6 +7882,11 @@ div.st-result .st-date
     /*margin-top:-30px;*/
 }
 
+.swiftype-widget .autocomplete li.swtpbutton:hover {
+     background-color:#e6e6e6!important;
+}
+
+
 
 .swiftype-widget .autocomplete ul.WebSite {
     padding-top:5px;

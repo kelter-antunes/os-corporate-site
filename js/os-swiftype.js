@@ -29,7 +29,8 @@ $(function() {
 
 var customResultRenderFunction = function(ctx, data) {
         var WebSite = [];
-
+        var seeallres = data;
+        
         $.each(data, function(docType, results) {
           $.each(results, function(idx, result) {
             if(result.type && WebSite.length < 5){
@@ -60,6 +61,7 @@ var customResultRenderFunction = function(ctx, data) {
     if(WebSite.length>0){
         //WebSiteList.appendTo(WSdiv);
         //$('<div class="column1">Website</div>').appendTo(badruz);
+        ctx.registerResult($('<li class="result">See all results 2</li>').appendTo(WebSiteList), seeallres);
         $('<li class="swtpbutton"><p>See all results</p></li>').appendTo(WebSiteList);
         WebSiteList.appendTo(badruz);
     }
