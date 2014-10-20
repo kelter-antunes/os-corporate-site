@@ -49,8 +49,11 @@ var customResultRenderFunction = function(ctx, data) {
         if (item['description'] !== undefined) {
             out = out.concat('<p class="body">' + item['description'] + "</p>");
         }
-        else{
+        else if(item.highlight.body !== undefined){
             out = out.concat('<p class="body">' + item.highlight.body + "</p>");
+        }
+        else{
+            out = out.concat('<p class="body">Empty body</p>');
         }
         ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
     });
