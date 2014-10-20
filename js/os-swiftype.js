@@ -53,14 +53,14 @@ var customResultRenderFunction = function(ctx, data) {
             out = out.concat('<p class="body">' + item.highlight.body + "</p>");
         }
         else{
-            out = out.concat('<p class="body">' + item.body.substring(0, 200) + '</p>');
+            out = out.concat('<p class="body">' + item.body.substring(0, 200) + '...' + '</p>');
         }
         ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
     });
     if(WebSite.length>0){
         //WebSiteList.appendTo(WSdiv);
         //$('<div class="column1">Website</div>').appendTo(badruz);
-        $('<li class="result"><p class="swtpbutton">See all results</p></li>').appendTo(WebSiteList);
+        $('<li class="swtpbutton"><p>See all results</p></li>').appendTo(WebSiteList);
         WebSiteList.appendTo(badruz);
     }
 

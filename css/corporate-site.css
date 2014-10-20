@@ -7730,10 +7730,10 @@ div.st-result .st-date
     /*border-top:1px solid #e5e5e5;
     border-bottom:1px solid #fff;*/
     cursor:pointer;
-    padding:0px 15px;
+    padding:15px 15px;
     list-style-type:none;
     background-image:none;
-    margin:15px 0px;
+    margin:0px;
 
 }
 
@@ -7773,10 +7773,8 @@ div.st-result .st-date
 
 .swiftype-widget .autocomplete li p
 {
-    /*font-size:13px;
-    line-height:16px;
-    margin:0;
-    padding:0*/
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .swiftype-widget .autocomplete li p.title
@@ -7873,18 +7871,17 @@ div.st-result .st-date
 }
 
 
-.swiftype-widget .autocomplete li p.swtpbutton {
+.swiftype-widget .autocomplete li.swtpbutton {
     font-size: 14px;
     color: #0088cc;
     background-color: white;
     vertical-align: middle;
     text-align: center;
-    border-top: 1px #e6e6e6;
-    height: 20px;
+    border-top: 1px solid #e6e6e6;
     opacity: 0.8;
-    margin-top:-20;
-
+    margin-top:-30px;
 }
+
 
 /*********Cookies Message *************/
 .warning_EU_cookiemsg,.warning_EU_cookiemsg *
