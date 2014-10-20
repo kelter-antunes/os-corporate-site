@@ -7782,7 +7782,9 @@ div.st-result .st-date
 .swiftype-widget .autocomplete li p.title
 {
     font-size: 14px;
-    color:#0088cc
+    color:#0088cc;
+    margin-bottom: 5px;
+    margin-top: 0px;
 }
 
 .swiftype-widget .autocomplete li p.title em
@@ -7811,7 +7813,9 @@ div.st-result .st-date
 .swiftype-widget .autocomplete li p.body
 {
     font-size: 12px;
-    color:#808080
+    color:#808080;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 
@@ -7869,7 +7873,7 @@ div.st-result .st-date
 }
 
 
-.swiftype-widget .autocomplete li.swtpbutton {
+.swiftype-widget .autocomplete li p.swtpbutton {
     font-size: 14px;
     color: #0088cc;
     background-color: white;
