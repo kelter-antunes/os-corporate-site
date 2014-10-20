@@ -101,11 +101,11 @@ if ($.hashParams().stq !== "") {
     $("#st-search-input-2").val($.hashParams().stq);
 }
 
-$('.swtpbutton').onclick(function(ev) {
+$('.swtpbutton').onclick = function(ev) {
     ev.preventDefault();
     window.location.hash = '#stq=' + $("#st-search-input").val() + '&stp=1';
     $("#st-search-input-2").val($(this).val());
-});
+}
 
 
 $('#st-search-input').swiftypeSearch({
