@@ -147,7 +147,7 @@ function fireIfElementVisible () {
             else{
                 console.log("Not Visible");
                 var wdth = $('.result').last()[0].getBoundingClientRect().width;
-                $('.swtpbutton').css({'position':'fixed','bottom':'0','width':wdth});
+                $('.swtpbutton').css({'position':'fixed','bottom':'0','width':wdth , 'padding-left': '0px' , 'padding-right': '0px'});
             }
         }
     }
