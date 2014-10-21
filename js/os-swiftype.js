@@ -21,7 +21,7 @@ $(function() {
             out = out.concat('<p class="body">' + item['description'] + "</p>");
         }
         else if(item.highlight.body !== undefined){
-            out = out.concat('<p class="body">' + item.highlight.body + "</p>");
+            out = out.concat('<p class="body">' + item.highlight['body'] + "</p>");
         }
         else{
             out = out.concat('<p class="body">' + item.body.substring(0, 200) + '...' + '</p>');
@@ -78,7 +78,7 @@ var customResultRenderFunction = function(ctx, data) {
             out = out.concat('<p class="body">' + item['description'] + "</p>");
         }
         else if(item.highlight.body !== undefined){
-            out = out.concat('<p class="body">' + item.highlight.body + "</p>");
+            out = out.concat('<p class="body">' + item.highlight['body'] + "</p>");
         }
         else{
             out = out.concat('<p class="body">' + item.body.substring(0, 200) + '...' + '</p>');
