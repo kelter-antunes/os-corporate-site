@@ -177,14 +177,16 @@ function isElementInViewport (el) {
 
 function fireIfElementVisible () {
     return function () {
-        if($('.result').last() !== undefined){
-            if ( isElementInViewport($('.result').last())) {
+        var elm = $('.result').last();
+        if(elm !== undefined){
+            if ( isElementInViewport(elm)) {
                 console.log("BADRUUZZZ1");
                 $('.swtpbutton').css({'position': 'inherit', 'bottom': 'inherit' });
             }
             else{
                 console.log("BADRUUZZZ2");
-                $('.swtpbutton').css({'position':'fixed','bottom':'0','width':'auto'});
+                var wdth = elm[0].getBoundingClientRect().width;
+                $('.swtpbutton').css({'position':'fixed','bottom':'0','width':wdth});
             }
         }
     }
