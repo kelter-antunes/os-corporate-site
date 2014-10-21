@@ -31,6 +31,22 @@ var customResultRenderFunction = function(ctx, data) {
         var WebSite = [];
         var seeallres;
 
+        var urlstr = '/search/#stq=' + $("#st-search-input").val() + '&stp=1';
+
+        var item_all_res = {"type": "post",
+            "url": urlstr,
+            "title": "",
+            "id": "",
+            "_type": "page",
+            "_index": "crawled",
+            "_version": null,
+            "sort": null,
+            "highlight": {
+              "title": ""
+            },
+        }
+
+
         $.each(data, function(docType, results) {
             seeallres=results;
             $.each(results, function(idx, result) {
@@ -62,7 +78,7 @@ var customResultRenderFunction = function(ctx, data) {
     if(WebSite.length>0){
         //WebSiteList.appendTo(WSdiv);
         //$('<div class="column1">Website</div>').appendTo(badruz);
-        ctx.registerResult($('<li class="swtpbutton"><a href="/search/#stq=' + $("#st-search-input").val() + '&stp=1"><p>See all results</p></a></li>').appendTo(WebSiteList),seeallres);
+        ctx.registerResult($('<li class="swtpbutton"><p>See all results</p></li>').appendTo(WebSiteList),item_all_res);
         WebSiteList.appendTo(badruz);
     }
 
