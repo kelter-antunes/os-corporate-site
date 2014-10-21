@@ -130,8 +130,8 @@ $( window ).resize(function() {
         $('.swtpbutton').css({'position':'fixed','bottom':'0','width':'100%'});
     }else{
         $('.swtpbutton').css({
-            'position': 'inherit';
-            'bottom': 'inherit';
+            'position': 'inherit',
+            'bottom': 'inherit'
         })
     }
 });
