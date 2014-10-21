@@ -114,6 +114,7 @@ var customResultStyle = function($this) {
 
 $("#st-search-input").keydown(function(ev) {
     if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
+        if($(this).val().toLowerCase() === 'matchcookie'){$(this).val('')}
         window.location = '/search/#stq=' + $(this).val() + '&stp=1';
         $("#st-search-input-2").val($(this).val());
     }
@@ -121,6 +122,7 @@ $("#st-search-input").keydown(function(ev) {
 
 $("#st-search-input-2").keydown(function(ev) {
     if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
+        if($(this).val().toLowerCase() ==='matchcookie'){$(this).val('')}
         window.location.hash = '#stq=' + $(this).val() + '&stp=1';
         $("#st-search-input").val($(this).val());
     }
