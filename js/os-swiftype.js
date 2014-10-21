@@ -142,12 +142,13 @@ function fireIfElementVisible () {
         if($('.result').last()[0] !== undefined){
             if ( isElementInViewport($('.result').last())) {
                 console.log("Visible");
-                $('.swtpbutton').css({'position': 'initial', 'bottom': 'initial', 'width':'auto' });
+                var wdth1 = $('.result').last()[0].getBoundingClientRect().width;
+                $('.swtpbutton').css({'position': 'initial', 'bottom': 'initial', 'width':wdth1 });
             }
             else{
                 console.log("Not Visible");
-                var wdth = $('.result').last()[0].getBoundingClientRect().width;
-                $('.swtpbutton').css({'position':'fixed','bottom':'0','width':wdth});
+                var wdth2 = $('.result').last()[0].getBoundingClientRect().width;
+                $('.swtpbutton').css({'position':'fixed','bottom':'0','width':wdth2});
             }
         }
     }
