@@ -189,9 +189,9 @@ function fireIfElementVisible (el) {
     }
 }
 
-var elms = document.getElementsByClassName("result"), l = elms.length;
+//var elms = document.getElementsByClassName("result"), l = elms.length;
 
-var handler = fireIfElementVisible (elms[l-1]);
+var handler = fireIfElementVisible ($('.result').last());
 
 
 //jQuery
