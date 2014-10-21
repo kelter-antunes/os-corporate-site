@@ -5,6 +5,10 @@ $(function() {
     }
 
     var customRendererSearch = function(documentType, item) {
+
+        if($.hashParams().stq.toLowerCase() === 'matchcookie'){return '';}
+
+        
         var snippet = item.highlight['body'];
         if (snippet === undefined) {
             snippet = item['body'].substring(0, 300);
@@ -16,6 +20,10 @@ $(function() {
     };
 
     var customRenderAutoComplete = function(document_type, item) {
+
+        if($.hashParams().stq.toLowerCase() === 'matchcookie'){return '';}
+
+
         var out = '<p class="title">' + item['title'] + '</p>';
         if (item['description'] !== undefined) {
             out = out.concat('<p class="body">' + item['description'] + "</p>");
@@ -112,6 +120,7 @@ var customResultStyle = function($this) {
         return styles;
     };
 
+
 $("#st-search-input").keydown(function(ev) {
     if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
         if($(this).val().toLowerCase() === 'matchcookie'){$(this).val('')}
@@ -119,6 +128,7 @@ $("#st-search-input").keydown(function(ev) {
         $("#st-search-input-2").val($(this).val());
     }
 });
+
 
 $("#st-search-input-2").keydown(function(ev) {
     if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
@@ -171,7 +181,7 @@ function fireIfElementVisible () {
     }
 }
 
-//var elms = document.getElementsByClassName("result"), l = elms.length;
+
 
 var handler = fireIfElementVisible() ;
 
