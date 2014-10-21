@@ -126,7 +126,9 @@ $("#st-search-input-2").keydown(function(ev) {
 
 
 $( window ).resize(function() {
-    if(!isInViewport(document.getElementsByClassName("swtpbutton")[0])){
+    var elms = document.getElementsByClassName("result"),
+        l = elms.length;
+    if(!isInViewport(elms[l-1])){
         $('.swtpbutton').css({'position':'fixed','bottom':'0','width':'100%'});
     }else{
         $('.swtpbutton').css({
@@ -145,7 +147,7 @@ function isInViewport(element) {
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || html.clientHeight) &&
+    rect.bottom + 593 <= (window.innerHeight || html.clientHeight) &&
     rect.right <= (window.innerWidth || html.clientWidth)
   );
 }
