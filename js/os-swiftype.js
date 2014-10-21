@@ -130,12 +130,14 @@ $( window ).resize(function() {
         l = elms.length;
         console.log(isInViewport(elms[l-1]));
     if(!isInViewport(elms[l-1])){
-        $('.swtpbutton').css({'position':'fixed','bottom':'0','width':'100%'});
+        console.log("BADRUUZZZ1");
+        $('.swtpbutton').css({'position':'fixed','bottom':'0','width':'auto'});
     }else{
+        console.log("BADRUUZZZ2");
         $('.swtpbutton').css({
             'position': 'inherit',
             'bottom': 'inherit'
-        })
+        });
     }
 });
 
