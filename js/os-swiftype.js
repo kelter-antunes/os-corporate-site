@@ -117,44 +117,6 @@ $("#st-search-input-2").keydown(function(ev) {
 });
 
 
-/*if ($.hashParams().stq !== "") {
-    $("#st-search-input").val($.hashParams().stq);
-    $("#st-search-input-2").val($.hashParams().stq);
-};
-*/
-
-
-/*
-$( window ).resize(function() {
-    var elms = document.getElementsByClassName("result"),
-        l = elms.length;
-        console.log(isInViewport(elms[l-1]));
-    if(isInViewport(elms[l-1])){        
-        console.log("BADRUUZZZ1");
-        $('.swtpbutton').css({
-            'position': 'inherit',
-            'bottom': 'inherit'
-        });
-    }else{
-        console.log("BADRUUZZZ2");
-        $('.swtpbutton').css({'position':'fixed','bottom':'0','width':'auto'});
-    }
-});
-*/
-
-
-// Determine if an element is in the visible viewport
-/*function isInViewport(element) {
-  var rect = element.getBoundingClientRect();
-  var html = document.documentElement;
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom + 593 <= (window.innerHeight || html.clientHeight) &&
-    rect.right <= (window.innerWidth || html.clientWidth)
-  );
-}
-*/
 
 function isElementInViewport (el) {
 
@@ -167,11 +129,10 @@ function isElementInViewport (el) {
 
     return (
         rect.left >= 0 &&
-        rect.bottom + btn_h.height <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+        rect.bottom + btn_h.height + 10 <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
         rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
     );
 }
-
 
 
 
@@ -180,7 +141,8 @@ function fireIfElementVisible () {
         if($('.result').last()[0] !== undefined){
             if ( isElementInViewport($('.result').last())) {
                 console.log("Visible");
-                $('.swtpbutton').css({'position': 'initial', 'bottom': 'initial', 'width':'auto' });
+                var wdth = $('.result').last()[0].getBoundingClientRect().width;
+                $('.swtpbutton').css({'position': 'initial', 'bottom': 'initial', 'width':wdth });
             }
             else{
                 console.log("Not Visible");
