@@ -177,7 +177,7 @@ function isElementInViewport (el) {
 
 function fireIfElementVisible () {
     return function () {
-        if($('.result').last() !== undefined){
+        if($('.result').last()[0] !== undefined){
             if ( isElementInViewport($('.result').last())) {
                 console.log("Visible");
                 $('.swtpbutton').css({'position': 'initial', 'bottom': 'initial', 'width':'auto' });
