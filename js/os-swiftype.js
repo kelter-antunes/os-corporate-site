@@ -191,11 +191,11 @@ function fireIfElementVisible (el) {
 
 //var elms = document.getElementsByClassName("result"), l = elms.length;
 
-var handler = fireIfElementVisible ($('.result').last());
+
 
 
 //jQuery
-$(window).on('DOMContentLoaded load resize scroll', handler); 
+$(window).on('DOMContentLoaded load resize scroll', fireIfElementVisible ($('.result').last())); 
 
 
 
