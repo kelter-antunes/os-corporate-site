@@ -162,13 +162,12 @@ function isElementInViewport (el) {
     if (typeof jQuery === "function" && el instanceof jQuery) {
         el = el[0];
     }
-
+    var btn_h = $('.swtpbutton')[0].getBoundingClientRect();
     var rect = el.getBoundingClientRect();
 
     return (
-        rect.top >= 0 &&
         rect.left >= 0 &&
-        rect.bottom + rect.height <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+        rect.bottom + btn_h.height <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
         rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
     );
 }
