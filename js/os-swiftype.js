@@ -128,6 +128,7 @@ $("#st-search-input-2").keydown(function(ev) {
 $( window ).resize(function() {
     var elms = document.getElementsByClassName("result"),
         l = elms.length;
+        console.log(isInViewport(elms[l-1]));
     if(!isInViewport(elms[l-1])){
         $('.swtpbutton').css({'position':'fixed','bottom':'0','width':'100%'});
     }else{
