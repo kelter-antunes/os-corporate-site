@@ -197,6 +197,8 @@ $(window).hashchange(function() {
 });
 
 
+//SEARCH***********************************************************
+
 $('#st-search-input').swiftypeSearch({
     resultContainingElement: '#st-results-container',
     engineKey: 'GZhgtDYXiyvDjz48t2SP',
@@ -208,6 +210,8 @@ $('#st-search-input').swiftypeSearch({
     }*/
 });
 
+
+//AUTOCOMPLETE***************************************************
 $('#st-search-input').swiftype({
     engineKey: 'GZhgtDYXiyvDjz48t2SP',
     resultRenderFunction: customResultRenderFunction,
@@ -217,7 +221,13 @@ $('#st-search-input').swiftype({
     fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']},
     //autocompleteContainingElement: '.navigation-inner.container',
     //dropdownStylesFunction: customResultStyle
-
+    filters: function() {
+        return {
+            'page': {
+                'type': ['website', 'blog']
+            }
+        };
+    }
 
 });
 
@@ -230,8 +240,8 @@ $('#st-search-input-2').swiftype({
     resultLimit: 35,
     fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']},
     renderFunction: customRenderAutoComplete,
-    /*setWidth: false,
-    resultLimit : 15,*/
+    setWidth: false,
+    resultLimit : 15,
     filters: function() {
         return {
             'page': {
