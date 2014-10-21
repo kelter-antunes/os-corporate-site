@@ -236,11 +236,10 @@ $('#st-search-input').swiftype({
 $('#st-search-input-2').swiftype({
     engineKey: 'GZhgtDYXiyvDjz48t2SP',
     //resultRenderFunction: customResultRenderFunction,
-    setWidth: false,
-    resultLimit: 35,
+    //setWidth: false,
     fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']},
     renderFunction: customRenderAutoComplete,
-    setWidth: false,
+    //setWidth: false,
     resultLimit : 15,
     filters: function() {
         return {
