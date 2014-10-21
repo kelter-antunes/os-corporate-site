@@ -108,33 +108,60 @@ $("#st-search-input").keydown(function(ev) {
         $("#st-search-input-2").val($(this).val());
     }
 });
-  $("#st-search-input-2").keydown(function(ev) {
+
+$("#st-search-input-2").keydown(function(ev) {
     if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
         window.location.hash = '#stq=' + $(this).val() + '&stp=1';
         $("#st-search-input").val($(this).val());
     }
 });
 
-if ($.hashParams().stq !== "") {
+
+/*if ($.hashParams().stq !== "") {
     $("#st-search-input").val($.hashParams().stq);
     $("#st-search-input-2").val($.hashParams().stq);
 };
-
-/*
-$('#allresults').unbind('click').bind('click' , function(ev) {
-    ev.preventDefault();
-    window.location.hash = '/search/#stq=' + $("#st-search-input").val() + '&stp=1';
-    $("#st-search-input-2").val($("#st-search-input").val());
-});
-
-
-
-$('.swtpbutton').on('click' , function(ev) {
-    ev.preventDefault();
-    window.location.hash = '/search/#stq=' + $("#st-search-input").val() + '&stp=1';
-    $("#st-search-input-2").val($("#st-search-input").val());
-});
 */
+
+
+
+$( window ).resize(function() {
+    if(!isInViewport($('.swtpbutton'))){
+        $('.swtpbutton').css({'position':'fixed','bottom':'0','width':'100%'});
+    }else{
+        $('.swtpbutton').css({
+            'position': 'inherit';
+            'bottom': 'inherit';
+        })
+    }
+});
+
+
+
+// Determine if an element is in the visible viewport
+function isInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  var html = document.documentElement;
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || html.clientHeight) &&
+    rect.right <= (window.innerWidth || html.clientWidth)
+  );
+}
+
+
+
+$( document ).ready(function() {
+    if($.hashParams().stq!=="")
+    {
+        $("#st-search-input").val($.hashParams().stq);
+        $("#st-search-input-2").val($.hashParams().stq);
+    }
+});
+
+
+
 
 
 $('#st-search-input').swiftypeSearch({
