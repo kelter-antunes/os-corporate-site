@@ -124,7 +124,7 @@ $("#st-search-input-2").keydown(function(ev) {
 */
 
 
-
+/*
 $( window ).resize(function() {
     var elms = document.getElementsByClassName("result"),
         l = elms.length;
@@ -140,11 +140,11 @@ $( window ).resize(function() {
         $('.swtpbutton').css({'position':'fixed','bottom':'0','width':'auto'});
     }
 });
-
+*/
 
 
 // Determine if an element is in the visible viewport
-function isInViewport(element) {
+/*function isInViewport(element) {
   var rect = element.getBoundingClientRect();
   var html = document.documentElement;
   return (
@@ -154,6 +154,48 @@ function isInViewport(element) {
     rect.right <= (window.innerWidth || html.clientWidth)
   );
 }
+*/
+
+function isElementInViewport (el) {
+
+    //special bonus for those using jQuery
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+        el = el[0];
+    }
+
+    var rect = el.getBoundingClientRect();
+
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom + rect.height <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+    );
+}
+
+
+
+
+function fireIfElementVisible (el) {
+    return function () {
+        if ( isElementInViewport(el) ) {
+            console.log("BADRUUZZZ1");
+            $('.swtpbutton').css({'position': 'inherit', 'bottom': 'inherit' });
+        }
+        else{
+            console.log("BADRUUZZZ2");
+            $('.swtpbutton').css({'position':'fixed','bottom':'0','width':'auto'});
+        }
+    }
+}
+
+var elms = document.getElementsByClassName("result"), l = elms.length;
+
+var handler = fireIfElementVisible (elms[l-1]);
+
+
+//jQuery
+$(window).on('DOMContentLoaded load resize scroll', handler); 
 
 
 
