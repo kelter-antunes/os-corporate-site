@@ -240,7 +240,7 @@ $('#st-search-input-2').swiftype({
     fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']},
     renderFunction: customRenderAutoComplete,
     //setWidth: false,
-    resultLimit : 15,
+    resultLimit : 5,
     filters: function() {
         return {
             'page': {
