@@ -7,9 +7,9 @@ $(function() {
     var customRendererSearch = function(documentType, item) {
         var snippet = item.highlight['body'];
         if (snippet === undefined) {
-            snippet = item['body'].substring(0, 300) + '...';
+            snippet = item['body'].substring(0, 300);
         }
-
+        snippet = snippet.concat('...');
         var out = '<div class="st-result"><h4 class="title"><a href="' + item['url'] + '" class="st-search-result-link">' + item['title'] + '</a></h4><div class="st-metadata"><span class="st-url">' + item['url'] + '</span><span class="st-snippet">' + snippet + '</span></div></div>';
 
         return out;
@@ -21,7 +21,7 @@ $(function() {
             out = out.concat('<p class="body">' + item['description'] + "</p>");
         }
         else if(item.highlight.body !== undefined){
-            out = out.concat('<p class="body">' + item.highlight['body'] + "</p>");
+            out = out.concat('<p class="body">' + item.highlight['body'] + '...' + "</p>");
         }
         else{
             out = out.concat('<p class="body">' + item.body.substring(0, 200) + '...' + '</p>');
@@ -77,8 +77,8 @@ var customResultRenderFunction = function(ctx, data) {
         if (item['description'] !== undefined) {
             out = out.concat('<p class="body">' + item['description'] + "</p>");
         }
-        else if(item.highlight.body !== undefined){
-            out = out.concat('<p class="body">' + item.highlight['body'] + "</p>");
+        else if(item.highlight['body'] !== undefined){
+            out = out.concat('<p class="body">' + item.highlight['body'] + '...' + "</p>");
         }
         else{
             out = out.concat('<p class="body">' + item.body.substring(0, 200) + '...' + '</p>');
