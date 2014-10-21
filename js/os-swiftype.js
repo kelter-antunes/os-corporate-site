@@ -126,7 +126,7 @@ $("#st-search-input-2").keydown(function(ev) {
 
 
 $( window ).resize(function() {
-    if(!isInViewport($('.swtpbutton'))){
+    if(!isInViewport(document.getElementsByClassName("swtpbutton")[0])){
         $('.swtpbutton').css({'position':'fixed','bottom':'0','width':'100%'});
     }else{
         $('.swtpbutton').css({
@@ -153,15 +153,20 @@ function isInViewport(element) {
 
 
 $( document ).ready(function() {
-    if($.hashParams().stq!=="")
+    if($.hashParams().stq !== "")
     {
         $("#st-search-input").val($.hashParams().stq);
         $("#st-search-input-2").val($.hashParams().stq);
     }
 });
 
-
-
+$(window).hashchange(function() {
+    if($.hashParams().stq !== "")
+    {
+        $("#st-search-input").val($.hashParams().stq);
+        $("#st-search-input-2").val($.hashParams().stq);
+    }
+});
 
 
 $('#st-search-input').swiftypeSearch({
