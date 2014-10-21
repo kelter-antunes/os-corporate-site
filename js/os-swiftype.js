@@ -142,7 +142,10 @@ function fireIfElementVisible () {
         if($('.result').last()[0] !== undefined){
             if ( isElementInViewport($('.result').last())) {
                 console.log("Visible");
-                $('.swtpbutton').css({'position': 'initial', 'bottom': 'initial', 'width':'auto' });
+                $('.swtpbutton').css({'position': 'initial', 'bottom': 'initial', 'width':'auto' ,
+                                        'padding-left': '0px' , 'padding-right': '0px' ,
+                                         'border-left': '0px solid #e6e6e6' ,
+                                         'border-bottom': '0px solid #e6e6e6'});
             }
             else{
                 console.log("Not Visible");
