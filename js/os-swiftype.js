@@ -6,12 +6,11 @@ $(function() {
 
     var customRendererSearch = function(documentType, item) {
 
-        var snippet = item.highlight['body'];
+        var snippet = item.highlight['body'].replace('matchCookie','');
         if (snippet === undefined) {
-            snippet = item['body'].substring(0, 300);
+            snippet = item['body'].substring(0, 300).replace('matchCookie','');
         }
         snippet = snippet.concat('...');
-        snippet = snippet.replace('matchCookie','');
         var out = '<div class="st-result"><h4 class="title"><a href="' + item['url'] + '" class="st-search-result-link">' + item['title'] + '</a></h4><div class="st-metadata"><span class="st-url">' + item['url'] + '</span><span class="st-snippet">' + snippet + '</span></div></div>';
 
         return out;
