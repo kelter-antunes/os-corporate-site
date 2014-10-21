@@ -143,7 +143,7 @@ function fireIfElementVisible () {
             if ( isElementInViewport($('.result').last())) {
                 console.log("Visible");
                 var wdth1 = $('.result').last()[0].getBoundingClientRect().width;
-                $('.swtpbutton').css({'position': 'initial', 'bottom': 'initial', 'width':wdth1 });
+                $('.swtpbutton').css({'position': 'relative', 'bottom': 'inherit', 'width':wdth1 });
             }
             else{
                 console.log("Not Visible");
