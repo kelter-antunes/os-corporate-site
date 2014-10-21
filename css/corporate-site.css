@@ -7878,8 +7878,6 @@ div.st-result .st-date
     vertical-align: middle;
     text-align: center;
     border-top: 1px solid #e6e6e6;
-    border-left: 1px solid #e6e6e6;
-    border-bottom: 1px solid #e6e6e6;
     border-radius: 0;
     background: -moz-linear-gradient(top,  rgba(255,255,255,0.65) 30%, rgba(255,255,255,0.79) 42%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 62%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,rgba(255,255,255,0.65)), color-stop(42%,rgba(255,255,255,0.79)), color-stop(60%,rgba(255,255,255,1)), color-stop(62%,rgba(255,255,255,1))); /* Chrome,Safari4+ */

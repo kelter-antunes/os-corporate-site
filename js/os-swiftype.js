@@ -148,7 +148,9 @@ function fireIfElementVisible () {
                 console.log("Not Visible");
                 var wdth = $('.result').last()[0].getBoundingClientRect().width;
                 $('.swtpbutton').css({'position':'fixed','bottom':'0','width':wdth ,
-                                 'padding-left': '0px' , 'padding-right': '0px'});
+                                 'padding-left': '0px' , 'padding-right': '0px' ,
+                                 'border-left': '1px solid #e6e6e6' ,
+                                 'border-bottom': '1px solid #e6e6e6'});
             }
         }
     }
