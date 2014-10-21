@@ -6,14 +6,12 @@ $(function() {
 
     var customRendererSearch = function(documentType, item) {
 
-        if($.hashParams().stq.toLowerCase() === 'matchcookie'){return '';}
-
-        
         var snippet = item.highlight['body'];
         if (snippet === undefined) {
             snippet = item['body'].substring(0, 300);
         }
         snippet = snippet.concat('...');
+        snippet = snippet.replace('matchCookie','');
         var out = '<div class="st-result"><h4 class="title"><a href="' + item['url'] + '" class="st-search-result-link">' + item['title'] + '</a></h4><div class="st-metadata"><span class="st-url">' + item['url'] + '</span><span class="st-snippet">' + snippet + '</span></div></div>';
 
         return out;
@@ -21,18 +19,15 @@ $(function() {
 
     var customRenderAutoComplete = function(document_type, item) {
 
-        if($.hashParams().stq.toLowerCase() === 'matchcookie'){return '';}
-
-
         var out = '<p class="title">' + item['title'] + '</p>';
         if (item['description'] !== undefined) {
-            out = out.concat('<p class="body">' + item['description'] + "</p>");
+            out = out.concat('<p class="body">' + item['description'].replace('matchCookie','') + "</p>");
         }
         else if(item.highlight.body !== undefined){
-            out = out.concat('<p class="body">' + item.highlight['body'] + '...' + "</p>");
+            out = out.concat('<p class="body">' + item.highlight['body'].replace('matchCookie','') + '...' + "</p>");
         }
         else{
-            out = out.concat('<p class="body">' + item.body.substring(0, 200) + '...' + '</p>');
+            out = out.concat('<p class="body">' + item.body.substring(0, 200).replace('matchCookie','') + '...' + '</p>');
         }
           /*  
         if (item.highlight.sections) {
@@ -83,13 +78,13 @@ var customResultRenderFunction = function(ctx, data) {
     $.each(WebSite, function(idx, item) {
         var out = '<p class="title">' + item['title'] + '</p>';
         if (item['description'] !== undefined) {
-            out = out.concat('<p class="body">' + item['description'] + "</p>");
+            out = out.concat('<p class="body">' + item['description'].replace('matchCookie','') + "</p>");
         }
         else if(item.highlight['body'] !== undefined){
-            out = out.concat('<p class="body">' + item.highlight['body'] + '...' + "</p>");
+            out = out.concat('<p class="body">' + item.highlight['body'].replace('matchCookie','') + '...' + "</p>");
         }
         else{
-            out = out.concat('<p class="body">' + item.body.substring(0, 200) + '...' + '</p>');
+            out = out.concat('<p class="body">' + item.body.substring(0, 200).replace('matchCookie','') + '...' + '</p>');
         }
         ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
     });
@@ -123,7 +118,6 @@ var customResultStyle = function($this) {
 
 $("#st-search-input").keydown(function(ev) {
     if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
-        if($(this).val().toLowerCase() === 'matchcookie'){$(this).val('')}
         window.location = '/search/#stq=' + $(this).val() + '&stp=1';
         $("#st-search-input-2").val($(this).val());
     }
@@ -132,7 +126,6 @@ $("#st-search-input").keydown(function(ev) {
 
 $("#st-search-input-2").keydown(function(ev) {
     if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
-        if($(this).val().toLowerCase() ==='matchcookie'){$(this).val('')}
         window.location.hash = '#stq=' + $(this).val() + '&stp=1';
         $("#st-search-input").val($(this).val());
     }
