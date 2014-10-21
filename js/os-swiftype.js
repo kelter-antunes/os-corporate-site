@@ -178,7 +178,7 @@ function isElementInViewport (el) {
 
 function fireIfElementVisible () {
     return function () {
-        if(($('.result').last() !== undefined){
+        if($('.result').last() !== undefined){
             if ( isElementInViewport($('.result').last())) {
                 console.log("BADRUUZZZ1");
                 $('.swtpbutton').css({'position': 'inherit', 'bottom': 'inherit' });
