@@ -179,11 +179,11 @@ function fireIfElementVisible () {
     return function () {
         if($('.result').last() !== undefined){
             if ( isElementInViewport($('.result').last())) {
-                console.log("BADRUUZZZ1");
-                $('.swtpbutton').css({'position': 'inherit', 'bottom': 'inherit' });
+                console.log("Visible");
+                $('.swtpbutton').css({'position': 'initial', 'bottom': 'initial', 'width':'auto' });
             }
             else{
-                console.log("BADRUUZZZ2");
+                console.log("Not Visible");
                 var wdth = $('.result').last()[0].getBoundingClientRect().width;
                 $('.swtpbutton').css({'position':'fixed','bottom':'0','width':wdth});
             }
