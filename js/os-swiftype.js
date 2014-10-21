@@ -176,26 +176,29 @@ function isElementInViewport (el) {
 
 
 
-function fireIfElementVisible (el) {
+function fireIfElementVisible () {
     return function () {
-        if ( isElementInViewport(el) ) {
-            console.log("BADRUUZZZ1");
-            $('.swtpbutton').css({'position': 'inherit', 'bottom': 'inherit' });
-        }
-        else{
-            console.log("BADRUUZZZ2");
-            $('.swtpbutton').css({'position':'fixed','bottom':'0','width':'auto'});
+        if(($('.result').last() !== undefined){
+            if ( isElementInViewport($('.result').last())) {
+                console.log("BADRUUZZZ1");
+                $('.swtpbutton').css({'position': 'inherit', 'bottom': 'inherit' });
+            }
+            else{
+                console.log("BADRUUZZZ2");
+                $('.swtpbutton').css({'position':'fixed','bottom':'0','width':'auto'});
+            }
         }
     }
 }
 
 //var elms = document.getElementsByClassName("result"), l = elms.length;
 
-
+var handler = fireIfElementVisible() ;
 
 
 //jQuery
-$(window).on('DOMContentLoaded load resize scroll', fireIfElementVisible ($('.result').last())); 
+$(window).on('DOMContentLoaded load resize scroll', handler); 
+
 
 
 
@@ -236,6 +239,8 @@ $('#st-search-input').swiftype({
     fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']},
     //autocompleteContainingElement: '.navigation-inner.container',
     //dropdownStylesFunction: customResultStyle
+
+
 });
 
 
