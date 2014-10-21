@@ -17,10 +17,20 @@ $(function() {
 
     var customRenderAutoComplete = function(document_type, item) {
         var out = '<p class="title">' + item['title'] + '</p>';
+        if (item['description'] !== undefined) {
+            out = out.concat('<p class="body">' + item['description'] + "</p>");
+        }
+        else if(item.highlight.body !== undefined){
+            out = out.concat('<p class="body">' + item.highlight.body + "</p>");
+        }
+        else{
+            out = out.concat('<p class="body">' + item.body.substring(0, 200) + '...' + '</p>');
+        }
+          /*  
         if (item.highlight.sections) {
             var i = '<span class="section">' + item.highlight.sections + "</span>";
             out = out.concat('<p class="sections">' + i + "</p>");
-        }
+        }*/
 
         return out;
     };
@@ -215,12 +225,12 @@ $('#st-search-input').swiftype({
 
 $('#st-search-input-2').swiftype({
     engineKey: 'GZhgtDYXiyvDjz48t2SP',
-    resultRenderFunction: customResultRenderFunction,
+    //resultRenderFunction: customResultRenderFunction,
     setWidth: false,
     resultLimit: 35,
     fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']},
-    /*renderFunction: customRenderAutoComplete,
-    setWidth: false,
+    renderFunction: customRenderAutoComplete,
+    /*setWidth: false,
     resultLimit : 15,*/
     filters: function() {
         return {
