@@ -20,13 +20,13 @@ $(function() {
 
         var out = '<p class="title">' + item['title'] + '</p>';
         if (item['description'] !== undefined) {
-            out = out.concat('<p class="body">' + item['description'].replace('matchCookie',' ') + "</p>");
+            out = out.concat('<p class="body">' + item['description'].replace('matchCookie',' ').replace('<em>match</em>Cookie','') + "</p>");
         }
         else if(item.highlight.body !== undefined){
-            out = out.concat('<p class="body">' + item.highlight['body'].replace('matchCookie',' ') + '...' + "</p>");
+            out = out.concat('<p class="body">' + item.highlight['body'].replace('matchCookie',' ').replace('<em>match</em>Cookie','') + '...' + "</p>");
         }
         else{
-            out = out.concat('<p class="body">' + item.body.substring(0, 200).replace('matchCookie',' ') + '...' + '</p>');
+            out = out.concat('<p class="body">' + item.body.substring(0, 200).replace('matchCookie',' ').replace('<em>match</em>Cookie','') + '...' + '</p>');
         }
           /*  
         if (item.highlight.sections) {
@@ -41,7 +41,6 @@ $(function() {
 
 var customResultRenderFunction = function(ctx, data) {
         var WebSite = [];
-        var seeallres;
 
         var urlstr = '/search/#stq=' + $("#st-search-input").val() + '&stp=1';
 
@@ -60,7 +59,6 @@ var customResultRenderFunction = function(ctx, data) {
 
 
         $.each(data, function(docType, results) {
-            seeallres=results;
             $.each(results, function(idx, result) {
                 if(result.type && WebSite.length < 5){
                       WebSite.push(result);
@@ -77,23 +75,20 @@ var customResultRenderFunction = function(ctx, data) {
     $.each(WebSite, function(idx, item) {
         var out = '<p class="title">' + item['title'] + '</p>';
         if (item['description'] !== undefined) {
-            out = out.concat('<p class="body">' + item['description'].replace('matchCookie',' ') + "</p>");
+            out = out.concat('<p class="body">' + item['description'].replace('matchCookie',' ').replace('<em>match</em>Cookie','') + "</p>");
         }
         else if(item.highlight['body'] !== undefined){
-            out = out.concat('<p class="body">' + item.highlight['body'].replace('matchCookie',' ') + '...' + "</p>");
+            out = out.concat('<p class="body">' + item.highlight['body'].replace('matchCookie',' ').replace('<em>match</em>Cookie','') + '...' + "</p>");
         }
         else{
-            out = out.concat('<p class="body">' + item.body.substring(0, 200).replace('matchCookie',' ') + '...' + '</p>');
+            out = out.concat('<p class="body">' + item.body.substring(0, 200).replace('matchCookie',' ').replace('<em>match</em>Cookie','') + '...' + '</p>');
         }
         ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
     });
     if(WebSite.length>0){
-        //WebSiteList.appendTo(WSdiv);
-        //$('<div class="column1">Website</div>').appendTo(badruz);
         ctx.registerResult($('<li class="swtpbutton"><p>See all results</p></li>').appendTo(WebSiteList),item_all_res);
         WebSiteList.appendTo(badruz);
     }
-
 
 
     if(WebSite.length > 0){
@@ -221,7 +216,7 @@ $('#st-search-input').swiftype({
     resultRenderFunction: customResultRenderFunction,
     //setWidth: '980px',
     setWidth: false,
-    resultLimit: 35,
+    resultLimit: 5,
     fetchFields: {page: ['url', 'body', 'title', 'type', 'highlight', 'sections']},
     //autocompleteContainingElement: '.navigation-inner.container',
     //dropdownStylesFunction: customResultStyle
