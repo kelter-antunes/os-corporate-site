@@ -196,6 +196,12 @@ $(window).hashchange(function() {
 });
 
 
+$('.autocomplete li').on('mouseout',function () {
+    $(this).removeClass('active');
+});
+
+
+
 //SEARCH***********************************************************
 
 $('#st-search-input').swiftypeSearch({
