@@ -194,7 +194,7 @@ $(window).hashchange(function() {
 });
 
 
-$('.autocomplete li').mouseout(function () {
+$(document).delegate('.autocomplete li',"mouseout", function () {
      $(this).removeClass('active');
 });
 
