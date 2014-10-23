@@ -131,7 +131,7 @@ $(function() {
             rect.left >= 0 &&
             rect.bottom + btn_h.height <= (window.innerHeight || document.documentElement.clientHeight) &&
             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
+        );
     }
 
 
@@ -215,7 +215,7 @@ $(function() {
         setWidth: false,
         resultLimit: 5,
         fetchFields: {
-            page: ['body', 'title', 'highlight']
+            page: ['url', 'body', 'title', 'type', 'highlight', 'sections']
         },
         filters: function() {
             return {
@@ -231,7 +231,7 @@ $(function() {
     $('#st-search-input-2').swiftype({
         engineKey: 'GZhgtDYXiyvDjz48t2SP',
         fetchFields: {
-            page: ['body', 'title', 'highlight']
+            page: ['url', 'body', 'title', 'type', 'highlight', 'sections']
         },
         renderFunction: customRenderAutoComplete,
         resultLimit: 5,
