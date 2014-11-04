@@ -218,7 +218,7 @@ $(function() {
         fetchFields: {
             page: ['url', 'body', 'title', 'type', 'highlight', 'sections']
         }
-        /*,
+        /*, 
         filters: function() {
             return {
                 'page': {
