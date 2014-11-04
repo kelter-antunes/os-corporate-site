@@ -56,9 +56,10 @@ $(function() {
             $.each(results, function(idx, result) {
                 if (result.type && WebSite.length < 5) {
                     WebSite.push(result);
-                    return;
                 }
+                if(WebSite.length > 4){return;}
             });
+            if(WebSite.length > 4){return;}
         });
 
         var badruz = $('<div class="autocompbox"></div>');
@@ -67,13 +68,13 @@ $(function() {
 
 
         $.each(WebSite, function(idx, item) {
-            var out = '<p class="title">' + item['title'].substring(0,150) + '</p>';
+            var out = '<p class="title">' + item['title'].substring(0,100) + '</p>';
             if (item['description'] !== undefined) {
-                out = out.concat('<p class="body">' + item['description'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 300) + "</p>");
+                out = out.concat('<p class="body">' + item['description'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 260) + "</p>");
             } else if (item.highlight['body'] !== undefined) {
-                out = out.concat('<p class="body">' + item.highlight['body'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 300) + '...' + "</p>");
+                out = out.concat('<p class="body">' + item.highlight['body'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 260) + '...' + "</p>");
             } else {
-                out = out.concat('<p class="body">' + item.body.replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 300) + '...' + '</p>');
+                out = out.concat('<p class="body">' + item.body.replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 260) + '...' + '</p>');
             }
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
         });
