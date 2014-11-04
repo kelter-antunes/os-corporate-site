@@ -67,13 +67,13 @@ $(function() {
 
 
         $.each(WebSite, function(idx, item) {
-            var out = '<p class="title">' + item['title'] + '</p>';
+            var out = '<p class="title">' + item['title'].substring(0,150) + '</p>';
             if (item['description'] !== undefined) {
-                out = out.concat('<p class="body">' + item['description'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '') + "</p>");
+                out = out.concat('<p class="body">' + item['description'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 350) + "</p>");
             } else if (item.highlight['body'] !== undefined) {
-                out = out.concat('<p class="body">' + item.highlight['body'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '') + '...' + "</p>");
+                out = out.concat('<p class="body">' + item.highlight['body'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 350) + '...' + "</p>");
             } else {
-                out = out.concat('<p class="body">' + item.body.substring(0, 200).replace('matchCookie', ' ').replace('<em>match</em>Cookie', '') + '...' + '</p>');
+                out = out.concat('<p class="body">' + item.body.replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 350) + '...' + '</p>');
             }
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
         });
@@ -198,7 +198,14 @@ $(function() {
         renderFunction: customRendererSearch,
         perPage: 10,
         resultPageURL: '/search/'
-        
+            /*,
+            filters: function() {
+                return {
+                    'page': {
+                        'type': ['website', 'blog']
+                    }
+                };
+            }*/
     });
 
 
