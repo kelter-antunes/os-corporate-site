@@ -197,14 +197,15 @@ $(function() {
         engineKey: 'GZhgtDYXiyvDjz48t2SP',
         renderFunction: customRendererSearch,
         perPage: 10,
-        resultPageURL: '/search/',
-        filters: function() {
-            return {
-                'page': {
-                    'type': ['website', 'blog']
-                }
-            };
-        }
+        resultPageURL: '/search/'
+            /*,
+            filters: function() {
+                return {
+                    'page': {
+                        'type': ['website', 'blog']
+                    }
+                };
+            }*/
     });
 
 
@@ -216,14 +217,15 @@ $(function() {
         resultLimit: 5,
         fetchFields: {
             page: ['url', 'body', 'title', 'type', 'highlight', 'sections']
-        },
+        }
+        /*,
         filters: function() {
             return {
                 'page': {
                     'type': ['website', 'blog']
                 }
             };
-        }
+        }*/
 
     });
 
@@ -234,13 +236,14 @@ $(function() {
             page: ['url', 'body', 'title', 'type', 'highlight', 'sections']
         },
         renderFunction: customRenderAutoComplete,
-        resultLimit: 5,
-        filters: function() {
-            return {
-                'page': {
-                    'type': ['website', 'blog']
-                }
-            };
-        }
+        resultLimit: 5
+            /*,
+            filters: function() {
+                return {
+                    'page': {
+                        'type': ['website', 'blog']
+                    }
+                };
+            }*/
     });
 });
