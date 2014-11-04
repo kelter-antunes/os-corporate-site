@@ -198,14 +198,7 @@ $(function() {
         renderFunction: customRendererSearch,
         perPage: 10,
         resultPageURL: '/search/'
-            /*,
-            filters: function() {
-                return {
-                    'page': {
-                        'type': ['website', 'blog']
-                    }
-                };
-            }*/
+        
     });
 
 
