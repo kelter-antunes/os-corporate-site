@@ -20,11 +20,11 @@ $(function() {
 
         var out = '<p class="title">' + item['title'] + '</p>';
         if (item['description'] !== undefined) {
-            out = out.concat('<p class="body">' + item['description'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 400) + "</p>");
+            out = out.concat('<p class="body">' + item['description'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 450) + "</p>");
         } else if (item.highlight.body !== undefined) {
-            out = out.concat('<p class="body">' + item.highlight['body'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 400) + '...' + "</p>");
+            out = out.concat('<p class="body">' + item.highlight['body'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 450) + '...' + "</p>");
         } else {
-            out = out.concat('<p class="body">' + item.body.replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 400) + '...' + '</p>');
+            out = out.concat('<p class="body">' + item.body.replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 450) + '...' + '</p>');
         }
 
         return out;
