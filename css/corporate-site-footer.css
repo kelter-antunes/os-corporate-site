@@ -580,14 +580,14 @@ a.osbtn-red
 	margin:0;
 	color:#fff !important;
 	font-size:18px;
-	background-color:#c20;
-	background-image:-moz-linear-gradient(top,#c20,#ac1e01);
-	background-image:-ms-linear-gradient(top,#c20,#ac1e01);
-	background-image:-o-linear-gradient(top,#c20,#ac1e01);
-	background-image:-webkit-gradient(linear,center top,center bottom,from(#c20),to(#ac1e01));
-	background-image:-webkit-linear-gradient(top,#c20,#ac1e01);
-	background-image:linear-gradient(top,#c20,#ac1e01);
-	background-image:linear-gradient(top,#c20,#ac1e01);
+	/*background-color:#c20;*/
+	background:-moz-linear-gradient(top,#c20,#ac1e01);
+	background:-ms-linear-gradient(top,#c20,#ac1e01);
+	background:-o-linear-gradient(top,#c20,#ac1e01);
+	background:-webkit-gradient(linear,center top,center bottom,from(#c20),to(#ac1e01));
+	background:-webkit-linear-gradient(top,#c20,#ac1e01);
+	background:linear-gradient(top,#c20,#ac1e01);
+	background:linear-gradient(top,#c20,#ac1e01);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#cc2200', EndColorStr='#ac1e01')";
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#cc2200', endColorstr='#ac1e01');
 	border-radius:5px;
