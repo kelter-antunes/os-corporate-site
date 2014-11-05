@@ -905,7 +905,7 @@ a.tooltip-link
 {
     filter:none;
     background-image:none;
-    background-color:#c20!important;
+    background-color:#c20;
     color:#fff;
     text-decoration:none
 }
