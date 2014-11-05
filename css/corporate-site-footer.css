@@ -590,11 +590,11 @@ a.osbtn-red
 	background-image:linear-gradient(top,#c20,#ac1e01);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#cc2200', EndColorStr='#ac1e01')";
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#cc2200', endColorstr='#ac1e01');
-	border-radius:5px;
-    -moz-border-radius:5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
-    -webkit-border-radius:5px;
+	border-radius:5px!important;
+    -moz-border-radius:5px!important;
+    -ms-border-radius:5px!important;
+    -o-border-radius:5px!important;
+    -webkit-border-radius:5px!important;
 }
 
 a.osbtn-cta
