@@ -1092,7 +1092,7 @@ a.tooltip-link
     position:absolute;
     left:1px;
     top:3px;
-    padding-top:1px\9;
+    padding-top:-1px\9;
 }
 
 .btn
