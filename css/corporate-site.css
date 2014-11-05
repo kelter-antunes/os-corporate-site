@@ -882,7 +882,7 @@ a.tooltip-link
     margin:0;
     color:#fff!important;
     font-size:18px;
-    background-color:#c20;
+    background-color:#c20!important;
     background-image:-moz-linear-gradient(top,#c20,#ac1e01);
     background-image:-ms-linear-gradient(top,#c20,#ac1e01);
     background-image:-o-linear-gradient(top,#c20,#ac1e01);
@@ -902,7 +902,7 @@ a.tooltip-link
 .osbtn-red:hover
 {
     filter:none;
-    background-image:none;
+    background-image:none!important;
     color:#fff;
     text-decoration:none
 }
