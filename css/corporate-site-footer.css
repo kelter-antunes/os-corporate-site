@@ -588,12 +588,13 @@ a.osbtn-red
 	background-image:-webkit-linear-gradient(top,#c20,#ac1e01);
 	background-image:linear-gradient(top,#c20,#ac1e01);
 	background-image:linear-gradient(top,#c20,#ac1e01);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ac1e01', EndColorStr='#ac1e01'); /* IE6,IE7 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ac1e01', EndColorStr='#ac1e01')";
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ac1e01', endColorstr='#ac1e01');
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border-radius:5px
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#cc2200', EndColorStr='#ac1e01')";
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#cc2200', endColorstr='#ac1e01');
+	border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    -webkit-border-radius:5px;
 }
 
 a.osbtn-cta

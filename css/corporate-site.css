@@ -847,6 +847,8 @@ a.tooltip-link
     background-image:-webkit-gradient(linear,center top,center bottom,from(#ccc),to(#aaa));
     background-image:-webkit-linear-gradient(top,#ccc,#aaa);
     background-image:linear-gradient(top,#ccc,#aaa);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#cccccc', EndColorStr='#aaaaaa')";
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#cccccc', endColorstr='#aaaaaa'); 
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
     border-radius:5px
@@ -887,12 +889,13 @@ a.tooltip-link
     background-image:-webkit-gradient(linear,center top,center bottom,from(#c20),to(#ac1e01));
     background-image:-webkit-linear-gradient(top,#c20,#ac1e01);
     background-image:linear-gradient(top,#c20,#ac1e01);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cc2200', EndColorStr='#ac1e01'); /* IE6,IE7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#cc2200', EndColorStr='#ac1e01')";
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#cc2200', endColorstr='#ac1e01');
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#cc2200', endColorstr='#ac1e01'); 
+    border-radius:5px;
     -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
     -webkit-border-radius:5px;
-    border-radius:5px
 }
 
 .osbtn-red:hover
@@ -930,6 +933,8 @@ a.tooltip-link
     background-image:-webkit-gradient(linear,center top,center bottom,from(#333),to(#000));
     background-image:-webkit-linear-gradient(top,#333,#000);
     background-image:linear-gradient(top,#333,#000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#333333', EndColorStr='#000000')";
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#333333', endColorstr='#000000'); 
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
     border-radius:5px
@@ -970,6 +975,8 @@ a.tooltip-link
     background-image:-webkit-gradient(linear,center top,center bottom,from(#606060),to(gray));
     background-image:-webkit-linear-gradient(top,#606060,gray);
     background-image:linear-gradient(top,#606060,gray);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#606060', EndColorStr='#808080')";
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#606060', endColorstr='#808080'); 
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
     border-radius:5px
@@ -1010,6 +1017,8 @@ a.tooltip-link
     background-image:-webkit-gradient(linear,center top,center bottom,from(#08c),to(#06a));
     background-image:-webkit-linear-gradient(top,#08c,#06a);
     background-image:linear-gradient(top,#08c,#06a);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#0088cc', EndColorStr='#0066aa')";
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#0088cc', endColorstr='#0066aa'); 
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
     border-radius:5px
