@@ -588,9 +588,9 @@ a.osbtn-red
 	background-image:-webkit-linear-gradient(top,#c20,#ac1e01);
 	background-image:linear-gradient(top,#c20,#ac1e01);
 	background-image:linear-gradient(top,#c20,#ac1e01);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#c20', EndColorStr='#ac1e01'); /* IE6,IE7 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#c20', EndColorStr='#ac1e01')";
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#c20', endColorstr='#c20');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ac1e01', EndColorStr='#ac1e01'); /* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ac1e01', EndColorStr='#ac1e01')";
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ac1e01', endColorstr='#ac1e01');
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	border-radius:5px

@@ -887,9 +887,9 @@ a.tooltip-link
     background-image:-webkit-gradient(linear,center top,center bottom,from(#c20),to(#ac1e01));
     background-image:-webkit-linear-gradient(top,#c20,#ac1e01);
     background-image:linear-gradient(top,#c20,#ac1e01);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#c20', EndColorStr='#ac1e01'); /* IE6,IE7 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#c20', EndColorStr='#ac1e01')";
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#c20', endColorstr='#c20');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cc2200', EndColorStr='#ac1e01'); /* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#cc2200', EndColorStr='#ac1e01')";
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#cc2200', endColorstr='#ac1e01');
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
     border-radius:5px
