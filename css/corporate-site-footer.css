@@ -581,6 +581,7 @@ a.osbtn-red
 	color:#fff !important;
 	font-size:18px;
 	/*background-color:#c20;*/
+	background-image:none;
 	background:-moz-linear-gradient(top,#c20,#ac1e01);
 	background:-ms-linear-gradient(top,#c20,#ac1e01);
 	background:-o-linear-gradient(top,#c20,#ac1e01);
