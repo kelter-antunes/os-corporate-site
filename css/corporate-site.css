@@ -847,11 +847,8 @@ a.tooltip-link
     background-image:-webkit-gradient(linear,center top,center bottom,from(#ccc),to(#aaa));
     background-image:-webkit-linear-gradient(top,#ccc,#aaa);
     background-image:linear-gradient(top,#ccc,#aaa);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#cccccc', EndColorStr='#aaaaaa')";
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#cccccc', endColorstr='#aaaaaa'); 
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
-    -ie-border-radius:5px;
     border-radius:5px
 }
 
@@ -890,22 +887,15 @@ a.tooltip-link
     background-image:-webkit-gradient(linear,center top,center bottom,from(#c20),to(#ac1e01));
     background-image:-webkit-linear-gradient(top,#c20,#ac1e01);
     background-image:linear-gradient(top,#c20,#ac1e01);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#cc2200', EndColorStr='#ac1e01')";
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#cc2200', endColorstr='#ac1e01'); 
-    border-radius:5px!important;
-    -moz-border-radius:5px!important;
-    -ms-border-radius:5px!important;
-    -o-border-radius:5px!important;
-    -webkit-border-radius:5px!important;
-    -ie-border-radius:5px!important;
-    *box-shadow: 0px 0px 0px 2px rgba(180, 34, 0, 1);/* * stands for IE7 and bellow*/
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px
 }
 
 .osbtn-red:hover
 {
     filter:none;
     background-image:none;
-    background-color:#c20;
     color:#fff;
     text-decoration:none
 }
@@ -937,15 +927,9 @@ a.tooltip-link
     background-image:-webkit-gradient(linear,center top,center bottom,from(#333),to(#000));
     background-image:-webkit-linear-gradient(top,#333,#000);
     background-image:linear-gradient(top,#333,#000);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#333333', EndColorStr='#000000')";
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#333333', endColorstr='#000000'); 
     -moz-border-radius:5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
     -webkit-border-radius:5px;
-    -ie-border-radius:5px;
-    border-radius:5px;
-    *box-shadow: 0px 0px 0px 2px rgba(51, 51, 51, 1);/* * stands for IE7 and bellow*/
+    border-radius:5px
 }
 
 .osbtn-black:hover
@@ -983,15 +967,9 @@ a.tooltip-link
     background-image:-webkit-gradient(linear,center top,center bottom,from(#606060),to(gray));
     background-image:-webkit-linear-gradient(top,#606060,gray);
     background-image:linear-gradient(top,#606060,gray);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#606060', EndColorStr='#808080')";
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#606060', endColorstr='#808080'); 
     -moz-border-radius:5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
     -webkit-border-radius:5px;
-    -ie-border-radius:5px;
-    border-radius:5px;
-    *box-shadow: 0px 0px 0px 2px rgba(96, 96, 96, 1);/* * stands for IE7 and bellow*/
+    border-radius:5px
 }
 
 .osbtn-gray:hover
@@ -1029,15 +1007,9 @@ a.tooltip-link
     background-image:-webkit-gradient(linear,center top,center bottom,from(#08c),to(#06a));
     background-image:-webkit-linear-gradient(top,#08c,#06a);
     background-image:linear-gradient(top,#08c,#06a);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#0088cc', EndColorStr='#0066aa')";
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#0088cc', endColorstr='#0066aa'); 
     -moz-border-radius:5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
     -webkit-border-radius:5px;
-    -ie-border-radius:5px;
-    border-radius:5px;
-    *box-shadow: 0px 0px 0px 2px rgba(0, 136, 204, 1);/*  * stands for IE7 and bellow*/
+    border-radius:5px
 }
 
 .osbtn-blue:hover
@@ -1106,7 +1078,7 @@ a.tooltip-link
     font-size:8px;
     position:absolute;
     left:1px;
-    top:3px;
+    top:3px
 }
 
 .btn
@@ -9008,3 +8980,4 @@ a.magnific_popup-prev,a.magnific_popup-close,a.magnific_popup-next
     right:0;
     padding-top:0
 }
+
