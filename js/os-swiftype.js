@@ -22,9 +22,9 @@ $(function() {
         if (item['description'] !== undefined) {
             out = out.concat('<p class="body">' + item['description'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '') + "</p>");
         } else if (item.highlight.body !== undefined) {
-            out = out.concat('<p class="body">' + item.highlight['body'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 500) + "</p>");
+            out = out.concat('<p class="body">' + item.highlight['body'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 700) + "</p>");
         } else {
-            out = out.concat('<p class="body">' + item.body.replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 500) + '</p>');
+            out = out.concat('<p class="body">' + item.body.replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 700) + '</p>');
         }
 
         return out;
