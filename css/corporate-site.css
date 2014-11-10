@@ -7784,6 +7784,11 @@ div.st-result .st-date
     color:#0088cc;
     margin-bottom: 5px;
     margin-top: 0px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .swiftype-widget .autocomplete li p.title em
@@ -7815,6 +7820,11 @@ div.st-result .st-date
     color:#808080;
     margin-top: 0px;
     margin-bottom: 0px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 

@@ -20,11 +20,11 @@ $(function() {
 
         var out = '<p class="title">' + item['title'] + '</p>';
         if (item['description'] !== undefined) {
-            out = out.concat('<p class="body">' + item['description'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 480) + "</p>");
+            out = out.concat('<p class="body">' + item['description'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '') + "</p>");
         } else if (item.highlight.body !== undefined) {
-            out = out.concat('<p class="body">' + item.highlight['body'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 480) + '...' + "</p>");
+            out = out.concat('<p class="body">' + item.highlight['body'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '') + "</p>");
         } else {
-            out = out.concat('<p class="body">' + item.body.replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 480) + '...' + '</p>');
+            out = out.concat('<p class="body">' + item.body.replace('matchCookie', ' ').replace('<em>match</em>Cookie', '') + '</p>');
         }
 
         return out;
@@ -68,13 +68,13 @@ $(function() {
 
 
         $.each(WebSite, function(idx, item) {
-            var out = '<p class="title">' + item['title'].substring(0,100) + '</p>';
+            var out = '<p class="title">' + item['title'] + '</p>';
             if (item['description'] !== undefined) {
-                out = out.concat('<p class="body">' + item['description'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 260) + "</p>");
+                out = out.concat('<p class="body">' + item['description'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '') + "</p>");
             } else if (item.highlight['body'] !== undefined) {
-                out = out.concat('<p class="body">' + item.highlight['body'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 260) + '...' + "</p>");
+                out = out.concat('<p class="body">' + item.highlight['body'].replace('matchCookie', ' ').replace('<em>match</em>Cookie', '') + "</p>");
             } else {
-                out = out.concat('<p class="body">' + item.body.replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 260) + '...' + '</p>');
+                out = out.concat('<p class="body">' + item.body.replace('matchCookie', ' ').replace('<em>match</em>Cookie', '') + '</p>');
             }
             ctx.registerResult($('<li class="result">' + out + '</li>').appendTo(WebSiteList), item);
         });
