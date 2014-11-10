@@ -142,6 +142,7 @@ $(function() {
         return function() {
             if ($('.result').last()[0] !== undefined) {
                 if (isElementInViewport($('.result').last())) {
+                    console.log('In viewport!');
                     $('.swtpbutton').css({
                         'position': 'initial',
                         'bottom': 'initial',
@@ -153,6 +154,7 @@ $(function() {
                     });
                 } else {
                     var wdth = $('.result').last()[0].getBoundingClientRect().width;
+                    console.log('Not in viewport!');
                     $('.swtpbutton').css({
                         'position': 'fixed',
                         'bottom': '0',
