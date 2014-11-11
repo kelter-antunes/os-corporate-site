@@ -246,8 +246,10 @@
         if (totalResultCount === 0) {
             //$resultContainer.html("<div id='st-no-results' class='st-no-results'>No results found.</div>");
             $('#st-no-results').css({display:'block'});
+            $('#st-search-input-2').css({diplay:'none'});
         }else{
             $('#st-no-results').css({display:'none'});
+            $('#st-search-input-2').css({diplay:'block'});
         }
 
         if (spellingSuggestion !== null) {
