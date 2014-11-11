@@ -244,7 +244,10 @@
         }
 
         if (totalResultCount === 0) {
-            $resultContainer.html("<div id='st-no-results' class='st-no-results'>No results found.</div>");
+            //$resultContainer.html("<div id='st-no-results' class='st-no-results'>No results found.</div>");
+            $resultContainer.find('#st-no-results').css({display:'block'});
+        }else{
+            $resultContainer.find('#st-no-results').css({display:'none'});
         }
 
         if (spellingSuggestion !== null) {
