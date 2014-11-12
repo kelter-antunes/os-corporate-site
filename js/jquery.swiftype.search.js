@@ -243,6 +243,10 @@
             });
         }
 
+        if($('.st-spelling-suggestion') !==  undefined){
+            $('.st-spelling-suggestion').remove();
+        }
+
         if (totalResultCount === 0) {
             //$resultContainer.html("<div id='st-no-results' class='st-no-results'>No results found.</div>");
             $('#st-no-results').css({display:'block'});
@@ -254,7 +258,6 @@
 
         if (spellingSuggestion !== null) {
             if(totalResultCount === 0){
-            
                 $('#st-no-results').prepend('<div class="st-spelling-suggestion">Did you mean <a href="#" data-hash="true" data-spelling-suggestion="' + spellingSuggestion + '">' + spellingSuggestion + '</a>?</div>');
             }
             else{
