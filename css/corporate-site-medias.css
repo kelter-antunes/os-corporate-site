@@ -483,6 +483,7 @@ v=201406081625
   {
     overflow: hidden;
     position: fixed;
+    width: 100%;
   }
 
   .MenuSlider_Toggler
