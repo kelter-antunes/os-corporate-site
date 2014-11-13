@@ -479,6 +479,12 @@ v=201406081625
     right:0
   }
   
+  .mobile-body-no-scroll
+  {
+    overflow: hidden;
+    position: fixed;
+  }
+
   .MenuSlider_Toggler
   {
     display:inline-block;
