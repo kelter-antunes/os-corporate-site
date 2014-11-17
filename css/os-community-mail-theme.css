@@ -1,0 +1,151 @@
+.Bold {
+    display: inline;
+    font-weight: bold;
+}
+.Italic {
+    display: inline;
+    font-style: italic;
+}
+.Underline {
+    display: inline;
+    text-decoration: underline;
+}
+.Paragraph {} th {
+    text-align: left;
+    font-weight: normal;
+}
+.EditRecord {} .ShowRecord {} .TableRecords {} table.Empty {}
+/* Inserted in the upgrade to 5.0.0.0 */
+/*-----------------------------------------------------------------*/
+/*----------------- HTML Elements Start ---------------------------*/
+/*-----------------------------------------------------------------*/
+
+html, body, form {
+    margin: 0px;
+    padding: 0px;
+    background: #FFFFFF;
+}
+body, select, textarea, input, td {
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+th {
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+p {
+    margin: 0px;
+}
+.Paragraph {
+    margin: 0px;
+}
+input {
+    padding: 1px 0px 1px 0px;
+}
+input[disabled=true], input[disabled=disabled] {
+    background: ButtonFace;
+    cursor: text;
+}
+Input[disabled][type="submit"] {
+    color: gray;
+}
+input[type=radio], input[type=checkbox] {
+    margin: 0px 3px 0px 4px;
+    vertical-align: bottom;
+}
+input[type=file] {
+    height: 21px;
+    vertical-align: bottom;
+}
+textarea {
+    margin-top: 2px;
+    *margin-top: 0px;
+}
+table {
+    border-collapse: separate;
+    empty-cells: show;
+}
+a, a:link, a:visited {
+    color: #1F5BA4;
+}
+a:hover {
+    color: #CC3300;
+}
+a[disabled=true] {
+    color: ButtonShadow;
+}
+/*********************** Email styles ***************** */
+
+.Heading1 {
+    color: #CC0000;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+.Mail_Header {
+    color: white;
+    font-size: 18px;
+}
+.Mail_Body {
+    background-color: white;
+    padding: 10px;
+}
+.Multiline_Separator {
+    height: 20px;
+}
+.Heading3 {
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 4px;
+    padding-bottom: 2px;
+}
+.Text_Note_ReadPost {
+    font-size: 8pt;
+    color: #888888;
+}
+.Text_Note {
+    color: #888888;
+    font-size: 11px;
+}
+.DigestTitle {
+    color: #CC0000;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 4px;
+}
+.Summary_Section {
+    margin-bottom: 1px;
+}
+.Banners_Image {
+    position: absolute;
+    margin-left: 230px;
+    *margin-left: 243px;
+    margin-top: -5px;
+}
+img.RecordPicture {
+    display: block;
+    float: left;
+    width: 120px;
+}
+div.RecordPicture_Wrapper {
+    float: left;
+}
+div.RecordPicture_Wrapper img.RecordPicture {
+    float: none;
+}
+.TableRecords img.RecordPicture {
+    width: auto;
+    height: 40px;
+    float: none;
+}
+input.Prompt, textarea.Prompt {
+    color: #BBBBBB;
+}
+img {
+    border-width: 0;
+}

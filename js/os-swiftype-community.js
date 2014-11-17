@@ -164,16 +164,11 @@ $(function() {
         filters: readFilters
     });
 
-    $('.st-search-input').swiftype({
-        engineKey: 'GZhgtDYXiyvDjz48t2SP',
-        renderFunction: customRenderAutoComplete,
-        setWidth: '392px',
-    });
 
-    $('.st-search-input-big').swiftype({
-        engineKey: 'GZhgtDYXiyvDjz48t2SP',
-        renderFunction: customRenderAutoComplete,
-        setWidth: true,
-        filters: readFilters
-    });
+    // $('.st-search-input-big').swiftype({
+    //     engineKey: 'GZhgtDYXiyvDjz48t2SP',
+    //     renderFunction: customRenderAutoComplete,
+    //     setWidth: true,
+    //     filters: readFilters
+    // });
 });
