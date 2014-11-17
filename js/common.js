@@ -170,23 +170,27 @@ var messageEvent_Global = eventMethod_Global == "attachEvent" ? "onmessage" : "m
 eventer_Global(messageEvent_Global, function(e) {
     if (e.data !== "") {
 
-        var pathName = e.data.srcElement.location.href
+        if (e.data === 'kissEvent') {
+            var pathName = e.data.srcElement.location.href;
 
-        var isAppContactUS = (pathName === '/contact-us-apps/');
-        var isGlobalContactUS = (pathName === '/contact-us-global/');
-        var isOfficeContactUS = (pathName === '/company/contact-us/');
+            var isAppContactUS = (pathName === '/contact-us-apps/');
+            var isGlobalContactUS = (pathName === '/contact-us-global/');
+            var isOfficeContactUS = (pathName === '/company/contact-us/');
 
 
-        if (isAppContactUS) {
-            trackEvent('CS - Submit Contact US Apps');
+            if (isAppContactUS) {
+                trackEvent('CS - Submit Contact US Apps');
 
-        } else if (isGlobalContactUS) {
-            trackEvent('CS - Submit Contact US Global');
+            } else if (isGlobalContactUS) {
+                trackEvent('CS - Submit Contact US Global');
 
-        } else if (isOfficeContactUS) {
-            trackEvent('CS - Submit Contact US Offices');
+            } else if (isOfficeContactUS) {
+                trackEvent('CS - Submit Contact US Offices');
 
-        }
+            }
+
+        };
+
 
     }
 }, false);
