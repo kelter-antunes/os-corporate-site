@@ -171,7 +171,7 @@ eventer_Global(messageEvent_Global, function(e) {
     if (e.data !== "") {
 
         if (e.data === 'kissEvent') {
-            var pathName = e.data.srcElement.location.href;
+            var pathName = e.srcElement.location.href;
 
             var isAppContactUS = (pathName === '/contact-us-apps/');
             var isGlobalContactUS = (pathName === '/contact-us-global/');
