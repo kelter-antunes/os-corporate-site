@@ -190,15 +190,16 @@ eventer_Global(messageEvent_Global, function(e) {
             }
         }
         //marketo form resize
-        else{
+        else {
             var mktodata;
             try{
                 mktodata = JSON.parse(e.data);
-                console.log('mkto content height = ' + mktodata.height);
-                $('#mkto_frame').height(mktodata.height);
+                if(mktodata.height !== undefined){
+                    console.log('mkto content height = ' + mktodata.height);
+                    $('#mkto_frame').height(mktodata.height);
+                }
             }
             catch(e){
-                
             }
 
         }
@@ -323,21 +324,6 @@ $().ready(function() {
     }
 });
 
-
-/** marketo iframe resize hack **/
-var initialH;
-var mktoH = function marketoHeight() {
-    initialH = $('#mkto_frame').contents().height() + 'px';
-    $('#mkto_frame').height(initialH);
-};
-$(document).ready(function() {
-    var mktoFrame = $("iframe[src*='http://go1.outsystems.com/']");
-    if (mktoFrame.length !== 0) {
-        mktoFrame.parent().css('overflow-x', 'hidden');
-        setTimeout(mktoH, 2500);
-    }
-
-});
 
 
 
