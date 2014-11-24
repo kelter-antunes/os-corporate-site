@@ -194,9 +194,9 @@ eventer_Global(messageEvent_Global, function(e) {
             var mktodata;
             try{
                 mktodata = JSON.parse(e.data);
-                if(mktodata.height !== undefined){
-                    console.log('mkto content height = ' + mktodata.height);
-                    $('#mkto_frame').height(mktodata.height);
+                if(mktodata.mkto_frame.height !== undefined){
+                    console.log('mkto content height = ' + mktodata.mkto_frame.height);
+                    $('#mkto_frame').height(mktodata.mkto_frame.height);
                 }
             }
             catch(e){
