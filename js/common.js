@@ -196,7 +196,9 @@ eventer_Global(messageEvent_Global, function(e) {
                 mktodata = JSON.parse(e.data);
                 if(mktodata.mkto_frame.height !== undefined){
                     console.log('mkto content height = ' + mktodata.mkto_frame.height);
-                    $('#mkto_frame').height(mktodata.mkto_frame.height);
+                    if($('iframe[src^="/contact"]').length === 0){
+                        $('#mkto_frame').height(mktodata.mkto_frame.height);
+                    }
                 }
             }
             catch(e){
