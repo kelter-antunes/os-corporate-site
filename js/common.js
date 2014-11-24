@@ -194,13 +194,14 @@ eventer_Global(messageEvent_Global, function(e) {
             var mktodata;
             try{
                 mktodata = JSON.parse(e.data);
+                console.log('mkto content height = ' + mktodata.height);
+                $('#mkto_frame').height(mktodata.height);
             }
             catch(e){
-                break;
+                
             }
-            console.log('mkto content height = ' + mktodata.height);
-            $('#mkto_frame').height(mktodata.height);
-        };
+
+        }
     }
 }, false);
 
