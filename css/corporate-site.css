@@ -2088,7 +2088,7 @@ body.landing-slim form#WebForm1
     background-position:top center;
     background-color:#909090;
     padding-bottom:80px;
-    border-bottom: 1px solid #909090;
+    border-bottom: 1px solid #d9d9d9;
     border-top:1px solid #d9d9d9
 }
 
@@ -2115,7 +2115,7 @@ body.landing-slim form#WebForm1
     background-position:top center;
     background-color:#c9c9c9;
     padding-bottom:80px;
-    border-bottom:1px solid #909090;
+    border-bottom: 1px solid #c9c9c9;
     border-top:1px solid #c9c9c9
 }
 
