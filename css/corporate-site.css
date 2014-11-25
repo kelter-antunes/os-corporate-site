@@ -2088,6 +2088,7 @@ body.landing-slim form#WebForm1
     background-position:top center;
     background-color:#909090;
     padding-bottom:80px;
+    border-bottom: 1px solid #909090;
     border-top:1px solid #d9d9d9
 }
 
