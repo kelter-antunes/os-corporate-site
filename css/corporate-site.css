@@ -5385,7 +5385,9 @@ ul.pxs_thumbnails li
     position:relative
 }
 
-
+ul.pxs_thumbnails li a.bullet:hover {
+    cursor: pointer;
+}
 
 
 .play-video-overview
