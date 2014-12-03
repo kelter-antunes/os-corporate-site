@@ -5363,20 +5363,20 @@ ul.pxs_slider ul.list li
 ul.pxs_thumbnails li a.bullet
 {
     display: inline-block;
-    background: #999;
+    background-color: #808080;
     padding: 4px;
     border-radius: 6px;
-    margin-right: 5px;
-    opacity: 0.4;
     -webkit-transition: opacity 0.5s linear;
     -moz-transition: opacity 0.5s linear;
     -ms-transition: opacity 0.5s linear;
     -o-transition: opacity 0.5s linear;
     transition: opacity 0.5s linear;
+    height: 2px;
+    width: 2px;
 }
 
 ul.pxs_thumbnails li.selected a.bullet{
-    opacity: 1;
+    background-color: #cccccc;
 }
 
 ul.pxs_thumbnails li
