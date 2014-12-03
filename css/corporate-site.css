@@ -5292,42 +5292,6 @@ h5.card-h a
     overflow:hidden
 }
 
-.pxs_bg
-{
-    background:transparent url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-slides&v=201406081625) repeat top left;
-    height:440px
-}
-
-.pxs_bg div
-{
-    position:absolute;
-    top:0;
-    left:0;
-    width:7584px;
-    /*1264px window width times number of images*/
-    height:440px;
-    background-repeat:repeat;
-    background-position:top left;
-    background-color:transparent
-}
-
-.pxs_bg .pxs_bg1
-{
-    /*background-image:url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-grey&v=201406081625');*/
-    /*left negative 1/8 of ww*/
-}
-
-.pxs_bg .pxs_bg2
-{
-    background-image:/*left negative 1/4 of ww*/
-    url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-grey&v=201406081625)
-}
-
-.pxs_bg .pxs_bg3
-{
-    background-image:/*left negative 1/2 of ww*/
-    url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-rings-red&v=201406081625)
-}
 
 .pxs_slider_wrapper
 {
@@ -5356,11 +5320,6 @@ ul.pxs_slider li
     position:relative
 }
 
-ul.pxs_slider li img
-{
-    display:block;
-    margin:80px auto 0
-}
 
 ul.pxs_slider li div.slider-container
 {
@@ -5370,103 +5329,12 @@ ul.pxs_slider li div.slider-container
     font-size:16px
 }
 
-ul.pxs_slider li img.apps
-{
-    margin:0;
-    position:absolute;
-    bottom:0;
-    right:0;
-    width:478px;
-    height:248px
-}
 
 ul.pxs_slider ul.list li
 {
     height:auto;
     float:none;
     position:relative
-}
-
-ul.pxs_slider ul.list
-{
-    list-style:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=201406081625)
-}
-
-ul.pxs_thumbnails
-{
-/*background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-nav-slider&v=201406081625');
-    background-repeat: no-repeat;
-    background-position: top;*/
-    width:100%;
-    height:45px;
-    text-align:center
-}
-
-ul.pxs_thumbnails li:first-child:before
-{
-    background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625) no-repeat;
-    background-position:-2px -2185px;
-    width:32px;
-    height:35px;
-    display:block;
-    content:"";
-    margin:10px 0;
-    position:absolute;
-    right:40px;
-    margin-top:0
-}
-
-ul.pxs_thumbnails li:last-child:after
-{
-    background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625) no-repeat;
-    background-position:-49px -2185px;
-    width:31px;
-    height:35px;
-    display:block;
-    content:"";
-    position:absolute;
-    left:40px;
-    margin-top:-28px
-}
-
-ul.pxs_thumbnails li.selected:last-child:after
-{
-    margin-top:-31px
-}
-
-ul.pxs_thumbnails li
-{
-    display:inline-block;
-    padding-left:7px;
-    padding-right:7px;
-    height:35px;
-    cursor:pointer;
-    background-color:#ebebeb;
-    margin:0;
-    margin-left:-2px;
-    margin-right:-2px;
-    position:relative
-}
-
-ul.pxs_thumbnails li img
-{
-    background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625) no-repeat;
-    background-position:-56px -81px;
-    width:28px;
-    height:25px;
-    cursor:pointer;
-    display:block;
-    margin-top:3px
-}
-
-ul.pxs_thumbnails li.selected img
-{
-    background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625) no-repeat;
-    background-position:-56px -131px;
-    width:28px;
-    height:28px;
-    cursor:pointer;
-    display:block
 }
 
 .pxs_navigation
@@ -5491,6 +5359,9 @@ ul.pxs_thumbnails li.selected img
     left:50%;
     margin-left:-90px
 }
+
+
+
 
 .play-video-overview
 {

@@ -157,7 +157,8 @@
                         /*
                                     clicking a thumb will slide to the respective image
                                      */
-                        $thumbs.bind('click', function() {
+                        $thumbs.bind('click', function(e) {
+                            e.preventDefault();
                             var $thumb = $(this);
                             highlight($thumb);
                             //if autoplay interrupt when user clicks
