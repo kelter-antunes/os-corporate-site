@@ -68,7 +68,8 @@
                                         set the width of the thumbs
                                         and spread them evenly
                                      */
-                        $thumbs.each(function(i) {
+                        
+                        /*$thumbs.each(function(i) {
                             var $this = $(this);
 
                             //hovering the thumbs 
@@ -83,7 +84,7 @@
                                 }
                             });
                         });
-
+                        */
                         //make the first thumb be selected
                         highlight($thumbs.eq(0));
 
@@ -278,10 +279,10 @@
     }
 
     var highlight = function($elem) {
-        $elem.siblings().children().css('background-position', '-56px -81px');
+        //$elem.siblings().children().css('background-position', '-56px -81px');
         $elem.siblings().removeClass('selected');
 
-        $elem.children().css('background-position', '-56px -131px');
+        //$elem.children().css('background-position', '-56px -131px');
         $elem.addClass('selected');
     }
 
