@@ -19,7 +19,7 @@
                 $pxs_bg2 = $('.pxs_bg2', $pxs_container),
                 $pxs_bg3 = $('.pxs_bg3', $pxs_container),
                 //current image
-                current = 0,
+                current = getRandom($elems.length-1),
                 //the thumbs container
                 $pxs_thumbnails = $('.pxs_thumbnails', $pxs_container),
                 //the thumbs
@@ -218,6 +218,14 @@
 
         });
     };
+
+
+    var getRandom = function(max_val){
+        var min = 0;
+        var max = max_val;
+        // and the formula is:
+        var random = Math.floor(Math.random() * (max - min + 1)) + min;
+    }
 
     //the current windows width
     var w_w = $(window).width();
