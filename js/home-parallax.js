@@ -3,7 +3,7 @@
         var opts = $.extend({}, $.fn.parallaxSlider.defaults, options);
         return this.each(function() {
             var $pxs_container = $(this),
-                o = $.meta ? $.extend({}, opts, $pxs_container.data()) : opts;
+            o = $.meta ? $.extend({}, opts, $pxs_container.data()) : opts;
 
             //the main slider
             var $pxs_slider = $('.pxs_slider', $pxs_container),
@@ -19,7 +19,7 @@
                 $pxs_bg2 = $('.pxs_bg2', $pxs_container),
                 $pxs_bg3 = $('.pxs_bg3', $pxs_container),
                 //current image
-                current = getRandom($elems.length-1),
+                current = 0,//getRandom($elems.length-1),
                 //the thumbs container
                 $pxs_thumbnails = $('.pxs_thumbnails', $pxs_container),
                 //the thumbs
@@ -32,7 +32,7 @@
 
             //first preload all the images
             var loaded = 0,
-                $images = $pxs_slider_wrapper.find('img');
+            $images = $pxs_slider_wrapper.find('img');
 
             $images.each(function() {
 
@@ -53,22 +53,22 @@
                                     need to set width of the slider,
                                     of each one of its elements, and of the
                                     navigation buttons
-                                     */
-                        setWidths($pxs_slider,
-                            $elems,
-                            total_elems,
-                            $pxs_bg1,
-                            $pxs_bg2,
-                            $pxs_bg3,
-                            one_image_w,
-                            $pxs_next,
-                            $pxs_prev);
+                                    */
+                                    setWidths($pxs_slider,
+                                        $elems,
+                                        total_elems,
+                                        $pxs_bg1,
+                                        $pxs_bg2,
+                                        $pxs_bg3,
+                                        one_image_w,
+                                        $pxs_next,
+                                        $pxs_prev);
 
                         /*
                                         set the width of the thumbs
                                         and spread them evenly
-                                     */
-                        
+                                        */
+
                         /*$thumbs.each(function(i) {
                             var $this = $(this);
 
@@ -84,7 +84,7 @@
                                 }
                             });
                         });
-                        */
+*/
                         //make the first thumb be selected
                         highlight($thumbs.eq(0));
 
@@ -98,16 +98,16 @@
                                     --current;
                                     return false;
                                 }
-                            highlight($thumbs.eq(current));
-                            slide(current,
-                                $pxs_slider,
-                                $pxs_bg3,
-                                $pxs_bg2,
-                                $pxs_bg1,
-                                o.speed,
-                                o.easing,
-                                o.easingBg);
-                        });
+                                highlight($thumbs.eq(current));
+                                slide(current,
+                                    $pxs_slider,
+                                    $pxs_bg3,
+                                    $pxs_bg2,
+                                    $pxs_bg1,
+                                    o.speed,
+                                    o.easing,
+                                    o.easingBg);
+                            });
                         $pxs_prev.bind('click', function() {
                             --current;
                             if (current < 0)
@@ -117,16 +117,16 @@
                                     ++current;
                                     return false;
                                 }
-                            highlight($thumbs.eq(current));
-                            slide(current,
-                                $pxs_slider,
-                                $pxs_bg3,
-                                $pxs_bg2,
-                                $pxs_bg1,
-                                o.speed,
-                                o.easing,
-                                o.easingBg);
-                        });
+                                highlight($thumbs.eq(current));
+                                slide(current,
+                                    $pxs_slider,
+                                    $pxs_bg3,
+                                    $pxs_bg2,
+                                    $pxs_bg1,
+                                    o.speed,
+                                    o.easing,
+                                    o.easingBg);
+                            });
 
                         if (jQuery.browser.mobile) {
                             //bind swipe events
@@ -157,11 +157,11 @@
 
                         /*
                                     clicking a thumb will slide to the respective image
-                                     */
-                        $thumbs.bind('click', function(e) {
-                            e.preventDefault();
-                            var $thumb = $(this);
-                            highlight($thumb);
+                                    */
+                                    $thumbs.bind('click', function(e) {
+                                        e.preventDefault();
+                                        var $thumb = $(this);
+                                        highlight($thumb);
                             //if autoplay interrupt when user clicks
                             if (o.auto)
                                 clearInterval(slideshow);
@@ -179,50 +179,50 @@
                         /*
                                     activate the autoplay mode if
                                     that option was specified
-                                     */
-                        if (o.auto != 0) {
-                            o.circular = true;
-                            slideshow = setInterval(function() {
-                                $pxs_next.trigger('click');
-                            }, o.auto);
-                        }
+                                    */
+                                    if (o.auto != 0) {
+                                        o.circular = true;
+                                        slideshow = setInterval(function() {
+                                            $pxs_next.trigger('click');
+                                        }, o.auto);
+                                    }
 
 
                         /*
-									when resizing the window,
-									we need to recalculate the widths of the
-									slider elements, based on the new windows width.
-									we need to slide again to the current one,
-									since the left of the slider is no longer correct
-									 */
-                        $(window).resize(function() {
-                            w_w = $(window).width();
-                            setWidths($pxs_slider, $elems, total_elems, $pxs_bg1, $pxs_bg2, $pxs_bg3, one_image_w, $pxs_next, $pxs_prev);
-                            slide(current,
-                                $pxs_slider,
-                                $pxs_bg3,
-                                $pxs_bg2,
-                                $pxs_bg1,
-                                1,
-                                o.easing,
-                                o.easingBg);
-                        });
+                                    when resizing the window,
+                                    we need to recalculate the widths of the
+                                    slider elements, based on the new windows width.
+                                    we need to slide again to the current one,
+                                    since the left of the slider is no longer correct
+                                    */
+                                    $(window).resize(function() {
+                                        w_w = $(window).width();
+                                        setWidths($pxs_slider, $elems, total_elems, $pxs_bg1, $pxs_bg2, $pxs_bg3, one_image_w, $pxs_next, $pxs_prev);
+                                        slide(current,
+                                            $pxs_slider,
+                                            $pxs_bg3,
+                                            $pxs_bg2,
+                                            $pxs_bg1,
+                                            1,
+                                            o.easing,
+                                            o.easingBg);
+                                    });
 
-                    }
-                }).error(function() {
+                                }
+                            }).error(function() {
                     //alert('here')
                 }).attr('src', $img.attr('src'));
-            });
+                        });
 
 
 
-        });
-    };
+});
+};
 
 
-    var getRandom = function(max_val){
-        var min = 0;
-        var max = max_val;
+var getRandom = function(max_val){
+    var min = 0;
+    var max = max_val;
         // and the formula is:
         var random = Math.floor(Math.random() * (max - min + 1)) + min;
     }
@@ -260,29 +260,39 @@
             }, speed, easingBg);
         } else {
 
-            $pxs_slider.stop().animate({
-                left: slide_to + 'px',
-                leaveTransforms: true,
-                useTranslate3d: true
-            }, speed, easing);
+            $pxs_slider.stop().animate({opacity: 0}, speed,
+                function(){
+                    $pxs_slider.animate({left: slide_to + 'px'}, 100, function(){
+                        $pxs_slider.animate({opacity:1},speed);
+                    });
+                });
 
-            $pxs_bg3.stop().animate({
-                left: slide_to / 2 + 'px',
-                leaveTransforms: true,
-                useTranslate3d: true
-            }, speed, easingBg);
 
-            $pxs_bg2.stop().animate({
-                left: slide_to / 4 + 'px',
-                leaveTransforms: true,
-                useTranslate3d: true
-            }, speed, easingBg);
+            $pxs_bg3.stop().animate({opacity: 0}, speed,
+                function(){
+                    $pxs_slider.animate({left: slide_to / 2 + 'px'}, 100, function(){
+                        $pxs_slider.animate({opacity:1},speed);
+                    });
+                });
 
-            $pxs_bg1.stop().animate({
-                left: slide_to / 8 + 'px',
-                leaveTransforms: true,
-                useTranslate3d: true
-            }, speed, easingBg);
+
+
+            $pxs_bg2.stop().animate({opacity: 0}, speed,
+                function(){
+                    $pxs_slider.animate({left: slide_to / 4 + 'px'}, 100, function(){
+                        $pxs_slider.animate({opacity:1},speed);
+                    });
+                });
+
+
+
+            $pxs_bg1.stop().animate({opacity: 0}, speed,
+                function(){
+                    $pxs_slider.animate({left: slide_to / 8 + 'px'}, 100, function(){
+                        $pxs_slider.animate({opacity:1},speed);
+                    });
+                });
+
         }
     }
 
@@ -306,23 +316,23 @@
         /*
                     the width of the slider is the windows width
                     times the total number of elements in the slider
-                     */
-        var pxs_slider_w = w_w * total_elems;
-        $pxs_slider.width(pxs_slider_w + 'px');
+                    */
+                    var pxs_slider_w = w_w * total_elems;
+                    $pxs_slider.width(pxs_slider_w + 'px');
         //each element will have a width = windows width
         $elems.width(w_w + 'px');
         /*
                     we also set the width of each bg image div.
                     The value is the same calculated for the pxs_slider
-                     */
-        $pxs_bg1.width(pxs_slider_w + 'px');
-        $pxs_bg2.width(pxs_slider_w + 'px');
-        $pxs_bg3.width(pxs_slider_w + 'px');
+                    */
+                    $pxs_bg1.width(pxs_slider_w + 'px');
+                    $pxs_bg2.width(pxs_slider_w + 'px');
+                    $pxs_bg3.width(pxs_slider_w + 'px');
 
 
-    }
+                }
 
-    $.fn.parallaxSlider.defaults = {
+                $.fn.parallaxSlider.defaults = {
         auto: 10000, //how many seconds to periodically slide the content.
         //If set to 0 then autoplay is turned off.
         speed: 1000, //speed of each slide animation
