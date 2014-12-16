@@ -8893,3 +8893,35 @@ a.magnific_popup-prev,a.magnific_popup-close,a.magnific_popup-next
     padding-top:0
 }
 
+/*CMS_BackOffice - ICE Styles*/
+.ICE_Text{
+    position: absolute;
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: bold;
+    margin-left: 26px;
+}
+
+.magpopup a.gotomagnific {
+    display: none;
+}
+
+.magpopup:hover a.gotomagnific {
+    display: block;
+}
+
+.edit_content_link{
+    display: none;
+    position:absolute;
+    top:20px;
+    left:20px;
+    z-index:666;
+    color: firebrick;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.edit_content_link:hover{
+    text-decoration: none;
+    color: darkred;
+}
