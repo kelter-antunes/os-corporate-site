@@ -83,7 +83,7 @@ $(function() {
                         var padd = parseInt($('.mfp-content .mfp-os-popup-content .video-container').css("padding-bottom"), 10);
                         var new_padd = max_h*padd;
                         new_padd = new_padd/popup_h;
-                        $('.mfp-content .mfp-os-popup-content .video-container').css("padding-bottom", new_padd);
+                        if(new_padd < padd){$('.mfp-content .mfp-os-popup-content .video-container').css("padding-bottom", new_padd);} 
                     });
                 },
                 ajaxContentAdded: function() {
@@ -112,7 +112,7 @@ $(function() {
                     var padd = parseInt($('.mfp-content .mfp-os-popup-content .video-container').css("padding-bottom"), 10);
                     var new_padd = max_h*padd;
                     new_padd = new_padd/popup_h;
-                    $('.mfp-content .mfp-os-popup-content .video-container').css("padding-bottom", new_padd);
+                    if(new_padd < padd){$('.mfp-content .mfp-os-popup-content .video-container').css("padding-bottom", new_padd);} 
 
                     $('.mfp-os-main-content').bind("DOMSubtreeModified", function() {
                         $('.mfp-content .mfp-os-popup-content img').css({
@@ -125,7 +125,7 @@ $(function() {
                         var padd = parseInt($('.mfp-content .mfp-os-popup-content .video-container').css("padding-bottom"), 10);
                         var new_padd = max_h*padd;
                         new_padd = new_padd/popup_h;
-                        $('.mfp-content .mfp-os-popup-content .video-container').css("padding-bottom", new_padd);
+                        if(new_padd < padd){$('.mfp-content .mfp-os-popup-content .video-container').css("padding-bottom", new_padd);}  
                     })
 
 
