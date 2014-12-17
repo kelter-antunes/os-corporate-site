@@ -164,12 +164,7 @@ $(document).ready(function() {
 
 /**
  *
- *
- *
  *     EVENTS
- *
- *
- *
  *
  **/
 
