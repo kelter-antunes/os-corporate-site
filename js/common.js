@@ -168,6 +168,13 @@ $(document).ready(function() {
     });
 });
 
+
+/**
+ *
+ *     EVENTS
+ *
+ **/
+
 // Create IE + others compatible event handler
 var eventMethod_Global = window.addEventListener ? "addEventListener" : "attachEvent";
 var eventer_Global = window[eventMethod_Global];
@@ -183,7 +190,8 @@ eventer_Global(messageEvent_Global, function(e) {
             var isAppContactUS = (pathName.indexOf('/contact-us-apps/') !== -1);
             var isGlobalContactUS = (pathName.indexOf('/contact-us-global/') !== -1);
             var isOfficeContactUS = (pathName.indexOf('/company/contact-us/') !== -1);
-
+            var isVersusLP = (pathName.indexOf('vs-outsystems/') !== -1);
+            var isSalesforceDownload = (pathName.indexOf('/salesforce1-vs-outsystems/') !== -1);
 
             if (isAppContactUS) {
                 trackEvent('CS - Submit Contact US Apps');
@@ -193,6 +201,19 @@ eventer_Global(messageEvent_Global, function(e) {
 
             } else if (isOfficeContactUS) {
                 trackEvent('CS - Submit Contact US Offices');
+
+            } else if (isVersusLP) {
+                if ((pathName.indexOf('kony') !== -1)) {
+                    trackEvent('LP - Submit Demo Contact Us - Kony LP');
+
+                } else if ((pathName.indexOf('mendix') !== -1)) {
+                    trackEvent('LP - Submit Demo Contact Us - Mendix LP');
+
+                } else if (isSalesforceDownload) {
+                    trackEvent('LP - Download collateral', {
+                        'Document': 'OutSystems Platform and Force.com'
+                    }, null);
+                }
 
             }
         }
@@ -205,7 +226,7 @@ eventer_Global(messageEvent_Global, function(e) {
                     console.log('mkto content height = ' + mktodata.mkto_frame.height);
                     if ($('iframe[src^="/contact"]').length === 0) {
                         if ($('iframe[src^="/offer"]').contents().find('iframe').length !== 0) {
-                            $('iframe[src^="/offer"]').contents().find('iframe').height( mktodata.mkto_frame.height );
+                            $('iframe[src^="/offer"]').contents().find('iframe').height(mktodata.mkto_frame.height);
                         } else {
                             $('#mkto_frame').height(mktodata.mkto_frame.height);
                         }
@@ -217,6 +238,65 @@ eventer_Global(messageEvent_Global, function(e) {
         }
     }
 }, false);
+
+
+/* apps demo events */
+$(function() {
+    $('a[href*="applicationname"]').click(function(event) {
+        var appUrl = $(this).attr('href');
+        var appNameParam = 'applicationname=';
+        var n = appUrl.lastIndexOf(appNameParam);
+        var appName = appUrl.substring(n + appNameParam.length);
+
+        //var _gaq = _gaq || [];
+        try {
+            _gaq.push(['_trackEvent', 'Apps', 'Try Now', appName]);
+        } catch (err) {}
+    });
+
+});
+
+
+/* wistia events 
+function Progress() {
+    if ((wistiaEmbed.time() / wistiaEmbed.duration()) > 0.5) {
+        alert(""
+            50 % "");
+    } else {
+        window.setTimeout(Progress, 1000);
+    }
+}
+
+wistiaEmbed.bind('end', function() {
+    alert(""
+        end "");
+    return this.unbind;
+});
+
+wistiaEmbed.bind('play', function() {
+    Progress();
+    alert(""
+        play "");
+    $('#"+OpenSS.Id+"').click();
+
+    return this.unbind;
+});*/
+
+
+/**
+ *
+ *
+ *
+ *     EVENTS  END
+ *
+ *
+ *
+ *
+ **/
+
+
+
+
 
 osjs(function(a) {
     osjs('.scrollup').click(function(event) {
