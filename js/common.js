@@ -71,14 +71,16 @@ $(function() {
             tClose: 'Close',
             callbacks: {
                 open: function() {
-                    /*Magnific Popup - image resizing according to screen size*/
-                    $(window).load(function(){
-                        $('.mfp-content .mfp-os-popup-content img').css({'width': 'auto', 'max-height':$(window).height() - 105});
-                    });
-                    
+                    /*Magnific Popup - image resizing according to screen size*/                    
                     $(window).resize(function(){
                         $('.mfp-content .mfp-os-popup-content img').css({'width': 'auto', 'max-height':$(window).height() - 105});
                     });
+                },
+                imageLoadComplete: function() {
+                    // fires when image in current popup finished loading
+                    // avaiable since v0.9.0
+                    console.log('Image loaded');
+                    $('.mfp-content .mfp-os-popup-content img').css({'width': 'auto', 'max-height':$(window).height() - 105});
                 },
                 ajaxContentAdded: function() {
                     var content;
