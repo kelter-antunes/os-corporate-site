@@ -93,6 +93,13 @@ $(function() {
                     }
                     /*Magnific Popup - image resizing according to screen size*/ 
                     $('.mfp-content .mfp-os-popup-content img').css({'width': 'auto', 'max-height':$(window).height() - 105});
+                    
+                    $('.mfp-os-thumb').each(function(){
+                        $(this).click(function(){
+                            $('.mfp-content .mfp-os-popup-content img').css({'width': 'auto', 'max-height':$(window).height() - 105});
+                        });
+                    });
+                    
                 },
                 close: function() {
                     window.location.hash = '_';
@@ -298,7 +305,7 @@ wistiaEmbed.bind('play', function() {
 
 
 
-osjs(function(a) {
+ osjs(function(a) {
     osjs('.scrollup').click(function(event) {
         event.preventDefault();
         osjs("html, body").animate({
@@ -308,7 +315,7 @@ osjs(function(a) {
     });
 });
 
-$(document).ready(function() {
+ $(document).ready(function() {
     $(".hist-back-link").click(function(event) {
         event.preventDefault();
         history.back(1);
