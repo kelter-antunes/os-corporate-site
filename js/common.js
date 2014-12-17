@@ -72,7 +72,7 @@ $(function() {
             callbacks: {
                 open: function() {
                     /*Magnific Popup - image resizing according to screen size*/
-                    $(document).ready(function(){
+                    $(window).load(function(){
                         $('.mfp-content .mfp-os-popup-content img').css({'width': 'auto', 'max-height':$(window).height() - 105});
                     });
                     
