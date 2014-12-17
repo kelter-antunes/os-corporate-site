@@ -82,7 +82,7 @@ $(function() {
                         var max_h = parseInt($(window).height() - 105, 10);
                         var padd = parseInt($('.mfp-content .mfp-os-popup-content .video-container').css("padding-bottom"), 10);
                         var new_padd = max_h*padd;
-                        new_padd = new_padd/popup_h;
+                        new_padd = parseInt(new_padd/popup_h);
                         if(new_padd < padd){$('.mfp-content .mfp-os-popup-content .video-container').css("padding-bottom", new_padd);} 
                     });
                 },
@@ -111,7 +111,7 @@ $(function() {
                     var max_h = parseInt($(window).height() - 105, 10);
                     var padd = parseInt($('.mfp-content .mfp-os-popup-content .video-container').css("padding-bottom"), 10);
                     var new_padd = max_h*padd;
-                    new_padd = new_padd/popup_h;
+                    new_padd = parseInt(new_padd/popup_h);
                     if(new_padd < padd){$('.mfp-content .mfp-os-popup-content .video-container').css("padding-bottom", new_padd);} 
 
                     $('.mfp-os-main-content').bind("DOMSubtreeModified", function() {
@@ -124,7 +124,7 @@ $(function() {
                         var max_h = parseInt($(window).height() - 105, 10);
                         var padd = parseInt($('.mfp-content .mfp-os-popup-content .video-container').css("padding-bottom"), 10);
                         var new_padd = max_h*padd;
-                        new_padd = new_padd/popup_h;
+                        new_padd = parseInt(new_padd/popup_h);
                         if(new_padd < padd){$('.mfp-content .mfp-os-popup-content .video-container').css("padding-bottom", new_padd);}  
                     })
 
