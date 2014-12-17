@@ -93,13 +93,13 @@ $(function() {
                     }
                     /*Magnific Popup - image resizing according to screen size*/ 
                     $('.mfp-content .mfp-os-popup-content img').css({'width': 'auto', 'max-height':$(window).height() - 105});
-                    
+
                     $('.mfp-os-thumb').each(function(){
-                        $(this).click(function(){
+                        $(this).click(function(event){
                             $('.mfp-content .mfp-os-popup-content img').css({'width': 'auto', 'max-height':$(window).height() - 105});
                         });
                     });
-                    
+
                 },
                 close: function() {
                     window.location.hash = '_';
