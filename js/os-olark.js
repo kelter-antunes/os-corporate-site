@@ -1,37 +1,39 @@
 var olarkOSDetails;
 $(document).ready(function() {
 
-	if (olark() !== undefined) {
-		olark('api.visitor.getDetails', function(dets) {
+    try {
+        olark('api.visitor.getDetails', function(dets) {
 
-			olarkOSDetails = dets;
-		});
-		
-		function olarkProgress() {
-			olark('api.visitor.getDetails', function(dets) {
-				olarkOSDetails = dets;
-			});
+            olarkOSDetails = dets;
+        });
 
-			if(olarkOSDetails !== undefined){
-				var minutesInPage = Math.floor(olarkOSDetails.secondsSpentOnCurrentPage / 60);
+        function olarkProgress() {
+            olark('api.visitor.getDetails', function(dets) {
+                olarkOSDetails = dets;
+            });
 
-				if (minutesInPage >= 1) {
-					olark('api.chat.updateVisitorStatus', {
-						snippet: 'Spent ' + minutesInPage + ' minute(s) in current page'
-					});
-				} else {
-					olark('api.chat.updateVisitorStatus', {
-						snippet: 'Spent less than a minute in current page'
-					});
-				}
+            if (olarkOSDetails !== undefined) {
+                var minutesInPage = Math.floor(olarkOSDetails.secondsSpentOnCurrentPage / 60);
 
-			}
+                if (minutesInPage >= 1) {
+                    olark('api.chat.updateVisitorStatus', {
+                        snippet: 'Spent ' + minutesInPage + ' minute(s) in current page'
+                    });
+                } else {
+                    olark('api.chat.updateVisitorStatus', {
+                        snippet: 'Spent less than a minute in current page'
+                    });
+                }
 
-			window.setTimeout(olarkProgress, 1000);
-		}
-		olarkProgress();
+            }
 
-	}
+            window.setTimeout(olarkProgress, 1000);
+        }
+        olarkProgress();
+
+    } catch (e){
+
+    }
 
 
 });
