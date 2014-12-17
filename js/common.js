@@ -72,8 +72,10 @@ $(function() {
             callbacks: {
                 open: function() {
                     /*Magnific Popup - image resizing according to screen size*/
-                    $('.mfp-content .mfp-os-popup-content img').css({'width': 'auto', 'max-height':$(window).height() - 105});
-
+                    $(document).ready(function(){
+                        $('.mfp-content .mfp-os-popup-content img').css({'width': 'auto', 'max-height':$(window).height() - 105});
+                    });
+                    
                     $(window).resize(function(){
                         $('.mfp-content .mfp-os-popup-content img').css({'width': 'auto', 'max-height':$(window).height() - 105});
                     });
