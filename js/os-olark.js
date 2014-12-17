@@ -1,30 +1,42 @@
 var olarkOSDetails;
 $(document).ready(function() {
-	olark('api.visitor.getDetails', function(dets) {
 
-		olarkOSDetails = dets;
-	});
-
-
-	function olarkProgress() {
+	if (olark() !== undefined) {
 		olark('api.visitor.getDetails', function(dets) {
+
 			olarkOSDetails = dets;
 		});
+		
+		function olarkProgress() {
+			olark('api.visitor.getDetails', function(dets) {
+				olarkOSDetails = dets;
+			});
 
-		if(olarkOSDetails !== undefined){
-			var minutesInPage = Math.floor(olarkOSDetails.secondsSpentOnCurrentPage / 60);
+			if(olarkOSDetails !== undefined){
+				var minutesInPage = Math.floor(olarkOSDetails.secondsSpentOnCurrentPage / 60);
 
-			if (minutesInPage >= 1) {
-				olark('api.chat.updateVisitorStatus', {
-					snippet: 'Spent ' + minutesInPage + ' minute(s) in current page'
-				});
-			} else {
-				olark('api.chat.updateVisitorStatus', {
-					snippet: 'Spent less than a minute in current page'
-				});
+				if (minutesInPage >= 1) {
+					olark('api.chat.updateVisitorStatus', {
+						snippet: 'Spent ' + minutesInPage + ' minute(s) in current page'
+					});
+				} else {
+					olark('api.chat.updateVisitorStatus', {
+						snippet: 'Spent less than a minute in current page'
+					});
+				}
+
 			}
 
+			window.setTimeout(olarkProgress, 1000);
 		}
+		olarkProgress();
+
+	}
+
+
+});
+
+
 /*
 		var isGoogleGA = (pathName.indexOf('/offer/ga/web-application-development/') !== -1);
 		var isMADP = (pathName.indexOf('/platform/madp/') !== -1);
@@ -37,13 +49,6 @@ $(document).ready(function() {
 		}
 
 		*/
-
-
-		window.setTimeout(olarkProgress, 1000);
-	}
-	olarkProgress();
-});
-
 
 
 /* PAGES TO TRACK
