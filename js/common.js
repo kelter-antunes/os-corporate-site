@@ -78,7 +78,7 @@ $(function() {
                             'max-height': $(window).height() - 105
                         });
 
-                        var popup_h = parseInt($('.mfp-content .mfp-os-popup-content').height(), 10);
+                        var popup_h = parseInt($('.mfp-content .mfp-os-popup-content').height() - $('.details').height(), 10);
                         var max_h = parseInt($(window).height() - 105, 10);
                         var padd = parseInt($('.mfp-content .mfp-os-popup-content .video-container').css("padding-bottom"), 10);
                         var new_padd = max_h*padd;
@@ -107,7 +107,7 @@ $(function() {
                         'max-height': $(window).height() - 105
                     });
 
-                    var popup_h = parseInt($('.mfp-content .mfp-os-popup-content').height(), 10);
+                    var popup_h = parseInt($('.mfp-content .mfp-os-popup-content').height() - $('.details').height(), 10);
                     var max_h = parseInt($(window).height() - 105, 10);
                     var padd = parseInt($('.mfp-content .mfp-os-popup-content .video-container').css("padding-bottom"), 10);
                     var new_padd = max_h*padd;
@@ -120,7 +120,7 @@ $(function() {
                             'max-height': $(window).height() - 105
                         });
 
-                        var popup_h = parseInt($('.mfp-content .mfp-os-popup-content').height(), 10);
+                        var popup_h = parseInt($('.mfp-content .mfp-os-popup-content').height() - $('.details').height(), 10);
                         var max_h = parseInt($(window).height() - 105, 10);
                         var padd = parseInt($('.mfp-content .mfp-os-popup-content .video-container').css("padding-bottom"), 10);
                         var new_padd = max_h*padd;
