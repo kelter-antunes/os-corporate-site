@@ -1,7 +1,12 @@
 <style>
 .hero-img{
   position: absolute;
+  %MOBILE% 
+  background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=mob-bg5-5a5755') no-repeat center;
+  %/MOBILE%
+  %WEB%
   background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg5-5a5755') no-repeat center;
+  %/WEB%
   height: 420px;
   width: 100%;
   z-index: -1;
@@ -69,38 +74,47 @@ table, th, td {
   left: 0;
   right: 0;
 }
+.back-circle{
+  border-radius: 90px;
+  background-color: #e6e6e6;
+  display: inline-block;
+  padding: 20px;
+  box-shadow: 3px 3px 2px #808080;
+}
+a.lk:hover{
+  text-decoration: none;
+}
 </style>
 
-<div style="background-color:#cc2200; height:60px"> &nbsp;
+<!--Header-->
+<div style="background-color:#cc2200; height:60px">
+  <div class="container">
+    <div class="row">
+      <div class="span4" style="margin-top: 10px; %MOBILE% text-align: center; %/MOBILE%">
+        <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=os-logo2" />
+      </div>
+      %WEB%
+      <div class="span8 title3" style="text-align:right;color:#fff;margin-top: 20px;">
+        %CONTACT-US%
+      </div>
+      %/WEB%
+    </div>
+  </div>
 </div>
+
+
 <!--Section 1-->
 <div class="hero-img" style="background-color: #5B5654;">&nbsp;</div>
-
 <div class="container">
   <div class="row">
-
-    <div class="span12" style="margin-top:-60px;">
-      <div class="row">
-        <div class="span3" >
-          <h2 style="margin-bottom: 0px;color:#fff;">
-            OutSystems
-          </h2>
-        </div>
-        <div class="span9" style="text-align:right;color:#fff;">
-          %CONTACT_US%
-        </div>
-      </div> 
-    </div>
-
-    <div class="span12" style="height:420px;">
-      <h1 class="title1" style="margin-top: 130px;">
+    <div class="span12" %WEB% style="height:420px;" %/WEB%>
+      <h1 class="title1" style="margin-top: 130px; %MOBILE% font-size:30px; margin-top: 40px; %/MOBILE%">
         Employee Onboarding App
       </h1>
-      <h3 class="title2" style="margin-top: 50px;">
+      <h3 class="title2" style="%WEB% margin-top: 50px;%/WEB% %MOBILE% font-size: 18px; line-height: 34px; margin-bottom: 40px; %/MOBILE%">
         Imagine that on your employee's first day, everything is ready - laptop, badge, email, business cards, facilities and application access, everything!
       </h3>
     </div>
-
   </div>
 </div>
 
@@ -108,12 +122,15 @@ table, th, td {
 <div style="background-color: #e6e6e6">
   <div class="container">
     <div class="row">
+
+      %WEB%
       <div class="span6">
         <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=ipad-detail" style="margin-top:40px;" />
       </div>
+      %/WEB%
       <div class="span6">
 
-        <table style="margin-top: 65px;">
+        <table style="%WEB% margin-top: 65px; %/WEB%">
           <tbody>
 
             <tr>
@@ -153,6 +170,11 @@ table, th, td {
           </tbody>
         </table>
       </div>
+      %MOBILE%
+      <div class="span6" style="margin-bottom:0px;">
+        <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=mob-ipad-detail" />
+      </div>
+      %/MOBILE%
     </div>
   </div>
 </div>
@@ -161,17 +183,24 @@ table, th, td {
 <div class="blue-background">
   <div class="container" >
     <div class="row">
-      <div class="span12" style="position:relative; margin-top:110px; padding-bottom:65px">
-        <h3 class="title2" style="margin-left: 65px; margin-right: 65px;">
+      <div class="span12" style="position:relative; %WEB%  padding-bottom:65px;margin-top:110px; %/WEB% %MOBILE% margin-top:45px; margin-bottom:0px; z-index: 0; padding-bottom: 75px; %/MOBILE%">
+        <h3 class="title2" style="%WEB% margin-left: 65px; margin-right: 65px; %/WEB% %MOBILE% font-size: 24px; %/MOBILE%">
           An Employe Onboarding App that makes employee onboarding simple...
         </h3>
-        <h4 class="text-white">
+        <h4 class="text-white" %MOBILE% style="font-size:16px; margin-top:30px;" %/MOBILE%>
           reducing emails, paperwork, spreadsheets, miscommunication, migraines, forgotten credentials, frustrated employees, extended setup time, hair loss, strict workflows, multiple systems…
         </h4>
         <div style="text-align:center;">
+          %WEB%
           <a class="osbtn osbtn-lg" style="margin-top:60px;color:black;">Schedule a Demo</a>
+          %/WEB%
+          %MOBILE%
+          <a class="osbtn osbtn-lg" style="margin-top:25px;color:black;">Request a Demo</a>
+          %/MOBILE%
+        </div> 
+        <div style=" position: absolute;bottom: 0; %MOBILE% z-index: -1;text-align: center; %MOBILE%">
+          <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=welcomespot" style="%WEB% right:-150px; %/WEB% %MOBILE%  width: 60%; %/MOBILE%"/>
         </div>
-        <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=welcomespot" style="position:absolute; bottom:0;right:-150px;"/>
       </div>
     </div>
   </div>
@@ -180,15 +209,20 @@ table, th, td {
 <!--Section 4-->
 <div class="container" >
   <div class="row">
-    <div class="span12" style="margin-top: 80px; margin-bottom: 80px">
-      <h3 class="title3" style="margin-bottom: 10px">
+    <div class="span12" style="%WEB% margin-top: 80px; margin-bottom: 80px;%/WEB% %MOBILE% margin-top: 40px; margin-bottom: 30px; %/MOBILE% ">
+      <h3 class="title3" style="margin-bottom: 10px; %MOBILE% font-size: 21px; %/MOBILE%">
         Your onboarding workflows
       </h3>
-      <h4 class="bullet-text" style="text-align:center; line-height: 35px; margin-bottom: 30px;">
-        Collaboration and task management workflows make sure nothing gets dropped.<br>Tracking activities provides effortless follow-up.
+      <h4 class="bullet-text" style="text-align:center; %WEB% line-height: 35px; margin-bottom: 30px; %/WEB% %MOBILE% font-size:18px; line-height: 24px; margin-top: 20px; %/MOBILE%">
+        <p %WEB% style="margin-bottom: 0;" %/WEB%>Collaboration and task management workflows make sure nothing gets dropped.</p><p>Tracking activities provides effortless follow-up.</p>
       </h4>
-      <div style="text-align:center;margin-left: 40px;">
+      <div style="text-align:center; %WEB% margin-left: 40px; %/WEB%">
+        %WEB%
         <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=app-screen1"/>
+        %/WEB%
+        %MOBILE%
+        <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=mob-thumb-app-screen1"/>
+        %/MOBILE%
       </div>
 
     </div>
@@ -199,21 +233,26 @@ table, th, td {
 <div style="background-color:#e6e6e6;">
   <div class="container" >
     <div class="row">
-      <div class="span12" style="margin-top: 80px; margin-bottom: 80px">
-        <h3 class="title3" style="margin-bottom: 10px">
+      <div class="span12" style="%WEB% margin-top: 80px; margin-bottom: 80px;%/WEB% %MOBILE% margin-top: 40px; margin-bottom: 30px; %/MOBILE% ">
+        <h3 class="title3" style="margin-bottom: 10px;  %MOBILE% font-size: 21px; %/MOBILE%">
           Everything in one place
         </h3>
-        <h4 class="bullet-text" style="text-align:center;">
-          No more going through multiple tracking tools.<br>All teams work collaboratively from a unified interface.
+        <h4 class="bullet-text" style="text-align:center; %MOBILE% font-size:18px; line-height: 24px; margin-top: 15px; %/MOBILE%">
+          No more going through multiple tracking tools. %WEB% <br>All teams work collaboratively from a unified interface. %/WEB% 
         </h4>
-        <div style="text-align:center;margin-top: 60px;margin-bottom: 60px;">
+        <div style="text-align:center; %WEB% margin-top: 60px;margin-bottom: 60px; %/WEB% %MOBILE% margin-top: 30px;margin-bottom: 30px;  %/MOBILE%">
+          %WEB%
           <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=integrate-cloud"/>
+          %/WEB%
+          %MOBILE%
+          <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=mob-integrate-cloud"/>
+          %/MOBILE%
         </div>
-        <h3 class="title3" style="margin-bottom: 10px">
+        <h3 class="title3" style="margin-bottom: 10px; %MOBILE% font-size: 21px; %/MOBILE%">
           Connected to systems you use everyday
         </h3>
-        <h4 class="bullet-text" style="text-align:center; line-height: 35px;">
-          Our customers run their OutSystems Employee Onboarding App on top of Workday, SAP, Oracle, etc.<br>OutSystems Platform offers out-of-the box, robust integration capabilities even to custom applications.
+        <h4 class="bullet-text" style="text-align:center; line-height: 35px; %MOBILE% font-size:18px; line-height: 24px; margin-top: 15px; %/MOBILE%">
+          Our customers run their OutSystems Employee Onboarding App on top of Workday, SAP, Oracle, etc.%WEB%<br>OutSystems Platform offers out-of-the box, robust integration capabilities even to custom applications.%/WEB%
         </h4>
       </div>
     </div>
@@ -224,23 +263,33 @@ table, th, td {
 <!--Section 6-->
 <div class="container" >
   <div class="row">
-    <div class="span12" style="margin-top: 80px; margin-bottom: 80px">
-      <h3 class="title3" style="margin-bottom: 10px">
+    <div class="span12" style="%WEB% margin-top: 80px; margin-bottom: 80px;%/WEB% %MOBILE% margin-top: 40px; margin-bottom: 30px;%/MOBILE%">
+      <h3 class="title3" style="margin-bottom: 10px;%MOBILE% font-size: 21px;%/MOBILE%">
         Provisioning made simple for IT
       </h3>
-      <h4 class="bullet-text" style="text-align:center; line-height: 35px; margin-bottom: 30px;">
-        IT services provisioning is made simple, even when it involves several teams and multiple approvals.<br>You can achieve one-click provisioning through the orchestration of systems like Sharepoint, Trackit, Workday, ServiceNow and Active Directory.
+      <h4 class="bullet-text" style="text-align:center;%WEB% line-height: 35px; margin-bottom: 30px;%/WEB% %MOBILE%font-size:18px; line-height: 24px; margin-top: 15px;%/MOBILE%">
+        IT services provisioning is made simple, even when it involves several teams and multiple approvals.%WEB% <br>You can achieve one-click provisioning through the orchestration of systems like Sharepoint, Trackit, Workday, ServiceNow and Active Directory.%/WEB%
       </h4>
+      %WEB%
       <div style="text-align:center;margin-top: 60px;">
         <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=app-screen2"/>
       </div>
+      %/WEB%
+      %MOBILE%
+      <div style="text-align:center; margin-top: 15px;">
+        <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=mob-thumb-app-screen2"/>
+      </div>
+      <h4 class="bullet-text" style="text-align:center; font-size:18px; line-height: 24px; margin-top: 15px;">
+        You can achieve one-click provisioning through the orchestration of systems like Sharepoint, Trackit, Workday, ServiceNow and Active Directory.
+      </h4>
+      %/MOBILE%
     </div>
   </div>
 </div>
 
 
 <!--Section 7-->
-<div style="background-color:#c20">
+<div style="background-color:#ac1e01;">
   <div class="container" >
     <div class="row">
       <div class="span6">
@@ -248,15 +297,18 @@ table, th, td {
           &nbsp;
         </div>
         <div style="display:block; text-align:center;">
-          <h1 style="color:white; font-weight:400; font-size: 33px;" >
+          <h1 style="color:white; font-weight:600; font-size: 33px;" >
             Get a live demo to find out<br>
             how we can help you with<br>
             employee onboarding.
           </h1>
         </div>
+        <div style="text-align:right;margin-right: 25px;">
+          <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=arrow-form"/>
+        </div>
       </div>
-      <div class="span6" style="background-color: #606060; margin:40px auto"> 
-        <h4 class="bullet-text" style="color:white;text-align:center; line-height: 35px;">
+      <div class="span6" style="background-color: #606060; margin-top:40px; margin-bottom:40px"> 
+        <h4 class="bullet-text" style="color:white;text-align:center; line-height: 65px;">
           MARKETO FORM!<br>
           NAME<br>
           COMPANY<br>
@@ -270,25 +322,96 @@ table, th, td {
 
 
 <!--Section 8-->
+<!-- Circle color definition doesn't match with the mockup displayed color -->
+<!-- Icons are not available. -->
 <div class="container" >
   <div class="row">
     <div class="span12" style="margin-top: 80px; margin-bottom: 80px">
-      <h3 class="title3" style="margin-bottom: 60px">
+      <h1 style="font-size:33px; font-weight:normal; margin-bottom:60px;">
         Why Run an Employee Onboarding App With OutSystems Platform?
-      </h3>
+      </h1>
       <div class="row">
-        <div class="span4">&nbsp;
+        <div class="span4" style="text-align:center;margin-bottom: 40px;">
+          <div class="osicon-data back-circle" style="color:#0088cc; font-size:50px; margin-bottom:15px">
+          </div>
+          <h5 style="margin-bottom: 10px; font-weight:normal;">Your Requirements</h5>
+          <h6 style="font-size:14px; font-weight:normal;"> Flexibility to tailor the UI and workflows to your business processes and user needs.</h6>
         </div>
-        <div class="span4">&nbsp;
+        <div class="span4" style="text-align:center;margin-bottom: 40px;">
+          <div class="osicon-data back-circle" style="color:#0088cc; font-size:50px; margin-bottom:15px">
+          </div>
+          <h5 style="margin-bottom: 10px; font-weight:normal;">Three weeks. Done.</h5>
+          <h6 style="font-size:14px; font-weight:normal;">An Employee Onboarding App ready in three weeks.</h6>
         </div>
-        <div class="span4">&nbsp;
+        <div class="span4" style="text-align:center;margin-bottom: 40px;">
+          <div class="osicon-data back-circle" style="color:#0088cc; font-size:50px; margin-bottom:15px">
+          </div>
+          <h5 style="margin-bottom: 10px; font-weight:normal;">Integrate Easily</h5>
+          <h6 style="font-size:14px; font-weight:normal;">Pluggable to your data with ready-to-use connectors and templates.</h6>
         </div>
-        <div class="span4">&nbsp;
+        <div class="span4" style="text-align:center;">
+          <div class="osicon-data back-circle" style="color:#0088cc; font-size:50px; margin-bottom:15px">
+          </div>
+          <h5 style="margin-bottom: 10px; font-weight:normal;">Change and Improve Fast</h5>
+          <h6 style="font-size:14px; font-weight:normal;">Make and deploy changes to the Employee Onboarding App and workflows in minutes.</h6>
         </div>
-        <div class="span4">&nbsp;
+        <div class="span4" style="text-align:center;">
+          <div class="osicon-data back-circle" style="color:#0088cc; font-size:50px; margin-bottom:15px">
+          </div>
+          <h5 style="margin-bottom: 10px; font-weight:normal;">IT Friendly</h5>
+          <h6 style="font-size:14px; font-weight:normal;">Runs within your IT compliance and security parameters, cloud or on-premises.</h6>
         </div>
-        <div class="span4">&nbsp;
+        <div class="span4" style="text-align:center;">
+          <div class="osicon-data back-circle" style="color:#0088cc; font-size:50px; margin-bottom:15px">
+          </div>
+          <h5 style="margin-bottom: 10px; font-weight:normal;">No resources?</h5>
+          <h6 style="font-size:14px; font-weight:normal;">We’ll do it for you. Locally via expert global services teams</h6>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--Top Footer-->
+<div style="background-color:#e6e6e6;">
+  <div class="container" >
+    <div class="row">
+      <div class="span12" style="text-align:center;margin-top: 60px;margin-bottom: 60px;">
+        <h3 class="title3" style="margin-bottom: 30px">
+          Trusted by These Amazing Companies
+        </h3>
+        <div style="text-align:center;">
+          <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=logos-stripe"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;">
+    <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=footerimg"/>
+  </div>
+</div>
+
+
+
+<!--Footer-->
+<!-- Text font-size different from the mockup-->
+<!-- Background color different from the mockup-->
+<div style="background-color:#333; padding-top: 60px;padding-bottom: 60px;">
+  <div class="container" >
+    <div class="row" style="margin-top: 20px;">
+      <div class="span9">
+        <h3 class="text-white" style="text-align:left; font-size:20px;margin-bottom: 0px;">
+          OutSystems provides the only open, high-productivity application platform that makes it easy to create, deploy and manage enterprise mobile and web applications.<br><br>
+          <a class="lk" style="color:white;" href="https://www.outsystems.com">www.outsystems.com</a>
+        </h3>
+      </div>
+      <div class="span3" style="font-size:32px;text-align: right;">
+        <a class="lk osicon-linkedin" href="http://www.linkedin.com/company/outsystems" target="_blank" style="color: white;margin-left:10px;display: inline-block;"></a>
+        <a class="lk osicon-facebook" href="https://www.facebook.com/OutSystems" target="_blank" style="color: white;margin-left:10px;display: inline-block;"></a>
+        <a class="lk osicon-twitter" href="https://twitter.com/OutSystems" target="_blank" style="color: white;margin-left:10px;display: inline-block;"></a>
+        <a class="lk osicon-google" href="https://plus.google.com/+outsystems" target="_blank" style="color: white;margin-left:10px;display: inline-block;"></a>
       </div>
     </div>
   </div>
