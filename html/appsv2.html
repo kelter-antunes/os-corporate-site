@@ -65,9 +65,16 @@ table, th, td {
 .triangle{
   width: 0;
   height: 0;
+  %WEB%
   border-left: 80px solid transparent;
   border-right: 80px solid transparent;
   border-top: 80px solid white;
+  %/WEB%
+  %MOBILE%
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid white;
+  %/MOBILE%
 }
 .center{
   margin: 0 auto;
@@ -192,10 +199,10 @@ a.lk:hover{
         </h4>
         <div style="text-align:center;">
           %WEB%
-          <a class="osbtn osbtn-lg" style="margin-top:60px;color:black;">Schedule a Demo</a>
+          <a class="osbtn osbtn-lg popup_link" href="/contact-us-apps/" title="Contact us today" style="margin-top:60px; color:black;">Schedule a Demo</a>
           %/WEB%
           %MOBILE%
-          <a class="osbtn osbtn-lg" style="margin-top:25px;color:black;">Request a Demo</a>
+          <a class="osbtn osbtn-lg popup_link" href="/contact-us-apps/" title="Contact us today" style="margin-top:25px;color:black;">Request a Demo</a>
           %/MOBILE%
         </div> 
         <div style=" position: absolute;bottom: 0; %MOBILE% z-index: -1;text-align: center; %MOBILE%">
@@ -293,9 +300,10 @@ a.lk:hover{
   <div class="container" >
     <div class="row">
       <div class="span6">
-        <div class="triangle center" style="margin-bottom: 60px;">
+        <div class="triangle center" style="%WEB% margin-bottom: 60px; %/WEB% %MOBILE% margin-bottom: 20px; %/MOBILE%">
           &nbsp;
         </div>
+        %WEB%
         <div style="display:block; text-align:center;">
           <h1 style="color:white; font-weight:600; font-size: 33px;" >
             Get a live demo to find out<br>
@@ -306,8 +314,16 @@ a.lk:hover{
         <div style="text-align:right;margin-right: 25px;">
           <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=arrow-form"/>
         </div>
+        %/WEB%
+        %MOBILE%
+        <div style="display:block; text-align:center;">
+          <h1 style="color:white; font-weight:600; font-size: 24px;" >
+            Get a live demo
+          </h1>
+        </div>
+        %/MOBILE%
       </div>
-      <div class="span6" style="background-color: #606060; margin-top:40px; margin-bottom:40px"> 
+      <div class="span6" style="background-color: #606060; margin-bottom:40px; %WEB% margin-top:40px; %/WEB% %MOBILE% margin-top: 20px; %/MOBILE%"> 
         <h4 class="bullet-text" style="color:white;text-align:center; line-height: 65px;">
           MARKETO FORM!<br>
           NAME<br>
@@ -326,46 +342,46 @@ a.lk:hover{
 <!-- Icons are not available. -->
 <div class="container" >
   <div class="row">
-    <div class="span12" style="margin-top: 80px; margin-bottom: 80px">
-      <h1 style="font-size:33px; font-weight:normal; margin-bottom:60px;">
+    <div class="span12" style="%WEB% margin-top: 80px; margin-bottom: 80px;%/WEB% %MOBILE% margin-top: 40px; margin-bottom: 30px;%/MOBILE%">
+      <h1 style="%WEB% font-size:33px; font-weight:normal; margin-bottom:60px; %/WEB% %MOBILE% font-size:24px; font-weight:600;  margin-bottom:25px; %/MOBILE% text-align: center;">
         Why Run an Employee Onboarding App With OutSystems Platform?
       </h1>
       <div class="row">
-        <div class="span4" style="text-align:center;margin-bottom: 40px;">
-          <div class="osicon-data back-circle" style="color:#0088cc; font-size:50px; margin-bottom:15px">
+        <div class="span4" style="text-align:center; %WEB% margin-bottom: 40px; %/WEB%">
+          <div class="osicon-data back-circle" style="width:50px; color:#0088cc; font-size:50px; margin-bottom:15px">
           </div>
-          <h5 style="margin-bottom: 10px; font-weight:normal;">Your Requirements</h5>
-          <h6 style="font-size:14px; font-weight:normal;"> Flexibility to tailor the UI and workflows to your business processes and user needs.</h6>
+          <h5 style="margin-bottom: 10px; font-weight:normal; %MOBILE% font-size:18px; %/MOBILE%">Your Requirements</h5>
+          <h6 style="%WEB% font-size:14px; font-weight:normal;%/WEB% %MOBILE% font-size:16px; font-weight:lighter; %/MOBILE%"> Flexibility to tailor the UI and workflows to your business processes and user needs.</h6>
         </div>
-        <div class="span4" style="text-align:center;margin-bottom: 40px;">
-          <div class="osicon-data back-circle" style="color:#0088cc; font-size:50px; margin-bottom:15px">
+        <div class="span4" style="text-align:center; %WEB% margin-bottom: 40px; %/WEB%">
+          <div class="back-circle osicon-data" style="width:50px; color:#0088cc; font-size:50px; margin-bottom:15px">
           </div>
-          <h5 style="margin-bottom: 10px; font-weight:normal;">Three weeks. Done.</h5>
-          <h6 style="font-size:14px; font-weight:normal;">An Employee Onboarding App ready in three weeks.</h6>
+          <h5 style="margin-bottom: 10px; font-weight:normal; %MOBILE% font-size:18px; %/MOBILE%">Three weeks. Done.</h5>
+          <h6 style="%WEB% font-size:14px; font-weight:normal;%/WEB% %MOBILE% font-size:16px; font-weight:lighter; %/MOBILE%">An Employee Onboarding App ready in three weeks.</h6>
         </div>
-        <div class="span4" style="text-align:center;margin-bottom: 40px;">
-          <div class="osicon-data back-circle" style="color:#0088cc; font-size:50px; margin-bottom:15px">
+        <div class="span4" style="text-align:center; %WEB% margin-bottom: 40px; %/WEB%">
+          <div class="osicon-data back-circle" style="width:50px; color:#0088cc; font-size:50px; margin-bottom:15px">
           </div>
-          <h5 style="margin-bottom: 10px; font-weight:normal;">Integrate Easily</h5>
-          <h6 style="font-size:14px; font-weight:normal;">Pluggable to your data with ready-to-use connectors and templates.</h6>
-        </div>
-        <div class="span4" style="text-align:center;">
-          <div class="osicon-data back-circle" style="color:#0088cc; font-size:50px; margin-bottom:15px">
-          </div>
-          <h5 style="margin-bottom: 10px; font-weight:normal;">Change and Improve Fast</h5>
-          <h6 style="font-size:14px; font-weight:normal;">Make and deploy changes to the Employee Onboarding App and workflows in minutes.</h6>
+          <h5 style="margin-bottom: 10px; font-weight:normal; %MOBILE% font-size:18px; %/MOBILE%">Integrate Easily</h5>
+          <h6 style="%WEB% font-size:14px; font-weight:normal;%/WEB% %MOBILE% font-size:16px; font-weight:lighter; %/MOBILE%">Pluggable to your data with ready-to-use connectors and templates.</h6>
         </div>
         <div class="span4" style="text-align:center;">
-          <div class="osicon-data back-circle" style="color:#0088cc; font-size:50px; margin-bottom:15px">
+          <div class="osicon-data back-circle" style="width:50px; color:#0088cc; font-size:50px; margin-bottom:15px">
           </div>
-          <h5 style="margin-bottom: 10px; font-weight:normal;">IT Friendly</h5>
-          <h6 style="font-size:14px; font-weight:normal;">Runs within your IT compliance and security parameters, cloud or on-premises.</h6>
+          <h5 style="margin-bottom: 10px; font-weight:normal; %MOBILE% font-size:18px; %/MOBILE%">Change and Improve Fast</h5>
+          <h6 style="%WEB% font-size:14px; font-weight:normal;%/WEB% %MOBILE% font-size:16px; font-weight:lighter; %/MOBILE%">Make and deploy changes to the Employee Onboarding App and workflows in minutes.</h6>
         </div>
         <div class="span4" style="text-align:center;">
-          <div class="osicon-data back-circle" style="color:#0088cc; font-size:50px; margin-bottom:15px">
+          <div class="osicon-data back-circle" style="width:50px; color:#0088cc; font-size:50px; margin-bottom:15px">
           </div>
-          <h5 style="margin-bottom: 10px; font-weight:normal;">No resources?</h5>
-          <h6 style="font-size:14px; font-weight:normal;">We’ll do it for you. Locally via expert global services teams</h6>
+          <h5 style="margin-bottom: 10px; font-weight:normal; %MOBILE% font-size:18px; %/MOBILE%">IT Friendly</h5>
+          <h6 style="%WEB% font-size:14px; font-weight:normal;%/WEB% %MOBILE% font-size:16px; font-weight:lighter; %/MOBILE%">Runs within your IT compliance and security parameters, cloud or on-premises.</h6>
+        </div>
+        <div class="span4" style="text-align:center;">
+          <div class="osicon-data back-circle" style="width:50px; color:#0088cc; font-size:50px; margin-bottom:15px">
+          </div>
+          <h5 style="margin-bottom: 10px; font-weight:normal; %MOBILE% font-size:18px; %/MOBILE%">No resources?</h5>
+          <h6 style="%WEB% font-size:14px; font-weight:normal;%/WEB% %MOBILE% font-size:16px; font-weight:lighter; %/MOBILE%">We’ll do it for you. Locally via expert global services teams.</h6>
         </div>
       </div>
     </div>
@@ -378,18 +394,28 @@ a.lk:hover{
 <div style="background-color:#e6e6e6;">
   <div class="container" >
     <div class="row">
-      <div class="span12" style="text-align:center;margin-top: 60px;margin-bottom: 60px;">
-        <h3 class="title3" style="margin-bottom: 30px">
+      <div class="span12" style="text-align:center; %WEB% margin-top: 60px; margin-bottom: 60px; %/WEB% %MOBILE% margin-top: 40px; margin-bottom: 20px; %/MOBILE%">
+        <h3 class="title3" style=" %WEB% margin-bottom: 30px %/WEB% %MOBILE% margin-bottom: 15px  %/MOBILE%">
           Trusted by These Amazing Companies
         </h3>
         <div style="text-align:center;">
+          %WEB%
           <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=logos-stripe"/>
+          %/WEB%
+          %MOBILE%
+          <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=mob-logos-stripe"/>
+          %/MOBILE%
         </div>
       </div>
     </div>
   </div>
   <div style="text-align:center;">
+    %WEB%
     <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=footerimg"/>
+    %/WEB%
+    %MOBILE%
+    <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=mob-footerimg"/>
+    %/MOBILE%
   </div>
 </div>
 
@@ -398,21 +424,31 @@ a.lk:hover{
 <!--Footer-->
 <!-- Text font-size different from the mockup-->
 <!-- Background color different from the mockup-->
-<div style="background-color:#333; padding-top: 60px;padding-bottom: 60px;">
+<div style="background-color:#333; %WEB% padding-top: 60px;padding-bottom: 60px; %/WEB% %MOBILE% padding-top: 20px;padding-bottom: 20px; %/MOBILE%">
   <div class="container" >
     <div class="row" style="margin-top: 20px;">
       <div class="span9">
         <h3 class="text-white" style="text-align:left; font-size:20px;margin-bottom: 0px;">
           OutSystems provides the only open, high-productivity application platform that makes it easy to create, deploy and manage enterprise mobile and web applications.<br><br>
-          <a class="lk" style="color:white;" href="https://www.outsystems.com">www.outsystems.com</a>
+          %MOBILE%
+          <div class="span3" style="font-size:32px;text-align: center;">
+            <a class="lk osicon-linkedin" href="http://www.linkedin.com/company/outsystems" target="_blank" style="color: white;margin-left:10px;display: inline-block;"></a>
+            <a class="lk osicon-facebook" href="https://www.facebook.com/OutSystems" target="_blank" style="color: white;margin-left:10px;display: inline-block;"></a>
+            <a class="lk osicon-twitter" href="https://twitter.com/OutSystems" target="_blank" style="color: white;margin-left:10px;display: inline-block;"></a>
+            <a class="lk osicon-google" href="https://plus.google.com/+outsystems" target="_blank" style="color: white;margin-left:10px;display: inline-block;"></a>
+          </div>
+          %/MOBILE%
+          <a class="lk" style="color:white; %MOBILE% text-align:center; display: block; %/MOBILE%" href="https://www.outsystems.com">www.outsystems.com</a>
         </h3>
       </div>
+      %WEB% 
       <div class="span3" style="font-size:32px;text-align: right;">
         <a class="lk osicon-linkedin" href="http://www.linkedin.com/company/outsystems" target="_blank" style="color: white;margin-left:10px;display: inline-block;"></a>
         <a class="lk osicon-facebook" href="https://www.facebook.com/OutSystems" target="_blank" style="color: white;margin-left:10px;display: inline-block;"></a>
         <a class="lk osicon-twitter" href="https://twitter.com/OutSystems" target="_blank" style="color: white;margin-left:10px;display: inline-block;"></a>
         <a class="lk osicon-google" href="https://plus.google.com/+outsystems" target="_blank" style="color: white;margin-left:10px;display: inline-block;"></a>
       </div>
+      %/WEB% 
     </div>
   </div>
 </div>
