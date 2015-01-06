@@ -308,12 +308,14 @@ $(function() {
  *
  */
 //#####PARENT (page)
-$(function() {
+$('#mkto_frame').load(function() {
     var receiverFrame = document.getElementById('mkto_frame').contentWindow;
     var url = window.location.pathname.split('/');
     currPageContext = url[url.length - 2];
 
     receiverFrame.postMessage(currPageContext, '*');
+
+
 });
 
 
