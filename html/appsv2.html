@@ -3,6 +3,7 @@
   position: absolute;
   %MOBILE% 
   background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=mob-bg5-5a5755') no-repeat center;
+  background-size: cover;
   top: 0px;
   %/MOBILE%
   %WEB%
@@ -93,9 +94,14 @@ table, th, td {
   width: 50px;
   height: 50px;
 }
+a.lk{
+  color: white;
+}
 a.lk:hover{
   text-decoration: none;
+  color: #CCC;
 }
+
 </style>
 
 <!--Header-->
@@ -138,7 +144,7 @@ a.lk:hover{
     <div class="row">
 
       %WEB%
-      <div class="span6">
+      <div class="span6" style="text-align:center;">
         <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=ipad-detail" style="margin-top:40px;" />
       </div>
       %/WEB%
@@ -185,7 +191,7 @@ a.lk:hover{
         </table>
       </div>
       %MOBILE%
-      <div class="span6" style="margin-bottom:0px;">
+      <div class="span6" style="margin-bottom:0px;text-align:center;">
         <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=mob-ipad-detail" />
       </div>
       %/MOBILE%
@@ -212,8 +218,8 @@ a.lk:hover{
           <a class="osbtn osbtn-lg popup_link" href="/contact-us-apps/" title="Contact us today" style="margin-top:25px;color:black;">Request a Demo</a>
           %/MOBILE%
         </div> 
-        <div style=" position: absolute; bottom: 0;%WEB% right:-150px;%/WEB% %MOBILE% z-index: -1; text-align: center;%/MOBILE%">
-          <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=welcomespot"  style="%MOBILE%width: 60%;%/MOBILE%"/>
+        <div style=" position: absolute; bottom: 0;%WEB% right:-150px;%/WEB% %MOBILE% z-index: -1; text-align: center; width:100% %/MOBILE%">
+          <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=welcomespot"  style="%MOBILE% width: 200px; %/MOBILE%"/>
         </div>
       </div>
     </div>
@@ -227,10 +233,10 @@ a.lk:hover{
       <h3 class="title3" style="margin-bottom: 10px; %MOBILE% font-size: 21px; %/MOBILE%">
         Your onboarding workflows
       </h3>
-      <h4 class="bullet-text" style="text-align:center; %WEB% line-height: 35px; margin-bottom: 0px; %/WEB% %MOBILE% font-size:18px; line-height: 24px; margin-top: 20px; %/MOBILE%">
+      <h4 class="bullet-text" style="text-align:center; %WEB% margin-bottom: 0px; %/WEB% %MOBILE% font-size:18px; line-height: 24px; margin-top: 20px; %/MOBILE%">
         Collaboration and task management workflows make sure nothing gets dropped.
-        </h4>
-        <h4 class="bullet-text" style="text-align:center; %WEB% line-height: 35px; margin-bottom: 30px; %/WEB% %MOBILE% font-size:18px; line-height: 24px;%/MOBILE%">
+      </h4>
+      <h4 class="bullet-text" style="text-align:center; %WEB% margin-bottom: 30px; %/WEB% %MOBILE% font-size:18px; line-height: 24px;%/MOBILE%">
         Tracking activities provides effortless follow-up.
       </h4>
       <div style="text-align:center; %WEB% margin-left: 40px; %/WEB%">
@@ -268,7 +274,7 @@ a.lk:hover{
         <h3 class="title3" style="margin-bottom: 10px; %MOBILE% font-size: 21px; %/MOBILE%">
           Connected to systems you use everyday
         </h3>
-        <h4 class="bullet-text" style="text-align:center; line-height: 35px; %MOBILE% font-size:18px; line-height: 24px; margin-top: 15px; %/MOBILE%">
+        <h4 class="bullet-text" style="text-align:center; %MOBILE% font-size:18px; line-height: 24px; margin-top: 15px; %/MOBILE%">
           Our customers run their OutSystems Employee Onboarding App on top of Workday, SAP, Oracle, etc.%WEB%<br>OutSystems Platform offers out-of-the box, robust integration capabilities even to custom applications.%/WEB%
         </h4>
       </div>
@@ -284,7 +290,7 @@ a.lk:hover{
       <h3 class="title3" style="margin-bottom: 10px;%MOBILE% font-size: 21px;%/MOBILE%">
         Provisioning made simple for IT
       </h3>
-      <h4 class="bullet-text" style="text-align:center;%WEB% line-height: 35px; margin-bottom: 30px;%/WEB% %MOBILE%font-size:18px; line-height: 24px; margin-top: 15px;%/MOBILE%">
+      <h4 class="bullet-text" style="text-align:center;%WEB% margin-bottom: 30px;%/WEB% %MOBILE%font-size:18px; line-height: 24px; margin-top: 15px;%/MOBILE%">
         IT services provisioning is made simple, even when it involves several teams and multiple approvals.%WEB% <br>You can achieve one-click provisioning through the orchestration of systems like Sharepoint, Trackit, Workday, ServiceNow and Active Directory.%/WEB%
       </h4>
       %WEB%
@@ -333,7 +339,7 @@ a.lk:hover{
         </div>
         %/MOBILE%
       </div>
-      <div class="span6" style="background-color: #333; margin-bottom:40px; %WEB% margin-top:40px; %/WEB% %MOBILE% margin-top: 20px; %/MOBILE%"> 
+      <div class="span6" style="background-color: #333; margin-bottom:40px; %WEB% margin-top:40px; %/WEB% %MOBILE% margin-top: 20px; margin-left:auto; margin-right:auto; max-width:380px;%/MOBILE%"> 
         <iframe frameborder="0" id="mkto_frame" scrolling="no" src="http://go1.outsystems.com/MA-AppsV2.html" style=" margin-top: 25px; margin-bottom: 25px; %WEB% width: 481px; %/WEB% %MOBILE% width: 100%; %/MOBILE%" type="text/html"></iframe>
         <script>
         var _gaq = _gaq || [];
@@ -457,22 +463,22 @@ a.lk:hover{
           OutSystems provides the only open, high-productivity application platform that makes it easy to create, deploy and manage enterprise mobile and web applications.<br><br></h3>
           %MOBILE%
           <div class="span3" style="font-size:32px;text-align: center;">
-            <a class="lk osicon-linkedin" href="http://www.linkedin.com/company/outsystems" target="_blank" style="color: white;margin-left:10px;display: inline-block; width: 36px;">&nbsp;</a>
-            <a class="lk osicon-facebook" href="https://www.facebook.com/OutSystems" target="_blank" style="color: white;margin-left:10px;display: inline-block; width: 36px;">&nbsp;</a>
-            <a class="lk osicon-twitter" href="https://twitter.com/OutSystems" target="_blank" style="color: white;margin-left:10px;display: inline-block; width: 36px;">&nbsp;</a>
-            <a class="lk osicon-google" href="https://plus.google.com/+outsystems" target="_blank" style="color: white;margin-left:10px;display: inline-block; width: 36px;">&nbsp;</a>
+            <a class="lk osicon-linkedin" href="http://www.linkedin.com/company/outsystems" target="_blank" style="margin-left:10px;display: inline-block; width: 36px;">&nbsp;</a>
+            <a class="lk osicon-facebook" href="https://www.facebook.com/OutSystems" target="_blank" style="margin-left:10px;display: inline-block; width: 36px;">&nbsp;</a>
+            <a class="lk osicon-twitter" href="https://twitter.com/OutSystems" target="_blank" style="margin-left:10px;display: inline-block; width: 36px;">&nbsp;</a>
+            <a class="lk osicon-google" href="https://plus.google.com/+outsystems" target="_blank" style="margin-left:10px;display: inline-block; width: 36px;">&nbsp;</a>
           </div>
           %/MOBILE%
           <h3 style="font-size:20px;">
-            <a class="lk" style=" font-weight:normal; color:white; %MOBILE% text-align:center; display: block; %/MOBILE%" href="https://www.outsystems.com">www.outsystems.com</a>
+            <a class="lk" style=" font-weight:normal; %MOBILE% text-align:center; display: block; %/MOBILE%" href="https://www.outsystems.com">www.outsystems.com</a>
           </h3>
         </div>
         %WEB% 
         <div class="span3" style="font-size:32px;text-align: right;">
-          <a class="lk osicon-linkedin" href="http://www.linkedin.com/company/outsystems" target="_blank" style="color: white;margin-left:10px;display: inline-block; width: 36px;">&nbsp;</a>
-          <a class="lk osicon-facebook" href="https://www.facebook.com/OutSystems" target="_blank" style="color: white;margin-left:10px;display: inline-block; width: 36px;">&nbsp;</a>
-          <a class="lk osicon-twitter" href="https://twitter.com/OutSystems" target="_blank" style="color: white;margin-left:10px;display: inline-block; width: 36px;">&nbsp;</a>
-          <a class="lk osicon-google" href="https://plus.google.com/+outsystems" target="_blank" style="color: white;margin-left:10px;display: inline-block; width: 36px;">&nbsp;</a>
+          <a class="lk osicon-linkedin" href="http://www.linkedin.com/company/outsystems" target="_blank" style="margin-left:10px;display: inline-block; width: 36px;">&nbsp;</a>
+          <a class="lk osicon-facebook" href="https://www.facebook.com/OutSystems" target="_blank" style="margin-left:10px;display: inline-block; width: 36px;">&nbsp;</a>
+          <a class="lk osicon-twitter" href="https://twitter.com/OutSystems" target="_blank" style="margin-left:10px;display: inline-block; width: 36px;">&nbsp;</a>
+          <a class="lk osicon-google" href="https://plus.google.com/+outsystems" target="_blank" style="margin-left:10px;display: inline-block; width: 36px;">&nbsp;</a>
         </div>
         %/WEB% 
       </div>
