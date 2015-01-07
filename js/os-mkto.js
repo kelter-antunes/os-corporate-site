@@ -17,11 +17,11 @@ var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
 eventer(messageEvent, function(e) {
 
     parentData = JSON.parse(e.data);
-    console.log(parentData);
+    //console.log(parentData);
 
     if (parentData.origin === 'website') {
         $('input[name=' + parentData.input + ']').val(parentData.currPageContext);
-        
+
     };
 
 
