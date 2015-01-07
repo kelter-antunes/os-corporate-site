@@ -9,13 +9,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 
-.mktoForm .mktoFieldDescriptor
-{
-	margin-top: 6px;
-	margin-bottom: 8px;
-}
-
-
 .mktoForm select
 {
 	padding: 2px 6px!important;
@@ -110,43 +103,16 @@ div.mktoButtonRow
 	padding:0 20px
 }
 
-.mktoForm input[type=checkbox] + label:before,.mktoForm input[type=radio] + label:before
-{
-	box-shadow:none!important;
-}
 
 .mktoForm input[type=text],.mktoForm input[type=url],.mktoForm input[type=email],.mktoForm input[type=tel],.mktoForm input[type=number],.mktoForm input[type=date],.mktoForm select.mktoField,.mktoForm textarea.mktoField
 {
 	box-shadow:none!important;
 	background-color: #ffffff;
 	border: 1px solid #cccccc;
-	border-radius: 4px!important;
-	width: 100%!important;
-	height: 2.2em!important;
-	line-height: 1.5em;
 	font-size: 14px!important;
-	margin-top:4px!important;
-	margin-bottom: 5px!important;
 	transition: border linear .2s, box-shadow linear .2s;
 }
 
-
-.mktoForm select.mktoField[multiple=multiple] 
-{
-	height: auto!important;
-	padding: 0px!important;
-}
-
-
-.mktoForm select>option{
-	border-bottom:1px solid rgb(233,233,233);
-	white-space: pre-wrap;
-}
-
-
-.mktoForm input.mktoField {
-	padding-left: 10px!important;
-}
 
 
 .mktoForm input:focus, .mktoForm select:focus
@@ -162,23 +128,20 @@ div.mktoButtonRow
 	display:none!important
 }
 
-.mktoForm .mktoCheckboxList{
-	font-size: 13px;
-}
-
-.mktoForm .mktoCheckboxList>input{
-	margin-top:3px;
-}
 
 
-@media only screen and (max-width: 255px) {
+@media only screen and (max-width: 480px) {
+	.mktoForm{
+		padding-left:15px!important;
+		padding-right:15px!important;
+	}
+
 	.mktoForm,.mktoForm *
 	{
 		-webkit-box-sizing:border-box;
 		-moz-box-sizing:border-box;
 		box-sizing:border-box;
 		-moz-box-sizing:border-box;
-		/*padding:10px*/
 	}
 	
 	.mktoForm .mktoGutter,.mktoForm .mktoOffset
@@ -189,7 +152,6 @@ div.mktoButtonRow
 	.mktoForm .mktoFormCol .mktoLabel
 	{
 		text-align:left;
-		width:100%;
 		font-size:16px
 	}
 	
@@ -203,41 +165,17 @@ div.mktoButtonRow
 		float:none
 	}
 	
-	.mktoForm fieldset
-	{
-		padding:0 10px
-	}
 	
 	.mktoForm input[type=url],.mktoForm input[type=text],.mktoForm input[type=date],.mktoForm input[type=tel],.mktoForm input[type=email],.mktoForm input[type=number],.mktoForm textarea.mktoField,.mktoForm select.mktoField
 	{
-		line-height:1em;
-		border-radius: 4px!important;
-		font-size:15px!important;
-		height:auto!important
+		height:auto!important;
+		width: 100%!important;
 	}
-	
-
-	.mktoForm select.mktoField[multiple=multiple] 
-	{
-		padding-left: 0px!important;
-	}
-
-
-	.mktoForm select>option{
-		border-bottom:1px solid rgb(233,233,233);
-		white-space: pre-wrap;
-	}
-
 
 	.mktoForm input.mktoField {
 		padding-left: 10px!important;
 	}
 
-	.mktoForm select.mktoField
-	{
-		height:auto
-	}
-	
 	.mktoForm .mktoFormRow .mktoField
 	{
 		clear:left;
@@ -249,55 +187,4 @@ div.mktoButtonRow
 		clear:both
 	}
 	
-	.mktoForm .mktoRadioList
-	{
-		width:100%;
-		font-size:15px
-	}
-
-	.mktoForm .mktoCheckboxList {
-		width: 94%!important;
-		font-size:15px;
-		margin-top: 3px;
-	}
-
-	.mktoForm .mktoFormRow .mktoRequiredField .mktoAsterix
-	{
-		display:none!important
-	}
-	
-	.mktoModal .mktoModalContent
-	{
-		padding:10px 0
-	}
-	
-	.mktoModal .mktoModalClose
-	{
-		right:0
-	}
-	
-	form.mktoForm
-	{
-		padding:0px!important
-	}
 }
-
-
-/*--Form2.css Marketo Override--*/
-@media only screen and (max-width: 480px){.mktoForm,.mktoForm *{}
-.mktoForm .mktoGutter,.mktoForm .mktoOffset{display:none}
-.mktoForm .mktoFormCol .mktoLabel{text-align:left;width:100%}
-.mktoForm .mktoFormCol{float:none}
-.mktoForm .mktoFieldWrap{float:none}
-.mktoForm fieldset{padding:0 10px}
-.mktoForm input[type=url],.mktoForm input[type=text],.mktoForm input[type=date],.mktoForm input[type=tel],.mktoForm input[type=email],.mktoForm input[type=number],.mktoForm textarea.mktoField,.mktoForm select.mktoField{padding: 0;}
-.mktoForm select.mktoField{height:auto}
-.mktoForm .mktoFormRow .mktoField{clear:left}
-.mktoForm .mktoFormRow .mktoFormCol{clear:both}
-.mktoForm .mktoRadioList,.mktoForm .mktoCheckboxList{width:100%}
-.mktoForm .mktoFormRow .mktoRequiredField .mktoAsterix{float:left;padding-left:0;padding-right:5px}
-.mktoModal .mktoModalContent{padding:10px 0}
-.mktoModal .mktoModalClose{right:0}
-}
-
-
