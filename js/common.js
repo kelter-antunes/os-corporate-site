@@ -308,48 +308,66 @@ $(function() {
  *
  */
 //#####PARENT (page)
-$(document).on('load', 'iframe', function() {
+var framePopupSelector = 'iframe[src^="/"]';
+var frameMktoSelector = '#mkto_frame';
+var iframeDetect;
 
+function sendKISScontextToMarketo() {
     setTimeout(function() {
-
         var receiverFrame;
         var url;
         var currPageContext;
 
-        //is popup
-        var isPopup = ($('iframe[src^="/"]').contents().find("#mkto_frame").length === 1);
 
-        if (isPopup) {
-            receiverFrame = $('iframe[src^="/"]').contents().find("#mkto_frame");
-            url = $('iframe[src^="/"]').attr('src').split('/');
-            currPageContext = url[url.length - 2];
-
-        } else {
-            receiverFrame = document.getElementById('mkto_frame').contentWindow;
-            url = window.location.pathname.split('/');
-            currPageContext = url[url.length - 2];
-
-        }
-
-        if (receiverFrame !== undefined) {
-            var mkto_KM_info = {
-                'input': 'KM_LastFormSubmissionContext',
-                'origin': 'website',
-                'currPageContext': currPageContext
-            };
+        try {
+            //is popup
+            var isPopup = ($(framePopupSelector).contents().find(frameMktoSelector).length === 1);
 
             if (isPopup) {
-                receiverFrame[0].contentWindow.postMessage(mkto_KM_info, '*');
+                receiverFrame = $(framePopupSelector).contents().find(frameMktoSelector);
+                url = $(framePopupSelector).attr('src').split('/');
+                currPageContext = url[url.length - 2];
+
             } else {
-                receiverFrame.postMessage(mkto_KM_info, '*');
+                receiverFrame = document.getElementById("mkto_frame").contentWindow;
+                url = window.location.pathname.split('/');
+                currPageContext = url[url.length - 2];
+
             }
+
+            if (receiverFrame !== undefined) {
+                var mkto_KM_info = {
+                    'input': 'KM_LastFormSubmissionContext',
+                    'origin': 'website',
+                    'currPageContext': currPageContext
+                };
+
+                if (isPopup) {
+                    receiverFrame[0].contentWindow.postMessage(mkto_KM_info, '*');
+                } else {
+                    receiverFrame.postMessage(mkto_KM_info, '*');
+                }
+            }
+
+        } catch (e) {
+
         }
-        
+
+
+    }, 1000);
+
+}
+
+$(function() {
+
+    iframeDetect = setInterval(function() {
+        if ($(framePopupSelector).length > 0 || $(frameMktoSelector).length > 0) {
+            sendKISScontextToMarketo();
+        }
     }, 1000);
 
 
 });
-
 
 
 
