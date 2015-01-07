@@ -308,19 +308,33 @@ $(function() {
  *
  */
 //#####PARENT (page)
-$('#mkto_frame').load(function() {
+$('iframe').load(function() {
 
     setTimeout(function() {
-        var receiverFrame = document.getElementById('mkto_frame').contentWindow;
-        var url = window.location.pathname.split('/');
-        var currPageContext = url[url.length - 2];
 
-        var mkto_KM_info = {
-            'input': 'KM_LastFormSubmissionContext',
-            'origin': 'website',
-            'currPageContext': currPageContext
+        var receiverFrame;
+
+        //is popup
+        var isPopup = ($('iframe[src^="/"]').contents().find("#mkto_frame").length === 1);
+
+        if (isPopup) {
+            receiverFrame = $('iframe[src^="/"]').contents().find("#mkto_frame");
+        } else {
+            receiverFrame = document.getElementById('mkto_frame').contentWindow;
         };
-        receiverFrame.postMessage(mkto_KM_info, '*');
+
+        if (receiverFrame !== undefined) {
+            var url = window.location.pathname.split('/');
+            var currPageContext = url[url.length - 2];
+
+            var mkto_KM_info = {
+                'input': 'KM_LastFormSubmissionContext',
+                'origin': 'website',
+                'currPageContext': currPageContext
+            };
+            receiverFrame.postMessage(mkto_KM_info, '*');
+        };
+
 
     }, 1000);
 
