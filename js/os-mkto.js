@@ -15,6 +15,15 @@ var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
 
 // Listen to message from child IFrame window
 eventer(messageEvent, function(e) {
-    $('input[name=KM_LastFormSubmissionContext]').val(e.data);
+
+    parentData = JSON.parse(e.data);
+    console.log(parentData);
+
+    if (parentData.origin === 'website') {
+        $('input[name=' + parentData.input + ']').val(parentData.currPageContext);
+        
+    };
+
+
 
 }, false);
