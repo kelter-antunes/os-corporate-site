@@ -308,34 +308,43 @@ $(function() {
  *
  */
 //#####PARENT (page)
-$('iframe').load(function() {
+$(document).on('load', 'iframe', function() {
 
     setTimeout(function() {
 
         var receiverFrame;
+        var url;
+        var currPageContext;
 
         //is popup
         var isPopup = ($('iframe[src^="/"]').contents().find("#mkto_frame").length === 1);
 
         if (isPopup) {
             receiverFrame = $('iframe[src^="/"]').contents().find("#mkto_frame");
+            url = $('iframe[src^="/"]').attr('src').split('/');
+            currPageContext = url[url.length - 2];
+
         } else {
             receiverFrame = document.getElementById('mkto_frame').contentWindow;
-        };
+            url = window.location.pathname.split('/');
+            currPageContext = url[url.length - 2];
+
+        }
 
         if (receiverFrame !== undefined) {
-            var url = window.location.pathname.split('/');
-            var currPageContext = url[url.length - 2];
-
             var mkto_KM_info = {
                 'input': 'KM_LastFormSubmissionContext',
                 'origin': 'website',
                 'currPageContext': currPageContext
             };
-            receiverFrame.postMessage(mkto_KM_info, '*');
-        };
 
-
+            if (isPopup) {
+                receiverFrame[0].contentWindow.postMessage(mkto_KM_info, '*');
+            } else {
+                receiverFrame.postMessage(mkto_KM_info, '*');
+            }
+        }
+        
     }, 1000);
 
 
