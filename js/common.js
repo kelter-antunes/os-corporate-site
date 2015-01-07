@@ -320,7 +320,7 @@ $('#mkto_frame').load(function() {
             'origin': 'website',
             'currPageContext': currPageContext
         };
-        receiverFrame.postMessage(JSON.stringify(mkto_KM_info), '*');
+        receiverFrame.postMessage(mkto_KM_info, '*');
 
     }, 1000);
 

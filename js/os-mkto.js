@@ -16,7 +16,7 @@ var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
 // Listen to message from child IFrame window
 eventer(messageEvent, function(e) {
 
-    parentData = JSON.parse(e.data);
+    var parentData = e.data;
     //console.log(parentData);
 
     if (parentData.origin === 'website') {
