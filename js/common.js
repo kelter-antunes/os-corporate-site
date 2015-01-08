@@ -250,6 +250,9 @@ eventer_Global(messageEvent_Global, function(e) {
                 } else if ((pathName.indexOf('mendix') !== -1)) {
                     trackEvent('LP - Submit Demo Contact Us - Mendix LP');
 
+                } else if ((pathName.indexOf('appcelerator') !== -1)) {
+                    trackEvent('LP - Submit Demo Contact Us - Appcelerator LP');
+
                 } else if (isSalesforceDownload) {
                     trackEvent('LP - Download collateral', {
                         'Document': 'OutSystems Platform and Force.com'
