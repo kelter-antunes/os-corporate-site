@@ -389,108 +389,164 @@ $(function() {
 // Label: [Video Name] 
 // Value:
 
-var oswistiaEmbeds = $('.wistia_embed');
-var enable_WistiaTrackings = false;
+// var oswistiaEmbeds = $('.wistia_embed');
+// var enable_WistiaTrackings = false;
 
-function wistiaProgress(wistiaEmbed, done50, done70) {
+// function wistiaProgress(wistiaEmbed, done50, done70) {
 
-    if (done50 && done70) {
-        //done everything already so... do nothing
-    } else {
+//     if (done50 && done70) {
+//         //done everything already so... do nothing
+//     } else {
 
-        if ((wistiaEmbed.time() / wistiaEmbed.duration()) > 0.75 && !done70) {
-            //Watched 75%
-            console.log("75%");
+//         if ((wistiaEmbed.time() / wistiaEmbed.duration()) > 0.75 && !done70) {
+//             //Watched 75%
+//             console.log("75%");
 
-            if (enable_WistiaTrackings) {
-                //KM
-                trackEvent('Watched 75%', {
-                    'Video': wistiaEmbed.name()
-                }, null);
+//             if (enable_WistiaTrackings) {
+//                 //KM
+//                 trackEvent('Watched 75%', {
+//                     'Video': wistiaEmbed.name()
+//                 }, null);
 
-                //GA
-                _gaq.push(['_trackEvent', 'Video', 'Watched 75%', wistiaEmbed.name()]);
-            };
+//                 //GA
+//                 _gaq.push(['_trackEvent', 'Video', 'Watched 75%', wistiaEmbed.name()]);
+//             };
 
 
-            done70 = true;
+//             done70 = true;
 
-        } else if (((wistiaEmbed.time() / wistiaEmbed.duration()) > 0.5) && !done50) {
-            //Watched 50%
-            console.log("50%");
+//         } else if (((wistiaEmbed.time() / wistiaEmbed.duration()) > 0.5) && !done50) {
+//             //Watched 50%
+//             console.log("50%");
 
-            if (enable_WistiaTrackings) {
+//             if (enable_WistiaTrackings) {
 
-                //KM
-                trackEvent('Watched 50%', {
-                    'Video': wistiaEmbed.name()
-                }, null);
+//                 //KM
+//                 trackEvent('Watched 50%', {
+//                     'Video': wistiaEmbed.name()
+//                 }, null);
 
-                //GA
-                _gaq.push(['_trackEvent', 'Video', 'Watched 50%', wistiaEmbed.name()]);
-            }
+//                 //GA
+//                 _gaq.push(['_trackEvent', 'Video', 'Watched 50%', wistiaEmbed.name()]);
+//             }
 
+//             done50 = true;
+
+//         }
+
+//     }
+
+// }
+
+// $(function() {
+
+
+//     oswistiaEmbeds.each(function(index, el) {
+
+//         var wistiaEmbed = el.wistiaApi;
+
+//         //play
+//         wistiaEmbed.bind('play', function() {
+//             wistiaProgress(wistiaEmbed, false, false);
+//             console.log('Start Watching');
+
+
+//             var wistiaInterval = setInterval(function() {
+//                 wistiaProgress(wistiaEmbed, false, false);
+
+//                 // When you want to cancel it:
+//                 clearInterval(wistiaInterval);
+//                 wistiaInterval = 0;
+
+//             }, 1000);
+
+
+
+//             if (enable_WistiaTrackings) {
+//                 //KM
+//                 trackEvent('Start Watching', {
+//                     'Video': wistiaEmbed.name()
+//                 }, null);
+
+//                 //GA
+//                 _gaq.push(['_trackEvent', 'Video', 'Start Watching', wistiaEmbed.name()]);
+//             }
+
+//             return this.unbind;
+//         });
+
+
+
+//         //end
+//         wistiaEmbed.bind('end', function() {
+//             console.log('end');
+
+//             if (enable_WistiaTrackings) {
+//                 //KM
+//                 trackEvent('Watched', {
+//                     'Video': wistiaEmbed.name()
+//                 }, null);
+
+//                 //GA
+//                 _gaq.push(['_trackEvent', 'Video', 'Watched', wistiaEmbed.name()]);
+//             }
+
+//             return this.unbind;
+//         });
+
+//     });
+
+// });
+
+
+wistiaEmbeds.onFind(function(video) {
+    video.bind('play', function() {
+        console.log("I played " + video.name());
+        return this.unbind;
+    });
+
+
+    var done50 = false;
+    var done70 = false;
+
+    video.bind('secondchange', function(s) {
+
+        var currentSecond = Math.floor(s);
+        var percent50 = video.duration() * 0.5;
+        var percent70 = video.duration() * 0.75;
+
+        console.log('percent50 ' + percent50 + ' in ' + video.name());
+
+        console.log('percent70 ' + percent70 + ' in ' + video.name());
+
+        console.log('second ' + currentSecond + ' in ' + video.name());
+
+        if (s > percent50 && s < percent70 && !done50) {
+            console.log('done50 in ' + video.name());
             done50 = true;
-
-        } else {
-            window.setTimeout(wistiaProgress(wistiaEmbed, done50, done70), 1000);
-
         }
 
-    }
+        if (s > percent70 && !done70) {
+            console.log('done70 in ' + video.name());
+            done50 = true;
+        }
 
 
-
-}
-
-$(function() {
-
-
-    oswistiaEmbeds.each(function(index, el) {
-
-        var wistiaEmbed = el.wistiaApi;
-
-        //play
-        wistiaEmbed.bind('play', function() {
-            wistiaProgress(wistiaEmbed, false, false);
-            console.log('Start Watching');
-
-
-            if (enable_WistiaTrackings) {
-                //KM
-                trackEvent('Start Watching', {
-                    'Video': wistiaEmbed.name()
-                }, null);
-
-                //GA
-                _gaq.push(['_trackEvent', 'Video', 'Start Watching', wistiaEmbed.name()]);
-            }
-
-            return this.unbind;
-        });
-
-
-
-        //end
-        wistiaEmbed.bind('end', function() {
-            console.log('end');
-
-            if (enable_WistiaTrackings) {
-                //KM
-                trackEvent('Watched', {
-                    'Video': wistiaEmbed.name()
-                }, null);
-
-                //GA
-                _gaq.push(['_trackEvent', 'Video', 'Watched', wistiaEmbed.name()]);
-            }
-            
-            return this.unbind;
-        });
-
+        //return this.unbind;
     });
 
 });
+
+
+// wistiaEmbeds.onFind(function(video) {
+//     video.bind("play", function() {
+//         _gaq.push(['_trackEvent', 'Video', 'Play', video.name()]);
+//         return this.unbind;
+//     }).bind("end", function() {
+//         _gaq.push(['_trackEvent', 'Video', 'Complete', video.name()]);
+//         return this.unbind;
+//     });
+// });
 
 
 /**
