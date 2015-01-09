@@ -342,3 +342,7 @@ var getRandom = function(max_val){
     };
     //easeInOutExpo,easeInBack
 })(jQuery);
+
+
+
+//BADRUZ!!
