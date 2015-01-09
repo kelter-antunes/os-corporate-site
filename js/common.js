@@ -660,4 +660,4 @@ $(document).ready(function() {
 })(navigator.userAgent || navigator.vendor || window.opera);
 
 
-//BADRUZ
+//BADRUZ 2
