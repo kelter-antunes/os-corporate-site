@@ -301,7 +301,8 @@ $(function() {
 });
 
 
-/*
+/*  Tracking Sign-ups in KISSMetrics - From anonymous to named user
+ *
  *   marketo listener for current page context, context is now used to track events in kissmetrics
  *   this piece of code sends the actual page to the form iframe, this context is added to an hidden attribute in the form
  *   that will be stored in the lead details, this attribute will change uppon every form submition, but now it's only taken into consideration
@@ -355,12 +356,9 @@ function sendKISScontextToMarketo() {
         } catch (e) {
 
         }
-
-
     }, 1000);
 
 }
-
 $(function() {
 
     iframeDetect = setInterval(function() {
@@ -371,47 +369,122 @@ $(function() {
 
 
 });
-
-
-
-
 /**Tracking Sign-ups in KISSMetrics - From anonymous to named user**/
 
 
 
-/* wistia events 
-function Progress() {
-    if ((wistiaEmbed.time() / wistiaEmbed.duration()) > 0.5) {
-        alert(""
-            50 % "");
+/* wistia events */
+// Category: Video 
+// Action: Start Watching 
+// Label: [Video Name] 
+// Value:
+
+// Category: Video 
+// Action: Watched 50% 
+// Label: [Video Name] 
+// Value:
+
+// Category: Video 
+// Action: Watched 75% 
+// Label: [Video Name] 
+// Value:
+
+var wistiaEmbeds = $('.wistia_embed');
+
+function wistiaProgress(wistiaEmbed, done50, done70) {
+
+    if (done50 && done70) {
+        //done everything already so... do nothing
     } else {
-        window.setTimeout(Progress, 1000);
+
+        if ((wistiaEmbed.time() / wistiaEmbed.duration()) > 0.75 && !done70) {
+            //Watched 75%
+            console.log("75%");
+
+            //KM
+            trackEvent('Watched 75%', {
+                'Video': wistiaEmbed.name()
+            }, null);
+
+            //GA
+            _gaq.push(['_trackEvent', 'Video', 'Watched 75%', wistiaEmbed.name()]);
+
+            done70 = true;
+
+        } else if (((wistiaEmbed.time() / wistiaEmbed.duration()) > 0.5) && !done50) {
+            //Watched 50%
+            console.log("50%");
+
+
+            //KM
+            trackEvent('Watched 50%', {
+                'Video': wistiaEmbed.name()
+            }, null);
+
+            //GA
+            _gaq.push(['_trackEvent', 'Video', 'Watched 50%', wistiaEmbed.name()]);
+
+            done50 = true;
+
+        } else {
+            window.setTimeout(wistiaProgress(wistiaEmbed, done50, done70), 1000);
+
+        }
+
     }
+
+
+
 }
 
-wistiaEmbed.bind('end', function() {
-    alert(""
-        end "");
-    return this.unbind;
+$(function() {
+
+    wistiaEmbeds.each(function(index, el) {
+
+        var wistiaEmbed = el.wistiaApi;
+
+        //play
+        wistiaEmbed.bind('play', function() {
+            wistiaProgress(wistiaEmbed,false,false);
+            console.log('Start Watching');
+
+            //KM
+            trackEvent('Start Watching', {
+                'Video': wistiaEmbed.name()
+            }, null);
+
+            //GA
+            _gaq.push(['_trackEvent', 'Video', 'Start Watching', wistiaEmbed.name()]);
+
+            return this.unbind;
+        });
+
+
+
+        //end
+        wistiaEmbed.bind('end', function() {
+            console.log('end');
+
+            //KM
+            trackEvent('Watched', {
+                'Video': wistiaEmbed.name()
+            }, null);
+
+            //GA
+            _gaq.push(['_trackEvent', 'Video', 'Watched', wistiaEmbed.name()]);
+
+            return this.unbind;
+        });
+
+    });
+
 });
-
-wistiaEmbed.bind('play', function() {
-    Progress();
-    alert(""
-        play "");
-    $('#"+OpenSS.Id+"').click();
-
-    return this.unbind;
-});*/
 
 
 /**
  *
  *
- *
  *     EVENTS  END
- *
- *
  *
  *
  **/
