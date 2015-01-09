@@ -390,6 +390,7 @@ $(function() {
 // Value:
 
 var oswistiaEmbeds = $('.wistia_embed');
+var enable_WistiaTrackings = false;
 
 function wistiaProgress(wistiaEmbed, done50, done70) {
 
@@ -401,13 +402,16 @@ function wistiaProgress(wistiaEmbed, done50, done70) {
             //Watched 75%
             console.log("75%");
 
-            //KM
-            trackEvent('Watched 75%', {
-                'Video': wistiaEmbed.name()
-            }, null);
+            if (enable_WistiaTrackings) {
+                //KM
+                trackEvent('Watched 75%', {
+                    'Video': wistiaEmbed.name()
+                }, null);
 
-            //GA
-            _gaq.push(['_trackEvent', 'Video', 'Watched 75%', wistiaEmbed.name()]);
+                //GA
+                _gaq.push(['_trackEvent', 'Video', 'Watched 75%', wistiaEmbed.name()]);
+            };
+
 
             done70 = true;
 
@@ -415,14 +419,16 @@ function wistiaProgress(wistiaEmbed, done50, done70) {
             //Watched 50%
             console.log("50%");
 
+            if (enable_WistiaTrackings) {
 
-            //KM
-            trackEvent('Watched 50%', {
-                'Video': wistiaEmbed.name()
-            }, null);
+                //KM
+                trackEvent('Watched 50%', {
+                    'Video': wistiaEmbed.name()
+                }, null);
 
-            //GA
-            _gaq.push(['_trackEvent', 'Video', 'Watched 50%', wistiaEmbed.name()]);
+                //GA
+                _gaq.push(['_trackEvent', 'Video', 'Watched 50%', wistiaEmbed.name()]);
+            }
 
             done50 = true;
 
@@ -446,16 +452,19 @@ $(function() {
 
         //play
         wistiaEmbed.bind('play', function() {
-            wistiaProgress(wistiaEmbed,false,false);
+            wistiaProgress(wistiaEmbed, false, false);
             console.log('Start Watching');
 
-            //KM
-            trackEvent('Start Watching', {
-                'Video': wistiaEmbed.name()
-            }, null);
 
-            //GA
-            _gaq.push(['_trackEvent', 'Video', 'Start Watching', wistiaEmbed.name()]);
+            if (enable_WistiaTrackings) {
+                //KM
+                trackEvent('Start Watching', {
+                    'Video': wistiaEmbed.name()
+                }, null);
+
+                //GA
+                _gaq.push(['_trackEvent', 'Video', 'Start Watching', wistiaEmbed.name()]);
+            }
 
             return this.unbind;
         });
@@ -466,14 +475,16 @@ $(function() {
         wistiaEmbed.bind('end', function() {
             console.log('end');
 
-            //KM
-            trackEvent('Watched', {
-                'Video': wistiaEmbed.name()
-            }, null);
+            if (enable_WistiaTrackings) {
+                //KM
+                trackEvent('Watched', {
+                    'Video': wistiaEmbed.name()
+                }, null);
 
-            //GA
-            _gaq.push(['_trackEvent', 'Video', 'Watched', wistiaEmbed.name()]);
-
+                //GA
+                _gaq.push(['_trackEvent', 'Video', 'Watched', wistiaEmbed.name()]);
+            }
+            
             return this.unbind;
         });
 
