@@ -389,7 +389,7 @@ $(function() {
 // Label: [Video Name] 
 // Value:
 
-var enable_WistiaTrackings = false;
+var enable_WistiaTrackings = true;
 $(function() {
     wistiaEmbeds.onFind(function(video) {
 
