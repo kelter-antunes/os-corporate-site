@@ -499,42 +499,45 @@ $(function() {
 // });
 
 
-wistiaEmbeds.onFind(function(video) {
-    video.bind('play', function() {
-        console.log("I played " + video.name());
-        return this.unbind;
+
+$(function() {
+    wistiaEmbeds.onFind(function(video) {
+        video.bind('play', function() {
+            console.log("I played " + video.name());
+            return this.unbind;
+        });
+
+
+        var done50 = false;
+        var done70 = false;
+
+        video.bind('secondchange', function(s) {
+
+            var currentSecond = Math.floor(s);
+            var percent50 = video.duration() * 0.5;
+            var percent70 = video.duration() * 0.75;
+
+            console.log('percent50 ' + percent50 + ' in ' + video.name());
+
+            console.log('percent70 ' + percent70 + ' in ' + video.name());
+
+            console.log('second ' + currentSecond + ' in ' + video.name());
+
+            if (s > percent50 && s < percent70 && !done50) {
+                console.log('done50 in ' + video.name());
+                done50 = true;
+            }
+
+            if (s > percent70 && !done70) {
+                console.log('done70 in ' + video.name());
+                done50 = true;
+            }
+
+
+            //return this.unbind;
+        });
+
     });
-
-
-    var done50 = false;
-    var done70 = false;
-
-    video.bind('secondchange', function(s) {
-
-        var currentSecond = Math.floor(s);
-        var percent50 = video.duration() * 0.5;
-        var percent70 = video.duration() * 0.75;
-
-        console.log('percent50 ' + percent50 + ' in ' + video.name());
-
-        console.log('percent70 ' + percent70 + ' in ' + video.name());
-
-        console.log('second ' + currentSecond + ' in ' + video.name());
-
-        if (s > percent50 && s < percent70 && !done50) {
-            console.log('done50 in ' + video.name());
-            done50 = true;
-        }
-
-        if (s > percent70 && !done70) {
-            console.log('done70 in ' + video.name());
-            done50 = true;
-        }
-
-
-        //return this.unbind;
-    });
-
 });
 
 
