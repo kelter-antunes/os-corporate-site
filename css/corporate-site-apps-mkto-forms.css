@@ -74,13 +74,13 @@ div.mktoButtonRow
 	margin:0!important;
 	color:#fff!important;
 	font-size:18px!important;
-	background-color:#08c!important;
-	background-image:-moz-linear-gradient(top,#08c,#06a)!important;
-	background-image:-ms-linear-gradient(top,#08c,#06a)!important;
-	background-image:-o-linear-gradient(top,#08c,#06a)!important;
-	background-image:-webkit-gradient(linear,center top,center bottom,from(#08c),to(#06a))!important;
-	background-image:-webkit-linear-gradient(top,#08c,#06a)!important;
-	background-image:linear-gradient(top,#08c,#06a)!important;
+	background-color: #ccc!important;
+	background-image: -moz-linear-gradient(top,#ccc,#aaa)!important;
+	background-image: -ms-linear-gradient(top,#ccc,#aaa)!important;
+	background-image: -o-linear-gradient(top,#ccc,#aaa)!important;
+	background-image: -webkit-gradient(linear,center top,center bottom,from(#ccc),to(#aaa))!important;
+	background-image: -webkit-linear-gradient(top,#ccc,#aaa)!important;
+	background-image: linear-gradient(top,#ccc,#aaa)!important;
 	-moz-border-radius:5px!important;
 	-webkit-border-radius:5px!important;
 	border-radius:5px!important
@@ -90,7 +90,6 @@ div.mktoButtonRow
 {
 	filter:none!important;
 	background-image:none!important;
-	color:#fff!important
 }
 
 .mktoButton-:active
