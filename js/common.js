@@ -439,6 +439,7 @@ function wistiaProgress(wistiaEmbed, done50, done70) {
 
 $(function() {
 
+
     wistiaEmbeds.each(function(index, el) {
 
         var wistiaEmbed = el.wistiaApi;
