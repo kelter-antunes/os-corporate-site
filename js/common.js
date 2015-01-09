@@ -389,7 +389,7 @@ $(function() {
 // Label: [Video Name] 
 // Value:
 
-var wistiaEmbeds = $('.wistia_embed');
+var oswistiaEmbeds = $('.wistia_embed');
 
 function wistiaProgress(wistiaEmbed, done50, done70) {
 
@@ -440,7 +440,7 @@ function wistiaProgress(wistiaEmbed, done50, done70) {
 $(function() {
 
 
-    wistiaEmbeds.each(function(index, el) {
+    oswistiaEmbeds.each(function(index, el) {
 
         var wistiaEmbed = el.wistiaApi;
 
