@@ -389,7 +389,8 @@ $(function() {
 // Label: [Video Name] 
 // Value:
 
-var enable_WistiaTrackings = true;
+//enable Wistia Trackings
+var eWT = true;
 $(function() {
     wistiaEmbeds.onFind(function(video) {
 
@@ -401,7 +402,7 @@ $(function() {
             percent50 = video.duration() * 0.5;
             percent70 = video.duration() * 0.75;
 
-            if (enable_WistiaTrackings) {
+            if (eWT) {
                 //KM
                 trackEvent('Start Watching', {
                     'Video': video.name()
@@ -409,11 +410,17 @@ $(function() {
 
                 //GA
                 _gaq.push(['_trackEvent', 'Video', 'Start Watching', video.name()]);
+
+                //marketo
+                Munchkin.munchkinFunction('visitWebPage', {
+                    url: '/view-video-start-wathcing',
+                    params: video.name()
+                });
             }
             return this.unbind;
 
         }).bind('end', function() {
-            if (enable_WistiaTrackings) {
+            if (eWT) {
                 //KM
                 trackEvent('Complete', {
                     'Video': video.name()
@@ -421,6 +428,12 @@ $(function() {
 
                 //GA
                 _gaq.push(['_trackEvent', 'Video', 'Complete', video.name()]);
+
+                //marketo
+                Munchkin.munchkinFunction('visitWebPage', {
+                    url: '/view-video-complete',
+                    params: video.name()
+                });
             }
             return this.unbind;
 
@@ -433,7 +446,7 @@ $(function() {
             var currentSecond = Math.floor(s);
 
             if (s > percent50 && s < percent70 && !done50) {
-                if (enable_WistiaTrackings) {
+                if (eWT) {
                     //KM
                     trackEvent('Watched 50%', {
                         'Video': video.name()
@@ -441,6 +454,12 @@ $(function() {
 
                     //GA
                     _gaq.push(['_trackEvent', 'Video', 'Watched 50%', video.name()]);
+
+                    //marketo
+                    Munchkin.munchkinFunction('visitWebPage', {
+                        url: '/view-video-50-percent',
+                        params: video.name()
+                    });
                 }
 
 
@@ -448,7 +467,7 @@ $(function() {
             }
 
             if (s > percent70 && !done75) {
-                if (enable_WistiaTrackings) {
+                if (eWT) {
                     //KM
                     trackEvent('Watched 75%', {
                         'Video': video.name()
@@ -456,6 +475,13 @@ $(function() {
 
                     //GA
                     _gaq.push(['_trackEvent', 'Video', 'Watched 75%', video.name()]);
+
+                    //marketo
+                    Munchkin.munchkinFunction('visitWebPage', {
+                        url: '/view-video-75-percent',
+                        params: video.name()
+                    });
+
                 }
                 done75 = true;
             }
@@ -477,11 +503,10 @@ $(function() {
 
 
 
-
-osjs(function(a) {
-    osjs('.scrollup').click(function(event) {
+$(function(a) {
+    $('.scrollup').click(function(event) {
         event.preventDefault();
-        osjs("html, body").animate({
+        $("html, body").animate({
             scrollTop: 0
         }, 600);
         return false;
