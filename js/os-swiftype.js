@@ -125,14 +125,22 @@ $(function() {
         if (typeof jQuery === "function" && el instanceof jQuery) {
             el = el[0];
         }
-        var btn_h = $('.swtpbutton')[0].getBoundingClientRect();
-        var rect = el.getBoundingClientRect();
+        if($('.swtpbutton')[0] !== undefined){
+            try{
+                var btn_h = $('.swtpbutton')[0].getBoundingClientRect();
+                var rect = el.getBoundingClientRect();
 
-        return (
-            rect.left >= 0 &&
-            rect.bottom + btn_h.height <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
+                return (
+                    rect.left >= 0 &&
+                    rect.bottom + btn_h.height <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                    );
+            }
+            catch(exception){ console.log("exception -> isElementInViewport");} 
+        }
+        else{
+            return;
+        }
     }
 
 
@@ -142,7 +150,7 @@ $(function() {
         return function() {
             if ($('.result').last()[0] !== undefined) {
                 if (isElementInViewport($('.result').last())) {
-                    
+
                     $('.swtpbutton').css({
                         'position': 'relative',
                         'bottom': 'initial',
@@ -209,7 +217,7 @@ $(function() {
                     }
                 };
             }*/
-    });
+        });
 
 
     //AUTOCOMPLETE***************************************************
@@ -248,5 +256,5 @@ $(function() {
                     }
                 };
             }*/
-    });
+        });
 });
