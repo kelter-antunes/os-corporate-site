@@ -37,7 +37,7 @@ label.mktoLabel
 	padding-top:0!important;
 }
 
-.mktoForm input.mktoField.mktoInvalid
+.mktoForm input.mktoField.mktoInvalid,.mktoForm textarea.mktoField.mktoInvalid,.mktoForm select.mktoField.mktoInvalid,.mktoForm .mktoLogicalField.mktoInvalid
 {
 	border: 1px solid #c20!important;
 	outline:0;
