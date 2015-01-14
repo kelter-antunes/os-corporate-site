@@ -142,9 +142,13 @@ div.mktoButtonRow
 		-moz-box-sizing:border-box;
 		box-sizing:border-box;
 		-moz-box-sizing:border-box;
-		padding: 0px!important;
 	}
 	
+	.mktoForm select
+	{
+		padding: 0px!important;
+	}
+
 	.mktoForm .mktoGutter,.mktoForm .mktoOffset
 	{
 		display:none
