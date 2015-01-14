@@ -23,9 +23,7 @@ function olarkProgress() {
                 snippet: 'Spent less than a minute in current page'
             });
         }
-
     }
-
     window.setTimeout(olarkProgress, 1000);
 }
 

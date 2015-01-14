@@ -1,0 +1,478 @@
+<style type="text/css">
+.top-section {
+    background: #05273f;
+    /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1MjczZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzA3MzA0OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwNTI3M2YiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left, #05273f 0%, #073048 50%, #05273f 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #05273f), color-stop(50%, #073048), color-stop(100%, #05273f));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(left, #05273f 0%, #073048 50%, #05273f 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(left, #05273f 0%, #073048 50%, #05273f 100%);
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(left, #05273f 0%, #073048 50%, #05273f 100%);
+    /* IE10+ */
+    
+    background: linear-gradient(to right, #05273f 0%, #073048 50%, #05273f 100%);
+    /* W3C */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#05273f', endColorstr='#05273f', GradientType=1);
+    /* IE6-8 */
+    
+    ;
+    border-top: 1px solid #D4DADD;
+}
+span.triangle-blue {
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 80px solid #073048;
+    display: block;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+}
+.title1 {
+    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+    text-shadow: 1px 1px 0 #000;
+}
+.title2 {
+    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+    text-shadow: 1px 1px 0 #000;
+}
+.title3 {
+    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px;
+}
+.text-white {
+    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    font-size: 21px;
+}
+.section-title {
+    font-size: 33px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+.section-error {
+    -moz-box-shadow: inset 0 8px 8px -8px #CC2100, inset 0 -8px 8px -8px #CC2100;
+    -webkit-box-shadow: inset 0 8px 8px -8px #CC2100, inset 0 -8px 8px -8px #CC2100;
+    box-shadow: inset 0 8px 8px -8px #CC2100, inset 0 -8px 8px -8px #CC2100;
+}
+a.card-pick * {
+    box-sizing: border-box;
+}
+a.card-pick {
+    background-color: #CC2100;
+    width: 130px;
+    height: 150px;
+    display: inline-block;
+    text-decoration: none;
+    max-height: 150px;
+    text-align: center;
+    border: 1px solid #D23D20;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #E6E6E6;
+}
+.holder-icon {
+    display: block;
+    height: 100%;
+}
+span.holder-icon > span {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    display: inline-block;
+    line-height: 100px;
+}
+span.legend-icon {
+    display: block;
+    background-color: #AC1E01;
+    border-top: 1px solid #D23D20;
+    height: 50px;
+    padding-top: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.card-pick.selected {
+    background-color: #000000;
+    border-color: #5C5C5C;
+}
+.card-pick.selected span.legend-icon {
+    background-color: #000000;
+    border-color: #5C5C5C;
+}
+.justify-items {
+    text-align: center;
+}
+.bullet-text {
+    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+    color: #606060;
+    text-align: left;
+    font-weight: lighter;
+    font-size: 21px;
+    line-height: 28px;
+}
+.section.gray {
+    background-color: #F4F4F4;
+}
+.section {
+    padding-bottom: 50px;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 80px solid white;
+}
+.result {
+    background-color: #8DC63F;
+    padding-bottom: 40px;
+}
+.center {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.back-circle {
+    border-radius: 90px;
+    background-color: #e6e6e6;
+    display: inline-block;
+    padding: 20px;
+    box-shadow: 2px 3px 5px #808080;
+    margin-bottom: 15px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+a.lk {
+    color: white;
+}
+a.lk:hover {
+    text-decoration: none;
+    color: #CCC;
+}
+</style>
+<!--Header-->
+<div style="background-color:#cc2200; height:60px">
+    <div class="container">
+        <div class="row">
+            <div class="span4" style="margin-top: 10px; %MOBILE% text-align: center; %/MOBILE%">
+                <a href="/"><img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=os-logo2&amp;v=20150113154353" /> </a>
+            </div>
+            %WEB%
+            <div class="span8 title3" style="text-align:right;color:#fff;margin-top: 20px;">
+                %CONTACT-US%
+            </div>
+            %/WEB%
+        </div>
+    </div>
+</div>
+<!--Section 1-->
+<div class="top-section">
+    <div class="container">
+        <div class="row">
+            <div class="span12" style="  height:420px; ">
+                <h1 class="title1" style="margin-top: 90px; ">
+          Is Your App a Good Fit for the Cloud?
+        </h1>
+                <h1 class="title2" style=" margin-top: 40px; ">
+          This assessment will help you decide whether the cloud is right for your app and the expected app delivery timeline using OutSystems Platform.
+        </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Section what-platforms -->
+<div class="section" id="what-platforms">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <span class="triangle-blue">&nbsp;</span>
+                <h1 class="section-title">
+          What platforms will your app run in?
+        </h1>
+                <div class="row">
+                    <div class="span12">
+                        <div class="justify-items">
+                            <a class="card-pick selected" href="#" multi-select="true"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Web</span> </a> <a class="card-pick" href="#" multi-select="true"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">iOS</span> </a> <a class="card-pick" href="#" multi-select="true"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Android</span> </a> <a class="card-pick" href="#" multi-select="true"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Windows</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Section what-type -->
+<div class="section gray" id="what-type">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1 class="section-title">
+          What type of app is yours?
+        </h1>
+                <div class="row">
+                    <div class="span12">
+                        <div class="justify-items">
+                            <a class="card-pick selected" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Request Approval Workflow</span> </a> <a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Complex Business Process</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Data Entering &amp; Validation</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Analytics &amp; Dashboard</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Quoting Simulator/Engine/Other</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Section how-complex -->
+<div class="section" id="how-complex">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1 class="section-title">
+          How complex will your app be?
+        </h1>
+                <div class="row">
+                    <div class="span12">
+                        <div class="justify-items">
+                            <a class="card-pick selected" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Up to 5 screens</span> </a> <a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Up to 15 screens</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">More than 15 screens</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Section how-many-users -->
+<div class="section gray" id="how-many-users">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1 class="section-title">
+          How many users will access your app?
+        </h1>
+                <div class="row">
+                    <div class="span12">
+                        <div class="justify-items">
+                            <a class="card-pick selected" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Less than 100</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">100-1000</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">1000+</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Section what-type-users -->
+<div class="section" id="what-type-users">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1 class="section-title">
+          What type of users will access your app?
+        </h1>
+                <div class="row">
+                    <div class="span12">
+                        <div class="justify-items">
+                            <a class="card-pick selected" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">My Employees</span> </a> <a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">My Customers</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">My Partners</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Everybody</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Section what-data -->
+<div class="section gray" id="what-data">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1 class="section-title">
+          What existing data will your app need?
+        </h1>
+                <div class="row">
+                    <div class="span12">
+                        <div class="justify-items">
+                            <a class="card-pick selected" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">No data required</span> </a> <a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Data from my in-house app</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Data from a SaaS</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Section when-live -->
+<div class="section" id="when-live">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1 class="section-title">
+          When do you need your app to be live?
+        </h1>
+                <div class="row">
+                    <div class="span12">
+                        <div class="justify-items">
+                            <a class="card-pick selected" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">ASAP</span> </a> <a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">In a few weeks</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Couple of months</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Top Footer-->
+<div class="result">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1 class="title2" style=" margin-top: 40px; ">
+          Your App Assessment Report
+        </h1>
+            </div>
+            <div class="span6">
+                &nbsp;
+            </div>
+            <div class="span6">
+                <h1 style="
+font-family: 'myriad-pro', Helvetica, Arial, sans-serif; color: #fff;  font-weight: 400; 
+font-size: 90px; text-shadow: 1px 1px 0 #000;
+display: initial;
+">
+          Yes.
+        </h1>
+                <h4 style="
+font-family: 'myriad-pro', Helvetica, Arial, sans-serif; color: #fff; font-weight: 400; 
+font-size: 25px; text-shadow: 1px 1px 0 #000; 
+display: inline;
+">
+          Your app is a good candidate to run on a cloud platform.
+        </h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Section live-demo -->
+<div id="live-demo" style="background-color:#ac1e01;">
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <div class="triangle center" style="
+border-left: 80px solid transparent; border-right: 80px solid transparent; 
+border-top: 80px solid #8DC63F;
+">
+                    &nbsp;
+                </div>
+                <div style="display:block; text-align:center;">
+                    <h1 class="title2" style=" margin-top: 25px; margin-bottom: 10px;">
+            Get Your App Live in Three Weeks...
+          </h1>
+                    <p style="
+font-family: 'myriad-pro', Helvetica, Arial, sans-serif; color: #fff; text-align: center; 
+font-weight: 200; 
+font-size: 16px; text-shadow: 1px 1px 0 #000;
+line-height: normal;
+width: 280px;
+margin: 0 auto;
+">
+                        We can help you deliver your app in as little as 3 weeks. We take care of all implementation and development and deliver a fully working app, running in the cloud.
+                    </p>
+                </div>
+                <div style="text-align:right;margin-right: 25px;">
+                    <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=arrow-form&amp;v=20150113154353" />
+                </div>
+            </div>
+            <div class="span6" style="background-color: #333; margin-bottom:40px;  margin-top:40px;  ">
+                <iframe frameborder="0" id="mkto_frame" scrolling="no" src="http://go1.outsystems.com/MA-AppsV2.html?content=employee-onboarding-app" style="margin-bottom: 10px; margin-top: 30px; width: 481px; height: 390px;" type="text/html"></iframe>
+                <script>
+                var _gaq = _gaq || [];
+                _gaq.push(function() {
+                    var pageTracker = _gat._getTrackerByName();
+                    var iframe = document.getElementById('mkto_frame');
+                    iframe.src = pageTracker._getLinkerUrl('http://go1.outsystems.com/MA-AppsV2.html?content=employee-onboarding-app');
+                });
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Footer-->
+<!-- Text font-size different from the mockup-->
+<!-- Background color different from the mockup-->
+<div style="background-color:#333; %WEB% padding-top: 60px;padding-bottom: 60px; %/WEB% %MOBILE% padding-top: 20px;padding-bottom: 20px; %/MOBILE%">
+    <div class="container">
+        <div class="row" style="margin-top: 20px;">
+            <div class="span12">
+                <h3 class="text-white" style="text-align:left; font-size:20px;margin-bottom: 0px;">
+          OutSystems provides the only open, high-productivity application platform that makes it easy to create, deploy and manage enterprise mobile and web applications.
+          <br />
+          &nbsp;
+        </h3>
+                <h3 style="font-size:20px;">
+          <a class="lk" href="https://www.outsystems.com" style=" font-weight:normal; %MOBILE% text-align:center; display: block; %/MOBILE%">www.outsystems.com</a>
+        </h3>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+function validatePicks() {
+    $('.section').each(function(index, el) {
+
+        var currSection = $(el);
+        var howManySelected = $(currSection).has('.selected').length;
+
+        if (howManySelected === 0) {
+
+            currSection.addClass('section-error');
+
+        } else {
+
+            currSection.removeClass('section-error');
+
+
+        }
+    });
+
+}
+
+$(function() {
+    validatePicks();
+});
+
+
+$('a.card-pick').click(function(event) {
+    event.preventDefault();
+    var clicked = $(this);
+    clicked.toggleClass('selected');
+    if (clicked.attr('multi-select') !== 'true') {
+        clicked.siblings().removeClass('selected');
+    }
+
+    validatePicks();
+});
+</script>
