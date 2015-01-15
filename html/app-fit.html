@@ -77,6 +77,13 @@ span.triangle-blue {
     text-align: center;
     margin-top: 40px;
 }
+.section-sub-title {
+    font-size: 23px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 0px;
+}
 .section-error {
     -moz-box-shadow: inset 0 8px 8px -8px #CC2100, inset 0 -8px 8px -8px #CC2100;
     -webkit-box-shadow: inset 0 8px 8px -8px #CC2100, inset 0 -8px 8px -8px #CC2100;
@@ -157,6 +164,22 @@ span.legend-icon {
     background-color: #8DC63F;
     padding-bottom: 40px;
 }
+.result.yes {
+    background-color: #8DC63F;
+}
+.result.no {
+    background-color: #AC1E01;
+}
+.triangle.center.yes {
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 80px solid #8DC63F;
+}
+.triangle.center.no {
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 80px solid #AC1E01;
+}
 .center {
     margin: 0 auto;
     left: 0;
@@ -180,6 +203,56 @@ a.lk:hover {
     text-decoration: none;
     color: #CCC;
 }
+h1#result-big-title {
+    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 90px;
+    text-shadow: 1px 1px 0 #000;
+    display: initial;
+}
+h4#result-explanation {
+    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 25px;
+    text-shadow: 1px 1px 0 #000;
+    display: inline;
+}
+.text-body {
+    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+    text-align: left;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 22px;
+}
+#explanation {
+    padding-bottom: 50px;
+}
+#live-demo {
+    color: white;
+}
+#live-demo li.text-body,
+#explanation li.text-body {
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+    a.card-pick {
+        margin: 20px;
+    }
+    h1.title1 {
+        line-height: normal;
+    }
+    h1.title2 {
+        line-height: normal;
+    }
+    .section {
+        padding-bottom: 0;
+    }
+    #explanation {
+        padding-bottom: 0;
+    }
+}
 </style>
 <!--Header-->
 <div style="background-color:#cc2200; height:60px">
@@ -196,17 +269,16 @@ a.lk:hover {
         </div>
     </div>
 </div>
-<!--Section 1-->
 <div class="top-section">
     <div class="container">
         <div class="row">
             <div class="span12" style="  height:420px; ">
                 <h1 class="title1" style="margin-top: 90px; ">
-          Is Your App a Good Fit for the Cloud?
-        </h1>
+                  Is Your App a Good Fit for the Cloud?
+              </h1>
                 <h1 class="title2" style=" margin-top: 40px; ">
-          This assessment will help you decide whether the cloud is right for your app and the expected app delivery timeline using OutSystems Platform.
-        </h1>
+                  This assessment will help you decide whether the cloud is right for your app and the expected app delivery timeline using OutSystems Platform.
+              </h1>
             </div>
         </div>
     </div>
@@ -217,13 +289,35 @@ a.lk:hover {
         <div class="row">
             <div class="span12">
                 <span class="triangle-blue">&nbsp;</span>
-                <h1 class="section-title">
-          What platforms will your app run in?
-        </h1>
+                <h1 class="section-title" style="margin-bottom: 15px;">What platforms will your app run in?</h1>
+                <h5 class="section-sub-title">Select your choice!</h5>
                 <div class="row">
                     <div class="span12">
                         <div class="justify-items">
-                            <a class="card-pick selected" href="#" multi-select="true"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Web</span> </a> <a class="card-pick" href="#" multi-select="true"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">iOS</span> </a> <a class="card-pick" href="#" multi-select="true"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Android</span> </a> <a class="card-pick" href="#" multi-select="true"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Windows</span> </a>
+                            <a class="card-pick selected" href="#" multi-select="true" data-name="web">
+                                <span class="holder-icon">
+                                    <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">Web</span>
+                            </a>
+                            <a class="card-pick" href="#" multi-select="true" data-name="ios">
+                                <span class="holder-icon">
+                                    <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">iOS</span>
+                            </a>
+                            <a class="card-pick" href="#" multi-select="true" data-name="android">
+                                <span class="holder-icon">
+                                    <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">Android</span>
+                            </a>
+                            <a class="card-pick" href="#" multi-select="true" data-name="windows">
+                                <span class="holder-icon">
+                                    <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">Windows</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -237,12 +331,41 @@ a.lk:hover {
         <div class="row">
             <div class="span12">
                 <h1 class="section-title">
-          What type of app is yours?
-        </h1>
+                  What type of app is yours?
+              </h1>
                 <div class="row">
                     <div class="span12">
                         <div class="justify-items">
-                            <a class="card-pick selected" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Request Approval Workflow</span> </a> <a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Complex Business Process</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Data Entering &amp; Validation</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Analytics &amp; Dashboard</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Quoting Simulator/Engine/Other</span> </a>
+                            <a class="card-pick selected" href="#" data-name="request-approval-workflow">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">Request Approval Workflow</span>
+                            </a>
+                            <a class="card-pick" href="#" data-name="complex-business-process">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">Complex Business Process</span>
+                            </a>
+                            <a class="card-pick" href="#" data-name="data-entering-validation">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">Data Entering &amp; Validation</span>
+                            </a>
+                            <a class="card-pick" href="#" data-name="analytics-dashboard">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">Analytics &amp; Dashboard</span>
+                            </a>
+                            <a class="card-pick" href="#" data-name="quoting-simulator-engine-other">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">Quoting Simulator/Engine/Other</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -256,12 +379,29 @@ a.lk:hover {
         <div class="row">
             <div class="span12">
                 <h1 class="section-title">
-          How complex will your app be?
-        </h1>
+                  How complex will your app be?
+              </h1>
                 <div class="row">
                     <div class="span12">
                         <div class="justify-items">
-                            <a class="card-pick selected" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Up to 5 screens</span> </a> <a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Up to 15 screens</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">More than 15 screens</span> </a>
+                            <a class="card-pick selected" href="#" data-name="up-to-5-screens">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">Up to 5 screens</span>
+                            </a>
+                            <a class="card-pick" href="#" data-name="up-to-15-screens">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">Up to 15 screens</span>
+                            </a>
+                            <a class="card-pick" href="#" data-name="more-15-screens">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">More than 15 screens</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -275,12 +415,29 @@ a.lk:hover {
         <div class="row">
             <div class="span12">
                 <h1 class="section-title">
-          How many users will access your app?
-        </h1>
+                  How many users will access your app?
+              </h1>
                 <div class="row">
                     <div class="span12">
                         <div class="justify-items">
-                            <a class="card-pick selected" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Less than 100</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">100-1000</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">1000+</span> </a>
+                            <a class="card-pick selected" href="#" data-name="less-100">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">Less than 100</span>
+                            </a>
+                            <a class="card-pick" href="#" data-name="100-200">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">100-1000</span>
+                            </a>
+                            <a class="card-pick" href="#" data-name="1000">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">1000+</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -294,12 +451,35 @@ a.lk:hover {
         <div class="row">
             <div class="span12">
                 <h1 class="section-title">
-          What type of users will access your app?
-        </h1>
+                  What type of users will access your app?
+              </h1>
                 <div class="row">
                     <div class="span12">
                         <div class="justify-items">
-                            <a class="card-pick selected" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">My Employees</span> </a> <a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">My Customers</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">My Partners</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Everybody</span> </a>
+                            <a class="card-pick selected" href="#" data-name="employees">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">My Employees</span>
+                            </a>
+                            <a class="card-pick" href="#" data-name="customers">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">My Customers</span>
+                            </a>
+                            <a class="card-pick" href="#" data-name="partners">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">My Partners</span>
+                            </a>
+                            <a class="card-pick" href="#" data-name="everybody">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">Everybody</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -313,12 +493,29 @@ a.lk:hover {
         <div class="row">
             <div class="span12">
                 <h1 class="section-title">
-          What existing data will your app need?
-        </h1>
+                  What existing data will your app need?
+              </h1>
                 <div class="row">
                     <div class="span12">
                         <div class="justify-items">
-                            <a class="card-pick selected" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">No data required</span> </a> <a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Data from my in-house app</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Data from a SaaS</span> </a>
+                            <a class="card-pick selected" href="#" data-name="no-data">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">No data required</span>
+                            </a>
+                            <a class="card-pick" href="#" data-name="in-house">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">Data from my in-house app</span>
+                            </a>
+                            <a class="card-pick" href="#" data-name="saas">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">Data from a SaaS</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -332,12 +529,29 @@ a.lk:hover {
         <div class="row">
             <div class="span12">
                 <h1 class="section-title">
-          When do you need your app to be live?
-        </h1>
+                  When do you need your app to be live?
+              </h1>
                 <div class="row">
                     <div class="span12">
                         <div class="justify-items">
-                            <a class="card-pick selected" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">ASAP</span> </a> <a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">In a few weeks</span> </a><a class="card-pick" href="#"><span class="holder-icon"><span class="osicon-list">&nbsp;</span> </span> <span class="legend-icon">Couple of months</span> </a>
+                            <a class="card-pick selected" href="#" data-name="asap">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">ASAP</span>
+                            </a>
+                            <a class="card-pick" href="#" data-name="few-weeks">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">In a few weeks</span>
+                            </a>
+                            <a class="card-pick" href="#" data-name="months">
+                                <span class="holder-icon">
+                                <span class="osicon-list">&nbsp;</span>
+                                </span>
+                                <span class="legend-icon">Couple of months</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -345,69 +559,98 @@ a.lk:hover {
         </div>
     </div>
 </div>
-<!--Top Footer-->
+<!--section result -->
 <div class="result">
     <div class="container">
         <div class="row">
             <div class="span12">
                 <h1 class="title2" style=" margin-top: 40px; ">
-          Your App Assessment Report
-        </h1>
+                  Your App Assessment Report
+              </h1>
             </div>
             <div class="span6">
                 &nbsp;
             </div>
             <div class="span6">
-                <h1 style="
-font-family: 'myriad-pro', Helvetica, Arial, sans-serif; color: #fff;  font-weight: 400; 
-font-size: 90px; text-shadow: 1px 1px 0 #000;
-display: initial;
-">
-          Yes.
-        </h1>
-                <h4 style="
-font-family: 'myriad-pro', Helvetica, Arial, sans-serif; color: #fff; font-weight: 400; 
-font-size: 25px; text-shadow: 1px 1px 0 #000; 
-display: inline;
-">
-          Your app is a good candidate to run on a cloud platform.
-        </h4>
+                <h1 id="result-big-title">Yes.</h1>
+                <h4 id="result-explanation">Your app is a good candidate to run on a cloud platform.</h4>
             </div>
         </div>
     </div>
 </div>
+
+
+<!--Section explanation -->
+<div id="explanation">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1 class="section-title">Get a Free Consulation With App Expert and an Extended Report</h1>
+
+                <h5 class="section-sub-title">We can help you move away from big software projects that take too much time, too much money and never give users what they want. That’s why we’re offering a free consultation with an App Expert - to show you how you can deliver your app in the cloud in as little as three weeks.</h5>
+            </div>
+
+            <div class="span6">
+                <p class="text-body">Our App Experts standing by to help evaluate your needs and discuss the most common pitfalls with you.</p>
+
+                <p class="text-body" style="font-weight:400; margin-top:40px;">He or she will review your:</p>
+
+                <div class="bullets">
+                    <ol style="list-style-type: disc;padding-left: 20px;">
+                        <li class="text-body"><span>Needed timelines</span>
+                        </li>
+                        <li class="text-body"><span>Specific way of working</span>
+                        </li>
+                        <li class="text-body"><span>What your desired outcome is</span>
+                        </li>
+                        <li class="text-body"><span>Existing apps and systems that need to be connected</span>
+                        </li>
+                        <li class="text-body"><span>Specific requirements like compliance and security</span>
+                        </li>
+                    </ol>
+                </div>
+
+                <p class="text-body" style="margin-top:40px;">If you’d like this free assessment, please fill out the form so that our App Expert has all the information he or she needs to prepare prior to your call.</p>
+            </div>
+
+            <div class="span6">&nbsp;</div>
+        </div>
+    </div>
+</div>
+
+
 <!--Section live-demo -->
 <div id="live-demo" style="background-color:#ac1e01;">
     <div class="container">
         <div class="row">
             <div class="span6">
-                <div class="triangle center" style="
-border-left: 80px solid transparent; border-right: 80px solid transparent; 
-border-top: 80px solid #8DC63F;
-">
-                    &nbsp;
-                </div>
+                <div class="triangle center">&nbsp;</div>
+
                 <div style="display:block; text-align:center;">
-                    <h1 class="title2" style=" margin-top: 25px; margin-bottom: 10px;">
-            Get Your App Live in Three Weeks...
-          </h1>
-                    <p style="
-font-family: 'myriad-pro', Helvetica, Arial, sans-serif; color: #fff; text-align: center; 
-font-weight: 200; 
-font-size: 16px; text-shadow: 1px 1px 0 #000;
-line-height: normal;
-width: 280px;
-margin: 0 auto;
-">
-                        We can help you deliver your app in as little as 3 weeks. We take care of all implementation and development and deliver a fully working app, running in the cloud.
-                    </p>
+                    <h1 class="title2" style=" margin-top: 25px; margin-bottom: 10px;">Get Your App Live in Three Weeks...</h1>
+
+                    <p class="text-body" style="margin-top:40px;">After the call, our App Experts will manually write an app assessment report and email it to you in 24 hours. Hr or she will share with you:</p>
+                    <div>
+                        <ol style="list-style-type: disc;padding-left: 20px;">
+                            <li class="text-body"><span>Specific advice that will help you ensure your app meets business and user requirements</span>
+                            </li>
+                            <li class="text-body"><span>A checklist of the most important pitfalls</span>
+                            </li>
+                            <li class="text-body"><span>What your desired outcome is</span>
+                            </li>
+                            <li class="text-body"><span>The app delivery timeline</span>
+                            </li>
+
+                        </ol>
+                    </div>
                 </div>
-                <div style="text-align:right;margin-right: 25px;">
-                    <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=arrow-form&amp;v=20150113154353" />
+
+                <div style="text-align:right;margin-right: 25px;"><img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=arrow-form&amp;v=20150114165038">
                 </div>
             </div>
+
             <div class="span6" style="background-color: #333; margin-bottom:40px;  margin-top:40px;  ">
-                <iframe frameborder="0" id="mkto_frame" scrolling="no" src="http://go1.outsystems.com/MA-AppsV2.html?content=employee-onboarding-app" style="margin-bottom: 10px; margin-top: 30px; width: 481px; height: 390px;" type="text/html"></iframe>
+                <iframe frameborder="0" id="mkto_frame" scrolling="no" src="http://go1.outsystems.com/MA-AppsV2.html?content=employee-onboarding-app&amp;__utma=232127691.1696621216.1417444545.1421247283.1421250997.21&amp;__utmb=232127691.12.10.1421250997&amp;__utmc=232127691&amp;__utmx=-&amp;__utmz=232127691.1419248541.9.3.utmcsr=extranetqa.outsystems.net|utmccn=(referral)|utmcmd=referral|utmcct=/&amp;__utmv=-&amp;__utmk=34761826" style="margin-bottom: 10px; margin-top: 30px; width: 481px; height: 390px;" type="text/html"></iframe>
                 <script>
                 var _gaq = _gaq || [];
                 _gaq.push(function() {
@@ -428,13 +671,13 @@ margin: 0 auto;
         <div class="row" style="margin-top: 20px;">
             <div class="span12">
                 <h3 class="text-white" style="text-align:left; font-size:20px;margin-bottom: 0px;">
-          OutSystems provides the only open, high-productivity application platform that makes it easy to create, deploy and manage enterprise mobile and web applications.
-          <br />
-          &nbsp;
-        </h3>
+                  OutSystems provides the only open, high-productivity application platform that makes it easy to create, deploy and manage enterprise mobile and web applications.
+                  <br />
+                  &nbsp;
+              </h3>
                 <h3 style="font-size:20px;">
-          <a class="lk" href="https://www.outsystems.com" style=" font-weight:normal; %MOBILE% text-align:center; display: block; %/MOBILE%">www.outsystems.com</a>
-        </h3>
+                  <a class="lk" href="https://www.outsystems.com" style=" font-weight:normal; %MOBILE% text-align:center; display: block; %/MOBILE%">www.outsystems.com</a>
+              </h3>
             </div>
         </div>
     </div>
@@ -442,29 +685,53 @@ margin: 0 auto;
 <script>
 function validatePicks() {
     $('.section').each(function(index, el) {
-
         var currSection = $(el);
         var howManySelected = $(currSection).has('.selected').length;
-
         if (howManySelected === 0) {
-
             currSection.addClass('section-error');
-
         } else {
-
             currSection.removeClass('section-error');
-
-
         }
     });
-
 }
 
+function calcResult() {
+    //var triangle = $('.triangle.center');
+    var resultDiv = $('.result');
+    var bigText = $('#result-big-title');
+    var explanation = $('#result-explanation');
+    var result = true;
+
+    //since is a no if we have ALL rules
+    //Complex App, In-House Data, Customer App, ASAP
+    //four rules, so we need to check if the four are selected
+    var isExclusion_1 = (($("a.card-pick.selected[data-name='complex-business-process']").length +
+        $("a.card-pick.selected[data-name='in-house']").length +
+        $("a.card-pick.selected[data-name='customers']").length +
+        $("a.card-pick.selected[data-name='asap']").length) === 4);
+
+    //is a GO if is not an exclusion
+    result = !isExclusion_1;
+
+    if (result) {
+        resultDiv.removeClass('no').addClass('yes');
+        //triangle.removeClass('no').addClass('yes');
+
+        bigText.text('Yes.');
+        explanation.text('Your app is a good candidate to run on a cloud platform.');
+
+
+    } else {
+        resultDiv.removeClass('yes').addClass('no');
+        //triangle.removeClass('yes').addClass('no');
+
+        bigText.text('No.');
+        explanation.text('Your app is not a good candidate to run on a cloud platform.');
+    }
+}
 $(function() {
     validatePicks();
 });
-
-
 $('a.card-pick').click(function(event) {
     event.preventDefault();
     var clicked = $(this);
@@ -472,7 +739,7 @@ $('a.card-pick').click(function(event) {
     if (clicked.attr('multi-select') !== 'true') {
         clicked.siblings().removeClass('selected');
     }
-
     validatePicks();
+    calcResult();
 });
 </script>
