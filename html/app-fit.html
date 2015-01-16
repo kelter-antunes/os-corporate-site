@@ -1,38 +1,12 @@
 <style type="text/css">
 .top-section {
-    background: #05273f;
-    /* Old browsers */
-    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-    
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1MjczZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzA3MzA0OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwNTI3M2YiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(left, #05273f 0%, #073048 50%, #05273f 100%);
-    /* FF3.6+ */
-    
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #05273f), color-stop(50%, #073048), color-stop(100%, #05273f));
-    /* Chrome,Safari4+ */
-    
-    background: -webkit-linear-gradient(left, #05273f 0%, #073048 50%, #05273f 100%);
-    /* Chrome10+,Safari5.1+ */
-    
-    background: -o-linear-gradient(left, #05273f 0%, #073048 50%, #05273f 100%);
-    /* Opera 11.10+ */
-    
-    background: -ms-linear-gradient(left, #05273f 0%, #073048 50%, #05273f 100%);
-    /* IE10+ */
-    
-    background: linear-gradient(to right, #05273f 0%, #073048 50%, #05273f 100%);
-    /* W3C */
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#05273f', endColorstr='#05273f', GradientType=1);
-    /* IE6-8 */
-    
-    ;
+    background: #003265;
     border-top: 1px solid #D4DADD;
 }
 span.triangle-blue {
-    border-left: 80px solid transparent;
-    border-right: 80px solid transparent;
-    border-top: 80px solid #073048;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #003265;
     display: block;
     margin: 0 auto;
     left: 0;
@@ -47,6 +21,7 @@ span.triangle-blue {
     font-weight: 600;
     font-size: 50px;
     text-shadow: 1px 1px 0 #000;
+    line-height: normal;
 }
 .title2 {
     font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
@@ -93,14 +68,13 @@ a.card-pick * {
     box-sizing: border-box;
 }
 a.card-pick {
-    background-color: #CC2100;
+    background-color: #000000;
     width: 130px;
     height: 150px;
     display: inline-block;
     text-decoration: none;
     max-height: 150px;
     text-align: center;
-    border: 1px solid #D23D20;
     position: relative;
     margin-left: 20px;
     margin-right: 20px;
@@ -118,23 +92,25 @@ span.holder-icon > span {
     line-height: 100px;
 }
 span.legend-icon {
-    display: block;
-    background-color: #AC1E01;
-    border-top: 1px solid #D23D20;
+    display: table;
+    background-color: #333333;
     height: 50px;
     padding-top: 5px;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
+}
+span.legend-icon > span {
+    display: table-cell;
+    vertical-align: middle;
 }
 .card-pick.selected {
-    background-color: #000000;
-    border-color: #5C5C5C;
+    background-color: #CC2100;
 }
 .card-pick.selected span.legend-icon {
-    background-color: #000000;
-    border-color: #5C5C5C;
+    background-color: #CC2100;
 }
 .justify-items {
     text-align: center;
@@ -164,22 +140,6 @@ span.legend-icon {
     background-color: #8DC63F;
     padding-bottom: 40px;
 }
-.result.yes {
-    background-color: #8DC63F;
-}
-.result.no {
-    background-color: #AC1E01;
-}
-.triangle.center.yes {
-    border-left: 80px solid transparent;
-    border-right: 80px solid transparent;
-    border-top: 80px solid #8DC63F;
-}
-.triangle.center.no {
-    border-left: 80px solid transparent;
-    border-right: 80px solid transparent;
-    border-top: 80px solid #AC1E01;
-}
 .center {
     margin: 0 auto;
     left: 0;
@@ -207,17 +167,18 @@ h1#result-big-title {
     font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
     color: #fff;
     font-weight: 400;
-    font-size: 90px;
+    font-size: 50px;
     text-shadow: 1px 1px 0 #000;
-    display: initial;
+    margin-bottom: 10px;
 }
 h4#result-explanation {
     font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
     color: #fff;
-    font-weight: 400;
-    font-size: 25px;
-    text-shadow: 1px 1px 0 #000;
-    display: inline;
+    font-weight: 200;
+    font-size: 24px;
+    /* text-shadow: 1px 1px 0 #000; */
+    
+    line-height: normal;
 }
 .text-body {
     font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
@@ -227,7 +188,8 @@ h4#result-explanation {
     line-height: 22px;
 }
 #explanation {
-    padding-bottom: 50px;
+    padding-bottom: 80px;
+    margin-top: 50px;
 }
 #live-demo {
     color: white;
@@ -236,15 +198,76 @@ h4#result-explanation {
 #explanation li.text-body {
     margin-bottom: 10px;
 }
+.result-top {
+    background-color: #002137;
+    position: relative;
+    margin-bottom: 70px;
+}
+.triangle.center.blue {
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #002137;
+    position: absolute;
+}
+.result {
+    background: #0066aa;
+    /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNjZhYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwODZjYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDY2YWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left, #0066aa 0%, #0086ca 50%, #0066aa 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #0066aa), color-stop(50%, #0086ca), color-stop(100%, #0066aa));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(left, #0066aa 0%, #0086ca 50%, #0066aa 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(left, #0066aa 0%, #0086ca 50%, #0066aa 100%);
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(left, #0066aa 0%, #0086ca 50%, #0066aa 100%);
+    /* IE10+ */
+    
+    background: linear-gradient(to right, #0066aa 0%, #0086ca 50%, #0066aa 100%);
+    /* W3C */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0066aa', endColorstr='#0066aa', GradientType=1);
+    /* IE6-8 */
+    
+    height: 380px;
+}
+.result img {
+    position: absolute;
+    right: 30px;
+    top: -50px;
+    display: none;
+}
+#experts {
+    padding-bottom: 50px;
+}
+.mkto-frame-wrapper {
+    width: 380px;
+    display: inline-block;
+    float: right;
+    background-color: #333;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 @media screen and (max-width: 767px) {
     a.card-pick {
-        margin: 20px;
+        margin: 1px;
+        width: 49%;
+        float: left;
     }
     h1.title1 {
         line-height: normal;
+        font-size: 30px;
     }
     h1.title2 {
         line-height: normal;
+        font-size: 18px;
     }
     .section {
         padding-bottom: 0;
@@ -252,13 +275,53 @@ h4#result-explanation {
     #explanation {
         padding-bottom: 0;
     }
+    h5.section-sub-title {
+        font-size: 18px;
+    }
+    .result img {
+        width: 110px;
+    }
+    .result {
+        height: auto !important;
+    }
+    div#explanation {
+        margin-top: 0;
+        padding-bottom: 20px;
+    }
+    .mngt-person h3 {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+    .mngt-person p {
+        font-size: 16px;
+        font-weight: lighter;
+        font-family: 'myriad-pro', Arial, sans-serif;
+    }
+    .mngt-person .photo {
+        margin-bottom: 10px;
+    }
+    #explanation .span3 {
+        width: 49%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0px;
+        text-align: center;
+    }
+    #live-demo img {
+        display: none;
+    }
+    .mkto-frame-wrapper {
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
 }
 </style>
 <!--Header-->
-<div style="background-color:#cc2200; height:60px">
+<div style="background-color:#000; height:60px">
     <div class="container">
         <div class="row">
-            <div class="span4" style="margin-top: 10px; %MOBILE% text-align: center; %/MOBILE%">
+            <div class="span4" style="margin-top: 13px; %MOBILE% text-align: center; %/MOBILE%">
                 <a href="/"><img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=os-logo2&amp;v=20150113154353" /> </a>
             </div>
             %WEB%
@@ -272,13 +335,13 @@ h4#result-explanation {
 <div class="top-section">
     <div class="container">
         <div class="row">
-            <div class="span12" style="  height:420px; ">
-                <h1 class="title1" style="margin-top: 90px; ">
-                  Is Your App a Good Fit for the Cloud?
-              </h1>
-                <h1 class="title2" style=" margin-top: 40px; ">
-                  This assessment will help you decide whether the cloud is right for your app and the expected app delivery timeline using OutSystems Platform.
-              </h1>
+            <div class="span12">
+                <h1 class="title1" style="margin-top: 50px; ">
+          Is a Rapid Application Delivery (RAD) Platform Right for Your App?
+        </h1>
+                <h1 class="title2" style=" margin-top: 40px; margin-bottom: 50px; ">
+          Run your project through our quick assessment tool to validate if a modern RAD approach is a good fit for you...
+        </h1>
             </div>
         </div>
     </div>
@@ -289,34 +352,19 @@ h4#result-explanation {
         <div class="row">
             <div class="span12">
                 <span class="triangle-blue">&nbsp;</span>
-                <h1 class="section-title" style="margin-bottom: 15px;">What platforms will your app run in?</h1>
-                <h5 class="section-sub-title">Select your choice!</h5>
+                <h1 class="section-title" style="margin-bottom: 15px;">
+          What platforms will your app run in?
+        </h1>
+                <h5 class="section-sub-title">Select all that apply!</h5>
                 <div class="row">
                     <div class="span12">
                         <div class="justify-items">
-                            <a class="card-pick selected" href="#" multi-select="true" data-name="web">
-                                <span class="holder-icon">
-                                    <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">Web</span>
+                            <a class="card-pick" data-name="web" href="#" multi-select="true"><span class="holder-icon"><span class="osicon-browser">&nbsp;</span> </span> <span class="legend-icon"><span>Web</span> </span> </a>
+                            <a class="card-pick" data-name="ios" href="#" multi-select="true"> <span class="holder-icon"> <span class="osicon-apple">&nbsp;</span> </span> <span class="legend-icon"><span>iOS</span> </span>
                             </a>
-                            <a class="card-pick" href="#" multi-select="true" data-name="ios">
-                                <span class="holder-icon">
-                                    <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">iOS</span>
+                            <a class="card-pick" data-name="android" href="#" multi-select="true"> <span class="holder-icon"> <span class="osicon-android">&nbsp;</span> </span> <span class="legend-icon"><span>Android</span> </span>
                             </a>
-                            <a class="card-pick" href="#" multi-select="true" data-name="android">
-                                <span class="holder-icon">
-                                    <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">Android</span>
-                            </a>
-                            <a class="card-pick" href="#" multi-select="true" data-name="windows">
-                                <span class="holder-icon">
-                                    <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">Windows</span>
+                            <a class="card-pick" data-name="windows" href="#" multi-select="true"> <span class="holder-icon"> <span class="osicon-windows">&nbsp;</span> </span> <span class="legend-icon"><span>Windows</span> </span>
                             </a>
                         </div>
                     </div>
@@ -325,82 +373,70 @@ h4#result-explanation {
         </div>
     </div>
 </div>
-<!--Section what-type -->
-<div class="section gray" id="what-type">
-    <div class="container">
-        <div class="row">
-            <div class="span12">
-                <h1 class="section-title">
-                  What type of app is yours?
-              </h1>
-                <div class="row">
-                    <div class="span12">
-                        <div class="justify-items">
-                            <a class="card-pick selected" href="#" data-name="request-approval-workflow">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">Request Approval Workflow</span>
-                            </a>
-                            <a class="card-pick" href="#" data-name="complex-business-process">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">Complex Business Process</span>
-                            </a>
-                            <a class="card-pick" href="#" data-name="data-entering-validation">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">Data Entering &amp; Validation</span>
-                            </a>
-                            <a class="card-pick" href="#" data-name="analytics-dashboard">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">Analytics &amp; Dashboard</span>
-                            </a>
-                            <a class="card-pick" href="#" data-name="quoting-simulator-engine-other">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">Quoting Simulator/Engine/Other</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--Section what-type 
+<div class="section" id="what-type">
+<div class="container">
+<div class="row">
+<div class="span12">
+<h1 class="section-title">
+What type of app is yours?
+</h1>
+<div class="row">
+<div class="span12">
+<div class="justify-items">
+<a class="card-pick" href="#" data-name="request-approval-workflow">
+<span class="holder-icon">
+<span class="osicon-list">&nbsp;</span>
+</span>
+<span class="legend-icon"><span>Request Approval Workflow</span>
+</a>
+<a class="card-pick" href="#" data-name="complex-business-process">
+<span class="holder-icon">
+<span class="osicon-list">&nbsp;</span>
+</span>
+<span class="legend-icon"><span>Complex Business Process</span>
+</a>
+<a class="card-pick" href="#" data-name="data-entering-validation">
+<span class="holder-icon">
+<span class="osicon-list">&nbsp;</span>
+</span>
+<span class="legend-icon"><span>Data Entering &amp; Validation</span>
+</a>
+<a class="card-pick" href="#" data-name="analytics-dashboard">
+<span class="holder-icon">
+<span class="osicon-list">&nbsp;</span>
+</span>
+<span class="legend-icon"><span>Analytics &amp; Dashboard</span>
+</a>
+<a class="card-pick" href="#" data-name="quoting-simulator-engine-other">
+<span class="holder-icon">
+<span class="osicon-list">&nbsp;</span>
+</span>
+<span class="legend-icon"><span>Quoting Simulator/Engine/Other</span>
+</a>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+-->
 <!--Section how-complex -->
 <div class="section" id="how-complex">
     <div class="container">
         <div class="row">
             <div class="span12">
                 <h1 class="section-title">
-                  How complex will your app be?
-              </h1>
+          How complex will your app be?
+        </h1>
                 <div class="row">
                     <div class="span12">
                         <div class="justify-items">
-                            <a class="card-pick selected" href="#" data-name="up-to-5-screens">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">Up to 5 screens</span>
+                            <a class="card-pick" data-name="up-to-5-screens" href="#"><span class="holder-icon"><span class="osicon-screens">&nbsp;</span> </span> <span class="legend-icon"><span>Up to 5 screens</span> </span> </a>
+                            <a class="card-pick" data-name="up-to-15-screens" href="#"> <span class="holder-icon"> <span class="osicon-screensplus">&nbsp;</span> </span> <span class="legend-icon"><span>Up to 15 screens</span> </span>
                             </a>
-                            <a class="card-pick" href="#" data-name="up-to-15-screens">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">Up to 15 screens</span>
-                            </a>
-                            <a class="card-pick" href="#" data-name="more-15-screens">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">More than 15 screens</span>
+                            <a class="card-pick" data-name="more-15-screens" href="#"> <span class="holder-icon"> <span class="osicon-screenstons">&nbsp;</span> </span> <span class="legend-icon"><span>More than 15 screens</span> </span>
                             </a>
                         </div>
                     </div>
@@ -410,33 +446,20 @@ h4#result-explanation {
     </div>
 </div>
 <!--Section how-many-users -->
-<div class="section gray" id="how-many-users">
+<div class="section" id="how-many-users">
     <div class="container">
         <div class="row">
             <div class="span12">
                 <h1 class="section-title">
-                  How many users will access your app?
-              </h1>
+          How many users will access your app?
+        </h1>
                 <div class="row">
                     <div class="span12">
                         <div class="justify-items">
-                            <a class="card-pick selected" href="#" data-name="less-100">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">Less than 100</span>
+                            <a class="card-pick" data-name="less-100" href="#"><span class="holder-icon"><span class="osicon-people">&nbsp;</span> </span> <span class="legend-icon"><span>Less than 100</span> </span> </a>
+                            <a class="card-pick" data-name="100-200" href="#"> <span class="holder-icon"> <span class="osicon-peopleplus">&nbsp;</span> </span> <span class="legend-icon"><span>100-1000</span> </span>
                             </a>
-                            <a class="card-pick" href="#" data-name="100-200">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">100-1000</span>
-                            </a>
-                            <a class="card-pick" href="#" data-name="1000">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">1000+</span>
+                            <a class="card-pick" data-name="1000" href="#"> <span class="holder-icon"> <span class="osicon-peopletons">&nbsp;</span> </span> <span class="legend-icon"><span>1000+</span> </span>
                             </a>
                         </div>
                     </div>
@@ -450,35 +473,19 @@ h4#result-explanation {
     <div class="container">
         <div class="row">
             <div class="span12">
-                <h1 class="section-title">
-                  What type of users will access your app?
-              </h1>
+                <h1 class="section-title" style="margin-bottom: 15px;">
+          What type of users will access your app?
+        </h1>
+                <h5 class="section-sub-title">Select all that apply!</h5>
                 <div class="row">
                     <div class="span12">
                         <div class="justify-items">
-                            <a class="card-pick selected" href="#" data-name="employees">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">My Employees</span>
+                            <a class="card-pick" data-name="employees" href="#" multi-select="true"><span class="holder-icon"><span class="osicon-meeting">&nbsp;</span> </span> <span class="legend-icon"><span>My Employees</span> </span> </a>
+                            <a class="card-pick" data-name="customers" href="#" multi-select="true"> <span class="holder-icon"> <span class="osicon-group">&nbsp;</span> </span> <span class="legend-icon"><span>My Customers</span> </span>
                             </a>
-                            <a class="card-pick" href="#" data-name="customers">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">My Customers</span>
+                            <a class="card-pick" data-name="partners" href="#" multi-select="true"> <span class="holder-icon"> <span class="osicon-partners">&nbsp;</span> </span> <span class="legend-icon"><span>My Partners</span> </span>
                             </a>
-                            <a class="card-pick" href="#" data-name="partners">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">My Partners</span>
-                            </a>
-                            <a class="card-pick" href="#" data-name="everybody">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">Everybody</span>
+                            <a class="card-pick" data-name="everybody" href="#" multi-select="true"> <span class="holder-icon"> <span class="osicon-worldfull">&nbsp;</span> </span> <span class="legend-icon"><span>Everybody</span> </span>
                             </a>
                         </div>
                     </div>
@@ -488,33 +495,21 @@ h4#result-explanation {
     </div>
 </div>
 <!--Section what-data -->
-<div class="section gray" id="what-data">
+<div class="section" id="what-data">
     <div class="container">
         <div class="row">
             <div class="span12">
-                <h1 class="section-title">
-                  What existing data will your app need?
-              </h1>
+                <h1 class="section-title" style="margin-bottom: 15px;">
+          What existing data will your app need?
+        </h1>
+                <h5 class="section-sub-title">Select all that apply!</h5>
                 <div class="row">
                     <div class="span12">
                         <div class="justify-items">
-                            <a class="card-pick selected" href="#" data-name="no-data">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">No data required</span>
+                            <a class="card-pick" data-name="no-data" href="#" multi-select="true"><span class="holder-icon"><span class="osicon-nodata">&nbsp;</span> </span> <span class="legend-icon"><span>No data required</span> </span> </a>
+                            <a class="card-pick" data-name="in-house" href="#" multi-select="true"> <span class="holder-icon"> <span class="osicon-database">&nbsp;</span> </span> <span class="legend-icon"><span>Data from my in-house app</span> </span>
                             </a>
-                            <a class="card-pick" href="#" data-name="in-house">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">Data from my in-house app</span>
-                            </a>
-                            <a class="card-pick" href="#" data-name="saas">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">Data from a SaaS</span>
+                            <a class="card-pick" data-name="saas" href="#" multi-select="true"> <span class="holder-icon"> <span class="osicon-cloud">&nbsp;</span> </span> <span class="legend-icon"><span>Data from a SaaS</span> </span>
                             </a>
                         </div>
                     </div>
@@ -529,28 +524,15 @@ h4#result-explanation {
         <div class="row">
             <div class="span12">
                 <h1 class="section-title">
-                  When do you need your app to be live?
-              </h1>
+          When do you need your app to be live?
+        </h1>
                 <div class="row">
                     <div class="span12">
                         <div class="justify-items">
-                            <a class="card-pick selected" href="#" data-name="asap">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">ASAP</span>
+                            <a class="card-pick" data-name="asap" href="#"><span class="holder-icon"><span class="osicon-asap">&nbsp;</span> </span> <span class="legend-icon"><span>ASAP</span> </span> </a>
+                            <a class="card-pick" data-name="few-weeks" href="#"> <span class="holder-icon"> <span class="osicon-calendar">&nbsp;</span> </span> <span class="legend-icon"><span>In a few weeks</span> </span>
                             </a>
-                            <a class="card-pick" href="#" data-name="few-weeks">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">In a few weeks</span>
-                            </a>
-                            <a class="card-pick" href="#" data-name="months">
-                                <span class="holder-icon">
-                                <span class="osicon-list">&nbsp;</span>
-                                </span>
-                                <span class="legend-icon">Couple of months</span>
+                            <a class="card-pick" data-name="months" href="#"> <span class="holder-icon"> <span class="osicon-calendarplus">&nbsp;</span> </span> <span class="legend-icon"><span>Couple of months</span> </span>
                             </a>
                         </div>
                     </div>
@@ -561,64 +543,62 @@ h4#result-explanation {
 </div>
 <!--section result -->
 <div class="result">
+    <div class="result-top">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <h1 class="title2" style=" margin-top: 40px; ">
+            The current result of your assessment is:
+          </h1>
+                </div>
+            </div>
+        </div>
+        <div class="triangle center blue">
+            &nbsp;
+        </div>
+    </div>
     <div class="container">
         <div class="row">
-            <div class="span12">
-                <h1 class="title2" style=" margin-top: 40px; ">
-                  Your App Assessment Report
-              </h1>
+            <div class="span6" style="position: relative;">
+                <img id="maybe" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=MAYBE-img" /> <img id="yes" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=YES-img" /> <img alt="" id="incomplete" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=Incomplete-img" />
             </div>
             <div class="span6">
-                &nbsp;
-            </div>
-            <div class="span6">
-                <h1 id="result-big-title">Yes.</h1>
-                <h4 id="result-explanation">Your app is a good candidate to run on a cloud platform.</h4>
+                <h1 id="result-big-title">
+          Yes.
+        </h1>
+                <h4 id="result-explanation">
+          Your app is a good candidate to run on a cloud platform.
+        </h4>
             </div>
         </div>
     </div>
 </div>
-
-
 <!--Section explanation -->
 <div id="explanation">
     <div class="container">
         <div class="row">
             <div class="span12">
-                <h1 class="section-title">Get a Free Consulation With App Expert and an Extended Report</h1>
+                <h1 class="section-title">Want a Deeper Review by an Expert?</h1>
 
-                <h5 class="section-sub-title">We can help you move away from big software projects that take too much time, too much money and never give users what they want. That’s why we’re offering a free consultation with an App Expert - to show you how you can deliver your app in the cloud in as little as three weeks.</h5>
+                <h5 class="section-sub-title">We have a team of experts who create applications with OutSystems Platform every day that are available to walk through your specific requirements and give you a detailed written assessment of whether a RAD solution is right for your project.</h5>
             </div>
 
-            <div class="span6">
-                <p class="text-body">Our App Experts standing by to help evaluate your needs and discuss the most common pitfalls with you.</p>
-
-                <p class="text-body" style="font-weight:400; margin-top:40px;">He or she will review your:</p>
-
-                <div class="bullets">
-                    <ol style="list-style-type: disc;padding-left: 20px;">
-                        <li class="text-body"><span>Needed timelines</span>
-                        </li>
-                        <li class="text-body"><span>Specific way of working</span>
-                        </li>
-                        <li class="text-body"><span>What your desired outcome is</span>
-                        </li>
-                        <li class="text-body"><span>Existing apps and systems that need to be connected</span>
-                        </li>
-                        <li class="text-body"><span>Specific requirements like compliance and security</span>
-                        </li>
-                    </ol>
-                </div>
-
-                <p class="text-body" style="margin-top:40px;">If you’d like this free assessment, please fill out the form so that our App Expert has all the information he or she needs to prepare prior to your call.</p>
+            <div class="span3"><img alt="" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=rep-expert&amp;v=20150115170434">
             </div>
 
-            <div class="span6">&nbsp;</div>
+            <div class="span3"><img alt="" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=rep-pitfalls&amp;v=20150115170434">
+            </div>
+            <div class="span3"><img alt="" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=rep-quote&amp;v=20150115170434">
+            </div>
+            <div class="span3"><img alt="" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=rep-timeline&amp;v=20150115170434">
+            </div>
+
+
+
+
         </div>
     </div>
 </div>
-
-
 <!--Section live-demo -->
 <div id="live-demo" style="background-color:#ac1e01;">
     <div class="container">
@@ -627,72 +607,162 @@ h4#result-explanation {
                 <div class="triangle center">&nbsp;</div>
 
                 <div style="display:block; text-align:center;">
-                    <h1 class="title2" style=" margin-top: 25px; margin-bottom: 10px;">Get Your App Live in Three Weeks...</h1>
+                    <h1 class="title2" style=" margin-top: 25px; margin-bottom: 10px;">Get a Free Expert Consultation</h1>
 
-                    <p class="text-body" style="margin-top:40px;">After the call, our App Experts will manually write an app assessment report and email it to you in 24 hours. Hr or she will share with you:</p>
+                    <p class="text-body" style="margin-top:40px;">The detailed written assessment will include:</p>
+
                     <div>
                         <ol style="list-style-type: disc;padding-left: 20px;">
                             <li class="text-body"><span>Specific advice that will help you ensure your app meets business and user requirements</span>
                             </li>
-                            <li class="text-body"><span>A checklist of the most important pitfalls</span>
+                            <li class="text-body"><span>Checklist of possible gotchas for your kind of app</span>
                             </li>
-                            <li class="text-body"><span>What your desired outcome is</span>
-                            </li>
-                            <li class="text-body"><span>The app delivery timeline</span>
+                            <li class="text-body"><span>Delivery timeline and estimated budget for your app</span>
                             </li>
 
                         </ol>
                     </div>
                 </div>
 
-                <div style="text-align:right;margin-right: 25px;"><img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=arrow-form&amp;v=20150114165038">
+                <div style="text-align:right;margin-right: -25px;"><img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=arrow-form&amp;v=20150115171232">
                 </div>
             </div>
-
-            <div class="span6" style="background-color: #333; margin-bottom:40px;  margin-top:40px;  ">
-                <iframe frameborder="0" id="mkto_frame" scrolling="no" src="http://go1.outsystems.com/MA-AppsV2.html?content=employee-onboarding-app&amp;__utma=232127691.1696621216.1417444545.1421247283.1421250997.21&amp;__utmb=232127691.12.10.1421250997&amp;__utmc=232127691&amp;__utmx=-&amp;__utmz=232127691.1419248541.9.3.utmcsr=extranetqa.outsystems.net|utmccn=(referral)|utmcmd=referral|utmcct=/&amp;__utmv=-&amp;__utmk=34761826" style="margin-bottom: 10px; margin-top: 30px; width: 481px; height: 390px;" type="text/html"></iframe>
+            <div class="span6" style=" margin-bottom:40px;  margin-top:40px;  ">
+                <div class="mkto-frame-wrapper">
+                    <iframe frameborder="0" id="mkto_frame" scrolling="no" src="http://go1.outsystems.com/WC-Contact-Us_Contact-Us---Appfit-Form-LP.html" style="margin-bottom: 10px; margin-top: 15px; width: 100%; height: 374px;" type="text/html"></iframe>
+                </div>
                 <script>
                 var _gaq = _gaq || [];
                 _gaq.push(function() {
                     var pageTracker = _gat._getTrackerByName();
                     var iframe = document.getElementById('mkto_frame');
-                    iframe.src = pageTracker._getLinkerUrl('http://go1.outsystems.com/MA-AppsV2.html?content=employee-onboarding-app');
+                    iframe.src = pageTracker._getLinkerUrl('http://go1.outsystems.com/WC-Contact-Us_Contact-Us---Appfit-Form-LP.html');
                 });
                 </script>
             </div>
         </div>
     </div>
 </div>
-<!--Footer-->
-<!-- Text font-size different from the mockup-->
-<!-- Background color different from the mockup-->
-<div style="background-color:#333; %WEB% padding-top: 60px;padding-bottom: 60px; %/WEB% %MOBILE% padding-top: 20px;padding-bottom: 20px; %/MOBILE%">
+<!--Section experts 
+<div id="experts">
     <div class="container">
-        <div class="row" style="margin-top: 20px;">
+        <div class="row">
             <div class="span12">
-                <h3 class="text-white" style="text-align:left; font-size:20px;margin-bottom: 0px;">
-                  OutSystems provides the only open, high-productivity application platform that makes it easy to create, deploy and manage enterprise mobile and web applications.
-                  <br />
-                  &nbsp;
+                <h1 class="section-title" id="experts-anchor">Experts Team</h1>
+                <div class="row">
+                    <div class="span3">
+                        <div class="mngt-person" style="opacity: 1;">
+                            <div class="photo" style="cursor: auto;">
+                                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=expert-amadeira" style="display: block;cursor: auto;" />
+                            </div>
+                            <h3>
+                Andr&eacute; Madeira
               </h3>
-                <h3 style="font-size:20px;">
-                  <a class="lk" href="https://www.outsystems.com" style=" font-weight:normal; %MOBILE% text-align:center; display: block; %/MOBILE%">www.outsystems.com</a>
+                            <p>
+                                <strong>Manager - US Expert Services</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="mngt-person" style="opacity: 1;">
+                            <div class="photo" style="cursor: auto;">
+                                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=expert-billy" style="display: block;cursor: auto;" />
+                            </div>
+                            <h3>
+                Bill Brady
               </h3>
+                            <p>
+                                <strong>Sales Engineer</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="mngt-person" style="opacity: 1;">
+                            <div class="photo" style="cursor: auto;">
+                                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=expert-isaac" style="display: block;cursor: auto;" />
+                            </div>
+                            <h3>
+                Isaac Blaise
+              </h3>
+                            <p>
+                                <strong>Sales Engineer</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="mngt-person" style="opacity: 1;">
+                            <div class="photo" style="cursor: auto;">
+                                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=expert-mbaltazar" style="display: block;cursor: auto;" />
+                            </div>
+                            <h3>
+                Miguel Baltazar
+              </h3>
+                            <p>
+                                <strong>Director</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+-->
+<!--Footer-->
+<!-- Text font-size different from the mockup-->
+<!-- Background color different from the mockup-->
+<div style="background-color: #000000; padding-top: 60px;padding-bottom: 40px;">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <p class="text-body" style="text-align:left; font-size:20px;margin-bottom: 0px;color: white;">OutSystems provides the only open, high-productivity application platform that makes it easy to create, deploy and manage enterprise mobile and web applications.
+                    <br>
+                    <br>
+                </p>
+                <p class="text-body">
+                    <a class="" href="https://www.outsystems.com" style=" color: white;">www.outsystems.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="background-color: #000000;    border-top: 1px solid #606060;">
+    <div id="footer-bottom-wrapper" style="background-color: #000;text-align: center;">
+        <div class="container">
+            <div class="row" id="footer-bottom">
+                <div class="legal span12">
+                    <p>
+                        Built with <a class="footer-op-link" href="/platform/?ref=f" style="color: gray;">OutSystems<sup>®</sup> Platform</a>&nbsp;- OutSystems © All rights reserved.
+                    </p>
+                    <ul>
+                        <li><a href="/legal/terms-of-use/" title="Terms &amp; Conditions">Terms &amp; Conditions</a>
+                        </li>
+                        <li><a href="/legal/terms-of-use/privacy-statement/#7">About Cookies</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
+var sectionsWithoutSelection = false;
+
 function validatePicks() {
     $('.section').each(function(index, el) {
         var currSection = $(el);
         var howManySelected = $(currSection).has('.selected').length;
         if (howManySelected === 0) {
-            currSection.addClass('section-error');
+            //currSection.addClass('section-error');
+            sectionsWithoutSelection = true;
+            return false;
         } else {
-            currSection.removeClass('section-error');
+            //currSection.removeClass('section-error');
+            sectionsWithoutSelection = false;
         }
     });
+    calcResult();
 }
 
 function calcResult() {
@@ -700,37 +770,90 @@ function calcResult() {
     var resultDiv = $('.result');
     var bigText = $('#result-big-title');
     var explanation = $('#result-explanation');
+    var imgMaybe = $('img#maybe');
+    var imgYes = $('img#yes');
+    var imgIncomplete = $('img#incomplete');
     var result = true;
-
     //since is a no if we have ALL rules
-    //Complex App, In-House Data, Customer App, ASAP
-    //four rules, so we need to check if the four are selected
-    var isExclusion_1 = (($("a.card-pick.selected[data-name='complex-business-process']").length +
+    //In-House Data, Customer App, ASAP
+    //3 rules, so we need to check if the 3 are selected
+    var isExclusion_1 = ((
         $("a.card-pick.selected[data-name='in-house']").length +
         $("a.card-pick.selected[data-name='customers']").length +
-        $("a.card-pick.selected[data-name='asap']").length) === 4);
-
+        $("a.card-pick.selected[data-name='asap']").length) === 3);
     //is a GO if is not an exclusion
     result = !isExclusion_1;
+    if (sectionsWithoutSelection) {
+        //didn't answered to all
+        imgIncomplete.css({
+            display: 'block'
+        });
+        imgMaybe.css({
+            display: 'none'
+        });
+        imgYes.css({
+            display: 'none'
+        });
+        bigText.text('Oops.');
+        explanation.text('Answer the questions above first so we can gauge fit of your app to a Rapid Application Delivery (RAD) Platform.');
 
-    if (result) {
-        resultDiv.removeClass('no').addClass('yes');
+
+        //SEND TO MKTO app_fit_result__c
+
+    } else if (result) {
+        //yes
+        imgYes.css({
+            display: 'block'
+        });
+        imgMaybe.css({
+            display: 'none'
+        });
+        imgIncomplete.css({
+            display: 'none'
+        });
+        resultDiv.removeClass('maybe').addClass('yes');
         //triangle.removeClass('no').addClass('yes');
-
         bigText.text('Yes.');
-        explanation.text('Your app is a good candidate to run on a cloud platform.');
+        explanation.text('Your app is a great fit for a Rapid Application Delivery (RAD) Platform.');
 
+
+        //SEND TO MKTO app_fit_result__c
 
     } else {
-        resultDiv.removeClass('yes').addClass('no');
+        //maybe
+        imgMaybe.css({
+            display: 'block'
+        });
+        imgYes.css({
+            display: 'none'
+        });
+        imgIncomplete.css({
+            display: 'none'
+        });
+        resultDiv.removeClass('yes').addClass('maybe');
         //triangle.removeClass('yes').addClass('no');
+        bigText.text('Maybe.');
+        explanation.text('Your app is likely a fit for a Rapid Application Delivery (RAD) Platform.');
 
-        bigText.text('No.');
-        explanation.text('Your app is not a good candidate to run on a cloud platform.');
+
+        //SEND TO MKTO app_fit_result__c
     }
 }
 $(function() {
+    $('#experts-link').click(function() {
+        $('html, body').animate({
+            scrollTop: ($('#experts-anchor').offset().top - 200)
+        }, 500);
+        return false;
+    });
+
     validatePicks();
+
+    $('.section').each(function(index, el) {
+        if (index % 2 !== 0) { /* we are even */
+            $(el).addClass('gray');
+        }
+    });
 });
 $('a.card-pick').click(function(event) {
     event.preventDefault();
@@ -740,6 +863,83 @@ $('a.card-pick').click(function(event) {
         clicked.siblings().removeClass('selected');
     }
     validatePicks();
-    calcResult();
+
+    var input;
+
+    var card = clicked.attr('data-name');
+    switch (card) {
+        case "web":
+        case "ios":
+        case "android":
+        case "windows":
+            input = 'app_fit_platforms__c';
+            break;
+
+        case "up-to-5-screens":
+        case "up-to-15-screens":
+        case "more-15-screens":
+            input = 'app_fit_complexity__c';
+            break;
+
+        case "less-100":
+        case "100-200":
+        case "100-200":
+            input = 'Number_of_Users__c';
+            break;
+
+        case "employees":
+        case "customers":
+        case "partners":
+        case "everybody":
+            input = 'app_fit_type__c';
+            break;
+
+        case "no-data":
+        case "in-house":
+        case "saas":
+            input = 'app_fit_data__c';
+            break;
+
+        case "asap":
+        case "few-weeks":
+        case "months":
+            input = 'app_fit_timeframe__c';
+            break;
+
+        default:
+            input = '';
+            break;
+    }
+
+    if (clicked.hasClass('selected')) {
+
+        if (clicked.attr('multi-select') === 'true') {
+
+            var selects = card;
+            clicked.siblings('.selected').each(function(index, el) {
+                selects = selects + ', ' + $(el).attr('data-name');
+            });
+
+            var mkto_KM_info = {
+                'input': input,
+                'origin': 'website-app-fit',
+                'currPageContext': selects
+            };
+
+        } else {
+
+            var mkto_KM_info = {
+                'input': input,
+                'origin': 'website-app-fit',
+                'currPageContext': card
+            };
+
+        }
+
+        var receiverFrame = document.getElementById("mkto_frame").contentWindow;
+        receiverFrame.postMessage(mkto_KM_info, '*');
+    
+    }
+
 });
 </script>
