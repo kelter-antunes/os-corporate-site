@@ -413,7 +413,7 @@ $(function() {
 
                 //marketo
                 Munchkin.munchkinFunction('visitWebPage', {
-                    url: '/view-video-start-wathcing',
+                    url: '/view-video-start-watching',
                     params: video.name()
                 });
             }
