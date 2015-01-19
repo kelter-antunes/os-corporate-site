@@ -25,5 +25,11 @@ eventer(messageEvent, function(e) {
     };
 
 
+    if (parentData.origin === 'website-app-fit') {
+        $('input[name=' + parentData.input + ']').val(parentData.currPageContext);
+
+    };
+
+
 
 }, false);

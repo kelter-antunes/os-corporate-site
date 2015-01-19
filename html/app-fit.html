@@ -457,9 +457,9 @@ What type of app is yours?
                     <div class="span12">
                         <div class="justify-items">
                             <a class="card-pick" data-name="less-100" href="#"><span class="holder-icon"><span class="osicon-people">&nbsp;</span> </span> <span class="legend-icon"><span>Less than 100</span> </span> </a>
-                            <a class="card-pick" data-name="100-200" href="#"> <span class="holder-icon"> <span class="osicon-peopleplus">&nbsp;</span> </span> <span class="legend-icon"><span>100-1000</span> </span>
+                            <a class="card-pick" data-name="100-1000" href="#"> <span class="holder-icon"> <span class="osicon-peopleplus">&nbsp;</span> </span> <span class="legend-icon"><span>100-1000</span> </span>
                             </a>
-                            <a class="card-pick" data-name="1000" href="#"> <span class="holder-icon"> <span class="osicon-peopletons">&nbsp;</span> </span> <span class="legend-icon"><span>1000+</span> </span>
+                            <a class="card-pick" data-name="1000+" href="#"> <span class="holder-icon"> <span class="osicon-peopletons">&nbsp;</span> </span> <span class="legend-icon"><span>1000+</span> </span>
                             </a>
                         </div>
                     </div>
@@ -507,7 +507,7 @@ What type of app is yours?
                     <div class="span12">
                         <div class="justify-items">
                             <a class="card-pick" data-name="no-data" href="#" multi-select="true"><span class="holder-icon"><span class="osicon-nodata">&nbsp;</span> </span> <span class="legend-icon"><span>No data required</span> </span> </a>
-                            <a class="card-pick" data-name="in-house" href="#" multi-select="true"> <span class="holder-icon"> <span class="osicon-database">&nbsp;</span> </span> <span class="legend-icon"><span>Data from my in-house app</span> </span>
+                            <a class="card-pick" data-name="in-house" href="#" multi-select="true"> <span class="holder-icon"> <span class="osicon-database">&nbsp;</span> </span> <span class="legend-icon"><span>Data from my <br>in-house app</span> </span>
                             </a>
                             <a class="card-pick" data-name="saas" href="#" multi-select="true"> <span class="holder-icon"> <span class="osicon-cloud">&nbsp;</span> </span> <span class="legend-icon"><span>Data from a SaaS</span> </span>
                             </a>
@@ -777,10 +777,12 @@ function calcResult() {
     //since is a no if we have ALL rules
     //In-House Data, Customer App, ASAP
     //3 rules, so we need to check if the 3 are selected
-    var isExclusion_1 = ((
+    var exlusionLengh = (
         $("a.card-pick.selected[data-name='in-house']").length +
         $("a.card-pick.selected[data-name='customers']").length +
-        $("a.card-pick.selected[data-name='asap']").length) === 3);
+        $("a.card-pick.selected[data-name='asap']").length);
+
+    var isExclusion_1 = ( exlusionLengh < 4 && exlusionLengh > 0 );
     //is a GO if is not an exclusion
     result = !isExclusion_1;
     if (sectionsWithoutSelection) {
@@ -799,6 +801,14 @@ function calcResult() {
 
 
         //SEND TO MKTO app_fit_result__c
+        var mkto_KM_info = {
+            'input': 'app_fit_result__c',
+            'origin': 'website-app-fit',
+            'currPageContext': 'Oops'
+        };
+
+        var receiverFrame = document.getElementById("mkto_frame").contentWindow;
+        receiverFrame.postMessage(mkto_KM_info, '*');
 
     } else if (result) {
         //yes
@@ -818,6 +828,14 @@ function calcResult() {
 
 
         //SEND TO MKTO app_fit_result__c
+        var mkto_KM_info = {
+            'input': 'app_fit_result__c',
+            'origin': 'website-app-fit',
+            'currPageContext': 'Yes'
+        };
+
+        var receiverFrame = document.getElementById("mkto_frame").contentWindow;
+        receiverFrame.postMessage(mkto_KM_info, '*');
 
     } else {
         //maybe
@@ -837,6 +855,14 @@ function calcResult() {
 
 
         //SEND TO MKTO app_fit_result__c
+        var mkto_KM_info = {
+            'input': 'app_fit_result__c',
+            'origin': 'website-app-fit',
+            'currPageContext': 'Maybe'
+        };
+
+        var receiverFrame = document.getElementById("mkto_frame").contentWindow;
+        receiverFrame.postMessage(mkto_KM_info, '*');
     }
 }
 $(function() {
@@ -882,8 +908,8 @@ $('a.card-pick').click(function(event) {
             break;
 
         case "less-100":
-        case "100-200":
-        case "100-200":
+        case "100-1000":
+        case "1000+":
             input = 'Number_of_Users__c';
             break;
 
@@ -911,13 +937,21 @@ $('a.card-pick').click(function(event) {
             break;
     }
 
-    if (clicked.hasClass('selected')) {
+    if (true) {
 
-        if (clicked.attr('multi-select') === 'true') {
+        if (true) {
 
             var selects = card;
+            if (!clicked.hasClass('selected')) {
+                selects = '';
+            }
             clicked.siblings('.selected').each(function(index, el) {
-                selects = selects + ', ' + $(el).attr('data-name');
+                if (selects === '') {
+                    selects = $(el).attr('data-name');
+                } else {
+                    selects = selects + ', ' + $(el).attr('data-name');
+                }
+
             });
 
             var mkto_KM_info = {
@@ -938,7 +972,7 @@ $('a.card-pick').click(function(event) {
 
         var receiverFrame = document.getElementById("mkto_frame").contentWindow;
         receiverFrame.postMessage(mkto_KM_info, '*');
-    
+
     }
 
 });
