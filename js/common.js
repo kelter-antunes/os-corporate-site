@@ -658,4 +658,4 @@ $(document).ready(function() {
 })(navigator.userAgent || navigator.vendor || window.opera);
 
 
-//BADRUZ 4
+//BADRUZ ON THE FRILZ!
