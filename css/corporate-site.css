@@ -7801,11 +7801,11 @@ div.st-result .st-date
 }
 
 .swiftype-widget .autocomplete li.swtpbutton:hover {
-   background: #e6e6e6!important;
+ background: #e6e6e6!important;
 }
 
 .swiftype-widget .autocomplete a:hover {
-   text-decoration: none !important;
+ text-decoration: none !important;
 }
 
 .swiftype-widget .autocomplete ul.WebSite {
@@ -8226,6 +8226,14 @@ a.ressourcelink
   text-align: center;
   font-weight: normal;
   font-size:24px;
+}
+
+.apps-text-white{
+    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    font-size:21px;
 }
 
 .apps-trademark{
