@@ -60,6 +60,11 @@ osjs(".Popup").live("dialogopen", function(a, b) {
     });
 });
 
+function IsEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+}
+
 $(function() {
     if ((/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) && width < 767) {} else {
 
