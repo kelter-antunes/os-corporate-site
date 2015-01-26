@@ -8204,6 +8204,22 @@ a.ressourcelink
 /**** End of Fix *****/
 
 /*** Apps styles ***/
+.apps-title1{
+    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size:50px;
+    text-shadow: 1px 1px 0 #000;
+}
+.apps-title2{
+    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size:32px;
+    text-shadow: 1px 1px 0 #000;
+}
 .apps-title3{
   font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
   color: black;
