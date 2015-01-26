@@ -8201,8 +8201,115 @@ a.ressourcelink
 {
     display:table
 }
-
 /**** End of Fix *****/
+
+/*** Apps styles ***/
+.apps-title3{
+  font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+  color: black;
+  text-align: center;
+  font-weight: normal;
+  font-size:24px;
+}
+
+.apps-trademark{
+  background-color:#333;
+  border-top-style: solid;
+  border-color: #606060;
+  border-width: 1px;
+  font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size:12px;
+  color:#606060;
+}
+
+a.osbtn-white
+{
+  padding:10px 10px;
+  color:#ef6c00 !important;
+  background:#ffffff;
+  border-style: solid;
+  border-color: #ef6c00;
+  border-width: 1px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+}
+
+.osbtn-orange
+{
+  background-color:#ef6c00;
+  border-style: solid;
+  border-color: #ef6c00;
+  border-width: 1px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+}
+
+a.osbtn-orange
+{
+  background-color:#ef6c00;
+  background-image:-moz-linear-gradient(top,#ef6c00,#ac1e01);
+  background-image:-ms-linear-gradient(top,#ef6c00,#ac1e01);
+  background-image:-o-linear-gradient(top,#ef6c00,#ac1e01);
+  background-image:-webkit-gradient(linear,center top,center bottom,from(#ef6c00),to(#ac1e01));
+  background-image:-webkit-linear-gradient(top,#ef6c00,#ac1e01);
+  background-image:linear-gradient(top,#ef6c00,#ac1e01);
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+}
+
+.cta-wrapper-apps
+{
+  background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=stripes&v=201406081625);
+  height:80px;
+  width:100%;
+  border-top:1px solid #909090;
+  border-bottom:1px solid #d9d9d9;
+}
+
+.cta-wrapper-apps p
+{
+  font-family:'myriad-pro',Arial,sans-serif;
+  font-size:19px;
+  color:#000;
+  display:inline-block;
+  margin-top:0;
+  margin-bottom:0;
+  margin-right:35px;
+}
+
+.apps-bullet-text{
+  font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+  color: #606060;
+  text-align: left;
+  font-weight: lighter;
+  font-size:21px;
+  line-height: 28px;
+}
+
+.apps-center{
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.apps-back-circle{
+  border-radius: 90px;
+  background-color: #e6e6e6;
+  display: inline-block;
+  padding: 20px;
+  box-shadow: 2px 3px 5px #808080;
+  margin-bottom:15px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+
+
 /**to fix companie logos position on website*/
 @media only screen and (min-device-width: 767px) {
     .case-study-customer-logo
@@ -8925,5 +9032,3 @@ a.magnific_popup-prev,a.magnific_popup-close,a.magnific_popup-next
     text-decoration: none;
     color: darkred;
 }
-
-/*comment!!!*/
