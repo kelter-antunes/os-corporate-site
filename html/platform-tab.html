@@ -1,174 +1,267 @@
 <style type="text/css">
-body.landing-no-top {
-  background: white;
+.header-hero-wrapper {
+    padding: 0;
+}
+.header-hero-wrapper.home {
+    overflow: hidden;
+}
+.platform .header-hero-wrapper,
+.customers .header-hero-wrapper,
+.resources .header-hero-wrapper,
+.learn-and-support .header-hero-wrapper,
+.about-us .header-hero-wrapper {
+    height: 130px !important;
+}
+.submenuhover {
+    top: 80px;
+}
+.navigation-inner {
+    position: inherit;
+}
+.header-hero-wrapper {
+    padding-top: 0;
+}
+.navigation-inner {
+    height: 80px;
+}
+.navigation-outter.navigation-wrapper {
+    padding-top: 0px;
+}
+.secondary-menu {
+    display: inline-block;
+}
+.secondary-menu a,
+.secondary-menu span {
+    font-family: myriad-pro;
+    font-size: 13px;
+    color: #000;
+    padding: 0 15px 3px;
+    line-height: 20px;
+    display: inline-block;
+    font-weight: 400;
+    text-decoration: none;
+}
+.navigation-items {
+    width: 1013px;
+}
+.navigation-bar li.spacer {
+    /*width: 36px;*/
+}
+.navigation-bar li.try-now {
+    background: #000;
+}
+.navigation-bar li.try-now a:hover,
+.navigation-bar li.active.try-now a:hover {
+    background-color: #CB2100;
+}
+.search_field {
+    margin-right: 5px;
+}
+form input.st-search-input {
+    font-size: 12px;
+    padding: 0 19px 0 6px;
+    height: 20px;
+    width: 105px;
+    color: #CCC;
+    outline: 0;
+    line-height: 22px;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') 111px 1px no-repeat;
+}
+.submenu-hover-sections a {
+    color: #000;
+}
+.submenu-hover-sections .submenuhoverbox-contentheading,
+.submenu-hover-sections .submenuhoverbox-contentheading a {
+    color: #0088cc;
+    text-decoration: none;
+}
+.submenuhoverbox {
+    background-image: none;
+}
+
+body.platform .navigation-bar li.platform a,
+body.customers .navigation-bar li.customers a,
+body.resources .navigation-bar li.resources a,
+body.learn-and-support .navigation-bar li.learn-and-support a,
+body.about-us .navigation-bar li.about-us a {
+    background-color: transparent;
+    color: #fff;
+}
+body.platform .navigation-bar li.platform a span,
+body.customers .navigation-bar li.customers a span,
+body.resources .navigation-bar li.resources a span,
+body.learn-and-support .navigation-bar li.learn-and-support a span,
+body.about-us .navigation-bar li.about-us a span,
+body.mega-menu .navigation-bar li.active a span {
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=nav&v=201406081625') center no-repeat white;
+}
+/* style defined dinamically in the menu hover logic (file common.min.js) */
+
+body.mega-menu .navigation-bar li a span {
+    background: #000 !important;
+}
+body.mega-menu .navigation-bar li.active a span {
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=nav&v=201406081625') center no-repeat white !important;
+}
+
+.second-level-menu-wrapper {
+    float: left;
+    clear: left;
+    width: 100%;
+}
+.second-level-menu-wrapper.fixed {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    left: -14px;
+    z-index: 99;
+    padding-bottom: 10px;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201406081625') center -80px;
+}
+.second-level-menu-wrapper.fixed .span12 {} body.landing-no-top {
+    background: white;
 }
 .submenuhoverbox.product {
-  background-image: none;
-  padding-top: 0;
+    background-image: none;
+    padding-top: 0;
 }
-.light-back {
-  background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-hover-lamp&v=20140923165642") no-repeat;
-  background-position: 25px 0;
-  margin-left: 0;
-  padding-left: 200px;
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-.mobile-back {
-  background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-hover-mobile&v=20140923165642") no-repeat;
-  background-position: 5px 0;
-  margin-left: 0;
-  padding-left: 140px;
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-
 .h3-product-tab {
-  font-size: 24px; 
-  line-height: 28px;
-  font-weight: 600; 
-  color: #333; 
-  margin-top: 0;
-  margin-bottom: 10px;
-  display: block;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: block;
 }
-
 .h6-product-tab {
-  font-size: 16px; 
-  line-height: 22px; 
-  font-weight: 400;  
-  margin-bottom: 10px;
-  margin-bottom: 10px;
-  display: block;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
 }
-
 .submenuhoverbox-firstcontent.light-back a,
 .submenuhoverbox-secondcontent.mobile-back a {
-  text-decoration: none;
-  display: block;
-  font-family: 'myriad-pro',Helvetica,Arial,sans-serif;
+    text-decoration: none;
+    display: block;
+    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
 }
-
 a:hover span.h6-product-tab {
-  text-decoration: underline;
+    text-decoration: underline;
 }
-
+.submenuhover.submenu-hover-sections [class^="osicon-"],
+.submenuhover.submenu-hover-sections[class*=" osicon-"] {
+    color: #c20;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    max-width: 20px;
+    padding-right: 5px;
+    vertical-align: bottom;
+}
 @media screen and (max-width: 767px) {
-  .header-hero-wrapper {
-    %MOBILE%   height: 80px !important;
-    %/MOBILE%  
-  }
-  .light-back {
-    background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-hover-lamp&v=20140923165642") no-repeat;
-    background-position: -15px 22px;
-    background-size: 40%;
-    margin-left: 0;
-    padding-left: 0;
-  }
-  .mobile-back {
-    background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-hover-mobile&v=20140923165642") no-repeat;
-    padding-top: 30px;
-    background-position: -12px 13px;
-    background-size: 40%;
-    margin-left: 0;
-    padding-left: 0;
-    padding-bottom: 10px;
-  }
-
-  .submenuhoverbox-firstcontent.light-back a,
-  .submenuhoverbox-secondcontent.mobile-back a {
-    padding-left: 100px;
-  }
-
-
-  .submenuhoverbox-firstcontent {
-    display: inline-block;
-    text-align: left;
-    width: 100%;
-    margin-left: 0;
-    float: none;
-    margin-top: 0;
-    background-position: 0px 33px;
-    background-size: 90px auto;
-    margin-top: -30px;
-    padding-bottom: 0;
-    margin-bottom: -20px;
-  }
-
-  .submenuhoverbox-secondcontent {
-    display: inline-block;
-    text-align: left;
-    width: 100%;
-    margin-left: 0;
-    float: none;
-    margin-top: 0;
-    background-position: -2px 16px;
-    background-size: 95px auto;
-  }
+    .header-hero-wrapper {} .submenuhoverbox-firstcontent.light-back a,
+    .submenuhoverbox-secondcontent.mobile-back a {
+        padding-left: 100px;
+    }
+    .submenuhoverbox-firstcontent {
+        display: inline-block;
+        text-align: left;
+        width: 100%;
+        margin-left: 0;
+        float: none;
+        margin-top: 0;
+        background-position: 0px 33px;
+        background-size: 90px auto;
+        margin-top: -30px;
+        padding-bottom: 0;
+        margin-bottom: -20px;
+    }
+    .submenuhoverbox-secondcontent {
+        display: inline-block;
+        text-align: left;
+        width: 100%;
+        margin-left: 0;
+        float: none;
+        margin-top: 0;
+        background-position: -2px 16px;
+        background-size: 95px auto;
+    }
 }
 </style>
 <div class="magiccontainer">
-  <div class="submenuhover">
-    <div class="container">
-      <div class="row">
-        <div class="span12 align-center submenuhoverbox product">
-          <div class="row">
-            <div class="span6">
-              <div class="submenuhoverbox-firstcontent light-back">
-               
-               %WEB% 
-               <a href="/platform/">
-                <span class="h3-product-tab">
-                  Enterprise Rapid App Delivery Platform
-                </span>
-                <span class="h6-product-tab" style="display: block;">Learn More...</span>
-              </a>
-              %/WEB%
-              
+    <div class="submenuhover submenu-hover-sections">
+        <div class="container">
+            <div class="row">
+                <div class="span12 align-center submenuhoverbox" style="background-image:none;">
+                    <div class="row">
+                        <h2 style="margin-bottom: 10px;">Rapid app development platform</h2>
+                        <h5 style="margin-bottom: 25px;">One codebase. All devices. Non-proprietary.</h5>
+                        <div class="span4" style="">
+                            <div style="position: absolute;margin-left: -15px;">
+                                &nbsp;
+                            </div>
+                            <div class="submenuhoverbox-secondcontent">
+                                <h6 class="submenuhoverbox-contentheading">
+                                    <a href="/platform/">OutSystems Platform</a>
+                                </h6>
+                                <ul class="list" style="list-style-type: none; font-size:16px">
+                                    <li>
+                                        <span class="osicon-tablet">&nbsp;</span>
+                                        <a href="/platform/madp/">Develop once for all devices</a>
+                                    </li>
+                                    <li>
+                                        <span class="osicon-cogs">&nbsp;</span>
+                                        <a href="/platform/integrate-everything/">Easily integrate existing Systems</a>
+                                    </li>
+                                    <li>
+                                        <span class="osicon-dashboard">&nbsp;</span>
+                                        <a href="/platform/iterate-rapidly/">Rapid delivery, effortless change</a>
+                                    </li>
+                                </ul>
+                                <br />
+                                <a href="/platform/">Full overview &raquo;</a>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="submenuhoverbox-line" style="position: absolute; margin-left: -15px; height: 160px;">&nbsp;</div>
+                            <div class="submenuhoverbox-secondcontent" style=" ">
+                                <h6 class="submenuhoverbox-contentheading">
+                                    <a href="/platform/architecture/">Explore</a>
+                                </h6>
+                                <ul class="list" style="list-style-type: none; font-size:16px">
+                                    <li>
+                                        <a href="/platform/architecture/">Architecture</a>
+                                    </li>
+                                    <li>
+                                        <a href="/apps/">Sample Apps</a>
+                                    </li>
 
-
-              %MOBILE% 
-              <a href="/platform/m/">
-                <span class="h3-product-tab">
-                  Enterprise Rapid App Delivery Platform
-                </span>
-                <span class="h6-product-tab" style="display: block;">Learn More...</span>
-              </a>
-              %/MOBILE%
-              
-
-
+                                    <li>
+                                        <a href="/pricing-and-licensing/">Pricing</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="submenuhoverbox-line" style="position: absolute;margin-left: -15px;height: 160px;">
+                                &nbsp;
+                            </div>
+                            <div class="submenuhoverbox-secondcontent" style=" ">
+                                <h6 class="submenuhoverbox-contentheading">Platform demo</h6>
+                                <a class="popup_link" href="/platform/build-applications-demo/" onclick="hideDropDown()">
+                                    <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=top-nav-video-thumb&amp;v=20150126142308" />
+                                </a>
+                                <br />
+                                <br /> or
+                                <a href="/1/outsystems-platform-demo/" target="_blank">Join us for a live demo</a>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="span6">
-            <div class="submenuhoverbox-secondcontent mobile-back">
-             
-
-             %WEB% 
-             <a href="/platform/madp">
-              <span class="h3-product-tab">
-                Mobile Application Delivery Platform
-              </span>
-              <span class="h6-product-tab" style="display: block;">Learn More...</span>
-            </a> 
-
-            %/WEB%
-
-
-            %MOBILE% 
-            <a href="/platform/madp/m/">
-              <span class="h3-product-tab">
-                Mobile Application Delivery Platform
-              </span>
-              <span class="h6-product-tab" style="display: block;">Learn More...</span>
-            </a> 
-            %/MOBILE%
-
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-</div>
-</div>
 </div>

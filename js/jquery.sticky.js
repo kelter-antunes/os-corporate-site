@@ -1,158 +1,273 @@
-/**
- * StickyScroll
- * written by Rick Harris - @iamrickharris
- *
- * Requires jQuery 1.4+
- *
- * Make elements stick to the top of your page as you scroll
- *
- * See README for details
- *
- */
+$.fn.stkr = function(options){
+    var $sticky = $(this);
+    var originalPosition = $(this).css('position');
 
-(function($) {
-    $.fn.stickyScroll = function(options) {
+    var settings = $.extend({
+        startSticky: 'body',
+        endSticky: null,
+        stickyPosition: 'top-left',
+        top: null,
+        left: null,
+        bottom: null,
+        right: null,
+        offsetStick: 0,
+        offsetUnstick: 0,
+        horizontal: false,
+        toggleVisibility: false,
+        toggleFade: false
+    }, options);
+    
+    $(function(){
+        if (settings.toggleFade && settings.toggleVisibility){
+            return $sticky.css({visibility:'hidden', opacity:0})
+        }
+        if (settings.toggleVisibility){
+            return $sticky.css({visibility: 'hidden'});
+        }else{
+            return $sticky;
+        }
+        if (settings.toggleFade){
+            return $sticky.css({opacity: 0});
+        }else{
+            return $sticky;
+        }
+    });
 
-        var methods = {
-
-            init: function(options) {
-
-                var settings;
-
-                if (options.mode !== 'auto' && options.mode !== 'manual') {
-                    if (options.container) {
-                        options.mode = 'auto';
-                    }
-                    if (options.bottomBoundary) {
-                        options.mode = 'manual';
-                    }
-                }
-
-                settings = $.extend({
-                    mode: 'auto', // 'auto' or 'manual'
-                    container: $('body'),
-                    topBoundary: null,
-                    bottomBoundary: null
-                }, options);
-
-                function bottomBoundary() {
-                    return $(document).height() - settings.container.offset().top - settings.container.attr('offsetHeight');
-                }
-
-                function topBoundary() {
-                    return settings.container.offset().top
-                }
-
-                function elHeight(el) {
-                    return $(el).attr('offsetHeight');
-                }
-
-                // make sure user input is a jQuery object
-                settings.container = $(settings.container);
-                if (!settings.container.length) {
-                    if (console) {
-                        console.log('StickyScroll: the element ' + options.container +
-                            ' does not exist, we\'re throwing in the towel');
-                    }
-                    return;
-                }
-
-                // calculate automatic bottomBoundary
-                if (settings.mode === 'auto') {
-                    settings.topBoundary = topBoundary();
-                    settings.bottomBoundary = bottomBoundary();
-                }
-
-                return this.each(function(index) {
-
-                    var el = $(this),
-                        win = $(window),
-                        id = Date.now() + index,
-                        height = elHeight(el);
-
-                    el.data('sticky-id', id);
-
-                    win.bind('scroll.stickyscroll-' + id, function() {
-                        var top = $(document).scrollTop() + 50,
-                            bottom = $(document).height() - top - height;
-
-                        if (bottom <= settings.bottomBoundary) {
-                            el.offset({
-                                top: $(document).height() - settings.bottomBoundary - height
-                            })
-                                .removeClass('sticky-active')
-                                .removeClass('sticky-inactive')
-                                .addClass('sticky-stopped');
-                        } else if (top > settings.topBoundary) {
-                            el.offset({
-                                top: $(window).scrollTop() + 50
-                            })
-                                .removeClass('sticky-stopped')
-                                .removeClass('sticky-inactive')
-                                .addClass('sticky-active');
-                        } else if (top < settings.topBoundary) {
-                            el.css({
-                                position: '',
-                                top: '',
-                                bottom: ''
-                            })
-                                .removeClass('sticky-stopped')
-                                .removeClass('sticky-active')
-                                .addClass('sticky-inactive');
-                        }
-                    });
-
-                    win.bind('resize.stickyscroll-' + id, function() {
-                        if (settings.mode === 'auto') {
-                            settings.topBoundary = topBoundary();
-                            settings.bottomBoundary = bottomBoundary();
-                        }
-                        height = elHeight(el);
-                        $(this).scroll();
-                    })
-
-                    el.addClass('sticky-processed');
-
-                    // start it off
-                    win.scroll();
-
-                });
-
-            },
-
-            reset: function() {
-                return this.each(function() {
-                    var el = $(this),
-                        id = el.data('sticky-id');
-
-                    el.css({
-                        position: '',
-                        top: '',
-                        bottom: ''
-                    })
-                        .removeClass('sticky-stopped')
-                        .removeClass('sticky-active')
-                        .removeClass('sticky-inactive')
-                        .removeClass('sticky-processed');
-
-                    $(window).unbind('.stickyscroll-' + id);
+    var checkStickSettings = function(){
+        if (settings.stickyPosition=='top-left'){
+            if (settings.toggleFade && settings.toggleVisibility){
+                return $sticky.css({
+                    position: 'fixed',
+                    top: 20, 
+                    left: 20,
+                    opacity: 1,
+                    visibility: 'visible'
                 });
             }
-
+            if (settings.toggleFade){
+                return $sticky.css({
+                position: 'fixed',
+                top: 20, 
+                left: 20,
+                opacity: 1
+                });
+            };
+            if (settings.toggleVisibility){
+                return $sticky.css({
+                position: 'fixed',
+                top: 20, 
+                left: 20,
+                visibility: 'visible',
+                });
+            };
+            if(!settings.toggleFade && !settings.toggleVisibility){
+                return $sticky.css({
+                position: 'fixed',
+                top: 20, 
+                left: 20
+                });
+            };
+        }else if(settings.stickyPosition=='top-right'){
+            if (settings.toggleFade && settings.toggleVisibility){
+                return $sticky.css({
+                    position: 'fixed',
+                    top: 20, 
+                    right: 20,
+                    opacity: 1,
+                    visibility: 'visible'
+                });
+            }
+            if (settings.toggleFade){
+                return $sticky.css({
+                position: 'fixed',
+                top: 20, 
+                right: 20,
+                opacity: 1
+                });
+            };
+            if (settings.toggleVisibility){
+                return $sticky.css({
+                position: 'fixed',
+                top: 20, 
+                right: 20,
+                visibility: 'visible',
+                });
+            };
+            if(!settings.toggleFade && !settings.toggleVisibility){
+                return $sticky.css({
+                position: 'fixed',
+                top: 20, 
+                right: 20
+                });
+            };
+        }else if(settings.stickyPosition=='bottom-right'){
+            if (settings.toggleFade && settings.toggleVisibility){
+                return $sticky.css({
+                    position: 'fixed',
+                    bottom: 20, 
+                    right: 20,
+                    opacity: 1,
+                    visibility: 'visible'
+                });
+            }
+            if (settings.toggleFade){
+                return $sticky.css({
+                position: 'fixed',
+                bottom: 20, 
+                right: 20,
+                opacity: 1
+                });
+            };
+            if (settings.toggleVisibility){
+                return $sticky.css({
+                position: 'fixed',
+                bottom: 20, 
+                right: 20,
+                visibility: 'visible',
+                });
+            };
+            if(!settings.toggleFade && !settings.toggleVisibility){
+                return $sticky.css({
+                position: 'fixed',
+                bottom: 20, 
+                right: 20
+                });
+            };
+        }else if (settings.stickyPosition=='bottom-left'){
+            if (settings.toggleFade && settings.toggleVisibility){
+                return $sticky.css({
+                    position: 'fixed',
+                    bottom: 20, 
+                    left: 20,
+                    opacity: 1,
+                    visibility: 'visible'
+                });
+            }
+            if (settings.toggleFade){
+                return $sticky.css({
+                position: 'fixed',
+                bottom: 20, 
+                left: 20,
+                opacity: 1
+                });
+            };
+            if (settings.toggleVisibility){
+                return $sticky.css({
+                position: 'fixed',
+                bottom: 20, 
+                left: 20,
+                visibility: 'visible',
+                });
+            };
+            if(!settings.toggleFade && !settings.toggleVisibility){
+                return $sticky.css({
+                position: 'fixed',
+                bottom: 20, 
+                left: 20
+                });
+            };
+        }else{
+            if (settings.toggleFade && settings.toggleVisibility){
+                return $sticky.css({
+                    position: 'fixed',
+                    top: settings.top,
+                    left: settings.left,
+                    bottom: settings.bottom,
+                    right: settings.right,
+                    opacity: 1,
+                    visibility: 'visible'
+                });
+            }
+            if (settings.toggleFade){
+                return $sticky.css({
+                    position: 'fixed',
+                    top: settings.top,
+                    left: settings.left,
+                    bottom: settings.bottom,
+                    right: settings.right,
+                    opacity: 1
+                });
+            };
+            if (settings.toggleVisibility){
+                return $sticky.css({
+                    position: 'fixed',
+                    top: settings.top,
+                    left: settings.left,
+                    bottom: settings.bottom,
+                    right: settings.right,
+                    visibility: 'visible'
+                });
+            };
+            if(!settings.toggleFade && !settings.toggleVisibility){
+                return $sticky.css({
+                position: 'fixed',
+                top: settings.top,
+                left: settings.left,
+                bottom: settings.bottom,
+                right: settings.right
+                });
+            }
         };
-
-        // if options is a valid method, execute it
-        if (methods[options]) {
-            return methods[options].apply(this,
-                Array.prototype.slice.call(arguments, 1));
-        }
-        // or, if options is a config object, or no options are passed, init
-        else if (typeof options === 'object' || !options) {
-            return methods.init.apply(this, arguments);
-        } else if (console) {
-            console.log('Method' + options +
-                ' does not exist on jQuery.stickyScroll');
-        }
-
     };
-})(jQuery);
+    
+    var checkUnstickSettings = function(){
+        if (settings.toggleFade){
+            if (!originalPosition){
+                return $sticky.css({opacity: 0, position:'static'});
+            }else{
+                return $sticky.css({opacity: 0, position: originalPosition});
+            }
+        };
+        if (settings.toggleVisibility){
+            if (!originalPosition){
+                return $sticky.css({visibility: 'hidden', position:'static'});
+            }else{
+                return $sticky.css({visibility: 'hidden', position: originalPosition});
+            }
+        };
+        if(!settings.toggleFade && !settings.toggleVisibility){
+            if (!originalPosition){
+                return $sticky.css({position:'static'});
+            }else{
+                return $sticky.css({position: originalPosition});
+            }                       
+        }
+    };
+
+    $(document).scroll(function(){
+        var x = $(settings.startSticky).position();
+        if (!settings.horizontal){
+            var y = $(document).scrollTop();
+            if (!settings.endSticky){
+                if (y > (x.top-settings.offsetStick)) {
+                    checkStickSettings();
+                }
+            }else{
+                var z = $(settings.endSticky).position();
+                if (y < (x.top-settings.offsetStick)){
+                    checkUnstickSettings();
+                }else if (y > (x.top-settings.offsetStick) && y < (z.top+settings.offsetUnstick)) {
+                        checkStickSettings();
+                }else{
+                    checkUnstickSettings();
+                }
+            }
+        }else{
+            var y = $(document).scrollLeft();
+            if (!settings.endSticky){
+                if (y > (x.left-settings.offsetStick)) {
+                    checkStickSettings();
+                }else{
+                    checkUnstickSettings();
+                }
+            }else{
+                var z = $(settings.endSticky).position();
+                if (y > (x.left-settings.offsetStick) && y < (z.left-settings.offsetUnstick)) {
+                    checkStickSettings();
+                }else{
+                    checkUnstickSettings();
+                }
+            }
+        }
+    }); 
+};

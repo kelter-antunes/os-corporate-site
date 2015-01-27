@@ -1,0 +1,384 @@
+<div class="pageContentWrapper">
+    <script type="text/javascript">
+    function positionBackgroundImages() {
+        var scrollBreakpoint = 2009;
+        var offsetX = '80%';
+        var halfHeight = $('.parallax').height() / 2;
+        var bgPosition = $('.header-hero-wrapper').height();
+        $('.parallax').css({
+            'background-attachment': 'fixed',
+            'background-position': offsetX + ' ' + bgPosition + 'px'
+        });
+        var pos = $(window).scrollTop();
+        if (pos >= scrollBreakpoint) {
+            $('.parallax5').css({
+                'background-attachment': 'scroll',
+                'background-position': offsetX + ' 0px'
+            });
+        } else {
+            $('.parallax').css({
+                'background-attachment': 'fixed',
+                'background-position': offsetX + ' ' + bgPosition + 'px'
+            });
+        }
+    }
+    $(document).ready(function() {
+        $(window).on('DOMContentLoaded load resize scroll', positionBackgroundImages);
+        positionBackgroundImages();
+    });
+    </script>
+    <div class="how-first-section">
+
+        <style type="text/css">
+        .parallax {
+            min-height: 500px;
+            height: 500px;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1920px;
+            position: relative;
+            background-position: 85% 50%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .parallax > div {
+            height: 520px;
+            position: absolute;
+            text-align: left;
+            top: 0px;
+            width: 100%;
+            background: none;
+        }
+        .parallax1.overview {
+            background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=platform-server-main');
+        }
+        .parallax1.net {
+            background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=platform-server-net');
+        }
+        .parallax1.weblogic {
+            background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=platform-server-weblogic');
+        }
+        .parallax1.jboss {
+            background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=platform-server-jboss');
+        }
+        .parallax1.overview .service-studio {
+            display: none;
+        }
+        .parallax1 .service-studio {
+            position: absolute;
+            left: 46px;
+            top: 45px;
+        }
+        .parallax1 .option-overview,
+        .parallax1 .option-net,
+        .parallax1 .option-weblogic,
+        .parallax1 .option-jboss {
+            display: none;
+        }
+        .parallax1.overview .option-overview,
+        .parallax1.net .option-net,
+        .parallax1.weblogic .option-weblogic,
+        .parallax1.jboss .option-jboss {
+            display: block;
+        }
+        .parallax2 {
+            background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-studio');
+        }
+        .parallax3.overview {
+            background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=integration-studio1');
+        }
+        .parallax3.net {
+            background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=integration-studio-net');
+        }
+        .parallax3.java {
+            background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=integration-studio-java');
+        }
+        .parallax3 .option-overview,
+        .parallax3 .option-net,
+        .parallax3 .option-java {
+            display: none;
+        }
+        .parallax3.overview .option-overview,
+        .parallax3.net .option-net,
+        .parallax3.java .option-java {
+            display: block;
+        }
+        .parallax4.overview {
+            background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-all');
+        }
+        .parallax4.configuration-management {
+            background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-configuration');
+        }
+        .parallax4.performance-monitoring {
+            background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-monitoring');
+        }
+        .parallax4 .option-overview,
+        .parallax4 .option-configuration-management,
+        .parallax4 .option-performance-monitoring {
+            display: none;
+        }
+        .parallax4.overview .option-overview,
+        .parallax4.configuration-management .option-configuration-management,
+        .parallax4.performance-monitoring .option-performance-monitoring {
+            display: block;
+        }
+        .parallax5.overview {
+            background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lifetime-cloud-portal');
+        }
+        .parallax5.application-staging {
+            background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lifetime-deploy-cloud');
+        }
+        .parallax5.hybrid-configuration {
+            background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lifetime-deploy-cloud-premises');
+        }
+        .parallax5 .option-overview,
+        .parallax5 .option-application-staging,
+        .parallax5 .option-hybrid-configuration {
+            display: none;
+        }
+        .parallax5.overview .option-overview,
+        .parallax5.application-staging .option-application-staging,
+        .parallax5.hybrid-configuration .option-hybrid-configuration {
+            display: block;
+        }
+        .parallax2,
+        .parallax3,
+        .parallax4,
+        .parallax5 {
+            -webkit-box-shadow: 0 -8px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 -8px 8px rgba(0, 0, 0, 0.2);
+        }
+        </style>
+        <div style="position: relative;">
+            <script type="text/javascript">
+            $(document).ready(function() {
+                $('.optionSelector a').click(function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    var parallax = $(this).closest('.parallax');
+                    var option = parallax.data('option') || 'overview';
+                    var newOption = $(this).data('option');
+                    parallax.removeClass(option).addClass(newOption).data('option', newOption);
+                    $(this).siblings().removeClass('active');
+                    $(this).addClass('active');
+                });
+            });
+            </script>
+            <div class="parallax parallax1 overview">
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="span5">
+                                <div class="hero-details">
+                                    <h1 style="font-size:33px; font-weight:500; ">
+                    OutSystems <span style=" font-size:0.75em"><sup>&reg;</sup></span> Platform
+                    <br />
+                    in a nutshell
+                  </h1>
+                                    <div class="lead">
+                                        <div class="btn-group optionSelector" style="margin: 0 0 25px 0;">
+                                            <a class="btn active" data-option="overview" href="#">Overview</a> <a class="btn" data-option="net" href="#">.NET</a> <a class="btn" data-option="weblogic" href="#">WebLogic</a> <a class="btn" data-option="jboss" href="#">JBoss</a>
+                                        </div>
+                                        <div class="option-overview">
+                                            <p>
+                                                <b>OutSystems<font size="2">&nbsp;</font>Platform</b> is a high-productivity platform as a service (PaaS) that enables the rapid delivery and iteration of enterprise-class web and mobile applications.
+                                            </p>
+                                            <p>
+                                                OutSystems Platform is the only PaaS available as a cloud, on premises or hybrid solution that generates standard Java and .NET applications with fully automated DevOps support.
+                                            </p>
+                                        </div>
+                                        <div class="option-net">
+                                            <p>
+                                                When deploying applications on top of a <strong>Microsoft option</strong>, OutSystems Platform generates highly optimized and standard C# code. It also automatically creates or updates the SQL Server or Oracle databases, and deploys the compiled .NET applications to all web front-ends in your server farm.
+                                            </p>
+                                            <p>
+                                                All C# code is fully optimized for performance and scalability, and is protected from common security threats.
+                                            </p>
+                                        </div>
+                                        <div class="option-weblogic">
+                                            <p>
+                                                When using a <strong>Oracle WebLogic</strong>, OutSystems Platform generates highly optimized and standard Java code. It also automatically creates or updates your Oracle database, and deploys the compiled Java applications to all web front-ends in your server farm.
+                                            </p>
+                                            <p>
+                                                All Java code is fully optimized for performance and scalability. The platform also protects your code from common security threats.
+                                            </p>
+                                        </div>
+                                        <div class="option-jboss">
+                                            <p>
+                                                In a <strong>JBoss environment</strong>, OutSystems Platform generates highly optimized and standard Java code. It also automatically creates or updates your Oracle database, and deploys the compiled Java applications to all web front-ends in your server farm.
+                                            </p>
+                                            <p>
+                                                All Java code is fully optimized for performance and scalability. The platform also protects your code from common security threats.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax parallax2" id="service-studio">
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="span5">
+                                <div class="hero-details">
+                                    <h5 style="margin-bottom: 12px; font-size:30px;">
+                    Development Environment
+                  </h5>
+                                    <h1 style="font-size:24px;margin-bottom:24px">
+                    Service Studio
+                  </h1>
+                                    <div class="lead">
+                                        <p>
+                                            <b>Service Studio</b> is the visual development environment for OutSystems Platform, used to design web and mobile applications including their user interfaces, process flows, business logic, web services, and security policies.
+                                        </p>
+                                        <p>
+                                            Application models are automatically converted into standard .NET or Java applications that run on top of standard technology options.
+                                        </p>
+                                        <p>
+                                            <b>Service Studio</b> includes TrueChange&trade;, a reference-checking and self-healing engine for robust change of all application components.
+                                        </p>
+                                        <p>
+                                            &nbsp;
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax parallax3 overview">
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="span5">
+                                <div class="hero-details">
+                                    <h5 style="margin-bottom: 12px; font-size:30px;">
+                    Development Environment
+                  </h5>
+                                    <h1 style="font-size:24px;margin-bottom:24px">
+                    Integration Studio
+                  </h1>
+                                    <div class="lead">
+                                        <div class="btn-group optionSelector" style="margin: 0 0 25px 0;">
+                                            <a class="btn active" data-option="overview" href="#">Overview</a> <a class="btn" data-option="net" href="#">.NET</a> <a class="btn" data-option="java" href="#">Java</a>
+                                        </div>
+                                        <div class="option-overview">
+                                            <p>
+                                                <b>Integration Studio</b>&nbsp;enables developers to quickly create custom components to integrate external applications and databases, or to extend OutSystems Platform with their own custom code.
+                                            </p>
+                                            <p>
+                                                It includes wizards to easily integrate with SAP and other existing applications, databases and services. All components and connectors built with <strong>Integration Studio</strong> are deployed once and can then be reused across any applications you build with OutSystems Platform.
+                                            </p>
+                                        </div>
+                                        <div class="option-net">
+                                            <p>
+                                                In<strong> Integration Studio</strong> you can build connectors that integrate with existing databases, services and systems.
+                                            </p>
+                                            <p>
+                                                You can also reuse <strong>.NET Libraries</strong> to leverage your code assets, and even write custom <strong>C# Code</strong> to match your exact needs.
+                                            </p>
+                                            <p>
+                                                The <strong>C# Code</strong> is edited and compiled using <strong>Microsoft Visual Studio</strong>, and the generated <strong>DLLs </strong>are stored and versioned in the metadata repository. These components are then made available for reuse across your applications.
+                                            </p>
+                                        </div>
+                                        <div class="option-java">
+                                            <p>
+                                                Using <strong>Integration Studio </strong>you can build connectors that integrate with existing databases, services and systems.
+                                            </p>
+                                            <p>
+                                                You can also reuse&nbsp;<strong>Java Libraries</strong> to leverage your code assets, and even write custom <strong>Java Code</strong>&nbsp;to match your exact needs.
+                                            </p>
+                                            <p>
+                                                The <strong>Java Code</strong> is edited and compiled using <strong>Eclipse</strong>, and the generated <strong>JARs</strong> are stored and versioned in the metadata repository. These components are then made available for reuse across your applications.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax parallax4 overview">
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="span5">
+                                <div class="hero-details">
+                                    <h1 style="font-size:24px;margin-bottom:24px">
+                    Service Center
+                  </h1>
+                                    <div class="lead">
+                                        <div class="btn-group optionSelector" style="margin: 0 0 25px 0;">
+                                            <a class="btn active" data-option="overview" href="#">Overview</a> <a class="btn" data-option="configuration-management" href="#">Configuration Management</a> <a class="btn" data-option="performance-monitoring" href="#">Monitoring</a>
+                                        </div>
+                                        <p>
+                                            <b>Service Center</b> is OutSystems Platform web console that offers a comprehensive set of functionality to manage all operational aspects of your applications, including all logging and monitoring information needed for performance tuning, and for&nbsp;configuration of horizontal scalability.
+                                        </p>
+                                        <p>
+                                            All applications built with OutSystems Platform can be deployed on top of standard Windows or Linux application servers, in your datacenter or in a cloud infrastructure.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax parallax5 overview">
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="span5">
+                                <div class="hero-details">
+                                    <h1 style="font-size:24px;margin-bottom:24px">
+                    LifeTime
+                  </h1>
+                                    <div class="lead">
+                                        <div class="btn-group optionSelector" style="margin: 0 0 25px 0;">
+                                            <a class="btn active" data-option="overview" href="#">Overview</a> <a class="btn" data-option="application-staging" href="#">Application Staging</a> <a class="btn" data-option="hybrid-configuration" href="#">Hybrid Configuration</a>
+                                        </div>
+                                        <div class="option-overview">
+                                            <p>
+                                                <b>LifeTime</b> fully automates DevOps processes, and manages the staging of your applications from development to production across cloud, on-premises or hybrid environments.
+                                            </p>
+                                            <p>
+                                                Real-time performance monitoring is built-in for all your applications and available in LifeTime. You&rsquo;ll be able to see how each web and mobile application is performing on your users&#39; devices.
+                                            </p>
+                                            <p>
+                                                LifeTime also enables you to define your IT team&#39;s access and control over applications and their components, across all environments.
+                                            </p>
+                                        </div>
+                                        <div class="option-application-staging">
+                                            <p>
+                                                With OutSystems Platform you will be able to completely automate your DevOps processes and dramatically simplify application staging across environments.
+                                            </p>
+                                            <p>
+                                                When deploying one or more applications, LifeTime performs a complete dependency analysis across environments and deploys applications and all their updated dependencies with one mouse-click, while giving you full visibility and control over the process.
+                                            </p>
+                                        </div>
+                                        <div class="option-hybrid-configuration">
+                                            <p>
+                                                OutSystems Platform is available as a public cloud service, but can also reside in a private cloud, on-premises or in a hybrid setting.
+                                            </p>
+                                            <p>
+                                                For example, you can build and test your applications in the public cloud then deploy them in a private cloud or in an on-premises environment - or any combination desired. Application components can be designed and deployed across public, private or on-premises environments, leveraging the unique benefits of each based on the functional requirements of the application.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- end how-first-section -->
+</div>
