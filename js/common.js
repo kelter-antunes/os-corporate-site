@@ -228,64 +228,72 @@ var messageEvent_Global = eventMethod_Global == "attachEvent" ? "onmessage" : "m
 
 // Listen to message from child window
 eventer_Global(messageEvent_Global, function(e) {
-    if (e.data !== "") {
 
-        if (e.data === 'kissEvent') {
-            var pathName = e.srcElement.location.href;
+    try {
 
-            var isAppContactUS = (pathName.indexOf('/contact-us-apps/') !== -1);
-            var isGlobalContactUS = (pathName.indexOf('/contact-us-global/') !== -1);
-            var isOfficeContactUS = (pathName.indexOf('/company/contact-us/') !== -1);
-            var isVersusLP = (pathName.indexOf('vs-outsystems/') !== -1);
-            var isSalesforceDownload = (pathName.indexOf('/salesforce1-vs-outsystems/') !== -1);
+        if (e.data !== "") {
 
-            if (isAppContactUS) {
-                trackEvent('CS - Submit Contact US Apps');
+            if (e.data === 'kissEvent') {
+                var pathName = e.srcElement.location.href;
 
-            } else if (isGlobalContactUS) {
-                trackEvent('CS - Submit Contact US Global');
+                var isAppContactUS = (pathName.indexOf('/contact-us-apps/') !== -1);
+                var isGlobalContactUS = (pathName.indexOf('/contact-us-global/') !== -1);
+                var isOfficeContactUS = (pathName.indexOf('/company/contact-us/') !== -1);
+                var isVersusLP = (pathName.indexOf('vs-outsystems/') !== -1);
+                var isSalesforceDownload = (pathName.indexOf('/salesforce1-vs-outsystems/') !== -1);
 
-            } else if (isOfficeContactUS) {
-                trackEvent('CS - Submit Contact US Offices');
+                if (isAppContactUS) {
+                    trackEvent('CS - Submit Contact US Apps');
 
-            } else if (isVersusLP) {
-                if ((pathName.indexOf('kony') !== -1)) {
-                    trackEvent('LP - Submit Demo Contact Us - Kony LP');
+                } else if (isGlobalContactUS) {
+                    trackEvent('CS - Submit Contact US Global');
 
-                } else if ((pathName.indexOf('mendix') !== -1)) {
-                    trackEvent('LP - Submit Demo Contact Us - Mendix LP');
+                } else if (isOfficeContactUS) {
+                    trackEvent('CS - Submit Contact US Offices');
 
-                } else if ((pathName.indexOf('appcelerator') !== -1)) {
-                    trackEvent('LP - Submit Demo Contact Us - Appcelerator LP');
+                } else if (isVersusLP) {
+                    if ((pathName.indexOf('kony') !== -1)) {
+                        trackEvent('LP - Submit Demo Contact Us - Kony LP');
 
-                } else if (isSalesforceDownload) {
-                    trackEvent('LP - Download collateral', {
-                        'Document': 'OutSystems Platform and Force.com'
-                    }, null);
+                    } else if ((pathName.indexOf('mendix') !== -1)) {
+                        trackEvent('LP - Submit Demo Contact Us - Mendix LP');
+
+                    } else if ((pathName.indexOf('appcelerator') !== -1)) {
+                        trackEvent('LP - Submit Demo Contact Us - Appcelerator LP');
+
+                    } else if (isSalesforceDownload) {
+                        trackEvent('LP - Download collateral', {
+                            'Document': 'OutSystems Platform and Force.com'
+                        }, null);
+                    }
+
                 }
+            }
+            //marketo form resize
+            else {
+                var mktodata;
+                try {
+                    mktodata = JSON.parse(e.data);
+                    if (mktodata.mkto_frame.height !== undefined) {
+                        console.log('mkto content height = ' + mktodata.mkto_frame.height);
+                        if ($('iframe[src^="/contact"]').length === 0) {
+                            if ($('iframe[src^="/offer"]').contents().find('iframe').length !== 0) {
+                                $('iframe[src^="/offer"]').contents().find('iframe').height(mktodata.mkto_frame.height);
+                            } else {
+                                $('#mkto_frame').height(mktodata.mkto_frame.height);
+                            }
+
+                        }
+                    }
+                } catch (e) {}
 
             }
         }
-        //marketo form resize
-        else {
-            var mktodata;
-            try {
-                mktodata = JSON.parse(e.data);
-                if (mktodata.mkto_frame.height !== undefined) {
-                    console.log('mkto content height = ' + mktodata.mkto_frame.height);
-                    if ($('iframe[src^="/contact"]').length === 0) {
-                        if ($('iframe[src^="/offer"]').contents().find('iframe').length !== 0) {
-                            $('iframe[src^="/offer"]').contents().find('iframe').height(mktodata.mkto_frame.height);
-                        } else {
-                            $('#mkto_frame').height(mktodata.mkto_frame.height);
-                        }
 
-                    }
-                }
-            } catch (e) {}
-
-        }
+    } catch (e) {
+        console.log(e);
     }
+
 }, false);
 
 
