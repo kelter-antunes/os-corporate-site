@@ -8334,6 +8334,205 @@ a.osbtn-orange
 
 
 
+
+.header-hero-wrapper {
+    padding: 0;
+}
+.header-hero-wrapper.home {
+    overflow: hidden;
+}
+.platform .header-hero-wrapper,
+.customers .header-hero-wrapper,
+.resources .header-hero-wrapper,
+.learn-and-support .header-hero-wrapper,
+.about-us .header-hero-wrapper {
+    height: 130px !important;
+}
+.header-hero-wrapper.page-without-hero {
+    height: 130px;
+}
+.submenuhover {
+    top: 80px;
+}
+.navigation-inner {
+    position: inherit;
+}
+.header-hero-wrapper {
+    padding-top: 0;
+}
+.navigation-inner {
+    height: 80px;
+}
+.navigation-outter.navigation-wrapper {
+    padding-top: 0px;
+}
+.secondary-menu {
+    display: inline-block;
+}
+.secondary-menu a,
+.secondary-menu span {
+    font-family: myriad-pro;
+    font-size: 13px;
+    color: #000;
+    padding: 0 15px 3px;
+    line-height: 20px;
+    display: inline-block;
+    font-weight: 400;
+    text-decoration: none;
+}
+.navigation-items {
+    width: 1013px;
+}
+.navigation-bar li.spacer {
+    /*width: 36px;*/
+}
+.navigation-bar li.try-now {
+    background: #000;
+}
+.navigation-bar li.try-now a:hover,
+.navigation-bar li.active.try-now a:hover {
+    background-color: #CB2100;
+}
+.search_field {
+    margin-right: 5px;
+}
+form input.st-search-input {
+    font-size: 12px;
+    padding: 0 19px 0 6px;
+    height: 20px;
+    width: 105px;
+    color: #CCC;
+    outline: 0;
+    line-height: 22px;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') 111px 1px no-repeat;
+}
+.submenu-hover-sections a {
+    color: #000;
+}
+.submenu-hover-sections .submenuhoverbox-contentheading,
+.submenu-hover-sections .submenuhoverbox-contentheading a {
+    color: #0088cc;
+    text-decoration: none;
+}
+.submenuhoverbox {
+    background-image: none;
+}
+body.platform .navigation-bar li.platform a,
+body.customers .navigation-bar li.customers a,
+body.resources .navigation-bar li.resources a,
+body.learn-and-support .navigation-bar li.learn-and-support a,
+body.about-us .navigation-bar li.about-us a {
+    background-color: transparent;
+    color: #fff;
+}
+body.platform .navigation-bar li.platform a span,
+body.customers .navigation-bar li.customers a span,
+body.resources .navigation-bar li.resources a span,
+body.learn-and-support .navigation-bar li.learn-and-support a span,
+body.about-us .navigation-bar li.about-us a span,
+body.mega-menu .navigation-bar li.active a span {
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=nav&v=201406081625') center no-repeat white;
+}
+/* style defined dinamically in the menu hover logic (file common.min.js) */
+
+body.mega-menu .navigation-bar li a span {
+    background: #000 !important;
+}
+body.mega-menu .navigation-bar li.active a span {
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=nav&v=201406081625') center no-repeat white !important;
+}
+.second-level-menu-wrapper {
+    float: right;
+    right: 0;
+    z-index: 99;
+    height: 50px;
+    clear: both;
+}
+.second-level-menu-wrapper.fixed {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    padding-bottom: 0;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=20150127180056') center -80px;
+    border-bottom: 1px solid #d6d6d6;
+}
+.second-level-menu-wrapper span.title {
+    text-decoration: none;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+.second-level-menu-wrapper.fixed span.title {
+    opacity: 1;
+}
+.second-level-menu-wrapper.fixed .span12 {} body.landing-no-top {
+    background: white;
+}
+.submenuhoverbox.product {
+    background-image: none;
+    padding-top: 0;
+}
+.h3-product-tab {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: block;
+}
+.h6-product-tab {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+.submenuhoverbox-firstcontent.light-back a,
+.submenuhoverbox-secondcontent.mobile-back a {
+    text-decoration: none;
+    display: block;
+    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+}
+a:hover span.h6-product-tab {
+    text-decoration: underline;
+}
+.submenuhover.submenu-hover-sections [class^="osicon-"],
+.submenuhover.submenu-hover-sections[class*=" osicon-"] {
+    color: #c20;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    max-width: 20px;
+    padding-right: 5px;
+    vertical-align: bottom;
+}
+.sub-navigation-bar li a {
+  color: #333;
+}
+
+.sub-navigation-bar a.active {
+    font-weight: 600;
+    border-bottom: 1px solid gray;
+}
+
+
+
+
+
+
 /**to fix companie logos position on website*/
 @media only screen and (min-device-width: 767px) {
     .case-study-customer-logo

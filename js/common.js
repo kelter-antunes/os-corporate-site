@@ -60,6 +60,39 @@ osjs(".Popup").live("dialogopen", function(a, b) {
     });
 });
 
+
+$(document).ready(function() {
+    var sticky = $('.second-level-menu-wrapper');
+    if (sticky.length == 0) {
+        return;
+    }
+    var top = -1;
+    var fixMenu = function() {
+        if (top == -1) {
+            top = sticky.offset().top;
+        }
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= top) {
+            sticky.addClass('fixed');
+        } else {
+            sticky.removeClass('fixed');
+        }
+    };
+    $(window).load(fixMenu).scroll(fixMenu);
+
+
+    var pathname = window.location.pathname;
+    $('.sub-navigation-bar a').each(function(index, el) {
+        var currEl = $(el);
+        if (pathname === currEl.attr('href')) {
+            currEl.addClass('active');
+        };
+    });
+});
+
+
+
 function IsEmail(email) {
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email);

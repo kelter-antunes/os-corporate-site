@@ -1,210 +1,296 @@
 <style type="text/css">
-  @media only screen and (max-device-width: 767px) and (orientation: landscape) {
-    .apps-body .span3 {
-      width: 49%;
-      float: left;
-      margin-left: 0;
-      margin-right: 5px;
+.header-hero-wrapper.apps-home-hero {
+    height: auto;
+    box-shadow: none;
+    filter: none;
+    -ms-filter: none;
+}
+@media screen and (max-width: 767px) {
+    .hero-list {
+        width: auto;
     }
-  }
+}
+@media only screen and (max-device-width: 767px) and (orientation: landscape) {
+    .apps-body .span3 {
+        width: 49%;
+        float: left;
+        margin-left: 0;
+        margin-right: 5px;
+    }
+}
 </style>
 <script>
-function _orientationHandler(event){
-  if(event.orientation){
-    if(event.orientation == 'portrait'){
-      $('.app-card').css("height", "auto");
+function _orientationHandler(event) {
+    if (event.orientation) {
+        if (event.orientation == 'portrait') {
+            $('.app-card').css("height", "auto");
+        } else if (event.orientation == 'landscape') {
+            setSameHeight();
+            $('.apps-body .span3').width(($(window).width() / 2) - 15)
+        }
     }
-    else if(event.orientation == 'landscape') {
-      setSameHeight();
-      $('.apps-body .span3').width( ($(window).width() / 2)-15 ) 
-    }
-  }
 }
-function setSameHeight(){
-  $('.row').each(function(index, el) {
-    boxes = $(this).find('.app-card');
-    maxHeight = Math.max.apply(
-      Math, boxes.map(function() {
-        return $(this).actual('height');
-      }).get());
-    boxes.height(maxHeight);
-  });
+
+function setSameHeight() {
+    $('.row').each(function(index, el) {
+        boxes = $(this).find('.app-card');
+        maxHeight = Math.max.apply(
+            Math, boxes.map(function() {
+                return $(this).actual('height');
+            }).get());
+        boxes.height(maxHeight);
+    });
 }
 $(document).ready(function() {
-  if ($(window).width() > 767) {
-    $('.apps-home-hero').height( $('.apps-top').height() + 127 );
-  }else {
-    $(window).bind('orientationchange', _orientationHandler); 
-  }
-  setSameHeight();
+    if ($(window).width() > 767) {
+        $('.apps-home-hero').height($('.apps-top').height() + 127);
+    } else {
+        $(window).bind('orientationchange', _orientationHandler);
+    }
+    setSameHeight();
 });
 $(window).load(function() {
-  if ($(window).width() < 767) {
-    $('.apps-body h2').on('click touch', function(event) {
-      $this = $(this);
-      $this.children('span').toggleClass('osicon-arrow-down osicon-arrow-up');
-      if ($this.hasClass('apps-h-sales') ) {
-        $('.apps-mobile-toggle-sales').slideToggle();
-      } else if ($this.hasClass('apps-h-intra') ){
-        $('.apps-mobile-toggle-intra').slideToggle();
-      }
-    });
-  }
+    if ($(window).width() < 767) {
+        $('.apps-body h2').on('click touch', function(event) {
+            $this = $(this);
+            $this.children('span').toggleClass('osicon-arrow-down osicon-arrow-up');
+            if ($this.hasClass('apps-h-sales')) {
+                $('.apps-mobile-toggle-sales').slideToggle();
+            } else if ($this.hasClass('apps-h-intra')) {
+                $('.apps-mobile-toggle-intra').slideToggle();
+            }
+        });
+    }
 });
 </script>
+
+
+<div class="container">
+    <div class="row" style="">
+        <div class="span12">
+            <div class="apps-top %WEB% top50 %/WEB%">
+                <div class="row">
+                    <div class="span12">
+                        <h1 style="text-align: center;">
+              Kick-start your next app project with our pre-built apps
+            </h1>
+                    </div>
+                    %MOBILE%
+                    <div class="image-holder">
+                        <img alt="OutSystems Free Apps" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=devices-apps3&amp;v=20150122131109" />%/MOBILE%
+                        <div class="clearfix">
+                            &nbsp;
+                        </div>
+                        <div class="span5" style="%WEB% width: 375px; %/WEB%">
+                            <p style=" font-size:17px;line-height:24px ">
+                                Getting your next app out the door is easy with OutSystems Platform. Save time and start with one of these free pre-built mobile and web apps:
+                            </p>
+                            <div class="hero-list">
+                                <ul class="list" style="padding-top:10px;">
+                                    <li style="padding-bottom:5px;"><span class="osicon-chevron" style="
+color: #AAA; 
+font-size: 14px;
+width: 17px;
+display: inline-block;
+">&nbsp;</span><span style="font-size:17px;">Simple to use. Rich user experience. All devices.</span>
+                                    </li>
+                                    <li style="padding-bottom:5px;"><span class="osicon-chevron" style="
+color: #AAA; 
+font-size: 14px;
+width: 17px;
+display: inline-block;
+">&nbsp;</span><span style="font-size:17px;">Easy to change with OutSystems Platform.</span>
+                                    </li>
+                                    <li style="padding-bottom:5px;"><span class="osicon-chevron" style="
+color: #AAA; 
+font-size: 14px;
+width: 17px;
+display: inline-block;
+">&nbsp;</span><span style="font-size:17px;">Add your own specs and functionality in days.</span>
+                                    </li>
+                                    <li style="padding-bottom:5px;"><span class="osicon-chevron" style="
+color: #AAA; 
+font-size: 14px;
+width: 17px;
+display: inline-block;
+">&nbsp;</span><span style="font-size:17px;">Plugable to your back-end systems.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p style="text-align: center;%WEB%margin-bottom:30px;%/WEB%">
+                                <a class="osbtn osbtn-blue popup_link" href="/apps/contact-us-apps/" title="Contact us today"><span>Help me build my app</span></a>
+                            </p>
+                        </div>
+                        %WEB%
+                        <div class="image-holder" style="padding-top:90px;">
+                            <img alt="OutSystems Free Apps" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=devices-apps3&amp;v=20150122131109" />%/WEB%
+                        </div>
+                        <div style="clear:both;">
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
 <div class="apps-body" style="%WEB% padding-top: 50px; %/WEB%">
-  <div class="container ">
-    <div class="row">
-      <div class="span12">
-        <h2 class="apps-h-sales">
+    <div class="container ">
+        <div class="row">
+            <div class="span12">
+                <h2 class="apps-h-sales">
           Sales and Marketing Apps <span class="osicon-arrow-down apps-icon-toggle">&nbsp;</span>
         </h2>
-      </div>
-      <div class="apps-mobile-toggle-sales">
-        <div class="span3">
-          <div class="app-card">
-            <h5 class="card-h">
-              <a href="order-management-app/"><img alt="Order Management App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=order-management-app&amp;v=20140919180340" /><span>Order Management</span> </a>
-            </h5>
-            <div class="card-bottom">
-              <span class="card-desc">Fully integrated order management solution for sales teams.</span> <a href="order-management-app/">Learn more</a>
             </div>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="app-card">
-            <h5 class="card-h">
-              <a href="mobile-order-management-app/"><img alt="Mobile Order Management App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=order-management-mobile-app&amp;v=20140919180340" /><span>Mobile Order Management</span> </a>
+            <div class="apps-mobile-toggle-sales">
+                <div class="span3">
+                    <div class="app-card">
+                        <h5 class="card-h">
+              <a href="order-management-app/"><img alt="Order Management App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=order-management-app&amp;v=20141031142024" /><span>Order Management</span> </a>
             </h5>
-            <div class="card-bottom">
-              <span class="card-desc">Mobile app to speed up the entire quote to order process for your sales force.</span> <a href="mobile-order-management-app/">Learn more</a>
-            </div>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="app-card">
-            <h5 class="card-h">
-              <a href="accident-reporting-app/"><img alt="Car Accident Reporting App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=car-insurance-mobile-app&amp;v=20140919180340" /><span>Car Accident Reporting</span></a>
+                        <div class="card-bottom">
+                            <span class="card-desc">Fully integrated order management solution for sales teams.</span> <a href="order-management-app/">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="span3">
+                    <div class="app-card">
+                        <h5 class="card-h">
+              <a href="mobile-order-management-app/"><img alt="Mobile Order Management App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=order-management-mobile-app&amp;v=20141031142024" /><span>Mobile Order Management</span> </a>
             </h5>
-            <div class="card-bottom">
-              <span class="card-desc">Mobile app for insurance companies customer care.</span> <a href="accident-reporting-app/">Learn more</a>
-            </div>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="app-card">
-            <h5 class="card-h">
-              <a href="credit-request-app/"><img alt="Credit Request App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=credit-request-app&amp;v=20140919180340" /><span>Credit Request</span> </a>
+                        <div class="card-bottom">
+                            <span class="card-desc">Mobile app to speed up the entire quote to order process for your sales force.</span> <a href="mobile-order-management-app/">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="span3">
+                    <div class="app-card">
+                        <h5 class="card-h">
+              <a href="accident-reporting-app/"><img alt="Car Accident Reporting App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=car-insurance-mobile-app&amp;v=20141031142024" /><span>Car Accident Reporting</span></a>
             </h5>
-            <div class="card-bottom">
-              <span class="card-desc">Manage the credit initiation process of your financial services organization.</span> <a href="credit-request-app/">Learn more</a>
-            </div>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="app-card">
-            <h5 class="card-h">
-              <a href="sales-app/"><img alt="Sales App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=sales-app&amp;v=20140919180340" /><span>Sales</span> </a>
+                        <div class="card-bottom">
+                            <span class="card-desc">Mobile app for insurance companies customer care.</span> <a href="accident-reporting-app/">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="span3">
+                    <div class="app-card">
+                        <h5 class="card-h">
+              <a href="credit-request-app/"><img alt="Credit Request App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=credit-request-app&amp;v=20141031142024" /><span>Credit Request</span> </a>
             </h5>
-            <div class="card-bottom">
-              <span class="card-desc">Get your own custom CRM app to manage your sales opportunities and forecasts.</span> <a href="sales-app/">Learn more</a>
-            </div>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="app-card">
-            <h5 class="card-h">
-              <a href="exec-dashboard-app/"><img alt="Executive Dashboard App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=exec-dashboard&amp;v=20140919180340" /><span>Executive Dashboard</span> </a>
+                        <div class="card-bottom">
+                            <span class="card-desc">Manage the credit initiation process of your financial services organization.</span> <a href="credit-request-app/">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="span3">
+                    <div class="app-card">
+                        <h5 class="card-h">
+              <a href="sales-app/"><img alt="Sales App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=sales-app&amp;v=20141031142024" /><span>Sales</span> </a>
             </h5>
-            <div class="card-bottom">
-              <span class="card-desc">Stay on top of your key business information anytime, anywhere.</span> <a href="exec-dashboard-app/">Learn more</a>
+                        <div class="card-bottom">
+                            <span class="card-desc">Get your own custom CRM app to manage your sales opportunities and forecasts.</span> <a href="sales-app/">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="span3">
+                    <div class="app-card">
+                        <h5 class="card-h">
+              <a href="executive-dashboard-app/"><img alt="Executive Dashboard App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=exec-dashboard&amp;v=20141031142024" /><span>Executive Dashboard</span> </a>
+            </h5>
+                        <div class="card-bottom">
+                            <span class="card-desc">Stay on top of your key business information anytime, anywhere.</span> <a href="executive-dashboard-app/">Learn more</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="apps-body">
-    <div class="container ">
-      <div class="row">
-        <div class="span12 %WEB% top40 %/WEB%">
-          <h2 class="apps-h-intra">
+    <div class="apps-body">
+        <div class="container ">
+            <div class="row">
+                <div class="span12 %WEB% top40 %/WEB%">
+                    <h2 class="apps-h-intra">
             Intranet, HR and Portal Apps <span class="osicon-arrow-down apps-icon-toggle">&nbsp;</span>
           </h2>
+                </div>
+                <div class="apps-mobile-toggle-intra">
+                    <div class="span3">
+                        <div class="app-card">
+                            <h5 class="card-h">
+                <a href="field-services-app/"><img alt="Telco Services" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=play4telco-icon&amp;v=20141031142024" /><span>Field Services</span> </a>
+              </h5>
+                            <div class="card-bottom">
+                                <span class="card-desc">Tablet&nbsp;app to support field personnel activities.</span> <a href="field-services-app/">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="app-card">
+                            <h5 class="card-h">
+                <a href="cases-app/"><img alt="Cases App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=cases-app&amp;v=20141031142024" /><span>Cases</span> </a>
+              </h5>
+                            <div class="card-bottom">
+                                <span class="card-desc">Ticketing app to&nbsp;manage your customer support interactions.</span> <a href="cases-app/">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="app-card">
+                            <h5 class="card-h">
+                <a href="customer-portal-app/"><img alt="Customer Portal" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=customer-portal-app&amp;v=20141031142024" /><span>Customer Portal</span> </a>
+              </h5>
+                            <div class="card-bottom">
+                                <span class="card-desc">Mobile app to improve communication and customer care.</span> <a href="customer-portal-app/">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="app-card">
+                            <h5 class="card-h">
+                <a href="directory-app/"><img alt="Directory App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=directory-app&amp;v=20141031142024" /><span>Directory</span> </a>
+              </h5>
+                            <div class="card-bottom">
+                                <span class="card-desc">Employee contact info accessible on all your devices.</span> <a href="directory-app/">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="app-card">
+                            <h5 class="card-h">
+                <a href="documents-app/"><img alt="Documents App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=documents-app&amp;v=20141031142024" /><span>Documents</span> </a>
+              </h5>
+                            <div class="card-bottom">
+                                <span class="card-desc">All your documents centralized, accessible and safe. Anytime, anywhere.</span> <a href="documents-app/">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="app-card">
+                            <h5 class="card-h">
+                <a href="expenses-app/"><img alt="Expenses App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=expenses-app&amp;v=20141031142024" /><span>Expenses</span> </a>
+              </h5>
+                            <div class="card-bottom">
+                                <span class="card-desc">Create, submit and approve employee expenses online.</span> <a href="expenses-app/">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="app-card">
+                            <h5 class="card-h">
+                <a href="time-sheets-app/"><img alt="Time Sheets App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=time-sheets-app&amp;v=20141031142024" /><span>Time Sheets</span> </a>
+              </h5>
+                            <div class="card-bottom">
+                                <span class="card-desc">Track your team and project time allocations.</span> <a href="time-sheets-app/">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="apps-mobile-toggle-intra">
-          <div class="span3">
-            <div class="app-card">
-              <h5 class="card-h">
-                <a href="cases-app/"><img alt="Cases App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=cases-app&amp;v=20140919180340" /><span>Cases</span> </a>
-              </h5>
-              <div class="card-bottom">
-                <span class="card-desc">Ticketing app to&nbsp;manage your customer support interactions.</span> <a href="cases-app/">Learn more</a>
-              </div>
-            </div>
-          </div>
-          <div class="span3">
-            <div class="app-card">
-              <h5 class="card-h">
-                <a href="customer-portal-app/"><img alt="Customer Portal" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=customer-portal-app&amp;v=20140919180340" /><span>Energy Customer Portal</span> </a>
-              </h5>
-              <div class="card-bottom">
-                <span class="card-desc">Mobile app to improve communication and customer care.</span> <a href="customer-portal-app/">Learn more</a>
-              </div>
-            </div>
-          </div>
-          <div class="span3">
-            <div class="app-card">
-              <h5 class="card-h">
-                <a href="directory-app/"><img alt="Directory App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=directory-app&amp;v=20140919180340" /><span>Directory</span> </a>
-              </h5>
-              <div class="card-bottom">
-                <span class="card-desc">Employee contact info accessible on all your devices.</span> <a href="directory-app/">Learn more</a>
-              </div>
-            </div>
-          </div>
-          <div class="span3">
-            <div class="app-card">
-              <h5 class="card-h">
-                <a href="documents-app/"><img alt="Documents App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=documents-app&amp;v=20140919180340" /><span>Documents</span> </a>
-              </h5>
-              <div class="card-bottom">
-                <span class="card-desc">All your documents centralized, accessible and safe. Anytime, anywhere.</span> <a href="documents-app/">Learn more</a>
-              </div>
-            </div>
-          </div>
-          <div class="span3">
-            <div class="app-card">
-              <h5 class="card-h">
-                <a href="expenses-app/"><img alt="Expenses App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=expenses-app&amp;v=20140919180340" /><span>Expenses</span> </a>
-              </h5>
-              <div class="card-bottom">
-                <span class="card-desc">Create, submit and approve employee expenses online.</span> <a href="expenses-app/">Learn more</a>
-              </div>
-            </div>
-          </div>
-          <div class="span3">
-            <div class="app-card">
-              <h5 class="card-h">
-                <a href="time-sheets-app/"><img alt="Time Sheets App" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=time-sheets-app&amp;v=20140919180340" /><span>Time Sheets</span> </a>
-              </h5>
-              <div class="card-bottom">
-                <span class="card-desc">Track your team and project time allocations.</span> <a href="time-sheets-app/">Learn more</a>
-              </div>
-            </div>
-          </div>
-          <div class="span3">
-            <div class="app-card">
-              <h5 class="card-h">
-                <a href="field-services-app/"><img alt="Telco Services" class="app-card-icon" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=play4telco-icon&amp;v=20140919180340" /><span>Field Services</span> </a>
-              </h5>
-              <div class="card-bottom">
-                <span class="card-desc">Tablet&nbsp;app to support field personel activities.</span> <a href="field-services-app/">Learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
