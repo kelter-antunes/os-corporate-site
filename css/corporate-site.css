@@ -6541,11 +6541,7 @@ h3.description {
     font-weight: 400;
     line-height: 0;
 }
-.benefits h3 {
-    color: #4a4a4a;
-    font-family: 'myriad-pro', Arial, sans-serif;
-    font-size: 18px;
-}
+
 .benefits .image-holder {
     padding-top: 25px;
     height: 180px;
@@ -6577,25 +6573,38 @@ h3.description {
     margin: 0 auto;
 }
 .benefits .benefit a {
-    /* padding: 5px 0; */
     color: #000;
     display: block;
+    text-align: center;
 }
 .benefits .benefit a:hover {
     text-decoration: none;
 }
-.benefits .benefit p {
+.benefits .benefit span {
     color: #4a4a4a;
     font-family: Arial;
     font-size: 12px;
     font-weight: 400;
     line-height: 22px;
 }
-.benefits .benefit p span {
+.benefits .benefit span.link {
     color: #0088cc;
     font-weight: bold;
+    display: block;
 }
 
+.benefits span.h3 {
+    color: #4a4a4a;
+    font-family: 'myriad-pro', Arial, sans-serif;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.benefits span.desc {
+    display: block;
+    min-height: 80px;
+}
 
 
 
