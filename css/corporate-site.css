@@ -6495,7 +6495,8 @@ a:hover span.h6-product-tab {
     line-height: 30px;
     margin-top: 10px;
 }
-.navigation-bar li.get-started a span {
+.navigation-bar li.get-started a span,
+.navigation-bar li.get-started a:hover span {
     background: transparent;
     margin: 0;
 }
