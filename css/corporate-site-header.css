@@ -177,16 +177,16 @@ v=201406081625
   margin-left:-82px
 }
 
-.search_field
-{
-  display:inline-block;
-  -moz-border-radius:2px;
-  -webkit-border-radius:2px;
-  border-radius:2px;
-  background-color:#404040;
-  margin-top:15px;
-  margin-right:28px
-}
+        .search_field {
+            display: inline-block;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            border-radius: 2px;
+            background-color: #FFF;
+            margin-top: 3px;
+            margin-right: 10px;
+            border: 1px solid #79868A;
+        }
 
 .search_field input
 {

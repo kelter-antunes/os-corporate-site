@@ -5619,14 +5619,13 @@ input.gsc-search-button:hover {
 }
 form input.st-search-input {
     font-size: 12px;
-    padding: 0 20px 0 6px;
-    height: 22px;
+    padding: 0 19px 0 6px;
+    height: 20px;
     width: 105px;
     color: #CCC;
-    outline: none;
+    outline: 0;
     line-height: 22px;
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625) no-repeat 111px 3px;
-    background-color: transparent
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625') 111px 1px no-repeat;
 }
 form input.st-search-input-inpage {
     font-size: 12px;
@@ -6363,7 +6362,14 @@ a.osbtn-orange {
     background-color: #CB2100;
 }
 .search_field {
-    margin-right: 5px;
+    display: inline-block;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #FFF;
+    margin-top: 3px;
+    margin-right: 10px;
+    border: 1px solid #79868A;
 }
 form input.st-search-input {
     font-size: 12px;
@@ -6495,8 +6501,7 @@ a:hover span.h6-product-tab {
     line-height: 30px;
     margin-top: 10px;
 }
-.navigation-bar li.get-started a span,
-.navigation-bar li.get-started a:hover span {
+.navigation-bar li.get-started a span, .navigation-bar li.get-started a:hover span {
     background: transparent;
     margin: 0;
 }
