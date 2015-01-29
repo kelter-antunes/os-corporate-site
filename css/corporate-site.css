@@ -1108,15 +1108,14 @@ a.tooltip-link {
     min-width: 980px
 }
 .header-hero-wrapper.home {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=homepage-top-header-bg&v=201406081625);
-    background-position: bottom;
-    background-repeat: no-repeat;
+    background: -moz-linear-gradient(left, rgba(36, 23, 23, 0.5) 0%, rgba(36, 23, 23, 0.5) 100%), url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=homepage-top-header-bg&v=201406081625') #BDC5C8 center no-repeat;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(36, 23, 23, 0.5)), color-stop(100%, rgba(36, 23, 23, 0.5))), url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=homepage-top-header-bg&v=201406081625') #BDC5C8 center no-repeat;
+    background: -webkit-linear-gradient(left, rgba(36, 23, 23, 0.5) 0%, rgba(36, 23, 23, 0.5) 100%), url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=homepage-top-header-bg&v=201406081625') #BDC5C8 center no-repeat;
+    background: -o-linear-gradient(left, rgba(36, 23, 23, 0.5) 0%, rgba(36, 23, 23, 0.5) 100%), url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=homepage-top-header-bg&v=201406081625') #BDC5C8 center no-repeat;
+    background: -ms-linear-gradient(left, rgba(36, 23, 23, 0.5) 0%, rgba(36, 23, 23, 0.5) 100%), url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=homepage-top-header-bg&v=201406081625') #BDC5C8 center no-repeat;
+    background: linear-gradient(to right, rgba(36, 23, 23, 0.5) 0%, rgba(36, 23, 23, 0.5) 100%), url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=homepage-top-header-bg&v=201406081625') #BDC5C8 center no-repeat;
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#80241717', endColorstr='#80241717', GradientType=1);
     height: 540px;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    filter: none;
-    background-color: #BDC5C8;
 }
 .hero-home-back {
     background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=slide1&v=201406081625);
