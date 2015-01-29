@@ -6531,15 +6531,8 @@ h3.description {
     background-color: rgba(0, 0, 0, 0.35);
 }
 .benefits {
-    width: 1062px;
-    background-color: white;
-    display: inline-block;
-    padding-bottom: 50px;
 }
 .benefits_row {
-    width: 1100px;
-    margin-top: 50px;
-    margin-left: -20px;
 }
 .benefits h2 {
     padding-top: 56px;
@@ -6550,7 +6543,7 @@ h3.description {
 }
 .benefits h3 {
     color: #4a4a4a;
-    font-family: Myriad Pro;
+    font-family: 'myriad-pro', Arial, sans-serif;
     font-size: 18px;
 }
 .benefits .image-holder {
@@ -6558,12 +6551,10 @@ h3.description {
     height: 180px;
 }
 .benefits .benefit {
-    float: left;
-    width: 326px;
+    width: 286px;
     display: inline-block;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
-    box-sizing: content-box;
     padding: 0 20px;
     -webkit-transition: box-shadow 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
     -moz-transition: box-shadow 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -6573,6 +6564,7 @@ h3.description {
 .benefits .benefit.bordered {
     border-left: 1px solid #ccc;
     opacity: 0.95;
+    margin-left: 0;
 }
 .benefits .benefit:hover {
     background-color: white;
@@ -6585,10 +6577,9 @@ h3.description {
     margin: 0 auto;
 }
 .benefits .benefit a {
-    padding: 5px 0;
+    /* padding: 5px 0; */
     color: #000;
     display: block;
-    min-height: 360px;
 }
 .benefits .benefit a:hover {
     text-decoration: none;
