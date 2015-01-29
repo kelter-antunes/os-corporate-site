@@ -5251,7 +5251,7 @@ div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimo
     display: inline-block;
     font-weight: 400
 }
-.header-login:hover, .header-contact-us:hover {
+.header-contact-us:hover {
     text-decoration: none;
     color: #FFF!important
 }
@@ -5262,12 +5262,13 @@ div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimo
     background-color: #606060
 }
 .header-login {
-    background-color: #CB2100;
-    margin-left: 1px
+padding: 0 12px;
+  height: 23px;
+  line-height: 23px;
+  background: #A2A2A2;
+  font-size: 14px;
 }
-.header-login:hover {
-    background-color: #AD1F02
-}
+
 .header-contacts {
     /*width: 172px;*/
     
