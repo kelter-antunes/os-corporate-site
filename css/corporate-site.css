@@ -6554,6 +6554,7 @@ h3.description {
     -moz-transition: box-shadow 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
     -ms-transition: box-shadow 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
     transition: box-shadow 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    padding-bottom: 20px;
 }
 .benefits .benefit.bordered {
     border-left: 1px solid #ccc;
