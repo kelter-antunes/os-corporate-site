@@ -1108,15 +1108,15 @@ a.tooltip-link {
     min-width: 980px
 }
 .header-hero-wrapper.home {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-top-home&v=201406081625);
+    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=homepage-top-header-bg&v=201406081625);
     background-position: bottom;
     background-repeat: no-repeat;
-    height: 420px;
+    height: 540px;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
     filter: none;
-    background-color: #E4E4E4
+    background-color: #BDC5C8;
 }
 .hero-home-back {
     background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=slide1&v=201406081625);
@@ -5262,13 +5262,12 @@ div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimo
     background-color: #606060
 }
 .header-login {
-padding: 0 12px;
-  height: 23px;
-  line-height: 23px;
-  background: #A2A2A2;
-  font-size: 14px;
+    padding: 0 12px;
+    height: 23px;
+    line-height: 23px;
+    background: #A2A2A2;
+    font-size: 14px;
 }
-
 .header-contacts {
     /*width: 172px;*/
     
