@@ -6419,7 +6419,7 @@ body.mega-menu .navigation-bar li.active a span {
     left: 0;
     z-index: 99;
     padding-bottom: 0;
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=20150127180056') center -80px;
+    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201406081625') center -80px;
     border-bottom: 1px solid #d6d6d6;
 }
 .second-level-menu-wrapper span.title {
@@ -6530,18 +6530,13 @@ h3.description {
     height: 95px;
     background-color: rgba(0, 0, 0, 0.35);
 }
-.benefits {
-}
-.benefits_row {
-}
-.benefits h2 {
+.benefits {} .benefits_row {} .benefits h2 {
     padding-top: 56px;
     color: black;
     font-size: 28px;
     font-weight: 400;
     line-height: 0;
 }
-
 .benefits .image-holder {
     padding-top: 25px;
     height: 180px;
@@ -6592,7 +6587,6 @@ h3.description {
     font-weight: bold;
     display: block;
 }
-
 .benefits span.h3 {
     color: #4a4a4a;
     font-family: 'myriad-pro', Arial, sans-serif;
@@ -6600,15 +6594,23 @@ h3.description {
     display: block;
     margin-bottom: 10px;
 }
-
 .benefits span.desc {
     display: block;
     min-height: 80px;
 }
-
-
-
-
+.what-is-it {
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=what-you-can-do-background&v=201406081625');
+    background-color: #742211;
+    height: 665px;
+}
+.what-is-it h3 {
+    text-shadow: 0 2px 1px rgba(22, 22, 22, 0.5);
+    color: white;
+    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    padding-top: 68px;
+}
 /**to fix companie logos position on website*/
 
 @media only screen and (min-device-width: 767px) {
