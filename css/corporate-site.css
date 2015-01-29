@@ -6530,7 +6530,10 @@ h3.description {
     height: 95px;
     background-color: rgba(0, 0, 0, 0.35);
 }
-.benefits {} .benefits_row {} .benefits h2 {
+.benefits {
+    padding-bottom: 60px;
+}
+.benefits_row {} .benefits h2 {
     padding-top: 56px;
     color: black;
     font-size: 28px;
