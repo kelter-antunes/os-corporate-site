@@ -6504,6 +6504,29 @@ a:hover span.h6-product-tab {
     background: transparent;
     margin: 0;
 }
+h1.slogan {
+    font-size: 52px;
+    font-weight: 400;
+    margin-bottom: 7px;
+    font-family: 'myriad-pro', Arial, sans-serif;
+    color: white;
+}
+h3.description {
+    color: white;
+    text-shadow: 1px 1px #666;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    padding-top: 30px;
+}
+.call-out-hero-home a.osbtn.osbtn-red.popup_link {
+    margin-top: 23px;
+    margin-bottom: 65px;
+    padding: 15px 30px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 /**to fix companie logos position on website*/
 
 @media only screen and (min-device-width: 767px) {
