@@ -1108,6 +1108,14 @@ a.tooltip-link {
     min-width: 980px
 }
 .header-hero-wrapper.home {
+    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-top-home&v=201406081625) bottom no-repeat #E4E4E4;
+    height: 420px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    filter: none
+}
+.header-hero-wrapper.home-rev {
     background: -moz-linear-gradient(left, rgba(36, 23, 23, 0.5) 0%, rgba(36, 23, 23, 0.5) 100%), url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=homepage-top-header-bg&v=201406081625') #BDC5C8 center no-repeat;
     background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(36, 23, 23, 0.5)), color-stop(100%, rgba(36, 23, 23, 0.5))), url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=homepage-top-header-bg&v=201406081625') #BDC5C8 center no-repeat;
     background: -webkit-linear-gradient(left, rgba(36, 23, 23, 0.5) 0%, rgba(36, 23, 23, 0.5) 100%), url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=homepage-top-header-bg&v=201406081625') #BDC5C8 center no-repeat;
@@ -6528,10 +6536,12 @@ h3.description {
 }
 .call-out-hero-home .featured {
     background-color: rgba(0, 0, 0, 0.35);
-    overflow: hidden;   
-    height: 75px;   font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    height: 75px;
+    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
     position: relative;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);   color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    color: white;
 }
 .benefits {
     padding-bottom: 60px;
