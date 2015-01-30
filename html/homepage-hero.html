@@ -1,0 +1,77 @@
+<div class="container top60">
+    <div class="row">
+        <div class="span12 align-center">
+            <h1 class="slogan">
+        OutSystems Platform
+      </h1>
+            <h3 class="description">
+        The fastest way to <strong>create</strong>, <strong>deploy</strong> and <strong>change</strong>
+        <br />
+        your custom mobile and web applications
+      </h3>
+            <a class="osbtn osbtn-red popup_link" href="/platform/2-minute-overview/" id="04927269860636443"><span class="osicon-play-triangle">&nbsp;</span><span>Watch 2-min Overview</span> </a>
+        </div>
+        <div class="span12">
+            <div class="featured">
+                <div class="m-carousel m-fluid m-carousel-photos">
+                    <div style="position: absolute;padding: 10px;color: #7c7c7c;">
+                        Featured:
+                    </div>
+
+                    <div class="m-carousel-inner">
+                        <div class="m-item">
+                            <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=SliderArrowLeft" class="pxs_prev" style="cursor: pointer; padding-right: 20px; display: inline;">
+                            <div style="font-size: 16px;display: inline-block;line-height: 75px;">
+                                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=Forrester7" style="padding-right: 29px;">Forrester names OutSystems a Leader in the Enterprise Public Cloud Platforms for Rapid Developers, Q4 2014!</div>
+
+                            <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=SliderArrowRight" class="pxs_next" style="cursor: pointer; padding-left: 20px; display: none;">
+                        </div>
+
+                        <div class="m-item m-active">
+                            <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=SliderArrowLeft" class="pxs_prev" style="cursor: pointer; padding-right: 20px; display: inline;">
+                            <div font-size:="">
+                                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=analyst_logo_02" style="padding-right: 20px; height: 37px; ">OutSystems Platform and Force.com: Different PaaS for Different Players (Bloor Research Report)</div>
+
+                            <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=SliderArrowRight" class="pxs_next" style="cursor: pointer; padding-left: 20px; display: none;">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+var mCarousel;
+
+function updateCarouselControls() {
+    if ($('.m-carousel-inner').children(':last').hasClass('m-active')) {
+        $('.pxs_next').hide();
+    } else {
+        $('.pxs_next').show();
+    }
+
+    if ($('.m-carousel-inner').children(':first').hasClass('m-active')) {
+        $('.pxs_prev').hide();
+    } else {
+        $('.pxs_prev').show();
+    }
+}
+
+$(function() {
+    mCarousel = $('.m-carousel').carousel();
+    $('.pxs_prev').bind('click', function() {
+        mCarousel.carousel('prev');
+        updateCarouselControls();
+    });
+    $('.pxs_next').bind('click', function() {
+        mCarousel.carousel('next');
+        updateCarouselControls();
+    });
+    mCarousel.on('afterSlide', function() {
+        updateCarouselControls();
+    })
+    updateCarouselControls();
+});
+</script>
