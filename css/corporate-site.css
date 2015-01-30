@@ -6605,7 +6605,7 @@ h3.description {
 .what-is-it {
     background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=what-you-can-do-background&v=201406081625');
     background-color: #742211;
-    height: 665px;
+    padding-bottom: 50px;
 }
 .what-is-it h3 {
     text-shadow: 0 2px 1px rgba(22, 22, 22, 0.5);
@@ -6613,7 +6613,86 @@ h3.description {
     font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
     font-size: 28px;
     font-weight: 400;
-    padding-top: 68px;
+    padding-top: 50px;
+}
+.what-you-can-do {
+    text-align: left;
+    margin-top: 10px;
+    background: #FFF;
+    border-top-width: 0;
+    display: table;
+}
+.what-you-can-do .btn-group .btn {
+    width: 224px;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    padding: 15px 0px;
+    text-shadow: none;
+    background: #EBEBEB;
+}
+.what-you-can-do .btn-group .btn.active {
+    box-shadow: none;
+    border: none;
+    background: white;
+}
+.what-you-can-do .btn-group .btn:hover {
+    background: #F2F2F2;
+}
+.what-you-can-do .btn-group .btn.active:hover {
+    background: #FFF;
+}
+.what-you-can-do .btn-group .btn .iconlp-fontcolor, .what-you-can-do .btn-group .btn .fa-unlock, .what-you-can-do .btn-group .btn span.h4 {
+    color: #606060;
+}
+.what-you-can-do .btn-group .btn .iconlp-fontcolor, .what-you-can-do .btn-group .btn .fa-unlock {
+    margin-left: 20px;
+    font-size: 28px;
+}
+.what-you-can-do .btn-group .btn.active .iconlp-fontcolor, .what-you-can-do .btn-group .btn.active .fa-unlock {
+    margin-left: 20px;
+    color: #c20;
+}
+.btn-group.optionSelector {
+    white-space: normal;
+    width: 226px;
+    vertical-align: top;
+    display: table-cell;
+}
+.what-you-can-do .btn-group .btn span.h4 {
+    margin: 5px 0;
+    font-size: 16px;
+    display: block;
+    font-family: myriad-pro, Arial, sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+}
+.what-you-can-do .btn-group .btn.active span.h4 {
+    text-shadow: 0 2px 1px rgba(179, 179, 179, 0.5);
+    color: #c20;
+}
+.what-you-can-do .description {
+    display: table-cell;
+    position: relative;
+    width: 100%;
+}
+.what-you-can-do .description .option {
+    position: absolute;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+.what-you-can-do .description h4 {
+    margin: 12px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #808080;
+}
+.what-you-can-do .description iframe {
+    border: 4px solid #808080;
+}
+.what-you-can-do .description .option.manage img {
+    height: 387px;
 }
 /**to fix companie logos position on website*/
 
