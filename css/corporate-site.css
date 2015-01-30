@@ -6694,6 +6694,21 @@ h3.description {
 .what-you-can-do .description .option.manage img {
     height: 387px;
 }
+.photo-quotes {
+    background-color: black;
+}
+.customers-and-experts h4 {
+    height: 13px;
+    color: #333;
+    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 0;
+}
+.customers-and-experts a:hover {
+    text-decoration: none;
+    color: #c20;
+}
 /**to fix companie logos position on website*/
 
 @media only screen and (min-device-width: 767px) {
