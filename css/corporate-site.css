@@ -6715,6 +6715,10 @@ h3.description {
     text-decoration: none;
     color: #c20;
 }
+.how-can-we-help {
+    background-color: #F2F2F2;
+    text-align: center;
+}
 .needs {
     padding: 60px 0;
 }
