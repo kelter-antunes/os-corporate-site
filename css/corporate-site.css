@@ -6346,6 +6346,9 @@ a.osbtn-orange {
 .secondary-menu {
     display: inline-block;
 }
+.secondary-menu, .secondary-menu a, .secondary-menu span {
+    color: #D2D2D2;
+}
 .secondary-menu a, .secondary-menu span {
     font-family: myriad-pro;
     font-size: 13px;
