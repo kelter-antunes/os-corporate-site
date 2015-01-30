@@ -6696,6 +6696,12 @@ h3.description {
 }
 .photo-quotes {
     background-color: black;
+    text-align: center;
+}
+.customers-and-experts {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 .customers-and-experts h4 {
     height: 13px;
@@ -6708,6 +6714,85 @@ h3.description {
 .customers-and-experts a:hover {
     text-decoration: none;
     color: #c20;
+}
+.needs {
+    padding: 60px 0;
+}
+.needs .need a {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: box-shadow 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    -moz-transition: box-shadow 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    -ms-transition: box-shadow 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: box-shadow 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.needs .need h5 {
+    display: table;
+    width: 100%;
+    height: 50px;
+}
+.needs h5 span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.needs .need > a {
+    border-radius: 7px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.31);
+    display: block;
+    padding: 20px 15px;
+    color: black;
+    background-color: white;
+}
+.needs .need.span3 p {
+    text-align: center;
+    min-height: 110px;
+}
+.needs .need > a:hover {
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border-color: rgba(214, 214, 214, 0);
+}
+.needs .need a .cta {
+    color: #0088cc;
+    padding-bottom: 10px;
+}
+.needs .need a .cta:hover, a.cta:hover {
+    text-decoration: none;
+    color: #c20;
+}
+.needs .need.apps {
+    width: 1000px;
+}
+.needs_row .need.apps h3, .needs_row .need.apps p {
+    height: auto;
+}
+
+.needs h2 {
+    height: 26px;
+    color: black;
+    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 0;
+}
+.needs span.h5 {
+    vertical-align: middle;
+    text-align: center;
+    font-family: myriad-pro, Arial, sans-serif;
+    color: #333;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 20px;
+}
+.needs .need > a span.desc {
+    text-align: center;
+    min-height: 110px;
+    display: block;
 }
 /**to fix companie logos position on website*/
 
