@@ -6359,6 +6359,12 @@ a.osbtn-orange {
     font-weight: 400;
     text-decoration: none;
 }
+.header-hero-wrapper.home-rev .secondary-menu a, .secondary-menu span {
+    background: transparent;
+}
+.header-hero-wrapper.home-rev .secondary-menu, .secondary-menu a, .secondary-menu span {
+    color: #D2D2D2;
+}
 .navigation-items {
     width: 1013px;
 }
