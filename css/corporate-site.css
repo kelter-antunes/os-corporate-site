@@ -6346,9 +6346,6 @@ a.osbtn-orange {
 .secondary-menu {
     display: inline-block;
 }
-.secondary-menu, .secondary-menu a, .secondary-menu span {
-    color: #D2D2D2;
-}
 .secondary-menu a, .secondary-menu span {
     font-family: myriad-pro;
     font-size: 13px;
@@ -6362,7 +6359,7 @@ a.osbtn-orange {
 .header-hero-wrapper.home-rev .secondary-menu a, .secondary-menu span {
     background: transparent;
 }
-.header-hero-wrapper.home-rev .secondary-menu, .secondary-menu a, .secondary-menu span {
+.header-hero-wrapper.home-rev .secondary-menu, .header-hero-wrapper.home-rev .secondary-menu a, .secondary-menu span {
     color: #D2D2D2;
 }
 .navigation-items {
