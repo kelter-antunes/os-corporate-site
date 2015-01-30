@@ -6359,7 +6359,7 @@ a.osbtn-orange {
 .header-hero-wrapper.home-rev .secondary-menu a, .secondary-menu span {
     background: transparent;
 }
-.header-hero-wrapper.home-rev .secondary-menu, .header-hero-wrapper.home-rev .secondary-menu a, .secondary-menu span {
+.header-hero-wrapper.home-rev .secondary-menu, .header-hero-wrapper.home-rev .secondary-menu a, .header-hero-wrapper.home-rev .secondary-menu span {
     color: #D2D2D2;
 }
 .navigation-items {
