@@ -6538,7 +6538,6 @@ h3.description {
     margin-top: 23px;
     margin-bottom: 65px;
     padding: 15px 30px;
-    font-weight: bold;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .call-out-hero-home .featured {
@@ -6567,7 +6566,7 @@ h3.description {
     line-height: 75px;
 }
 .call-out-hero-home .featured .m-item.m-active {
-  display: inline-block;
+    display: inline-block;
 }
 .call-out-hero-home .featured .pxs_navigation {
     display: block;
@@ -6590,6 +6589,13 @@ h3.description {
 }
 .call-out-hero-home .featured .pxs_navigation span.pxs_prev {
     left: 10px;
+}
+.call-out-hero-home span.osicon-play-triangle {
+    position: absolute;
+    line-height: 20px;
+}
+.call-out-hero-home a span:nth-child(2) {
+    padding-left: 30px;
 }
 .benefits {
     padding-bottom: 60px;
@@ -6619,7 +6625,6 @@ h3.description {
 }
 .benefits .benefit.bordered {
     border-left: 1px solid #ccc;
-    opacity: 0.95;
     margin-left: 0;
 }
 .benefits .benefit:hover {
