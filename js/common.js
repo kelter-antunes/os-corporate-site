@@ -458,10 +458,13 @@ $(function() {
                 _gaq.push(['_trackEvent', 'Video', 'Start Watching', video.name()]);
 
                 //marketo
-                Munchkin.munchkinFunction('visitWebPage', {
-                    url: '/view-video-start-watching',
-                    params: video.name()
-                });
+                if ((typeof Munchkin !== 'undefined')) {
+                    Munchkin.munchkinFunction('visitWebPage', {
+                        url: '/view-video-start-watching',
+                        params: video.name()
+                    });
+                }
+
             }
             return this.unbind;
 
@@ -476,10 +479,13 @@ $(function() {
                 _gaq.push(['_trackEvent', 'Video', 'Complete', video.name()]);
 
                 //marketo
-                Munchkin.munchkinFunction('visitWebPage', {
-                    url: '/view-video-complete',
-                    params: video.name()
-                });
+                if ((typeof Munchkin !== 'undefined')) {
+                    Munchkin.munchkinFunction('visitWebPage', {
+                        url: '/view-video-complete',
+                        params: video.name()
+                    });
+                }
+
             }
             return this.unbind;
 
@@ -502,10 +508,13 @@ $(function() {
                     _gaq.push(['_trackEvent', 'Video', 'Watched 50%', video.name()]);
 
                     //marketo
-                    Munchkin.munchkinFunction('visitWebPage', {
-                        url: '/view-video-50-percent',
-                        params: video.name()
-                    });
+                    if ((typeof Munchkin !== 'undefined')) {
+                        Munchkin.munchkinFunction('visitWebPage', {
+                            url: '/view-video-50-percent',
+                            params: video.name()
+                        });
+                    }
+
                 }
 
 
@@ -523,10 +532,13 @@ $(function() {
                     _gaq.push(['_trackEvent', 'Video', 'Watched 75%', video.name()]);
 
                     //marketo
-                    Munchkin.munchkinFunction('visitWebPage', {
-                        url: '/view-video-75-percent',
-                        params: video.name()
-                    });
+                    if ((typeof Munchkin !== 'undefined')) {
+                        Munchkin.munchkinFunction('visitWebPage', {
+                            url: '/view-video-75-percent',
+                            params: video.name()
+                        });
+                    }
+
 
                 }
                 done75 = true;
