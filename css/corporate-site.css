@@ -6577,7 +6577,7 @@ h3.description {
     width: 100%;
 }
 .call-out-hero-home .featured .pxs_navigation span {
-    display: inline-block;
+    display: none;
     height: 75px;
     cursor: pointer;
     position: absolute;
