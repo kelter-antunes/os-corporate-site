@@ -6563,8 +6563,11 @@ h3.description {
     padding-left: 60px;
     padding-right: 40px;
     font-size: 16px;
-    display: inline-block;
+    display: none;
     line-height: 75px;
+}
+.call-out-hero-home .featured .m-item.m-active {
+  display: inline-block;
 }
 .call-out-hero-home .featured .pxs_navigation {
     display: block;
