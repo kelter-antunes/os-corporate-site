@@ -6605,7 +6605,7 @@ h3.description {
     padding-bottom: 60px;
 }
 .benefits_row {} .benefits h2 {
-    padding-top: 56px;
+    padding-top: 50px;
 }
 .benefits .image-holder {
     padding-top: 25px;
@@ -6671,7 +6671,7 @@ h3.description {
 .what-is-it {
     background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=what-you-can-do-background&v=201406081625');
     background-color: #742211;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     background-position: center top;
 }
 .what-is-it h2 {
@@ -6803,7 +6803,7 @@ h3.description {
 }
 .customers-and-experts {
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     text-align: center;
 }
 .customers-and-experts a {
@@ -6811,14 +6811,13 @@ h3.description {
 }
 .customers-and-experts a:hover {
     text-decoration: none;
-    color: #c20;
 }
 .how-can-we-help {
     background-color: #F2F2F2;
     text-align: center;
 }
 .needs {
-    padding: 60px 0;
+    padding: 50px 0;
 }
 .needs .need a {
     -webkit-box-sizing: content-box;
@@ -6862,7 +6861,6 @@ h3.description {
 }
 .needs .need a .cta:hover, a.cta:hover {
     text-decoration: none;
-    color: #c20;
 }
 .needs .need.apps {
     width: 1000px;
