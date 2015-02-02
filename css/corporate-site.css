@@ -6785,12 +6785,12 @@ h3.description {
     position: relative;
 }
 .m-carousel.m-quotes .pxs_navigation {
-  display: block;
-  position: absolute;
-  top: 50%;
-  height: 100%;
-  width: 100%;
-  margin-top: -10px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    height: 100%;
+    width: 100%;
+    margin-top: -10px;
 }
 .m-carousel.m-quotes .pxs_navigation span.pxs_next {
     float: right;
@@ -6800,6 +6800,7 @@ h3.description {
 }
 .m-carousel.m-quotes .pxs_navigation span {
     cursor: pointer;
+    width: 25px;
 }
 .customers-and-experts {
     padding-top: 50px;
