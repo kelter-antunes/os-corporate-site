@@ -80,6 +80,13 @@
         $('.optionSelector a').click(function(e) {
             e.preventDefault();
             e.stopPropagation();
+
+            if ((typeof wistiaEmbeds !== 'undefined')) {
+                for (var i = 0; i < wistiaEmbeds.length; i++) {
+                    wistiaEmbeds[i].pause();
+                }
+            }
+
             var parallax = $(this).closest('.parallax');
             var option = parallax.data('option') || 'create';
             var newOption = $(this).data('option');
