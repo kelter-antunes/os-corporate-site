@@ -6807,6 +6807,9 @@ h3.description {
     padding-bottom: 30px;
     text-align: center;
 }
+.customers-and-experts a {
+  display: block;
+}
 .customers-and-experts a:hover {
     text-decoration: none;
     color: #c20;
