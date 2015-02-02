@@ -1135,14 +1135,54 @@ v=201406081625
         background-position: -2px 16px;
         background-size: 95px auto;
     }
-}
-}
+    .call-out-hero-home .featured {
+        display: none;
+    }
+    .what-is-it {
+        display: none;
+    }
+    .header-hero-wrapper.home-rev {
+        height: 430px;
+    }
+    h1.slogan {
+        font-size: 42px;
+        line-height: normal;
+    }
+    h3.description {
+        line-height: normal;
+        font-size: 24px;
+        font-weight: 300;
+    }
+    .call-out-hero-home a.osbtn.osbtn-red.popup_link {
+        margin-bottom: 0;
+    }
+    .benefits h2 {
+        display: none;
+    }
+    .benefits .benefit {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .benefits .benefit.bordered {
+        border: none;
+    }
+    .photo-quotes {
+        display: none;
+    }
+    .customers-and-experts {
+        padding-top: 0;
+    }
+    .customers-and-experts img {
+        height: auto!important;
+        width: auto!important;
+    }
 }
 /* Landscape */
 
 @media only screen and (max-device-width: 767px) and (orientation: landscape) {
     div.case-study-landscape-landscape {
-        display:block
+        display: block
     }
     div.case-study-landscape-portrait {
         display: none
@@ -1202,7 +1242,7 @@ v=201406081625
 
 @media only screen and (max-device-width: 767px) and (orientation: portrait) {
     div.case-study-landscape-landscape {
-        display:none
+        display: none
     }
     div.case-study-landscape-portrait {
         display: block
@@ -1212,6 +1252,6 @@ v=201406081625
 
 @media only screen and (min-device-width: 767px) {
     .case-study-customer-logo {
-        bottom:10px
+        bottom: 10px
     }
 }
