@@ -6590,6 +6590,10 @@ h3.description {
 .call-out-hero-home .featured .pxs_navigation span.pxs_prev {
     left: 10px;
 }
+.call-out-hero-home h3.description strong {
+    font-weight: 600;
+    text-shadow: 3px 3px #666;
+}
 .call-out-hero-home span.osicon-play-triangle {
     position: absolute;
     line-height: 20px;
