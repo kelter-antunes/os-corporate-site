@@ -6624,7 +6624,7 @@ h3.description {
     padding-bottom: 20px;
 }
 .benefits .benefit.bordered {
-    border-left: 1px solid rgba(204, 204, 204, 0.33);
+    border-left: 1px solid rgba(204, 204, 204, 0.30); 
     margin-left: 0;
 }
 .benefits .benefit:hover {
