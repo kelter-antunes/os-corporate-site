@@ -186,6 +186,7 @@
 		'osicon-screenstons': '&#xe6ae;',
 		'osicon-validation': '&#xe6af;',
 		'osicon-worldfull': '&#xe6b0;',
+		'osicon-nolockin': '&#xe69b;',
 		'osicon-apple': '&#xe691;',
 		'osicon-android': '&#xe692;',
 		'0': 0
