@@ -1124,6 +1124,7 @@ a.tooltip-link {
     background: linear-gradient(to right, rgba(36, 23, 23, 0.5) 0%, rgba(36, 23, 23, 0.5) 100%), url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=homepage-top-header-bg&v=201406081625') #BDC5C8 center no-repeat;
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#80241717', endColorstr='#80241717', GradientType=1);
     height: 540px;
+    position: relative;
 }
 .hero-home-back {
     background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=slide1&v=201406081625);
@@ -6545,9 +6546,47 @@ h3.description {
     overflow: hidden;
     height: 75px;
     font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
-    position: relative;
+    position: absolute;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     color: white;
+    bottom: 0;
+    width: 980px;
+    margin: 0 auto;
+}
+.call-out-hero-home .featured .featured-label {
+    position: absolute;
+    padding: 10px;
+    color: #7c7c7c;
+    padding-top: 4px;
+}
+.call-out-hero-home .featured .m-item {
+    padding-left: 60px;
+    padding-right: 40px;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 75px;
+}
+.call-out-hero-home .featured .pxs_navigation {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.call-out-hero-home .featured .pxs_navigation span {
+    display: inline-block;
+    height: 75px;
+    cursor: pointer;
+    position: absolute;
+    line-height: 75px;
+    top: 50%;
+    margin-top: -12px;
+}
+.call-out-hero-home .featured .pxs_navigation span.pxs_next {
+    right: 10px;
+}
+.call-out-hero-home .featured .pxs_navigation span.pxs_prev {
+    left: 10px;
 }
 .benefits {
     padding-bottom: 60px;
