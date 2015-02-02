@@ -1123,7 +1123,7 @@ a.tooltip-link {
     background: -ms-linear-gradient(left, rgba(36, 23, 23, 0.5) 0%, rgba(36, 23, 23, 0.5) 100%), url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=homepage-top-header-bg&v=201406081625') #BDC5C8 center no-repeat;
     background: linear-gradient(to right, rgba(36, 23, 23, 0.5) 0%, rgba(36, 23, 23, 0.5) 100%), url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=homepage-top-header-bg&v=201406081625') #BDC5C8 center no-repeat;
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#80241717', endColorstr='#80241717', GradientType=1);
-    height: 540px;
+    height: 510px;
     position: relative;
 }
 .hero-home-back {
@@ -6606,10 +6606,6 @@ h3.description {
 }
 .benefits_row {} .benefits h2 {
     padding-top: 56px;
-    color: black;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 0;
 }
 .benefits .image-holder {
     padding-top: 25px;
@@ -6677,13 +6673,11 @@ h3.description {
     background-color: #742211;
     padding-bottom: 50px;
 }
-.what-is-it h3 {
-    text-shadow: 0 2px 1px rgba(22, 22, 22, 0.5);
-    color: white;
-    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
-    font-size: 28px;
-    font-weight: 400;
-    padding-top: 50px;
+.what-is-it h2 {
+  text-shadow: 0 2px 1px rgba(22, 22, 22, 0.5);
+  color: white;
+  font-weight: 400;
+  padding-top: 50px;
 }
 .what-you-can-do {
     text-align: left;
@@ -6773,14 +6767,7 @@ h3.description {
     padding-bottom: 30px;
     text-align: center;
 }
-.customers-and-experts h4 {
-    height: 13px;
-    color: #333;
-    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 0;
-}
+
 .customers-and-experts a:hover {
     text-decoration: none;
     color: #c20;
@@ -6842,14 +6829,7 @@ h3.description {
 .needs_row .need.apps h3, .needs_row .need.apps p {
     height: auto;
 }
-.needs h2 {
-    height: 26px;
-    color: black;
-    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 0;
-}
+
 .needs span.h5 {
     vertical-align: middle;
     text-align: center;
@@ -6867,10 +6847,7 @@ h3.description {
     min-height: 110px;
     display: block;
 }
-.needs_row h3 {
-    color: #4a4a4a;
-    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
-}
+
 /**to fix companie logos position on website*/
 
 @media only screen and (min-device-width: 767px) {
