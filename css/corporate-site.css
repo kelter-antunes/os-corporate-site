@@ -6760,11 +6760,38 @@ h3.description {
     height: 387px;
 }
 .photo-quotes {
-  background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=Dark-photo-customers-bg1&v=201406081625');
-  background-color: black;
-  background-position: center top;
-  background-repeat: no-repeat;
-  text-align: center;
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=Dark-photo-customers-bg1&v=201406081625');
+    background-color: black;
+    background-position: center top;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.m-carousel.m-quotes .m-item {
+    display: none;
+}
+.m-carousel.m-quotes .m-item.m-active {
+    display: block;
+}
+.m-carousel.m-quotes.pxs_navigation {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+.m-carousel.m-quotes {
+    position: relative;
+}
+.m-carousel.m-quotes .pxs_navigation span.pxs_next {
+    float: right;
+}
+.m-carousel.m-quotes .pxs_navigation span.pxs_prev {
+    float: left;
+}
+.m-carousel.m-quotes .pxs_navigation span {
+    cursor: pointer;
 }
 .customers-and-experts {
     padding-top: 50px;

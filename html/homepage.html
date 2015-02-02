@@ -203,8 +203,68 @@ of standard and documented .NET or Java code.</h4>
 </div>
 <div class="photo-quotes">
     <div>
-        <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-1">
+
     </div>
+
+
+    <div class="magiccontainer m-carousel m-quotes m-fluid">
+        <div class="m-carousel-inner">
+            <div class="m-item m-active">
+                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-1">
+            </div>
+
+            <div class="m-item">
+                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-2">
+            </div>
+        </div>
+
+        <div class="pxs_navigation">
+            <span class="pxs_next">
+                          <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=SliderArrowRight">
+                      </span>
+            <span class="pxs_prev">
+                          <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=SliderArrowLeft">
+                      </span>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+    var mCarouselQuotes;
+
+    function updateCarouselQuotesControls() {
+        if (mCarouselQuotes.children('.m-carousel-inner').children(':last').hasClass('m-active')) {
+            mCarouselQuotes.find('.pxs_next').hide();
+        } else {
+            mCarouselQuotes.find('.pxs_next').show();
+        }
+
+        if (mCarouselQuotes.children('.m-carousel-inner').children(':first').hasClass('m-active')) {
+            mCarouselQuotes.find('.pxs_prev').hide();
+        } else {
+            mCarouselQuotes.find('.pxs_prev').show();
+        }
+    }
+
+    $(function() {
+        mCarouselQuotes = $('.m-carousel.m-quotes').carousel();
+        mCarouselQuotes.find('.pxs_prev').bind('click', function() {
+            mCarouselQuotes.carousel('prev');
+            updateCarouselQuotesControls();
+        });
+        mCarouselQuotes.find('.pxs_next').bind('click', function() {
+            mCarouselQuotes.carousel('next');
+            updateCarouselQuotesControls();
+        });
+        mCarouselQuotes.on('afterSlide', function() {
+            updateCarouselQuotesControls();
+        })
+        updateCarouselQuotesControls();
+    });
+    </script>
+
 </div>
 
 <div class="customers-and-experts">

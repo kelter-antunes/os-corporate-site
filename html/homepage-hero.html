@@ -40,26 +40,26 @@ your custom mobile and web applications</h3>
 var mCarousel;
 
 function updateCarouselControls() {
-    if ($('.m-carousel-inner').children(':last').hasClass('m-active')) {
-        $('.pxs_next').hide();
+    if (mCarousel.children('.m-carousel-inner').children(':last').hasClass('m-active')) {
+        mCarousel.find('.pxs_next').hide();
     } else {
-        $('.pxs_next').show();
+        mCarousel.find('.pxs_next').show();
     }
 
-    if ($('.m-carousel-inner').children(':first').hasClass('m-active')) {
-        $('.pxs_prev').hide();
+    if (mCarousel.children('.m-carousel-inner').children(':first').hasClass('m-active')) {
+        mCarousel.find('.pxs_prev').hide();
     } else {
-        $('.pxs_prev').show();
+        mCarousel.find('.pxs_prev').show();
     }
 }
 
 $(function() {
     mCarousel = $('.m-carousel').carousel();
-    $('.pxs_prev').bind('click', function() {
+    mCarousel.find('.pxs_prev').bind('click', function() {
         mCarousel.carousel('prev');
         updateCarouselControls();
     });
-    $('.pxs_next').bind('click', function() {
+    mCarousel.find('.pxs_next').bind('click', function() {
         mCarousel.carousel('next');
         updateCarouselControls();
     });
