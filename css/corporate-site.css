@@ -6760,8 +6760,11 @@ h3.description {
     height: 387px;
 }
 .photo-quotes {
-    background-color: black;
-    text-align: center;
+  background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=Dark-photo-customers-bg1&v=201406081625');
+  background-color: black;
+  background-position: center top;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 .customers-and-experts {
     padding-top: 50px;
