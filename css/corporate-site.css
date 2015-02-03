@@ -6243,16 +6243,24 @@ a.ressourcelink {
     font-size: 12px;
     color: #606060;
 }
-a.osbtn-white {
-    padding: 10px 10px;
-    color: #ef6c00 !important;
-    background: #ffffff;
-    border-style: solid;
-    border-color: #ef6c00;
-    border-width: 1px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+
+
+a.osbtn-white
+{
+  padding:10px 10px;
+  color:#cc0000  !important;
+  background:#ffffff;
+  border-style: solid;
+  border-color: #cc0000 ;
+  border-width: 1px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+}
+
+a.osbtn-white:hover
+{
+    background:#f7f7f7!important;
 }
 .osbtn-orange {
     background-color: #ef6c00;
