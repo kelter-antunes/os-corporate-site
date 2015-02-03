@@ -6252,7 +6252,7 @@ a.osbtn-white {
     border-width: 1px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 .osbtn-orange {
     background-color: #ef6c00;
@@ -6624,7 +6624,7 @@ h3.description {
     padding-bottom: 20px;
 }
 .benefits .benefit.bordered {
-    border-left: 1px solid rgba(204, 204, 204, 0.30); 
+    border-left: 1px solid rgba(204, 204, 204, 0.30);
     margin-left: 0;
 }
 .benefits .benefit:hover {
