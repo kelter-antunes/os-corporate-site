@@ -1,37 +1,36 @@
 <div class="container top60">
     <div class="row">
         <div class="span12 align-center">
-            <h1 class="slogan">OutSystems Platform</h1>
-
-            <h3 class="description">The fastest way to <strong>create</strong>, <strong>deploy</strong> and <strong>change</strong><br>
-your custom mobile and web applications</h3>
-            <a class="osbtn osbtn-red popup_link" href="/platform/2-minute-overview/">
-            <span class="osicon-play-triangle">&nbsp;</span>
-            <span>Watch 2-min Overview</span> </a>
+            <h1 class="slogan">
+        OutSystems Platform
+      </h1>
+            <h3 class="description">
+        The fastest way to <strong>create</strong>, <strong>deploy</strong> and <strong>change</strong>
+        <br />
+        your custom mobile and web applications
+      </h3>
+            <a class="osbtn osbtn-red popup_link" href="/platform/2-minute-overview/"><span class="osicon-play-triangle">&nbsp;</span> <span>Watch 2-min Overview</span> </a>
         </div>
-
         <div class="span12">
             <div class="featured">
-                <div class="featured-label">Featured:</div>
-
+                <div class="featured-label">
+                    Featured:
+                </div>
                 <div class="magiccontainer m-carousel m-featured m-fluid align-center">
                     <div class="m-carousel-inner">
                         <div class="m-item m-active">
-                            <div><img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=Forrester7&amp;v=20150202104249" style="padding-right: 15px;">Forrester names OutSystems a Leader in the Enterprise Public Cloud Platforms for Rapid Developers, Q4 2014!</div>
+                            <div>
+                                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=Forrester7&amp;v=20150202104249" style="padding-right: 15px;" />Forrester names OutSystems a Leader in the Enterprise Public Cloud Platforms for Rapid Developers, Q4 2014!
+                            </div>
                         </div>
-
                         <div class="m-item">
-                            <div><img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=analyst_logo_02&amp;v=20150202104249" style="padding-right: 20px; height: 37px; ">OutSystems Platform and Force.com: Different PaaS for Different Players (Bloor Research Report)</div>
+                            <div>
+                                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=analyst_logo_02&amp;v=20150202104249" style="padding-right: 20px; height: 37px; " />OutSystems Platform and Force.com: Different PaaS for Different Players (Bloor Research Report)
+                            </div>
                         </div>
                     </div>
-
                     <div class="pxs_navigation">
-                        <span class="pxs_next">
-                          <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=SliderArrowRight">
-                      </span>
-                        <span class="pxs_prev">
-                          <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=SliderArrowLeft">
-                      </span>
+                        <span class="pxs_next"><img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=SliderArrowRight" /> </span> <span class="pxs_prev"> <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=SliderArrowLeft" /> </span>
                     </div>
                 </div>
             </div>
@@ -47,22 +46,34 @@ function updateCarouselControls() {
     } else {
         mCarousel.find('.pxs_next').show();
     }
-
     if (mCarousel.children('.m-carousel-inner').children(':first').hasClass('m-active')) {
         mCarousel.find('.pxs_prev').hide();
     } else {
         mCarousel.find('.pxs_prev').show();
     }
 }
-
 $(function() {
     mCarousel = $('.m-carousel.m-featured').carousel();
     mCarousel.find('.pxs_prev').bind('click', function() {
-        mCarousel.carousel('prev');
+        $(".m-carousel.m-featured .m-carousel-inner").animate({
+            opacity: 0
+        }, 500, function() {
+            mCarousel.carousel('prev');
+            $(".m-carousel.m-featured .m-carousel-inner").animate({
+                opacity: 1
+            }, 500);
+        });
         updateCarouselControls();
     });
     mCarousel.find('.pxs_next').bind('click', function() {
-        mCarousel.carousel('next');
+        $(".m-carousel.m-featured .m-carousel-inner").animate({
+            opacity: 0
+        }, 500, function() {
+            mCarousel.carousel('next');
+            $(".m-carousel.m-featured .m-carousel-inner").animate({
+                opacity: 1
+            }, 500);
+        });
         updateCarouselControls();
     });
     mCarousel.on('afterSlide', function() {

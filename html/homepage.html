@@ -172,7 +172,7 @@
                                                 <td style="vertical-align: top;">
                                                     <div>
                                                         <h5 style="margin-top:0">OutSystems Platform Code Review<br>
-   QAT Global Report</h5>
+                                                         QAT Global Report</h5>
 
                                                         <div style="text-align: left;">QAT Global evaluated OutSystems Platform as a potential complementary development solution.
                                                             <br>
@@ -191,7 +191,7 @@
                                     </div>
 
                                     <h4>Standard Architecture with No Lock-in - through generation<br>
-of standard and documented .NET or Java code.</h4>
+                                            of standard and documented .NET or Java code.</h4>
                                 </div>
                             </div>
                         </div>
@@ -212,15 +212,15 @@ of standard and documented .NET or Java code.</h4>
             <div class="m-item">
                 <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-2">
             </div>
-             <div class="m-item">
+            <div class="m-item">
                 <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-3">
             </div>
 
-             <div class="m-item">
+            <div class="m-item">
                 <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-4">
             </div>
 
-             <div class="m-item">
+            <div class="m-item">
                 <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-5">
             </div>
 
@@ -228,11 +228,11 @@ of standard and documented .NET or Java code.</h4>
 
         <div class="pxs_navigation">
             <span class="pxs_next">
-                          <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=SliderArrowRight">
-                      </span>
+                      <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=SliderArrowRight">
+                  </span>
             <span class="pxs_prev">
-                          <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=SliderArrowLeft">
-                      </span>
+                      <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=SliderArrowLeft">
+                  </span>
         </div>
     </div>
 
@@ -259,11 +259,30 @@ of standard and documented .NET or Java code.</h4>
     $(function() {
         mCarouselQuotes = $('.m-carousel.m-quotes').carousel();
         mCarouselQuotes.find('.pxs_prev').bind('click', function() {
-            mCarouselQuotes.carousel('prev');
+
+            $(".m-carousel.m-quotes .m-carousel-inner").animate({
+                opacity: 0
+            }, 500, function() {
+                mCarouselQuotes.carousel('prev');
+                $(".m-carousel.m-quotes .m-carousel-inner").animate({
+                    opacity: 1
+                }, 500);
+            });
+
+
             updateCarouselQuotesControls();
         });
         mCarouselQuotes.find('.pxs_next').bind('click', function() {
-            mCarouselQuotes.carousel('next');
+            $(".m-carousel.m-quotes .m-carousel-inner").animate({
+                opacity: 0
+            }, 500, function() {
+                mCarouselQuotes.carousel('next');
+                $(".m-carousel.m-quotes .m-carousel-inner").animate({
+                    opacity: 1
+                }, 500);
+            });
+
+
             updateCarouselQuotesControls();
         });
         mCarouselQuotes.on('afterSlide', function() {
@@ -280,8 +299,8 @@ of standard and documented .NET or Java code.</h4>
         <div class="row">
             <div class="span8">
                 <h5>
-                  Our Customers
-                </h5>
+                      Our Customers
+                  </h5>
                 <a href="/customers/">
                     <img alt="Customers" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=customer-squares" style="height: 225px;">
                     <br>
@@ -292,7 +311,7 @@ of standard and documented .NET or Java code.</h4>
             <div class="span4">
                 <h5>
                   Industry Analysts
-                </h5>
+              </h5>
                 <a href="/company/analysts/">
                     <img alt="Industry Recognition" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=analysts-squares" style="height: 225px;">
                     <br>

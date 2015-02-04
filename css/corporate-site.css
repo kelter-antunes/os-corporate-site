@@ -6593,10 +6593,10 @@ h3.description {
     margin-top: -12px;
 }
 .call-out-hero-home .featured .pxs_navigation span.pxs_next {
-    right: 10px;
+    right: 20px;
 }
 .call-out-hero-home .featured .pxs_navigation span.pxs_prev {
-    left: 10px;
+    left: 20px;
 }
 .call-out-hero-home h3.description strong {
     font-weight: 600;
