@@ -1590,18 +1590,20 @@ body.landing-slim form#WebForm1 {
     padding: 8px 20px
 }
 /*how-it-works*/
+
 .arch-instructions {
-  position: relative;
-  background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=scroll-to-explore&v=201406081625);
-  background-attachment: fixed;
-  background-position: 74% 801px;
-  background-repeat: no-repeat;
-  background-color: #F8F8F8;
+    position: relative;
+    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=scroll-to-explore&v=201406081625);
+    background-attachment: fixed;
+    background-position: 74% 801px;
+    background-repeat: no-repeat;
+    background-color: #F8F8F8;
 }
 .how-first-section {
-  /*  background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=award-top2-repeat&v=201406081625), url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-lightgrey-d9d9d9&v=201406081625);
+    /*  background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=award-top2-repeat&v=201406081625), url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-lightgrey-d9d9d9&v=201406081625);
     background-repeat: repeat-x, repeat-y;
     background-position: center top, top center;*/
+    
     border-top: 0;
     /*background-color: #c9c9c9*/
 }
@@ -6250,24 +6252,19 @@ a.ressourcelink {
     font-size: 12px;
     color: #606060;
 }
-
-
-a.osbtn-white
-{
-  padding:10px 10px;
-  color:#cc0000  !important;
-  background:#ffffff;
-  border-style: solid;
-  border-color: #cc0000 ;
-  border-width: 1px;
-  -moz-border-radius:5px;
-  -webkit-border-radius:5px;
-  border-radius:5px;
+a.osbtn-white {
+    padding: 10px 10px;
+    color: #cc0000 !important;
+    background: #ffffff;
+    border-style: solid;
+    border-color: #cc0000;
+    border-width: 1px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
-
-a.osbtn-white:hover
-{
-    background:#f7f7f7!important;
+a.osbtn-white:hover {
+    background: #f7f7f7!important;
 }
 .osbtn-orange {
     background-color: #ef6c00;
@@ -6732,7 +6729,7 @@ h3.description {
     margin-left: 20px;
     color: #c20;
 }
-.btn-group.optionSelector {
+.what-you-can-do .btn-group.optionSelector {
     white-space: normal;
     width: 226px;
     vertical-align: top;
