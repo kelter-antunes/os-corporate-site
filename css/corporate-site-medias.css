@@ -444,7 +444,7 @@ v=201406081625
     }
     .Application_Menu .Menu_DropDownArrow {
         position: absolute;
-        left: 65px;
+        left: 85px;
         top: 21px
     }
     /* create an overlay so that you can close the menu on click (body) */
