@@ -1590,13 +1590,20 @@ body.landing-slim form#WebForm1 {
     padding: 8px 20px
 }
 /*how-it-works*/
-
+.arch-instructions {
+  position: relative;
+  background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=scroll-to-explore&v=201406081625);
+  background-attachment: fixed;
+  background-position: 74% 801px;
+  background-repeat: no-repeat;
+  background-color: #F8F8F8;
+}
 .how-first-section {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=award-top2-repeat&v=201406081625), url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-lightgrey-d9d9d9&v=201406081625);
+  /*  background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=award-top2-repeat&v=201406081625), url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-lightgrey-d9d9d9&v=201406081625);
     background-repeat: repeat-x, repeat-y;
-    background-position: center top, top center;
+    background-position: center top, top center;*/
     border-top: 0;
-    background-color: #c9c9c9
+    /*background-color: #c9c9c9*/
 }
 .how-bg-gray-dark {
     background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-grey-909090&v=201406081625);
