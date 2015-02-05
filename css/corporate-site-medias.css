@@ -1177,6 +1177,9 @@ v=201406081625
         height: auto!important;
         width: auto!important;
     }
+    .second-level-menu-wrapper {
+        display: none;
+    }
 }
 /* Landscape */
 

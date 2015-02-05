@@ -1599,6 +1599,103 @@ body.landing-slim form#WebForm1 {
     background-repeat: no-repeat;
     background-color: #F8F8F8;
 }
+.arch-instructions .parallax {
+    min-height: 500px;
+    height: 500px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    background-position: 85% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.arch-instructions .parallax> div {
+    height: 520px;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    width: 100%;
+    background: none;
+}
+.arch-instructions .parallax1.overview {
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=platform-server-main&v=201406081625');
+}
+.arch-instructions .parallax1.net {
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=platform-server-net&v=201406081625');
+}
+.arch-instructions .parallax1.weblogic {
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=platform-server-weblogic&v=201406081625');
+}
+.arch-instructions .parallax1.jboss {
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=platform-server-jboss&v=201406081625');
+}
+.arch-instructions .parallax1.overview .service-studio {
+    display: none;
+}
+.arch-instructions .parallax1 .service-studio {
+    position: absolute;
+    left: 46px;
+    top: 45px;
+}
+.arch-instructions .parallax1 .option-overview, .arch-instructions .parallax1 .option-net, .arch-instructions .parallax1 .option-weblogic, .arch-instructions .parallax1 .option-jboss {
+    display: none;
+}
+.arch-instructions .parallax1.overview .option-overview, .arch-instructions .parallax1.net .option-net, .arch-instructions .parallax1.weblogic .option-weblogic, .arch-instructions .parallax1.jboss .option-jboss {
+    display: block;
+}
+.arch-instructions .parallax2 {
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-studio&v=201406081625');
+}
+.arch-instructions .parallax3.overview {
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=integration-studio1&v=201406081625');
+}
+.arch-instructions .parallax3.net {
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=integration-studio-net&v=201406081625');
+}
+.arch-instructions .parallax3.java {
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=integration-studio-java&v=201406081625');
+}
+.arch-instructions .parallax3 .option-overview, .arch-instructions .parallax3 .option-net, .arch-instructions .parallax3 .option-java {
+    display: none;
+}
+.arch-instructions .parallax3.overview .option-overview, .arch-instructions .parallax3.net .option-net, .arch-instructions .parallax3.java .option-java {
+    display: block;
+}
+.arch-instructions .parallax4.overview {
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-all&v=201406081625');
+}
+.arch-instructions .parallax4.configuration-management {
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-configuration&v=201406081625');
+}
+.arch-instructions .parallax4.performance-monitoring {
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-monitoring&v=201406081625');
+}
+.arch-instructions .parallax4 .option-overview, .arch-instructions .parallax4 .option-configuration-management, .arch-instructions .parallax4 .option-performance-monitoring {
+    display: none;
+}
+.arch-instructions .parallax4.overview .option-overview, .arch-instructions .parallax4.configuration-management .option-configuration-management, .arch-instructions .parallax4.performance-monitoring .option-performance-monitoring {
+    display: block;
+}
+.arch-instructions .parallax5.overview {
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lifetime-cloud-portal&v=201406081625');
+}
+.arch-instructions .parallax5.application-staging {
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lifetime-deploy-cloud&v=201406081625');
+}
+.arch-instructions .parallax5.hybrid-configuration {
+    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lifetime-deploy-cloud-premises&v=201406081625');
+}
+.arch-instructions .parallax5 .option-overview, .arch-instructions .parallax5 .option-application-staging, .arch-instructions .parallax5 .option-hybrid-configuration {
+    display: none;
+}
+.arch-instructions .parallax5.overview .option-overview, .arch-instructions .parallax5.application-staging .option-application-staging, .arch-instructions .parallax5.hybrid-configuration .option-hybrid-configuration {
+    display: block;
+}
+.arch-instructions .parallax2, .arch-instructions .parallax3, .arch-instructions .parallax4, .arch-instructions .parallax5 {
+    -webkit-box-shadow: 0 -8px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -8px 8px rgba(0, 0, 0, 0.2);
+}
 .how-first-section {
     /*  background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=award-top2-repeat&v=201406081625), url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-lightgrey-d9d9d9&v=201406081625);
     background-repeat: repeat-x, repeat-y;
