@@ -1698,7 +1698,7 @@ body.landing-slim form#WebForm1 {
 }
 .how-first-section {
     background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-lightgrey-d9d9d9&v=201406081625) top center repeat-y #c9c9c9;
-    border-top: 0;
+    border-top: 0; 
     margin-top: -40px;
 }
 .how-bg-gray-dark {
