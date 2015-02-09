@@ -1697,12 +1697,8 @@ body.landing-slim form#WebForm1 {
     box-shadow: 0 -8px 8px rgba(0, 0, 0, 0.2);
 }
 .how-first-section {
-    /*  background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=award-top2-repeat&v=201406081625), url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-lightgrey-d9d9d9&v=201406081625);
-    background-repeat: repeat-x, repeat-y;
-    background-position: center top, top center;*/
-    
+    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-lightgrey-d9d9d9&v=201406081625) top center repeat-y #c9c9c9;
     border-top: 0;
-    /*background-color: #c9c9c9*/
 }
 .how-bg-gray-dark {
     background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-grey-909090&v=201406081625);
@@ -6708,7 +6704,6 @@ h3.description {
 .call-out-hero-home span.osicon-play-triangle {
     position: absolute;
     line-height: 20px;
-    
 }
 .call-out-hero-home a span:nth-child(2) {
     padding-left: 30px;
