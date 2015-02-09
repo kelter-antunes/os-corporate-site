@@ -658,12 +658,12 @@ $(document).ready(function() {
 var currentActive;
 
 function hideDropDown(_elem) {
-    $('.navigation-bar li[class=active]').removeClass('active');
+    $('.navigation-bar li.active').removeClass('active');
     $('[data-dropdown-wrapper]').hide();
 }
 
 function toggleDropdowMenu(_elem) {
-    $('.navigation-bar li[class=active]').removeClass('active');
+    $('.navigation-bar li.active').removeClass('active');
     $('[data-dropdown-wrapper]').hide();
     $("[data-dropdown-wrapper='" + $(_elem).attr('data-name') + "']").toggle();
 
@@ -676,7 +676,7 @@ function toggleDropdowMenu(_elem) {
     }
 }
 $(document).ready(function() {
-    currentActive = $('.navigation-bar li[class=active]');
+    currentActive = $('.navigation-bar li.active');
     $('[data-option=dropdown]').click(function(e) {
         e.preventDefault();
         e.stopPropagation();
