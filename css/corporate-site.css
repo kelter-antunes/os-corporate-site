@@ -6437,6 +6437,7 @@ a.osbtn-orange {
 }
 .header-hero-wrapper.page-without-hero {
     height: 130px;
+    padding-bottom: 40px;
 }
 .submenuhover {
     top: 80px;
