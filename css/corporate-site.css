@@ -6708,6 +6708,7 @@ h3.description {
 .call-out-hero-home span.osicon-play-triangle {
     position: absolute;
     line-height: 20px;
+    
 }
 .call-out-hero-home a span:nth-child(2) {
     padding-left: 30px;
