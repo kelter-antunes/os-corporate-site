@@ -1,7 +1,7 @@
 /*
 cache invalidator 
 
-v=201406081625
+v=201510021535
 */
 ul
 {
@@ -26,7 +26,7 @@ ul
 
 #footer-top-wrapper
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footeg-gradient-top&v=201406081625) repeat-x;
+	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footeg-gradient-top&v=201510021535) repeat-x;
 	background-position:bottom;
 	border-bottom:1px solid #111;
 	display:block;
@@ -43,7 +43,7 @@ ul
 
 #footer-mid-wrapper
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-gradient&v=201406081625) repeat-x;
+	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-gradient&v=201510021535) repeat-x;
 	background-position:top;
 	border-top:1px solid #333;
 	display:block;
@@ -195,7 +195,7 @@ ul
 
 #footer-mid.us
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-us&v=201406081625) no-repeat;
+	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-us&v=201510021535) no-repeat;
 	background-position:right bottom
 }
 
@@ -206,7 +206,7 @@ ul
 
 #footer-mid.jp
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-jp&v=201406081625) no-repeat;
+	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-jp&v=201510021535) no-repeat;
 	background-position:right bottom
 }
 
@@ -217,7 +217,7 @@ ul
 
 #footer-mid.sg
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-sg&v=201406081625) no-repeat;
+	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-sg&v=201510021535) no-repeat;
 	background-position:right bottom
 }
 
@@ -228,7 +228,7 @@ ul
 
 #footer-mid.pt
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-pt&v=201406081625) no-repeat;
+	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-pt&v=201510021535) no-repeat;
 	background-position:right bottom
 }
 
@@ -239,7 +239,7 @@ ul
 
 #footer-mid.au
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-au&v=201406081625) no-repeat;
+	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-au&v=201510021535) no-repeat;
 	background-position:right bottom
 }
 
@@ -250,7 +250,7 @@ ul
 
 #footer-mid.br
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-br&v=201406081625) no-repeat;
+	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-br&v=201510021535) no-repeat;
 	background-position:right bottom
 }
 
@@ -277,7 +277,7 @@ ul
 
 #footer-mid.nl
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-nl&v=201406081625) no-repeat;
+	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-nl&v=201510021535) no-repeat;
 	background-position:right bottom
 }
 
@@ -288,7 +288,7 @@ ul
 
 #footer-mid.uk
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-uk&v=201406081625) no-repeat;
+	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-uk&v=201510021535) no-repeat;
 	background-position:right bottom
 }
 
@@ -299,7 +299,7 @@ ul
 
 #footer-mid.za
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-za&v=201406081625) no-repeat;
+	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-za&v=201510021535) no-repeat;
 	background-position:right bottom
 }
 

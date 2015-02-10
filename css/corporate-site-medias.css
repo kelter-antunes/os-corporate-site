@@ -1,7 +1,7 @@
 /*
 cache invalidator 
 
-v=201406081625
+v=201510021535
 */
 
 @media screen and (max-width: 767px) {
@@ -98,7 +98,7 @@ v=201406081625
         margin-bottom: 20px
     }
     .header-hero-wrapper.home {
-        background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=light-grey-bg-mobile&v=201406081625);
+        background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=light-grey-bg-mobile&v=201510021535);
         height: 535px;
         -moz-box-shadow: inset 0 -14px 10px -8px #CFCFCF;
         -webkit-box-shadow: inset 0 -14px 10px -8px #CFCFCF;
@@ -116,7 +116,7 @@ v=201406081625
     /*get-started*/
     
     .hero-section-get-started {
-        background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=light-grey-bg-mobile&v=201406081625);
+        background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=light-grey-bg-mobile&v=201510021535);
         padding-top: 30px;
         height: 980px;
         overflow: hidden;
@@ -517,25 +517,25 @@ v=201406081625
         opacity: 1
     }
     .pxs_prev {
-        background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625);
+        background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021535);
         background-repeat: no-repeat;
         background-position: -20px -2037px;
         left: -10px
     }
     .pxs_next {
-        background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201406081625);
+        background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021535);
         background-repeat: no-repeat;
         background-position: -20px -2107px;
         right: -10px
     }
     .how-first-section {
-        background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=light-grey-bg-mobile&v=201406081625)
+        background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=light-grey-bg-mobile&v=201510021535)
     }
     .how-bg-gray-dark {
-        background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=dark-grey-bg-mobile&v=201406081625)
+        background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=dark-grey-bg-mobile&v=201510021535)
     }
     .how-bg-gray-light {
-        background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=light-grey-bg-mobile&v=201406081625)
+        background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=light-grey-bg-mobile&v=201510021535)
     }
     .case-study-title-image img {} .pricing-feature-image {
         float: left;
@@ -595,7 +595,7 @@ v=201406081625
         top: 0;
         margin-left: 0;
         margin-right: 0;
-        /* background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=mobile_solutions_img&v=201406081625'); */
+        /* background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=mobile_solutions_img&v=201510021535'); */
         /* background-repeat: no-repeat; */
         /* background-position: right 70px; */
         
