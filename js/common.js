@@ -438,116 +438,119 @@ $(function() {
 //enable Wistia Trackings
 var eWT = true;
 $(function() {
-    wistiaEmbeds.onFind(function(video) {
 
-        var percent50;
-        var percent70;
+    if ((typeof wistiaEmbeds != 'undefined')) {
+        wistiaEmbeds.onFind(function(video) {
 
-        video.bind('play', function() {
+            var percent50;
+            var percent70;
 
-            percent50 = video.duration() * 0.5;
-            percent70 = video.duration() * 0.75;
+            video.bind('play', function() {
 
-            if (eWT) {
-                //KM
-                trackEvent('Start Watching', {
-                    'Video': video.name()
-                }, null);
+                percent50 = video.duration() * 0.5;
+                percent70 = video.duration() * 0.75;
 
-                //GA
-                _gaq.push(['_trackEvent', 'Video', 'Start Watching', video.name()]);
-
-                //marketo
-                if ((typeof Munchkin !== 'undefined')) {
-                    Munchkin.munchkinFunction('visitWebPage', {
-                        url: '/view-video-start-watching',
-                        params: video.name()
-                    });
-                }
-
-            }
-            return this.unbind;
-
-        }).bind('end', function() {
-            if (eWT) {
-                //KM
-                trackEvent('Complete', {
-                    'Video': video.name()
-                }, null);
-
-                //GA
-                _gaq.push(['_trackEvent', 'Video', 'Complete', video.name()]);
-
-                //marketo
-                if ((typeof Munchkin !== 'undefined')) {
-                    Munchkin.munchkinFunction('visitWebPage', {
-                        url: '/view-video-complete',
-                        params: video.name()
-                    });
-                }
-
-            }
-            return this.unbind;
-
-        });
-
-        var done50 = false;
-        var done75 = false;
-
-        video.bind('secondchange', function(s) {
-            var currentSecond = Math.floor(s);
-
-            if (s > percent50 && s < percent70 && !done50) {
                 if (eWT) {
                     //KM
-                    trackEvent('Watched 50%', {
+                    trackEvent('Start Watching', {
                         'Video': video.name()
                     }, null);
 
                     //GA
-                    _gaq.push(['_trackEvent', 'Video', 'Watched 50%', video.name()]);
+                    _gaq.push(['_trackEvent', 'Video', 'Start Watching', video.name()]);
 
                     //marketo
                     if ((typeof Munchkin !== 'undefined')) {
                         Munchkin.munchkinFunction('visitWebPage', {
-                            url: '/view-video-50-percent',
+                            url: '/view-video-start-watching',
                             params: video.name()
                         });
                     }
 
                 }
+                return this.unbind;
 
-
-                done50 = true;
-            }
-
-            if (s > percent70 && !done75) {
+            }).bind('end', function() {
                 if (eWT) {
                     //KM
-                    trackEvent('Watched 75%', {
+                    trackEvent('Complete', {
                         'Video': video.name()
                     }, null);
 
                     //GA
-                    _gaq.push(['_trackEvent', 'Video', 'Watched 75%', video.name()]);
+                    _gaq.push(['_trackEvent', 'Video', 'Complete', video.name()]);
 
                     //marketo
                     if ((typeof Munchkin !== 'undefined')) {
                         Munchkin.munchkinFunction('visitWebPage', {
-                            url: '/view-video-75-percent',
+                            url: '/view-video-complete',
                             params: video.name()
                         });
                     }
 
-
                 }
-                done75 = true;
-            }
+                return this.unbind;
 
-            //return this.unbind;
+            });
+
+            var done50 = false;
+            var done75 = false;
+
+            video.bind('secondchange', function(s) {
+                var currentSecond = Math.floor(s);
+
+                if (s > percent50 && s < percent70 && !done50) {
+                    if (eWT) {
+                        //KM
+                        trackEvent('Watched 50%', {
+                            'Video': video.name()
+                        }, null);
+
+                        //GA
+                        _gaq.push(['_trackEvent', 'Video', 'Watched 50%', video.name()]);
+
+                        //marketo
+                        if ((typeof Munchkin !== 'undefined')) {
+                            Munchkin.munchkinFunction('visitWebPage', {
+                                url: '/view-video-50-percent',
+                                params: video.name()
+                            });
+                        }
+
+                    }
+
+
+                    done50 = true;
+                }
+
+                if (s > percent70 && !done75) {
+                    if (eWT) {
+                        //KM
+                        trackEvent('Watched 75%', {
+                            'Video': video.name()
+                        }, null);
+
+                        //GA
+                        _gaq.push(['_trackEvent', 'Video', 'Watched 75%', video.name()]);
+
+                        //marketo
+                        if ((typeof Munchkin !== 'undefined')) {
+                            Munchkin.munchkinFunction('visitWebPage', {
+                                url: '/view-video-75-percent',
+                                params: video.name()
+                            });
+                        }
+
+
+                    }
+                    done75 = true;
+                }
+
+                //return this.unbind;
+            });
+
         });
-
-    });
+    };
 });
 
 /**
