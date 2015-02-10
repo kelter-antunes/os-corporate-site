@@ -6470,6 +6470,9 @@ a.osbtn-orange {
 .header-hero-wrapper.home-rev .secondary-menu, .header-hero-wrapper.home-rev .secondary-menu a, .header-hero-wrapper.home-rev .secondary-menu span {
     color: #D2D2D2;
 }
+.header-hero-wrapper.case-studies-detail-new .secondary-menu * {
+    color: rgb(236, 236, 236);
+}
 .navigation-items {
     width: 1013px;
 }
@@ -6700,7 +6703,7 @@ h3.description {
 }
 .call-out-hero-home h3.description strong {
     font-weight: 600;
-    text-shadow: 3px 3px #666;
+    text-shadow: 1px 1px #666;
 }
 .call-out-hero-home span.osicon-play-triangle {
     position: absolute;

@@ -1183,6 +1183,9 @@ v=201406081625
     .arch-instructions .parallax {
         background: none !important;
     }
+    .customers-and-experts a span.customer-matrix-entry {
+        width: 90px;
+    }
 }
 /* Landscape */
 
