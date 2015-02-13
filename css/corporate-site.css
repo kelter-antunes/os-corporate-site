@@ -6923,14 +6923,16 @@ h3.description {
 .customers-and-experts a:hover {
     text-decoration: none;
 }
-.customers-and-experts a span.customer-matrix-entry,
-.customers-and-experts a span.partner-matrix-entry {
+.customers-and-experts a span.customer-matrix-entry, .customers-and-experts a span.partner-matrix-entry {
     margin: 0 0 3px 5px;
     border: 1px solid #F4F4F4;
+    display: inline-block;
 }
-.customers-and-experts a span.customer-matrix-entry img,
-.customers-and-experts a span.partner-matrix-entry img{
+.customers-and-experts a span.customer-matrix-entry img, .customers-and-experts a span.partner-matrix-entry img {
     height: 69px;
+}
+.customers-and-experts a span.partner-matrix-entry {
+    margin: 0 0 5px 1px;
 }
 .how-can-we-help {
     background-color: #F2F2F2;
