@@ -668,6 +668,7 @@ function hideDropDown(_elem) {
 
 function toggleDropdowMenu(_elem) {
     $('.navigation-bar li.active').removeClass('active');
+    $('.navigation-bar li.active a').css('background-color', 'transparent');
     $('[data-dropdown-wrapper]').hide();
     $("[data-dropdown-wrapper='" + $(_elem).attr('data-name') + "']").toggle();
 
