@@ -675,7 +675,7 @@ function toggleDropdowMenu(_elem) {
         _elem.parent().removeClass('active');
         currentActive.addClass('active');
 
-        $('.navigation-bar li.active a').css('background-color', 'white');
+        $('.navigation-bar li.active a').css('background-color', 'transparent');
 
     } else {
         _elem.parent().addClass('active');
