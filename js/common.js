@@ -662,14 +662,11 @@ var currentActive;
 
 function hideDropDown(_elem) {
     $('.navigation-bar li.active').removeClass('active');
-    $('.navigation-bar li.active a').css('background-color', 'transparent');
     $('[data-dropdown-wrapper]').hide();
 }
 
 function toggleDropdowMenu(_elem) {
     $('.navigation-bar li.active').removeClass('active');
-    $('.navigation-bar li.active a').css('background-color', 'transparent');
-
     $('[data-dropdown-wrapper]').hide();
     $("[data-dropdown-wrapper='" + $(_elem).attr('data-name') + "']").toggle();
 
@@ -677,18 +674,10 @@ function toggleDropdowMenu(_elem) {
         _elem.parent().removeClass('active');
         currentActive.addClass('active');
 
-        
-
-
     } else {
         _elem.parent().addClass('active');
         currentActive.removeClass('active');
-
-        $('.navigation-bar li.active a').css('background-color', 'white');
-
     }
-
-
 
 }
 $(document).ready(function() {
