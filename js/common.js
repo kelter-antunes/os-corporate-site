@@ -681,10 +681,11 @@ function toggleDropdowMenu(_elem) {
         _elem.parent().addClass('active');
         currentActive.removeClass('active');
 
-       
+        $('.navigation-bar li.active a').css('background-color', 'white');
+
     }
 
-    
+
 
 }
 $(document).ready(function() {

@@ -2,31 +2,18 @@
     <div class="container">
         <div class="row">
             <div class="span12 align-center">
-                <h2>What you can do with OutSystems Platform</h2>
+                <h2>
+          Why OutSystems?
+        </h2>
             </div>
             <div class="span4 benefit">
-                <a href="/platform/madp/">
-                    <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=develop-once-for-all-devices-photo&amp;v=20150129173352">
-                    <span class="h3">Develop once for all devices</span>
-                    <span class="desc">Leverage responsive design to create multi-device applications (including native capabilities) without extra effort. </span>
-                    <span class="link">Learn More »</span>
-                </a>
+                <a href="/platform/madp/"><img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=develop-once-for-all-devices-photo&amp;v=20150213170553" style="margin-bottom: 35px;" /> <span class="h3">Develop once for all devices</span> <span class="desc">Leverage responsive design and hybrid architecture to create multi-device applications (including native capabilities) without extra effort. </span> <span class="link">Learn More &raquo;</span> </a>
             </div>
             <div class="span4 benefit bordered">
-                <a href="/platform/integrate-everything/">
-                    <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=integrate-everything-color&amp;v=20150129173352">
-                    <span class="h3">Integrate everything </span>
-                    <span class="desc">Easily connect to enterprise systems, cloud services and database using open source connectors. </span>
-                    <span class="link">Learn More »</span>
-                </a>
+                <a href="/platform/integrate-everything/"><img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=integrate-everything-color&amp;v=20150213170553" /> <span class="h3">Integrate everything </span> <span class="desc">Easily connect to enterprise systems, cloud services and databases using open source connectors. </span> <span class="link">Learn More &raquo;</span> </a>
             </div>
             <div class="span4 benefit bordered">
-                <a href="/platform/iterate-rapidly/">
-                    <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=iterate-rapidly-case-studies&amp;v=20150129173352">
-                    <span class="h3">Rapid delivery and change</span>
-                    <span class="desc">Use sophisticated visual modeling to create and change your apps with blazing speed. </span>
-                    <span class="link">Learn More »</span>
-                </a>
+                <a href="/platform/iterate-rapidly/"><img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=iterate-rapidly-case-studies&amp;v=20150213170553" style="margin-bottom: 35px;" /> <span class="h3">Rapid delivery and change</span> <span class="desc">Use powerful visual modeling to create and change your sophisticated apps with blazing speed. </span> <span class="link">Learn More &raquo;</span> </a>
             </div>
         </div>
     </div>
@@ -80,13 +67,11 @@
         $('.optionSelector a').click(function(e) {
             e.preventDefault();
             e.stopPropagation();
-
             if ((typeof wistiaEmbeds !== 'undefined')) {
                 for (var i = 0; i < wistiaEmbeds.length; i++) {
                     wistiaEmbeds[i].pause();
                 }
             }
-
             var parallax = $(this).closest('.parallax');
             var option = parallax.data('option') || 'create';
             var newOption = $(this).data('option');
@@ -105,95 +90,96 @@
     <div class="container">
         <div class="row">
             <div class="span12 align-center">
-                <h2>How does OutSystems Platform work</h2>
+                <h2>
+          How Does OutSystems Platform Work?
+        </h2>
             </div>
-
             <div class="span12">
                 <div class="parallax parallax1 create">
                     <div class="what-you-can-do">
                         <div class="btn-group optionSelector">
-                            <a class="btn active" data-option="create" href="#">
-                                <span class="osicon-visual-dev iconlp-fontcolor">&nbsp;</span>
-                                <span class="h4">Develop Visually</span>
-                            </a>
-                            <a class="btn Next" data-option="deploy" href="#">
-                                <span class="osicon-1-click-publish iconlp-fontcolor">&nbsp;</span>
-                                <span class="h4">Deploy Automatically</span>
-                            </a>
-                            <a class="btn" data-option="change" href="#">
-                                <span class="osicon-change iconlp-fontcolor">&nbsp;</span>
-                                <span class="h4">Change Continuously</span> </a>
-                            <a class="btn" data-option="manage" href="#">
-                                <span class="osicon-architecture iconlp-fontcolor">&nbsp;</span>
-                                <span class="h4">Manage Centrally</span>
-                            </a>
-                            <a class="btn" data-option="standards" href="#">
-                                <span class="osicon-nolockin iconlp-fontcolor">&nbsp;</span>
-                                <span class="h4">No Lock-In</span>
-                            </a>
+                            <a class="btn active" data-option="create" href="#"><span class="osicon-visual-dev iconlp-fontcolor">&nbsp;</span> <span class="h4">Develop Visually</span> </a>
+                            <a class="btn Next" data-option="deploy" href="#"> <span class="osicon-1-click-publish iconlp-fontcolor">&nbsp;</span> <span class="h4">Deploy Automatically</span> </a>
+                            <a class="btn" data-option="change" href="#"> <span class="osicon-change iconlp-fontcolor">&nbsp;</span> <span class="h4">Change Continuously</span> </a>
+                            <a class="btn" data-option="manage" href="#"> <span class="osicon-architecture iconlp-fontcolor">&nbsp;</span> <span class="h4">Manage Centrally</span> </a>
+                            <a class="btn" data-option="standards" href="#"> <span class="osicon-nolockin iconlp-fontcolor">&nbsp;</span> <span class="h4">No Lock-In</span> </a>
                         </div>
-
                         <div class="description">
                             <div class="option create">
                                 <div class="content">
                                     <iframe allowfullscreen="allowfullscreen" allowtransparency="true" class="wistia_embed" frameborder="0" height="379" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" name="wistia_embed" oallowfullscreen="oallowfullscreen" scrolling="no" src="http://fast.wistia.net/embed/iframe/67sdl1xgu9" webkitallowfullscreen="webkitallowfullscreen" width="668"></iframe>
-
-                                    <h4>Model all aspects of your applications visually, without any low-level coding.</h4>
+                                    <h4>
+                    Model all aspects of your applications visually, without any low-level coding
+                  </h4>
                                 </div>
                             </div>
-
                             <div class="option deploy">
                                 <div class="content">
                                     <iframe allowfullscreen="allowfullscreen" allowtransparency="true" class="wistia_embed" frameborder="0" height="379" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" name="wistia_embed" oallowfullscreen="oallowfullscreen" scrolling="no" src="http://fast.wistia.net/embed/iframe/cylzp3c4b6?playerPreference=html5" webkitallowfullscreen="webkitallowfullscreen" width="668"></iframe>
-
-                                    <h4>Automatically deploy and stage your applications with 1-click.</h4>
+                                    <h4>
+                    Automatically deploy and stage your applications confidently with 1-click
+                  </h4>
                                 </div>
                             </div>
-
                             <div class="option change">
                                 <div class="content">
                                     <iframe allowfullscreen="allowfullscreen" allowtransparency="true" class="wistia_embed" frameborder="0" height="379" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" name="wistia_embed" oallowfullscreen="oallowfullscreen" scrolling="no" src="http://fast.wistia.net/embed/iframe/kyfexwxc7w?playerPreference=html5" webkitallowfullscreen="webkitallowfullscreen" width="668"></iframe>
-
-                                    <h4>Change any aspect of your apps easily and quickly and redeploy them in minutes.</h4>
+                                    <h4>
+                    Change any aspect of your apps quickly and easily, redeploy in minutes
+                  </h4>
                                 </div>
                             </div>
-
                             <div class="option manage">
-                                <div class="content"><img alt="preview" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=performance-management1">
-                                    <h4>Manage all your applications, their performance and usage from a centralized console.</h4>
+                                <div class="content">
+                                    <img alt="preview" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=performance-management1&amp;v=20150213170553" />
+                                    <h4>
+                    Manage performance and usage of all your applications from a centralized console
+                  </h4>
                                 </div>
                             </div>
+
+
 
                             <div class="option standards">
-                                <div class="content">
-                                    <table border="0" cellpadding="5" cellspacing="5" style="border-spacing: 5px;padding: 10px 75px 20px 75px;">
+                                <div class="content" style="
+    padding: 0;
+    padding-top: 20px;
+">
+                                    <table border="0" cellpadding="5" cellspacing="5" style="border-spacing: 0px;padding: 10px 10px 20px 10px;text-align: left;margin-bottom: 51px;">
                                         <tbody>
                                             <tr>
+                                                <td style="text-align: center;vertical-align: top">
+                                                    <div class="pdf_screenshot" id="wtDocImage"><img alt="" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=tech" style="height: 237px;margin: 0 20px 0 20px;">
+                                                    </div>
+                                                </td>
                                                 <td style="vertical-align: top;">
                                                     <div>
-                                                        <h5 style="margin-top:0">OutSystems Platform Code Review<br>
-                                                         QAT Global Report</h5>
+                                                        <h3 style="margin-top:0">Standard Application Without Lock-In</h3>
 
-                                                        <div style="text-align: left;">QAT Global evaluated OutSystems Platform as a potential complementary development solution.
-                                                            <br>
-                                                            <br> QAT Global fully benchmarked and road-tested OutSystems<span style="font-size:10px;"><sup>®</sup></span> Platform to identify its strengths, weaknesses, and overall viability – paying specific attention to the quality of the generated code.</div>
+                                                        <div style="text-align: left;">
+                                                            <h4>Generates standard Java or C# plus HTML5,<br> Javascript, CSS3 and SQL</h4>
+                                                            <h4>Standard code ensures no vendor lock-in,<br> no loss of IP</h4>
+                                                            <a href="#">Learn more »</a>
+                                                        </div>
                                                     </div>
                                                 </td>
-                                                <td style="text-align: center;vertical-align: top">
-                                                    <div class="pdf_screenshot" id="wtDocImage"><img alt="" src="http://www.outsystems.com/_image.aspx/GGcIvcGPI3Gz_o6iuSPVE1kioSPHH3ijrCvn920G9zIaNA==/PDF%20screenshot" style="height: 237px;margin: 0 20px 0 20px;">
-                                                    </div>
-                                                </td>
+
                                             </tr>
                                         </tbody>
                                     </table>
 
-                                    <div style="margin: 0px 0 20px 0"><a alt="Try now for free" class="osbtn osbtn-red" href="/res/qat-report-outsystems-code" target="_blank" title="Download report">Download report </a>
+                                    <div style="border-top: 1px solid #D3D3D3;padding: 25px 0;">
+                                        <h4 style="
+    display: inline-block;
+    margin-right: 50px;
+"><strong>Independent Analysis:</strong> QAT Global Report</h4><a alt="Try now for free" class="osbtn osbtn-red" href="/res/qat-report-outsystems-code" target="_blank" title="Download report">Download report </a>
                                     </div>
 
-                                    <h4>Standard Architecture with No Lock-in - through generation<br>
-                                            of standard and documented .NET or Java code.</h4>
+
                                 </div>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -202,43 +188,28 @@
     </div>
 </div>
 <div class="photo-quotes">
-
     <div class="magiccontainer container m-carousel m-quotes m-fluid">
         <div class="m-carousel-inner">
             <div class="m-item m-active">
-                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-1">
-            </div>
-
-            <div class="m-item">
-                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-2">
+                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-1&amp;v=20150213170553" />
             </div>
             <div class="m-item">
-                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-3">
+                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-2&amp;v=20150213170553" />
             </div>
-
             <div class="m-item">
-                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-4">
+                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-3&amp;v=20150213170553" />
             </div>
-
             <div class="m-item">
-                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-5">
+                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-4&amp;v=20150213170553" />
             </div>
-
+            <div class="m-item">
+                <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-5&amp;v=20150213170553" />
+            </div>
         </div>
-
         <div class="pxs_navigation">
-            <span class="pxs_next">
-                      <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=SliderArrowRight">
-                  </span>
-            <span class="pxs_prev">
-                      <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=SliderArrowLeft">
-                  </span>
+            <span class="pxs_next"><img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=seta_direita_quotes&amp;v=20150213170553" /> </span> <span class="pxs_prev"> <img src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=seta_esquerda_quotes&amp;v=20150213170553" /> </span>
         </div>
     </div>
-
-
-
-
     <script type="text/javascript">
     var mCarouselQuotes;
 
@@ -248,18 +219,15 @@
         } else {
             mCarouselQuotes.find('.pxs_next').show();
         }
-
         if (mCarouselQuotes.children('.m-carousel-inner').children(':first').hasClass('m-active')) {
             mCarouselQuotes.find('.pxs_prev').hide();
         } else {
             mCarouselQuotes.find('.pxs_prev').show();
         }
     }
-
     $(function() {
         mCarouselQuotes = $('.m-carousel.m-quotes').carousel();
         mCarouselQuotes.find('.pxs_prev').bind('click', function() {
-
             $(".m-carousel.m-quotes .m-carousel-inner").animate({
                 opacity: 0
             }, 500, function() {
@@ -268,8 +236,6 @@
                     opacity: 1
                 }, 500);
             });
-
-
             updateCarouselQuotesControls();
         });
         mCarouselQuotes.find('.pxs_next').bind('click', function() {
@@ -281,8 +247,6 @@
                     opacity: 1
                 }, 500);
             });
-
-
             updateCarouselQuotesControls();
         });
         mCarouselQuotes.on('afterSlide', function() {
@@ -291,110 +255,86 @@
         updateCarouselQuotesControls();
     });
     </script>
-
 </div>
-
 <div class="customers-and-experts">
     <div class="container">
         <div class="row">
             <div class="span8">
                 <h5>
-                      Our Customers
-                  </h5>
-                <a href="/customers/">
-                    <img alt="Customers" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=customer-squares" style="height: 225px;">
-                    <br>
-                    <br> Find customers in your industry »
-                </a>
+          Trusted by Global Companies
+        </h5>
+                <a href="/customers/"><span class="customer-matrix-entry" data-au="" data-aw="" data-br="" data-fi="" data-global="1" data-jp="" data-name="logo_war" data-nl="" data-pt="" data-sg="" data-uk="" data-za=""><img alt="" src="http://www.outsystems.com/_image.aspx/GGcIvcGPI3Gz_o6iuSPVE1kioSPHH3ijrCvn92oJ8zUSMg==/" /></span><span class="customer-matrix-entry" data-au="" data-aw="" data-br="" data-fi="" data-global="2" data-jp="" data-name="logo_vod" data-nl="" data-pt="" data-sg="" data-uk="" data-za=""><img alt="" src="http://www.outsystems.com/_image.aspx/GGcIvcGPI3Gz_o6iuSPVE1kioSPHH3ijrCvn920F8DYSMg==/" /></span><span class="customer-matrix-entry" data-au="" data-aw="" data-br="" data-fi="" data-global="3" data-jp="" data-name="logo_fico" data-nl="" data-pt="" data-sg="" data-uk="" data-za=""><img alt="" src="http://www.outsystems.com/_image.aspx/GGcIvcGPI3Gz_o6iuSPVE1kioSPHH3ijrCvn920E8jkUPA==/" /></span><span class="customer-matrix-entry" data-au="" data-aw="" data-br="" data-fi="" data-global="4" data-jp="" data-name="logo_sie" data-nl="" data-pt="" data-sg="" data-uk="" data-za=""><img alt="" src="http://www.outsystems.com/_image.aspx/GGcIvcGPI3Gz_o6iuSPVE1kioSPHH3ijrCvn920C8zQVPA==/" /></span><span class="customer-matrix-entry" data-au="" data-aw="" data-br="" data-fi="" data-global="5" data-jp="" data-name="logo_rdst" data-nl="" data-pt="" data-sg="" data-uk="" data-za=""><img alt="" src="http://www.outsystems.com/_image.aspx/GGcIvcGPI3Gz_o6iuSPVE1kioSPHH3ijrCvn920D9zQSMw==/" /></span><span class="customer-matrix-entry" data-au="" data-aw="" data-br="" data-fi="" data-global="6" data-jp="" data-name="logo_bacardi" data-nl="" data-pt="" data-sg="" data-uk="" data-za=""><img alt="" src="http://www.outsystems.com/_image.aspx/GGcIvcGPI3Gz_o6iuSPVE1kioSPHH3ijrCvn920F8DUSMA==/" /></span><span class="customer-matrix-entry" data-au="" data-aw="" data-br="" data-fi="" data-global="7" data-jp="" data-name="logo_axa" data-nl="" data-pt="" data-sg="" data-uk="" data-za=""><img alt="" src="http://www.outsystems.com/_image.aspx/GGcIvcGPI3Gz_o6iuSPVE1kioSPHH3ijrCvn920F8DgTNw==/" /></span><span class="customer-matrix-entry" data-au="" data-aw="" data-br="" data-fi="" data-global="8" data-jp="" data-name="logo_e-on" data-nl="" data-pt="" data-sg="" data-uk="" data-za=""><img alt="" src="http://www.outsystems.com/_image.aspx/GGcIvcGPI3Gz_o6iuSPVE1kioSPHH3ijrCvn920G9zgSNg==/" /></span><span class="customer-matrix-entry" data-au="" data-aw="" data-br="" data-fi="" data-global="9" data-jp="" data-name="logo_hew" data-nl="" data-pt="" data-sg="" data-uk="" data-za=""><img alt="" src="http://www.outsystems.com/_image.aspx/GGcIvcGPI3Gz_o6iuSPVE1kioSPHH3ijrCvn920C8zQaNQ==/" /></span><span class="customer-matrix-entry" data-au="" data-aw="" data-br="" data-fi="" data-global="10" data-jp="" data-name="logo_dbs" data-nl="" data-pt="" data-sg="" data-uk="" data-za=""><img alt="" src="http://www.outsystems.com/_image.aspx/GGcIvcGPI3Gz_o6iuSPVE1kioSPHH3ijrCvn92oJ8zQQMQ==/" /></span><span class="customer-matrix-entry" data-au="" data-aw="" data-br="" data-fi="" data-global="11" data-jp="" data-name="logo_ing" data-nl="" data-pt="" data-sg="" data-uk="" data-za=""><img alt="" src="http://www.outsystems.com/_image.aspx/GGcIvcGPI3Gz_o6iuSPVE1kioSPHH3ijrCvn920D8DQSNQ==/" /></span><span class="customer-matrix-entry" data-au="" data-aw="" data-br="" data-fi="" data-global="12" data-jp="" data-name="logo_lib" data-nl="" data-pt="" data-sg="" data-uk="" data-za=""><img alt="" src="http://www.outsystems.com/_image.aspx/GGcIvcGPI3Gz_o6iuSPVE1kioSPHH3ijrCvn920F8DgSNQ==/" /></span><span class="customer-matrix-entry" data-au="" data-aw="" data-br="" data-fi="" data-global="13" data-jp="" data-name="logo_gsd" data-nl="" data-pt="" data-sg="" data-uk="" data-za=""><img alt="" src="http://www.outsystems.com/_image.aspx/GGcIvcGPI3Gz_o6iuSPVE1kioSPHH3ijrCvn920F8DUbMA==/" /></span><span class="customer-matrix-entry" data-au="" data-aw="" data-br="" data-fi="" data-global="14" data-jp="" data-name="logo_cab" data-nl="" data-pt="" data-sg="" data-uk="" data-za=""><img alt="emc" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=EMC&amp;v=20150213170553" /></span><span class="customer-matrix-entry" data-au="" data-aw="" data-br="" data-fi="" data-global="15" data-jp="" data-name="logo_TNT" data-nl="" data-pt="" data-sg="" data-uk="" data-za=""><img alt="" src="http://www.outsystems.com/_image.aspx/GGcIvcGPI3Gz_o6iuSPVE1kioSPHH3ijrCvn920G9zgQNw==/" /></span>
+          <br />
+          <br />
+          Find customers in your industry &raquo; </a>
             </div>
-
             <div class="span4">
                 <h5>
-                  Industry Analysts
-              </h5>
-                <a href="/company/analysts/">
-                    <img alt="Industry Recognition" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=analysts-squares" style="height: 225px;">
-                    <br>
-                    <br> See what experts say »
-                </a>
+          Recognized by Analysts
+        </h5>
+                <a href="/company/analysts/"><span class="partner-matrix-entry" data-name="logo_gartner"><img alt="" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=gartner2&amp;v=20150213170553" /></span> <span class="partner-matrix-entry" data-name="logo_forrester"><img alt="" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=forrester8&amp;v=20150213170553" /></span> <span class="partner-matrix-entry" data-name="logo_ovum"><img alt="" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=ovum1&amp;v=20150213170553" /></span> <span class="partner-matrix-entry" data-name="logo_bloor"><img alt="" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=bloor&amp;v=20150213170553" /></span> <span class="partner-matrix-entry" data-name="logo_idc"><img alt="" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=idc&amp;v=20150213170553" /></span> <span class="partner-matrix-entry" data-name="logo_451"><img alt="" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=451&amp;v=20150213170553" /></span>
+          <br />
+          <br />
+          See what experts say &raquo; </a>
             </div>
         </div>
     </div>
 </div>
-
 <div class="how-can-we-help">
     <div class="container">
         <div class="row">
             <div class="span12">
-
-
                 <div class="needs">
                     <div class="container" style="padding-bottom: 63px;">
-                        <h2>How we help</h2>
+                        <h2>
+              How Do We Help?
+            </h2>
                         <div class="row">
                             <div class="span3 need">
-                                <a href="/apps/">
-                                    <span class="h5">Business Manager</span>
-                                    <span class="desc">Looking for an app to solve an immediate business problem? Not finding anything that quite fits your specific needs?</span>
-                                    <span class="cta">See custom apps »</span>
-                                </a>
+                                <a href="/apps/"><span class="h5">Business Manager</span> <span class="desc">Looking for an app to solve an immediate business problem? Not finding anything that quite fits your specific needs?</span> <span class="cta">See custom apps &raquo;</span> </a>
                             </div>
                             <div class="span3 need">
-                                <a href="/case-studies/">
-                                    <span class="h5">IT Manager</span>
-                                    <span class="desc">Looking for a way to handle the deluge of incoming app requests?<br>What about mobile?</span>
-                                    <span class="cta">See case studies »</span>
-                                </a>
+                                <a href="/case-studies/"><span class="h5">IT Manager</span> <span class="desc">Looking for a way to handle the deluge of incoming app requests?
+                  <br />
+                  What about mobile?</span> <span class="cta">See case studies &raquo;</span> </a>
                             </div>
                             <div class="span3 need">
-                                <a href="/platform/" target="_blank">
-                                    <span class="h5">IT Architect</span>
-                                    <span class="desc">Looking for a strategic application platform that automatically enforces architectural best practices while increasing productivity?</span>
-                                    <span class="cta">See how it works »</span>
-                                </a>
+                                <a href="/platform/" target="_blank"><span class="h5">IT Architect</span> <span class="desc">Looking for a strategic application platform that automatically enforces architectural best practices while increasing productivity?</span> <span class="cta">See how it works &raquo;</span> </a>
                             </div>
                             <div class="span3 need">
-                                <a href="/get-started/">
-                                    <span class="h5">Developer</span>
-                                    <span class="desc">Looking for a more efficient way to create apps? Tired of all the small things that get in the way of just developing?</span>
-                                    <span class="cta">Get started »</span>
-                                </a>
+                                <a href="/get-started/"><span class="h5">Developer</span> <span class="desc">Looking for a more efficient way to create apps? Tired of all the small things that get in the way of just developing?</span> <span class="cta">Get started &raquo;</span> </a>
                             </div>
                         </div>
                     </div>
                     <div class="container" style="border-top: 1px solid lightgrey;padding-top: 50px;">
                         <div class="needs_row">
-
-
-
                             <div class="row">
                                 <div class="span12">
-                                    <h5 style="font-size: 18px;margin-bottom: 40px;">Kick-start Your Next App Project with our Pre-Built Apps</h5>
+                                    <h5 style="font-size: 30px;margin-bottom: 40px;">
+                    How Can You Start?
+                  </h5>
                                 </div>
-                                <div class="span5" style="text-align: left;">
-
-                                    <h3>Simple to use, all devices.</h3>
-                                    <p>Easy to change with OutSystems Platform.</p>
-                                    <p>Add your own specs and functionality in days.</p>
-                                    <p>Plugable to your back-end systems.</p>
-                                    <a href="/apps/" class="cta" title="See all pre-built apps">See all pre-built apps »</a>
+                                <div class="span5 top50" style="text-align: left;">
+                                    <h3 style="font-size: 18px;margin-bottom: 6px;">
+                    Kick-start with pre-built&nbsp;apps
+                  </h3>
+                                    <p style="line-height: 24px;">
+                                        Easy to change with OutSystems Platform
+                                        <br /> Add your own specs and functionality in days
+                                        <br /> Existing systems plug directly in
+                                    </p>
+                                    <a class="cta" href="/apps/" title="See all pre-built apps">See all pre-built apps &raquo;</a>
                                 </div>
-
                                 <div class="span7">
-                                    <p><img alt="OutSystems Sample Apps" src="http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=Product-mobile-apps-icons&amp;v=20141127103024" style="width: 100%;">
+                                    <p>
+                                        <img alt="OutSystems Pre-Built Apps" src="http://www.outsystems.com/CMS_BackOffice/ResourceLink.aspx?ResourceName=Product-mobile-apps-icons&amp;v=20150213170553" style="width: 100%;" />
                                     </p>
                                 </div>
                             </div>
-
-
-
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </div>
-
 </div>
