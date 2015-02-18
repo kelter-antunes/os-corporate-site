@@ -662,6 +662,9 @@ var currentActive;
 
 function hideDropDown(_elem) {
     $('.navigation-bar li.active').removeClass('active');
+
+    $('.navigation-bar li.active a').css('background-color', 'transparent');
+
     $('[data-dropdown-wrapper]').hide();
 }
 
@@ -673,10 +676,16 @@ function toggleDropdowMenu(_elem) {
     if (_elem.parent().hasClass('active')) {
         _elem.parent().removeClass('active');
         currentActive.addClass('active');
+
+        $('.navigation-bar li.active a').css('background-color', 'white');
+        
     } else {
         _elem.parent().addClass('active');
         currentActive.removeClass('active');
+
+        $('.navigation-bar li.active a').css('background-color', 'transparent');
     }
+
 }
 $(document).ready(function() {
     currentActive = $('.navigation-bar li.active');
