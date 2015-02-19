@@ -29,14 +29,12 @@ $(document).ready(function() {
             olarkOSDetails = dets;
 
 
-
             if (olarkOSDetails.currentPage.url.indexOf('/apps/') !== -1) {
                 olark('api.box.hide');
 
             } else {
                 olark('api.box.show');
             }
-
 
 
         });
