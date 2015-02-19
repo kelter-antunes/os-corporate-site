@@ -1,4 +1,5 @@
 var olarkOSDetails;
+
 function olarkProgress() {
     olark('api.visitor.getDetails', function(dets) {
         olarkOSDetails = dets;
@@ -30,12 +31,22 @@ $(document).ready(function() {
 
         olarkProgress();
 
-        var userEmail = KM.i();
-        if (IsEmail(userEmail)) {
-            olark('api.visitor.updateEmailAddress', {
-                emailAddress: userEmail
-            });
+        // var userEmail = KM.i();
+        // if (IsEmail(userEmail)) {
+        //     olark('api.visitor.updateEmailAddress', {
+        //         emailAddress: userEmail
+        //     });
+        // }
+
+
+        if (olarkOSDetails.currentPage.url.indexOf('/apps/') !== -1) {
+            olark('api.box.hide');
+
+        } else {
+            olark('api.box.show');
         }
+
+
 
     } catch (e) {
 
