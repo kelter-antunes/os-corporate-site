@@ -27,6 +27,18 @@ $(document).ready(function() {
         olark('api.visitor.getDetails', function(dets) {
 
             olarkOSDetails = dets;
+
+
+
+            if (olarkOSDetails.currentPage.url.indexOf('/apps/') !== -1) {
+                olark('api.box.hide');
+
+            } else {
+                olark('api.box.show');
+            }
+
+
+
         });
 
         olarkProgress();
@@ -39,12 +51,7 @@ $(document).ready(function() {
         // }
 
 
-        if (olarkOSDetails.currentPage.url.indexOf('/apps/') !== -1) {
-            olark('api.box.hide');
 
-        } else {
-            olark('api.box.show');
-        }
 
 
 
