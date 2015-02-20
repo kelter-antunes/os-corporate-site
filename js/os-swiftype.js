@@ -13,7 +13,7 @@ $(function() {
         snippet = snippet.concat('...');
         var out = '<div class="st-result"><h4 class="title"><a href="' + item['url'] + '" class="st-search-result-link">' + item['title'] + '</a></h4><div class="st-metadata"><span class="st-url">' + item['url'] + '</span><span class="st-snippet">' + snippet.replace('matchCookie', ' ').replace('<em>match</em>Cookie', '') + '</span></div></div>';
 
-        return out;
+        return htmlEscape(out);
     };
 
     var customRenderAutoComplete = function(document_type, item) {
@@ -27,7 +27,7 @@ $(function() {
             out = out.concat('<p class="body">' + item.body.replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 700) + '</p>');
         }
 
-        return out;
+        return htmlEscape(out);
     };
 
 
@@ -57,9 +57,13 @@ $(function() {
                 if (result.type && WebSite.length < 5) {
                     WebSite.push(result);
                 }
-                if(WebSite.length > 4){return;}
+                if (WebSite.length > 4) {
+                    return;
+                }
             });
-            if(WebSite.length > 4){return;}
+            if (WebSite.length > 4) {
+                return;
+            }
         });
 
         var badruz = $('<div class="autocompbox"></div>');
@@ -125,8 +129,8 @@ $(function() {
         if (typeof jQuery === "function" && el instanceof jQuery) {
             el = el[0];
         }
-        if($('.swtpbutton')[0] !== undefined){
-            try{
+        if ($('.swtpbutton')[0] !== undefined) {
+            try {
                 var btn_h = $('.swtpbutton')[0].getBoundingClientRect();
                 var rect = el.getBoundingClientRect();
 
@@ -134,11 +138,11 @@ $(function() {
                     rect.left >= 0 &&
                     rect.bottom + btn_h.height <= (window.innerHeight || document.documentElement.clientHeight) &&
                     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-                    );
+                );
+            } catch (exception) {
+                console.log("exception -> isElementInViewport");
             }
-            catch(exception){ console.log("exception -> isElementInViewport");} 
-        }
-        else{
+        } else {
             return;
         }
     }
@@ -162,7 +166,7 @@ $(function() {
                     });
                 } else {
                     var wdth = $('.result').last()[0].getBoundingClientRect().width;
-                    
+
                     $('.swtpbutton').css({
                         'position': 'fixed',
                         'bottom': '0',
@@ -217,7 +221,7 @@ $(function() {
                     }
                 };
             }*/
-        });
+    });
 
 
     //AUTOCOMPLETE***************************************************
@@ -256,5 +260,5 @@ $(function() {
                     }
                 };
             }*/
-        });
+    });
 });
