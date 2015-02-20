@@ -13,7 +13,7 @@ $(function() {
         snippet = snippet.concat('...');
         var out = '<div class="st-result"><h4 class="title"><a href="' + item['url'] + '" class="st-search-result-link">' + item['title'] + '</a></h4><div class="st-metadata"><span class="st-url">' + item['url'] + '</span><span class="st-snippet">' + snippet.replace('matchCookie', ' ').replace('<em>match</em>Cookie', '') + '</span></div></div>';
 
-        return htmlEscape(out);
+        return out;
     };
 
     var customRenderAutoComplete = function(document_type, item) {
@@ -27,7 +27,7 @@ $(function() {
             out = out.concat('<p class="body">' + item.body.replace('matchCookie', ' ').replace('<em>match</em>Cookie', '').substring(0, 700) + '</p>');
         }
 
-        return htmlEscape(out);
+        return out;
     };
 
 
