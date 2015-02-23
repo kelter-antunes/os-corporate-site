@@ -1118,7 +1118,8 @@ a.tooltip-link {
 .header-hero-wrapper.home-rev {
     background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=homepage-top-header-bg&v=201510021536) #706E6F center no-repeat;
     height: 510px;
-    position: relative;
+    position: relative; 
+    
 }
 .hero-home-back {
     background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=slide1&v=201510021536);
