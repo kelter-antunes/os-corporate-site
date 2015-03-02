@@ -27,7 +27,7 @@ osjs(function(a) {
         a(".popup_link").each(function() {
             if (!osjs(this).attr("id"))
                 osjs(this).attr("id", Math.random().toString().replace(".", ""));
-            RichWidgets_Popup_Editor_init(osjs(this).attr("id"), "", " ", -1, -1, osjs(this).attr("href"));
+            RichWidgets_Popup_Editor_init(osjs(this).attr("id"), "", " ", 500, -1, osjs(this).attr("href"),true,true);
         });
 
     }
