@@ -25,9 +25,15 @@ osjs(function(a) {
 
     if ((/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) && width < 767) {} else {
         a(".popup_link").each(function() {
-            if (!osjs(this).attr("id"))
+            if (!osjs(this).attr("id")) {
                 osjs(this).attr("id", Math.random().toString().replace(".", ""));
-            RichWidgets_Popup_Editor_init(osjs(this).attr("id"), "", " ", 500, -1, osjs(this).attr("href"),true,true);
+            }
+
+            var popupH = osjs(this).attr("popup-height");
+            if (popupH === undefined) {
+                popupH = -1;
+            };
+            RichWidgets_Popup_Editor_init(osjs(this).attr("id"), "", " ", popupH, -1, osjs(this).attr("href"), true, true);
         });
 
     }
