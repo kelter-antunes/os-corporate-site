@@ -1118,8 +1118,7 @@ a.tooltip-link {
 .header-hero-wrapper.home-rev {
     background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=homepage-top-header-bg&v=201510021536) #706E6F center no-repeat;
     height: 510px;
-    position: relative; 
-    
+    position: relative;
 }
 .hero-home-back {
     background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=slide1&v=201510021536);
@@ -7537,4 +7536,12 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
 .edit_content_link:hover {
     text-decoration: none;
     color: darkred;
+}
+/** **/
+
+.contentWrapper {
+    height: 100%;
+}
+div#popupContent {
+    height: 100%;
 }
