@@ -144,7 +144,7 @@ var osPopup = osjs().ready(function($) {
             $(divToPopup).show().dialog({
                 dialogClass: 'Popup',
                 resizable: false,
-                autoResize: false,
+                autoResize: true,
                 closeOnEscape: !hideCloseButton,
                 bgiframe: true,
                 draggable: false,
