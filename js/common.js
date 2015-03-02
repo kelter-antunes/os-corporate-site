@@ -1,27 +1,6 @@
 var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 osjs(function(a) {
-    var b = document.location.href;
-    if (b.indexOf("#") !== -1) {
-        b = b.replace("agile-platform", "platform");
-        var c = b.replace(/.*#/, "");
-        c = c.replace(/&_=.*/, "");
 
-        if (osjs("a[href$=\"" + c + "\"]").length !== 0) {
-            if (c != "_") {
-                setTimeout(function() {
-                    osjs("a[href$=\"" + c + "\"]")[0].click();
-                }, 1e3);
-            }
-        } else {
-            c = c + '/';
-            if (c != "_") {
-                setTimeout(function() {
-                    osjs("a[href$=\"" + c + "\"]")[0].click();
-                }, 1e3);
-            }
-        }
-
-    }
 
     if ((/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) && width < 767) {} else {
         a(".popup_link").each(function() {
@@ -48,6 +27,35 @@ osjs(function(a) {
         if (typeof pageTracker != "undefined")
             pageTracker._trackPageview(a("#" + b).attr("href"));
     });
+
+
+
+
+
+    var b = document.location.href;
+    if (b.indexOf("#") !== -1) {
+        b = b.replace("agile-platform", "platform");
+        var c = b.replace(/.*#/, "");
+        c = c.replace(/&_=.*/, "");
+
+        if (osjs("a[href$=\"" + c + "\"]").length !== 0) {
+            if (c != "_") {
+                setTimeout(function() {
+                    osjs("a[href$=\"" + c + "\"]")[0].click();
+                }, 1e3);
+            }
+        } else {
+            c = c + '/';
+            if (c != "_") {
+                setTimeout(function() {
+                    osjs("a[href$=\"" + c + "\"]")[0].click();
+                }, 1e3);
+            }
+        }
+
+    }
+
+
 
 });
 

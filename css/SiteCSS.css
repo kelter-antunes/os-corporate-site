@@ -4298,11 +4298,3 @@ img {
     -webkit-transition:none
 }
 
-/** **/
-
-.contentWrapper {
-    height: 100%;
-}
-div#popupContent {
-    height: 100%;
-}
