@@ -4,11 +4,6 @@ cache invalidator, find and replace for new one
 v=201510021536
 */
 
-.new-class{
-    color: white;
-}
-
-
 html, body {
     height: 100%
 }
@@ -7542,4 +7537,3 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
     text-decoration: none;
     color: darkred;
 }
-
