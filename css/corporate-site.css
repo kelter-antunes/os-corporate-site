@@ -4,12 +4,6 @@ cache invalidator, find and replace for new one
 v=201510021536
 */
 
-.new-class{
-    color: white;
-	height: 10px;
-}
-
-
 html, body {
     height: 100%
 }
