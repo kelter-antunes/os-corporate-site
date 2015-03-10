@@ -91,7 +91,11 @@ $(document).ready(function() {
     var pathname = window.location.pathname;
     $('.sub-navigation-bar a').each(function(index, el) {
         var currEl = $(el);
-        if (pathname.indexOf(currEl.attr('href')) !== -1) {
+
+        if (pathname === '/platform/' && pathname === currEl.attr('href')) {
+            currEl.addClass('active');
+
+        } else if (pathname !== '/platform/' && pathname.indexOf(currEl.attr('href')) !== -1) {
             currEl.addClass('active');
         };
     });
