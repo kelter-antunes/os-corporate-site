@@ -95,7 +95,7 @@ $(document).ready(function() {
         if (pathname === '/platform/' && pathname === currEl.attr('href')) {
             currEl.addClass('active');
 
-        } else if (pathname !== '/platform/' && pathname.indexOf(currEl.attr('href')) !== -1) {
+        } else if (currEl.attr('href') !== '/platform/' && pathname.indexOf(currEl.attr('href')) !== -1) {
             currEl.addClass('active');
         };
     });
