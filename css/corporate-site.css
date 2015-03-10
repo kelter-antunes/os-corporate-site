@@ -4,11 +4,6 @@ cache invalidator, find and replace for new one
 v=201510021536
 */
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> origin/master
 html, body {
     height: 100%
 }
@@ -6540,7 +6535,7 @@ body.mega-menu .navigation-bar li.active a span {
     top: 0px;
     right: 0;
     left: 0;
-    z-index: 99;
+    z-index: 999;
     padding-bottom: 0;
     background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201510021536') center -80px;
     border-bottom: 1px solid #d6d6d6;
