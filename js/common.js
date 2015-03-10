@@ -91,7 +91,7 @@ $(document).ready(function() {
     var pathname = window.location.pathname;
     $('.sub-navigation-bar a').each(function(index, el) {
         var currEl = $(el);
-        if (pathname === currEl.attr('href')) {
+        if (pathname.indexOf(currEl.attr('href')) !== -1) {
             currEl.addClass('active');
         };
     });
