@@ -67,6 +67,13 @@ osjs(".Popup").live("dialogopen", function(a, b) {
 });
 
 
+
+/* adjust breadcrumb margin top on new case studies version and solutions  */
+$(function() {
+    $('.case-studies-detail-new .Header_Nav_Breadcrumb').css('margin-top', 300 - $('.cs-title-box-topbar').height() + 15);
+});
+
+
 $(document).ready(function() {
     var sticky = $('.second-level-menu-wrapper');
     if (sticky.length == 0) {
@@ -91,9 +98,17 @@ $(document).ready(function() {
     var pathname = window.location.pathname;
     $('.sub-navigation-bar a').each(function(index, el) {
         var currEl = $(el);
-        if (pathname === currEl.attr('href')) {
+
+        if (
+            (pathname === '/platform/' && pathname === currEl.attr('href')) ||
+            (pathname === '/customers/' && pathname === currEl.attr('href'))
+        ) {
             currEl.addClass('active');
-        };
+
+        } else if ((currEl.attr('href') !== '/platform/' && currEl.attr('href') !== '/customers/') && pathname.indexOf(currEl.attr('href')) !== -1) {
+            currEl.addClass('active');
+
+        }
     });
 });
 

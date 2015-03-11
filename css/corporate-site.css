@@ -4,11 +4,6 @@ cache invalidator, find and replace for new one
 v=201510021536
 */
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> origin/master
 html, body {
     height: 100%
 }
@@ -1165,11 +1160,18 @@ a.tooltip-link {
     box-shadow: none;
     filter: none
 }
+.header-hero-wrapper.case-studies-category.page-company {
+    height: 155px;
+    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201510021536) top center;
+}
 .header-hero-wrapper.case-studies-detail {
     height: 390px
 }
 .header-hero-wrapper.case-studies-detail-new {
     height: 380px
+}
+.case-studies-detail-new .Header_Nav_Breadcrumb {
+    margin-top: 165px;
 }
 .header-hero-wrapper.news {
     background: url(/img/bg_body.png?v=201510021536);
@@ -1224,6 +1226,12 @@ body.landing-slim form#WebForm1 {
     box-shadow: none;
     filter: none
 }
+.header-hero-wrapper.page-without-hero.page-company {
+/*    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201510021536) top center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    height: 131px;*/
+}
 .header-hero-wrapper.page-company {
     height: 175px;
     filter: none;
@@ -1249,6 +1257,25 @@ body.landing-slim form#WebForm1 {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none
+}
+.header-hero-wrapper.customers-sublevel-menu {
+    height: 445px;
+    filter: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201510021536) top center;
+    background-repeat: repeat-x;
+}
+.customers-sublevel-menu .hero-placeholder {
+    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=top-prov&v=201510021536);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-color: #DCDDDE;
+    filter: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 .case-studies-detail .navigation-inner {
     height: 390px
@@ -3276,7 +3303,7 @@ a.ViewMoreLink {
 }
 .customer-matrix-entry, .customer-matrix-entry-nodetail {
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 15px;
     position: relative;
     border: 1px solid #E6E6E6;
     cursor: pointer
@@ -6540,7 +6567,7 @@ body.mega-menu .navigation-bar li.active a span {
     top: 0px;
     right: 0;
     left: 0;
-    z-index: 99;
+    z-index: 999;
     padding-bottom: 0;
     background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201510021536') center -80px;
     border-bottom: 1px solid #d6d6d6;
@@ -7005,18 +7032,23 @@ h3.description {
     min-height: 110px;
     display: block;
 }
-
-
 .HeroPartnersPage {
+<<<<<<< HEAD
 color: white;
 top: 0PX;
 background-color: rgb(0, 0, 0);
 width: 100%;
 height: 570px;
 background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=header_440) #000000 center no-repeat;
+=======
+    color: white;
+    top: 0PX;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 570px;
+    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg) #000000 center no-repeat;
+>>>>>>> origin/master
 }
-
-
 /**to fix companie logos position on website*/
 
 @media only screen and (min-device-width: 767px) {
@@ -7554,4 +7586,3 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
     text-decoration: none;
     color: darkred;
 }
-
