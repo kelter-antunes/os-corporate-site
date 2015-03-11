@@ -687,7 +687,7 @@ function hideDropDown(_elem) {
 }
 
 function toggleDropdowMenu(_elem) {
-    //$('.navigation-bar li.active').removeClass('active');
+    $('.navigation-bar li.active').removeClass('active');
     $('[data-dropdown-wrapper]').hide();
     $("[data-dropdown-wrapper='" + $(_elem).attr('data-name') + "']").toggle();
 
@@ -698,6 +698,7 @@ function toggleDropdowMenu(_elem) {
     } else {
         _elem.parent().addClass('active');
         currentActive.removeClass('active');
+        currentActive = _elem.parent();
     }
 
 }
