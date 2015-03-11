@@ -692,7 +692,7 @@ function toggleDropdowMenu(_elem) {
     $('[data-dropdown-wrapper]').hide();
     $("[data-dropdown-wrapper='" + $(_elem).attr('data-name') + "']").toggle();
 
-    if (_elem.parent() == initialActive) {
+    if (_elem.parent()[0] == initialActive[0]) {
         _elem.parent().removeClass('active');
         currentActive.addClass('active');
 
