@@ -679,6 +679,7 @@ $(document).ready(function() {
 
 
 /** dropdown menus **/
+var initialActive;
 var currentActive;
 
 function hideDropDown(_elem) {
@@ -691,7 +692,7 @@ function toggleDropdowMenu(_elem) {
     $('[data-dropdown-wrapper]').hide();
     $("[data-dropdown-wrapper='" + $(_elem).attr('data-name') + "']").toggle();
 
-    if (_elem.parent().hasClass('active')) {
+    if (_elem.parent() == initialActive) {
         _elem.parent().removeClass('active');
         currentActive.addClass('active');
 
@@ -704,6 +705,7 @@ function toggleDropdowMenu(_elem) {
 }
 $(document).ready(function() {
     currentActive = $('.navigation-bar li.active');
+    initialActive = currentActive;
     $('[data-option=dropdown]').click(function(e) {
         e.preventDefault();
         e.stopPropagation();
