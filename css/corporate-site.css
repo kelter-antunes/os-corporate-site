@@ -1160,6 +1160,10 @@ a.tooltip-link {
     box-shadow: none;
     filter: none
 }
+.header-hero-wrapper.case-studies-category.page-company {
+    height: 155px;
+    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201510021536) top center;
+}
 .header-hero-wrapper.case-studies-detail {
     height: 390px
 }
@@ -1266,7 +1270,6 @@ body.landing-slim form#WebForm1 {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    
 }
 .case-studies-detail .navigation-inner {
     height: 390px
