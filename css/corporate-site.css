@@ -1257,6 +1257,16 @@ body.landing-slim form#WebForm1 {
     background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201510021536) top center;
     background-repeat: repeat-x;
 }
+.customers-sublevel-menu .hero-placeholder {
+    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=top-prov&v=201510021536);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-color: #DCDDDE;
+    filter: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
 .case-studies-detail .navigation-inner {
     height: 390px
 }
