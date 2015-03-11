@@ -99,10 +99,10 @@ $(document).ready(function() {
     $('.sub-navigation-bar a').each(function(index, el) {
         var currEl = $(el);
 
-        if (pathname === '/platform/' && pathname === currEl.attr('href')) {
+        if ((pathname === '/platform/' && pathname === currEl.attr('href')) || (pathname === '/customers/' && pathname === currEl.attr('href'))) {
             currEl.addClass('active');
 
-        } else if (currEl.attr('href') !== '/platform/' && pathname.indexOf(currEl.attr('href')) !== -1) {
+        } else if ((currEl.attr('href') !== '/platform/' || currEl.attr('href') !== '/customers/') && pathname.indexOf(currEl.attr('href')) !== -1) {
             currEl.addClass('active');
         };
     });
