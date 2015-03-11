@@ -1248,6 +1248,15 @@ body.landing-slim form#WebForm1 {
     -webkit-box-shadow: none;
     box-shadow: none
 }
+.header-hero-wrapper.customers-sublevel-menu {
+    height: 445px;
+    filter: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201510021536) top center;
+    background-repeat: repeat-x;
+}
 .case-studies-detail .navigation-inner {
     height: 390px
 }
