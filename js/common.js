@@ -108,8 +108,6 @@ $(document).ready(function() {
         } else if ((currEl.attr('href') !== '/platform/' && currEl.attr('href') !== '/customers/') && pathname.indexOf(currEl.attr('href')) !== -1) {
             currEl.addClass('active');
 
-        } else if (currEl.attr('href') !== '/customers/' && pathname.indexOf(currEl.attr('href')) !== -1) {
-            currEl.addClass('active');
         }
     });
 });
