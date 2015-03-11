@@ -3294,7 +3294,7 @@ a.ViewMoreLink {
 }
 .customer-matrix-entry, .customer-matrix-entry-nodetail {
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 15px;
     position: relative;
     border: 1px solid #E6E6E6;
     cursor: pointer
