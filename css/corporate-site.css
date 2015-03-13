@@ -6699,7 +6699,7 @@ h3.description {
     line-height: 75px;
 }
 .call-out-hero-home .featured .m-item.m-active {
-    display: inline-block;
+    display: block;
 }
 .call-out-hero-home .featured .m-item.m-active a {
     color: white;
