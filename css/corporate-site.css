@@ -6168,6 +6168,10 @@ div.st-result .st-date {
   background-image: none;
 }
 
+.submenuhover .customers-case-study-preview a {
+  display: block;
+}
+
 /************End Sub Menu Hover ********/
 /** solutions **/
 
