@@ -6163,6 +6163,11 @@ div.st-result .st-date {
 .submenuhoverbox-secondcontent > ul > li {
     margin-bottom: 8px
 }
+
+.submenuhover .customers-case-study-preview {
+  background-image: none;
+}
+
 /************End Sub Menu Hover ********/
 /** solutions **/
 
