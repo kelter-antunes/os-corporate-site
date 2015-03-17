@@ -2800,6 +2800,15 @@ a.ViewMoreLink {
 .cs-blue-box-detail-big {
     font-size: 24px
 }
+.case-studies-list-summary {
+    margin-bottom: 25px;
+    font-size: 10pt;
+    line-height: 1.2em;
+    height: 165px;
+    padding-top: 10px;
+    overflow: hidden;
+    text-align: center;
+}
 /** case-studies-category **/
 
 .right-box-title {
@@ -6541,6 +6550,7 @@ form input.st-search-input {
 }
 .submenu-hover-sections .submenuhoverbox-contentheading, .submenu-hover-sections .submenuhoverbox-contentheading a {
     /* color: #0088cc; */
+    
     text-decoration: none;
 }
 .submenuhoverbox {
@@ -6562,7 +6572,7 @@ body.mega-menu .navigation-bar li.active a span {
     background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=nav&v=201510021536') center no-repeat white !important;
 }
 body.mega-menu .navigation-bar li a span.try-now {
-  background: transparent!important;
+    background: transparent!important;
 }
 .second-level-menu-wrapper {
     float: right;
