@@ -75,48 +75,53 @@ osjs(".Popup").live("dialogopen", function(a, b) {
 /* home page, filter customers logos by visitor country */
 $(function() {
 
-    // ## NOTE: if the number of current location is not the maximum number, go get global ones to fullfill the matrix  --- done
-    // ## NOTE 2: US locale is the global  --- done
+    if (window.location.pathname === '/') {
+        // ## NOTE: if the number of current location is not the maximum number, go get global ones to fullfill the matrix  --- done
+        // ## NOTE 2: US locale is the global  --- done
 
-    var totalMatrixLogos = 15;
+        var totalMatrixLogos = 15;
 
 
-    //get the current location
-    var currentLocation = $('#locale-aux').attr('data-locale');
-    if (currentLocation === 'us' || currentLocation === undefined) {
-        currentLocation = 'global';
+        //get the current location
+        var currentLocation = $('#locale-aux').attr('data-locale');
+        if (currentLocation === 'us' || currentLocation === undefined) {
+            currentLocation = 'global';
+        }
+
+        //get the logos for the current locale
+        var logosForCurrentLocale = $('.customer-matrix-entry[data-' + currentLocation + '!=""]');
+        var numberOfCurrentLogos = logosForCurrentLocale.length;
+
+        if (numberOfCurrentLogos > 15) {
+            logosForCurrentLocale.slice(0, 14);
+            numberOfCurrentLogos = 15;
+        };
+
+
+        var numberOfMissingLogos = totalMatrixLogos - numberOfCurrentLogos;
+
+        if (numberOfMissingLogos != 0) {
+            //get the global logos to fullfill the matrix
+            var globalLogos = $('.customer-matrix-entry:not([data-' + currentLocation + '!=""]).customer-matrix-entry[data-global!=""]').slice(0, numberOfMissingLogos);
+
+            //$.merge(logosForCurrentLocale, globalLogos);
+
+            globalLogos.each(function(index, el) {
+                logosForCurrentLocale.push(el);
+            });
+
+            //logosForCurrentLocale.push.apply(logosForCurrentLocale, globalLogos)
+
+        };
+
+        //delete existing logos
+        $('.customer-matrix-entry').remove();
+
+        //add new logo list
+        $('.customers-and-experts a[href="/customers/"]').prepend(logosForCurrentLocale);
+        logosForCurrentLocale.show();
+
     }
-
-    //get the logos for the current locale
-    var logosForCurrentLocale = $('.customer-matrix-entry[data-' + currentLocation + '!=""]');
-    var numberOfCurrentLogos = logosForCurrentLocale.length;
-
-    if (numberOfCurrentLogos > 15) {
-        logosForCurrentLocale.slice(0, 14);
-        numberOfCurrentLogos = 15;
-    };
-
-
-    var numberOfMissingLogos = totalMatrixLogos - numberOfCurrentLogos;
-
-    if (numberOfMissingLogos != 0) {
-        //get the global logos to fullfill the matrix
-        var globalLogos = $('.customer-matrix-entry:not([data-' + currentLocation + '!=""]).customer-matrix-entry[data-global!=""]').slice(0, numberOfMissingLogos);
-
-        //$.merge(logosForCurrentLocale, globalLogos);
-
-        globalLogos.each(function(index, el) {
-            logosForCurrentLocale.push(el);
-        });
-
-        //logosForCurrentLocale.push.apply(logosForCurrentLocale, globalLogos)
-
-    };
-
-
-    $('.customers-and-experts a[href="/customers/"]').html(logosForCurrentLocale);
-    logosForCurrentLocale.show();
-
 });
 
 
@@ -740,6 +745,7 @@ $(document).ready(function() {
 
 /** dropdown menus **/
 var initial;
+
 function hideDropDown() {
 
     $('.navigation-bar li[class*="active"]').removeClass("active");
