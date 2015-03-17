@@ -787,7 +787,7 @@ $(document).ready(function() {
 // });
 
 
-
+var initial;
 function hideDropDown() {
 
     $('.navigation-bar li[class$="active"]').removeClass("active");
