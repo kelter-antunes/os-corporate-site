@@ -790,7 +790,7 @@ $(document).ready(function() {
 var initial;
 function hideDropDown() {
 
-    $('.navigation-bar li[class$="active"]').removeClass("active");
+    $('.navigation-bar li[class*="active"]');.removeClass("active");
     $("[data-dropdown-wrapper]").hide();
     $('body').removeClass('mega-menu'); // same as below
 
@@ -802,8 +802,8 @@ function hideDropDown() {
 }
 
 function toggleDropdowMenu(a) {
-    var currentActive = $('.navigation-bar li[class$="active"]');
-    $('.navigation-bar li[class$="active"]').removeClass("active");
+    var currentActive = $('.navigation-bar li[class*="active"]');;
+    $('.navigation-bar li[class*="active"]');.removeClass("active");
     $("[data-dropdown-wrapper]").hide();
     $("[data-dropdown-wrapper='" + $(a).attr("data-name") + "']").toggle();
     $('body').addClass('mega-menu'); // This is used to override a CSS style that colides with the "active" CSS style used by the menu entries
@@ -818,7 +818,7 @@ function toggleDropdowMenu(a) {
 
 $(document).ready(function() {
 
-    initial = $('.navigation-bar li[class$="active"]');
+    initial = $('.navigation-bar li[class*="active"]');;
 
     $("[data-option=dropdown]").click(function(a) {
         a.preventDefault(), a.stopPropagation();
