@@ -789,7 +789,10 @@ $(document).ready(function() {
 
 
 function hideDropDown() {
-    $('.navigation-bar li[class$="active"]').removeClass("active");
+    if (window.location.pathname === '/') {
+        $('.navigation-bar li[class$="active"]').removeClass("active");
+    };
+
     $("[data-dropdown-wrapper]").hide();
     $('body').removeClass('mega-menu'); // same as below
 }
