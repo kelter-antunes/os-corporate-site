@@ -2802,15 +2802,18 @@ a.ViewMoreLink {
 }
 .case-studies-list-summary {
     margin-bottom: 25px;
-    font-size: 10pt;
+    font-size: 13px;
     line-height: 1.2em;
-    height: 165px;
+    height: 185px;
     padding-top: 10px;
     overflow: hidden;
     text-align: center;
 }
 .case-studies-list-summary:hover {
     background-color: #E6E6E6
+}
+.case-studies-list-summary p.summary-fact1, .case-studies-list-summary p.summary-fact2 {
+    display: none;
 }
 /** case-studies-category **/
 
