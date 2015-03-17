@@ -163,6 +163,9 @@ v=201510021536
         height: 50px;
         background: none
     }
+    .header-hero-wrapper.case-studies-category.page-company {
+        height: 0px;
+    }
     .webinar-list-content {
         width: auto;
         margin-left: 0;
