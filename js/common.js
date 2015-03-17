@@ -129,6 +129,9 @@ $(function() {
 });
 
 
+
+
+/** Sticky secando level menu **/
 $(document).ready(function() {
     var sticky = $('.second-level-menu-wrapper');
     if (sticky.length == 0) {
@@ -148,7 +151,6 @@ $(document).ready(function() {
         }
     };
     $(window).load(fixMenu).scroll(fixMenu);
-
 
     var pathname = window.location.pathname;
     $('.sub-navigation-bar a').each(function(index, el) {
@@ -281,7 +283,6 @@ $(document).mouseup(function(e) {
 
         }
     }
-
 
 });
 
@@ -423,6 +424,7 @@ $(function() {
 });
 
 
+
 /*  Tracking Sign-ups in KISSMetrics - From anonymous to named user
  *
  *   marketo listener for current page context, context is now used to track events in kissmetrics
@@ -491,8 +493,10 @@ $(function() {
 
 
 });
-/**Tracking Sign-ups in KISSMetrics - From anonymous to named user**/
 
+
+
+/**Tracking Sign-ups in KISSMetrics - From anonymous to named user**/
 
 
 /* wistia events */
@@ -592,9 +596,7 @@ $(function() {
                                 params: video.name()
                             });
                         }
-
                     }
-
 
                     done50 = true;
                 }
@@ -616,7 +618,6 @@ $(function() {
                                 params: video.name()
                             });
                         }
-
 
                     }
                     done75 = true;
@@ -640,6 +641,8 @@ $(function() {
 
 
 
+/** Bind to smooth scroll top **/
+
 $(function(a) {
     $('.scrollup').click(function(event) {
         event.preventDefault();
@@ -649,6 +652,8 @@ $(function(a) {
         return false;
     });
 });
+
+
 
 $(document).ready(function() {
     $(".hist-back-link").click(function(event) {
@@ -734,52 +739,108 @@ $(document).ready(function() {
 
 
 /** dropdown menus **/
-var currentActive;
+// var currentActive;
 
-function hideDropDown(_elem) {
-    $('.navigation-bar li.active').removeClass('active');
-    $('[data-dropdown-wrapper]').hide();
+// function hideDropDown(_elem) {
+//     $('.navigation-bar li.active').removeClass('active');
+//     $('[data-dropdown-wrapper]').hide();
+// }
+
+// function toggleDropdowMenu(_elem) {
+//     $('.navigation-bar li.active').removeClass('active');
+//     $('[data-dropdown-wrapper]').hide();
+//     $("[data-dropdown-wrapper='" + $(_elem).attr('data-name') + "']").toggle();
+
+//     if (_elem.parent().hasClass('active')) {
+//         _elem.parent().removeClass('active');
+//         currentActive.addClass('active');
+
+//     } else {
+//         _elem.parent().addClass('active');
+//         currentActive.removeClass('active');
+//     }
+
+// }
+// $(document).ready(function() {
+//     currentActive = $('.navigation-bar li.active');
+//     $('[data-option=dropdown]').click(function(e) {
+//         e.preventDefault();
+//         e.stopPropagation();
+
+//         var clicked = $(this);
+
+//         if ($("[data-dropdown-wrapper='" + $(clicked).attr('data-name') + "']").is(":visible")) {
+//             hideDropDown(clicked);
+//         } else {
+//             toggleDropdowMenu(clicked);
+//         }
+
+
+//         $('[data-dropdown-wrapper]').click(function(event) {
+//             event.stopPropagation();
+//         });
+
+//         $(document).on('click', function(e) {
+//             hideDropDown(clicked);
+//         });
+//     });
+// });
+
+
+
+function hideDropDown() {
+    $(".navigation-bar li[class=active]").removeClass("active");
+     $("[data-dropdown-wrapper]").hide();
+    $('body').removeClass('mega-menu'); // same as below
 }
-
-function toggleDropdowMenu(_elem) {
-    $('.navigation-bar li.active').removeClass('active');
-    $('[data-dropdown-wrapper]').hide();
-    $("[data-dropdown-wrapper='" + $(_elem).attr('data-name') + "']").toggle();
-
-    if (_elem.parent().hasClass('active')) {
-        _elem.parent().removeClass('active');
-        currentActive.addClass('active');
-
-    } else {
-        _elem.parent().addClass('active');
-        currentActive.removeClass('active');
+function toggleDropdowMenu(a) {
+    var currentActive = $(".navigation-bar li[class=active]");
+    $(".navigation-bar li[class=active]").removeClass("active");
+    $("[data-dropdown-wrapper]").hide();
+    $("[data-dropdown-wrapper='" + $(a).attr("data-name") + "']").toggle();
+    $('body').addClass('mega-menu'); // This is used to override a CSS style that colides with the "active" CSS style used by the menu entries
+    if (a.parent().hasClass("active")) {
+        a.parent().removeClass("active");
+        currentActive.addClass("active");
     }
-
+    else {
+        a.parent().addClass("active");
+        currentActive.removeClass("active");
+    }
 }
+
 $(document).ready(function() {
-    currentActive = $('.navigation-bar li.active');
-    $('[data-option=dropdown]').click(function(e) {
-        e.preventDefault();
-        e.stopPropagation();
 
-        var clicked = $(this);
-
-        if ($("[data-dropdown-wrapper='" + $(clicked).attr('data-name') + "']").is(":visible")) {
-            hideDropDown(clicked);
-        } else {
-            toggleDropdowMenu(clicked);
+    $("[data-option=dropdown]").click(function(a) {
+        a.preventDefault(), a.stopPropagation();
+        var b = $(this),
+            menuName = $(b).attr("data-name"),
+            c = $("[data-dropdown-wrapper='" + menuName + "']");
+        if (c.is(":visible")) {
+            // Davide was here!
+            // hideDropDown(b);
+            $(this).closest('ul').find('li.active').removeClass('active');
+            $(this).get(0).click();
+            c.find('a').get(0).click();
         }
-
-
-        $('[data-dropdown-wrapper]').click(function(event) {
-            event.stopPropagation();
-        });
-
-        $(document).on('click', function(e) {
-            hideDropDown(clicked);
-        });
+        else {
+            $(this).closest('ul').find('li.active').removeClass('active');
+            toggleDropdowMenu(b);
+            $("[data-dropdown-wrapper]").click(function(a) {
+                a.stopPropagation();
+            });
+            $(document).on("click", function() {
+                hideDropDown(b)
+            });
+        }
     });
-});
+
+})
+
+
+
+
+
 
 
 
