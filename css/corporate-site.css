@@ -6537,10 +6537,10 @@ form input.st-search-input {
     background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536') 111px 1px no-repeat;
 }
 .submenu-hover-sections a {
-    color: #000;
+    /* color: #000; */
 }
 .submenu-hover-sections .submenuhoverbox-contentheading, .submenu-hover-sections .submenuhoverbox-contentheading a {
-    color: #0088cc;
+    /* color: #0088cc; */
     text-decoration: none;
 }
 .submenuhoverbox {
