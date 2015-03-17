@@ -280,6 +280,10 @@ v=201510021536
         text-align: center;
         background-position: center bottom
     }
+    .case-studies-list-summary {
+        max-width: 220px;
+        margin: 0 auto;
+    }
     .main-quote-background {
         min-height: 165px;
         height: 100%!important
