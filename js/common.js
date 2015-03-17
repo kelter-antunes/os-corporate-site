@@ -789,12 +789,16 @@ $(document).ready(function() {
 
 
 function hideDropDown() {
-    if (window.location.pathname === '/') {
-        $('.navigation-bar li[class$="active"]').removeClass("active");
-    };
 
+    $('.navigation-bar li[class$="active"]').removeClass("active");
     $("[data-dropdown-wrapper]").hide();
     $('body').removeClass('mega-menu'); // same as below
+
+    if (window.location.pathname !== '/') {
+        initial.addClass("active");
+    };
+
+
 }
 
 function toggleDropdowMenu(a) {
@@ -813,6 +817,8 @@ function toggleDropdowMenu(a) {
 }
 
 $(document).ready(function() {
+
+    initial = $('.navigation-bar li[class$="active"]');
 
     $("[data-option=dropdown]").click(function(a) {
         a.preventDefault(), a.stopPropagation();
