@@ -113,6 +113,8 @@ $(function() {
 
     };
 
+
+    $('.customers-and-experts a[href="/customers/"]').html(logosForCurrentLocale);
     logosForCurrentLocale.show();
 
 });
