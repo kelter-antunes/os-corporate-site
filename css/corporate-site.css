@@ -6561,6 +6561,9 @@ body.mega-menu .navigation-bar li a span {
 body.mega-menu .navigation-bar li.active a span {
     background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=nav&v=201510021536') center no-repeat white !important;
 }
+body.mega-menu .navigation-bar li a span.try-now {
+  background: transparent!important;
+}
 .second-level-menu-wrapper {
     float: right;
     right: 0;
