@@ -99,7 +99,7 @@ $(function() {
 
     var numberOfMissingLogos = totalMatrixLogos - numberOfCurrentLogos;
 
-    if (numberOfCurrentLogos != 0) {
+    if (numberOfMissingLogos != 0) {
         //get the global logos to fullfill the matrix
         var globalLogos = $('.customer-matrix-entry:not([data-' + currentLocation + '!=""]).customer-matrix-entry[data-global!=""]').slice(0, numberOfMissingLogos);
 
