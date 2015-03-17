@@ -103,6 +103,7 @@ $(function() {
         //get the global logos to fullfill the matrix
         var globalLogos = $('.customer-matrix-entry[data-global!=""]').slice(0, numberOfMissingLogos - 1);
 
+        $.merge(logosForCurrentLocale, globalLogos);
     };
 
     logosForCurrentLocale.show();
