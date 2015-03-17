@@ -68,6 +68,51 @@ osjs(".Popup").live("dialogopen", function(a, b) {
 
 
 
+
+
+
+
+/* home page, filter customers logos by visitor country */
+$(function() {
+
+    // ## NOTE: if the number of current location is not the maximum number, go get global ones to fullfill the matrix  --- done
+    // ## NOTE 2: US locale is the global  --- done
+
+    var totalMatrixLogos = 15;
+
+
+    //get the current location
+    var currentLocation = $('body').attr('data-locale');
+    if (currentLocation === 'us') {
+        currentLocation = 'global';
+    }
+
+    //get the logos for the current locale
+    var logosForCurrentLocale = $('.customer-matrix-entry[data-' + currentLocation + '!=""]');
+    var numberOfCurrentLogos = logosForCurrentLocale.length;
+
+    if (numberOfCurrentLogos > 15) {
+        logosForCurrentLocale.slice(0, 14);
+        numberOfCurrentLogos = 15;
+    };
+
+
+    var numberOfMissingLogos = totalMatrixLogos - numberOfCurrentLogos;
+
+    if (numberOfCurrentLogos != 0) {
+        //get the global logos to fullfill the matrix
+        var globalLogos = $('.customer-matrix-entry[data-global!=""]').slice(0, numberOfMissingLogos - 1);
+
+    };
+
+    logosForCurrentLocale.show();
+
+});
+
+
+
+
+
 /* adjust breadcrumb margin top on new case studies version and solutions  */
 $(function() {
     $('.case-studies-detail-new .Header_Nav_Breadcrumb').css('margin-top', 300 - $('.cs-title-box-topbar').height() + 15);
