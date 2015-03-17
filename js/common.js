@@ -101,7 +101,7 @@ $(function() {
 
     if (numberOfCurrentLogos != 0) {
         //get the global logos to fullfill the matrix
-        var globalLogos = $('.customer-matrix-entry[data-global!=""]').slice(0, numberOfMissingLogos);
+        var globalLogos = $('.customer-matrix-entry:not([data-' + currentLocation + '!=""]).customer-matrix-entry[data-global!=""]').slice(0, numberOfMissingLogos);
 
         //$.merge(logosForCurrentLocale, globalLogos);
 
