@@ -818,10 +818,10 @@ $(document).ready(function() {
             c = $("[data-dropdown-wrapper='" + menuName + "']");
         if (c.is(":visible")) {
             // Davide was here!
-            // hideDropDown(b);
-            $(this).closest('ul').find('li.active').removeClass('active');
-            $(this).get(0).click();
-            c.find('a').get(0).click();
+             hideDropDown(b);
+            //$(this).closest('ul').find('li.active').removeClass('active');
+            //$(this).get(0).click();
+            //c.find('a').get(0).click();
         }
         else {
             $(this).closest('ul').find('li.active').removeClass('active');
