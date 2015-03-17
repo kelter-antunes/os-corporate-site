@@ -101,9 +101,13 @@ $(function() {
 
     if (numberOfCurrentLogos != 0) {
         //get the global logos to fullfill the matrix
-        var globalLogos = $('.customer-matrix-entry[data-global!=""]').slice(0, numberOfMissingLogos - 1);
+        var globalLogos = $('.customer-matrix-entry[data-global!=""]').slice(0, numberOfMissingLogos);
 
-        $.merge(logosForCurrentLocale, globalLogos);
+        //$.merge(logosForCurrentLocale, globalLogos);
+
+
+        logosForCurrentLocale.push.apply(logosForCurrentLocale, globalLogos)
+
     };
 
     logosForCurrentLocale.show();
