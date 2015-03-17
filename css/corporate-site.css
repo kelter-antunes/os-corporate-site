@@ -2809,6 +2809,9 @@ a.ViewMoreLink {
     overflow: hidden;
     text-align: center;
 }
+.case-studies-list-summary:hover {
+    background-color: #E6E6E6
+}
 /** case-studies-category **/
 
 .right-box-title {
