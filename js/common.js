@@ -105,8 +105,11 @@ $(function() {
 
         //$.merge(logosForCurrentLocale, globalLogos);
 
+        globalLogos.each(function(index, el) {
+            logosForCurrentLocale.push(el);
+        });
 
-        logosForCurrentLocale.push.apply(logosForCurrentLocale, globalLogos)
+        //logosForCurrentLocale.push.apply(logosForCurrentLocale, globalLogos)
 
     };
 
