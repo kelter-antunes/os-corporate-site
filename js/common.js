@@ -133,6 +133,12 @@ $(function() {
     $('.case-studies-detail-new .Header_Nav_Breadcrumb').css('margin-top', 300 - $('.cs-title-box-topbar').height() + 15);
 });
 
+/** adjust header size if no second level menu **/
+$(function() {
+    if ($('.second-level-menu-wrapper').length === 0) {
+        $('.header-hero-wrapper.page-without-hero').height(70);
+    }
+});
 
 
 
