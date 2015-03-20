@@ -7072,7 +7072,14 @@ h3.description {
     .case-study-customer-logo {
         bottom: 15px
     }
-}
+
+    .HeroPartnersPage {
+  color: #333;
+  top: 0PX;
+  width: 100%;
+  height: 440px;
+  }
+
 /** End of fix **/
 /* Magnific Popup CSS */
 
@@ -7536,6 +7543,13 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
     }
 }
 @media all and (max-width: 900px) {
+     .HeroPartnersPage {
+  color: #333;
+  top: 0PX;
+  width: 100%;
+  height: 440px;
+  
+}
     .mfp-arrow {
         -webkit-transform: scale(0.75);
         transform: scale(0.75)
