@@ -7508,7 +7508,7 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
   color: #333; 
 }
 .PartnerPageSubtitle{
-font-size: 14px;
+font-size: 14px !important;
 }
 
 .PartnerImage {
@@ -7580,7 +7580,7 @@ font-size: 14px;
   color: #333;
 }
 .PartnerPageSubtitle{
-font-size: 14px;
+font-size: 14px !important;
 }
 .PartnerImage {
   width: 100px;
