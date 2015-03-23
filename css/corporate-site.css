@@ -7518,6 +7518,9 @@ font-size: 14px;
   padding-top: 5px !IMPORTANT;
   padding-bottom: 25px;
 }
+.Partner {
+  text-align: center;
+}
 
     .mfp-img-mobile .mfp-image-holder {
         padding-left: 0;
@@ -7585,6 +7588,9 @@ font-size: 14px;
   vertical-align: top;
   padding-top: 5px !iMPORTANT;
   padding-bottom: 25px;
+}
+.Partner {
+  text-align: center;
 }
 
     .mfp-arrow {
