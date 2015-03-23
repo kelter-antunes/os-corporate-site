@@ -7515,7 +7515,7 @@ font-size: 14px;
   width: 100px;
   display: inline-block;
   vertical-align: top;
-  padding-top: 5px;
+  padding-top: 5px !IMPORTANT;
   padding-bottom: 25px;
 }
 
@@ -7583,7 +7583,7 @@ font-size: 14px;
   width: 100px;
   display: inline-block;
   vertical-align: top;
-  padding-top: 5px;
+  padding-top: 5px !iMPORTANT;
   padding-bottom: 25px;
 }
 
