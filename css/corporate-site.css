@@ -7507,6 +7507,17 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
 .HeroPartnersPageTitle {
   color: #333; 
 }
+.PartnerPageSubtitle{
+font-size: 14px;
+}
+
+.PartnerImage {
+  width: 100px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 5px;
+  padding-bottom: 25px;
+}
 
     .mfp-img-mobile .mfp-image-holder {
         padding-left: 0;
@@ -7565,6 +7576,17 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
 .HeroPartnersPageTitle {
   color: #333;
 }
+.PartnerPageSubtitle{
+font-size: 14px;
+}
+.PartnerImage {
+  width: 100px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 5px;
+  padding-bottom: 25px;
+}
+
     .mfp-arrow {
         -webkit-transform: scale(0.75);
         transform: scale(0.75)
