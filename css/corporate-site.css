@@ -7509,8 +7509,10 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
 .HeroPartnersPageTitle {
   color: #333; 
 }
-.PartnerPageSubtitle{
-font-size: 14px !important;
+.PartnerPageSubtitle {
+  padding-left: 15px;
+  font-size: 14px !important;
+  padding-right: 15px;
 }
 
 .PartnerImage {
@@ -7587,8 +7589,10 @@ font-size: 14px !important;
 .HeroPartnersPageTitle {
   color: #333;
 }
-.PartnerPageSubtitle{
-font-size: 14px !important;
+.PartnerPageSubtitle {
+  padding-left: 15px;
+  font-size: 14px !important;
+  padding-right: 15px;
 }
 .PartnerImage {
   width: 100px;
