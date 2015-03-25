@@ -773,6 +773,18 @@ var readFilters = function() {
 
 /** st init **/
 $(function() {
+
+    if($.queryParams().active !== undefined){
+
+            var activeFilter = $.queryParams().active;
+            var $this = $("[data-filter-type='" + activeFilter+"']");
+            
+            $(".st-search .link-tab").removeClass("active");
+            $this.addClass("active");
+            window.searchConfig.type = activeFilter;
+            reloadResults();
+    }
+    
     $('.st-search .link-tab').on('click', function(e) {
         e.preventDefault();
 
