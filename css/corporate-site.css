@@ -7517,9 +7517,9 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
 
 .PartnerImage {
   width: 100px;
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 5px !IMPORTANT;
+  display: inline-block !important;
+  vertical-align: top !important;
+  padding-top: 5px !iMPORTANT;
   padding-bottom: 25px;
 }
 .Partner {
@@ -7596,9 +7596,9 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
 }
 .PartnerImage {
   width: 100px;
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 5px !iMPORTANT;
+  display: inline-block !important;
+  vertical-align: top !important;
+  padding-top: 5px !important;
   padding-bottom: 25px;
 }
 .Partner {
