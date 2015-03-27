@@ -7058,9 +7058,6 @@ h3.description {
     min-height: 110px;
     display: block;
 }
-
-/**Partners*/
-/**PartnersHeaders*/
 .HeroPartnersPage {
   color: white;
   top: 0PX;
@@ -7073,270 +7070,6 @@ h3.description {
     color: white;
    
 }
-
-/**PartnersList*/
- .PartnerPageSubtitle {
-    text-align: left;
-    color: #353535;
-    font-family: 'Myriad-Pro';
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-  }
-  .Partner{
-    background-color: white;
-    border: 1px solid #eaeaea;
-    border-radius: 4px;
-    margin-left: 0px;
-    height: 267px;
-    display: table-cell;
-    vertical-align: middle;
-  }
-  .PartnerImage{
-    width: 100px;
-    margin-right: 10px;
-    display: inline-block;
-    display: table-cell;
-    vertical-align: middle;
-  }
-  .PartnerImage>a>img {
-    max-width: 100px;
-  }
-  .PartnersInfo{
-    text-align: left;
-    font-size: 12px;
-    max-width: 310px;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 15px;
-  }
-  .SeeMore {
-    display: inline-block;
-    font-weight: bold;
-    color: rgb(31, 91, 164);
-    padding-bottom: 5px;
-    font-size: 12px;
-    padding-right: 10px;
-  }
-  .SeeMore:after {
-    font-size: 11px;
-    color: #0088cc;
-    content: '\E647';
-    font-family: 'OS-Icon-Set';
-  }
-  .m-carousel-pagination.PartnersPagination a {
-    border:1px solid #e1e1e1;
-    padding: 8px;
-    border-radius: 5px;
-    margin-right:5px;
-    border:1px solid #e1e1e1;
-    padding: 8px;
-    border-radius: 5px;
-    margin-right:5px;
-  }
-  .m-carousel-pagination.PartnersPagination a.m-active {
-    box-shadow: 0px 3px 4px rgba(226, 226, 226, 0.58);
-    border: 1px solid #ccc;
-    background: #f3f3f3;
-    text-decoration: none;
-  }
-  .m-carousel-pagination.PartnersPagination a:hover {
-    box-shadow: 0px 3px 4px rgba(226, 226, 226, 0.58);
-    border: 1px solid #ccc;
-    background: #f3f3f3;
-    text-decoration: none;
-  }
-  .PartnersPagination {
-    padding-top: 40px;
-    text-align: center;
-    ;
-  }
-
-  /**Become a partner*/
-   .Successful-Projects {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=mask2&v=20150326183848) #000000 top no-repeat;
-    background-color: #313E41;
-    text-align: center;
-  }
-  .Successful-Projects .casestudies {
-    padding: 50px 0;
-  }
-  .casestudies .casestudy > a {
-    margin-left: 34px;
-    margin-right: 34px;
-    border-radius: 7px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.31);
-    display: block;
-    padding: 30px 29px;
-    color: black;
-    background-color: white;
-  }
-  .casestudies .casestudy>a span.desc {
-    padding-top: 35px;
-    text-align: center;
-    min-height: 110px;
-    display: block;
-  }
-  .casestudies .casestudy a .cta {
-    color: #08c;
-    padding-bottom: 10px;
-  }
-  .m-carousel-bulleted a.m-active {
-    color:  #0065aa;
-  }
-  .m-carousel-bulleted a {
-    text-align: center;
-    color: #333;
-  }
-  .m-active > .span3 > .marker {
-    display: block;
-    height: 6px;
-    background-color: #0065aa;
-    border-radius: 40px;
-  }
-  .span3 > .marker {
-    display: block;
-    height: 6px;
-    background-color: #e7eced;
-    border-radius: 40px;
-  }
-  .row.m-carousel-controls.m-carousel-bulleted {
-    padding-top: 77px;
-  }
-  .PartnershipLevel {
-    height: 394px;
-    text-align: center;
-    border: 1px solid #e7e2e2;
-    border-radius: 9px;
-    box-shadow: 0 7px 14px rgba(9, 9, 9, 0.05);
-  }
-  .PartnershipLevel div {
-    text-align: initial;
-    border-top: 1px solid #e7eced;
-    vertical-align: middle;
-    line-height: 56px;
-    text-align: center;
-  }
-
-   .PartnershipTable {
-    font-family: "Myriad-Pro";
-  }
-  .PartnershipTable div {
-    font-family: "Myriad-Pro";
-    border-bottom: 1px solid #e7eced;
-    vertical-align: middle;
-    line-height: 33px;
-    padding-left: 30px;
-    height: 33px;
-    margin-right: 30px;
-  }
-  .PartnershipTable.Gray {
-    border: 1px solid #dedede;
-    border-radius: 9px;
-    margin-top: 33px;
-    background-color: #f7f7f7;
-  }
-  .PartnershipTable .Subtitle{
-    border-bottom: 1px solid #e7eced;
-    color: black;
-    font-family: 'Myriad-Pro';
-    font-size: 18px;
-    font-weight: 600;
-  }
-  .PartnershipTable .Title{
-    padding-top: 30px;
-    color: black;
-    font-family: "Myriad-Pro";
-    font-size: 28px;
-    font-weight: 400;
-  }
-  .PartnerComparer {
-    text-align: center;
-    background-color: white;
-    border: 1px solid #e7e2e2;
-    box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.18);
-  }
-  .PartnerComparer div {
-    border-top: 1px solid #e7eced;
-    line-height: 33px;
-    height: 33px;
-  }
-  .Checked:before {
-    content: '\e659';
-    font-family: os-icon-set;
-  }
-  .PartnerComparer .Spacer {
-    height: 63px !important;
-    line-height: 51px;
-  }
-  .expandible {
-    display: none;
-    border-top: none !important;
-    padding-left: 0px !important;
-    height: auto !important;
-    border-bottom: none !important;
-  }
-  .expander {
-    cursor: pointer;
-    color: #0188cc;
-    font-size: 12px;
-  }
-  .expander.Comparer {
-    font-family: "Myriad-Pro";
-    height: 28px;
-    color: gray;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 0;
-    border: 1px solid #F0F0F0;
-    box-shadow: 0px 2px 3px rgba(226, 226, 226, 0.5);
-    height: 25px;
-    padding-top: 25px;
-    margin-top: 50px;
-    border-radius: 8px;
-    transition: all 200ms cubic-bezier(.215,.61,.355,1);
-  }
-  .expander.Comparer.expanded {
-    border-radius: 8px 8px 0 0;
-    border: 1px solid #fff;
-    box-shadow: none;
-  }
-  .expander.Comparer.expanded:hover {
-    border: 1px solid #fff;
-    box-shadow: none;
-  }
-  .expander.Comparer.expanded:after {
-    content: '\e646';
-    font-family: os-icon-set;
-    padding-left: 5px;
-  }
-  .Table {
-    font-size: 12px;
-  }
-  .Table:after {
-    content: '\e605';
-    font-family: os-icon-set;
-  }
-  .expander.Table:hover {
-    color: #005580;
-  }
-  .expander.Comparer:after {
-    content: '\e649';
-    font-family: os-icon-set;
-    padding-left: 5px;
-  }
-  .expander.Comparer:hover {
-    box-shadow: 0px 3px 4px rgba(226, 226, 226, 0.58);
-    border: 1px solid #E2E2E2;
-  }
-
-
-/**PartnersEnd*/
-
-
 /**to fix companie logos position on website*/
 
 @media only screen and (min-device-width: 767px) {
@@ -7763,7 +7496,7 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
     height: 72px
 }
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
-/**PartnersMobile*/
+
 .HeroPartnersPage {
   background: none;
   color: #333;
@@ -7796,8 +7529,6 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
   padding-top: 20px;
   text-align: center !iMPORTANT;
 }
-
-/**PartnersMobile end*/
 
     .mfp-img-mobile .mfp-image-holder {
         padding-left: 0;
@@ -7845,7 +7576,6 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
     }
 }
 @media all and (max-width: 900px) {
-    /**PartnersMobile*/
   .HeroPartnersPage {
   background: none;
   color: #333;
@@ -7877,7 +7607,6 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
   padding-top: 20px;
   text-align: center !iMPORTANT;
 }
-/**PartnersMobile end*/
 
     .mfp-arrow {
         -webkit-transform: scale(0.75);
