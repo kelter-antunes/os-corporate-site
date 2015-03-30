@@ -7267,6 +7267,7 @@ h3.description {
   .Checked:before {
     content: '\e659';
     font-family: os-icon-set;
+    padding-left: 10px;
   }
   .PartnerComparer .Spacer {
     height: 63px !important;
