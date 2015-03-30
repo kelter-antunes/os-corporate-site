@@ -6,23 +6,22 @@ osjs(function(a) {
         var c = b.replace(/.*#/, "");
         c = c.replace(/&_=.*/, "");
 
-        try{
-            if (osjs("a[href$=\"" + c + "\"]").length !== 0) {
-                if (c != "_") {
-                    setTimeout(function() {
-                        osjs("a[href$=\"" + c + "\"]")[0].click();
-                    }, 1e3);
-                }
-            } else {
-                c = c + '/';
-                if (c != "_") {
-                    setTimeout(function() {
-                        osjs("a[href$=\"" + c + "\"]")[0].click();
-                    }, 1e3);
-                }
+        if (osjs("a[href$=\"" + c + "\"]").length !== 0) {
+            if (c != "_") {
+                setTimeout(function() {
+                    try{osjs("a[href$=\"" + c + "\"]")[0].click();}
+                    catch(e){}
+                }, 1e3);
+            }
+        } else {
+            c = c + '/';
+            if (c != "_") {
+                setTimeout(function() {
+                    try{osjs("a[href$=\"" + c + "\"]")[0].click();}
+                    catch(e){}   
+                }, 1e3);
             }
         }
-        catch(e){}     
 
     }
 
