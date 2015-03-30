@@ -7184,6 +7184,11 @@ h3.description {
     color: #08c;
     padding-bottom: 10px;
   }
+  .casestudies .casestudy > a:hover {
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(0,0,0,.2);
+  border-color: rgba(214,214,214,0);
+  }
   .m-carousel-bulleted a.m-active {
     color:  #0065aa;
   }
