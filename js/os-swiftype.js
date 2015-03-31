@@ -118,7 +118,7 @@ $(function() {
 
     $("#st-search-input-2").keydown(function(ev) {
         if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
-            window.location.hash = '#stq=' + $(this).val() + '&stp=1';
+            window.location = '/search/#stq=' + $(this).val() + '&stp=1';
             $("#st-search-input").val($(this).val());
         }
     });
