@@ -121,7 +121,7 @@ $(function() {
 
         //add new logo list
         $('.customers-and-experts a[href="/customers/"]').prepend(logosForCurrentLocale);
-        logosForCurrentLocale.show();
+        logosForCurrentLocale.css('display','inline-block');
 
     }
 });
