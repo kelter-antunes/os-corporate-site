@@ -7076,7 +7076,7 @@ h3.description {
 
 /**PartnersList*/
  .PartnerPageSubtitle {
-    text-align: left;
+    text-align: center;
     color: #353535;
     font-family: 'Myriad-Pro';
     font-size: 16px;
@@ -7784,6 +7784,7 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
   color: #333; 
 }
 .PartnerPageSubtitle {
+  text-align: left;
   padding-left: 15px;
   font-size: 14px !important;
   padding-right: 15px;
@@ -7867,6 +7868,7 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
   color: #333;
 }
 .PartnerPageSubtitle {
+  text-align: left;
   padding-left: 15px;
   font-size: 14px !important;
   padding-right: 15px;
