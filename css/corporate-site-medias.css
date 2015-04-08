@@ -42,9 +42,6 @@ v=201510021536
     .header-hero-wrapper {
         padding-top: 0
     }
-    .header-hero-wrapper.customers-sublevel-menu {
-       height: 50px;
-    }
     .navigation-outter {
         position: fixed;
         z-index: 9999;
@@ -1219,9 +1216,6 @@ v=201510021536
     .hero-section-get-started {
         height: 820px
     }
-    .header-hero-wrapper.customers-sublevel-menu {
-       height: 50px;
-    }
     .cs-innovation-award-winner-badge {
         right: -10px;
         top: -225px
@@ -1269,17 +1263,11 @@ v=201510021536
     div.case-study-landscape-portrait {
         display: block
     }
-    .header-hero-wrapper.customers-sublevel-menu {
-       height: 50px;
-    }
 }
 /**to fix companie logos position on website*/
 
 @media only screen and (min-device-width: 767px) {
     .case-study-customer-logo {
         bottom: 10px
-    }
-    .header-hero-wrapper.customers-sublevel-menu {
-       height: 50px;
     }
 }
