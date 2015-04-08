@@ -7772,42 +7772,7 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
     height: 72px
 }
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
-/**PartnersMobile*/
-.HeroPartnersPage {
-  background: none;
-  color: #333;
-  top: 0PX;
-  width: 100%;
-  height: auto;
-  padding-bottom: 15px;
-}
-.HeroPartnersPageTitle {
-  color: #333; 
-}
-.PartnerPageSubtitle {
-  text-align: left;
-  padding-left: 15px;
-  font-size: 14px !important;
-  padding-right: 15px;
-}
 
-.PartnerImage {
-  width: 100px;
-  display: inline-block !important;
-  vertical-align: top !important;
-  padding-top: 5px !iMPORTANT;
-  padding-bottom: 25px;
-}
-.Partner {
-  text-align: center;
-}
-
-.PartnersPagination {
-  padding-top: 20px;
-  text-align: center !iMPORTANT;
-}
-
-/**PartnersMobile end*/
 
     .mfp-img-mobile .mfp-image-holder {
         padding-left: 0;
@@ -7855,40 +7820,7 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
     }
 }
 @media all and (max-width: 900px) {
-    /**PartnersMobile*/
-  .HeroPartnersPage {
-  background: none;
-  color: #333;
-  top: 0PX;
-  width: 100%;
-  height: auto;
-  padding-bottom: 15px;
-}
-
-.HeroPartnersPageTitle {
-  color: #333;
-}
-.PartnerPageSubtitle {
-  text-align: left;
-  padding-left: 15px;
-  font-size: 14px !important;
-  padding-right: 15px;
-}
-.PartnerImage {
-  width: 100px;
-  display: inline-block !important;
-  vertical-align: top !important;
-  padding-top: 5px !important;
-  padding-bottom: 25px;
-}
-.Partner {
-  text-align: center;
-}
-.PartnersPagination {
-  padding-top: 20px;
-  text-align: center !iMPORTANT;
-}
-/**PartnersMobile end*/
+  
 
     .mfp-arrow {
         -webkit-transform: scale(0.75);

@@ -36,6 +36,44 @@ v=201510021536
         font-weight: 400;
         margin-bottom: 10px
     }
+    /**PartnersMobile*/
+.HeroPartnersPage {
+  background: none;
+  color: #333;
+  top: 0PX;
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+}
+.HeroPartnersPageTitle {
+  color: #333; 
+}
+.PartnerPageSubtitle {
+  text-align: left;
+  padding-left: 15px;
+  font-size: 14px !important;
+  padding-right: 15px;
+}
+
+.PartnerImage {
+  width: 100px;
+  display: inline-block !important;
+  vertical-align: top !important;
+  padding-top: 5px !iMPORTANT;
+  padding-bottom: 25px;
+}
+.Partner {
+  text-align: center;
+}
+
+.PartnersPagination {
+  padding-top: 20px;
+  text-align: center !iMPORTANT;
+}
+.header-hero-wrapper.customers-sublevel-menu {
+       height: 50px;
+    }
+/**PartnersMobile end*/
     .mobile-only {
         display: block
     }
@@ -1203,6 +1241,44 @@ v=201510021536
     div.case-study-landscape-portrait {
         display: none
     }
+    /**PartnersMobile*/
+.HeroPartnersPage {
+  background: none;
+  color: #333;
+  top: 0PX;
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+}
+.HeroPartnersPageTitle {
+  color: #333; 
+}
+.PartnerPageSubtitle {
+  text-align: left;
+  padding-left: 15px;
+  font-size: 14px !important;
+  padding-right: 15px;
+}
+
+.PartnerImage {
+  width: 100px;
+  display: inline-block !important;
+  vertical-align: top !important;
+  padding-top: 5px !iMPORTANT;
+  padding-bottom: 25px;
+}
+.Partner {
+  text-align: center;
+}
+
+.PartnersPagination {
+  padding-top: 20px;
+  text-align: center !iMPORTANT;
+}
+.header-hero-wrapper.customers-sublevel-menu {
+       height: 50px;
+    }
+/**PartnersMobile end*/
     .magiccontainer {
         margin: 0 auto;
         width: 320px
@@ -1263,6 +1339,44 @@ v=201510021536
     div.case-study-landscape-portrait {
         display: block
     }
+    /**PartnersMobile*/
+.HeroPartnersPage {
+  background: none;
+  color: #333;
+  top: 0PX;
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+}
+.HeroPartnersPageTitle {
+  color: #333; 
+}
+.PartnerPageSubtitle {
+  text-align: left;
+  padding-left: 15px;
+  font-size: 14px !important;
+  padding-right: 15px;
+}
+
+.PartnerImage {
+  width: 100px;
+  display: inline-block !important;
+  vertical-align: top !important;
+  padding-top: 5px !iMPORTANT;
+  padding-bottom: 25px;
+}
+.Partner {
+  text-align: center;
+}
+
+.PartnersPagination {
+  padding-top: 20px;
+  text-align: center !iMPORTANT;
+}
+.header-hero-wrapper.customers-sublevel-menu {
+       height: 50px;
+    }
+/**PartnersMobile end*/
 }
 /**to fix companie logos position on website*/
 
@@ -1270,4 +1384,42 @@ v=201510021536
     .case-study-customer-logo {
         bottom: 10px
     }
+    /**PartnersMobile*/
+.HeroPartnersPage {
+  background: none;
+  color: #333;
+  top: 0PX;
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+}
+.HeroPartnersPageTitle {
+  color: #333; 
+}
+.PartnerPageSubtitle {
+  text-align: left;
+  padding-left: 15px;
+  font-size: 14px !important;
+  padding-right: 15px;
+}
+
+.PartnerImage {
+  width: 100px;
+  display: inline-block !important;
+  vertical-align: top !important;
+  padding-top: 5px !iMPORTANT;
+  padding-bottom: 25px;
+}
+.Partner {
+  text-align: center;
+}
+
+.PartnersPagination {
+  padding-top: 20px;
+  text-align: center !iMPORTANT;
+}
+.header-hero-wrapper.customers-sublevel-menu {
+       height: 50px;
+    }
+/**PartnersMobile end*/
 }
