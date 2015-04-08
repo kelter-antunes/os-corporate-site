@@ -7090,9 +7090,14 @@ h3.description {
     border: 1px solid #eaeaea;
     border-radius: 4px;
     margin-left: 0px;
-    height: 307px;
+    height: 327px;
     display: table-cell;
     vertical-align: middle;
+  }
+  .Partners.Successful-Projects {
+    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg_partners) #000000 top no-repeat;
+    background-color: #313E41;
+    text-align: center;
   }
   .PartnerImage{
     width: 100px;
