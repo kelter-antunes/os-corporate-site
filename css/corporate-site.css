@@ -6984,6 +6984,7 @@ h3.description {
 }
 .customers-and-experts a span.partner-matrix-entry {
     margin: 0 0 5px 1px;
+    width: 90px;
 }
 .how-can-we-help {
     background-color: #F2F2F2;
