@@ -1226,11 +1226,6 @@ body.landing-slim form#WebForm1 {
     box-shadow: none;
     filter: none
 }
-.header-hero-wrapper.page-without-hero-pricing {
-    height: 100px;
-    box-shadow: none;
-    filter: none
-}
 .header-hero-wrapper.page-without-hero.page-company {
     /*    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201510021536) top center;
     padding-bottom: 0px;
