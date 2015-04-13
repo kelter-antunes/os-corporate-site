@@ -1190,6 +1190,7 @@ v=201510021536
         height: 430px;
     }
     h1.slogan {
+        margin-top: 20px;
         font-size: 42px;
         line-height: normal;
     }
@@ -1197,6 +1198,7 @@ v=201510021536
         line-height: normal;
         font-size: 24px;
         font-weight: 300;
+        padding-top: 10px
     }
     .call-out-hero-home a.osbtn.osbtn-red.popup_link {
         margin-bottom: 0;
