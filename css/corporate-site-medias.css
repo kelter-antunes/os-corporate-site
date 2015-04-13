@@ -5,6 +5,9 @@ v=201510021536
 */
 
 @media screen and (max-width: 767px) {
+
+    
+
     h1 {
         font-size: 30px;
         line-height: 34px;
@@ -36,6 +39,8 @@ v=201510021536
         font-weight: 400;
         margin-bottom: 10px
     }
+
+
     /**PartnersMobile*/
 .HeroPartnersPage {
   background: none;
