@@ -6,7 +6,9 @@ v=201510021536
 
 @media screen and (max-width: 767px) {
 
-    
+    .customers-and-experts a span.partner-matrix-entry{
+        width: 90px;
+    }
 
     h1 {
         font-size: 30px;
@@ -1242,6 +1244,11 @@ v=201510021536
 /* Landscape */
 
 @media only screen and (max-device-width: 767px) and (orientation: landscape) {
+
+    .customers-and-experts a span.partner-matrix-entry{
+        width: 90px;
+    }
+
     div.case-study-landscape-landscape {
         display: block
     }
@@ -1340,6 +1347,10 @@ v=201510021536
 /* portrait */
 
 @media only screen and (max-device-width: 767px) and (orientation: portrait) {
+    .customers-and-experts a span.partner-matrix-entry{
+        width: 90px;
+    } 
+    
     div.case-study-landscape-landscape {
         display: none
     }
