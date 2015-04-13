@@ -1226,6 +1226,11 @@ body.landing-slim form#WebForm1 {
     box-shadow: none;
     filter: none
 }
+.header-hero-wrapper.page-without-hero-pricing {
+    height: 100px;
+    box-shadow: none;
+    filter: none
+}
 .header-hero-wrapper.page-without-hero.page-company {
     /*    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201510021536) top center;
     padding-bottom: 0px;
@@ -6771,11 +6776,11 @@ h3.description {
     height: 180px;
 }
 .benefits .benefit {
-    width: 286px;
+    width: 306px;
     display: inline-block;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
-    padding: 20px;
+    padding: 10px;
     -webkit-transition: box-shadow 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
     -moz-transition: box-shadow 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
     -ms-transition: box-shadow 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -6807,9 +6812,9 @@ h3.description {
 .benefits .benefit span {
     color: #4a4a4a;
     font-family: Arial;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 20px;
 }
 .benefits .benefit span.link {
     color: #0088cc;
