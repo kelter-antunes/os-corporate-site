@@ -6771,11 +6771,11 @@ h3.description {
     height: 180px;
 }
 .benefits .benefit {
-    width: 306px;
+    width: 308px;
     display: inline-block;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
-    padding: 10px;
+    padding: 10px 9px 20px;
     -webkit-transition: box-shadow 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
     -moz-transition: box-shadow 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
     -ms-transition: box-shadow 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
