@@ -206,7 +206,6 @@ $(function() {
     });
 
 
-
     $(document).delegate('.autocomplete li', "mouseout", function() {
         $(this).removeClass('active');
     });
