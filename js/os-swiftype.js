@@ -191,13 +191,14 @@ $(function() {
         }
     });
 
+/*
     $(window).hashchange(function() {
         if ($.hashParams().stq !== "") {
             $("#st-search-input").val($.hashParams().stq);
             $("#st-search-input-2").val($.hashParams().stq);
         }
     });
-
+*/
 
     $(document).delegate('.autocomplete li', "mouseout", function() {
         $(this).removeClass('active');
