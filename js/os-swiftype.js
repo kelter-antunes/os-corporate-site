@@ -108,22 +108,6 @@ $(function() {
     };
 
 
-    $("#st-search-input").keydown(function(ev) {
-        if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
-            window.location = '/search/#stq=' + $(this).val() + '&stp=1';
-            $("#st-search-input-2").val($(this).val());
-        }
-    });
-
-
-    $("#st-search-input-2").keydown(function(ev) {
-        if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
-            window.location = '/search/#stq=' + $(this).val() + '&stp=1';
-            $("#st-search-input").val($(this).val());
-        }
-    });
-
-
 
     function isElementInViewport(el) {
         if (typeof jQuery === "function" && el instanceof jQuery) {
@@ -183,6 +167,25 @@ $(function() {
 
     var handler = fireIfElementVisible();
     $(window).on('DOMContentLoaded load resize scroll', handler);
+
+
+
+    $("#st-search-input").keydown(function(ev) {
+        if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
+            window.location = '/search/#stq=' + $(this).val() + '&stp=1';
+            $("#st-search-input-2").val($(this).val());
+        }
+    });
+
+
+    $("#st-search-input-2").keydown(function(ev) {
+        if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
+            window.location.hash = '#stq=' + $(this).val() + '&stp=1';
+            //$("#st-search-input").val($(this).val());
+        }
+    });
+
+
 
     $(document).ready(function() {
         if ($.hashParams().stq !== "") {
