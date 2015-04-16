@@ -174,7 +174,6 @@ $(function() {
         if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
             window.location = '/search/#stq=' + $(this).val() + '&stp=1';
             $("#st-search-input-2").val($(this).val());
-            ev.stopPropagation();
         }
     });
 
@@ -183,7 +182,6 @@ $(function() {
         if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
             window.location.hash = '#stq=' + $(this).val() + '&stp=1';
             $("#st-search-input").val($(this).val());
-            ev.stopPropagation();
         }
     });
 
@@ -204,6 +202,7 @@ $(function() {
             }
             
     });
+
 
 
     $(document).delegate('.autocomplete li', "mouseout", function() {
@@ -231,7 +230,21 @@ $(function() {
     });
 
 
-
+    $('#st-search-input-2').swiftypeSearch({
+        resultContainingElement: '#st-results-container',
+        engineKey: 'GZhgtDYXiyvDjz48t2SP',
+        renderFunction: customRendererSearch,
+        perPage: 10,
+        resultPageURL: '/search/'
+            /*,
+            filters: function() {
+                return {
+                    'page': {
+                        'type': ['website', 'blog']
+                    }
+                };
+            }*/
+    });
 
     //AUTOCOMPLETE***************************************************
     $('#st-search-input').swiftype({
