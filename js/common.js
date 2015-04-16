@@ -94,6 +94,15 @@ $(function() {
         var logosForCurrentLocale = $('.customer-matrix-entry[data-' + currentLocation + '!=""]');
         var numberOfCurrentLogos = logosForCurrentLocale.length;
 
+         logosForCurrentLocale.sort(function (a, b) {
+
+      var contentA =parseInt( $(a).attr('data-' + currentLocation ));
+      var contentB =parseInt( $(b).attr('data-' + currentLocation));
+      return (contentA < contentB) ? -1 : (contentA > contentB) ? 1 : 0;
+   })
+
+
+
         if (numberOfCurrentLogos > 15) {
             logosForCurrentLocale.slice(0, 14);
             numberOfCurrentLogos = 15;
