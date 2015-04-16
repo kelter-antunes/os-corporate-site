@@ -181,6 +181,7 @@ $(function() {
     $("#st-search-input-2").keydown(function(ev) {
         if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
             window.location.hash = '#stq=' + $(this).val() + '&stp=1';
+
             //$("#st-search-input").val($(this).val());
         }
     });
@@ -196,10 +197,12 @@ $(function() {
 
 
     $(window).hashchange(function() {
-        if ($.hashParams().stq !== "") {
-            $("#st-search-input").val($.hashParams().stq);
-            $("#st-search-input-2").val($.hashParams().stq);
-        }
+        setInterval(function(){
+             if ($.hashParams().stq !== "") {
+                $("#st-search-input").val($.hashParams().stq);
+                $("#st-search-input-2").val($.hashParams().stq);
+            }
+         }, 500); 
     });
 
 
