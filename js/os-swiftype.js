@@ -225,6 +225,22 @@ $(function() {
     });
 
 
+    $('#st-search-input-2').swiftypeSearch({
+        resultContainingElement: '#st-results-container',
+        engineKey: 'GZhgtDYXiyvDjz48t2SP',
+        renderFunction: customRendererSearch,
+        perPage: 10,
+        resultPageURL: '/search/'
+            /*,
+            filters: function() {
+                return {
+                    'page': {
+                        'type': ['website', 'blog']
+                    }
+                };
+            }*/
+    });
+
     //AUTOCOMPLETE***************************************************
     $('#st-search-input').swiftype({
         engineKey: 'GZhgtDYXiyvDjz48t2SP',
