@@ -197,7 +197,7 @@ $(function() {
 
 
     $(window).hashchange(function() {
-        setInterval(function(){
+        setTimeout(function(){
              if ($.hashParams().stq !== "") {
                 $("#st-search-input").val($.hashParams().stq);
                 $("#st-search-input-2").val($.hashParams().stq);
