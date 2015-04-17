@@ -186,11 +186,14 @@ $(function() {
         }
     });
 
-    //mobile
+
+    //Mobile Search
     $('.inpt-search-mobile').keydown(function(ev) {
         if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
             window.location.hash = '#stq=' + $(this).val() + '&stp=1';
             $("#st-search-input-2").val($(this).val());
+            $('.search-overlay').toggle();
+            $('body').removeClass('mobile-body-no-scroll');
         }
     });
 
