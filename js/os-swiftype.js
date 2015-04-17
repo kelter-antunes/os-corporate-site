@@ -181,16 +181,25 @@ $(function() {
     $("#st-search-input-2").keydown(function(ev) {
         if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
             window.location.hash = '#stq=' + $(this).val() + '&stp=1';
+            $(".inpt-search-mobile").val($(this).val());
             $("#st-search-input").val($(this).val());
         }
     });
 
+    //mobile
+    $('.inpt-search-mobile').keydown(function(ev) {
+        if (ev.which === 13 && !$('.autocomplete li.active').is(':visible')) {
+            window.location.hash = '#stq=' + $(this).val() + '&stp=1';
+            $("#st-search-input-2").val($(this).val());
+        }
+    });
 
 
     $(document).ready(function() {
         if ($.hashParams().stq !== "") {
             $("#st-search-input").val($.hashParams().stq);
             $("#st-search-input-2").val($.hashParams().stq);
+            $(".inpt-search-mobile").val($.hashParams().stq);
         }
     });
 
@@ -199,6 +208,7 @@ $(function() {
              if ($.hashParams().stq !== "") {
                 $("#st-search-input").val($.hashParams().stq);
                 $("#st-search-input-2").val($.hashParams().stq);
+                $(".inpt-search-mobile").val($.hashParams().stq);                
             }
             
     });
@@ -214,6 +224,25 @@ $(function() {
 
     //SEARCH***********************************************************
     $('#st-search-input').swiftypeSearch({
+        resultContainingElement: '#st-results-container',
+        engineKey: 'GZhgtDYXiyvDjz48t2SP',
+        renderFunction: customRendererSearch,
+        perPage: 10,
+        resultPageURL: '/search/'
+            /*,
+            filters: function() {
+                return {
+                    'page': {
+                        'type': ['website', 'blog']
+                    }
+                };
+            }*/
+    });
+
+
+
+    //mobile*****
+    $('.inpt-search-mobile').swiftypeSearch({
         resultContainingElement: '#st-results-container',
         engineKey: 'GZhgtDYXiyvDjz48t2SP',
         renderFunction: customRendererSearch,
