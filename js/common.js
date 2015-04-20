@@ -185,7 +185,7 @@ $(document).ready(function() {
         ) {
             currEl.addClass('active');
 
-        } else if ((currEl.attr('href') !== '/platform/' && currEl.attr('href') !== '/customers/' && currEl.attr('href') !== '/parners/') && pathname.indexOf(currEl.attr('href')) !== -1) {
+        } else if ((currEl.attr('href') !== '/platform/' && currEl.attr('href') !== '/customers/' && currEl.attr('href') !== '/partners/') && pathname.indexOf(currEl.attr('href')) !== -1) {
             currEl.addClass('active');
 
         }
