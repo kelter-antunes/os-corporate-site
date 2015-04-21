@@ -1,0 +1,58 @@
+#### GA Events break down ####
+
+- Catergory
+	- Action
+		- Label
+
+
+------------------------------
+
+
+- Video (All wistia videos)
+	- Start Watching
+	- Watched 50%
+	- Watched 75%
+	- Complete
+
+		- Video name
+
+- Apps (Apps pages)
+	- Try Now
+		- App Name
+
+- customers (Customers page click in logos)
+	- view
+		- Logo name
+
+- watch (webinars thank you pages)
+	- webinar
+		- Webinar name
+
+
+- collateral (collateral downloads thank you pages)
+	- download
+	- contact-us (misconfigured?!)
+		- Resource name
+
+- Goal_GetStartedPE (get started, ga lp's and home get started pages)
+	- submit
+		- Page
+
+- contact (contact us forms)
+	- contact-us
+		- Contact-Us
+
+- Olark_Chat (auto created by Olark)
+	- Visitor_Sent_an_Offline_Message
+		- true
+	- Visitor_Sent_a_Message
+		- true
+	- Operator_Sent_a_Message
+		- Operator Name
+	- Conversation
+		- Visitor initiated with 'Operator Name'
+
+- outbound-comment/outbound-article (track outbound links in blog via new GA)
+	- Url
+		- Visitor Name
+
