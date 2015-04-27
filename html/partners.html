@@ -16,10 +16,6 @@
         <div class="span12">
             <div class="PartnerList magiccontainer container m-carousel m-quotes m-fluid">
                 <div class="m-carousel-inner" style="%WEB%pointer-events: none;%/WEB% -webkit-transition-property: all; transition-property: all; -webkit-transition-timing-function: ease; transition-timing-function: ease; opacity: 1; -webkit-transform: translate3d(0px, 0px, 0px);">
-
-
-
-
                     <!--page1-->
                     <div class="container m-item m-active" style="pointer-events: all;">
                         <div class="row">
@@ -192,8 +188,7 @@
                                     </div>
                                 </div>
                             </div>
-
-                                                        <div class="span6">
+                            <div class="span6">
                                 <div class="Partner" style="">
                                     <div style=" padding: 25px;">
                                         <div class="PartnerImage">
@@ -361,11 +356,8 @@
                             </div>
                         </div>
                     </div>
-
-
-
                     <!--page2-->
-                    <div class="container m-item">
+                    <div class="container m-item" style="pointer-events: all;">
                         <div class="row">
                             <div class="span6">
                                 <div class="Partner">
@@ -536,7 +528,7 @@
                                     </div>
                                 </div>
                             </div>
-                                <div class="span6">
+                            <div class="span6">
                                 <div class="Partner">
                                     <div style=" padding: 25px;">
                                         <div class="PartnerImage">
@@ -709,10 +701,8 @@
                             </div>
                         </div>
                     </div>
-
-
                     <!--page3-->
-                    <div class="container m-item">
+                    <div class="container m-item" style="pointer-events: all;">
                         <div class="row">
                             <div class="span6">
                                 <div class="Partner" style="">
@@ -884,8 +874,7 @@
                                     </div>
                                 </div>
                             </div>
-
-                   <div class="span6">
+                            <div class="span6">
                                 <div class="Partner" style="">
                                     <div style=" padding: 25px;">
                                         <div class="PartnerImage">
@@ -1052,16 +1041,10 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
-
-
-
-
                     <!--page4-->
-                    <div class="container m-item">
+                    <div class="container m-item" style="pointer-events: all;">
                         <div class="row">
                             <div class="span6">
                                 <div class="Partner">
@@ -1228,7 +1211,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="span6">
                                 <div class="Partner">
                                     <div style=" padding: 25px;">
@@ -1399,15 +1381,10 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
-
-
-
                     <!--page5-->
-                    <div class="container m-item">
+                    <div class="container m-item" style="pointer-events: all;">
                         <div class="row">
                             <div class="span6">
                                 <div class="Partner">
@@ -1440,8 +1417,7 @@
                         <a data-slide="2" href="#" onclick="$('html, body').animate({ scrollTop:450 }, 1000);">2</a>
                         <a data-slide="3" href="#" onclick="$('html, body').animate({ scrollTop:450 }, 1000);">3</a>
                         <a data-slide="4" href="#" onclick="$('html, body').animate({ scrollTop:450 }, 1000);">4</a>
-                        <a data-slide="5" href="#" onclick="$('html, body').animate({ scrollTop:450 }, 1000);">5</a>
-                      %/WEB%
+                        <a data-slide="5" href="#" onclick="$('html, body').animate({ scrollTop:450 }, 1000);">5</a> %/WEB%
                         <a class="pxs_next" data-slide="next" href="#" onclick="$('html, body').animate({ scrollTop:450 }, 1000);">Next</a>
                     </div>
                 </div>
@@ -1498,11 +1474,22 @@ $(function() {
     updateCarouselQuotesControls();
 });
 </script>
-
 <script>
-    $(document).ready(function() {
-        $('.PartnersInfo p').succinct({
-            size: 250
-        })
+$(document).ready(function() {
+
+    var size = 250;
+    var p = $('.PartnersInfo p');
+
+    p.each(function(index, el) {
+        textDefault = $(el).html();
+        if (textDefault.length > size) {
+            $(el).attr('title', textDefault);
+        }
     });
+
+    p.succinct({
+        size: size
+    });
+
+});
 </script>
