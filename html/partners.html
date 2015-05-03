@@ -133,7 +133,7 @@
                                         <!-- end-logo -->
                                         <!-- text-and-link -->
                                         <div class="PartnersInfo">
-                                            <p>PKF Portugal, part of PKF International, provides local expertise in accounting, business advisory and IT&nbsp;services. It assists companies in fine-tuning their organizations to measure success, improve efficiency, maximize performance and minimize risk.
+                                            <p>PKF Portugal, part of PKF International, provides local expertise in accounting, business advisory and IT services. It assists companies in fine-tuning their organizations to measure success, improve efficiency, maximize performance and minimize risk.
                                             </p>
                                             <div class="SeeMore" style="color: rgb(31, 91, 164); padding-bottom: 5px; font-size: 12px;">
                                                 <a href="http://www.pkf.pt" target="_blank">See More</a>
@@ -363,7 +363,7 @@
                                 <div class="Partner">
                                     <div style=" padding: 25px;">
                                         <div class="PartnerImage">
-                                            <a href="http://www.atc.com.kw/" target="_blank"><img alt="ATC" src="CMS_BackOffice/ResourceLink.aspx?ResourceName=atc-logo&amp;v=20150427120108" style=""></a>
+                                            <a href="http://www.atc.com.kw/" target="_blank"><img alt="ATC" src="/CMS_BackOffice/ResourceLink.aspx?ResourceName=atc-logo&amp;v=20150427120108" style=""></a>
                                         </div>
                                         <!-- end-logo -->
                                         <!-- text-and-link -->
@@ -1481,7 +1481,7 @@ $(document).ready(function() {
     var p = $('.PartnersInfo p');
 
     p.each(function(index, el) {
-        textDefault = $(el).html();
+        textDefault = $.trim( $(el).text() );
         if (textDefault.length > size) {
             $(el).attr('title', textDefault);
         }
