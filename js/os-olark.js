@@ -30,7 +30,8 @@ $(document).ready(function() {
 
 
             if (olarkOSDetails.currentPage.url.indexOf('/apps/') !== -1 ||
-                olarkOSDetails.currentPage.url.indexOf('/visual-programming-is-unbelievable') !== -1) {
+                olarkOSDetails.currentPage.url.indexOf('/visual-programming-is-unbelievable') !== -1 ||
+                olarkOSDetails.currentPage.url.indexOf('/custom-business-apps') !== -1) {
                 olark('api.box.hide');
 
             } else {
