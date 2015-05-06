@@ -102,7 +102,7 @@ $(function() {
             var contentA = parseInt($(a).attr('data-' + currentLocation));
             var contentB = parseInt($(b).attr('data-' + currentLocation));
             return (contentA < contentB) ? -1 : (contentA > contentB) ? 1 : 0;
-        })
+        });
 
 
 
@@ -123,6 +123,13 @@ $(function() {
             else{
                 globalLogos = $('.customer-matrix-entry[data-global].customer-matrix-entry[data-global!=""]').slice(0, numberOfMissingLogos);
             }
+
+            globalLogos.sort(function(a, b) {
+
+                var contentA = parseInt($(a).attr('data-global'));
+                var contentB = parseInt($(b).attr('data-global'));
+                return (contentA < contentB) ? -1 : (contentA > contentB) ? 1 : 0;
+            });
 
             //$.merge(logosForCurrentLocale, globalLogos);
 
