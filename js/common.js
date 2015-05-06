@@ -86,7 +86,8 @@ $(function() {
 
         //get the current location
         var currentLocation = $('#locale-aux').attr('data-locale');
-        if (currentLocation === 'us' || currentLocation === undefined) {
+        if (currentLocation === 'gl' || currentLocation === undefined) {
+
             currentLocation = 'global';
         }
 
