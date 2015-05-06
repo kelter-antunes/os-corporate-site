@@ -27,7 +27,7 @@
 				regex    = /[!-\/:-@\[-`{-~]$/,
 				init     = function() {
 					elements.each(function() {
-						textDefault = $(this).html();
+						textDefault = $(this).text();
 
 						if (textDefault.length > settings.size) {
 							textTruncated = $.trim(textDefault)
@@ -40,7 +40,7 @@
 								textTruncated = textTruncated.replace(regex, '');
 							}
 
-							$(this).html(textTruncated + settings.omission);
+							$(this).text(textTruncated + settings.omission);
 						}
 					});
 				};
