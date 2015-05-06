@@ -9,16 +9,18 @@ osjs(function(a) {
         if (osjs("a[href$=\"" + c + "\"]").length !== 0) {
             if (c != "_") {
                 setTimeout(function() {
-                    try{osjs("a[href$=\"" + c + "\"]")[0].click();}
-                    catch(e){}
+                    try {
+                        osjs("a[href$=\"" + c + "\"]")[0].click();
+                    } catch (e) {}
                 }, 1e3);
             }
         } else {
             c = c + '/';
             if (c != "_") {
                 setTimeout(function() {
-                    try{osjs("a[href$=\"" + c + "\"]")[0].click();}
-                    catch(e){}   
+                    try {
+                        osjs("a[href$=\"" + c + "\"]")[0].click();
+                    } catch (e) {}
                 }, 1e3);
             }
         }
@@ -92,15 +94,15 @@ $(function() {
         }
 
         //get the logos for the current locale
-        var logosForCurrentLocale = $('.customer-matrix-entry[data-' + currentLocation + '!=""]');
+        var logosForCurrentLocale = $('.customer-matrix-entry[data-' + currentLocation + '].customer-matrix-entry[data-' + currentLocation + '!=""]');
         var numberOfCurrentLogos = logosForCurrentLocale.length;
 
-         logosForCurrentLocale.sort(function (a, b) {
+        logosForCurrentLocale.sort(function(a, b) {
 
-      var contentA =parseInt( $(a).attr('data-' + currentLocation ));
-      var contentB =parseInt( $(b).attr('data-' + currentLocation));
-      return (contentA < contentB) ? -1 : (contentA > contentB) ? 1 : 0;
-   })
+            var contentA = parseInt($(a).attr('data-' + currentLocation));
+            var contentB = parseInt($(b).attr('data-' + currentLocation));
+            return (contentA < contentB) ? -1 : (contentA > contentB) ? 1 : 0;
+        })
 
 
 
@@ -131,7 +133,7 @@ $(function() {
 
         //add new logo list
         $('.customers-and-experts a[href="/customers/"]').prepend(logosForCurrentLocale);
-        logosForCurrentLocale.css('display','inline-block');
+        logosForCurrentLocale.css('display', 'inline-block');
 
     }
 });
