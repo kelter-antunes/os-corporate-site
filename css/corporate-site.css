@@ -4980,17 +4980,13 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     background-repeat: no-repeat;
     height: 80px;
     margin-left: 100px
-    %MOBILE%   margin-left: 0px;
-  background-size: 20px;
-  height: auto; %/MOBILE%
+    %MOBILE%   margin-left: 0px; background-size: 20px;  height: auto; %/MOBILE%
 }
 .innovation-submission-project-steps-content {
     position: relative;
     left: 75px;
     top: 10px;
-    %MOBILE% left: 30px;    
-    top: 0px;
-    %/MOBILE%
+    %MOBILE% left: 30px;  top: 0px;  %/MOBILE%
 }
 .innovationlist {
     color: #cb2100;
