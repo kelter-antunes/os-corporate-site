@@ -835,6 +835,12 @@ $(document).ready(function() {
         }
     });
 
+    if($.browser.mobile){
+        $('#mkto_frame').bind('load', function(){
+            $(this).width=window.innerWidth-20;
+        });
+    }
+
 });
 
 
