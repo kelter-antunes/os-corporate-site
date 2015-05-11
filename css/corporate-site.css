@@ -7067,6 +7067,8 @@ h3.description {
   width: 100%;
   height: auto;
   background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=hero_partners) #000000 center no-repeat;
+  /**fixtodelete when submenu*/
+  background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=hero_partners) center 0px no-repeat #000;
 }
 .HeroPartnersPageTitle {
     color: white;
