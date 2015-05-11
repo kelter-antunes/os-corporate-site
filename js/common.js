@@ -837,8 +837,8 @@ $(document).ready(function() {
 
     if($.browser.mobile){
         $('#mkto_frame').bind('load', function(){
-            $(this).width=window.innerWidth-20;
-            console.log('test width: ' + $(this).width);
+            var wdth = window.innerWidth-20;
+            $(this).css('width', wdth);
         });
     }
 
