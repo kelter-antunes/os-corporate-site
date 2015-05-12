@@ -837,8 +837,11 @@ $(document).ready(function() {
 
     if($.browser.mobile){
         $('#mkto_frame').bind('load', function(){
-            var wdth = window.innerWidth-20;
-            $(this).css('width', wdth);
+            if($(this).css('width')!== undefined && $(this)[0].style.width === '100%'){
+                var wdth = window.innerWidth-20;
+                $(this).css('width', wdth); 
+            }
+            
         });
     }
 
