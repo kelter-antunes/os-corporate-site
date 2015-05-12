@@ -852,7 +852,7 @@ $(document).ready(function() {
 
 //marketo iframe width resize for iphone cases when width is 100%, when orientation changes from portrait to landscape
 $(window).resize(function() {
-    if($('#mkto_frame').css('width')!== undefined && $('#mkto_frame')[0].style.width === '100%'){
+    if($('#mkto_frame').css('width')!== undefined){
         var wdth = window.innerWidth-20;
         if(parseInt($('#mkto_frame').css('width')) > wdth){
             $('#mkto_frame').css('width', wdth); 
