@@ -835,6 +835,8 @@ $(document).ready(function() {
         }
     });
 
+
+    //marketo iframe width resize for iphone cases when width is 100%
     if($.browser.mobile){
         $('#mkto_frame').bind('load', function(){
             if($(this).css('width')!== undefined && $(this)[0].style.width === '100%'){
@@ -846,6 +848,16 @@ $(document).ready(function() {
         });
     }
 
+});
+
+//marketo iframe width resize for iphone cases when width is 100%, when orientation changes from portrait to landscape
+$(window).resize(function() {
+    if($('#mkto_frame').css('width')!== undefined && $('#mkto_frame')[0].style.width === '100%'){
+        var wdth = window.innerWidth-20;
+        if(parseInt($('#mkto_frame').css('width')) > wdth){
+            $('#mkto_frame').css('width', wdth); 
+        }
+    } 
 });
 
 
