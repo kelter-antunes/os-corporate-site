@@ -808,6 +808,8 @@ function toggleDropdowMenu(a) {
     }
 }
 
+var mkto_resized = false;
+
 $(document).ready(function() {
 
     initial = $('.navigation-bar li[class*="active"]');
@@ -842,6 +844,7 @@ $(document).ready(function() {
             if($(this).css('width')!== undefined && $(this)[0].style.width === '100%'){
                 var wdth = window.innerWidth-20;
                 if(parseInt($(this).css('width')) > wdth){
+                    mkto_resized = true;
                     $(this).css('width', wdth); 
                 }
             } 
@@ -852,12 +855,14 @@ $(document).ready(function() {
 
 //marketo iframe width resize for iphone cases when width is 100%, when orientation changes from portrait to landscape
 $(window).resize(function() {
-    if($('#mkto_frame').css('width')!== undefined){
-        var wdth = window.innerWidth-20;
-        if(parseInt($('#mkto_frame').css('width')) > wdth){
-            $('#mkto_frame').css('width', wdth); 
+    if($.browser.mobile){
+        if($('#mkto_frame').css('width')!== undefined){
+            var wdth = window.innerWidth-20;
+            if(mkto_resized){
+                $('#mkto_frame').css('width', wdth); 
+            }
         }
-    } 
+    }   
 });
 
 
