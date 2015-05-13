@@ -7,6 +7,10 @@ v=201510021536
 @media screen and (max-width: 767px) {
 
 
+.innovation-case-study-preview:after { 
+  bottom: -25px;
+}
+
     .innovation-apply {
     background: none;
     background-color: #000;
