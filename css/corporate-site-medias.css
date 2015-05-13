@@ -661,10 +661,11 @@ v=201510021536
      background-size: 20px;
      height: auto; 
     }
-    .innovation-submission-project-steps-content {    
-     left: 30px; 
-      top: 0px;
-    }
+    .innovation-submission-project-steps-content {
+  display: inline-block;
+  left: 30px;
+  top: 0px;
+}
 
 
 
