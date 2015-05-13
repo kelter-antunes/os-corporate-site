@@ -841,9 +841,9 @@ $(document).ready(function() {
     //marketo iframe width resize for iphone cases when width is 100%
     if($.browser.mobile){
         $('#mkto_frame').bind('load', function(){
-            if($(this).css('width')!== undefined && $(this)[0].style.width === '100%'){
+            if($(this).css('width')!== undefined && $(this)[0].style.width === '100%' || $('.video-container #mkto_frame') !== undefined){
                 var wdth = window.innerWidth-20;
-                if(parseInt($(this).css('width')) > wdth){
+                if(parseInt($(this).css('width')) >= wdth){
                     mkto_resized = true;
                     $(this).css('width', wdth); 
                 }
