@@ -6,6 +6,10 @@ v=201510021536
 
 @media screen and (max-width: 767px) {
 
+     #accord  {
+    display:none !important;
+  }
+
 
 .innovation-case-study-preview:after { 
   bottom: -25px;
