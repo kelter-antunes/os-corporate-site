@@ -839,7 +839,7 @@ $(document).ready(function() {
 
 
     //fix navigationbar when ghostery blocks typekit
-    if(Typekit === undefined){
+    if(typeof variable === 'undefined'){
         $('.navigation-bar-tail-spacer').css('width', 150);
     }
 
