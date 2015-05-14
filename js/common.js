@@ -838,6 +838,12 @@ $(document).ready(function() {
     });
 
 
+    //fix navigationbar when ghostery blocks typekit
+    if(Typekit === undefined){
+        $('.navigation-bar-tail-spacer').css('width', 150);
+    }
+
+
     //marketo iframe width resize for iphone cases when width is 100%
     if($.browser.mobile){
         $('#mkto_frame').bind('load', function(){
