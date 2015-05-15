@@ -7899,3 +7899,65 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
     text-decoration: none;
     color: darkred;
 }
+
+
+/*social share styles*/
+.social-wrapper ul.social-icons li
+{
+  display:inline-block;
+  margin-right:10px
+}
+
+.social-wrapper ul.social-icons
+{
+  margin-top:27px
+}
+
+.social-wrapper a.twitter,.social-wrapper a.facebook,.social-wrapper a.google,.social-wrapper a.linkedin
+{
+  background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+  width:21px;
+  height:21px;
+  text-indent:-9999px;
+  display:inline-block
+}
+
+.social-wrapper a.twitter
+{
+  background-position:-29px -551px
+}
+
+.social-wrapper a:hover.twitter
+{
+  background-position:-29px -581px
+}
+
+.social-wrapper a.facebook
+{
+  background-position:-1px -551px
+}
+
+.social-wrapper a:hover.facebook
+{
+  background-position:-1px -581px
+}
+
+.social-wrapper a.google
+{
+  background-position:-29px -611px
+}
+
+.social-wrapper a:hover.google
+{
+  background-position:-29px -641px
+}
+
+.social-wrapper a.linkedin
+{
+  background-position:-1px -611px
+}
+
+.social-wrapper a:hover.linkedin
+{
+  background-position:-1px -641px
+}
