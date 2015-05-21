@@ -1288,6 +1288,10 @@ v=201510021536
 
 @media only screen and (max-device-width: 767px) and (orientation: landscape) {
 
+    .row.InovationCards {
+  padding: 0px 10%;
+}
+
     .benefits span.h3 { margin-bottom: 15px }
     .benefits span.desc { min-height: 0; padding: 0 4px 20px 4px; }
     .benefits .benefit span { font-size: 12px; }
@@ -1407,7 +1411,7 @@ v=201510021536
 
 
 
-    
+
     .benefits span.h3 { margin-bottom: 15px }
     .benefits span.desc { min-height: 0; padding: 0 4px 20px 4px; }
     .benefits .benefit span { font-size: 12px; }
