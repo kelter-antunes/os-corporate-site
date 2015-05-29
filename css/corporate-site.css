@@ -7128,7 +7128,8 @@ h3.description {
   .PartnersInfo{
     text-align: left;
     font-size: 12px;
-    width: 310px;
+    %WEB% width: 310px; %/WEB%
+    %MOBILE% max-width: 310px; %/MOBILE%
     height: 100%;
     display: table-cell;
     vertical-align: middle;
