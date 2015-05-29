@@ -100,6 +100,10 @@ v=201510021536
 .header-hero-wrapper.customers-sublevel-menu {
        height: 50px;
     }
+    .PartnersInfo{
+    width: 100%;
+    max-width: 310px
+  }
 /**PartnersMobile end*/
     .mobile-only {
         display: block
