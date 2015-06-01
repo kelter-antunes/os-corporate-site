@@ -231,6 +231,7 @@ $(function() {
                     $(window).resize(function() {
                         $('.mfp-content .mfp-os-popup-content img').css({
                             'width': 'auto',
+                            'max-width': 880,
                             'max-height': $(window).height() - 105
                         });
 
@@ -262,6 +263,7 @@ $(function() {
                     /*Magnific Popup - image resizing according to screen size*/
                     $('.mfp-content .mfp-os-popup-content img').css({
                         'width': 'auto',
+                        'max-width': 880,
                         'max-height': $(window).height() - 105
                     });
 
@@ -277,6 +279,7 @@ $(function() {
                     $('.mfp-os-main-content').bind("DOMSubtreeModified", function() {
                         $('.mfp-content .mfp-os-popup-content img').css({
                             'width': 'auto',
+                            'max-width': 880,
                             'max-height': $(window).height() - 105
                         });
 
