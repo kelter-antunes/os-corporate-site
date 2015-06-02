@@ -150,7 +150,7 @@ $(function() {
 
 
 
-        $('.customers-and-experts a img').unveil(200);
+        $('.customers-and-experts a img').unveil(500);
 
 
     }
