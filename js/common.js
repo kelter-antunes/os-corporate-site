@@ -148,6 +148,11 @@ $(function() {
         $('.customers-and-experts a[href="/customers/"]').prepend(logosForCurrentLocale);
         logosForCurrentLocale.css('display', 'inline-block');
 
+
+
+        $('.customers-and-experts a img').unveil();
+
+
     }
 });
 
