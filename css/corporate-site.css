@@ -402,7 +402,7 @@ a.byline:hover {
   display: none;
 }
 
-.parallaxa .option.active {
+.parallax .option.active {
   visibility: visible;
   display: block;
 } 
