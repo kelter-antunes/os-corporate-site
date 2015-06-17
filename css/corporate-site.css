@@ -402,10 +402,10 @@ a.byline:hover {
   display: none;
 }
 
-.parallax .option.active {
+.parallaxa .option.active {
   visibility: visible;
   display: block;
-}
+} 
 /*** home ***/
 
 .hero-list {
