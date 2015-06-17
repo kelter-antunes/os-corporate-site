@@ -395,6 +395,17 @@ a.byline:hover {
     position: absolute;
     bottom: 0
 }
+
+
+.parallax .option {
+  visibility: hidden;
+  display: none;
+}
+
+.parallax .option.active {
+  visibility: visible;
+  display: block;
+}
 /*** home ***/
 
 .hero-list {
