@@ -117,10 +117,9 @@ $(function() {
         if (numberOfMissingLogos != 0) {
             var globalLogos;
             //get the global logos to fullfill the matrix
-            if(numberOfMissingLogos < totalMatrixLogos){
+            if (numberOfMissingLogos < totalMatrixLogos) {
                 globalLogos = $('.customer-matrix-entry[data-' + currentLocation + '=""].customer-matrix-entry[data-global].customer-matrix-entry[data-global!=""]').slice(0, numberOfMissingLogos);
-            }
-            else{
+            } else {
                 globalLogos = $('.customer-matrix-entry[data-global].customer-matrix-entry[data-global!=""]').slice(0, numberOfMissingLogos);
             }
 
@@ -847,21 +846,21 @@ $(document).ready(function() {
 
 
     //fix navigationbar when ghostery blocks typekit
-    if(typeof Typekit === 'undefined'){
+    if (typeof Typekit === 'undefined') {
         $('.navigation-bar-tail-spacer').css('width', 150);
     }
 
 
     //marketo iframe width resize for iphone cases when width is 100%
-    if($.browser.mobile){
-        $('#mkto_frame').bind('load', function(){
-            if($(this).css('width')!== undefined && $(this)[0].style.width === '100%' || $('.video-container #mkto_frame') !== undefined){
-                var wdth = window.innerWidth-20;
-                if(parseInt($(this).css('width')) >= wdth){
+    if ($.browser.mobile) {
+        $('#mkto_frame').bind('load', function() {
+            if ($(this).css('width') !== undefined && $(this)[0].style.width === '100%' || $('.video-container #mkto_frame') !== undefined) {
+                var wdth = window.innerWidth - 20;
+                if (parseInt($(this).css('width')) >= wdth) {
                     mkto_resized = true;
-                    $(this).css('width', wdth); 
+                    $(this).css('width', wdth);
                 }
-            } 
+            }
         });
     }
 
@@ -869,15 +868,41 @@ $(document).ready(function() {
 
 //marketo iframe width resize for iphone cases when width is 100%, when orientation changes from portrait to landscape
 $(window).resize(function() {
-    if($.browser.mobile){
-        if($('#mkto_frame').css('width')!== undefined){
-            var wdth = window.innerWidth-20;
-            if(mkto_resized){
-                $('#mkto_frame').css('width', wdth); 
+    if ($.browser.mobile) {
+        if ($('#mkto_frame').css('width') !== undefined) {
+            var wdth = window.innerWidth - 20;
+            if (mkto_resized) {
+                $('#mkto_frame').css('width', wdth);
             }
         }
-    }   
+    }
 });
+
+
+
+
+/* google universal mimic
+ *  google tag manager is configured to decorate iframe urls via javascript
+ *  since we don't have that running on development environments we need to
+ *  have the identical logic here */
+if (window.location.host !== "www.outsystems.com") {
+    $(function() {
+        var iframes = document.getElementsByTagName('iframe'),
+            i = iframes.length,
+            iframe, src;
+
+        //now loop through all iframes, decorate the source url and remove the display none
+        while (i--) {
+            iframe = iframes[i];
+            if (iframe.src === 'about:blank' && iframe.getAttribute('data-iframe-src')) {
+                src = iframe.getAttribute('data-iframe-src');
+                iframe.src = src;
+            }
+        }
+
+    });
+};
+
 
 
 
