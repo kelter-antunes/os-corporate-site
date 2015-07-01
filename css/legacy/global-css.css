@@ -1,0 +1,2517 @@
+/*
+cache invalidator, find and replace for new one
+
+v=201506291815
+*/
+
+.dir {
+	background-image: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=down_drop_it&v=201506291815");
+	background-position: 50px 5px;
+	background-repeat: no-repeat;
+	padding-right: 15px;
+	z-index: 1000;
+}
+
+.dir li {
+	z-index: 1000
+}
+
+.dir:hover {
+	background-image: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=down_drop_it_hover&v=201506291815");
+	background-repeat: no-repeat;
+	padding-right: 15px;
+}
+
+.dir ul {
+	left: 48px;
+	margin: 16px 0 0 -163px;
+	position: absolute;
+	z-index: 600;
+	visibility: hidden;
+}
+
+.dir:hover ul {
+	left: 48px;
+	margin: 16px 0 0 -163px;
+	position: relative;
+	visibility: visible;
+	z-index: 600;
+}
+
+.dir ul li {
+	background: none repeat scroll 0 0 #000;
+	list-style: none outside none;
+	margin: 0 0 0 69px;
+	padding: 0 8px 10px;
+	text-align: left;
+	width: 80px;
+}
+
+.dir ul li a {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	display: block;
+}
+
+.dir .last {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu_li_last_bg&v=201506291815") no-repeat scroll 100% 100% transparent;
+	padding-bottom: 10px;
+}
+
+.Header-Search {
+	float: right;
+	margin-top: -26px;
+}
+
+.Header-SearchInner {
+	background: #FFF;
+	cursor: default;
+	display: inline-block;
+	width: 156px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.Search-Input {
+	width: 125px;
+	height: 14px;
+	color: #666;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 11px;
+	border: 0;
+	border-right: 1px solid #E5E5E5;
+	outline: none;
+	padding: 3px;
+}
+
+.Search-Button {
+	background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=global-sprite&v=201506291815') no-repeat -639px -59px;
+	height: 19px;
+	width: 22px;
+	background-color: #FFF;
+	border: 0;
+	cursor: pointer;
+	position: relative;
+	padding: 1px;
+}
+
+html,
+form {
+	margin: 0;
+	padding: 0;
+}
+
+body,
+textarea,
+input,
+td {
+	font-weight: 400;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+input[type=checkbox] {
+	margin: 0;
+	vertical-align: bottom;
+}
+
+img {
+	vertical-align: text-bottom
+}
+
+body,
+textarea,
+input {
+	font-weight: 400;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	color: #000;
+}
+
+body,
+p {
+	margin: 0
+}
+
+.Paragraph {
+	margin: 0
+}
+
+input {
+	padding: 1px 0
+}
+
+input[type=checkbox] {
+	margin: 0 3px 0 4px;
+	vertical-align: bottom;
+}
+
+textarea {
+	margin-top: 2px;
+	*margin-top: 0;
+}
+
+table {
+	border-collapse: separate;
+	empty-cells: show;
+}
+
+span.ValidationMessage {
+	white-space: nowrap;
+	font-weight: 400;
+	color: red;
+	display: inline;
+	margin-left: 5px;
+}
+
+body {
+	line-height: 1.5em;
+	color: #333;
+	background: white url(/img/bkg_grey.jpg) repeat-x top;
+}
+
+.Document {
+	position: relative;
+	width: 980px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding-top: 10px;
+}
+
+.Body {
+	min-height: 480px;
+	height: auto !important;
+	height: 480px;
+}
+
+.Footer {
+	clear: both;
+	height: 20px;
+	padding: 15px 10px;
+	font-size: 12px;
+	font-family: "lucida grande", "lucida sans unicode", "lucida sans", "helvetica nueue", arial, helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.Footer a,
+.Footer a:link,
+.Footer a:visited {
+	text-decoration: none
+}
+
+.doormat_container {
+	background-color: #eee;
+	margin-bottom: -43px;
+}
+
+.doormat_inner {
+	padding: 15px 10px;
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #666;
+}
+
+.body-inner {
+	float: left;
+	width: 700px;
+	padding: 7px 15px 1px;
+}
+
+.Text_Note {
+	color: #888;
+	font-size: 11px;
+}
+
+.contentWrapper p {
+	margin-bottom: 6px
+}
+
+.contentWrapper table,
+.contentWrapper td {
+	border-collapse: separate;
+	empty-cells: show;
+	vertical-align: top;
+}
+
+.contentWrapper H1 {
+	color: #c00;
+	font-size: 20px;
+	font-weight: 700;
+	padding-bottom: 4px;
+}
+
+.contentWrapper h2 {
+	color: #666;
+	font-size: 18px;
+	padding-bottom: 3px;
+	font-weight: 800
+}
+
+.contentWrapper H3 {
+	color: #333;
+	font-size: 14px;
+	font-weight: 700;
+	padding-bottom: 2px;
+}
+
+.contentWrapper ul,
+.contentWrapper li {
+	list-style-position: outside;
+	margin-left: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	font-style: normal;
+	font-weight: regular;
+}
+
+div.Popup.ui-dialog .ui-dialog-titlebar {
+	background-color: #c00
+}
+
+.Popup {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	padding: 6px;
+}
+
+div.Popup.ui-dialog .ui-dialog-titlebar-close-no-title {
+	top: -25px;
+	right: -25px;
+	outline: 0;
+}
+
+body {
+	background: #fff url(/img/bg_body.png) top left repeat-x;
+	_background: #fff url(/img/bg_body_IE.png) top left repeat-x;
+}
+
+.Document {
+	width: 100%;
+	background: 0;
+}
+
+.section {
+	width: 100%
+}
+
+.section .inner {
+	width: 980px !important;
+	margin: 0 auto;
+}
+
+.header {
+	margin-top: 20px;
+	background: transparent url(/img/bg_header.png) top right no-repeat;
+}
+
+.header .Header.inner {
+	background: #000;
+	position: relative;
+	height: 58px;
+}
+
+.header_logo {
+	display: block;
+	position: relative;
+	left: -30px;
+	width: 200px;
+	height: 58px;
+	_margin-bottom: 0;
+}
+
+.nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	height: 28px;
+	position: absolute;
+	top: 22px;
+	right: 0;
+}
+
+.nav li {
+	float: left;
+	margin: 0 0 0 45px;
+	_display: inline;
+}
+
+.nav li a {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 3px 5px;
+}
+
+.nav li a:hover,
+.nav li.active a {
+	color: #c00;
+	-webkit-transition: all .25s ease-out;
+}
+
+img {
+	border: 0
+}
+
+.section .contentWrapper {
+	font-family: "lucida grande", "lucida sans unicode", "lucida sans", "helvetica nueue", arial, helvetica, sans-serif;
+	line-height: 1.3em;
+	color: #444;
+	font-size: 16px;
+}
+
+.contentWrapper h1,
+.contentWrapper h2,
+.contentWrapper h3,
+.contentWrapper h4,
+.contentWrapper h5,
+.contentWrapper h6 {
+	font-family: 'helvetica neue', arial, helvetica, sans-serif;
+	color: #000;
+	letter-spacing: -1px;
+	_position: relative;
+}
+
+.contentWrapper h1 a,
+.contentWrapper h2 a,
+.contentWrapper h3 a,
+.contentWrapper h4 a,
+.contentWrapper h5 a,
+.contentWrapper h6 a {
+	text-decoration: none;
+	color: #000;
+}
+
+.contentWrapper h1 a:hover,
+.contentWrapper h2 a:hover,
+.contentWrapper h3 a:hover,
+.contentWrapper h4 a:hover,
+.contentWrapper h5 a:hover,
+.contentWrapper h6 a:hover {
+	text-decoration: none;
+	color: #c00;
+	-webkit-transition: all .25s ease-out;
+}
+
+.feature h1 {
+	font-size: 34px;
+	line-height: 34px;
+	margin-top: -7px;
+	margin-bottom: 15px;
+	font-family: 'helvetica neue', arial, helvetica, sans-serif;
+}
+
+.slider .feature h1 {
+	margin-top: 0
+}
+
+.feature .details.right {
+	float: right;
+	width: 480px;
+	_margin-left: 30px;
+	_display: inline;
+}
+
+.feature-spot:hover a.feature_link,
+.feature-spot a.feature_link:hover {
+	color: #c00;
+	text-decoration: underline;
+}
+
+.feature .details {
+	width: 49%;
+	float: left;
+	_display: inline;
+}
+
+.body,
+#feature-spots,
+#dev-zone,
+#aside,
+.footer {
+	margin-top: 30px;
+	clear: both;
+	_margin-top: 50px;
+}
+
+#ie #feature-spots {
+	margin-top: 20px;
+	_margin-top: 10px;
+	_margin-left: -11px;
+}
+
+#ie8 #feature-spots {
+	margin-top: 30px
+}
+
+#ie #dev-zone {
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+#aside {
+	*margin-top: 0
+}
+
+.ribbon.primary {
+	width: 1000px;
+}
+
+.ribbon.primary .feature {
+	width: 980px;
+	float: left;
+	clear: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	_display: inline;
+}
+
+.ribbon {
+	clear: both;
+	position: relative;
+}
+
+.ribbon .slider {
+	position: relative;
+	left: 0;
+	width: 100%;
+}
+
+.vid-placeholder {
+	float: left;
+	display: block;
+	position: relative;
+	text-decoration: none;
+	_display: inline;
+}
+
+.vid-placeholder:hover {
+	text-decoration: none;
+	_color: #c00;
+	_text-decoration: underline;
+}
+
+.vid-placeholder img {
+	border: 1px solid #ccc;
+	display: block;
+	-webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+	-o-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+	_display: block;
+}
+
+.vid-placeholder:hover img {
+	-webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+	-o-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+	-webkit-transition: all .25s ease-out;
+}
+
+.vid-group .vid-placeholder:hover img {
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+	-o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+	-webkit-transition: all .25s ease-out;
+}
+
+.vid-placeholder .caption {
+	background: #000;
+	background: rgba(0, 0, 0, 0.7);
+	display: block;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: auto;
+	min-width: 100%;
+}
+
+.vid-placeholder .title {
+	font-size: 16px;
+	display: block;
+	padding: 5px 10px;
+	font-weight: 400;
+}
+
+#aside {
+	background: transparent url(/img/bg_section.png) top left repeat-x;
+	_background: transparent url(/img/bg_section_IE.png) top left repeat-x;
+}
+
+#aside h2 {
+	margin-top: 20px
+}
+
+.footer {
+	background: #eee;
+	height: auto;
+	min-height: 150px;
+	position: relative;
+	z-index: 2;
+}
+
+#ie .footer {
+	_height: auto
+}
+
+.footer a {
+	color: #666
+}
+
+.footer a:hover {
+	color: #c00;
+	text-decoration: underline;
+	-webkit-transition: all .25s ease-out;
+}
+
+.footer ul {
+	width: 480px;
+	float: left;
+	margin: 10px 0 0;
+	padding: 0;
+	list-style: none;
+	_display: inline;
+}
+
+.footer ul li {
+	float: left;
+	margin: 0 15px 0 0;
+	font-size: 14px;
+	color: #666;
+	_display: inline;
+}
+
+.footer .copyright {
+	margin-left: 20px
+}
+
+.group:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#ie .group {
+	height: 1%;
+	_height: auto;
+}
+
+.Body {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.Body:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#ie .Body {
+	height: 1%;
+	_height: auto;
+}
+
+.body-inner .contentWrapper {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+}
+
+.header .inner {
+	MARGIN: 0 auto;
+	WIDTH: 980px;
+}
+
+.body-inner {
+	margin-left: -15px;
+	padding-right: 0;
+	width: 100%;
+}
+
+img {
+	border: medium none
+}
+
+.body-inner .contentWrapper,
+.contentWrapper {
+	color: #444;
+	font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", "Helvetica Nueue", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+.contentWrapper h2 {
+	font-size: 24px;
+	margin: .75em 0 .25em;
+}
+
+.resource-group .vid-placeholder .group-1 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-user-interface.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .group-2 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-logic.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .group-3 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-database.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .group-4 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-business-processes.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .group-5 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-getting-started.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .enterprise-group-1 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-deployment.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .enterprise-group-2 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-performance.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .enterprise-group-3 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-monitoring.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .enterprise-group-4 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-troubleshooting.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .enterprise-group-5 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-security.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .standard-group-1 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-stack.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .standard-group-2 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-infrastructure.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .standard-group-3 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-integration.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .standard-group-4 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-extensibility.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .standard-group-5 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-no-lock-in.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .it-process-group-1 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-learning.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .it-process-group-2 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-large-teams.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .it-process-group-3 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-documentation.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .it-process-group-4 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-knowledge-transfer.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .it-process-group-5 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-apps-life-cycle.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.detail-column img {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.section-p {
+	line-height: 1.4em;
+	font-size: 16px;
+}
+
+.Body {
+	width: 100%
+}
+
+.contentWrapper {
+	color: #444;
+	font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", "Helvetica Nueue", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+.contentWrapper h1,
+.contentWrapper h2,
+.contentWrapper h3 {
+	color: #000;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	letter-spacing: -1px;
+}
+
+.contentWrapper h3 {
+	letter-spacing: 0
+}
+
+.contentWrapper h1 a,
+.contentWrapper h2 a,
+.contentWrapper h3 a {
+	text-decoration: none
+}
+
+.contentWrapper h1 a:hover,
+.contentWrapper h2 a:hover,
+.contentWrapper h3 a:hover {
+	color: #1F5BA4;
+	text-decoration: underline;
+}
+
+.contentWrapper a {
+	color: #1F5BA4;
+	text-decoration: none;
+}
+
+.contentWrapper a:hover {
+	text-decoration: underline
+}
+
+.contentWrapper h1 {
+	font-size: 36px;
+	line-height: 38px;
+}
+
+.contentWrapper h2 {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-weight: normal;
+	font-size: 31px;
+	line-height: 1.3em;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.contentWrapper h2:first-child {
+	margin-top: 0
+}
+
+.contentWrapper h3 {
+	font-size: 18px
+}
+
+.feature.alt {
+	text-align: center
+}
+
+.feature h1 {
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	line-height: normal;
+	margin-bottom: 25px;
+}
+
+#ie .feature h1 {
+	margin-top: -5px
+}
+
+.feature p {
+	font-size: 1.125em
+}
+
+.feature .details.right {
+	float: right;
+	width: 480px;
+}
+
+.feature .details h3 {
+	margin-top: 0
+}
+
+.feature .details {
+	float: left;
+	width: 49%;
+}
+
+.feature .details p {
+	font-size: 18px;
+	line-height: 1.4em;
+}
+
+.feature .vid-placeholder {
+	margin-right: -3px;
+	margin-top: .5em;
+}
+
+.feature .vid-placeholder img {
+	height: 272px;
+	width: 478px;
+}
+
+.feature a:hover {
+	text-decoration: none
+}
+
+.blockquote {
+	margin: 1.5em 0 0;
+	padding: 0;
+	position: relative;
+}
+
+.blockquote p {
+	display: table;
+	font-size: 1em;
+	font-style: italic;
+	line-height: 1.5em;
+	position: relative;
+	z-index: 2;
+}
+
+.blockquote .open-quote {
+	color: #DDD;
+	font-size: 98px;
+	left: -25px;
+	line-height: normal;
+	position: absolute;
+	top: -24px;
+	z-index: 0;
+}
+
+.blockquote .cite {
+	font-size: .75em
+}
+
+.blockquote .cite strong {
+	display: block
+}
+
+.blockquote .cite strong {
+	display: inline;
+	float: left;
+	margin-right: 10px;
+}
+
+.calls-to-action {
+	clear: both;
+	float: left;
+	margin: 20px 0 0;
+}
+
+a.call {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg_calltoaction.png&v=201506291815") repeat-x scroll left top #069;
+	border-radius: 5px;
+	border: 1px solid #114160;
+	box-shadow: 0 2px 7px rgba(0, 0, 0, 0.35);
+	color: #FFF !important;
+	display: block;
+	font-size: 24px;
+	font-weight: 700;
+	height: 52px;
+	line-height: 20px;
+	padding: 12px 15px 0;
+	text-align: center;
+	text-decoration: none;
+}
+
+a.call:hover {
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.75);
+	text-decoration: none;
+}
+
+.call .sub-call {
+	display: block;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	padding: 3px 0 0;
+	width: auto;
+}
+
+.resource-listing {
+	clear: both;
+	font-size: .75em;
+	height: 430px;
+	margin-left: 0;
+	margin-top: 25px;
+}
+
+.resource-group {
+	float: left;
+	margin-right: 20px;
+	width: 180px;
+}
+
+.resource-group h3 {
+	font-size: 1.167em;
+	margin: .3em 0 .7em;
+	text-align: center;
+}
+
+.resource-group .vid-placeholder {
+	margin-bottom: .75em
+}
+
+.resource-group .vid-placeholder img {
+	height: 83px;
+	width: 146px;
+}
+
+.resource-group p {
+	color: #AAA;
+	line-height: 1.3em;
+	margin: 0 0 .5em;
+	text-align: center;
+}
+
+.resource-group li,
+.resource-group ul {
+	clear: left;
+	list-style: none outside none;
+	margin-left: 10px;
+	padding: 0;
+}
+
+.resource-group.last {
+	margin-right: 0
+}
+
+.resource-list .screenshot,
+.resource-list .vid,
+.resource-list .testimony,
+.resource-list .document,
+.resource-list .download,
+.resource-list .help,
+.resource-list .forum,
+.resource-list .solution {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=icon_screenshot.png&v=201506291815") no-repeat scroll 0 1px transparent;
+	color: #444;
+	display: block;
+	float: left;
+	line-height: 1.4em;
+	margin-top: 1em;
+	padding-bottom: .25em;
+	padding-left: 24px;
+}
+
+.resource-list .vid {
+	background-image: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=icon_vid.png&v=201506291815")
+}
+
+.resource-list .testimony {
+	background-image: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=icon_vid.png&v=201506291815")
+}
+
+.resource-list .document {
+	background-image: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=icon_document.png&v=201506291815")
+}
+
+.resource-list .download {
+	background-image: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=icon_download.png&v=201506291815")
+}
+
+.resource-list .help {
+	background-image: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=icon_help.png&v=201506291815")
+}
+
+.resource-list .forum {
+	background-image: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=icon_forum.png&v=201506291815")
+}
+
+.resource-list a:hover {
+	color: #C00
+}
+
+#aside {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg_section.png&v=201506291815") repeat-x scroll left top transparent;
+	clear: both;
+	margin-top: 50px;
+}
+
+#aside h1 {
+	padding-top: 1em
+}
+
+#aside h2:first-child {
+	margin-top: 0
+}
+
+.tour-right-details {
+	margin-left: 40px;
+}
+
+.tour-right-details h2 {
+	margin-top: 6px;
+	margin-bottom: 20px;
+	color: #444;
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.getting-started {
+	background: none repeat scroll 0 0 #E5EFF5;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+	float: right;
+	margin-left: 20px;
+	margin-top: 0;
+	padding: 15px;
+	width: 284px;
+}
+
+.getting-started .calls-to-action {
+	float: none
+}
+
+.trusted_promo,
+.integrated_promo,
+.excellence_promo,
+.reviewed_promo {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg_trusted_promo.png&v=201506291815") no-repeat scroll left top transparent;
+	clear: left;
+	float: left;
+	margin-top: 2em;
+	padding-left: 250px;
+	width: 396px;
+}
+
+.integrated_promo {
+	background-image: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg_integrated_promo.png&v=201506291815")
+}
+
+.excellence_promo {
+	background-image: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg_customers_promo&v=201506291815")
+}
+
+.reviewed_promo {
+	background-image: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg_reviewed_promo.png&v=201506291815");
+	margin-top: 1em;
+}
+
+.reviewed_promo h2,
+.trusted_promo h2,
+.integrated_promo h2,
+.excellence_promo h2 {
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.vid-placeholder:hover {
+	cursor: pointer;
+	text-decoration: none !important;
+}
+
+.case-study-showcase {
+	float: left;
+	margin: 3em 0;
+	width: 100%;
+}
+
+.case-study-showcase .details {
+	float: left;
+	width: 240px;
+}
+
+.case-study-showcase .image-showcase {
+	float: right
+}
+
+.case-study-showcase .image-showcase img {
+	height: 221px;
+	width: 737px;
+}
+
+.Popup {
+	border-radius: 0;
+	padding: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+
+.clearfix:after {
+	clear: both
+}
+
+#feature-fast {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-fast-development.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+#feature-enterprise {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-enterprise-grade.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+#feature-standard {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-standard-architecture.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+#feature-it {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-fit-your-it-process.png&v=201506291815") repeat scroll 0 0 transparent
+}
+
+.resource-group .vid-placeholder .group-1 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-user-interface.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .group-2 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-logic.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .group-3 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-database.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .group-4 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-business-processes.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .group-5 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-getting-started.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .enterprise-group-1 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-deployment.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .enterprise-group-2 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-performance.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .enterprise-group-3 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-monitoring.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .enterprise-group-4 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-troubleshooting.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .enterprise-group-5 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-security.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .standard-group-1 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-stack.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .standard-group-2 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-infrastructure.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .standard-group-3 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-integration.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .standard-group-4 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-extensibility.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .standard-group-5 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-no-lock-in.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .it-process-group-1 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-learning.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .it-process-group-2 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-large-teams.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .it-process-group-3 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-documentation.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .it-process-group-4 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-knowledge-transfer.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.resource-group .vid-placeholder .it-process-group-5 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agile-platform-apps-life-cycle.png&v=201506291815") repeat scroll 0% 0% transparent
+}
+
+.contentWrapper table,
+.contentWrapper td {
+	font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", "Helvetica Nueue", Arial, Helvetica, sans-serif
+}
+
+.table-menu {
+	margin-bottom: 30px;
+	width: 980px;
+}
+
+.td-menu {
+	padding-left: 0;
+	padding-right: 20px;
+	width: 175px;
+}
+
+.table-menu .td-menu a:hover {
+	text-decoration: none
+}
+
+.menu-opt-title {
+	color: #4D4D4D;
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.2em;
+	margin-bottom: 8px;
+	margin-top: 10px;
+}
+
+a:hover .menu-opt-title {
+	color: #000
+}
+
+.selected .menu-opt-title {
+	color: #1F5BA4
+}
+
+.menu-opt-desc {
+	color: #4D4D4D;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.2em;
+}
+
+.selected .menu-opt-desc {
+	color: #000
+}
+
+a:hover .menu-opt-desc {
+	color: #000
+}
+
+.menu-risk {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll 0 -199px transparent;
+	height: 2px;
+	margin-bottom: -16px;
+	width: 980px;
+}
+
+.menu-opt1 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -43px 0 transparent;
+	display: block;
+	height: 28px;
+	margin-left: 70px;
+	width: 27px;
+}
+
+.selected .menu-opt1 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll 0 0 transparent;
+	height: 28px;
+	width: 28px;
+}
+
+a:hover .menu-opt1 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -87px 0 transparent;
+	height: 28px;
+	width: 27px;
+}
+
+.menu-opt2 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -43px -34px transparent;
+	display: block;
+	height: 28px;
+	margin-left: 70px;
+	width: 28px;
+}
+
+a:hover .menu-opt2 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -87px -34px transparent;
+	height: 28px;
+	width: 28px;
+}
+
+.selected .menu-opt2 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll 0 -34px transparent;
+	height: 28px;
+	width: 28px;
+}
+
+.menu-opt3 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -43px -68px transparent;
+	display: block;
+	height: 28px;
+	margin-left: 70px;
+	width: 28px;
+}
+
+a:hover .menu-opt3 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -87px -68px transparent;
+	height: 28px;
+	width: 28px;
+}
+
+.selected .menu-opt3 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll 0 -68px transparent;
+	height: 28px;
+	width: 28px;
+}
+
+.menu-opt4 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -43px -102px transparent;
+	display: block;
+	height: 28px;
+	margin-left: 70px;
+	width: 28px;
+}
+
+a:hover .menu-opt4 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -87px -102px transparent;
+	height: 28px;
+	width: 28px;
+}
+
+.selected .menu-opt4 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll 0 -102px transparent;
+	height: 28px;
+	width: 28px;
+}
+
+.menu-opt5 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -43px -137px transparent;
+	display: block;
+	height: 28px;
+	margin-left: 70px;
+	width: 28px;
+}
+
+a:hover .menu-opt5 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -87px -137px transparent;
+	height: 28px;
+	width: 28px;
+}
+
+.selected .menu-opt5 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll 0 -137px transparent;
+	height: 28px;
+	width: 28px;
+}
+
+.bottom-nav {
+	border-top: 1px solid #DDD;
+	margin-top: 30px;
+	padding-top: 10px;
+	width: 980px;
+}
+
+.bottom-nav-arrow-img-prev {
+	margin-bottom: 2px;
+	margin-right: 10px;
+}
+
+.bottom-nav-arrow-img-next {
+	margin-bottom: 2px;
+	margin-left: 10px;
+}
+
+.bottom-nav-td {
+	padding-top: 6px;
+	width: 298px;
+}
+
+.bottom-nav-td-center {
+	text-align: center
+}
+
+.bottom-nav-status-selected {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -185px -10px transparent;
+	display: inline-block;
+	height: 12px;
+	width: 12px;
+}
+
+.bottom-nav-status {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -185px -40px transparent;
+	display: inline-block;
+	height: 12px;
+	width: 12px;
+}
+
+a:hover .bottom-nav-status {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -185px -25px transparent;
+	height: 12px;
+	width: 12px;
+}
+
+.resource-a-img {
+	display: block;
+	margin-left: 10px;
+}
+
+.resource-desc {
+	display: block
+}
+
+.menu-overview {
+	float: right;
+	margin-left: 770px;
+	margin-top: 210px;
+	position: absolute;
+	width: 170px;
+}
+
+.menu-overview li {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -231px -6px transparent;
+	height: 41px;
+	list-style: none outside none;
+	margin-bottom: 10px;
+	margin-left: 0;
+	width: 204px;
+}
+
+.menu-overview li a {
+	display: block
+}
+
+.menu-overview li .b1 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -231px -6px transparent;
+	height: 42px;
+	width: 204px;
+}
+
+.menu-overview li .b1:hover {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -471px -6px transparent;
+	text-decoration: none;
+}
+
+.menu-overview li .b2 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -231px -58px transparent;
+	height: 42px;
+	width: 204px;
+}
+
+.menu-overview li .b2:hover {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -471px -58px transparent;
+	text-decoration: none;
+}
+
+.menu-overview li .b3 {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -231px -110px transparent;
+	height: 42px;
+	width: 204px;
+}
+
+.menu-overview li .b3:hover {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=menu-sprite&v=201506291815") no-repeat scroll -471px -110px transparent;
+	text-decoration: none;
+}
+
+.feature-columns {
+	min-height: 170px
+}
+
+.feature-column {
+	float: left;
+	width: 215px;
+}
+
+.feature-column p {
+	font-size: 14px;
+	line-height: 1.4em;
+}
+
+.feature-column h3 {
+	line-height: 1em;
+	margin-bottom: .6em;
+}
+
+#feature-next {
+	margin-left: 40px
+}
+
+.detail-column {
+	float: left;
+	width: 300px;
+}
+
+.detail-column p {
+	font-size: 14px;
+	line-height: 1.4em;
+}
+
+#detail-next {
+	margin-left: 40px
+}
+
+.detail-line {
+	margin-left: 340px;
+	width: 640px;
+}
+
+.detail-line img {
+	float: left;
+	margin-left: 70px;
+	margin-right: 30px;
+	margin-top: 10px;
+}
+
+.detail-line p {
+	font-size: 14px;
+	line-height: 1.4em;
+}
+
+#detail-line-next {
+	margin-top: 30px
+}
+
+.detail-50-50 {
+	float: left;
+	margin-top: 20px;
+	width: 980px;
+}
+
+.detail-50-50 img {
+	float: left;
+	margin-right: 40px;
+}
+
+.detail-50-50 p {
+	font-size: 14px;
+	line-height: 1.4em;
+}
+
+.col-3-detail {
+	float: left;
+	margin-top: 30px;
+	width: 300px;
+}
+
+.col-3-detail img {
+	float: left;
+	margin-right: 20px;
+}
+
+.col-3-detail p {
+	font-size: 14px;
+	line-height: 1.4em;
+}
+
+#col-3-detail-next {
+	margin-left: 40px
+}
+
+#col-next {
+	margin-left: 40px;
+}
+
+.number {
+	font-weight: bold;
+	font-size: 40px;
+	color: #1F5BA4;
+	width: 24px;
+	padding: 0;
+	line-height: 1em;
+}
+
+.content {
+	padding: 0 20px 20px 20px;
+}
+
+.clear-divs {
+	clear: both;
+	height: 10px;
+}
+
+.real-examples {
+	float: left;
+	margin-bottom: 20px;
+	width: 460px;
+}
+
+#real-examples-next {
+	padding-left: 60px
+}
+
+.example {
+	float: left;
+	font-size: 14px;
+	text-align: left;
+	width: 460px;
+}
+
+.example img {
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 20px;
+}
+
+.smartstart {
+	border-radius: 5px;
+	border: 1px solid #CCC;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+	margin: 20px;
+	min-height: 230px;
+	padding: 10px 40px 10px 20px;
+	width: 860px;
+}
+
+.smartstart p {
+	font-size: 14px
+}
+
+.smartstart ol li {
+	font-size: 14px;
+	margin-left: -20px;
+}
+
+.smartstart-left {
+	float: left;
+	margin-top: 20px;
+	width: 430px !important;
+}
+
+.smartstart-right {
+	float: left;
+	margin-top: 20px;
+	width: 430px !important;
+}
+
+.smartstart-descr {
+	font-size: 20px;
+	margin-bottom: 1em;
+	margin-top: 0;
+}
+
+.smartstart-logo p {
+	margin: 0;
+	padding: 0;
+}
+
+.smartstart-small {
+	border-radius: 5px;
+	border: 1px solid #CCC;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+	font-size: 14px;
+	min-height: 230px;
+	padding: 10px 40px 10px 20px;
+	width: 410px;
+}
+
+.smartstart-small ol li {
+	font-size: 14px;
+	margin-left: -20px;
+}
+
+.sample_case_study {
+	float: left;
+	width: 165px;
+	margin-right: 38px;
+	height: 272px;
+}
+
+.sample_case_study h3 {
+	text-align: left;
+	font-size: 16px;
+	vertical-align: middle;
+	line-height: 1.2em;
+	margin: 0 0 5px;
+}
+
+.sample_case_study p {
+	font-size: 14px;
+	line-height: 1.4em;
+	height: 74px;
+}
+
+.sample_case_study a {
+	font-size: 13px;
+	letter-spacing: -0.1em;
+	white-space: nowrap;
+	line-height: 1.5em;
+}
+
+.tableLink {
+	font-size: 16px;
+	line-height: 1.4em;
+	margin-top: 1em;
+}
+
+.ie_spacer {
+	*margin-top: 90px
+}
+
+.contact_us {
+	position: fixed;
+	top: 30%;
+	right: 0;
+	width: 40px;
+}
+
+.contact_us_link {
+	width: 40px;
+	height: 132px;
+	background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=global-sprite&v=201506291815');
+	background-position: -883px -66px;
+	position: absolute;
+}
+
+.contact_us_link:hover {
+	background-position: -947px -66px
+}
+
+.doormat_container {
+	padding-bottom: 40px
+}
+
+.for-popup {
+	visibility: hidden
+}
+
+.footer {
+	min-height: 100px !important
+}
+
+.footer-ul {
+	display: block;
+	height: 20px;
+	list-style: none;
+	position: absolute;
+	top: 15px;
+}
+
+.footer ul {
+	margin-top: 1px !important;
+	float: right !important;
+}
+
+.footer a:hover {
+	-webkit-transition: none !important
+}
+
+.footer-ul li {
+	float: right;
+	margin: 0 0 0 45px;
+	display: inline;
+}
+
+.footer ul li {
+	font-size: 12px !important;
+	margin: 0 !important;
+	float: right !important;
+}
+
+.logo-sprite {
+	height: 13px;
+	width: 75px;
+	display: inline;
+}
+
+.logo-sprite {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=agileplatform_footer&v=201506291815") no-repeat 0 0 transparent;
+	color: #FFF;
+	position: absolute;
+	text-align: center;
+	width: 75px;
+	margin-top: 4px;
+	height: 13px;
+}
+
+.logo-sprite:hover {
+	background-position: 0 -13px
+}
+
+body:nth-of-type(1) .logo-sprite a:link {
+	margin-top: 3px
+}
+
+td {
+	font-family: "lucida grande", "lucida sans unicode", "lucida sans", "helvetica nueue", arial, helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.ie7 {
+	visibility: hidden;
+	position: absolute;
+}
+
+.feature .details p {
+	line-height: 1.5em !important
+}
+
+.Body {
+	height: auto !important;
+	min-height: 370px;
+}
+
+.strike_soft {
+	display: block;
+	left: -5%;
+	line-height: 38px;
+	position: absolute;
+	top: 45%;
+	width: 110%;
+}
+
+.circle_hl {
+	line-height: 38px;
+	position: absolute;
+	width: 60px;
+	margin-left: -4px;
+	top: 45%;
+}
+
+.circle circle {
+	position: relative;
+	text-decoration: none;
+	display: inline;
+}
+
+.strike-under {
+	display: block;
+	height: 4px;
+	left: -5%;
+	line-height: 38px;
+	position: absolute;
+}
+
+.strike_weeks {
+	height: 4px;
+	top: 63%;
+	width: 50px;
+	position: absolute;
+}
+
+.strike_lock {
+	top: 77%;
+	width: 96px;
+	position: absolute;
+	height: 4px;
+}
+
+.strike_customized {
+	width: 104px;
+	top: 66%;
+	position: absolute;
+	height: 4px;
+}
+
+.strike_ready {
+	width: 120px;
+	top: 77%;
+	position: absolute;
+	height: 4px;
+}
+
+.check {
+	vertical-align: top;
+	margin-top: 3px;
+}
+
+.four_text {
+	font-family: "lucida grande", "lucida sans unicode", "lucida sans", "helvetica nueue", arial, helvetica, sans-serif;
+	color: #444444;
+	width: 456px;
+	text-align: left;
+	display: block;
+}
+
+.play-bttn-home {
+
+	/*-moz-box-shadow: -1px 0 5px rgba(0, 0, 0, 0.55);; -webkit-box-shadow: -1px 0 5px rgba(0, 0, 0, 0.55); -o-box-shadow: -1px 0 5px rgba(0, 0, 0, 0.55); shadow: -1px 0 5px rgba(0, 0, 0, 0.55); */ background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=global-sprite&v=201506291815") no-repeat -407px -60px;
+	height: 33px;
+	width: 50px;
+	bottom: 0;
+	right: 0;
+	display: block;
+	position: absolute;
+}
+
+.stepcarousel {
+	position: relative; /*leave this value alone*/
+	overflow: scroll; /*leave this value alone*/
+	width: 970px; /*Width of Carousel Viewer itself*/
+	height: 40px; /*Height should enough to fit largest content's height*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.stepcarousel .belt {
+	position: absolute; /*leave this value alone*/
+	left: 0;
+	top: 0;
+}
+
+.stepcarousel .panel {
+	float: left; /*leave this value alone*/
+	overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+	width: 970px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+}
+
+#mygallery-paginate {
+	width: 970px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	visibility: visible;
+}
+
+.image-spot-mobile {
+	background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=sprite_boxes&v=201506291815');
+	background-repeat: no-repeat;
+	background-position: -666px -4px;
+	width: 280px;
+	height: 90px;
+	display: block;
+	text-decoration: none;
+	font-family: "lucida grande", "lucida sans unicode", "lucida sans", "helvetica nueue", arial, helvetica, sans-serif;
+	padding: 25px;
+}
+
+.image-spot-mobile:hover {
+	background-repeat: no-repeat;
+	background-position: -666px -156px;
+	text-decoration: underline;
+}
+
+.image-spot-mobile:hover > .image-spot-link {
+	text-decoration: underline
+}
+
+.image-spot-cloud {
+	background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=sprite_boxes&v=201506291815');
+	background-repeat: no-repeat;
+	background-position: -336px -4px;
+	width: 280px;
+	height: 90px;
+	display: block;
+	text-decoration: none;
+	font-family: "lucida grande", "lucida sans unicode", "lucida sans", "helvetica nueue", arial, helvetica, sans-serif;
+	padding: 25px;
+}
+
+.image-spot-cloud:hover {
+	background-position: -336px -156px;
+	background-repeat: no-repeat;
+	text-decoration: underline;
+}
+
+.image-spot-cloud:hover > .image-spot-link {
+	text-decoration: underline
+}
+
+.image-spot-7 {
+	background-image: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=sprite_boxes&v=201506291815");
+	background-position: -5px -4px;
+	display: block;
+	font-family: "lucida grande", "lucida sans unicode", "lucida sans", "helvetica nueue", arial, helvetica, sans-serif;
+	height: 90px;
+	padding: 25px;
+	width: 280px;
+}
+
+.image-spot-7:hover {
+	background-position: -5px -156px;
+	background-repeat: no-repeat;
+}
+
+.image-spot-title {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 8px;
+	display: inline-block;
+	color: #333333;
+}
+
+.image-spot-desc {
+	font-size: 14px;
+	display: block;
+	color: #444444;
+}
+
+.image-spot-link {
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 15px;
+	color: #1F5BA4;
+	display: inline-block;
+}
+
+/* BEGIN Main Slider */
+.stepcarousel2 {
+	position: relative; /*leave this value alone*/
+	overflow: scroll; /*leave this value alone*/
+	width: 980px; /*Width of Carousel Viewer itself*/
+	height: 340px; /*Height should enough to fit largest content's height*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.stepcarousel2 .belt2 {
+	position: absolute; /*leave this value alone*/
+	left: 0;
+	top: 0;
+}
+
+.stepcarousel2 .panel2 {
+	float: left; /*leave this value alone*/
+	overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+	width: 980px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+}
+
+.main-slider-menu-risk {
+	background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=global-sprite&v=201506291815') no-repeat -2px -7px;
+	width: 980px;
+	height: 30px;
+	margin-top: -18px;
+}
+
+.controller {
+	display: inline;
+	cursor: pointer;
+	color: #444;
+	font-size: 14px;
+	margin-left: 36px;
+}
+
+.controller-selected {
+	color: #1F5BA4;
+	display: inline;
+	cursor: pointer;
+	font-size: 14px;
+	margin-left: 36px;
+}
+
+.img-controllers {
+	width: 60px;
+	height: 38px;
+	margin-top: 5px;
+}
+
+.slider-controllers-div {
+	margin-left: 204px
+}
+
+.controller-bullet {
+	background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=global-sprite&v=201506291815') no-repeat -40px -53px;
+	width: 12px;
+	height: 18px;
+	display: inline-block;
+	margin-right: 3px;
+}
+
+.controller-bullet-selected {
+	background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=global-sprite&v=201506291815') no-repeat -2px -54px;
+	width: 12px;
+	height: 18px;
+	display: inline-block;
+	margin-right: 3px;
+}
+
+/* END Main Slider */
+
+/* BEGIN Testimonials */
+.testi-text {
+	text-align: center;
+	font-size: 12px;
+	display: block;
+}
+
+.testi-role {
+	text-align: center;
+	color: #999;
+	font-size: 12px;
+	display: block;
+}
+
+.testi-image {
+	padding-right: 35px
+}
+
+.testi-image  p {
+	width: 220px
+}
+
+#testi-image-last {
+	width: 218px
+}
+
+#testi-image-last p {
+	width: 218px
+}
+
+/* END Testimonials */
+
+/* BEGIN Events, News & Training */
+.three-col {
+	width: 300px;
+	float: left;
+	margin-top: 20px;
+}
+
+.three-col a {
+	color: #1F5BA4;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.three-col a:hover {
+	text-decoration: underline
+}
+
+.three-col-section {
+	margin: 0 auto;
+	width: 980px;
+}
+
+#three-sections-col1 {
+	margin-right: 40px
+}
+
+#three-sections-col2 {
+	margin-right: 40px
+}
+
+.three-col-section h1 {
+	border-bottom: 1px solid #CCCCCC;
+	color: #111111;
+	font-size: 22px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	text-align: left;
+	margin-top: 10px;
+}
+
+.a-desc {
+	color: #333;
+	font-size: 13px;
+	margin-bottom: 15px;
+}
+
+.news-p {
+	margin-bottom: 15px
+}
+
+/* End Events, News & Training */
+
+/* BEGIN Morsel */
+.morsel {
+	margin: 0 auto;
+	width: 640px;
+}
+
+.morsel h2 {
+	color: #111111;
+	font-size: 22px;
+}
+
+.morsel-section {
+	margin-bottom: 30px
+}
+
+.morsel-section p {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.morsel-section a {
+	background: url("/CMS_BackOffice/ResourceLink.aspx?ResourceName=global-sprite&v=201506291815") no-repeat scroll -479px -60px transparent;
+	color: #FFFFFF;
+	display: inline-block;
+	font-size: 12px;
+	height: 20px;
+	margin-left: 5px;
+	padding-left: 10px;
+	text-decoration: none;
+	width: 63px;
+}
+
+.morsel-section a:hover {
+	background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=global-sprite&v=201506291815') no-repeat -560px -60px
+}
+
+/* END Morsel */
+.bt a {
+	background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=global-sprite&v=201506291815') no-repeat -68px -101px;
+	width: 140px;
+	height: 32px;
+	display: block;
+	margin: 28px auto 0;
+	font-size: 18px;
+	color: #fff !important;
+	padding-top: 7px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.bt a:hover {
+	text-decoration: none;
+	background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=global-sprite&v=201506291815') no-repeat -226px -102px;
+}
+
+/* DOORMAT */
+.doormat-content {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.doormat-content p {
+	margin-bottom: 0.8em
+}
+
+.doormat-content h1 {
+	font-size: 20px
+}
+
+.doormat-content h2 {
+	font-size: 16px;
+	margin-top: 1.5em;
+}
+
+.doormat-content h3 {
+	font-size: 14px;
+	margin-top: 1.5em;
+	margin-bottom: 0em;
+}
+
+.doormat_container a,
+.doormat_container a:link,
+.doormat_container a:visited,
+.doormat_container a:hover {
+	color: #666666
+}
+
+.doormat-topics {
+	width: 100%;
+	font-size: 12px;
+	text-decoration: none;
+	margin-left: -25px;
+	padding-top: -10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.doormat-topics a {
+	text-decoration: none
+}
+
+.doormat-topics li {
+	padding-top: 5px
+}
+
+.doormat_inner td {
+	font-family: Arial, Helvetica, sans-serif
+}
+
+/* END DOORMAT */
+.vertical-cols {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	background: white url(/img/bg_promo.png) repeat-x scroll left -200px;
+	-moz-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+	-o-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	border: 1px solid #999999;
+	background-color: white;
+	padding: 10px
+}
+
+/* videos section additions */
+.resource-listing {
+	clear: both;
+	font-size: .75em;
+	height: 430px;
+	margin-left: 0;
+	margin-top: 25px
+}
+
+.resource-listing .feature-block {
+	font-size: 10pt;
+	margin: 0 25px 0 10px;
+	width: 240px
+}
+
+.resource-listing .feature blockquote .open-quote {
+	font-size: 78px;
+	left: -16px;
+	top: 19px
+}
+
+.resource-group {
+	float: left;
+	margin-right: 20px;
+	width: 180px
+}
+
+.resource-group h3 {
+	font-size: 1.167em;
+	margin: .3em 0 .7em;
+	text-align: center
+}
+
+.resource-group .vid-placeholder {
+	margin-bottom: .75em
+}
+
+.resource-group .vid-placeholder img {
+	height: 83px;
+	width: 146px
+}
+
+.resource-group p {
+	color: #AAA;
+	line-height: 1.3em;
+	margin: 0 0 .5em;
+	text-align: center
+}
+
+.resource-group li,
+.resource-group ul {
+	clear: left;
+	list-style: none outside none;
+	margin-left: 10px;
+	padding: 0
+}
+
+.resource-group.last {
+	margin-right: 0
+}
+
+.resource-list .screenshot,
+.resource-list .vid,
+.resource-list .testimony,
+.resource-list .document,
+.resource-list .download,
+.resource-list .tutorial,
+.resource-list .help,
+.resource-list .forum,
+.resource-list .solution {
+	background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icon_screenshot.png&v=201506291815') no-repeat scroll 0 1px transparent;
+	color: #444;
+	display: block;
+	float: left;
+	line-height: 1.4em;
+	margin-top: 1em;
+	padding-bottom: .25em;
+	padding-left: 24px
+}
+
+.resource-list .vid {
+	background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icon_vid.png&v=201506291815')
+}
+
+.resource-list .testimony {
+	background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icon_testimony.png&v=201506291815')
+}
+
+.resource-list .document {
+	background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icon_document.png&v=201506291815')
+}
+
+.resource-list .download {
+	background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icon_download.png&v=201506291815')
+}
+
+.resource-list .tutorial {
+	background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icon_tutorial.png&v=201506291815')
+}
+
+.resource-list .solution {
+	background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icon_solution.png&v=201506291815')
+}
+
+.resource-list .help {
+	background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icon_help.png&v=201506291815')
+}
+
+.resource-list .forum {
+	background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icon_forum.png&v=201506291815')
+}
+
+.resource-list a:hover {
+	color: #C00
+}
+
+#aside .resource-group {
+	width: 313px
+}
+
+.resource-group li,
+.resource-group ul {
+	margin-left: 0
+}
+
+.toggler {
+	background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=more-less-tongue&v=201506291815');
+	height: 30px;
+	margin-top: 10px;
+	padding-top: 0
+}
+
+.toggler span {
+	font-size: 11px;
+	cursor: pointer;
+	color: #1F5BA4
+}
+
+.toggler-span-hover {
+	color: #CCC !important;
+	float: none;
+	margin-left: 0
+}
+
+.more-and-less {
+	height: 270px
+}
+
+.category-related {
+	margin-bottom: 0;
+	margin-top: 30px;
+	white-space: nowrap
+}
+
+.videos-left-bar {
+	float: left;
+	width: 600px;
+	padding: 7px 0 0
+}
+
+.videos-right-bar {
+	float: right;
+	width: 365px;
+	padding: 7px 0 0
+}
+
+#aside .resource-listing {
+	font-size: 10pt;
+	margin: 2em 0 0;
+	text-align: left
+}
+
+#aside .resource-group {
+	width: 313px
+}
+
+.oldviewer .p {
+	font-size: 16px;
+	line-height: 1.5em;
+}
