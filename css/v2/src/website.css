@@ -7980,3 +7980,138 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
 {
   background-position:-1px -641px
 }
+
+
+
+
+/** popups **/
+.ui-widget-overlay {
+   position: fixed;
+   *position: absolute; /* IE6 */
+   top: 0;
+   left: 0;
+   background-color: black;
+   filter: alpha(opacity=30); 
+   -moz-opacity: 0.3; 
+   opacity: 0.3;
+}
+
+.ui-dialog {
+   position: absolute;
+}
+
+div.PopupCallOut{
+   position: absolute;
+   display: none;
+   z-index: 4001;
+}
+
+div.Popup .ui-dialog,
+div.Popup.ui-dialog {
+    background-color: white;
+    border:1px solid #666666;
+}
+
+div.Popup .ui-dialog .ui-dialog-titlebar,
+div.Popup.ui-dialog .ui-dialog-titlebar {
+    border-bottom: 0px solid #d8d2aa;
+    background: #1E5AA3 url(/RichWidgets/img/Bar_Gradient.png) repeat-x top;
+    _background:#1E5AA3;  /* IE6 */
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/RichWidgets/img/Bar_Gradient.png', sizingMethod='scale');  /* IE6 */
+    padding: 0px;
+    height: 28px;
+}
+
+div.Popup .ui-dialog.ui-draggable .ui-dialog-titlebar,
+div.Popup.ui-dialog.ui-draggable .ui-dialog-titlebar {
+    cursor: move;
+}
+
+div.Popup .ui-dialog .ui-dialog-titlebar-close-hover,
+div.Popup.ui-dialog .ui-dialog-titlebar-close-hover,
+div.Popup .ui-dialog .ui-dialog-titlebar-close,
+div.Popup.ui-dialog .ui-dialog-titlebar-close {
+    width: 16px;
+    height: 16px;
+    background: url(/RichWidgets/img/Popup_titlebar_close.png) no-repeat;
+    position:absolute;
+    top: 6px;
+    right: 7px;
+}
+
+div.Popup.ui-dialog .ui-dialog-titlebar-close-no-title {
+    width: 48px;
+    height: 48px;
+    background: url(/RichWidgets/img/Popup_Editor_No_Title_Close.png) no-repeat;
+    _background:none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/RichWidgets/img/Popup_Editor_No_Title_Close.png', sizingMethod='scale');  /* IE6 */
+    position:absolute;
+    top: -24px;
+    right: -24px;
+}
+
+div.Popup.ui-dialog .ui-dialog-titlebar-close-no-title:hover {
+    background: url(/RichWidgets/img/Popup_Editor_No_Title_Close_Hover.png) no-repeat;
+    _background:none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/RichWidgets/img/Popup_Editor_No_Title_Close_Hover.png', sizingMethod='scale');  /* IE6 */
+}
+
+div.Popup .ui-dialog .ui-dialog-titlebar-close span,
+div.Popup.ui-dialog .ui-dialog-titlebar-close span {
+    display: none;
+}
+
+div.Popup .ui-dialog .ui-dialog-title,
+div.Popup.ui-dialog .ui-dialog-title {
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 7px;
+    left: 4px;
+}
+
+div.Popup .ui-dialog .ui-dialog-content,
+div.Popup.ui-dialog .ui-dialog-content {
+    margin: 0px;
+}
+
+div.Popup .ui-dialog .ui-dialog-buttonpane,
+div.Popup.ui-dialog .ui-dialog-buttonpane {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    width: 100%;
+    text-align: right;
+}
+
+div.PopUup .ui-dialog .ui-dialog-buttonpane button,
+div.Popup.ui-dialog .ui-dialog-buttonpane button {
+    margin: 6px;
+}
+
+
+div.Popup .ui-dialog .ui-resizable-n,
+div.Popup.ui-dialog .ui-resizable-n { cursor: n-resize; height: 2px; width: 100%; top: 0px; left: 0px;}
+
+div.Popup .ui-dialog .ui-resizable-s,
+div.Popup.ui-dialog .ui-resizable-s { cursor: s-resize; height: 8px; width: 100%; bottom: 0px; left: 0px;}
+
+div.Popup .ui-dialog .ui-resizable-e,
+div.Popup.ui-dialog .ui-resizable-e { cursor: e-resize; width: 7px; right: 0px; top: 0px; height: 100%;}
+
+div.Popup .ui-dialog .ui-resizable-w,
+div.Popup.ui-dialog .ui-resizable-w { cursor: w-resize; width: 7px; left: 0px; top: 0px; height: 100%;}
+
+div.Popup .ui-dialog .ui-resizable-se,
+div.Popup.ui-dialog .ui-resizable-se { cursor: se-resize; width: 9px; height: 9px; right: 0px; bottom: 0px;}
+
+div.Popup .ui-dialog .ui-resizable-sw,
+div.Popup.ui-dialog .ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: 0px; bottom: 0px;}
+
+div.Popup .ui-dialog .ui-resizable-nw,
+div.Popup.ui-dialog .ui-resizable-nw { cursor: nw-resize; width: 9px; height: 29px; left: 0px; top: 0px;}
+
+div.Popup .ui-dialog .ui-resizable-ne,
+div.Popup.ui-dialog .ui-resizable-ne { cursor: ne-resize; width: 9px; height: 29px; right: 0px; top: 0px;}
+
