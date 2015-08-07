@@ -72,8 +72,17 @@ osjs(".Popup").live("dialogopen", function(a, b) {
 
 
 
+/* Lazy Load XT v1.0.0 2014-01-16
+ * http://ressio.github.io/lazy-load-xt
+ * (C) 2014 RESS.io
+ * Licensed under MIT 
+ */
+(function ($) {
+    var options = $.lazyLoadXT;
 
+    options.forceEvent += 'loadmeeeee';
 
+})(window.jQuery || window.Zepto);
 
 
 /* home page, filter customers logos by visitor country */
@@ -146,10 +155,6 @@ $(function() {
         //add new logo list
         $('.customers-and-experts a[href="/customers/"]').prepend(logosForCurrentLocale);
         logosForCurrentLocale.css('display', 'inline-block');
-
-
-
-        $('.customers-and-experts a img').unveil(500);
 
 
     }

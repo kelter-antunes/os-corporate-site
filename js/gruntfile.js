@@ -12,12 +12,11 @@ module.exports = function(grunt) {
                     'bundle/core.js': [
                         'src/jquery-1.10.2.min.js',
                         'src/jQueryMobile1_3_1_Custom.min.js',
-                        'src/jQueryEasingv1_3.min.js',
-                        'src/jquery.animateenhancedplugin-1_02.min.js'
+                        'src/jquery.easing.1.3.min.js',
+                        'src/jquery.animate-enhanced.min.js'
                     ],
                     'bundle/extra.js': [
                         'src/os-inspectlet.min.js',
-                        'src/common.min.js',
                         'src/jquery.panelslider.min.js',
                         'src/home-parallax.min.js',
                         'src/jquery.powertip.min.js',
@@ -32,11 +31,10 @@ module.exports = function(grunt) {
                         'src/jquery.swiftype.search.min.js',
                         'src/jquery.swiftype.autocomplete.min.js',
                         'src/os-swiftype.min.js',
-                        'src/jquery.snippet.min.js',
-                        'src/os-olark.min.js',
                         'src/jQuery.succinct.min.js',
                         'src/jquery.zaccordion.min.js',
-                        'src/jquery.unveil.min.js'
+                        'src/jquery.lazyloadxt.extra.min.js',
+                        'src/common.min.js'
                     ]
                 }
             }

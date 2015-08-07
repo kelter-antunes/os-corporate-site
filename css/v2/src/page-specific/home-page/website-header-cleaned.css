@@ -1,0 +1,132 @@
+/*
+cache invalidator 
+
+v=201510021536
+*/
+
+.navigation-outter {
+    width: 100%;
+    overflow: hidden
+}
+.navigation-inner {
+    height: 50px;
+    position: relative;
+    z-index: 999
+}
+.navigation-longtail {
+    width: 99999px;
+    /*height:50px*/
+    
+    height: auto;
+}
+.navigation-longtail-end {
+    width: 9999px;
+    height: 50px;
+    background-color: #000;
+    float: left
+}
+.navigation-bar-section {
+    float: left;
+    background-color: #000;
+    height: 50px
+}
+.navigation-bar-section.navigation-bar-tail-spacer a {
+    position: relative
+}
+.navigation-items {
+    font-family: 'myriad-pro', Arial, sans-serif;
+    position: relative;
+    width: 1036px
+}
+.navigation-search-outter {
+    overflow-x: hidden;
+    position: absolute;
+    right: 0;
+    padding-left: 0
+}
+.navigation-bar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block
+}
+.navigation-bar li {
+    float: left;
+    _display: inline;
+    width: auto
+}
+.navigation-bar li a {
+    background-color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ccc;
+    letter-spacing: .05em;
+    text-align: center
+}
+.navigation-bar li a:hover, .navigation-bar li.active a {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff
+}
+.navigation-bar li a span {
+    display: block;
+    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=nav&v=201510021536) no-repeat;
+    background-position: top;
+    margin-left: -5px
+}
+.navigation-bar li.spacer {
+    display: block;
+    width: 30px;
+    background-color: #000;
+    height: 50px
+}
+.navigation-bar li a:hover span, .navigation-bar li.active a span {
+    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=nav&v=201510021536) no-repeat;
+    background-position: center
+}
+.navigation-bar-tail-spacer {
+  width: 210px;
+}
+.navigation-bar-tail-logo {
+    margin-left: -82px
+}
+.search_field {
+    display: inline-block;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #FFF;
+    margin-top: 3px;
+    margin-right: 10px;
+    border: 1px solid #79868A;
+}
+.search_field input {
+    border: none;
+    padding: 0;
+    background: transparent
+}
+/*common*/
+
+.top10 {
+    margin-top: 10px
+}
+.top40 {
+    margin-top: 40px
+}
+.top50 {
+    margin-top: 50px
+}
+.top70 {
+    margin-top: 70px
+}
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .navigation-bar li a:hover span, .navigation-bar li.active a span {
+        background-position: 50% -51px
+    }
+}
