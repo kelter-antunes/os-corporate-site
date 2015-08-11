@@ -16,6 +16,8 @@ module.exports = function(grunt) {
                         'src/jquery.animate-enhanced.min.js'
                     ],
                     'bundle/extra.js': [
+                        'src/jquery.lazyloadxt.extra.min.js',
+                        'src/common.min.js',
                         'src/os-inspectlet.min.js',
                         'src/jquery.panelslider.min.js',
                         'src/home-parallax.min.js',
@@ -32,9 +34,8 @@ module.exports = function(grunt) {
                         'src/jquery.swiftype.autocomplete.min.js',
                         'src/os-swiftype.min.js',
                         'src/jQuery.succinct.min.js',
-                        'src/jquery.zaccordion.min.js',
-                        'src/jquery.lazyloadxt.extra.min.js',
-                        'src/common.min.js'
+                        'src/jquery.zaccordion.min.js'
+
                     ]
                 }
             }

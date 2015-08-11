@@ -26,7 +26,7 @@ ul
 
 #footer-top-wrapper
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footeg-gradient-top&v=201510021536) repeat-x;
+	background:url(/cms_backoffice/assets/201510021536/footeg-gradient-top) repeat-x;
 	background-position:bottom;
 	border-bottom:1px solid #111;
 	display:block;
@@ -43,7 +43,7 @@ ul
 
 #footer-mid-wrapper
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-gradient&v=201510021536) repeat-x;
+	background:url(/cms_backoffice/assets/201510021536/footer-gradient) repeat-x;
 	background-position:top;
 	border-top:1px solid #333;
 	display:block;
@@ -170,7 +170,7 @@ ul
 
 #footer-mid a.twitter,#footer-mid a.facebook,#footer-mid a.google,#footer-mid a.linkedin
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+	background:url(/cms_backoffice/assets/201510021536/icons) no-repeat;
 	width:21px;
 	height:21px;
 	text-indent:-9999px;
@@ -283,7 +283,7 @@ ul
 
 #footer-mid.us
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-us&v=201510021536) no-repeat;
+	background:url(/cms_backoffice/assets/201510021536/footer-us) no-repeat;
 	background-position:right bottom
 }
 
@@ -294,7 +294,7 @@ ul
 
 #footer-mid.jp
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-jp&v=201510021536) no-repeat;
+	background:url(/cms_backoffice/assets/201510021536/footer-jp) no-repeat;
 	background-position:right bottom
 }
 
@@ -305,7 +305,7 @@ ul
 
 #footer-mid.sg
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-sg&v=201510021536) no-repeat;
+	background:url(/cms_backoffice/assets/201510021536/footer-sg) no-repeat;
 	background-position:right bottom
 }
 
@@ -316,7 +316,7 @@ ul
 
 #footer-mid.pt
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-pt&v=201510021536) no-repeat;
+	background:url(/cms_backoffice/assets/201510021536/footer-pt) no-repeat;
 	background-position:right bottom
 }
 
@@ -327,7 +327,7 @@ ul
 
 #footer-mid.au
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-au&v=201510021536) no-repeat;
+	background:url(/cms_backoffice/assets/201510021536/footer-au) no-repeat;
 	background-position:right bottom
 }
 
@@ -338,7 +338,7 @@ ul
 
 #footer-mid.br
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-br&v=201510021536) no-repeat;
+	background:url(/cms_backoffice/assets/201510021536/footer-br) no-repeat;
 	background-position:right bottom
 }
 
@@ -349,7 +349,7 @@ ul
 
 #footer-mid.ae
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-ae&v=201510021536) no-repeat;
+	background:url(/cms_backoffice/assets/201510021536/footer-ae) no-repeat;
 	background-position:right bottom
 }
 
@@ -376,7 +376,7 @@ ul
 
 #footer-mid.nl
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-nl&v=201510021536) no-repeat;
+	background:url(/cms_backoffice/assets/201510021536/footer-nl) no-repeat;
 	background-position:right bottom
 }
 
@@ -387,7 +387,7 @@ ul
 
 #footer-mid.uk
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-uk&v=201510021536) no-repeat;
+	background:url(/cms_backoffice/assets/201510021536/footer-uk) no-repeat;
 	background-position:right bottom
 }
 
@@ -398,7 +398,7 @@ ul
 
 #footer-mid.za
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-za&v=201510021536) no-repeat;
+	background:url(/cms_backoffice/assets/201510021536/footer-za) no-repeat;
 	background-position:right bottom
 }
 
@@ -498,7 +498,7 @@ ul
 
 .cta-wrapper-footer a
 {
-	background-image:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201510021536);
+	background-image:url(/cms_backoffice/assets/201510021536/cta-buttons);
 	background-position:-524px -1px;
 	background-repeat:no-repeat;
 	width:306px;
@@ -533,7 +533,7 @@ ul
 /** cta-footer-home */
 .cta-wrapper-footer-home a
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201510021536) no-repeat;
+	background:url(/cms_backoffice/assets/201510021536/cta-buttons) no-repeat;
 	background-position:-840px -1px;
 	width:150px;
 	height:36px;
@@ -556,7 +556,7 @@ ul
 /** cta-footer-download-try */
 .cta-wrapper-download-try a
 {
-	background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201510021536) no-repeat;
+	background:url(/cms_backoffice/assets/201510021536/cta-buttons) no-repeat;
 	background-position:-2514px -1px;
 	width:150px;
 	height:36px;

@@ -86,7 +86,7 @@ v=201510021536
   width: 100px;
   display: inline-block !important;
   vertical-align: top !important;
-  padding-top: 5px !iMPORTANT;
+  padding-top: 5px !important;
   padding-bottom: 25px;
 }
 .Partner {
@@ -95,7 +95,7 @@ v=201510021536
 
 .PartnersPagination {
   padding-top: 20px;
-  text-align: center !iMPORTANT;
+  text-align: center !important;
 }
 .header-hero-wrapper.customers-sublevel-menu {
        height: 50px;
@@ -163,7 +163,7 @@ v=201510021536
         margin-bottom: 20px
     }
     .header-hero-wrapper.home {
-        background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=light-grey-bg-mobile&v=201510021536);
+        background: url(/cms_backoffice/assets/201510021536/light-grey-bg-mobile);
         height: 535px;
         -moz-box-shadow: inset 0 -14px 10px -8px #CFCFCF;
         -webkit-box-shadow: inset 0 -14px 10px -8px #CFCFCF;
@@ -181,7 +181,7 @@ v=201510021536
     /*get-started*/
     
     .hero-section-get-started {
-        background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=light-grey-bg-mobile&v=201510021536);
+        background-image: url(/cms_backoffice/assets/201510021536/light-grey-bg-mobile);
         padding-top: 30px;
         height: 980px;
         overflow: hidden;
@@ -589,25 +589,25 @@ v=201510021536
         opacity: 1
     }
     .pxs_prev {
-        background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536);
+        background: url(/cms_backoffice/assets/201510021536/icons);
         background-repeat: no-repeat;
         background-position: -20px -2037px;
         left: -10px
     }
     .pxs_next {
-        background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536);
+        background: url(/cms_backoffice/assets/201510021536/icons);
         background-repeat: no-repeat;
         background-position: -20px -2107px;
         right: -10px
     }
     .how-first-section {
-        background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=light-grey-bg-mobile&v=201510021536)
+        background: url(/cms_backoffice/assets/201510021536/light-grey-bg-mobile)
     }
     .how-bg-gray-dark {
-        background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=dark-grey-bg-mobile&v=201510021536)
+        background: url(/cms_backoffice/assets/201510021536/dark-grey-bg-mobile)
     }
     .how-bg-gray-light {
-        background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=light-grey-bg-mobile&v=201510021536)
+        background: url(/cms_backoffice/assets/201510021536/light-grey-bg-mobile)
     }
     .case-study-title-image img {} .pricing-feature-image {
         float: left;
@@ -690,7 +690,7 @@ v=201510021536
         top: 0;
         margin-left: 0;
         margin-right: 0;
-        /* background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=mobile_solutions_img&v=201510021536'); */
+        /* background: url('/cms_backoffice/assets/201510021536/mobile_solutions_img'); */
         /* background-repeat: no-repeat; */
         /* background-position: right 70px; */
         
@@ -1331,7 +1331,7 @@ v=201510021536
   width: 100px;
   display: inline-block !important;
   vertical-align: top !important;
-  padding-top: 5px !iMPORTANT;
+  padding-top: 5px !important;
   padding-bottom: 25px;
 }
 .Partner {
@@ -1340,7 +1340,7 @@ v=201510021536
 
 .PartnersPagination {
   padding-top: 20px;
-  text-align: center !iMPORTANT;
+  text-align: center !important;
 }
 .header-hero-wrapper.customers-sublevel-menu {
        height: 50px;
@@ -1451,7 +1451,7 @@ v=201510021536
   width: 100px;
   display: inline-block !important;
   vertical-align: top !important;
-  padding-top: 5px !iMPORTANT;
+  padding-top: 5px !important;
   padding-bottom: 25px;
 }
 .Partner {
@@ -1460,7 +1460,7 @@ v=201510021536
 
 .PartnersPagination {
   padding-top: 20px;
-  text-align: center !iMPORTANT;
+  text-align: center !important;
 }
 .header-hero-wrapper.customers-sublevel-menu {
        height: 50px;
@@ -1496,7 +1496,7 @@ v=201510021536
   width: 100px;
   display: inline-block !important;
   vertical-align: top !important;
-  padding-top: 5px !iMPORTANT;
+  padding-top: 5px !important;
   padding-bottom: 25px;
 }
 .Partner {
@@ -1505,7 +1505,7 @@ v=201510021536
 
 .PartnersPagination {
   padding-top: 20px;
-  text-align: center !iMPORTANT;
+  text-align: center !important;
 }
 .header-hero-wrapper.customers-sublevel-menu {
        height: 50px;

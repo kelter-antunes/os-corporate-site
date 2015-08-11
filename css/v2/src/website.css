@@ -121,12 +121,12 @@ a.byline:hover {
     width: 40px
 }
 #aside {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg_section.png&v=201510021536) repeat-x scroll left top rgba(0, 0, 0, 0);
+    background: url(/cms_backoffice/assets/201510021536/bg_section.png) repeat-x scroll left top rgba(0, 0, 0, 0);
     clear: both;
     margin-top: 0
 }
 .separator-line {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=linha1&v=201510021536) no-repeat left center;
+    background: url(/cms_backoffice/assets/201510021536/linha1) no-repeat left center;
     padding: 40px 0;
     height: 10px;
     margin: 0 auto;
@@ -135,7 +135,7 @@ a.byline:hover {
 .contact_us_link {
     width: 40px;
     height: 132px;
-    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=Contact-Us-Side-Tab&v=201510021536);
+    background-image: url(/cms_backoffice/assets/201510021536/Contact-Us-Side-Tab);
     background-position: 0 0;
     position: absolute
 }
@@ -148,13 +148,13 @@ a.byline:hover {
 /* CTA's */
 
 .cta-wrapper-small-line {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=stripes&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/stripes);
     height: 5px;
     width: 100%;
     margin: 20px 0 10px
 }
 .cta-wrapper {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=stripes&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/stripes);
     height: 110px;
     width: 100%
 }
@@ -168,7 +168,7 @@ a.byline:hover {
     margin-right: 35px
 }
 .cta-wrapper a {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/cta-buttons) no-repeat;
     background-position: -191px -1px;
     width: 326px;
     height: 51px;
@@ -193,7 +193,7 @@ a.byline:hover {
     margin-top: 20px
 }
 #cta-wrapper-home .cta-button {} #cta-wrapper-home .cta-button a.learn-more, #cta-wrapper-home .cta-button a:link.learn-more {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/cta-buttons) no-repeat;
     background-position: -1px -1px;
     width: 181px;
     height: 57px;
@@ -208,7 +208,7 @@ a.byline:hover {
     background-position: -1px -121px
 }
 #cta-wrapper-home .cta-button a.learn-more-red, #cta-wrapper-home .cta-button a:link.learn-more-red {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/cta-buttons) no-repeat;
     background-position: -2326px -1px;
     width: 181px;
     height: 57px;
@@ -223,7 +223,7 @@ a.byline:hover {
     background-position: -2326px -121px
 }
 .cta-download-page-contact-us a {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/cta-buttons) no-repeat;
     background-position: -1266px -1px;
     width: 308px;
     height: 41px;
@@ -243,7 +243,7 @@ a.byline:hover {
     background-position: -1266px -121px
 }
 .cta-download-community-edition a {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/cta-buttons) no-repeat;
     background-position: -1581px -1px;
     width: 308px;
     height: 41px;
@@ -267,7 +267,7 @@ a.byline:hover {
     height: 41px
 }
 .cta-registernow-blue a {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/cta-buttons) no-repeat;
     background-position: -3587px -1px;
     width: 166px;
     height: 37px;
@@ -290,7 +290,7 @@ a.byline:hover {
     text-align: center
 }
 .cta-small-blue-no-txt a {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/cta-buttons) no-repeat;
     background-position: -2674px 0;
     width: 151px;
     height: 36px;
@@ -311,7 +311,7 @@ a.byline:hover {
     color: #FFF!important
 }
 .cta-learnmore-blue a {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/cta-buttons) no-repeat;
     background-position: -2836px 0;
     width: 154px;
     height: 37px;
@@ -329,7 +329,7 @@ a.byline:hover {
     background-position: -2836px -120px
 }
 .cta-readmore-blue a {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/cta-buttons) no-repeat;
     background-position: -3005px 0;
     width: 154px;
     height: 37px;
@@ -347,7 +347,7 @@ a.byline:hover {
     background-position: -3005px -120px
 }
 .cta-downloadhere-blue a {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/cta-buttons) no-repeat;
     background-position: -3174px 0;
     width: 184px;
     height: 37px;
@@ -445,19 +445,19 @@ a.byline:hover {
     min-height: 260px
 }
 .quote-1 {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=headshot-1&v=201510021536), url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-bubble&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/headshot-1), url(/cms_backoffice/assets/201510021536/quote-bubble);
     background-position: -90px 130px, center top;
     background-repeat: no-repeat, no-repeat;
     height: 310px
 }
 .quote-2 {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=headshot-2&v=201510021536), url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-bubble&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/headshot-2), url(/cms_backoffice/assets/201510021536/quote-bubble);
     background-position: -35px 130px, center top;
     background-repeat: no-repeat, no-repeat;
     height: 310px
 }
 .quote-3 {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=headshot-3&v=201510021536), url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-bubble&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/headshot-3), url(/cms_backoffice/assets/201510021536/quote-bubble);
     background-position: -25px 130px, center top;
     background-repeat: no-repeat, no-repeat;
     height: 310px
@@ -484,7 +484,7 @@ a.byline:hover {
     position: relative
 }
 .home-mid-section {
-    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-lightgrey-d9d9d9&v=201510021536);
+    background-image: url(/cms_backoffice/assets/201510021536/bg-lightgrey-d9d9d9);
     background-repeat: repeat-y;
     background-position: top center;
     background-color: #c9c9c9;
@@ -492,7 +492,7 @@ a.byline:hover {
     padding-top: 40px
 }
 .home-bot-section {
-    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-grey-909090&v=201510021536);
+    background-image: url(/cms_backoffice/assets/201510021536/bg-grey-909090);
     background-repeat: repeat-y;
     background-position: top center;
     background-color: #909090;
@@ -580,7 +580,7 @@ a.tooltip-link {
     vertical-align: top
 }
 #powerTip.n:before, #powerTip.e:before, #powerTip.s:before, #powerTip.w:before, #powerTip.ne:before, #powerTip.nw:before, #powerTip.se:before, #powerTip.sw:before {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/icons) no-repeat;
     display: inline-block;
     content: "";
     position: absolute
@@ -1119,7 +1119,7 @@ a.tooltip-link {
     min-width: 980px
 }
 .header-hero-wrapper.home {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-top-home&v=201510021536) bottom no-repeat #E4E4E4;
+    background: url(/cms_backoffice/assets/201510021536/bg-top-home) bottom no-repeat #E4E4E4;
     height: 420px;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
@@ -1127,19 +1127,19 @@ a.tooltip-link {
     filter: none
 }
 .header-hero-wrapper.home-rev {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=homepage-top-header-bg&v=201510021536) #706E6F center no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/homepage-top-header-bg) #706E6F center no-repeat;
     height: 510px;
     position: relative;
 }
 .hero-home-back {
-    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=slide1&v=201510021536);
+    background-image: url(/cms_backoffice/assets/201510021536/slide1);
     background-repeat: no-repeat;
     background-position: bottom;
     height: 310px;
     padding-top: 30px
 }
 .call-out-hero-home {} .header-hero-wrapper.product {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-diagram&v=201510021536) repeat-x;
+    background: url(/cms_backoffice/assets/201510021536/bg-diagram) repeat-x;
     height: 500px
 }
 .header-hero-wrapper.download {
@@ -1151,7 +1151,7 @@ a.tooltip-link {
     filter: none
 }
 .header-hero-wrapper.case-studies {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=customers-top-bg&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/customers-top-bg);
     background-repeat: repeat-x;
     background-position: center;
     height: 330px;
@@ -1173,7 +1173,7 @@ a.tooltip-link {
 }
 .header-hero-wrapper.case-studies-category.page-company {
     height: 155px;
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201510021536) top center;
+    background: url(/cms_backoffice/assets/201510021536/bg-about-us) top center;
 }
 .header-hero-wrapper.case-studies-detail {
     height: 390px
@@ -1203,7 +1203,7 @@ body.landing-no-top {
     background-repeat: repeat-x
 }
 body.landing-slim form#WebForm1 {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=light-grey-bg-mobile&v=201510021536)
+    background: url(/cms_backoffice/assets/201510021536/light-grey-bg-mobile)
 }
 .header-hero-wrapper.landing-no-top {
     padding-top: 10px;
@@ -1217,7 +1217,7 @@ body.landing-slim form#WebForm1 {
     filter: none
 }
 .header-hero-wrapper.hero-krug {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=Steve-Krug_LPbanner&v=201510021536) center;
+    background: url(/cms_backoffice/assets/201510021536/Steve-Krug_LPbanner) center;
     background-repeat: no-repeat;
     background-color: #69c;
     height: 390px;
@@ -1225,7 +1225,7 @@ body.landing-slim form#WebForm1 {
     filter: none
 }
 .header-hero-wrapper.hero-ux-it-uk {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=ux-it-bg-uk&v=201510021536) center bottom;
+    background: url(/cms_backoffice/assets/201510021536/ux-it-bg-uk) center bottom;
     background-repeat: no-repeat;
     background-color: #dedfe1;
     height: 260px;
@@ -1238,7 +1238,7 @@ body.landing-slim form#WebForm1 {
     filter: none
 }
 .header-hero-wrapper.page-without-hero.page-company {
-    /*    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201510021536) top center;
+    /*    background: url(/cms_backoffice/assets/201510021536/bg-about-us) top center;
     padding-bottom: 0px;
     margin-bottom: 0px;
     height: 131px;*/
@@ -1249,7 +1249,7 @@ body.landing-slim form#WebForm1 {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201510021536) top center;
+    background: url(/cms_backoffice/assets/201510021536/bg-about-us) top center;
     background-repeat: repeat-x
 }
 .header-hero-wrapper.page-with-sections {
@@ -1260,7 +1260,7 @@ body.landing-slim form#WebForm1 {
     box-shadow: none
 }
 .header-hero-wrapper.customers-hero {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=top-prov&v=201510021536) center;
+    background: url(/cms_backoffice/assets/201510021536/top-prov) center;
     background-repeat: no-repeat;
     background-color: #DCDDDE;
     height: 387px;
@@ -1275,11 +1275,11 @@ body.landing-slim form#WebForm1 {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201510021536) top center;
+    background: url(/cms_backoffice/assets/201510021536/bg-about-us) top center;
     background-repeat: repeat-x;
 }
 .customers-sublevel-menu .hero-placeholder {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=top-prov&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/top-prov);
     background-position: bottom center;
     background-repeat: no-repeat;
     background-color: #DCDDDE;
@@ -1295,7 +1295,7 @@ body.landing-slim form#WebForm1 {
     padding-top: 30px
 }
 .page-header {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-diagram&v=201510021536) repeat-x;
+    background: url(/cms_backoffice/assets/201510021536/bg-diagram) repeat-x;
     -moz-box-shadow: 0 3px 3px #ebebeb;
     -webkit-box-shadow: 0 3px 3px #ebebeb;
     box-shadow: 0 3px 3px #ebebeb;
@@ -1366,7 +1366,7 @@ body.landing-slim form#WebForm1 {
     margin-top: 50px
 }
 .hero-details-video-holder {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-screen&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/home-screen);
     background-position: top center;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0);
@@ -1395,7 +1395,7 @@ body.landing-slim form#WebForm1 {
 }
 .sticky-mist {
     height: 100px;
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=white-gradient&v=201510021536) repeat-x;
+    background: url(/cms_backoffice/assets/201510021536/white-gradient) repeat-x;
     background-color: rgba(0, 0, 0, 0);
     position: fixed;
     top: 0;
@@ -1434,7 +1434,7 @@ body.landing-slim form#WebForm1 {
     left: -10px
 }
 #sticky a {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-blue&v=201510021536) repeat-x;
+    background: url(/cms_backoffice/assets/201510021536/gradient-blue) repeat-x;
     background-color: #69C;
     font-family: 'myriad-pro', Arial, sans-serif;
     font-size: 18px;
@@ -1467,7 +1467,7 @@ body.landing-slim form#WebForm1 {
     display: none
 }
 #sticky a.arrow > .scrollup-arrow {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/icons) no-repeat;
     background-position: -20px 3px;
     width: 11px;
     height: 20px;
@@ -1494,7 +1494,7 @@ body.landing-slim form#WebForm1 {
     text-shadow: none
 }
 #sticky a.arrow:hover > .scrollup-arrow {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/icons) no-repeat;
     background-position: -20px -17px;
     width: 11px;
     height: 20px;
@@ -1503,7 +1503,7 @@ body.landing-slim form#WebForm1 {
     margin-left: 10px
 }
 #sticky a:hover, #sticky a:active {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-navy&v=201510021536) repeat-x;
+    background: url(/cms_backoffice/assets/201510021536/gradient-navy) repeat-x;
     background-color: #4673A7;
     color: #fff
 }
@@ -1527,12 +1527,12 @@ body.landing-slim form#WebForm1 {
     border-radius: 0 0 7px
 }
 #sticky.development .development, #sticky.change-management .change-management, #sticky.operations .operations, #sticky.integrations .integrations {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-red&v=201510021536) repeat-x;
+    background: url(/cms_backoffice/assets/201510021536/gradient-red) repeat-x;
     background-color: #C20;
     color: #fff
 }
 #sticky .development i {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/icons) no-repeat;
     background-position: -1px -91px;
     width: 21px;
     height: 20px
@@ -1543,7 +1543,7 @@ body.landing-slim form#WebForm1 {
     height: 20px
 }
 #sticky .change-management i {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/icons) no-repeat;
     background-position: -1px -181px;
     width: 25px;
     height: 21px
@@ -1554,7 +1554,7 @@ body.landing-slim form#WebForm1 {
     height: 21px
 }
 #sticky .operations i {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/icons) no-repeat;
     background-position: -1px -361px;
     width: 20px;
     height: 20px
@@ -1565,7 +1565,7 @@ body.landing-slim form#WebForm1 {
     height: 20px
 }
 #sticky .integrations i {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/icons) no-repeat;
     background-position: -1px -270px;
     width: 34px;
     height: 21px
@@ -1600,7 +1600,7 @@ body.landing-slim form#WebForm1 {
     margin-bottom: 25px
 }
 .hero-details-video-overlay {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-play-gray&v=201510021536) no-repeat scroll -16px -70px transparent;
+    background: url(/cms_backoffice/assets/201510021536/home-play-gray) no-repeat scroll -16px -70px transparent;
     height: 190px;
     margin-left: 0;
     width: 372px
@@ -1609,7 +1609,7 @@ body.landing-slim form#WebForm1 {
     background-position: -16px -70px
 }
 .hero-details-video-holder {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=home-app-examples&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/home-app-examples);
     margin-top: 23px;
     height: 243px;
     width: 476px
@@ -1630,7 +1630,7 @@ body.landing-slim form#WebForm1 {
 
 .arch-instructions {
     position: relative;
-    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=scroll-to-explore&v=201510021536);
+    background-image: url(/cms_backoffice/assets/201510021536/scroll-to-explore);
     background-attachment: fixed;
     background-position: 74% 801px;
     background-repeat: no-repeat;
@@ -1656,16 +1656,16 @@ body.landing-slim form#WebForm1 {
     background: none;
 }
 .arch-instructions .parallax1.overview {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=platform-server-main&v=201510021536');
+    background-image: url('/cms_backoffice/assets/201510021536/platform-server-main');
 }
 .arch-instructions .parallax1.net {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=platform-server-net&v=201510021536');
+    background-image: url('/cms_backoffice/assets/201510021536/platform-server-net');
 }
 .arch-instructions .parallax1.weblogic {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=platform-server-weblogic&v=201510021536');
+    background-image: url('/cms_backoffice/assets/201510021536/platform-server-weblogic');
 }
 .arch-instructions .parallax1.jboss {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=platform-server-jboss&v=201510021536');
+    background-image: url('/cms_backoffice/assets/201510021536/platform-server-jboss');
 }
 .arch-instructions .parallax1.overview .service-studio {
     display: none;
@@ -1682,16 +1682,16 @@ body.landing-slim form#WebForm1 {
     display: block;
 }
 .arch-instructions .parallax2 {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-studio1&v=201510021536');
+    background-image: url('/cms_backoffice/assets/201510021536/service-studio1');
 }
 .arch-instructions .parallax3.overview {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=integration-studio2&v=201510021536');
+    background-image: url('/cms_backoffice/assets/201510021536/integration-studio2');
 }
 .arch-instructions .parallax3.net {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=integration-studio-net1&v=201510021536');
+    background-image: url('/cms_backoffice/assets/201510021536/integration-studio-net1');
 }
 .arch-instructions .parallax3.java {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=integration-studio-java1&v=201510021536');
+    background-image: url('/cms_backoffice/assets/201510021536/integration-studio-java1');
 }
 .arch-instructions .parallax3 .option-overview, .arch-instructions .parallax3 .option-net, .arch-instructions .parallax3 .option-java {
     display: none;
@@ -1700,13 +1700,13 @@ body.landing-slim form#WebForm1 {
     display: block;
 }
 .arch-instructions .parallax4.overview {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-all2&v=201510021536');
+    background-image: url('/cms_backoffice/assets/201510021536/service-center-all2');
 }
 .arch-instructions .parallax4.configuration-management {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-configuration1&v=201510021536');
+    background-image: url('/cms_backoffice/assets/201510021536/service-center-configuration1');
 }
 .arch-instructions .parallax4.performance-monitoring {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-monitoring1&v=201510021536');
+    background-image: url('/cms_backoffice/assets/201510021536/service-center-monitoring1');
 }
 .arch-instructions .parallax4 .option-overview, .arch-instructions .parallax4 .option-configuration-management, .arch-instructions .parallax4 .option-performance-monitoring {
     display: none;
@@ -1715,13 +1715,13 @@ body.landing-slim form#WebForm1 {
     display: block;
 }
 .arch-instructions .parallax5.overview {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lifetime-cloud-portal1&v=201510021536');
+    background-image: url('/cms_backoffice/assets/201510021536/lifetime-cloud-portal1');
 }
 .arch-instructions .parallax5.application-staging {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lifetime-deploy-cloud1&v=201510021536');
+    background-image: url('/cms_backoffice/assets/201510021536/lifetime-deploy-cloud1');
 }
 .arch-instructions .parallax5.hybrid-configuration {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=lifetime-deploy-cloud-premises1&v=201510021536');
+    background-image: url('/cms_backoffice/assets/201510021536/lifetime-deploy-cloud-premises1');
 }
 .arch-instructions .parallax5 .option-overview, .arch-instructions .parallax5 .option-application-staging, .arch-instructions .parallax5 .option-hybrid-configuration {
     display: none;
@@ -1734,12 +1734,12 @@ body.landing-slim form#WebForm1 {
     box-shadow: 0 -8px 8px rgba(0, 0, 0, 0.2);
 }
 .how-first-section {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-lightgrey-d9d9d9&v=201510021536) top center repeat-y #c9c9c9;
+    background: url(/cms_backoffice/assets/201510021536/bg-lightgrey-d9d9d9) top center repeat-y #c9c9c9;
     border-top: 0;
     margin-top: -40px;
 }
 .how-bg-gray-dark {
-    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-grey-909090&v=201510021536);
+    background-image: url(/cms_backoffice/assets/201510021536/bg-grey-909090);
     background-repeat: repeat-y;
     background-position: top center;
     background-color: #909090;
@@ -1760,7 +1760,7 @@ body.landing-slim form#WebForm1 {
     margin-left: auto
 }
 .how-bg-gray-light {
-    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-lightgrey-d9d9d9&v=201510021536);
+    background-image: url(/cms_backoffice/assets/201510021536/bg-lightgrey-d9d9d9);
     background-repeat: repeat-y;
     background-position: top center;
     background-color: #c9c9c9;
@@ -1786,7 +1786,7 @@ body.landing-slim form#WebForm1 {
     height: 450px
 }
 .cta-wrapper-how {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=stripes&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/stripes);
     height: 80px;
     width: 100%;
     border-top: 1px solid #909090;
@@ -1802,7 +1802,7 @@ body.landing-slim form#WebForm1 {
     margin-right: 35px
 }
 .cta-wrapper-how a {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/cta-buttons) no-repeat;
     background-position: -4844px 0;
     width: 134px;
     height: 37px;
@@ -1830,7 +1830,7 @@ body.landing-slim form#WebForm1 {
     z-index: 0
 }
 .how-circle-user-interface {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-interface&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/circle-interface);
     background-position: 6px 190px;
     height: 110px;
     width: 115px;
@@ -1839,7 +1839,7 @@ body.landing-slim form#WebForm1 {
     left: 195px
 }
 .how-circle-logic {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-logic&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/circle-logic);
     background-position: 6px 190px;
     height: 110px;
     width: 115px;
@@ -1849,7 +1849,7 @@ body.landing-slim form#WebForm1 {
     top: 30px
 }
 .how-circle-processes {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-Processes&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/circle-Processes);
     background-position: 6px 190px;
     height: 110px;
     width: 115px;
@@ -1859,7 +1859,7 @@ body.landing-slim form#WebForm1 {
     left: 420px
 }
 .how-circle-data-model {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-data&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/circle-data);
     background-position: 6px 190px;
     height: 110px;
     width: 115px;
@@ -1875,7 +1875,7 @@ body.landing-slim form#WebForm1 {
     z-index: 0
 }
 .how-circle-java {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-java&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/circle-java);
     height: 110px;
     width: 115px;
     position: absolute;
@@ -1885,7 +1885,7 @@ body.landing-slim form#WebForm1 {
     top: 20px
 }
 .how-circle-csharp {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=circle-csharp&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/circle-csharp);
     height: 110px;
     width: 115px;
     position: absolute;
@@ -1897,7 +1897,7 @@ body.landing-slim form#WebForm1 {
 /* product tour */
 
 [class^="icon-"] {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/icons) no-repeat;
     display: inline-block
 }
 .icon-webinar-big {
@@ -2045,7 +2045,7 @@ body.landing-slim form#WebForm1 {
     margin-top: 1px
 }
 .icon-platform-video {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/icons) no-repeat;
     margin-right: 10px;
     width: 32px;
     height: 22px;
@@ -2198,7 +2198,7 @@ body.landing-slim form#WebForm1 {
     background-position: -29px -1136px
 }
 .product-media-thumb {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=shadow-short&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/shadow-short) no-repeat;
     background-position: 0 100%;
     height: 120px
 }
@@ -2212,7 +2212,7 @@ body.landing-slim form#WebForm1 {
     display: block
 }
 .canvas-hot-spot {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=plus&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/plus) no-repeat;
     width: 40px;
     height: 40px;
     position: absolute
@@ -2227,7 +2227,7 @@ body.landing-slim form#WebForm1 {
 /*base homepage*/
 
 .canvas .base.platform {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=diagram-platform&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/diagram-platform) no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2237,7 +2237,7 @@ body.landing-slim form#WebForm1 {
 /*base service-studio*/
 
 .canvas .base.ss.all {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-studio&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/service-studio) no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2245,7 +2245,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0
 }
 .canvas .base.ss.net {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-studio-net&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/service-studio-net) no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2253,7 +2253,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0
 }
 .canvas .base.ss.weblogic {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-studio-weblogic&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/service-studio-weblogic) no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2261,7 +2261,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0
 }
 .canvas .base.ss.java {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-studio-jboss&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/service-studio-jboss) no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2271,7 +2271,7 @@ body.landing-slim form#WebForm1 {
 /*base service-center*/
 
 .canvas .base.sc.all {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-all&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/service-center-all) no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2279,7 +2279,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0
 }
 .canvas .base.sc.configuration {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-configuration&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/service-center-configuration) no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2287,7 +2287,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0
 }
 .canvas .base.sc.monitoring {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-monitoring&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/service-center-monitoring) no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2295,7 +2295,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0
 }
 .canvas .base.sc.farm {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-web-farm&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/service-center-web-farm) no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2303,7 +2303,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0
 }
 .canvas .base.sc.cloud {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=service-center-cloud-farm&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/service-center-cloud-farm) no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2313,7 +2313,7 @@ body.landing-slim form#WebForm1 {
 /*base lifetime*/
 
 .canvas .base.lt {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=lifetime&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/lifetime) no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2321,7 +2321,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0
 }
 .canvas .base.lt.staging {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=lifetime-deploy-cloud&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/lifetime-deploy-cloud) no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2329,7 +2329,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0
 }
 .canvas .base.lt.hybrid {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=lifetime-deploy-cloud-premises&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/lifetime-deploy-cloud-premises) no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2339,7 +2339,7 @@ body.landing-slim form#WebForm1 {
 /*base integration-studio*/
 
 .canvas .base.is.all {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=integration-studio1&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/integration-studio1) no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2347,7 +2347,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0
 }
 .canvas .base.is.net {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=integration-studio-net&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/integration-studio-net) no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2355,7 +2355,7 @@ body.landing-slim form#WebForm1 {
     bottom: 0
 }
 .canvas .base.is.java {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=integration-studio-java&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/integration-studio-java) no-repeat;
     width: 561px;
     height: 452px;
     position: absolute;
@@ -2365,7 +2365,7 @@ body.landing-slim form#WebForm1 {
 /* service-studio */
 
 .canvas .service-studio, .canvas .service-studio.active:hover {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-service-studio&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/tool-service-studio) no-repeat;
     background-position: 0 0;
     width: 122px;
     height: 150px;
@@ -2375,13 +2375,13 @@ body.landing-slim form#WebForm1 {
     z-index: 90
 }
 .canvas .service-studio.inactive {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-service-studio&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/tool-service-studio) no-repeat;
     background-position: 0 -325px;
     width: 122px;
     height: 144px
 }
 .canvas .service-studio:hover, .canvas .service-studio.inactive:hover {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-service-studio&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/tool-service-studio) no-repeat;
     background-position: 0 -161px;
     width: 122px;
     height: 149px
@@ -2389,7 +2389,7 @@ body.landing-slim form#WebForm1 {
 /* service center */
 
 .canvas .service-center, .canvas .service-center.active:hover {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-service-center&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/tool-service-center) no-repeat;
     background-position: 0 0;
     width: 122px;
     height: 130px;
@@ -2399,13 +2399,13 @@ body.landing-slim form#WebForm1 {
     z-index: 90
 }
 .canvas .service-center.inactive {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-service-center&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/tool-service-center) no-repeat;
     background-position: 0 -319px;
     width: 122px;
     height: 130px
 }
 .canvas .service-center:hover, .canvas .service-center.inactive:hover {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-service-center&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/tool-service-center) no-repeat;
     background-position: 0 -160px;
     width: 122px;
     height: 130px
@@ -2413,7 +2413,7 @@ body.landing-slim form#WebForm1 {
 /* lifetime */
 
 .canvas .lifetime, .canvas .lifetime.active:hover {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-lifetime&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/tool-lifetime) no-repeat;
     background-position: 0 0;
     width: 122px;
     height: 130px;
@@ -2423,13 +2423,13 @@ body.landing-slim form#WebForm1 {
     z-index: 90
 }
 .canvas .lifetime.inactive {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-lifetime&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/tool-lifetime) no-repeat;
     background-position: 0 -319px;
     width: 122px;
     height: 130px
 }
 .canvas .lifetime:hover, .canvas .lifetime.inactive:hover {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-lifetime&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/tool-lifetime) no-repeat;
     background-position: 0 -160px;
     width: 122px;
     height: 130px
@@ -2437,7 +2437,7 @@ body.landing-slim form#WebForm1 {
 /* Integration Studio */
 
 .canvas .integration-studio {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/tool-integration-studio) no-repeat;
     background-position: 0 -480px;
     width: 122px;
     height: 140px;
@@ -2447,7 +2447,7 @@ body.landing-slim form#WebForm1 {
     z-index: 90
 }
 .canvas .integration-studio:hover {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/tool-integration-studio) no-repeat;
     background-position: 0 -634px;
     width: 122px;
     height: 150px;
@@ -2461,7 +2461,7 @@ body.landing-slim form#WebForm1 {
     right: 0
 }
 .canvas .integration-studio.on-overview {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/tool-integration-studio) no-repeat;
     background-position: 0 -3px;
     width: 122px;
     height: 145px;
@@ -2471,21 +2471,21 @@ body.landing-slim form#WebForm1 {
     z-index: 90
 }
 .canvas .integration-studio.inactive {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/tool-integration-studio) no-repeat;
     background-position: 0 -323px;
     width: 122px;
     height: 145px;
     top: -5px
 }
 .canvas .integration-studio.inactive:hover, .canvas .integration-studio.on-overview:hover {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/tool-integration-studio) no-repeat;
     background-position: 0 -164px;
     width: 122px;
     height: 145px;
     top: -5px
 }
 .canvas .integration-studio.net {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/tool-integration-studio) no-repeat;
     background-position: 0 -797px;
     width: 122px;
     height: 145px;
@@ -2495,7 +2495,7 @@ body.landing-slim form#WebForm1 {
     z-index: 90
 }
 .canvas .integration-studio.net:hover {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/tool-integration-studio) no-repeat;
     background-position: 0 -953px;
     width: 122px;
     height: 145px;
@@ -2505,7 +2505,7 @@ body.landing-slim form#WebForm1 {
     z-index: 90
 }
 .canvas .integration-studio.java {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/tool-integration-studio) no-repeat;
     background-position: 0 -1118px;
     width: 122px;
     height: 145px;
@@ -2515,7 +2515,7 @@ body.landing-slim form#WebForm1 {
     z-index: 90
 }
 .canvas .integration-studio.java:hover {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=tool-integration-studio&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/tool-integration-studio) no-repeat;
     background-position: 0 -1276px;
     width: 122px;
     height: 145px;
@@ -2525,7 +2525,7 @@ body.landing-slim form#WebForm1 {
     z-index: 90
 }
 .canvas .diagram-hint {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=hint&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/hint) no-repeat;
     background-position: 0 0;
     width: 115px;
     height: 115px;
@@ -2555,7 +2555,7 @@ body.landing-slim form#WebForm1 {
     text-decoration: none
 }
 .platform-cta-video a:hover > .icon-platform-video {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/icons) no-repeat;
     background-position: -44px -1591px;
     width: 32px;
     height: 23px
@@ -3002,7 +3002,7 @@ a.ViewMoreLink {
     float: left
 }
 .overview-details-box {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-box-cs-detail&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/bg-box-cs-detail);
     background-position: 0 -200px;
     background-color: #FFF;
     height: 410px;
@@ -3165,7 +3165,7 @@ a.ViewMoreLink {
     background-color: #F2F2F2
 }
 .download-box-shadow {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=shadow-span5&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/shadow-span5) no-repeat;
     background-position: 0 100%;
     height: 343px
 }
@@ -3178,7 +3178,7 @@ a.ViewMoreLink {
     margin-top: 20px
 }
 #download-box-community a {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-green&v=201510021536) repeat-x;
+    background: url(/cms_backoffice/assets/201510021536/gradient-green) repeat-x;
     background-color: #83BF00;
     font-family: 'myriad-pro', Arial, sans-serif;
     font-size: 16px;
@@ -3192,11 +3192,11 @@ a.ViewMoreLink {
     left: 0
 }
 #download-box-community a:hover {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-darkgreen&v=201510021536) repeat-x;
+    background: url(/cms_backoffice/assets/201510021536/gradient-darkgreen) repeat-x;
     background-color: #83BF00
 }
 #download-box-enterprise a {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-blue&v=201510021536) repeat-x;
+    background: url(/cms_backoffice/assets/201510021536/gradient-blue) repeat-x;
     background-color: #69C;
     font-family: 'myriad-pro', Arial, sans-serif;
     font-size: 16px;
@@ -3210,7 +3210,7 @@ a.ViewMoreLink {
     left: 0
 }
 #download-box-enterprise a:hover {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=gradient-navy&v=201510021536) repeat-x;
+    background: url(/cms_backoffice/assets/201510021536/gradient-navy) repeat-x;
     background-color: #69C
 }
 #download-box-community a:after, #download-box-enterprise a:after {
@@ -3288,7 +3288,7 @@ a.ViewMoreLink {
     padding: 15px 0
 }
 #continue-trial-or-upgrade {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=community-or-upgrade&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/community-or-upgrade);
     background-position: center top;
     background-repeat: no-repeat;
     height: 360px;
@@ -3308,7 +3308,7 @@ a.ViewMoreLink {
     margin-bottom: 10px
 }
 .customers-industry-title {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=industry_arrow&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/industry_arrow);
     background-repeat: no-repeat;
     background-position: center;
     height: 100px;
@@ -3343,7 +3343,7 @@ a.ViewMoreLink {
     border: 1px solid #CB2100
 }
 .customer-matrix-entry.expand > i {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/icons) no-repeat;
     display: inline-block;
     background-position: -51px -280px;
     width: 25px;
@@ -3353,7 +3353,7 @@ a.ViewMoreLink {
     right: 0
 }
 .customer-matrix-entry.collapse > i, .customer-matrix-entry:hover.collapse > i {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/icons) no-repeat;
     display: inline-block;
     background-position: -51px -356px;
     width: 25px;
@@ -3363,7 +3363,7 @@ a.ViewMoreLink {
     right: 0
 }
 .customer-matrix-entry:hover > i {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/icons) no-repeat;
     display: inline-block;
     background-position: -51px -318px;
     width: 25px;
@@ -3373,7 +3373,7 @@ a.ViewMoreLink {
     right: 0
 }
 .customer-matrix-entry img {} .customers-matrix-entry-details {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-line-span6&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/quote-line-span6);
     background-repeat: no-repeat;
     padding-top: 12px;
     margin-top: 10px;
@@ -3390,7 +3390,7 @@ a.ViewMoreLink {
     margin-left: 20px
 }
 .customers-case-study-preview {
-    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=headshot-placeholder&v=201510021536);
+    background-image: url(/cms_backoffice/assets/201510021536/headshot-placeholder);
     background-repeat: no-repeat;
     background-position: bottom left;
     padding: 20px;
@@ -3483,7 +3483,7 @@ ul {
     background-color: #333
 }
 #footer-top-wrapper {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footeg-gradient-top&v=201510021536) repeat-x;
+    background: url(/cms_backoffice/assets/201510021536/footeg-gradient-top) repeat-x;
     background-position: bottom;
     border-bottom: 1px solid #111;
     display: block;
@@ -3496,7 +3496,7 @@ ul {
     color: #ccc
 }
 #footer-mid-wrapper {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-gradient&v=201510021536) repeat-x;
+    background: url(/cms_backoffice/assets/201510021536/footer-gradient) repeat-x;
     background-position: top;
     border-top: 1px solid #333;
     display: block;
@@ -3557,7 +3557,7 @@ ul {
     margin-top: 27px
 }
 #footer-mid a.twitter, #footer-mid a.facebook, #footer-mid a.google, #footer-mid a.linkedin {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/icons) no-repeat;
     width: 21px;
     height: 21px;
     text-indent: -9999px;
@@ -3621,35 +3621,35 @@ ul {
     color: #ABCBEC
 }
 #footer-mid.us {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-us&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/footer-us) no-repeat;
     background-position: right bottom
 }
 #footer-mid.us .contact-us-more a {
     margin-top: 20px
 }
 #footer-mid.pt {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-pt&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/footer-pt) no-repeat;
     background-position: right bottom
 }
 #footer-mid.pt .contact-us-more a {
     margin-top: 40px
 }
 #footer-mid.au {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-au&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/footer-au) no-repeat;
     background-position: right bottom
 }
 #footer-mid.au .contact-us-more a {
     margin-top: 40px
 }
 #footer-mid.br {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-br&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/footer-br) no-repeat;
     background-position: right bottom
 }
 #footer-mid.br .contact-us-more a {
     margin-top: 40px
 }
 #footer-mid.nl {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=footer-nl&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/footer-nl) no-repeat;
     background-position: right bottom
 }
 #footer-mid.nl .contact-us-more a {
@@ -3708,7 +3708,7 @@ ul {
 /** landings **/
 
 .landing-slim-content-wrapper {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=top&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/top);
     background-repeat: no-repeat;
     background-color: transparent;
     background-position: bottom;
@@ -3759,7 +3759,7 @@ ol.circles-list > li {
     margin-bottom: 10px
 }
 .hero-ga-lp {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bigtop&v=201510021536), url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=big-top-repeat&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/bigtop), url(/cms_backoffice/assets/201510021536/big-top-repeat);
     background-position: center;
     background-repeat: no-repeat, repeat-x;
     background-color: rgba(0, 0, 0, 0);
@@ -3768,7 +3768,7 @@ ol.circles-list > li {
     filter: none
 }
 .hero-ga-lp-1 {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=biggesttop&v=201510021536), url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=big-top-repeat&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/biggesttop), url(/cms_backoffice/assets/201510021536/big-top-repeat);
     background-position: center;
     background-repeat: no-repeat, repeat-x;
     background-color: rgba(0, 0, 0, 0);
@@ -3784,14 +3784,14 @@ ol.circles-list > li {
     vertical-align: text-bottom
 }
 .lp-quote-line {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-line&v=201510021536) no-repeat left center;
+    background: url(/cms_backoffice/assets/201510021536/quote-line) no-repeat left center;
     display: block;
     height: 12px;
     margin-top: 10px;
     margin-bottom: 8px
 }
 .lp-vid-placeholder img {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=lp-video&v=201510021536)
+    background: url(/cms_backoffice/assets/201510021536/lp-video)
 }
 .iconlp-fontcolor {
     font-size: 28px;
@@ -4006,7 +4006,7 @@ h1.landing {
     color: #1F5BA4
 }
 ul.checkmarks {
-    list-style: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=check.png&v=201510021536);
+    list-style: url(/cms_backoffice/assets/201510021536/check.png);
     margin-left: 28px
 }
 .page-section td.question {
@@ -4182,7 +4182,7 @@ ul.pxs_slider ul.list li {
     font-size: 20px;
     padding: 15px 15px 15px 50px;
     position: absolute;
-    background: #333 url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=ajax-loader&v=201510021536) no-repeat 10px 50%;
+    background: #333 url(/cms_backoffice/assets/201510021536/ajax-loader) no-repeat 10px 50%;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
     border-radius: 15px;
@@ -4221,7 +4221,7 @@ ul.pxs_thumbnails li.selected a.bullet:hover {
     cursor: default;
 }
 .play-video-overview {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video&v=201510021536) no-repeat -1px -1px;
+    background: url(/cms_backoffice/assets/201510021536/cta-video) no-repeat -1px -1px;
     background-color: rgba(0, 0, 0, 0);
     width: 271px;
     height: 46px;
@@ -4231,7 +4231,7 @@ ul.pxs_thumbnails li.selected a.bullet:hover {
     font-size: 0
 }
 .play-video-overview:hover {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video&v=201510021536) no-repeat -1px -50px;
+    background: url(/cms_backoffice/assets/201510021536/cta-video) no-repeat -1px -50px;
     width: 271px;
     height: 46px;
     background-color: rgba(0, 0, 0, 0);
@@ -4243,7 +4243,7 @@ ul.pxs_thumbnails li.selected a.bullet:hover {
 /**BR**/
 
 .play-video-overview-br {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video_BR&v=201510021536) no-repeat -32px -1px;
+    background: url(/cms_backoffice/assets/201510021536/cta-video_BR) no-repeat -32px -1px;
     width: 210px;
     height: 45px;
     background-color: rgba(0, 0, 0, 0);
@@ -4253,7 +4253,7 @@ ul.pxs_thumbnails li.selected a.bullet:hover {
     font-size: 0
 }
 .play-video-overview-br:hover {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video_BR&v=201510021536) no-repeat -32px -50px;
+    background: url(/cms_backoffice/assets/201510021536/cta-video_BR) no-repeat -32px -50px;
     width: 210px;
     height: 45px;
     background-color: rgba(0, 0, 0, 0);
@@ -4265,7 +4265,7 @@ ul.pxs_thumbnails li.selected a.bullet:hover {
 /**NL**/
 
 .play-video-overview-nl {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video_NL&v=201510021536) no-repeat -22px -1px;
+    background: url(/cms_backoffice/assets/201510021536/cta-video_NL) no-repeat -22px -1px;
     width: 230px;
     height: 45px;
     background-color: rgba(0, 0, 0, 0);
@@ -4275,7 +4275,7 @@ ul.pxs_thumbnails li.selected a.bullet:hover {
     font-size: 0
 }
 .play-video-overview-nl:hover {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video_NL&v=201510021536) no-repeat -22px -50px;
+    background: url(/cms_backoffice/assets/201510021536/cta-video_NL) no-repeat -22px -50px;
     width: 230px;
     height: 45px;
     background-color: rgba(0, 0, 0, 0);
@@ -4285,7 +4285,7 @@ ul.pxs_thumbnails li.selected a.bullet:hover {
     font-size: 0
 }
 .play-video-overview-product {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video&v=201510021536) no-repeat -280px -1px;
+    background: url(/cms_backoffice/assets/201510021536/cta-video) no-repeat -280px -1px;
     background-color: rgba(0, 0, 0, 0);
     width: 271px;
     height: 46px;
@@ -4296,7 +4296,7 @@ ul.pxs_thumbnails li.selected a.bullet:hover {
     margin-bottom: 5px
 }
 .play-video-overview-product:hover {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-video&v=201510021536) no-repeat -280px -50px;
+    background: url(/cms_backoffice/assets/201510021536/cta-video) no-repeat -280px -50px;
     background-color: rgba(0, 0, 0, 0);
     width: 271px;
     height: 46px;
@@ -4340,7 +4340,7 @@ h4 a.press-list-link:hover {
     width: 84px
 }
 .press-list-content-highlight {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-line-span6&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/quote-line-span6);
     background-repeat: no-repeat;
     padding-top: 12px;
     margin-top: 10px;
@@ -4367,7 +4367,7 @@ h4 a.press-list-link:hover {
     margin-top: 20px
 }
 .main-quote-background:after {
-    content: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=news-FICO-page3&v=201510021536');
+    content: url('/cms_backoffice/assets/201510021536/news-FICO-page3');
     position: relative;
     z-index: 999!important;
     left: -35px;
@@ -4381,7 +4381,7 @@ h4 a.press-list-link:hover {
     padding-bottom: 0
 }
 .sidebar-quote-background:after {
-    content: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=news-FICO-page4&v=201510021536');
+    content: url('/cms_backoffice/assets/201510021536/news-FICO-page4');
     position: relative;
     z-index: 999!important;
     left: 0;
@@ -4390,7 +4390,7 @@ h4 a.press-list-link:hover {
 /* mobile */
 
 ul.mobile-bullets {
-    list-style: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=201510021536)
+    list-style: url(/cms_backoffice/assets/201510021536/bullet-blue)
 }
 .more-resources-back {
     background-color: #E6E6E6;
@@ -4442,7 +4442,7 @@ ul.mobile-bullets {
     margin-bottom: 30px
 }
 .col-back {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=careers-fundo_coluna&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/careers-fundo_coluna);
     background-repeat: repeat-y;
     background-color: rgba(0, 0, 0, 0);
     height: 390px;
@@ -4453,7 +4453,7 @@ ul.mobile-bullets {
 /** mangment **/
 
 .management-box {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=Mteam-fundo-coluna&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/Mteam-fundo-coluna);
     background-repeat: repeat-x;
     background-position: top;
     background-color: rgba(0, 0, 0, 0);
@@ -4745,19 +4745,19 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     height: 100px
 }
 .book-ux-it-uk {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=ux-kit-icons&v=201510021536) no-repeat -4px -4px;
+    background: url(/cms_backoffice/assets/201510021536/ux-kit-icons) no-repeat -4px -4px;
     width: 35px;
     height: 31px;
     display: block
 }
 .doc-ux-it-uk {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=ux-kit-icons&v=201510021536) no-repeat -9px -50px;
+    background: url(/cms_backoffice/assets/201510021536/ux-kit-icons) no-repeat -9px -50px;
     width: 25px;
     height: 31px;
     display: block
 }
 .check-ux-it-uk {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=ux-kit-icons&v=201510021536) no-repeat -8px -91px;
+    background: url(/cms_backoffice/assets/201510021536/ux-kit-icons) no-repeat -8px -91px;
     width: 26px;
     height: 26px;
     display: block
@@ -4779,7 +4779,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
 /** try section **/
 
 .try-main-content {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cloud-portal-img&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/cloud-portal-img);
     background-repeat: no-repeat;
     background-position: right 45px;
     min-height: 340px;
@@ -4803,7 +4803,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     background-position: right 100px
 }
 .try-box:after {
-    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=shadow_span6.png);
+    background-image: url(/cms_backoffice/assets/201510021536/shadow_span6.png);
     background-repeat: no-repeat;
     background-position: center bottom;
     display: block;
@@ -4841,7 +4841,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     margin-bottom: 50px
 }
 .try-list {
-    list-style: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bullet-blue&v=201510021536);
+    list-style: url(/cms_backoffice/assets/201510021536/bullet-blue);
     font-size: 14px
 }
 .try-list li {
@@ -4849,7 +4849,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     margin-bottom: 10px
 }
 .try-setup-content {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=slide1&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/slide1);
     background-repeat: no-repeat;
     background-position: right 80%;
     min-height: 340px
@@ -4857,7 +4857,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
 /**  innovation **/
 
 .innovation-top {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=award-top2-repeat&v=201510021536), url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=award-top2&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/award-top2-repeat), url(/cms_backoffice/assets/201510021536/award-top2);
     background-repeat: no-repeat, no-repeat;
     background-position: center top, center top;
     background-color: #f4f4f4;
@@ -4865,7 +4865,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     margin-top: -45px
 }
 .innovation-apply {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-apply&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/bg-apply);
     background-color: #000;
     background-position: center top;
     height: 165px;
@@ -4879,7 +4879,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     margin-top: 15px
 }
 .innovation-cta-btn {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/cta-buttons) no-repeat;
     background-position: -3386px -1px;
     width: 191px;
     height: 51px;
@@ -4891,19 +4891,19 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     line-height: 0
 }
 .innovation-cta-btn:hover {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/cta-buttons) no-repeat;
     background-position: -3386px -61px;
     width: 191px;
     height: 51px
 }
 .innovation-cta-btn:active {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=cta-buttons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/cta-buttons) no-repeat;
     background-position: -3386px -121px;
     width: 191px;
     height: 51px
 }
 .innovation-case-study-preview {
-    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=christopher_playright320x210&v=201510021536);
+    background-image: url(/cms_backoffice/assets/201510021536/christopher_playright320x210);
     background-repeat: no-repeat;
     background-position: 90% 100%;
     border: 10px solid #e6e6e6;
@@ -4912,7 +4912,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     position: relative
 }
  .innovation-case-study-preview:after {
-    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=card-shadow&v=201510021536);
+    background-image: url(/cms_backoffice/assets/201510021536/card-shadow);
     background-repeat: no-repeat;
     background-position: center bottom;
     display: block;
@@ -4929,7 +4929,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
   background-image: none;
 }
 .span6.inovation-Card {
-  background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=card-shadow&v=201510021536);
+  background-image: url(/cms_backoffice/assets/201510021536/card-shadow);
   background-repeat: no-repeat;
   background-position: center bottom;
   padding-bottom: 25px;
@@ -4970,7 +4970,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     position: relative
 }
 .innovation-case-study-canitbeyou:after {
-    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=card-shadow&v=201510021536);
+    background-image: url(/cms_backoffice/assets/201510021536/card-shadow);
     background-repeat: no-repeat;
     background-position: center bottom;
     display: block;
@@ -4987,14 +4987,14 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     background-color: #e6e6e6
 }
 .innovation-submission-project-step1 {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=nr1&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/nr1);
     background-repeat: no-repeat;
     height: 80px;
     margin-left: 100px
     
 }
 .innovation-submission-project-step2 {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=nr2&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/nr2);
     background-repeat: no-repeat;
     height: 80px;
     margin-left: 100px
@@ -5038,7 +5038,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     border: 5px solid #e6e6e6
 }
 .innovationawards-matrix-entry.expand > i {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/icons) no-repeat;
     display: inline-block;
     background-position: -51px -280px;
     width: 25px;
@@ -5048,7 +5048,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     right: -6px
 }
 .innovationawards-matrix-entry.collapse > i, .innovationawards-matrix-entry:hover.collapse > i {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/icons) no-repeat;
     display: inline-block;
     background-position: -51px -356px;
     width: 25px;
@@ -5058,7 +5058,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     right: 0
 }
 .innovationawards-matrix-entry:hover > i {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/icons) no-repeat;
     display: inline-block;
     background-position: -51px -318px;
     width: 25px;
@@ -5068,7 +5068,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     right: 0
 }
 .innovationawards-matrix-entry img {} .innovationawards-matrix-entry-details {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-line-span6&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/quote-line-span6);
     background-repeat: no-repeat;
     padding-top: 12px;
     margin-top: 10px;
@@ -5103,7 +5103,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     text-decoration: none
 }
 .innovationawards-year.active {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=timeline-arrow&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/timeline-arrow);
     background-position: bottom;
     background-repeat: no-repeat;
     height: 76px;
@@ -5125,7 +5125,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     width: 610px
 }
 .case-study-customer-image {
-    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=christopher_playright3&v=201510021536);
+    background-image: url(/cms_backoffice/assets/201510021536/christopher_playright3);
     background-repeat: no-repeat;
     height: 210px;
     margin-left: 0
@@ -5137,7 +5137,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     position: relative
 }
 .case-study-customer-quote {
-    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote&amp;v=201510021536);
+    background-image: url(/cms_backoffice/assets/201510021536/quote);
     background-repeat: no-repeat;
     background-position: left top;
     position: absolute;
@@ -5147,7 +5147,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     height: 30px
 }
 .case-study-project-timeline {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=timeline&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/timeline) no-repeat;
     height: 267px
 }
 .case-study-sidebar {
@@ -5226,9 +5226,9 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     color: #a9a9a9
 }
 .case-study-customer-quote-arrow_span12 {
-    /*background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=quote-arrow_span12&amp;v=201510021536');*/
+    /*background-image: url('/cms_backoffice/assets/201510021536/quote-arrow_span12');*/
     
-    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=arrow-span5&v=20140416101624);
+    background-image: url(/cms_backoffice/assets/201510021536/arrow-span5);
     background-repeat: no-repeat;
     background-position: left top;
     position: relative;
@@ -5264,7 +5264,7 @@ a.past-list-link:link h5, a.past-list-link:hover h5, a.past-list-link:active h5,
     display: inline
 }
 .case-study-screenshot-thumb {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=shadow-short&v=201510021536) no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/shadow-short) no-repeat;
     background-position: 0 100%;
     height: 139px
 }
@@ -5354,7 +5354,7 @@ div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimo
     margin-top: -60px
 }
 .cs-innovation-award-winner-badge {
-    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=innovation-award-winner&v=201510021536);
+    background-image: url(/cms_backoffice/assets/201510021536/innovation-award-winner);
     height: 125px;
     width: 125px;
     position: absolute;
@@ -5369,7 +5369,7 @@ div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimo
     width: 100%
 }
 .hero-section-get-started {
-    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg_top_try-now&v=201510021536);
+    background-image: url(/cms_backoffice/assets/201510021536/bg_top_try-now);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #DEDEDE;
@@ -5799,7 +5799,7 @@ form input.st-search-input {
     color: #CCC;
     outline: 0;
     line-height: 22px;
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536') 111px 1px no-repeat;
+    background: url('/cms_backoffice/assets/201510021536/icons') 111px 1px no-repeat;
 }
 form input.st-search-input-inpage {
     font-size: 12px;
@@ -6145,7 +6145,7 @@ div.st-result .st-date {
     position: absolute;
     background-color: #FFF;
     z-index: 10000;
-    background-image: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=lamp&v=201510021536);
+    background-image: url(/cms_backoffice/assets/201510021536/lamp);
     background-position: left;
     background-repeat: no-repeat;
     padding-bottom: 30px;
@@ -6211,7 +6211,7 @@ div.st-result .st-date {
 /** solutions **/
 
 .solution-hero {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-singular-indu-dcddde&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/bg-singular-indu-dcddde);
     background-color: #dcddde;
     background-repeat: no-repeat;
     height: 370px;
@@ -6230,7 +6230,7 @@ div.st-result .st-date {
     text-align: center
 }
 .solution-all-hero {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-all-indu-dcddde&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/bg-all-indu-dcddde);
     background-color: #dcddde;
     background-repeat: no-repeat;
     height: 290px;
@@ -6448,7 +6448,7 @@ a.osbtn-orange {
     border-radius: 5px;
 }
 .cta-wrapper-apps {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=stripes&v=201510021536);
+    background: url(/cms_backoffice/assets/201510021536/stripes);
     height: 80px;
     width: 100%;
     border-top: 1px solid #909090;
@@ -6569,7 +6569,7 @@ form input.st-search-input {
     color: #777;
     outline: 0;
     line-height: 22px;
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536') 111px 1px no-repeat;
+    background: url('/cms_backoffice/assets/201510021536/icons') 111px 1px no-repeat;
 }
 .submenu-hover-sections a {
     /* color: #000; */
@@ -6587,7 +6587,7 @@ body.platform .navigation-bar li.platform a, body.customers .navigation-bar li.c
     color: #fff;
 }
 body.platform .navigation-bar li.platform a span, body.customers .navigation-bar li.customers a span, body.resources .navigation-bar li.resources a span, body.learn-and-support .navigation-bar li.learn-and-support a span, body.about-us .navigation-bar li.about-us a span, body.mega-menu .navigation-bar li.active a span {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=nav&v=201510021536') center no-repeat white;
+    background: url('/cms_backoffice/assets/201510021536/nav') center no-repeat white;
 }
 /* style defined dinamically in the menu hover logic (file common.min.js) */
 
@@ -6595,7 +6595,7 @@ body.mega-menu .navigation-bar li a span {
     background: #000 !important;
 }
 body.mega-menu .navigation-bar li.active a span {
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=nav&v=201510021536') center no-repeat white !important;
+    background: url('/cms_backoffice/assets/201510021536/nav') center no-repeat white !important;
 }
 body.mega-menu .navigation-bar li a span.try-now {
     background: transparent!important;
@@ -6614,7 +6614,7 @@ body.mega-menu .navigation-bar li a span.try-now {
     left: 0;
     z-index: 999;
     padding-bottom: 0;
-    background: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg-about-us&v=201510021536') center -80px;
+    background: url('/cms_backoffice/assets/201510021536/bg-about-us') center -80px;
     border-bottom: 1px solid #d6d6d6;
 }
 .second-level-menu-wrapper span.title {
@@ -6847,7 +6847,7 @@ h3.description {
     min-height: 80px;
 }
 .what-is-it {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=what-you-can-do-background&v=201510021536');
+    background-image: url('/cms_backoffice/assets/201510021536/what-you-can-do-background');
     background-color: #742211;
     padding-bottom: 70px;
     background-position: center top;
@@ -6938,7 +6938,7 @@ h3.description {
     height: 387px;
 }
 .photo-quotes {
-    background-image: url('/CMS_BackOffice/ResourceLink.aspx?ResourceName=Dark-photo-customers-bg1&v=201510021536');
+    background-image: url('/cms_backoffice/assets/201510021536/Dark-photo-customers-bg1');
     background-color: black;
     background-position: center top;
     background-repeat: no-repeat;
@@ -7086,9 +7086,9 @@ h3.description {
   background-color: rgb(0, 0, 0);
   width: 100%;
   height: auto;
-  background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=hero_partners) #000000 center no-repeat;
+  background: url(/cms_backoffice/assets/201510021536/hero_partners) #000000 center no-repeat;
   /**fixtodelete when submenu*/
-  background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=hero_partners) center 0px no-repeat #000;
+  background: url(/cms_backoffice/assets/201510021536/hero_partners) center 0px no-repeat #000;
 }
 .HeroPartnersPageTitle {
     color: white;
@@ -7120,7 +7120,7 @@ h3.description {
 }
 
   .Partners.Successful-Projects {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=bg_partners) #000000 top no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/bg_partners) #000000 top no-repeat;
     background-color: #313E41;
     text-align: center;
   }
@@ -7188,7 +7188,7 @@ h3.description {
 
   /**Become a partner*/
    .Successful-Projects {
-    background: url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=mask2&v=20150326183848) #000000 top no-repeat;
+    background: url(/cms_backoffice/assets/201510021536/mask2) #000000 top no-repeat;
     background-color: #313E41;
     text-align: center;
   }
@@ -7934,7 +7934,7 @@ a.magnific_popup-prev, a.magnific_popup-close, a.magnific_popup-next {
 
 .social-wrapper a.twitter,.social-wrapper a.facebook,.social-wrapper a.google,.social-wrapper a.linkedin
 {
-  background:url(/CMS_BackOffice/ResourceLink.aspx?ResourceName=icons&v=201510021536) no-repeat;
+  background:url(/cms_backoffice/assets/201510021536/icons) no-repeat;
   width:21px;
   height:21px;
   text-indent:-9999px;
