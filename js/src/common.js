@@ -74,8 +74,8 @@ osjs(".Popup").live("dialogopen", function(a, b) {
 
 /* Lazy Load XT v1.0.0 2014-01-16
  * http://ressio.github.io/lazy-load-xt
- * (C) 2014 RESS.io
  * Licensed under MIT 
+ * (C) 2014 RESS.io 
  */
 (function ($) {
     var options = $.lazyLoadXT;
@@ -204,17 +204,19 @@ $(document).ready(function() {
         var currEl = $(el);
 
         if (
-            (pathname === '/platform/' && pathname === currEl.attr('href')) ||
-            (pathname === '/customers/' && pathname === currEl.attr('href')) ||
-            (pathname === '/partners/' && pathname === currEl.attr('href')) ||
+            (pathname === '/platform/'  && pathname === currEl.attr('href')) ||
+            (pathname === '/customers/'  && pathname === currEl.attr('href')) ||
+            (pathname === '/partners/'  && pathname === currEl.attr('href')) ||
             (pathname === '/platform/whats-new-in-platform-9-amsterdam/' && pathname === currEl.attr('href'))||
-            (pathname === '/platform/sap/' && pathname === currEl.attr('href')) 
+            (pathname === '/platform/sap/' && pathname === currEl.attr('href'))        
             
-        ) {
-            currEl.addClass('active');
 
-        } else if  ( (currEl.attr('href') !== '/platform/sap/' && (currEl.attr('href') !== '/platform/' && currEl.attr('href') !== '/customers/' && currEl.attr('href') !== '/partners/' && currEl.attr('href') !== '/platform/whats-new-in-platform-9-amsterdam/') && pathname.indexOf(currEl.attr('href')) !== -1) {
-            currEl.addClass('active');
+        ) {
+            currEl.addClass('active');      
+
+        } else if  ( (currEl.attr('href') !== '/platform/sap/'  && currEl.attr('href') !== '/platform/' && currEl.attr('href') !== '/customers/' && currEl.attr('href') !== '/partners/' && currEl.attr('href') !== '/platform/whats-new-in-platform-9-amsterdam/') && pathname.indexOf(currEl.attr('href')) !== -1) {
+            currEl.addClass('active');  
+
 
         }
     });
@@ -238,7 +240,7 @@ $(function() {
             tClose: 'Close',
             callbacks: {
                 open: function() {
-                    /*Magnific Popup - image/video resizing according to screen size*/
+                    /*Magnific Pop up - image/video resizing according to screen size*/
                     $(window).resize(function() {
                         $('.mfp-content .mfp-os-popup-content img').css({
                             'width': 'auto',
@@ -579,7 +581,7 @@ $(function() {
             var percent50;
             var percent70;
 
-            video.bind('play', function() {
+            video.bind("play", function() {
 
                 percent50 = video.duration() * 0.5;
                 percent70 = video.duration() * 0.75;
