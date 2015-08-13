@@ -77,10 +77,11 @@ osjs(".Popup").live("dialogopen", function(a, b) {
  * Licensed under MIT 
  * (C) 2014 RESS.io 
  */
-(function ($) {
+(function($) {
     var options = $.lazyLoadXT;
 
     options.forceEvent += 'loadmeeeee';
+    options.edgeY = 200;
 
 })(window.jQuery || window.Zepto);
 
@@ -204,18 +205,18 @@ $(document).ready(function() {
         var currEl = $(el);
 
         if (
-            (pathname === '/platform/'  && pathname === currEl.attr('href')) ||
-            (pathname === '/customers/'  && pathname === currEl.attr('href')) ||
-            (pathname === '/partners/'  && pathname === currEl.attr('href')) ||
-            (pathname === '/platform/whats-new-in-platform-9-amsterdam/' && pathname === currEl.attr('href'))||
-            (pathname === '/platform/sap/' && pathname === currEl.attr('href'))        
-            
+            (pathname === '/platform/' && pathname === currEl.attr('href')) ||
+            (pathname === '/customers/' && pathname === currEl.attr('href')) ||
+            (pathname === '/partners/' && pathname === currEl.attr('href')) ||
+            (pathname === '/platform/whats-new-in-platform-9-amsterdam/' && pathname === currEl.attr('href')) ||
+            (pathname === '/platform/sap/' && pathname === currEl.attr('href'))
+
 
         ) {
-            currEl.addClass('active');      
+            currEl.addClass('active');
 
-        } else if  ( (currEl.attr('href') !== '/platform/sap/'  && currEl.attr('href') !== '/platform/' && currEl.attr('href') !== '/customers/' && currEl.attr('href') !== '/partners/' && currEl.attr('href') !== '/platform/whats-new-in-platform-9-amsterdam/') && pathname.indexOf(currEl.attr('href')) !== -1) {
-            currEl.addClass('active');  
+        } else if ((currEl.attr('href') !== '/platform/sap/' && currEl.attr('href') !== '/platform/' && currEl.attr('href') !== '/customers/' && currEl.attr('href') !== '/partners/' && currEl.attr('href') !== '/platform/whats-new-in-platform-9-amsterdam/') && pathname.indexOf(currEl.attr('href')) !== -1) {
+            currEl.addClass('active');
 
 
         }
@@ -742,26 +743,23 @@ $(document).ready(function() {
 
     if (osjs.cookie('OS_AcceptCookies') === null) {
 
-        $.getJSON("http://www.telize.com/geoip?callback=?",
-            function(json) {
-                if (json.continent_code == 'EU')
-                    $('.invisiblediv').show();
-                else {
-                    $('.invisiblediv').hide();
-                    var d = new Date();
-                    var month = d.getMonth() + 1;
-                    var day = d.getDate();
-                    var output = d.getFullYear() + '/' +
-                        (month < 10 ? '0' : '') + month + '/' +
-                        (day < 10 ? '0' : '') + day;
+        if ($('#locale-aux').attr('data-locale-continent') === 'EU') {
+            $('.invisiblediv').show();
+        } else {
+            $('.invisiblediv').hide();
+            var d = new Date();
+            var month = d.getMonth() + 1;
+            var day = d.getDate();
+            var output = d.getFullYear() + '/' +
+                (month < 10 ? '0' : '') + month + '/' +
+                (day < 10 ? '0' : '') + day;
 
-                    osjs.cookie("OS_AcceptCookies", output, {
-                        expires: 365,
-                        path: '/'
-                    });
-                }
-            }
-        );
+            osjs.cookie("OS_AcceptCookies", output, {
+                expires: 365,
+                path: '/'
+            });
+        }
+
 
 
         if ($('.warning_EU_cookiemsg').length >= 1) {
