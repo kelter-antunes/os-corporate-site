@@ -181,46 +181,54 @@ $(function() {
 
 /** Sticky secando level menu **/
 $(document).ready(function() {
-    var sticky = $('.second-level-menu-wrapper');
-    if (sticky.length == 0) {
-        return;
+
+    if (!$.browser.mobile) {
+
+        var sticky = $('.second-level-menu-wrapper');
+        var $body = $('body');
+        if (sticky.length == 0) {
+            return;
+        }
+        var top = -1;
+        var fixMenu = function() {
+            if (top == -1) {
+                top = sticky.offset().top;
+            }
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= top) {
+                sticky.addClass('fixed');
+                $body.css('margin-top', '175px');
+            } else {
+                sticky.removeClass('fixed');
+                $body.css('margin-top', '0');
+            }
+        };
+        $(window).load(fixMenu).scroll(fixMenu);
+
+        var pathname = window.location.pathname;
+        $('.sub-navigation-bar a').each(function(index, el) {
+            var currEl = $(el);
+
+            if (
+                (pathname === '/platform/' && pathname === currEl.attr('href')) ||
+                (pathname === '/customers/' && pathname === currEl.attr('href')) ||
+                (pathname === '/partners/' && pathname === currEl.attr('href')) ||
+                (pathname === '/platform/whats-new-in-platform-9-amsterdam/' && pathname === currEl.attr('href')) ||
+                (pathname === '/platform/sap/' && pathname === currEl.attr('href'))
+
+
+            ) {
+                currEl.addClass('active');
+
+            } else if ((currEl.attr('href') !== '/platform/sap/' && currEl.attr('href') !== '/platform/' && currEl.attr('href') !== '/customers/' && currEl.attr('href') !== '/partners/' && currEl.attr('href') !== '/platform/whats-new-in-platform-9-amsterdam/') && pathname.indexOf(currEl.attr('href')) !== -1) {
+                currEl.addClass('active');
+
+
+            }
+        });
+
     }
-    var top = -1;
-    var fixMenu = function() {
-        if (top == -1) {
-            top = sticky.offset().top;
-        }
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= top) {
-            sticky.addClass('fixed');
-        } else {
-            sticky.removeClass('fixed');
-        }
-    };
-    $(window).load(fixMenu).scroll(fixMenu);
-
-    var pathname = window.location.pathname;
-    $('.sub-navigation-bar a').each(function(index, el) {
-        var currEl = $(el);
-
-        if (
-            (pathname === '/platform/' && pathname === currEl.attr('href')) ||
-            (pathname === '/customers/' && pathname === currEl.attr('href')) ||
-            (pathname === '/partners/' && pathname === currEl.attr('href')) ||
-            (pathname === '/platform/whats-new-in-platform-9-amsterdam/' && pathname === currEl.attr('href')) ||
-            (pathname === '/platform/sap/' && pathname === currEl.attr('href'))
-
-
-        ) {
-            currEl.addClass('active');
-
-        } else if ((currEl.attr('href') !== '/platform/sap/' && currEl.attr('href') !== '/platform/' && currEl.attr('href') !== '/customers/' && currEl.attr('href') !== '/partners/' && currEl.attr('href') !== '/platform/whats-new-in-platform-9-amsterdam/') && pathname.indexOf(currEl.attr('href')) !== -1) {
-            currEl.addClass('active');
-
-
-        }
-    });
 });
 
 
