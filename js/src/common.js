@@ -182,6 +182,8 @@ $(function() {
 /** Sticky secando level menu **/
 $(document).ready(function() {
 
+    var pathname = window.location.pathname;
+
     if (!$.browser.mobile) {
 
         var sticky = $('.second-level-menu-wrapper');
@@ -198,7 +200,12 @@ $(document).ready(function() {
 
             if (scroll >= top) {
                 sticky.addClass('fixed');
-                $body.css('margin-top', '175px');
+
+                if (pathname.indexOf('/platform/sap/') !== -1) {
+                    $body.css('margin-top', '175px');
+                }
+
+
             } else {
                 sticky.removeClass('fixed');
                 $body.css('margin-top', '0');
@@ -206,7 +213,7 @@ $(document).ready(function() {
         };
         $(window).load(fixMenu).scroll(fixMenu);
 
-        var pathname = window.location.pathname;
+
         $('.sub-navigation-bar a').each(function(index, el) {
             var currEl = $(el);
 
