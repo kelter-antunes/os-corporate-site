@@ -588,6 +588,7 @@ $(function() {
 // Value:
 
 //enable Wistia Trackings
+/* 
 var eWT = true;
 $(function() {
 
@@ -702,7 +703,7 @@ $(function() {
     };
 });
 
-/**
+
  *
  *
  *     EVENTS  END
