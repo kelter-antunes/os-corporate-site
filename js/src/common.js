@@ -172,7 +172,10 @@ $(function() {
 
 /** adjust header size if no second level menu **/
 $(function() {
-    if ($('.second-level-menu-wrapper').length === 0) {
+
+var pathname = window.location.pathname;
+
+    if ($('.second-level-menu-wrapper').length === 0 && pathname.indexOf('/solutions/all-industries/') === -1) {
         $('.header-hero-wrapper.page-without-hero').height(70);
     }
 });
