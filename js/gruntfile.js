@@ -25,6 +25,7 @@ module.exports = function(grunt) {
                         'src/os-ws-popup.min.js',
                         'src/carousel.min.js',
                         'src/jquery.sticky.min.js',
+                        'src/jquery.stickyscroll.min.js',
                         'src/jquery.actual.min.js',
                         'src/isotope.pkgd.min.js',
                         'src/jquery.magnific-popup.min.js',
