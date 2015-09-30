@@ -93,7 +93,44 @@ Wistia.plugin("dwa_cex", function(video, options) {
             script.src = "HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677142&amp;rnd=" + ebRand;
             document.body.appendChild(script);
 
+        } else if (id == 'kyfexwxc7w') {
+            // #16 Conversion Name: OS RAD - Video - Change Continuously
+            //document.write('<scr'+'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677104&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
+
+            script.src = "HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677104&amp;rnd=" + ebRand;
+            document.body.appendChild(script);
+
+        } else if (id == 'cylzp3c4b6') {
+            // #17 Conversion Name: OS RAD - Video - Deploy Automatically
+            //document.write('<scr'+'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677103&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
+
+            script.src = "HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677103&amp;rnd=" + ebRand;
+            document.body.appendChild(script);
+
+        } else if (id == '67sdl1xgu9') {
+            // #18 Conversion Name: OS RAD - Video - Develop Visually
+            //document.write('<scr'+'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677102&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
+
+            script.src = "HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677102&amp;rnd=" + ebRand;
+            document.body.appendChild(script);
+
+        } else if (id == 'n4a6wudc6t') {
+            // #19 Conversion Name: OS RAD - Video - Manage Centrally
+            //document.write('<scr'+'ipt src="HTTP://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677105&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
+
+            script.src = "HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677105&amp;rnd=" + ebRand;
+            document.body.appendChild(script);
+
         }
+
+
+
+
+
+
+
+
+
 
     };
 
