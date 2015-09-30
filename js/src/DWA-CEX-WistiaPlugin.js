@@ -72,13 +72,25 @@ Wistia.plugin("dwa_cex", function(video, options) {
             script.src = "HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677083&amp;rnd=" + ebRand;
             document.body.appendChild(script);
 
-
-
         } else if (id == '67sdl1xgu9') {
             // #10 Conversion Name: OS MADP - Video - Develop Visually
             //document.write('<scr' + 'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677080&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
 
             script.src = "HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677080&amp;rnd=" + ebRand;
+            document.body.appendChild(script);
+
+        } else if (id == '4qb39emhom') {
+            // #30 Conversion Name: OS SAP See why our customers say “yes” to OutSystems Platform for SAP. - Video
+            //document.write('<scr'+'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677140&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
+
+            script.src = "HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677140&amp;rnd=" + ebRand;
+            document.body.appendChild(script);
+
+        } else if (id == '4qb39emhom') {
+            // #29 Conversion Name: OS SAP See how easy it is to create beautiful applications with SAP ASAP. - Video
+            //document.write('<scr'+'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677142&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
+
+            script.src = "HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677142&amp;rnd=" + ebRand;
             document.body.appendChild(script);
 
         }
