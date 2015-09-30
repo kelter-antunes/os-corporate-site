@@ -133,6 +133,13 @@ Wistia.plugin("dwa_cex", function(video, options) {
             script.src = "HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677105&amp;rnd=" + ebRand;
             document.body.appendChild(script);
 
+        } else if (id == 'qw1pg6ci0c') {
+            // #31 Conversion Name: OS Watch 2-min Overview Video
+            //document.write('<scr'+'ipt src="HTTP://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=682846&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
+
+            script.src = "HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=682846&amp;rnd=" + ebRand;
+            document.body.appendChild(script);
+
         }
 
 
