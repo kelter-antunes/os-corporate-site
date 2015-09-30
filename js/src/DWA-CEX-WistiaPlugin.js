@@ -38,79 +38,39 @@ Wistia.plugin("dwa_cex", function(video, options) {
 
     pushEvent = function(action, name, id) {
 
-        var v_Video;
         if (id == 'k25yv07jjj') {
-            v_Video = v_13;
-
-        } else if (id == '67sdl1xgu9') {
-            v_Video = v_10;
+            // #13 Conversion Name: OS MADP - Video - The “Yes” Platform from OutSystems.
+            var ebRand = Math.random() + '';
+            ebRand = ebRand * 1000000;
+            document.write('<scr' + 'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677085&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
 
         } else if (id == 'cylzp3c4b6') {
-            v_Video = v_9;
+            // #9 Conversion Name: OS MADP - Video - Deploy Automatically
+            var ebRand = Math.random() + '';
+            ebRand = ebRand * 1000000;
+            document.write('<scr' + 'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677081&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
 
         } else if (id == 'kyfexwxc7w') {
-            v_Video = v_8;
+            // #8 Conversion Name: OS MADP - Video - Change Continuously
+            var ebRand = Math.random() + '';
+            ebRand = ebRand * 1000000;
+            document.write('<scr' + 'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677082&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
 
         } else if (id == 'n4a6wudc6t') {
-            v_Video = v_11;
+            // #11 Conversion Name: OS MADP - Video - Manage Centrally
+            var ebRand = Math.random() + '';
+            ebRand = ebRand * 1000000;
+            document.write('<scr' + 'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677083&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
 
         } else if (id == '67sdl1xgu9') {
-            v_Video = v_10;
+            // #10 Conversion Name: OS MADP - Video - Develop Visually
+            var ebRand = Math.random() + '';
+            ebRand = ebRand * 1000000;
+            document.write('<scr' + 'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677080&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
 
         }
 
-        var videos = {
-            v_8: function() {
-                // Conversion Name: OS MADP - Video - Change Continuously
-                var ebRand = Math.random() + '';
-                ebRand = ebRand * 1000000;
-                document.write('<scr' + 'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677082&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
-            },
-            v_9: function() {
-                // Conversion Name: OS MADP - Video - Deploy Automatically
-                var ebRand = Math.random() + '';
-                ebRand = ebRand * 1000000;
-                document.write('<scr' + 'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677081&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
-            },
-            v_10: function() {
-                // Conversion Name: OS MADP - Video - Develop Visually
-                var ebRand = Math.random() + '';
-                ebRand = ebRand * 1000000;
-                document.write('<scr' + 'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677080&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
-            },
-            v_11: function() {
-                // Conversion Name: OS MADP - Video - Manage Centrally
-                var ebRand = Math.random() + '';
-                ebRand = ebRand * 1000000;
-                document.write('<scr' + 'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677083&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
-            },
-            v_12: function() {
-                // Conversion Name: OS MADP - Video - No Lock-In
-                var ebRand = Math.random() + '';
-                ebRand = ebRand * 1000000;
-                document.write('<scr' + 'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677084&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
-            },
-            v_13: function() {
-                // Conversion Name: OS MADP - Video - The “Yes” Platform from OutSystems.
-                var ebRand = Math.random() + '';
-                ebRand = ebRand * 1000000;
-                document.write('<scr' + 'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677085&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
-            },
-
-
-
-            _default: function() {
-                console.log('default');
-            }
-        };
-
-        videos[v_Video] ? videos[v_Video]() : videos._default();
-
-
     };
-
-
-
 
     _ref = [.25, .5, .75, 1];
     _fn = function(triggerPercent) {
@@ -119,8 +79,7 @@ Wistia.plugin("dwa_cex", function(video, options) {
             var percent;
             percent = percentWatched();
             if (buckets.length > 0 && percent >= triggerPercent) {
-                pushEvent("" + (Math.round(triggerPercent * 100)) + "percentwatched", name, video.hashedId());
-                //video.trigger("pushedtomarketo", "percentwatched", triggerPercent);
+                //pushEvent("" + (Math.round(triggerPercent * 100)) + "percentwatched", name, video.hashedId());
                 return this.unbind;
             }
         });
@@ -139,15 +98,9 @@ Wistia.plugin("dwa_cex", function(video, options) {
     video.bind("play", function() {
         var name = video.name();
         var push = pushEvent("played", name, video.hashedId());
-        //var vid = video.trigger("pushedtomarketo", "play");
         return this.unbind;
     });
-    video.bind("conversion", function() {
-        var name = video.name();
-        pushEvent("Conversion (" + name + ")", name, video.hashedId());
-        //video.trigger("pushedtomarketo", "conversion");
-        return this.unbind;
-    });
+
     return {
         buckets: buckets,
         percentWatched: percentWatched,
