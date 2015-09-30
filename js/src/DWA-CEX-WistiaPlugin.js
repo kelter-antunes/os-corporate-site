@@ -39,22 +39,22 @@ Wistia.plugin("dwa_cex", function(video, options) {
     pushEvent = function(action, name, id) {
 
         var v_Video;
-        if (id = 'k25yv07jjj') {
+        if (id == 'k25yv07jjj') {
             v_Video = v_13;
 
-        } else if (id = '67sdl1xgu9') {
+        } else if (id == '67sdl1xgu9') {
             v_Video = v_10;
 
-        } else if (id = 'cylzp3c4b6') {
+        } else if (id == 'cylzp3c4b6') {
             v_Video = v_9;
 
-        } else if (id = 'kyfexwxc7w') {
+        } else if (id == 'kyfexwxc7w') {
             v_Video = v_8;
 
-        } else if (id = 'n4a6wudc6t') {
+        } else if (id == 'n4a6wudc6t') {
             v_Video = v_11;
 
-        } else if (id = '67sdl1xgu9') {
+        } else if (id == '67sdl1xgu9') {
             v_Video = v_10;
 
         }
