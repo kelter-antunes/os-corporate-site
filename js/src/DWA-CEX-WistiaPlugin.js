@@ -45,10 +45,22 @@ Wistia.plugin("dwa_cex", function(video, options) {
         script.type = "text/javascript";
 
         if (id == 'k25yv07jjj') {
-            // #13 Conversion Name: OS MADP - Video - The “Yes” Platform from OutSystems.
-            //document.write('<scr' + 'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677085&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
 
-            script.src = "HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677085&amp;rnd=" + ebRand;
+            var pathname = window.location.pathname;
+            if (pathname === '/madp/') {
+                // #13 Conversion Name: OS MADP - Video - The “Yes” Platform from OutSystems.
+                //document.write('<scr' + 'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677085&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
+
+                script.src = "HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677085&amp;rnd=" + ebRand;
+
+            } else if (pathname === '/rad/') {
+
+                // #32 Conversion Name: OS RAD - Video - The “Yes” Platform from OutSystems.
+                //document.write('<scr'+'ipt src="HTTP://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=682845&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
+
+                script.src = "HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=682845&amp;rnd=" + ebRand;
+
+            }
             document.body.appendChild(script);
 
         } else if (id == 'cylzp3c4b6') {
