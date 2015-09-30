@@ -42,7 +42,12 @@ Wistia.plugin("dwa_cex", function(video, options) {
             // #13 Conversion Name: OS MADP - Video - The “Yes” Platform from OutSystems.
             var ebRand = Math.random() + '';
             ebRand = ebRand * 1000000;
-            document.write('<scr' + 'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677085&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
+            //document.write('<scr' + 'ipt src="HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677085&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
+
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "HTTPS://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=677085&amp;rnd=" + ebRand; 
+            document.body.appendChild(script);
 
         } else if (id == 'cylzp3c4b6') {
             // #9 Conversion Name: OS MADP - Video - Deploy Automatically
