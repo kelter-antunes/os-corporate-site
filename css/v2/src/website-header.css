@@ -3,7 +3,6 @@ cache invalidator
 
 v=201510021536
 */
-
 .navigation-outter {
     width: 100%;
     overflow: hidden
@@ -23,9 +22,7 @@ v=201510021536
     height: 50px
 }
 .navigation-longtail {
-    width: 99999px;
-    /*height:50px*/
-    
+    width: 99999px;    /*height:50px*/
     height: auto;
 }
 .navigation-longtail-end {
@@ -68,36 +65,43 @@ v=201510021536
     text-align: center;
     box-sizing: border-box
 }
+.navigation-items {
+    width: 1008px;
+}
+span[id*='ListSection'] {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+}
 .navigation-bar li, .sub-navigation-bar li {
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
     float: left;
-    _display: inline;
-    width: auto
+    width: auto;
 }
 .navigation-bar li a {
-    background-color: #000;
-    text-decoration: none;
+    margin: 0;
+    padding: 0 15px;
     display: block;
-    padding: 0;
-    height: 50px;
     line-height: 50px;
-    font-size: 15px;
-    font-weight: 500;
+    text-decoration: none;
     color: #ccc;
-    letter-spacing: .05em;
-    text-align: center
 }
 .navigation-bar li a:hover, .navigation-bar li.active a {
-    background-color: rgba(0, 0, 0, 0);
-    color: #fff
+    background: #FFFFFF;
+    border-radius: 4px 4px 0 0;
+    color: #000;
 }
 .sub-navigation-bar li a {
-    font-family: myriad-pro, arial, sans-serif;
-    line-height: 50px;
+    font-family: 'myriad-pro', arial, sans-serif;
     font-size: 13px;
     font-weight: 400;
     color: gray;
-    text-align: center;
-    display: block;
     margin-left: 30px;
     height: 38px
 }
@@ -108,25 +112,6 @@ v=201510021536
 .sub-navigation-bar li.active a {
     font-weight: 600;
     border-bottom: 1px solid gray
-}
-.navigation-bar li a span {
-    display: block;
-    background: url(/cms_backoffice/assets/201510021536/nav) no-repeat;
-    background-position: top;
-    margin-left: -5px
-}
-.navigation-bar li.spacer {
-    display: block;
-    width: 30px;
-    background-color: #000;
-    height: 50px
-}
-.navigation-bar li a:hover span, .navigation-bar li.active a span {
-    background: url(/cms_backoffice/assets/201510021536/nav) no-repeat;
-    background-position: center
-}
-.navigation-bar-tail-spacer {
-  width: 210px;
 }
 .navigation-bar-tail-logo {
     margin-left: -82px
@@ -162,15 +147,9 @@ v=201510021536
     height: 15px
 }
 input.search {
-    -webkit-box-sizing: border-box;
-    /* Safari/Chrome, other WebKit */
-    
-    -moz-box-sizing: border-box;
-    /* Firefox, other Gecko */
-    
-    box-sizing: border-box;
-    /* Opera/IE 8+ */
-    
+    -webkit-box-sizing: border-box;    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;    /* Opera/IE 8+ */
     height: 20px;
     color: #CCC;
     font-family: Arial, sans-serif;
@@ -178,8 +157,8 @@ input.search {
     width: 100px;
     padding-left: 4px
 }
-/*common*/
 
+/*common*/
 .top10 {
     margin-top: 10px
 }
@@ -422,11 +401,4 @@ input.search {
 }
 .right-100 {
     margin-right: -100px
-}
-/* iPads (portrait and landscape) ----------- */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .navigation-bar li a:hover span, .navigation-bar li.active a span {
-        background-position: 50% -51px
-    }
 }
