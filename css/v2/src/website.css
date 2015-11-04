@@ -6139,45 +6139,8 @@ div.st-result .st-date {
     display: block
 }
 .submenuhoverbox {
-    z-index: 10000;
-    background-image: url(/cms_backoffice/assets/201510021536/lamp);
-    background-position: left;
-    background-repeat: no-repeat;
     padding-bottom: 30px;
     padding-top: 30px;
-    height: auto;
-    filter: none;
-}
-.submenuhoverbox-firstcontent {
-    display: inline-block;
-    text-align: left;
-    width: 308px;
-    margin-left: 120px;
-    float: left;
-    margin-top: 0
-}
-.submenuhoverbox-firstcontent h1 {
-    margin-bottom: 30px
-}
-.submenuhoverbox-firstcontent p.h1 {
-    margin-bottom: 30px;
-    line-height: 40px;
-    font-size: 36px;
-    font-weight: 600;
-    color: #333
-}
-.submenuhoverbox-secondcontent {
-    text-align: left;
-    float: left;
-    margin-left: 30px;
-    font-family: 'myriad-pro', Helvetica, Arial, sans-serif;
-    margin-right: 25px
-}
-.submenuhoverbox-thirdcontent {
-    width: 140px;
-    text-align: left;
-    float: left;
-    margin-left: 40px
 }
 .submenuhoverbox-line {
     border-right: 1px solid #e6e6e6;
@@ -6185,10 +6148,23 @@ div.st-result .st-date {
     width: 1px;
     float: left
 }
-.submenuhoverbox-contentheading {
-    font-weight: 600;
-    color: gray;
-    margin-bottom: 20px
+h6.submenuhoverbox-contentheading {
+    font-size: 18px;
+    color: #384142;
+    line-height: 22px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.submenuhoverbox ul.list {
+    list-style-type: none;
+    font-size: 13px;
+    color: #0088CC;
+    margin-bottom: 20px;
+}
+.submenuhoverbox ul.list li {
+    border-bottom: 1px solid #eee;
+    padding: 5px 15px;
 }
 .submenuhoverbox-secondcontent > ul > li {
     margin-bottom: 8px
@@ -6564,9 +6540,6 @@ form input.st-search-input {
 }
 .submenu-hover-sections .submenuhoverbox-contentheading, .submenu-hover-sections .submenuhoverbox-contentheading a {
     text-decoration: none;
-}
-.submenuhoverbox {
-    background-image: none;
 }
 .second-level-menu-wrapper {
     float: right;
