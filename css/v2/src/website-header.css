@@ -97,6 +97,16 @@ span[id*='ListSection'] {
     border-radius: 4px 4px 0 0;
     color: #000;
 }
+.navigation-bar li.get-started a {
+    padding: 4px 15px;
+    line-height: 25px;
+    font-size: 14px;
+}
+.navigation-bar li.get-started a:hover {
+    text-decoration: none;
+    background-color: #c20;
+    border-radius: 5px;
+}
 .sub-navigation-bar li a {
     font-family: 'myriad-pro', arial, sans-serif;
     font-size: 13px;
