@@ -92,15 +92,19 @@ span[id*='ListSection'] {
     text-decoration: none;
     color: #ccc;
 }
-.navigation-bar li a:hover, .navigation-bar li.active a {
-    background: #FFFFFF;
+.navigation-bar li.active a {
+    background: #FFF;
     border-radius: 4px 4px 0 0;
+    color: #000
+}
+.navigation-bar li a:hover {
+    background: #FFF;
     color: #000;
 }
 .navigation-bar li.get-started a {
     padding: 4px 15px;
     line-height: 25px;
-    font-size: 14px;
+    font-size: 14px
 }
 .navigation-bar li.get-started a:hover {
     text-decoration: none;
