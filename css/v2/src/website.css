@@ -6134,6 +6134,7 @@ div.st-result .st-date {
     position: absolute;
     top: 50px;
     margin-left: 28px
+    z-index:9999;
 }
 .submenuhover:hover {
     display: block
@@ -6148,7 +6149,7 @@ div.st-result .st-date {
     width: 1px;
     float: left
 }
-h6.submenuhoverbox-contentheading {
+.submenuhoverbox.platform h6.submenuhoverbox-contentheading {
     font-size: 18px;
     color: #384142;
     line-height: 22px;
@@ -6156,13 +6157,13 @@ h6.submenuhoverbox-contentheading {
     padding-bottom: 5px;
     margin-bottom: 15px;
 }
-.submenuhoverbox ul.list {
+.submenuhoverbox.platform ul.list {
     list-style-type: none;
     font-size: 13px;
     color: #0088CC;
     margin-bottom: 20px;
 }
-.submenuhoverbox ul.list li {
+.submenuhoverbox.platform ul.list li {
     border-bottom: 1px solid #eee;
     padding: 5px 15px;
 }
