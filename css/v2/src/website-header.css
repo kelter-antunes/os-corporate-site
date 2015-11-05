@@ -7,88 +7,75 @@ v=201510021536
     width: 100%;
     overflow: hidden
 }
-
 .navigation-inner {
     height: 50px;
     position: relative;
     z-index: 999
 }
-
 .navigation-wrapper {
     padding-top: 30px
 }
-
 .navigation {
     position: asbolute;
     width: 9999px;
     background-color: #000;
     height: 50px
 }
-
-.navigation-bar-section.navigation-bar-tail-spacer a,.navigation-items {
+.navigation-bar-section.navigation-bar-tail-spacer a, .navigation-items {
     position: relative
 }
-
 .navigation-longtail {
     width: 99999px;
     height: auto
 }
-
 .navigation-longtail-end {
     width: 9999px;
     height: 50px;
     background-color: #000;
     float: left;
 }
-
 .navigation-bar-section {
     float: left;
     background-color: #000;
     height: 50px
 }
-
 .navigation-items {
-    font-family: myriad-pro,Arial,sans-serif;
+    font-family: myriad-pro, Arial, sans-serif;
     height: 50px;
     float: left;
 }
-
 .navigation-search-outter {
     overflow-x: hidden;
     position: absolute;
     right: 0;
     padding-left: 0
 }
-
-.navigation-bar,.sub-navigation-bar {
+.navigation-bar, .sub-navigation-bar {
     list-style: none;
     margin: 0;
     padding: 0;
     display: block
 }
-
 .sub-navigation-bar {
     float: right
 }
-
-.navigation-bar ul li,.sub-navigation-bar ul li {
+.navigation-bar ul li, .sub-navigation-bar ul li {
     display: block;
     float: left;
     text-align: center;
     box-sizing: border-box
 }
-
 span[id*=ListSection] {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
-    /* background-color: red; */
+    height: 50px;    /* background-color: red; */
+
     /* position: absolute; */
+
     /* right: 0 */
 }
-
-.navigation-bar li,.sub-navigation-bar li {
+.navigation-bar li, .sub-navigation-bar li {
     margin: 0;
     padding: 0;
     float: left;
@@ -96,7 +83,6 @@ span[id*=ListSection] {
     position: relative;
     overflow: hidden;
 }
-
 .navigation-bar li a {
     margin: 0;
     padding: 0 15px;
@@ -109,13 +95,11 @@ span[id*=ListSection] {
     z-index: 999;
     font-size: 15px;
 }
-
 .navigation-bar li.active a {
     color: #fff;
     position: relative;
     z-index: 999;
 }
-
 .navigation-bar li:not(.get-started) a:hover:before {
     color: #000;
     content: "";
@@ -124,7 +108,7 @@ span[id*=ListSection] {
     border-width: 60px 60px 60px 60px;
     border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgba(255, 255, 255, 0);
     display: block;
-    z-index:999;
+    z-index: 999;
     border-style: solid;
     width: 0;
     left: 50%;
@@ -138,52 +122,44 @@ span[id*=ListSection] {
     border-width: 60px 60px 60px 60px;
     border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgba(255, 255, 255, 0);
     display: block;
-    z-index:999;
+    z-index: 999;
     border-style: solid;
     width: 0;
     left: 50%;
     margin-left: -60px;
 }
-
-
+.navigation-bar li.active.open:before {
+    border-color: #000 #000 rgb(255, 255, 255);
+}
 .navigation-bar li.get-started a {
     padding: 4px 15px;
     line-height: 25px;
     font-size: 14px
 }
-
 .navigation-bar li.get-started a:hover {
     text-decoration: none;
     background-color: #c20;
     border-radius: 5px
 }
-
 .sub-navigation-bar li a {
-    font-family: myriad-pro,arial,sans-serif;
+    font-family: myriad-pro, arial, sans-serif;
     font-size: 13px;
     font-weight: 400;
     color: gray;
     margin-left: 30px;
     height: 38px
 }
-
 .sub-navigation-bar li a:hover {
     color: #cb2100;
     text-decoration: none
 }
-
 .sub-navigation-bar li.active a {
     font-weight: 600;
     border-bottom: 1px solid gray
 }
-
 .navigation-bar-tail-logo {
     margin-left: -82px
 }
-
-
-
-
 ul.navigation-bar {
     height: 50px;
     display: flex;
@@ -191,39 +167,30 @@ ul.navigation-bar {
     width: 840px;
     box-sizing: border-box;
 }
-
 span.spacer-bg {
-    height: 50px;
-    /* position: absolute; */
+    height: 50px;    /* position: absolute; */
+
     /* left: 0; */
+
     /* right: 0; */
     background-color: black;
     width: 100%;
     display: flex;
 }
-
-ul.navigation-bar li:not(.active) a:not(:hover){
+ul.navigation-bar li:not(.active) a:not(:hover) {
     background-color: black;
 }
-
-
 .navigation-bar li a span {
     position: relative;
     z-index: 999;
 }
-
 li.get-started {
     background-color: black;
     height: 50px;
 }
-
 li.get-started a {
     margin-top: 10px;
 }
-
-
-
-
 .search_field {
     display: inline-block;
     -moz-border-radius: 2px;

@@ -834,9 +834,9 @@ function toggleDropdowMenu(a) {
     $('body').addClass('mega-menu'); // This is used to override a CSS style that colides with the "active" CSS style used by the menu entries
     if (a.parent().hasClass("active")) {
         a.parent().removeClass("active");
-        currentActive.addClass("active");
+        currentActive.addClass("active open");
     } else {
-        a.parent().addClass("active");
+        a.parent().addClass("active open");
         currentActive.removeClass("active");
     }
 }
