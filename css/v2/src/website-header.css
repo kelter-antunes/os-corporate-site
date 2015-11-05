@@ -69,11 +69,10 @@ span[id*=ListSection] {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50px;    /* background-color: red; */
-
-    /* position: absolute; */
-
-    /* right: 0 */
+    height: 50px;
+    float: right;
+    right: 0;
+    position: absolute;
 }
 .navigation-bar li, .sub-navigation-bar li {
     margin: 0;
