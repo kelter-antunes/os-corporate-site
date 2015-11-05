@@ -5733,12 +5733,45 @@ a:hover span.h6-product-tab {
     padding-right: 5px;
     vertical-align: bottom
 }
-.sub-navigation-bar li a {
-    color: #333
+.sub-navigation-bar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block
 }
-.sub-navigation-bar a.active {
+.sub-navigation-bar li a {
+    display: block;
+    line-height: 50px;
+    text-align: center
+}
+.sub-navigation-bar li a {
+    font-family: myriad-pro, arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: gray;
+    margin-left: 30px;
+    height: 38px
+}
+.sub-navigation-bar li a:hover {
+    color: #cb2100;
+    text-decoration: none
+}
+.sub-navigation-bar li.active a {
     font-weight: 600;
     border-bottom: 1px solid gray
+}
+.sub-navigation-bar {
+    float: right
+}
+.sub-navigation-bar ul li {
+    display: block;
+    float: left;
+    text-align: center;
+    box-sizing: border-box
+}
+.sub-navigation-bar li {
+    float: left;
+    width: auto
 }
 h1.slogan, h3.description {
     font-weight: 400;
