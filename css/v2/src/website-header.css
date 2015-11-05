@@ -107,6 +107,7 @@ span[id*=ListSection] {
     overflow: hidden;
     position: relative;
     z-index: 999;
+    font-size: 15px;
 }
 
 .navigation-bar li.active a {
