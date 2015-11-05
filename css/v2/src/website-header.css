@@ -94,6 +94,7 @@ span[id*=ListSection] {
     position: relative;
     z-index: 999;
     font-size: 15px;
+    letter-spacing: .05em;
 }
 .navigation-bar li.active a {
     color: #fff;
