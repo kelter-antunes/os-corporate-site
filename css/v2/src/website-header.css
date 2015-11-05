@@ -83,6 +83,7 @@ span[id*='ListSection'] {
     margin-left: 10px;
     float: left;
     width: auto;
+    position: relative;
 }
 .navigation-bar li a {
     margin: 0;
@@ -93,13 +94,22 @@ span[id*='ListSection'] {
     color: #ccc;
 }
 .navigation-bar li.active a {
-    background: #FFF;
-    border-radius: 4px 4px 0 0;
-    color: #000
+    color: white;
+    position: relative;
 }
-.navigation-bar li a:hover {
-    background: #FFF;
+.navigation-bar li.active a:before, .navigation-bar li a:hover:before {
     color: #000;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    border-width: 10px 10px 10px 10px;
+    border-color: transparent  transparent #fff transparent;
+    display: block;
+    z-index: 999;
+    border-style: solid;
+    width: 0px;
+    left: 50%;
+    margin-left: -10px;
 }
 .navigation-bar li.get-started a {
     padding: 4px 15px;
