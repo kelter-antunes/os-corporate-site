@@ -73,6 +73,7 @@ span[id*=ListSection] {
     float: right;
     right: 0;
     position: absolute;
+    top: 0;
 }
 .navigation-bar li, .sub-navigation-bar li {
     margin: 0;
@@ -168,14 +169,11 @@ ul.navigation-bar {
     box-sizing: border-box;
 }
 span.spacer-bg {
-    height: 50px;    /* position: absolute; */
-
-    /* left: 0; */
-
-    /* right: 0; */
+    height: 50px;
     background-color: black;
     width: 100%;
     display: flex;
+    display: inline-block\9;
 }
 ul.navigation-bar li:not(.active) a:not(:hover) {
     background-color: black;
