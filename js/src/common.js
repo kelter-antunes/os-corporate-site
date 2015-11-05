@@ -832,12 +832,12 @@ function toggleDropdowMenu(a) {
     $("[data-dropdown-wrapper]").hide();
     $("[data-dropdown-wrapper='" + $(a).attr("data-name") + "']").toggle();
     $('body').addClass('mega-menu'); // This is used to override a CSS style that colides with the "active" CSS style used by the menu entries
-    if (a.parent().hasClass("active")) {
-        a.parent().removeClass("active");
+    if (a.parent().hasClass("active open")) {
+        a.parent().removeClass("active open");
         currentActive.addClass("active open");
     } else {
         a.parent().addClass("active open");
-        currentActive.removeClass("active");
+        currentActive.removeClass("active open");
     }
 }
 
