@@ -5640,7 +5640,7 @@ a.osbtn-orange {
 .header-hero-wrapper.case-studies-detail-new .secondary-menu * {
     color: #ececec
 }
-.header-hero-wrapper .for-boxes {
+.header-hero-wrapper.for-boxes {
     background-image: url('/cms_backoffice/assets/20151106150227/hero-placeholder.png');
     background-size: contain;
     background-repeat: no-repeat;
