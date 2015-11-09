@@ -873,8 +873,8 @@ $(document).ready(function() {
 
 
     //on mouse hover
-    $("[data-option=dropdown-hover]").hover(function() {
-        a.preventDefault(), a.stopPropagation();
+    $("[data-option=dropdown-hover]").hover(function(e) {
+        e.preventDefault(), e.stopPropagation();
         var b = $(this),
             menuName = $(b).attr("data-name"),
             c = $("[data-dropdown-wrapper='" + menuName + "']");
@@ -884,8 +884,8 @@ $(document).ready(function() {
 
         $(this).closest('ul').find('li.active').removeClass('active');
         toggleDropdowMenu(b);
-        $("[data-dropdown-wrapper]").click(function(a) {
-            a.stopPropagation();
+        $("[data-dropdown-wrapper]").click(function(e) {
+            e.stopPropagation();
         });
         $(document).on("click", function() {
             hideDropDown(b)
