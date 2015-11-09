@@ -5641,26 +5641,21 @@ a.osbtn-orange {
     color: #ececec
 }
 .header-hero-wrapper.for-boxes, .header-hero-wrapper.for-slices {
-position: relative;
+    position: relative;
     height: auto;
     border-bottom: 3px solid #ccc;
     box-shadow: none;
     padding-top: 0;
 }
-
-
-
-.header-hero-wrapper.for-boxes .hero , 
-.header-hero-wrapper.for-slices .hero {
+.header-hero-wrapper.for-boxes .hero, .header-hero-wrapper.for-slices .hero {
     position: relative;
     z-index: 1;
     padding: 20px 0;
     background-image: url(/cms_backoffice/assets/20151109153700/curve-office-walk-way-20315233.jpg);
     background-size: cover;
+    color: white;
 }
-
-.header-hero-wrapper.for-boxes .hero:before,
-.header-hero-wrapper.for-slices .hero:before {
+.header-hero-wrapper.for-boxes .hero:before, .header-hero-wrapper.for-slices .hero:before {
     content: "";
     position: absolute;
     top: 0;
@@ -5671,17 +5666,13 @@ position: relative;
     background-image: url(/cms_backoffice/assets/20151109151753/bg-hero-circle.png);
     background-position: right 1210px;
 }
-
-.header-hero-wrapper.for-boxes .hero .container,
-.header-hero-wrapper.for-slices .hero .container{
+.header-hero-wrapper.for-boxes .hero .container, .header-hero-wrapper.for-slices .hero .container {
     z-index: 99;
     position: relative;
 }
-
-
-
-
-
+.header-hero-wrapper.for-boxes .hero h1, .header-hero-wrapper.for-slices .hero h1 {
+    color: white;
+}
 .search_field {
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
