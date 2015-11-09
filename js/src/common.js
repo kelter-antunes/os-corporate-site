@@ -892,10 +892,10 @@ $(document).ready(function() {
         });
 
     }, function() {
-        var b = $(this),
-            menuName = $(b).attr("data-name"),
-            c = $("[data-dropdown-wrapper='" + menuName + "']");
-        hideDropDown(b);
+        // var b = $(this),
+        //     menuName = $(b).attr("data-name"),
+        //     c = $("[data-dropdown-wrapper='" + menuName + "']");
+        // hideDropDown(b);
     });
 
 
