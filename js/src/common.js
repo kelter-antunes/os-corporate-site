@@ -173,7 +173,7 @@ $(function() {
 /** adjust header size if no second level menu **/
 $(function() {
 
-var pathname = window.location.pathname;
+    var pathname = window.location.pathname;
 
     if ($('.second-level-menu-wrapper').length === 0 && pathname.indexOf('/solutions/all-industries/') === -1) {
         $('.header-hero-wrapper.page-without-hero').height(70);
@@ -847,6 +847,7 @@ $(document).ready(function() {
 
     initial = $('.navigation-bar li[class*="active"]');
 
+    //on click
     $("[data-option=dropdown]").click(function(a) {
         a.preventDefault(), a.stopPropagation();
         var b = $(this),
@@ -869,6 +870,36 @@ $(document).ready(function() {
             });
         }
     });
+
+
+    //on mouse hover
+    $("[data-option=dropdown-hover]").hover(function() {
+        a.preventDefault(), a.stopPropagation();
+        var b = $(this),
+            menuName = $(b).attr("data-name"),
+            c = $("[data-dropdown-wrapper='" + menuName + "']");
+
+
+
+
+        $(this).closest('ul').find('li.active').removeClass('active');
+        toggleDropdowMenu(b);
+        $("[data-dropdown-wrapper]").click(function(a) {
+            a.stopPropagation();
+        });
+        $(document).on("click", function() {
+            hideDropDown(b)
+        });
+
+    }, function() {
+        var b = $(this),
+            menuName = $(b).attr("data-name"),
+            c = $("[data-dropdown-wrapper='" + menuName + "']");
+        hideDropDown(b);
+    });
+
+
+
 
 
 
