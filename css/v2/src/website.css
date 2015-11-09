@@ -5672,6 +5672,7 @@ a.osbtn-orange {
 }
 .header-hero-wrapper.for-boxes .hero h1, .header-hero-wrapper.for-slices .hero h1 {
     color: white;
+    margin-bottom: 10px;
 }
 .section {
     padding: 40px 0;
