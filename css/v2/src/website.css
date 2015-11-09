@@ -5673,49 +5673,55 @@ a.osbtn-orange {
 .header-hero-wrapper.for-boxes .hero h1, .header-hero-wrapper.for-slices .hero h1 {
     color: white;
 }
-
-
-  .section {
+.section {
     padding: 40px 0;
-  }
-  .section.cta {
+}
+.section.cta {
     background-color: #666666;
     color: white;
     text-align: center;
-  }
-  .section.cta h3 {
+}
+.section.cta h3 {
     color: white;
     margin: 0;
-  }
-  .section .highlight-box a {
+}
+.section .highlight-box a {
     display: block;
-  }
-  .section .highlight-box img {
+}
+.section .highlight-box img {
     height: auto;
     text-align: center;
     display: block;
     width: 100%;
     margin: 0 auto;
-  }
-  .section .highlight-box {
+}
+.section .highlight-box {
     background-color: #fff;
     border: 1px solid #CCCCCC;
     box-shadow: 0px 3px 5px 0px #CCCCCC;
     padding: 0;
     margin-bottom: 20px;
-  }
-  .section .highlight-box-inner {
+}
+.section .highlight-box-inner {
     padding: 20px;
     font-size: 17px;
-  }
-  .section .highlight-box a.osbtn {
+}
+.section .highlight-box a.osbtn {
     display: inline-block;
-  }
-
-
-
-
-
+}
+.section .highlight-box-inner.no-image h5 {
+    background-color: #E6EAEB;
+    padding: 10px;
+}
+.section .highlight-box-inner.no-image {
+    padding: 0;
+}
+.section .highlight-box-inner.no-image p {
+    padding: 0 20px;
+}
+.section .highlight-box-inner.no-image div {
+    padding: 0 20px 20px;
+}
 .search_field {
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
