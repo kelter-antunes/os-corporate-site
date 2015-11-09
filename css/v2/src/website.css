@@ -5666,6 +5666,13 @@ a.osbtn-orange {
     background-image: url(/cms_backoffice/assets/20151109151753/bg-hero-circle.png);
     background-position: right 1210px;
 }
+
+.header-hero-wrapper.for-boxes .hero.wide:before,
+.header-hero-wrapper.for-slices .hero.wide:before {
+    width: 75%;
+    background-position: right 1050px;
+}
+
 .header-hero-wrapper.for-boxes .hero .container, .header-hero-wrapper.for-slices .hero .container {
     z-index: 99;
     position: relative;
