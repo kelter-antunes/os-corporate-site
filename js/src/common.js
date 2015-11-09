@@ -848,7 +848,7 @@ $(document).ready(function() {
     initial = $('.navigation-bar li[class*="active"]');
 
     //on click
-    $("[data-option=dropdown]").click(function(a) {
+    $("[data-option=dropdown-click]").click(function(a) {
         a.preventDefault(), a.stopPropagation();
         var b = $(this),
             menuName = $(b).attr("data-name"),
