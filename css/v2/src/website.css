@@ -5860,7 +5860,7 @@ form input.st-search-input {
     float: right;
     right: 0;
     z-index: 99;
-    height: 60px;
+    height: 40px;
     clear: both;
 }
 .second-level-menu-wrapper.fixed {
@@ -5873,6 +5873,9 @@ form input.st-search-input {
     background: url(/cms_backoffice/assets/201510021536/bg-about-us) center -80px;
     border-bottom: 1px solid #d6d6d6;
     height: 50px;
+}
+.second-level-menu-wrapper.fixed span.title {
+    opacity: 1
 }
 .second-level-menu-wrapper span.title {
     text-decoration: none;
@@ -5895,9 +5898,7 @@ form input.st-search-input {
 
 
 
-.second-level-menu-wrapper.fixed span.title {
-    opacity: 1
-}
+
 body.landing-no-top {
     background: #fff
 }
