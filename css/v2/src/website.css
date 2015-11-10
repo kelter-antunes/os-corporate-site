@@ -5987,22 +5987,16 @@ a:hover span.h6-product-tab {
     margin: auto 5px;
 }
 .second-level-menu-wrapper.tabs .sub-navigation-bar li a {
-    color: #596669;
-    padding: 5px 20px;
-    line-height: 50px;
-    font-size: 13px;
-    text-align: center;
-    display: block;
-}
-.second-level-menu-wrapper.tabs .sub-navigation-bar li a {
-    font-family: myriad-pro, arial, sans-serif;
+        font-family: myriad-pro, arial, sans-serif;
     line-height: 50px;
     font-size: 13px;
     font-weight: 400;
     text-align: center;
     display: block;
     margin-left: 0px;
+    padding: 5px 20px;
 }
+
 .second-level-menu-wrapper.tabs.fixed {
     position: fixed;
     top: 0px;
