@@ -148,10 +148,9 @@ span[id*=ListSection] {
     font-weight: 400;
     color: gray;
     margin-left: 30px;
-    height: 38px
 }
 .sub-navigation-bar li a:hover {
-    color: #cb2100;
+    color: #c20;
     text-decoration: none
 }
 .sub-navigation-bar li.active a {
