@@ -5860,8 +5860,8 @@ form input.st-search-input {
     float: right;
     right: 0;
     z-index: 99;
-    height: 50px;
-    clear: both
+    height: 60px;
+    clear: both;
 }
 .second-level-menu-wrapper.fixed {
     position: fixed;
@@ -5871,7 +5871,8 @@ form input.st-search-input {
     z-index: 999;
     padding-bottom: 0;
     background: url(/cms_backoffice/assets/201510021536/bg-about-us) center -80px;
-    border-bottom: 1px solid #d6d6d6
+    border-bottom: 1px solid #d6d6d6;
+    height: 50px;
 }
 .second-level-menu-wrapper span.title {
     text-decoration: none;
