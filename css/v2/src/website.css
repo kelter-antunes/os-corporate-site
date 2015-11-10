@@ -5658,6 +5658,11 @@ a.osbtn-orange {
     position: inherit;
     height: 80px
 }
+.navigation-outter {
+    padding-bottom: 10px;
+    background-color: #e6eaeb;
+    border-bottom: 10px solid white;
+}
 .navigation-outter.navigation-wrapper {
     padding-top: 0
 }
@@ -5675,7 +5680,12 @@ a.osbtn-orange {
     background: 0 0
 }
 .header-hero-wrapper.home-rev .secondary-menu, .header-hero-wrapper.home-rev .secondary-menu a, .header-hero-wrapper.home-rev .secondary-menu span {
-    color: #D2D2D2
+    font-family: Arial;
+    color: #666666;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
 }
 .header-hero-wrapper.case-studies-detail-new .secondary-menu * {
     color: #ececec
@@ -5718,12 +5728,13 @@ a.osbtn-orange {
     color: white;
     margin-bottom: 10px;
 }
-
 .header-hero-wrapper.home-rev .hero {
     padding-bottom: 40px;
     background: none;
 }
-
+.header-hero-wrapper.home-rev.for-slices {
+    background-size: cover;
+}
 .section {
     padding: 60px 0;
 }
