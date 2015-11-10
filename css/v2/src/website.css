@@ -4979,7 +4979,7 @@ div.Application_Menu div.Menu_DropDownPanel a, div.Application_Menu div.Menu_Dro
 }
 .video-container {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 52.25%;
     padding-top: 30px;
     height: 0;
     overflow: hidden
@@ -4990,6 +4990,46 @@ div.Application_Menu div.Menu_DropDownPanel a, div.Application_Menu div.Menu_Dro
     left: 0;
     width: 100%;
     height: 100%
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+.span1 .video-container {
+    padding-bottom: 22.25%;
+}
+.span2 .video-container {
+    padding-bottom: 31.25%;
+}
+.span3 .video-container {
+    padding-bottom: 41.25%;
+}
+.span4 .video-container {
+    padding-bottom: 49.25%;
+}
+.span5 .video-container {
+    padding-bottom: 51.25%;
+}
+.span6 .video-container {
+    padding-bottom: 51.25%;
+}
+.span7 .video-container {
+    padding-bottom: 52.25%;
+}
+.span8 .video-container {
+    padding-bottom: 52.25%;
+}
+.span9 .video-container {
+    padding-bottom: 53.25%;
+}
+.span10 .video-container {
+    padding-bottom: 53.25%;
+}
+.span11 .video-container {
+    padding-bottom: 53.25%;
+}
+.span12 .video-container {
+    padding-bottom: 53.25%;
 }
 p.webinar_link {
     letter-spacing: 0 !important
