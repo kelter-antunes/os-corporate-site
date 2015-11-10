@@ -5666,13 +5666,10 @@ a.osbtn-orange {
     background-image: url(/cms_backoffice/assets/20151109151753/bg-hero-circle.png);
     background-position: right 1210px;
 }
-
-.header-hero-wrapper.for-boxes .hero.wide:before,
-.header-hero-wrapper.for-slices .hero.wide:before {
+.header-hero-wrapper.for-boxes .hero.wide:before, .header-hero-wrapper.for-slices .hero.wide:before {
     width: 75%;
     background-position: right 1050px;
 }
-
 .header-hero-wrapper.for-boxes .hero .container, .header-hero-wrapper.for-slices .hero .container {
     z-index: 99;
     position: relative;
@@ -5682,7 +5679,7 @@ a.osbtn-orange {
     margin-bottom: 10px;
 }
 .section {
-    padding: 40px 0;
+    padding: 60px 0;
 }
 .section.cta {
     background-color: #666666;
@@ -5729,6 +5726,47 @@ a.osbtn-orange {
 }
 .section .highlight-box-inner.no-image div {
     padding: 0 20px 20px;
+}
+.section ul {
+    margin-left: 20px;
+}
+.section .box {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ceccca;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    box-shadow: 0px 1px 0px 0px rgba(1, 1, 1, 0.3);
+    padding: 20px;
+}
+.section .box h3 {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.18px;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.section .box .meterial-item a span[class^=osicon-] {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: left;
+}
+.section .box .meterial-item a {
+    display: inline-block;
+    display: flex;
+    text-decoration: none;
+    vertical-align: middle;
+    align-items: center;
+}
+.section .box .meterial-item {
+    margin-bottom: 10px;
+}
+.align-right {
+    text-align: right;
 }
 .search_field {
     -moz-border-radius: 2px;
