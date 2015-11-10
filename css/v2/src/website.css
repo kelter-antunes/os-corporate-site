@@ -5014,10 +5014,10 @@ div.Application_Menu div.Menu_DropDownPanel a, div.Application_Menu div.Menu_Dro
     padding-bottom: 51.25%;
 }
 .span7 .video-container {
-    padding-bottom: 52.25%;
+    padding-bottom: 50.25%;
 }
 .span8 .video-container {
-    padding-bottom: 52.25%;
+    padding-bottom: 50.25%;
 }
 .span9 .video-container {
     padding-bottom: 53.25%;
@@ -5718,6 +5718,12 @@ a.osbtn-orange {
     color: white;
     margin-bottom: 10px;
 }
+
+.header-hero-wrapper.home-rev .hero {
+    padding-bottom: 40px;
+    background: none;
+}
+
 .section {
     padding: 60px 0;
 }
