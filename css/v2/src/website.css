@@ -5892,13 +5892,6 @@ form input.st-search-input {
     transition: all .5s ease;
     opacity: 0
 }
-
-
-
-
-
-
-
 body.landing-no-top {
     background: #fff
 }
@@ -5952,10 +5945,9 @@ a:hover span.h6-product-tab {
     font-weight: 400;
     color: gray;
     margin-left: 30px;
-    height: 38px
 }
 .sub-navigation-bar li a:hover {
-    color: #cb2100;
+    color: #c20;
     text-decoration: none
 }
 .sub-navigation-bar li.active a {
@@ -5975,14 +5967,6 @@ a:hover span.h6-product-tab {
     float: left;
     width: auto
 }
-
-
-
-
-
-
-
-
 .second-level-menu-wrapper.tabs {
     float: right;
     z-index: 99;
@@ -5990,37 +5974,36 @@ a:hover span.h6-product-tab {
     clear: both;
     background-color: transparent;
     overflow: hidden;
-  }
-  .second-level-menu-wrapper.tabs .sub-navigation-bar a.active {
+}
+.second-level-menu-wrapper.tabs .sub-navigation-bar a.active {
     background: white;
-    -moz-box-shadow: 0 0 8px rgba(0,0,0,.3);
-    -webkit-box-shadow: 0 0 8px rgba(0,0,0,.3);
-    box-shadow: 0 0 8px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .3);
     color: #cc2100;
     background: white;
     height: 50px;
     font-weight: 600;
-  }
-  .second-level-menu-wrapper.tabs .sub-navigation-bar li a {
+    margin: auto 5px;
+}
+.second-level-menu-wrapper.tabs .sub-navigation-bar li a {
     color: #596669;
     padding: 5px 20px;
     line-height: 50px;
     font-size: 13px;
     text-align: center;
     display: block;
-  }
-  .second-level-menu-wrapper.tabs .sub-navigation-bar li a {
+}
+.second-level-menu-wrapper.tabs .sub-navigation-bar li a {
     font-family: myriad-pro, arial, sans-serif;
     line-height: 50px;
     font-size: 13px;
     font-weight: 400;
-    color: gray;
     text-align: center;
     display: block;
     margin-left: 0px;
-    height: 38px;
-  }
-  .second-level-menu-wrapper.tabs.fixed {
+}
+.second-level-menu-wrapper.tabs.fixed {
     position: fixed;
     top: 0px;
     right: 0;
@@ -6029,22 +6012,17 @@ a:hover span.h6-product-tab {
     padding-bottom: 0;
     background: url('/cms_backoffice/assets/20150804115143/bg-about-us') center -70px;
     border-bottom: 1px solid #d6d6d6;
-  }
-  .second-level-menu-wrapper.tabs .navigation-bar li a:hover span, 
-  .second-level-menu-wrapper.tabs .navigation-bar li.active a span {
+}
+.second-level-menu-wrapper.tabs .navigation-bar li a:hover span, .second-level-menu-wrapper.tabs .navigation-bar li.active a span {
     background-position: initial;
-  }
-  .second-level-menu-wrapper.tabs .sub-navigation-bar {
+}
+.second-level-menu-wrapper.tabs .sub-navigation-bar {
     float: none;
-    margin-left: 46px;
-  }
-
-
-
-
-
-
-
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 h1.slogan, h3.description {
     font-weight: 400;
     color: #fff
