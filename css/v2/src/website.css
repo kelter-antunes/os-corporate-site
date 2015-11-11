@@ -5661,7 +5661,7 @@ a.osbtn-orange {
 .navigation-outter {
     padding-bottom: 10px;
     background-color: #e6eaeb;
-    border-bottom: 10px solid white;
+    border-bottom: 2px solid white;
 }
 .navigation-outter.navigation-wrapper {
     padding-top: 0
@@ -5754,7 +5754,7 @@ a.osbtn-orange {
     margin-left: 40px;
 }
 div#footer-wrapper {
-    margin-top: -60px;
+    margin-top: -68px;
 }
 .section .highlight-box a {
     display: block;
