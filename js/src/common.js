@@ -225,13 +225,20 @@ $(document).ready(function() {
                 (pathname === '/customers/' && pathname === currEl.attr('href')) ||
                 (pathname === '/partners/' && pathname === currEl.attr('href')) ||
                 (pathname === '/platform/whats-new-in-platform-9-amsterdam/' && pathname === currEl.attr('href')) ||
+                (pathname === '/platform/whats-new-in-platform-9-bali/' && pathname === currEl.attr('href'))
                 (pathname === '/platform/sap/' && pathname === currEl.attr('href'))
 
 
             ) {
                 currEl.addClass('active');
 
-            } else if ((currEl.attr('href') !== '/platform/sap/' && currEl.attr('href') !== '/platform/' && currEl.attr('href') !== '/customers/' && currEl.attr('href') !== '/partners/' && currEl.attr('href') !== '/platform/whats-new-in-platform-9-amsterdam/') && pathname.indexOf(currEl.attr('href')) !== -1) {
+            } else if ((currEl.attr('href') !== '/platform/sap/' && 
+                        currEl.attr('href') !== '/platform/' && 
+                        currEl.attr('href') !== '/customers/' && 
+                        currEl.attr('href') !== '/partners/' && 
+                        currEl.attr('href') !== '/platform/whats-new-in-platform-9-amsterdam/'&& 
+                        currEl.attr('href') !== '/platform/whats-new-in-platform-9-bali/') && 
+                    pathname.indexOf(currEl.attr('href')) !== -1) {
                 currEl.addClass('active');
 
 
