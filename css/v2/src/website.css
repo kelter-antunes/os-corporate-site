@@ -5405,6 +5405,22 @@ div.st-result .st-date {
     margin: 0 auto;
     box-shadow: none;
 }
+
+.overlay {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 9;
+}
+
+body.mega-menu .overlay {
+    display: block;
+}
+
 .solution-hero {
     background: url(/cms_backoffice/assets/201510021536/bg-singular-indu-dcddde) top center no-repeat #dcddde;
     height: 370px;

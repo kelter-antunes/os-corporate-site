@@ -826,6 +826,8 @@ function hideDropDown() {
     $('.navigation-bar li[class*="active"]').removeClass("active");
     $("[data-dropdown-wrapper]").hide();
     $('body').removeClass('mega-menu'); // same as below
+    $('.overlay').fadeOut();
+
 
     if (window.location.pathname !== '/') {
         initial.addClass("active");
@@ -839,6 +841,7 @@ function toggleDropdowMenu(a) {
     $("[data-dropdown-wrapper]").hide();
     $("[data-dropdown-wrapper='" + $(a).attr("data-name") + "']").toggle();
     $('body').addClass('mega-menu');// This is used to override a CSS style that colides with the "active" CSS style used by the menu entries
+    $('.overlay').fadeIn();
     if (a.parent().hasClass("active open")) {
         a.parent().removeClass("active open");
         currentActive.addClass("active open");
@@ -851,6 +854,8 @@ function toggleDropdowMenu(a) {
 var mkto_resized = false;
 
 $(document).ready(function() {
+
+    $( "body" ).prepend( "<div class='overlay'></div>" );
 
     initial = $('.navigation-bar li[class*="active"]');
 
