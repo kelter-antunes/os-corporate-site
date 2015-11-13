@@ -839,12 +839,12 @@ function toggleDropdowMenu(a) {
     $("[data-dropdown-wrapper]").hide();
     $("[data-dropdown-wrapper='" + $(a).attr("data-name") + "']").toggle();
     $('body').addClass('mega-menu'); // This is used to override a CSS style that colides with the "active" CSS style used by the menu entries
-    if (a.parent().hasClass("active open")) {
-        a.parent().removeClass("active open");
-        currentActive.addClass("active open");
+    if (a.parent().hasClass("active")) {
+        a.parent().removeClass("active");
+        currentActive.addClass("active");
     } else {
-        a.parent().addClass("active open");
-        currentActive.removeClass("active open");
+        a.parent().addClass("active");
+        currentActive.removeClass("active");
     }
 }
 
@@ -854,8 +854,7 @@ $(document).ready(function() {
 
     initial = $('.navigation-bar li[class*="active"]');
 
-    //on click
-    $("[data-option=dropdown-click]").click(function(a) {
+    $("[data-option=dropdown]").click(function(a) {
         a.preventDefault(), a.stopPropagation();
         var b = $(this),
             menuName = $(b).attr("data-name"),
@@ -878,39 +877,13 @@ $(document).ready(function() {
         }
     });
 
-
-    //on mouse hover
-    $("[data-option=dropdown-hover]").hover(function(e) {
-        e.preventDefault(), e.stopPropagation();
-        var b = $(this),
-            menuName = $(b).attr("data-name"),
-            c = $("[data-dropdown-wrapper='" + menuName + "']");
+});
 
 
 
-
-        $(this).closest('ul').find('li.active').removeClass('active');
-        toggleDropdowMenu(b);
-        $("[data-dropdown-wrapper]").click(function(e) {
-            e.stopPropagation();
-        });
-        $(document).on("click", function() {
-            hideDropDown(b)
-        });
-
-    }, function() {
-        // var b = $(this),
-        //     menuName = $(b).attr("data-name"),
-        //     c = $("[data-dropdown-wrapper='" + menuName + "']");
-        // hideDropDown(b);
-    });
-
-
-
-
-
-
-    //marketo iframe width resize for iphone cases when width is 100%
+var mkto_resized = false;
+$(document).ready(function() {
+        //marketo iframe width resize for iphone cases when width is 100%
     if ($.browser.mobile) {
         $('#mkto_frame').bind('load', function() {
             if ($(this).css('width') !== undefined && $(this)[0].style.width === '100%' || $('.video-container #mkto_frame') !== undefined) {
@@ -922,8 +895,8 @@ $(document).ready(function() {
             }
         });
     }
-
 });
+
 
 //marketo iframe width resize for iphone cases when width is 100%, when orientation changes from portrait to landscape
 $(window).resize(function() {
