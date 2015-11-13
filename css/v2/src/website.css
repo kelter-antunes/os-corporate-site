@@ -5388,6 +5388,23 @@ div.st-result .st-date {
 .submenuhover .customers-case-study-preview {
     background-image: none
 }
+.submenuhover .submenu-cta {
+    background-color: #6DA7DE;
+    color: white;
+    font-weight: 400;
+    text-align: right;
+    padding: 3px 10px;
+    border-top: 1px solid #79AEE0;
+}
+.submenuhover .submenu-cta a {
+    color: white;
+    text-decoration: underline;
+}
+.submenuhover.submenu-hover-sections {
+    width: 980px;
+    margin: 0 auto;
+    box-shadow: none;
+}
 .solution-hero {
     background: url(/cms_backoffice/assets/201510021536/bg-singular-indu-dcddde) top center no-repeat #dcddde;
     height: 370px;
@@ -5987,7 +6004,7 @@ a:hover span.h6-product-tab {
     margin: auto 5px;
 }
 .second-level-menu-wrapper.tabs .sub-navigation-bar li a {
-        font-family: myriad-pro, arial, sans-serif;
+    font-family: myriad-pro, arial, sans-serif;
     line-height: 50px;
     font-size: 13px;
     font-weight: 400;
@@ -5996,7 +6013,6 @@ a:hover span.h6-product-tab {
     margin-left: 0px;
     padding: 5px 20px;
 }
-
 .second-level-menu-wrapper.tabs.fixed {
     position: fixed;
     top: 0px;
