@@ -5382,7 +5382,7 @@ div.st-result .st-date {
     filter: none;
     border-bottom: 1px solid #aaa
 }
-.submenuhoverbox-secondcontent>ul>li {
+.submenuhoverbox-secondcontent ul>li {
     margin-bottom: 8px
 }
 .submenuhover .customers-case-study-preview {
