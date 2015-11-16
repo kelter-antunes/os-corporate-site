@@ -640,6 +640,13 @@ a.tooltip-link {
 .osbtn-gray:active {
     background-color: gray
 }
+.osbtn-lightgray {
+    color: #333;
+}
+
+.osbtn-lightgray:hover {
+    color: #333;
+}
 .osbtn-blue {
     display: inline-block;
     font-family: myriad-pro, Arial, sans-serif;
@@ -5767,20 +5774,23 @@ a.osbtn-orange {
 
 
 .header-hero-wrapper .call-out-hero-home .hero h1 {
-    font-weight: 600;
-    margin-bottom: 20px;
+font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 50px;
 }
 
 .call-out-hero-home .hero h2 {
-    color: white;
+color: #fff;
     font-weight: 400;
     font-size: 24px;
+    margin-bottom: 30px;
 }
 
 .call-out-hero-home .hero p {
-    font-size: 18px;
+font-size: 18px;
     line-height: 25px;
     margin: 0;
+    font-family: myriad-pro,Arial,sans-serif;
 }
 
 .call-out-hero-home .hero a {
