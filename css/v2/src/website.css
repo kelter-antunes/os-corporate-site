@@ -962,7 +962,7 @@ a.tooltip-link {
     filter: none
 }
 .header-hero-wrapper.home-rev {
-    background: url(/cms_backoffice/assets/201510021536/homepage-top-header-bg) center no-repeat #706E6F;
+    background: url(/cms_backoffice/assets/20151116105539/homepage-top-header-bg) center no-repeat #706E6F;
     height: 510px;
     position: relative
 }
@@ -5758,7 +5758,7 @@ a.osbtn-orange {
     margin-bottom: 10px;
 }
 .header-hero-wrapper.home-rev .hero {
-    padding-bottom: 0px;
+    padding: 0;
     background: none;
 }
 .header-hero-wrapper.home-rev.for-slices {
