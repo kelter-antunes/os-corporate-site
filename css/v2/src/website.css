@@ -6059,6 +6059,7 @@ a:hover span.h6-product-tab {
     padding-bottom: 0;
     background: url('/cms_backoffice/assets/20150804115143/bg-about-us') center -70px;
     border-bottom: 1px solid #d6d6d6;
+    padding-right: 28px;
 }
 .second-level-menu-wrapper.tabs .navigation-bar li a:hover span, .second-level-menu-wrapper.tabs .navigation-bar li.active a span {
     background-position: initial;
