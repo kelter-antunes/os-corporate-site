@@ -5767,17 +5767,18 @@ a.osbtn-orange {
 
 
 .header-hero-wrapper .call-out-hero-home .hero h1 {
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
 .call-out-hero-home .hero h2 {
     color: white;
     font-weight: 400;
+    font-size: 24px;
 }
 
 .call-out-hero-home .hero p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 25px;
     margin: 0;
 }
