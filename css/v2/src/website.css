@@ -5758,12 +5758,37 @@ a.osbtn-orange {
     margin-bottom: 10px;
 }
 .header-hero-wrapper.home-rev .hero {
-    padding-bottom: 40px;
+    padding-bottom: 0px;
     background: none;
 }
 .header-hero-wrapper.home-rev.for-slices {
     background-size: cover;
 }
+
+
+.header-hero-wrapper .call-out-hero-home .hero h1 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.call-out-hero-home .hero h2 {
+    color: white;
+    font-weight: 400;
+}
+
+.call-out-hero-home .hero p {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0;
+}
+
+.call-out-hero-home .hero a {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+
+
 .section {
     padding: 60px 0;
 }
