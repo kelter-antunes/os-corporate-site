@@ -7030,6 +7030,29 @@ img.mfp-img {
     font-size: 27px;
     right: 15px
 }
+
+
+a.magnific_popup_link.zoom {
+    position: relative;
+    display: inline-block;
+}
+
+a.magnific_popup_link.zoom:after {
+    content:"";
+    background-image: url('/cms_backoffice/assets/20150306013343/overlay_screenshot_224.png');
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 46px;
+    background-position: -89px -37px;
+    margin-left: -23px;
+    left: 50%;
+    margin-top: -23px;
+    top: 50%;
+}
+
+
+
 a.magnific_popup-close, a.magnific_popup-next, a.magnific_popup-prev {
     color: #f2f2f2;
     text-decoration: none
