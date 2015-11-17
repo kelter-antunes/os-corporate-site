@@ -5,7 +5,7 @@ v=201510021536
 */
 @media screen and (max-width:767px) {
     span[id*=ListSection] {
-        display: inline-block;
+        display: block;
         float: none;
         position: relative;
     }
