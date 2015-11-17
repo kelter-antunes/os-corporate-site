@@ -3,33 +3,38 @@ cache invalidator
 
 v=201510021536
 */
-
-@media screen and (max-width: 767px) {
-
-     #accord  {
-    display:none !important;
-  }
-
-
-
-
-
+@media screen and (max-width:767px) {
+    span[id*=ListSection] {
+        display: inline-block;
+        float: none;
+        position: relative;
+    }
+    #accord {
+        display: none !important;
+    }
     .innovation-apply {
-    background: none;
-    background-color: #000;
-    
-}
-
-    .benefits span.h3 { margin-bottom: 15px }
-    .benefits span.desc { min-height: 0; padding: 0 4px 20px 4px; }
-    .benefits .benefit span { font-size: 12px; }
-    .benefits .benefit { margin-bottom: 40px }
-    .benefits { padding-bottom: 20px }
-
-    .customers-and-experts a span.partner-matrix-entry{
+        background: none;
+        background-color: #000;
+    }
+    .benefits span.h3 {
+        margin-bottom: 15px
+    }
+    .benefits span.desc {
+        min-height: 0;
+        padding: 0 4px 20px 4px;
+    }
+    .benefits .benefit span {
+        font-size: 12px;
+    }
+    .benefits .benefit {
+        margin-bottom: 40px
+    }
+    .benefits {
+        padding-bottom: 20px
+    }
+    .customers-and-experts a span.partner-matrix-entry {
         width: 90px;
     }
-
     h1 {
         font-size: 30px;
         line-height: 34px;
@@ -62,45 +67,43 @@ v=201510021536
         margin-bottom: 10px
     }
 
-
     /**PartnersMobile*/
-.HeroPartnersPage {
-  background: none;
-  color: #333;
-  top: 0PX;
-  width: 100%;
-  height: auto;
-  padding-bottom: 15px;
-}
-.HeroPartnersPageTitle {
-  color: #333; 
-}
-.PartnerPageSubtitle {
-  text-align: left;
-  padding-left: 15px;
-  font-size: 14px !important;
-  padding-right: 15px;
-}
-
-.PartnerImage {
-  width: 100px;
-  display: inline-block !important;
-  vertical-align: top !important;
-  padding-top: 5px !important;
-  padding-bottom: 25px;
-}
-.Partner {
-  text-align: center;
-}
-
-.PartnersPagination {
-  padding-top: 20px;
-  text-align: center !important;
-}
-.header-hero-wrapper.customers-sublevel-menu {
-       height: 50px;
+    .HeroPartnersPage {
+        background: none;
+        color: #333;
+        top: 0PX;
+        width: 100%;
+        height: auto;
+        padding-bottom: 15px;
     }
-/**PartnersMobile end*/
+    .HeroPartnersPageTitle {
+        color: #333;
+    }
+    .PartnerPageSubtitle {
+        text-align: left;
+        padding-left: 15px;
+        font-size: 14px !important;
+        padding-right: 15px;
+    }
+    .PartnerImage {
+        width: 100px;
+        display: inline-block !important;
+        vertical-align: top !important;
+        padding-top: 5px !important;
+        padding-bottom: 25px;
+    }
+    .Partner {
+        text-align: center;
+    }
+    .PartnersPagination {
+        padding-top: 20px;
+        text-align: center !important;
+    }
+    .header-hero-wrapper.customers-sublevel-menu {
+        height: 50px;
+    }
+
+    /**PartnersMobile end*/
     .mobile-only {
         display: block
     }
@@ -178,8 +181,8 @@ v=201510021536
     .lead {
         height: auto
     }
+
     /*get-started*/
-    
     .hero-section-get-started {
         background-image: url(/cms_backoffice/assets/201510021536/light-grey-bg-mobile);
         padding-top: 30px;
@@ -207,20 +210,20 @@ v=201510021536
         margin: 0 auto
     }
     .getstarted-what-cols {
-        margin-left: auto!important;
-        margin-right: auto!important;
+        margin-left: auto !important;
+        margin-right: auto !important;
         margin-bottom: 30px;
         float: none;
         clear: both
     }
     .pad-fix {
-        padding-top: 0!important
+        padding-top: 0 !important
     }
     .margin-top-fix {
-        margin-top: 0!important
+        margin-top: 0 !important
     }
+
     /** about section **/
-    
     .sub-navigation-bar {
         display: none
     }
@@ -237,19 +240,19 @@ v=201510021536
         margin-top: 10px
     }
     .management-box {
-        height: auto!important
+        height: auto !important
     }
     .career-caption-wrapper {
         margin-top: 0;
         position: relative
     }
     .col-back {
-        height: auto!important;
+        height: auto !important;
         margin-bottom: 10px;
         padding-bottom: 10px
     }
     #careers-top {
-        margin-top: 0!important;
+        margin-top: 0 !important;
         margin-bottom: -30px
     }
     .careers-breadcrumb {
@@ -261,8 +264,8 @@ v=201510021536
     .hide-in-mobile {
         display: none
     }
+
     /** customers **/
-    
     .header-hero-wrapper.customers-hero {
         height: 0;
         margin-top: 50px
@@ -296,7 +299,7 @@ v=201510021536
         margin-bottom: 10px
     }
     .cs-banner.casestudy {
-        background-size: cover!important;
+        background-size: cover !important;
         background-position: center;
         min-width: 100%;
         width: 100%;
@@ -308,12 +311,16 @@ v=201510021536
     .cs-title-box {
         height: 325px
     }
-    .cs-title-box-topbar {} .cs-title-box-h-wrapper {
+    .cs-title-box-topbar {
+    }
+    .cs-title-box-h-wrapper {
         min-height: 130px;
         padding: 20px 40px;
         width: auto
     }
-    .cs-title-box-botbar {} .cs-title-box-h-wrapper h1 {
+    .cs-title-box-botbar {
+    }
+    .cs-title-box-h-wrapper h1 {
         font-size: 21px
     }
     .cs-title-box-botbar-wrapper {
@@ -354,13 +361,13 @@ v=201510021536
     }
     .main-quote-background {
         min-height: 165px;
-        height: 100%!important
+        height: 100% !important
     }
     .main-quote-background:after {
-        top: 20px!important
+        top: 20px !important
     }
+
     /** search **/
-    
     .search-overlay {
         top: 0;
         left: 0;
@@ -424,9 +431,7 @@ v=201510021536
         text-align: center
     }
     .Menu_Container {
-        margin-bottom: 44px;
-        /* iphone bottom toolbar */
-        
+        margin-bottom: 44px;        /* iphone bottom toolbar */
         width: 100%
     }
     .Application_Menu {
@@ -437,23 +442,17 @@ v=201510021536
         width: 100%;
         height: 100%;
         overflow: hidden;
-        padding-left: 45px;
-        /* Animate the menu when opening and closing */
-        
+        padding-left: 45px;        /* Animate the menu when opening and closing */
         -webkit-transition: all .3s ease-out;
         -moz-transition: all .3s ease-out;
         -ms-transition: all .3s ease-out;
         -o-transition: all .3s ease-out;
-        transition: all .3s ease-out;
-        /* Enable hardware acceleration */
-        
+        transition: all .3s ease-out;        /* Enable hardware acceleration */
         -webkit-transform: translateZ(0);
         -moz-transform: translateZ(0);
         -ms-transform: translateZ(0);
         -o-transform: translateZ(0);
-        transform: translateZ(0);
-        /* reduce animation flickering */
-        
+        transform: translateZ(0);        /* reduce animation flickering */
         -webkit-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
         -ms-backface-visibility: hidden;
@@ -464,7 +463,9 @@ v=201510021536
         perspective: 1000px;
         font-family: 'myriad-pro', "Helvetica Neue", Helvetica, Arial, sans-serif
     }
-    .Header .Application_Menu {} .LeftMenu .Application_Menu {
+    .Header .Application_Menu {
+    }
+    .LeftMenu .Application_Menu {
         left: -270px
     }
     .MenuSlider_IsOpen .Application_Menu {
@@ -474,8 +475,8 @@ v=201510021536
     .MenuSlider_IsOpen .LeftMenu .Application_Menu {
         left: 0
     }
+
     /* fix for older versions of android */
-    
     .MenuSlider_IsOpen select {
         z-index: 0
     }
@@ -485,8 +486,8 @@ v=201510021536
         margin: 0;
         padding: 0
     }
+
     /* the "body >" rule applies only when in design mode, directy on the web block menu */
-    
     body > div.Application_Menu .Menu_DropDownButton, .Application_Menu .Menu_DropDownButton {
         display: block;
         position: relative
@@ -519,8 +520,8 @@ v=201510021536
         left: 105px;
         top: 21px
     }
+
     /* create an overlay so that you can close the menu on click (body) */
-    
     .MenuSlider_Toggler_Overlay {
         top: 0;
         left: 0;
@@ -564,8 +565,8 @@ v=201510021536
     .wrap-link {
         width: 100%
     }
+
     /** landings **/
-    
     .lp-heading {
         font-size: 30px;
         line-height: 34px;
@@ -609,7 +610,9 @@ v=201510021536
     .how-bg-gray-light {
         background: url(/cms_backoffice/assets/201510021536/light-grey-bg-mobile)
     }
-    .case-study-title-image img {} .pricing-feature-image {
+    .case-study-title-image img {
+    }
+    .pricing-feature-image {
         float: left;
         margin-right: 20px
     }
@@ -634,7 +637,7 @@ v=201510021536
         min-height: 115px
     }
     .case-study-customer-logo {
-        position: relative!important;
+        position: relative !important;
         text-align: center;
         margin-bottom: 10px
     }
@@ -651,30 +654,22 @@ v=201510021536
         top: -278px
     }
     .innovation-submission-project-step1 {
-    margin-left: 0px;
-    background-size: 20px;
-    height: auto;
+        margin-left: 0px;
+        background-size: 20px;
+        height: auto;
     }
-    .innovation-submission-project-step2 {    
-     margin-left: 0px; 
-     background-size: 20px;
-     height: auto; 
+    .innovation-submission-project-step2 {
+        margin-left: 0px;
+        background-size: 20px;
+        height: auto;
     }
     .innovation-submission-project-steps-content {
-  display: inline-block;
-  left: 30px;
-  top: 0px;
-}
-
-
-
-
-
-
-
-
+        display: inline-block;
+        left: 30px;
+        top: 0px;
+    }
     div.cs-title-box-botbar-wrapper > div.no-image > div.case-study-customer-testimonial > div.case-study-customer-logo {
-        position: relative!important;
+        position: relative !important;
         float: right;
         margin-top: 10px
     }
@@ -689,12 +684,14 @@ v=201510021536
         position: relative;
         top: 0;
         margin-left: 0;
-        margin-right: 0;
-        /* background: url('/cms_backoffice/assets/201510021536/mobile_solutions_img'); */
+        margin-right: 0;        /* background: url('/cms_backoffice/assets/201510021536/mobile_solutions_img'); */
+
         /* background-repeat: no-repeat; */
+
         /* background-position: right 70px; */
-        
+
         width: auto
+
         /* padding-right: 10px; */
     }
     .submenuhoverbox {
@@ -727,8 +724,8 @@ v=201510021536
         float: none;
         margin-left: 0
     }
+
     /** solutions **/
-    
     .solution-all-hero {
         height: 750px;
         background-size: cover;
@@ -822,9 +819,7 @@ v=201510021536
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        /* Animate the menu when opening and closing */
-        
+        -ms-transform: rotate(45deg);        /* Animate the menu when opening and closing */
         -webkit-transition: all .3s ease-out;
         -moz-transition: all .3s ease-out;
         -ms-transition: all .3s ease-out;
@@ -836,9 +831,7 @@ v=201510021536
         -webkit-transform: rotate(0);
         -moz-transform: rotate(0);
         -o-transform: rotate(0);
-        -ms-transform: rotate(0);
-        /* Animate the menu when opening and closing */
-        
+        -ms-transform: rotate(0);        /* Animate the menu when opening and closing */
         -webkit-transition: all .3s ease-out;
         -moz-transition: all .3s ease-out;
         -ms-transition: all .3s ease-out;
@@ -944,8 +937,8 @@ v=201510021536
     }
     .m-center:not(.m-fluid)>.m-carousel-inner {
         display: inline-block;
-        margin-right: -20000px!important;
-        margin-left: 0!important
+        margin-right: -20000px !important;
+        margin-left: 0 !important
     }
     .m-center:not(.m-fluid)>.m-carousel-inner>* {
         position: relative;
@@ -1121,7 +1114,9 @@ v=201510021536
     .m-fluid .m-item {
         margin-bottom: 0
     }
-    .m-carousel-photos {} .m-carousel-photos .m-item>img {
+    .m-carousel-photos {
+    }
+    .m-carousel-photos .m-item>img {
         margin: 0;
         padding: 0;
         max-width: none;
@@ -1204,7 +1199,9 @@ v=201510021536
         padding-top: 20px;
         border-top: 1px solid #C2C2C2;
     }
-    .header-hero-wrapper {} .submenuhoverbox-firstcontent.light-back a, .submenuhoverbox-secondcontent.mobile-back a {
+    .header-hero-wrapper {
+    }
+    .submenuhoverbox-firstcontent.light-back a, .submenuhoverbox-secondcontent.mobile-back a {
         padding-left: 100px;
     }
     .submenuhoverbox-firstcontent {
@@ -1271,8 +1268,8 @@ v=201510021536
         padding-top: 0;
     }
     .customers-and-experts img {
-        height: auto!important;
-        width: auto!important;
+        height: auto !important;
+        width: auto !important;
     }
     .second-level-menu-wrapper {
         display: none;
@@ -1284,68 +1281,75 @@ v=201510021536
         width: 90px;
     }
 }
+
 /* Landscape */
-
-@media only screen and (max-device-width: 767px) and (orientation: landscape) {
-
+@media only screen and (max-device-width:767px) and (orientation:landscape) {
     .row.InovationCards {
-  padding: 0px 10%;
-}
-
-    .benefits span.h3 { margin-bottom: 15px }
-    .benefits span.desc { min-height: 0; padding: 0 4px 20px 4px; }
-    .benefits .benefit span { font-size: 12px; }
-    .benefits .benefit { margin-bottom: 40px }
-    .benefits { padding-bottom: 20px }
-
-    .customers-and-experts a span.partner-matrix-entry{
+        padding: 0px 10%;
+    }
+    .benefits span.h3 {
+        margin-bottom: 15px
+    }
+    .benefits span.desc {
+        min-height: 0;
+        padding: 0 4px 20px 4px;
+    }
+    .benefits .benefit span {
+        font-size: 12px;
+    }
+    .benefits .benefit {
+        margin-bottom: 40px
+    }
+    .benefits {
+        padding-bottom: 20px
+    }
+    .customers-and-experts a span.partner-matrix-entry {
         width: 90px;
     }
-
     div.case-study-landscape-landscape {
         display: block
     }
     div.case-study-landscape-portrait {
         display: none
     }
+
     /**PartnersMobile*/
-.HeroPartnersPage {
-  background: none;
-  color: #333;
-  top: 0PX;
-  width: 100%;
-  height: auto;
-  padding-bottom: 15px;
-}
-.HeroPartnersPageTitle {
-  color: #333; 
-}
-.PartnerPageSubtitle {
-  text-align: left;
-  padding-left: 15px;
-  font-size: 14px !important;
-  padding-right: 15px;
-}
-
-.PartnerImage {
-  width: 100px;
-  display: inline-block !important;
-  vertical-align: top !important;
-  padding-top: 5px !important;
-  padding-bottom: 25px;
-}
-.Partner {
-  text-align: center;
-}
-
-.PartnersPagination {
-  padding-top: 20px;
-  text-align: center !important;
-}
-.header-hero-wrapper.customers-sublevel-menu {
-       height: 50px;
+    .HeroPartnersPage {
+        background: none;
+        color: #333;
+        top: 0PX;
+        width: 100%;
+        height: auto;
+        padding-bottom: 15px;
     }
-/**PartnersMobile end*/
+    .HeroPartnersPageTitle {
+        color: #333;
+    }
+    .PartnerPageSubtitle {
+        text-align: left;
+        padding-left: 15px;
+        font-size: 14px !important;
+        padding-right: 15px;
+    }
+    .PartnerImage {
+        width: 100px;
+        display: inline-block !important;
+        vertical-align: top !important;
+        padding-top: 5px !important;
+        padding-bottom: 25px;
+    }
+    .Partner {
+        text-align: center;
+    }
+    .PartnersPagination {
+        padding-top: 20px;
+        text-align: center !important;
+    }
+    .header-hero-wrapper.customers-sublevel-menu {
+        height: 50px;
+    }
+
+    /**PartnersMobile end*/
     .magiccontainer {
         margin: 0 auto;
         width: 320px
@@ -1369,7 +1373,7 @@ v=201510021536
         width: auto
     }
     .popup-mobile-back {
-        height: auto!important
+        height: auto !important
     }
     .hero-home-back .span2 {
         width: 150px
@@ -1397,118 +1401,121 @@ v=201510021536
         margin-right: 5px;
     }
 }
+
 /* portrait */
-
-@media only screen and (max-device-width: 767px) and (orientation: portrait) {
-
-    .innovation-case-study-preview:after { 
-  bottom: -25px;
-}
-
-.innovation-case-study-canitbeyou:after {
-  bottom: -25px;
-}
-
-
-
-
-    .benefits span.h3 { margin-bottom: 15px }
-    .benefits span.desc { min-height: 0; padding: 0 4px 20px 4px; }
-    .benefits .benefit span { font-size: 12px; }
-    .benefits .benefit { margin-bottom: 40px }
-    .benefits { padding-bottom: 20px }
-    
-    .customers-and-experts a span.partner-matrix-entry{
+@media only screen and (max-device-width:767px) and (orientation:portrait) {
+    .innovation-case-study-preview:after {
+        bottom: -25px;
+    }
+    .innovation-case-study-canitbeyou:after {
+        bottom: -25px;
+    }
+    .benefits span.h3 {
+        margin-bottom: 15px
+    }
+    .benefits span.desc {
+        min-height: 0;
+        padding: 0 4px 20px 4px;
+    }
+    .benefits .benefit span {
+        font-size: 12px;
+    }
+    .benefits .benefit {
+        margin-bottom: 40px
+    }
+    .benefits {
+        padding-bottom: 20px
+    }
+    .customers-and-experts a span.partner-matrix-entry {
         width: 90px;
-    } 
-    
+    }
     div.case-study-landscape-landscape {
         display: none
     }
     div.case-study-landscape-portrait {
         display: block
     }
+
     /**PartnersMobile*/
-.HeroPartnersPage {
-  background: none;
-  color: #333;
-  top: 0PX;
-  width: 100%;
-  height: auto;
-  padding-bottom: 15px;
-}
-.HeroPartnersPageTitle {
-  color: #333; 
-}
-.PartnerPageSubtitle {
-  text-align: left;
-  padding-left: 15px;
-  font-size: 14px !important;
-  padding-right: 15px;
-}
-
-.PartnerImage {
-  width: 100px;
-  display: inline-block !important;
-  vertical-align: top !important;
-  padding-top: 5px !important;
-  padding-bottom: 25px;
-}
-.Partner {
-  text-align: center;
-}
-
-.PartnersPagination {
-  padding-top: 20px;
-  text-align: center !important;
-}
-.header-hero-wrapper.customers-sublevel-menu {
-       height: 50px;
+    .HeroPartnersPage {
+        background: none;
+        color: #333;
+        top: 0PX;
+        width: 100%;
+        height: auto;
+        padding-bottom: 15px;
     }
-/**PartnersMobile end*/
-}
-/**to fix companie logos position on website*/
+    .HeroPartnersPageTitle {
+        color: #333;
+    }
+    .PartnerPageSubtitle {
+        text-align: left;
+        padding-left: 15px;
+        font-size: 14px !important;
+        padding-right: 15px;
+    }
+    .PartnerImage {
+        width: 100px;
+        display: inline-block !important;
+        vertical-align: top !important;
+        padding-top: 5px !important;
+        padding-bottom: 25px;
+    }
+    .Partner {
+        text-align: center;
+    }
+    .PartnersPagination {
+        padding-top: 20px;
+        text-align: center !important;
+    }
+    .header-hero-wrapper.customers-sublevel-menu {
+        height: 50px;
+    }
 
-@media only screen and (min-device-width: 767px) {
+    /**PartnersMobile end*/
+}
+
+/**to fix companie logos position on website*/
+@media only screen and (min-device-width:767px) {
     .case-study-customer-logo {
         bottom: 10px
     }
+
     /**PartnersMobile*/
-.HeroPartnersPage {
-  background: none;
-  color: #333;
-  top: 0PX;
-  width: 100%;
-  height: auto;
-  padding-bottom: 15px;
-}
-.HeroPartnersPageTitle {
-  color: #333; 
-}
-.PartnerPageSubtitle {
-  text-align: left;
-  padding-left: 15px;
-  font-size: 14px !important;
-  padding-right: 15px;
-}
-
-.PartnerImage {
-  width: 100px;
-  display: inline-block !important;
-  vertical-align: top !important;
-  padding-top: 5px !important;
-  padding-bottom: 25px;
-}
-.Partner {
-  text-align: center;
-}
-
-.PartnersPagination {
-  padding-top: 20px;
-  text-align: center !important;
-}
-.header-hero-wrapper.customers-sublevel-menu {
-       height: 50px;
+    .HeroPartnersPage {
+        background: none;
+        color: #333;
+        top: 0PX;
+        width: 100%;
+        height: auto;
+        padding-bottom: 15px;
     }
-/**PartnersMobile end*/
+    .HeroPartnersPageTitle {
+        color: #333;
+    }
+    .PartnerPageSubtitle {
+        text-align: left;
+        padding-left: 15px;
+        font-size: 14px !important;
+        padding-right: 15px;
+    }
+    .PartnerImage {
+        width: 100px;
+        display: inline-block !important;
+        vertical-align: top !important;
+        padding-top: 5px !important;
+        padding-bottom: 25px;
+    }
+    .Partner {
+        text-align: center;
+    }
+    .PartnersPagination {
+        padding-top: 20px;
+        text-align: center !important;
+    }
+    .header-hero-wrapper.customers-sublevel-menu {
+        height: 50px;
+    }
+
+    /**PartnersMobile end*/
 }
