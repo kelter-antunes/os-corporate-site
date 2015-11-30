@@ -826,8 +826,6 @@ function hideDropDown() {
     $('.navigation-bar li[class*="active"]').removeClass("active");
     $("[data-dropdown-wrapper]").hide();
     $('body').removeClass('mega-menu'); // same as below
-    $('.overlay').fadeOut('fast');
-
 
     if (window.location.pathname !== '/') {
         initial.addClass("active");
@@ -840,14 +838,13 @@ function toggleDropdowMenu(a) {
     $('.navigation-bar li[class*="active"]').removeClass("active");
     $("[data-dropdown-wrapper]").hide();
     $("[data-dropdown-wrapper='" + $(a).attr("data-name") + "']").toggle();
-    $('body').addClass('mega-menu');// This is used to override a CSS style that colides with the "active" CSS style used by the menu entries
-    $('.overlay').fadeIn('fast');
-    if (a.parent().hasClass("active open")) {
-        a.parent().removeClass("active open");
-        currentActive.addClass("active open");
+    $('body').addClass('mega-menu'); // This is used to override a CSS style that colides with the "active" CSS style used by the menu entries
+    if (a.parent().hasClass("active")) {
+        a.parent().removeClass("active");
+        currentActive.addClass("active");
     } else {
-        a.parent().addClass("active open");
-        currentActive.removeClass("active open");
+        a.parent().addClass("active");
+        currentActive.removeClass("active");
     }
 }
 
@@ -855,11 +852,9 @@ var mkto_resized = false;
 
 $(document).ready(function() {
 
-    $( "body" ).prepend( "<div class='overlay'></div>" );
-
     initial = $('.navigation-bar li[class*="active"]');
 
-    $("[data-option=dropdown-hover]").click(function(a) {
+    $("[data-option=dropdown]").click(function(a) {
         a.preventDefault(), a.stopPropagation();
         var b = $(this),
             menuName = $(b).attr("data-name"),
@@ -882,9 +877,12 @@ $(document).ready(function() {
         }
     });
 
+
+
+
+
+
 });
-
-
 
 var mkto_resized = false;
 $(document).ready(function() {
