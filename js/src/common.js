@@ -878,10 +878,6 @@ $(document).ready(function() {
     });
 
 
-
-
-
-
 });
 
 var mkto_resized = false;
