@@ -132,9 +132,10 @@ span[id*=ListSection] {
     left: 50%;
     margin-left: -60px;
 }
-.navigation-bar li.active.open:before {
+body.mega-menu .navigation-bar li.active:before {
     border-color: #000 #000 rgb(255, 255, 255);
 }
+
 .navigation-bar li.get-started a {
     padding: 4px 15px;
     line-height: 25px;
