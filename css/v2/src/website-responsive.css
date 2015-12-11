@@ -4,10 +4,56 @@ cache invalidator
 v=201510021536
 */
 @media screen and (max-width:767px) {
+    .hide-in-mobile {
+        display: none;
+    }
     span[id*=ListSection] {
         display: block;
         float: none;
         position: relative;
+        height: 100%;
+    }
+    .header-hero-wrapper.for-boxes .hero, .header-hero-wrapper.for-slices .hero {
+        margin-top: 50px;
+        min-height: auto;
+        background-position: 0 0;
+    }
+    .header-hero-wrapper.for-boxes .navigation-outter, .header-hero-wrapper.for-slices .navigation-outter {
+        padding-bottom: 0;
+        background-color: transparent;
+        border-bottom: none;
+    }
+    .header-hero-wrapper.for-boxes .hero.dark:before, .header-hero-wrapper.for-slices .hero.dark:before {
+        content: "";
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: black;
+        position: absolute;
+        opacity: .3;
+    }
+    .header-hero-wrapper.for-boxes .hero.bright:before, .header-hero-wrapper.for-slices .hero.bright:before {
+        content: "";
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: white;
+        position: absolute;
+        opacity: .3;
+    }
+    .section.cta {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .section.cta .cta-inner {
+        padding: 20px;
+        margin: 0;
+    }
+    .header-hero-wrapper.page-without-hero {
+        padding-bottom: 0px;
     }
     #accord {
         display: none !important;
@@ -168,8 +214,6 @@ v=201510021536
     .header-hero-wrapper.home {
         background: url(/cms_backoffice/assets/201510021536/light-grey-bg-mobile);
         height: 535px;
-        -moz-box-shadow: inset 0 -14px 10px -8px #CFCFCF;
-        -webkit-box-shadow: inset 0 -14px 10px -8px #CFCFCF;
         box-shadow: inset 0 -14px 10px -8px #CFCFCF
     }
     .osbtn-lg {
@@ -190,8 +234,6 @@ v=201510021536
         overflow: hidden;
         background-position: bottom center;
         background-repeat: repeat;
-        -moz-box-shadow: inset 0 -14px 10px -8px #CFCFCF;
-        -webkit-box-shadow: inset 0 -14px 10px -8px #CFCFCF;
         box-shadow: inset 0 -14px 10px -8px #CFCFCF
     }
     .getstarted-what-u-get {
@@ -443,22 +485,13 @@ v=201510021536
         height: 100%;
         overflow: hidden;
         padding-left: 45px;        /* Animate the menu when opening and closing */
-        -webkit-transition: all .3s ease-out;
-        -moz-transition: all .3s ease-out;
-        -ms-transition: all .3s ease-out;
-        -o-transition: all .3s ease-out;
         transition: all .3s ease-out;        /* Enable hardware acceleration */
         -webkit-transform: translateZ(0);
-        -moz-transform: translateZ(0);
-        -ms-transform: translateZ(0);
-        -o-transform: translateZ(0);
         transform: translateZ(0);        /* reduce animation flickering */
         -webkit-backface-visibility: hidden;
-        -moz-backface-visibility: hidden;
         -ms-backface-visibility: hidden;
         backface-visibility: hidden;
         -webkit-perspective: 1000;
-        -moz-perspective: 1000;
         -ms-perspective: 1000;
         perspective: 1000px;
         font-family: 'myriad-pro', "Helvetica Neue", Helvetica, Arial, sans-serif
@@ -507,8 +540,6 @@ v=201510021536
         margin: 0;
         padding: 0;
         background-color: #262626;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
         box-shadow: none;
         border-bottom: 0
     }
@@ -517,7 +548,7 @@ v=201510021536
     }
     .Application_Menu .Menu_DropDownArrow {
         position: absolute;
-        left: 105px;
+        right: 120px;
         top: 21px
     }
 
@@ -697,8 +728,6 @@ v=201510021536
     .submenuhoverbox {
         position: relative;
         padding: 0;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
         box-shadow: none;
         background-color: transparent;
         background: none;
@@ -820,10 +849,6 @@ v=201510021536
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
         -ms-transform: rotate(45deg);        /* Animate the menu when opening and closing */
-        -webkit-transition: all .3s ease-out;
-        -moz-transition: all .3s ease-out;
-        -ms-transition: all .3s ease-out;
-        -o-transition: all .3s ease-out;
         transition: all .3s ease-out
     }
     a.solutions-index-toggler.open > .osicon-close {
@@ -832,10 +857,6 @@ v=201510021536
         -moz-transform: rotate(0);
         -o-transform: rotate(0);
         -ms-transform: rotate(0);        /* Animate the menu when opening and closing */
-        -webkit-transition: all .3s ease-out;
-        -moz-transition: all .3s ease-out;
-        -ms-transition: all .3s ease-out;
-        -o-transition: all .3s ease-out;
         transition: all .3s ease-out
     }
     .pull-me-right {
@@ -906,20 +927,9 @@ v=201510021536
         white-space: nowrap;
         text-align: left;
         font-size: 0;
-        -webkit-transition-property: -webkit-transform;
-        -moz-transition-property: -moz-transform;
-        -ms-transition-property: -ms-transform;
-        -o-transition-property: -o-transform;
+        transition-property: -webkit-transform;
         transition-property: transform;
-        -webkit-transition-timing-function: cubic-bezier(0.33, .66, .66, 1);
-        -moz-transition-timing-function: cubic-bezier(0.33, .66, .66, 1);
-        -ms-transition-timing-function: cubic-bezier(0.33, .66, .66, 1);
-        -o-transition-timing-function: cubic-bezier(0.33, .66, .66, 1);
         transition-timing-function: cubic-bezier(0.33, .66, .66, 1);
-        -webkit-transition-duration: .5s;
-        -moz-transition-duration: .5s;
-        -ms-transition-duration: .5s;
-        -o-transition-duration: .5s;
         transition-duration: .5s
     }
     .m-carousel-inner>* {
@@ -963,6 +973,7 @@ v=201510021536
         padding: 5px;
         -webkit-user-select: none;
         -moz-user-select: -moz-none;
+        -ms-user-select: none;
         user-select: none;
         -webkit-user-drag: none;
         -moz-user-drag: -moz-none;
@@ -980,15 +991,8 @@ v=201510021536
         margin: 0 3px;
         color: #333;
         background-color: rgba(255, 255, 255, .3);
-        -webkit-transition: background-color .1s ease-in;
-        -moz-transition: background-color .1s ease-in;
-        -o-transition: background-color .1s ease-in;
         transition: background-color .1s ease-in;
-        -webkit-box-shadow: inset rgba(0, 0, 0, .25) 0 1px 2px;
-        -moz-box-shadow: inset rgba(0, 0, 0, .25) 0 1px 2px;
         box-shadow: inset rgba(0, 0, 0, .25) 0 1px 2px;
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
         border-radius: 6px
     }
     .m-carousel-bulleted a:focus, .m-carousel-bulleted a:hover {
@@ -997,8 +1001,6 @@ v=201510021536
     }
     .m-carousel-bulleted a.m-active {
         background-color: rgba(255, 255, 255, 1);
-        -webkit-box-shadow: rgba(0, 0, 0, .25) 0 1px 2px;
-        -moz-box-shadow: rgba(0, 0, 0, .25) 0 1px 2px;
         box-shadow: rgba(0, 0, 0, .25) 0 1px 2px
     }
     .m-carousel-pagination {
@@ -1011,12 +1013,7 @@ v=201510021536
         margin: 1px 0;
         color: #333;
         background-color: rgba(255, 255, 255, .3);
-        -webkit-transition: background-color .1s ease-in;
-        -moz-transition: background-color .1s ease-in;
-        -o-transition: background-color .1s ease-in;
         transition: background-color .1s ease-in;
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
         border-radius: 2px
     }
     .m-carousel-pagination a:focus, .m-carousel-pagination a:hover {
@@ -1044,12 +1041,7 @@ v=201510021536
         overflow: hidden;
         color: rgba(255, 255, 255, .8);
         background: rgba(0, 0, 0, .8);
-        -webkit-transition: opacity .1s ease-in;
-        -moz-transition: opacity .1s ease-in;
-        -o-transition: opacity .1s ease-in;
         transition: opacity .1s ease-in;
-        -webkit-border-radius: 25px;
-        -moz-border-radius: 25px;
         border-radius: 25px
     }
     .m-carousel:hover .m-carousel-hud a {
@@ -1094,21 +1086,13 @@ v=201510021536
         opacity: .7;
         -webkit-backface-visibility: hidden;
         -webkit-transform: scale(0.75);
-        -moz-transform: scale(0.75);
-        -ms-transform: scale(0.75);
-        -o-transform: scale(0.75);
         transform: scale(0.75);
         -webkit-transition: -webkit-transform cubic-bezier(0.33, .66, .66, 1) .25s, opacity ease-out .25s;
-        -moz-transition-timing-function: -moz-transform cubic-bezier(0.33, .66, .66, 1) .25s, opacity ease-out .25s;
-        -o-transition-timing-function: -o-transform cubic-bezier(0.33, .66, .66, 1) .25s, opacity ease-out .25s;
         transition-timing-function: transform cubic-bezier(0.33, .66, .66, 1) .25s, opacity ease-out .25s
     }
     .m-scaled .m-active {
         opacity: 1;
         -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -o-transform: scale(1);
         transform: scale(1)
     }
     .m-fluid .m-item {
@@ -1122,8 +1106,6 @@ v=201510021536
         max-width: none;
         width: 100%;
         height: auto;
-        -webkit-box-shadow: rgba(0, 0, 0, .5) 0 5px 10px;
-        -moz-box-shadow: rgba(0, 0, 0, .5) 0 5px 10px;
         -o-box-shadow: rgba(0, 0, 0, .5) 0 5px 10px;
         -ms-box-shadow: rgba(0, 0, 0, .5) 0 5px 10px;
         box-shadow: rgba(0, 0, 0, .5) 0 5px 10px
@@ -1134,17 +1116,11 @@ v=201510021536
         position: absolute;
         z-index: 9;
         width: 100%;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
         box-sizing: border-box
     }
     .m-card-dark, .m-card-light {
         padding: 20px;
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
         border-radius: 6px;
-        -webkit-box-shadow: rgba(0, 0, 0, .5) 0 5px 10px;
-        -moz-box-shadow: rgba(0, 0, 0, .5) 0 5px 10px;
         -o-box-shadow: rgba(0, 0, 0, .5) 0 5px 10px;
         -ms-box-shadow: rgba(0, 0, 0, .5) 0 5px 10px;
         box-shadow: rgba(0, 0, 0, .5) 0 5px 10px

@@ -4920,7 +4920,7 @@ div.Application_Menu div.Menu_DropDownPanel a, div.Application_Menu div.Menu_Dro
     padding-bottom: 51.25%;
 }
 .span6 .video-container {
-    padding-bottom: 51.25%;
+    padding-bottom: 48.25%;
 }
 .span7 .video-container {
     padding-bottom: 50.25%;
@@ -5237,11 +5237,44 @@ div.st-result .st-date {
 .submenuhover {
     position: absolute;
     margin-left: 28px;
-    z-index: 9999
+    z-index: 101;
+    padding: 30px 0;
 }
 .submenuhoverbox {
-    padding-bottom: 30px;
-    padding-top: 30px
+
+    /* padding-bottom: 30px;
+     padding-top: 30px*/
+}
+.submenuhoverbox .box {
+    background: #F4F4F4;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 180px;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+}
+.submenuhoverbox .box p.quote {
+    font-size: 16px;
+    color: #384142;
+    line-height: 18px;
+    font-style: italic;
+}
+.submenuhoverbox .box a {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .submenuhoverbox-line {
     border-right: 1px solid #e6e6e6;
@@ -5249,23 +5282,38 @@ div.st-result .st-date {
     width: 1px;
     float: left
 }
-.submenuhoverbox.platform h6.submenuhoverbox-contentheading {
-    font-size: 18px;
-    color: #384142;
-    line-height: 22px;
+.submenuhoverbox h6.submenuhoverbox-contentheading {
+    line-height: 45px;
     border-bottom: 1px solid #eee;
-    padding-bottom: 5px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: 600;
 }
-.submenuhoverbox.platform ul.list {
+.submenuhoverbox h6.submenuhoverbox-contentheading.no-line {
+    border: none;
+    margin-bottom: 10px;
+}
+.submenuhoverbox h2.submenuhoverbox-contentheading {
+    margin-bottom: 20px;
+}
+.submenuhoverbox p {
+    font-size: 16px;
+}
+.submenuhoverbox ul.list {
     list-style-type: none;
-    font-size: 13px;
+    font-size: 14px;
     color: #08C;
     margin-bottom: 20px
 }
-.submenuhoverbox.platform ul.list li {
-    border-bottom: 1px solid #eee;
-    padding: 5px 15px
+.submenuhoverbox ul.list li {
+    padding: 5px 0
+}
+.submenuhoverbox ul li a {
+    color: #333;
+    text-decoration: none;
+}
+.submenuhoverbox ul li a:hover {
+    color: #0066AA;
 }
 .solution-all-hero, .solution-hero {
     -webkit-filter: none;
@@ -5291,19 +5339,26 @@ div.st-result .st-date {
     text-decoration: underline;
 }
 .submenuhover.submenu-hover-sections {
-    width: 980px;
+
+    /*width: 980px;
     margin: 0 auto;
-    box-shadow: none;
+    box-shadow: none;*/
 }
 .overlay {
-    display: none;
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
+    top: 80px;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.45);
-    z-index: 999;
+    background-color: rgba(0, 0, 0, .45);
+    z-index: 100;
+    transition: visibility 0s, opacity 0.5s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+body.mega-menu .overlay {
+    visibility: visible;
+    opacity: 1;
 }
 .solution-hero {
     background: url(/cms_backoffice/assets/201510021536/bg-singular-indu-dcddde) top center no-repeat #dcddde;
@@ -5552,8 +5607,7 @@ a.osbtn-orange {
     left: 0;
     right: 0;
     margin: 0;
-    background-color: #fff;
-    box-shadow: 0 8px 0 0 rgba(0, 0, 0, .5);
+    background-color: #fff;    /*box-shadow: 0 8px 0 0 rgba(0, 0, 0, .5);*/
     z-index: 99999
 }
 .h3-product-tab, .h6-product-tab {
@@ -5566,7 +5620,7 @@ a.osbtn-orange {
 }
 .navigation-outter {
     padding-bottom: 10px;
-    background-color: #e6eaeb;
+    background-color: #e6e6e6;
     border-bottom: 1px solid white;
 }
 .navigation-outter.navigation-wrapper {
@@ -5611,7 +5665,18 @@ a.osbtn-orange {
     background-size: initial;
     background-position: top center;
     background-repeat: no-repeat;
-    background-color: #E6EAEB;
+    background-color: #e6e6e6;
+    min-height: 340px;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.header-hero-wrapper.for-boxes .hero h5, .header-hero-wrapper.for-slices .hero h5 {
+    font-weight: 400;
 }
 .header-hero-wrapper.for-boxes .hero .container, .header-hero-wrapper.for-slices .hero .container {
     z-index: 99;
@@ -5794,6 +5859,7 @@ form input.st-search-input {
     z-index: 999;
     padding-bottom: 0;
     background: url(/cms_backoffice/assets/201510021536/bg-about-us) center -80px;
+    background-color: #E6E6E6;
     border-bottom: 1px solid #d6d6d6;
     height: 50px;
 }
@@ -5886,6 +5952,11 @@ a:hover span.h6-product-tab {
     float: left;
     width: auto
 }
+.second-level-menu-wrapper .sub-navigation-bar a.active {
+    font-weight: 600;
+    border-bottom: 1px solid gray;
+    height: 38px;
+}
 .second-level-menu-wrapper.tabs {
     float: right;
     z-index: 99;
@@ -5902,6 +5973,7 @@ a:hover span.h6-product-tab {
     height: 50px;
     font-weight: 600;
     margin: auto 5px;
+    border: none;
 }
 .second-level-menu-wrapper.tabs .sub-navigation-bar li a {
     font-family: myriad-pro, arial, sans-serif;
@@ -7250,4 +7322,21 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     height: 29px;
     right: 0;
     top: 0
+}
+
+/** bali launch specific */
+.bali p {
+    font-size: 16px;
+    line-height: 22px;
+}
+.bali ul {
+    font-size: 16px;
+    line-height: 22px;
+}
+.bali ol {
+    font-size: 16px;
+    line-height: 22px;
+}
+.bali h2 {
+    margin-bottom: 30px;
 }

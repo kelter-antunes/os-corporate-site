@@ -66,6 +66,7 @@ v=201510021536
     box-sizing: border-box
 }
 span[id*=ListSection] {
+    display: inline-block;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -108,31 +109,32 @@ span[id*=ListSection] {
     color: #000;
     content: "";
     position: absolute;
-    bottom: -50px;
-    border-width: 60px 60px 60px 60px;
-    border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgba(255, 255, 255, 0);
+    bottom: -90px;
+    border-width: 100px;
+    border-color: #000 #000 rgba(255,255,255,0);
     display: block;
     z-index: 999;
     border-style: solid;
     width: 0;
     left: 50%;
-    margin-left: -60px;
+    margin-left: -100px;
 }
 .navigation-bar li.active:before {
     color: #000;
     content: "";
     position: absolute;
-    bottom: -50px;
-    border-width: 60px 60px 60px 60px;
-    border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgba(255, 255, 255, 0);
+    bottom: -90px;
+    border-width: 100px;
+    border-color: #000 #000 rgba(255,255,255,0);
     display: block;
     z-index: 999;
     border-style: solid;
     width: 0;
     left: 50%;
-    margin-left: -60px;
+    margin-left: -100px;
 }
-body.mega-menu .navigation-bar li.active:before {
+body.mega-menu .navigation-bar li.active:before,
+body.mega-menu .navigation-bar li:not(.get-started) a:hover:before  {
     border-color: #000 #000 rgb(255, 255, 255);
 }
 
@@ -169,16 +171,18 @@ ul.navigation-bar {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-align-content: space-between;
-        -ms-flex-line-pack: justify;
+    -ms-flex-line-pack: justify;
+            -webkit-align-content: space-between;
             align-content: space-between;
     width: 840px;
     box-sizing: border-box;
+    background-color: black;
 }
 span.spacer-bg {
     background-color: #000;
     height: 50px;
-    width: 100%;
+    width: 95px;
+    display: inline-block;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
