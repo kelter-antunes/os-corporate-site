@@ -6730,6 +6730,17 @@ h3.description {
     box-shadow: 0 3px 4px rgba(226, 226, 226, .58);
     border: 1px solid #E2E2E2
 }
+
+.AllianceImage {
+    width: 20%;
+    display: inline-block;
+    margin: 10px;
+}
+
+.AllianceDiv {
+    border-top: 1px solid #E7ECED;
+}
+
 @media only screen and (min-device-width:767px) {
     .case-study-customer-logo {
         bottom: 15px
