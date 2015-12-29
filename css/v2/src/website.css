@@ -3,7 +3,10 @@ h1, h2 {
 }
 h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
-    font-weight: 600
+    font-weight: 600;
+    font-family: myriad-pro, Arial, sans-serif;
+    color: #333;
+    margin-top: 0
 }
 h4, h6 {
     margin-bottom: 10px
@@ -20,13 +23,11 @@ body, html {
 body {
     -webkit-overflow-scrolling: touch
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: myriad-pro, Arial, sans-serif;
-    color: #333;
-    margin-top: 0
-}
 .apps-title1, h6 {
     font-family: myriad-pro, Helvetica, Arial, sans-serif
+}
+.byline, .small, a.byline, p.intro {
+    font-family: Arial, sans-serif
 }
 h1 {
     font-size: 36px;
@@ -55,9 +56,6 @@ h6 {
     font-weight: 400;
     color: #333
 }
-.small, p.intro {
-    font-family: Arial, sans-serif
-}
 p {
     margin-top: 0
 }
@@ -85,7 +83,6 @@ p.intro {
     line-height: 16px
 }
 .byline, a.byline {
-    font-family: Arial, sans-serif;
     font-size: 12px;
     line-height: 15px;
     color: gray
@@ -451,6 +448,9 @@ a.tooltip-link {
     color: #6c6c6c;
     white-space: normal
 }
+#sticky a, .cs-blue-box, .cta-wrapper-how p, .hero-details-home {
+    font-family: myriad-pro, Arial, sans-serif
+}
 #powerTip, .btn-group>.btn.active, .btn-group>.btn:active, .btn-group>.btn:focus, .btn-group>.btn:hover {
     z-index: 2
 }
@@ -493,18 +493,25 @@ a.tooltip-link {
     display: inline-block;
     vertical-align: top
 }
-.osbtn, .osbtn-red {
-    display: inline-block;
-    font-family: myriad-pro, Arial, sans-serif;
+.osbtn, .osbtn-black, .osbtn-blue, .osbtn-gray, .osbtn-red {
     padding: 10px 20px;
     font-weight: 400;
     line-height: inherit;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
     margin: 0;
     font-size: 18px;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+    font-family: myriad-pro, Arial, sans-serif
+}
+.btn, .btn-group, .osbtn, .osbtn-black, .osbtn-blue, .osbtn-gray, .osbtn-red {
+    display: inline-block;
+    vertical-align: middle
+}
+.osbtn, .osbtn-red {
+    border-radius: 5px
+}
+.osbtn, .osbtn-black, .osbtn-gray, .osbtn-red {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px
 }
@@ -547,8 +554,7 @@ a.tooltip-link {
 .osbtn {
     color: #fff;
     background-color: #ccc;
-    background-image: linear-gradient(top, #ccc, #aaa);
-    border-radius: 5px
+    background-image: linear-gradient(top, #ccc, #aaa)
 }
 .osbtn:hover {
     -webkit-filter: none;
@@ -563,24 +569,10 @@ a.tooltip-link {
 .osbtn-red {
     color: #fff !important;
     background-color: #c20;
-    background-image: linear-gradient(top, #c20, #ac1e01);
-    border-radius: 5px
+    background-image: linear-gradient(top, #c20, #ac1e01)
 }
 .osbtn-black, .osbtn-gray {
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    display: inline-block;
-    padding: 10px 20px;
-    font-weight: 400;
-    line-height: inherit;
-    margin: 0;
-    font-size: 18px;
-    color: #fff;
-    cursor: pointer;
-    vertical-align: middle;
-    text-align: center;
-    font-family: myriad-pro, Arial, sans-serif;
-    white-space: nowrap
+    color: #fff
 }
 .osbtn-red:hover {
     -webkit-filter: none;
@@ -622,28 +614,17 @@ a.tooltip-link {
 .osbtn-gray:active {
     background-color: gray
 }
-.osbtn-lightgray {
-    color: #333;
-}
-.osbtn-lightgray:hover {
-    color: #333;
+.osbtn-lightgray, .osbtn-lightgray:hover {
+    color: #333
 }
 .osbtn-blue {
-    display: inline-block;
-    font-family: myriad-pro, Arial, sans-serif;
-    padding: 10px 20px;
-    font-weight: 400;
-    line-height: inherit;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    margin: 0;
     color: #fff;
-    font-size: 18px;
     background-color: #08c;
     background-image: linear-gradient(top, #08c, #06a);
     border-radius: 5px
+}
+.btn-group+.btn-group, .btn-toolbar>.btn+.btn, .btn-toolbar>.btn+.btn-group, .btn-toolbar>.btn-group+.btn {
+    margin-left: 5px
 }
 .osbtn-blue:hover {
     -webkit-filter: none;
@@ -702,14 +683,12 @@ a.tooltip-link {
     top: 3px
 }
 .btn {
-    display: inline-block;
     margin-bottom: 0;
     font-size: 14px;
     line-height: 15px;
     color: #333;
     text-align: center;
     text-shadow: 0 1px 1px rgba(255, 255, 255, .75);
-    vertical-align: middle;
     cursor: pointer;
     background-color: #f5f5f5;
     background-image: linear-gradient(to bottom, #fff, #e6e6e6);
@@ -771,21 +750,13 @@ a.tooltip-link {
 }
 .btn-group {
     position: relative;
-    display: inline-block;
     font-size: 0;
-    white-space: nowrap;
-    vertical-align: middle
-}
-.btn-group+.btn-group {
-    margin-left: 5px
+    white-space: nowrap
 }
 .btn-toolbar {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 0
-}
-.btn-toolbar>.btn+.btn, .btn-toolbar>.btn+.btn-group, .btn-toolbar>.btn-group+.btn {
-    margin-left: 5px
 }
 .btn-group>.btn {
     position: relative;
@@ -903,11 +874,87 @@ a.tooltip-link {
     filter: none
 }
 .header-hero-wrapper.home-rev {
-    background: url(/cms_backoffice/assets/20151117102406/homepage-top-header-bg) center no-repeat #706E6F;
-    height: 510px;
+    height: auto
+}
+.call-out-hero-home {
+    background: url(/cms_backoffice/assets/20151215141941/outsystems-homepage-top.jpg) bottom center no-repeat #cdd3db;
     position: relative;
     border-bottom: 1px solid #ccc;
     box-shadow: none;
+    box-sizing: border-box
+}
+.call-out-hero-home .highlight {
+    min-height: 500px;
+    background-color: rgba(255, 255, 255, .85);
+    padding: 40px 20px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    box-sizing: border-box
+}
+.call-out-hero-home .highlight a.item {
+    color: #333;
+    text-decoration: none;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+@media screen\0 {
+    .call-out-hero-home .highlight {
+        display: inline-block;
+        min-height: 500px
+    }
+    .call-out-hero-home .highlight a.item {
+        display: inline-block;
+        margin-top: 40px
+    }
+    .call-out-hero-home .highlight a.item span.image {
+        float: left
+    }
+    .call-out-hero-home .highlight a.item span.text {
+        margin-left: 90px !important
+    }
+}
+.call-out-hero-home .highlight a.item:hover {
+    color: #08c
+}
+.call-out-hero-home .highlight a.item span.text {
+    padding: 0;
+    display: block;
+    margin-left: 20px
+}
+.call-out-hero-home .highlight a.item span.image img {
+    max-width: 100%
+}
+a.item span.lean-more {
+    display: block
+}
+.call-out-hero-home .highlight a.item span.text:after {
+    content: "»";
+    color: #08c;
+    padding-left: 5px;
+    text-decoration: none
+}
+.call-out-hero-home .highlight a.item span.image {
+    width: 70px;
+    max-width: 70px;
+    min-width: 70px;
+    text-align: center
 }
 .hero-home-back {
     background-image: url(/cms_backoffice/assets/201510021536/slide1);
@@ -953,6 +1000,9 @@ a.tooltip-link {
 }
 .header-hero-wrapper.case-studies-detail-new {
     height: 380px
+}
+.header-hero-wrapper.case-studies-detail .navigation-outter {
+    height: 80px
 }
 .case-studies-detail-new .Header_Nav_Breadcrumb {
     margin-top: 165px
@@ -1006,7 +1056,7 @@ body.landing-slim form#WebForm1 {
     -webkit-filter: none;
     filter: none;
     box-shadow: none;
-    background: url(/cms_backoffice/assets/201510021536/bg-about-us) top center repeat-x
+    background: 0 0
 }
 .header-hero-wrapper.page-with-sections {
     height: 70px;
@@ -1078,7 +1128,6 @@ body.landing-slim form#WebForm1 {
     text-shadow: 0 2px 0 rgba(0, 0, 0, .9);
     color: #FFF;
     line-height: 26px;
-    font-family: myriad-pro, Arial, sans-serif;
     font-weight: 400
 }
 .hero-details-home li {
@@ -1164,7 +1213,6 @@ body.landing-slim form#WebForm1 {
 }
 #sticky a {
     background: url(/cms_backoffice/assets/201510021536/gradient-blue) repeat-x #69C;
-    font-family: myriad-pro, Arial, sans-serif;
     font-size: 18px;
     height: 50px;
     width: 244px;
@@ -1491,7 +1539,6 @@ body.landing-slim form#WebForm1 {
     border-bottom: 1px solid #d9d9d9
 }
 .cta-wrapper-how p {
-    font-family: myriad-pro, Arial, sans-serif;
     font-size: 19px;
     color: #000;
     display: inline-block;
@@ -1878,7 +1925,7 @@ body.landing-slim form#WebForm1 {
     left: 300px;
     bottom: 150px
 }
-.canvas .base.is.all, .canvas .base.is.java, .canvas .base.is.net, .canvas .base.lt, .canvas .base.lt.hybrid, .canvas .base.lt.staging, .canvas .base.platform, .canvas .base.sc.all, .canvas .base.sc.cloud, .canvas .base.sc.configuration, .canvas .base.sc.farm, .canvas .base.ss.all, .canvas .base.ss.java, .canvas .base.ss.net, .canvas .base.ss.weblogic {
+.canvas .base.is.all, .canvas .base.is.java, .canvas .base.is.net, .canvas .base.lt, .canvas .base.lt.hybrid, .canvas .base.lt.staging, .canvas .base.platform, .canvas .base.sc.all, .canvas .base.sc.cloud, .canvas .base.sc.configuration, .canvas .base.sc.farm, .canvas .base.sc.monitoring, .canvas .base.ss.all, .canvas .base.ss.java, .canvas .base.ss.net, .canvas .base.ss.weblogic {
     width: 561px;
     height: 452px;
     right: 0;
@@ -1907,12 +1954,7 @@ body.landing-slim form#WebForm1 {
     background: url(/cms_backoffice/assets/201510021536/service-center-configuration) no-repeat
 }
 .canvas .base.sc.monitoring {
-    background: url(/cms_backoffice/assets/201510021536/service-center-monitoring) no-repeat;
-    width: 561px;
-    height: 452px;
-    position: absolute;
-    right: 0;
-    bottom: 0
+    background: url(/cms_backoffice/assets/201510021536/service-center-monitoring) no-repeat
 }
 .canvas .base.sc.farm {
     background: url(/cms_backoffice/assets/201510021536/service-center-web-farm) no-repeat
@@ -2017,14 +2059,16 @@ body.landing-slim form#WebForm1 {
     top: 0;
     right: 0
 }
-.canvas .integration-studio.on-overview {
-    background: url(/cms_backoffice/assets/201510021536/tool-integration-studio) 0 -3px no-repeat;
+.canvas .integration-studio.java:hover, .canvas .integration-studio.net, .canvas .integration-studio.on-overview {
     width: 122px;
     height: 145px;
-    top: -6px;
-    position: absolute;
     right: 38px;
-    z-index: 90
+    z-index: 90;
+    position: absolute
+}
+.canvas .integration-studio.on-overview {
+    background: url(/cms_backoffice/assets/201510021536/tool-integration-studio) 0 -3px no-repeat;
+    top: -6px
 }
 .canvas .integration-studio.inactive {
     background: url(/cms_backoffice/assets/201510021536/tool-integration-studio) 0 -323px no-repeat;
@@ -2040,12 +2084,7 @@ body.landing-slim form#WebForm1 {
 }
 .canvas .integration-studio.net {
     background: url(/cms_backoffice/assets/201510021536/tool-integration-studio) 0 -797px no-repeat;
-    width: 122px;
-    height: 145px;
-    top: -5px;
-    position: absolute;
-    right: 38px;
-    z-index: 90
+    top: -5px
 }
 .canvas .integration-studio.java, .canvas .integration-studio.net:hover {
     top: -6px;
@@ -2063,12 +2102,7 @@ body.landing-slim form#WebForm1 {
 }
 .canvas .integration-studio.java:hover {
     background: url(/cms_backoffice/assets/201510021536/tool-integration-studio) 0 -1276px no-repeat;
-    width: 122px;
-    height: 145px;
-    top: -5px;
-    position: absolute;
-    right: 38px;
-    z-index: 90
+    top: -5px
 }
 .canvas .diagram-hint {
     background: url(/cms_backoffice/assets/201510021536/hint) no-repeat;
@@ -2292,8 +2326,7 @@ a.ViewMoreLink {
     padding: 20px 0;
     background-color: #628CB8;
     border-radius: 10px;
-    color: #fff;
-    font-family: myriad-pro, Arial, sans-serif
+    color: #fff
 }
 .cs-blue-box-left {
     width: 150px;
@@ -3576,8 +3609,7 @@ ul.pxs_thumbnails li a.bullet:hover {
 ul.pxs_thumbnails li.selected a.bullet:hover {
     cursor: default
 }
-.play-video-overview {
-    background: url(/cms_backoffice/assets/201510021536/cta-video) -1px -1px no-repeat;
+.play-video-overview, .play-video-overview:hover {
     width: 271px;
     height: 46px;
     display: block;
@@ -3585,14 +3617,11 @@ ul.pxs_thumbnails li.selected a.bullet:hover {
     color: transparent;
     font-size: 0
 }
+.play-video-overview {
+    background: url(/cms_backoffice/assets/201510021536/cta-video) -1px -1px no-repeat
+}
 .play-video-overview:hover {
-    background: url(/cms_backoffice/assets/201510021536/cta-video) -1px -50px no-repeat;
-    width: 271px;
-    height: 46px;
-    display: block;
-    cursor: pointer;
-    color: transparent;
-    font-size: 0
+    background: url(/cms_backoffice/assets/201510021536/cta-video) -1px -50px no-repeat
 }
 .play-video-overview-br, .play-video-overview-br:hover {
     width: 210px;
@@ -3600,6 +3629,14 @@ ul.pxs_thumbnails li.selected a.bullet:hover {
     cursor: pointer;
     color: transparent;
     font-size: 0
+}
+.play-video-overview-nl, .play-video-overview-nl:hover {
+    width: 230px;
+    height: 45px;
+    color: transparent;
+    font-size: 0;
+    display: block;
+    cursor: pointer
 }
 .play-video-overview-br {
     background: url(/cms_backoffice/assets/201510021536/cta-video_BR) -32px -1px no-repeat;
@@ -3610,22 +3647,10 @@ ul.pxs_thumbnails li.selected a.bullet:hover {
     height: 45px
 }
 .play-video-overview-nl {
-    background: url(/cms_backoffice/assets/201510021536/cta-video_NL) -22px -1px no-repeat;
-    width: 230px;
-    height: 45px;
-    display: block;
-    cursor: pointer;
-    color: transparent;
-    font-size: 0
+    background: url(/cms_backoffice/assets/201510021536/cta-video_NL) -22px -1px no-repeat
 }
 .play-video-overview-nl:hover {
-    background: url(/cms_backoffice/assets/201510021536/cta-video_NL) -22px -50px no-repeat;
-    width: 230px;
-    height: 45px;
-    display: block;
-    cursor: pointer;
-    color: transparent;
-    font-size: 0
+    background: url(/cms_backoffice/assets/201510021536/cta-video_NL) -22px -50px no-repeat
 }
 .play-video-overview-product, .play-video-overview-product:hover {
     width: 271px;
@@ -4511,7 +4536,7 @@ a.past-list-link:active h5, a.past-list-link:hover h5, a.past-list-link:link h5,
 }
 .cs-title-box {
     position: relative;
-    height: 300px
+    height: 290px
 }
 .cs-title-box-topbar {
     position: absolute;
@@ -4551,7 +4576,7 @@ a.past-list-link:active h5, a.past-list-link:hover h5, a.past-list-link:link h5,
 }
 .cs-title-box-botbar-wrapper {
     position: absolute;
-    margin-top: 300px;
+    margin-top: 289px;
     width: 100%;
     z-index: 10
 }
@@ -4829,7 +4854,7 @@ div.Menu_DropDownPanel a, div.Menu_DropDownPanel a:link, div.Menu_DropDownPanel 
 div.Application_Menu div.Menu_DropDownPanel a, div.Application_Menu div.Menu_DropDownPanel a:link, div.Application_Menu div.Menu_DropDownPanel a:visited {
     display: block
 }
-.Menu_DropDownArrow, .Menu_DropDownButton {
+.CloseArea, .Menu_DropDownArrow, .Menu_DropDownButton {
     display: inline-block
 }
 .Menu_DropDownButton.open {
@@ -4880,6 +4905,9 @@ div.Application_Menu div.Menu_DropDownPanel a, div.Application_Menu div.Menu_Dro
     height: 26px;
     padding: 12px 35px
 }
+.gs-per-result-labels, .gsc-refinementsArea, .gsc-tabsArea, .search-overlay, [data-dropdown-wrapper] {
+    display: none
+}
 .Menu_DropDownPanel a.active, .Menu_DropDownPanel a.active:link, .Menu_DropDownPanel a.active:visited {
     color: #fff
 }
@@ -4900,45 +4928,38 @@ div.Application_Menu div.Menu_DropDownPanel a, div.Application_Menu div.Menu_Dro
     width: 100%;
     height: 100%
 }
+.overlay, .submenuhover {
+    right: 0;
+    left: 0;
+    top: 80px
+}
 .image-container img {
     max-width: 100%;
-    height: auto;
+    height: auto
 }
 .span1 .video-container {
-    padding-bottom: 22.25%;
+    padding-bottom: 22.25%
 }
 .span2 .video-container {
-    padding-bottom: 31.25%;
+    padding-bottom: 31.25%
 }
 .span3 .video-container {
-    padding-bottom: 41.25%;
+    padding-bottom: 41.25%
 }
 .span4 .video-container {
-    padding-bottom: 49.25%;
+    padding-bottom: 49.25%
 }
 .span5 .video-container {
-    padding-bottom: 51.25%;
+    padding-bottom: 51.25%
 }
 .span6 .video-container {
-    padding-bottom: 48.25%;
+    padding-bottom: 48.25%
 }
-.span7 .video-container {
-    padding-bottom: 50.25%;
+.span7 .video-container, .span8 .video-container {
+    padding-bottom: 50.25%
 }
-.span8 .video-container {
-    padding-bottom: 50.25%;
-}
-.span9 .video-container {
-    padding-bottom: 53.25%;
-}
-.span10 .video-container {
-    padding-bottom: 53.25%;
-}
-.span11 .video-container {
-    padding-bottom: 53.25%;
-}
-.span12 .video-container {
-    padding-bottom: 53.25%;
+.span10 .video-container, .span11 .video-container, .span12 .video-container, .span9 .video-container {
+    padding-bottom: 53.25%
 }
 p.webinar_link {
     letter-spacing: 0 !important
@@ -4962,9 +4983,6 @@ div.Popup.ui-dialog .ui-dialog-titlebar {
 }
 .news_release h2 {
     margin-bottom: 0
-}
-.gs-per-result-labels, .gsc-refinementsArea, .gsc-tabsArea, .search-overlay {
-    display: none
 }
 input.gsc-search-button {
     background-color: #4D90FE !important
@@ -5068,10 +5086,9 @@ div.st-result .st-date {
     font-style: normal
 }
 .swiftype-widget .autocomplete {
-    margin: 0;
+    margin: 0 10px 0 0;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, .5);
-    position: absolute;
-    margin-right: 10px;
+    position: absolute
 }
 .swiftype-widget .autocomplete ul {
     font-weight: 400;
@@ -5121,7 +5138,7 @@ div.st-result .st-date {
     margin-bottom: 0;
     -webkit-line-clamp: 3;
     white-space: pre-wrap;
-    word-break: break-all;
+    word-break: break-all
 }
 .swiftype-widget .autocomplete div .column1 {
     width: 10%;
@@ -5216,8 +5233,7 @@ div.st-result .st-date {
 .CloseArea {
     width: 24px;
     cursor: pointer;
-    margin-left: 5px;
-    display: inline-block
+    margin-left: 5px
 }
 .warning_EU_cookiemsg>div {
     margin-right: 10px
@@ -5228,22 +5244,13 @@ div.st-result .st-date {
 .warning_EU_cookiemsg>div:last-child {
     margin-right: 0
 }
-[data-dropdown-wrapper] {
-    display: none
-}
 .submenuhover .customers-case-study-preview a, .submenuhover:hover {
     display: block
 }
 .submenuhover {
     position: absolute;
     margin-left: 28px;
-    z-index: 101;
-    padding: 30px 0;
-}
-.submenuhoverbox {
-
-    /* padding-bottom: 30px;
-     padding-top: 30px*/
+    padding: 30px 0
 }
 .submenuhoverbox .box {
     background: #F4F4F4;
@@ -5263,18 +5270,18 @@ div.st-result .st-date {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    position: relative;
+    position: relative
 }
 .submenuhoverbox .box p.quote {
     font-size: 16px;
     color: #384142;
     line-height: 18px;
-    font-style: italic;
+    font-style: italic
 }
 .submenuhoverbox .box a {
     width: 100%;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 .submenuhoverbox-line {
     border-right: 1px solid #e6e6e6;
@@ -5283,37 +5290,66 @@ div.st-result .st-date {
     float: left
 }
 .submenuhoverbox h6.submenuhoverbox-contentheading {
-    line-height: 45px;
-    border-bottom: 1px solid #eee;
+    line-height: 32px;
     margin-bottom: 15px;
     font-size: 17px;
     font-weight: 600;
+    color: #949FA3
 }
 .submenuhoverbox h6.submenuhoverbox-contentheading.no-line {
     border: none;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 .submenuhoverbox h2.submenuhoverbox-contentheading {
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 .submenuhoverbox p {
-    font-size: 16px;
+    font-size: 16px
 }
 .submenuhoverbox ul.list {
     list-style-type: none;
     font-size: 14px;
     color: #08C;
-    margin-bottom: 20px
+    border-right: 1px solid #eceff1;
+    margin-bottom: 20px;
+    padding-right: 20px
 }
 .submenuhoverbox ul.list li {
     padding: 5px 0
 }
 .submenuhoverbox ul li a {
-    color: #333;
     text-decoration: none;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    color: #08c;
+    line-height: 1.33
+}
+.submenuhoverbox ul li a:before {
+    content: "\e696";
+    font-family: OS-Icon-Set;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 10px;
+    font-size: 9px;
+    float: left;
+    color: #C3C9CB
 }
 .submenuhoverbox ul li a:hover {
-    color: #0066AA;
+    color: #06A;
+    background: #f0f0f0
 }
 .solution-all-hero, .solution-hero {
     -webkit-filter: none;
@@ -5328,37 +5364,28 @@ div.st-result .st-date {
 }
 .submenuhover .submenu-cta {
     background-color: #6DA7DE;
-    color: white;
+    color: #fff;
     font-weight: 400;
     text-align: right;
     padding: 5px 10px;
-    border-top: 1px solid #79AEE0;
+    border-top: 1px solid #79AEE0
 }
 .submenuhover .submenu-cta a {
-    color: white;
-    text-decoration: underline;
-}
-.submenuhover.submenu-hover-sections {
-
-    /*width: 980px;
-    margin: 0 auto;
-    box-shadow: none;*/
+    color: #fff;
+    text-decoration: underline
 }
 .overlay {
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 80px;
     bottom: 0;
     background-color: rgba(0, 0, 0, .45);
     z-index: 100;
-    transition: visibility 0s, opacity 0.5s ease;
+    transition: visibility 0s, opacity .5s ease;
     visibility: hidden;
-    opacity: 0;
+    opacity: 0
 }
 body.mega-menu .overlay {
     visibility: visible;
-    opacity: 1;
+    opacity: 1
 }
 .solution-hero {
     background: url(/cms_backoffice/assets/201510021536/bg-singular-indu-dcddde) top center no-repeat #dcddde;
@@ -5543,16 +5570,16 @@ a.osbtn-white {
 a.osbtn-white:hover {
     background: #f7f7f7 !important
 }
-.osbtn-orange {
+.osbtn-orange, a.osbtn-orange {
     background-color: #ef6c00;
-    border-color: #ef6c00;
-    border-width: 1px;
     border-radius: 5px
 }
+.osbtn-orange {
+    border-color: #ef6c00;
+    border-width: 1px
+}
 a.osbtn-orange {
-    background-color: #ef6c00;
-    background-image: linear-gradient(top, #ef6c00, #ac1e01);
-    border-radius: 5px
+    background-image: linear-gradient(top, #ef6c00, #ac1e01)
 }
 .cta-wrapper-apps {
     background: url(/cms_backoffice/assets/201510021536/stripes);
@@ -5599,15 +5626,14 @@ a.osbtn-orange {
     height: 130px !important
 }
 .header-hero-wrapper.page-without-hero {
-    height: auto;
+    height: auto
+}
+.header-hero-wrapper.page-without-hero.page-company {
     padding-bottom: 40px
 }
 .submenuhover {
-    top: 80px;
-    left: 0;
-    right: 0;
     margin: 0;
-    background-color: #fff;    /*box-shadow: 0 8px 0 0 rgba(0, 0, 0, .5);*/
+    background-color: #fff;
     z-index: 99999
 }
 .h3-product-tab, .h6-product-tab {
@@ -5621,7 +5647,7 @@ a.osbtn-orange {
 .navigation-outter {
     padding-bottom: 10px;
     background-color: #e6e6e6;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #fff
 }
 .navigation-outter.navigation-wrapper {
     padding-top: 0
@@ -5641,21 +5667,18 @@ a.osbtn-orange {
 }
 .header-hero-wrapper.home-rev .secondary-menu, .header-hero-wrapper.home-rev .secondary-menu a, .header-hero-wrapper.home-rev .secondary-menu span {
     font-family: Arial;
-    color: #666666;
+    color: #666;
     font-size: 12px;
     font-weight: 400;
     line-height: 20px;
-    text-align: center;
-}
-.header-hero-wrapper.case-studies-detail-new .secondary-menu * {
-    color: #ececec
+    text-align: center
 }
 .header-hero-wrapper.for-boxes, .header-hero-wrapper.for-slices {
     position: relative;
     height: auto;
     border-bottom: 1px solid #ccc;
     box-shadow: none;
-    padding-top: 0;
+    padding-top: 0
 }
 .header-hero-wrapper.for-boxes .hero, .header-hero-wrapper.for-slices .hero {
     position: relative;
@@ -5673,58 +5696,58 @@ a.osbtn-orange {
     display: flex;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: center
 }
 .header-hero-wrapper.for-boxes .hero h5, .header-hero-wrapper.for-slices .hero h5 {
-    font-weight: 400;
+    font-weight: 400
 }
 .header-hero-wrapper.for-boxes .hero .container, .header-hero-wrapper.for-slices .hero .container {
     z-index: 99;
-    position: relative;
+    position: relative
 }
 .header-hero-wrapper.for-boxes .hero h1, .header-hero-wrapper.for-slices .hero h1 {
-    color: white;
-    margin-bottom: 10px;
+    color: #fff;
+    margin-bottom: 10px
 }
 .header-hero-wrapper.for-boxes .hero .description, .header-hero-wrapper.for-slices .hero .description {
     font-weight: 400;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 26px
 }
 .header-hero-wrapper.home-rev .hero {
     padding: 0;
-    background: none;
+    background: 0 0
 }
 .header-hero-wrapper.home-rev.for-slices {
-    background-size: cover;
+    background-size: cover
 }
 .header-hero-wrapper .call-out-hero-home .hero h1 {
     font-weight: 600;
     margin-bottom: 15px;
-    margin-top: 50px;
+    margin-top: 50px
 }
 .call-out-hero-home .hero h2 {
     color: #fff;
     font-weight: 400;
     font-size: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }
 .call-out-hero-home .hero p {
     font-size: 18px;
     line-height: 25px;
     margin: 0;
-    font-family: myriad-pro, Arial, sans-serif;
+    font-family: myriad-pro, Arial, sans-serif
 }
 .call-out-hero-home .hero a {
     margin-bottom: 40px;
-    margin-top: 20px;
+    margin-top: 20px
 }
 .section {
-    padding: 60px 0;
+    padding: 60px 0
 }
 .section.cta {
     text-align: center;
-    background: linear-gradient(to bottom, rgba(163, 165, 167, 0.91) 0%, rgba(209, 213, 215, 0.91) 80%, rgba(218, 222, 225, 0.91) 100%);
+    background: linear-gradient(to bottom, rgba(163, 165, 167, .91) 0, rgba(209, 213, 215, .91) 80%, rgba(218, 222, 225, .91) 100%);
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -5733,54 +5756,54 @@ a.osbtn-orange {
     align-items: flex-start;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: center
 }
 .section.cta .cta-inner {
     text-align: left;
-    margin-left: 40px;
+    margin-left: 40px
 }
 div#footer-wrapper {
-    margin-top: -68px;
+    margin-top: -68px
 }
 .section .highlight-box a {
-    display: block;
+    display: block
 }
 .section .highlight-box img {
     height: auto;
     text-align: center;
     display: block;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto
 }
 .section .highlight-box {
     background-color: #fff;
-    border: 1px solid #CCCCCC;
-    box-shadow: 0px 3px 5px 0px #CCCCCC;
+    border: 1px solid #CCC;
+    box-shadow: 0 3px 5px 0 #CCC;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 .section .highlight-box-inner {
     padding: 20px;
-    font-size: 17px;
+    font-size: 17px
 }
 .section .highlight-box a.osbtn {
-    display: inline-block;
+    display: inline-block
 }
 .section .highlight-box-inner.no-image h5 {
     background-color: #E6EAEB;
-    padding: 20px;
+    padding: 20px
 }
 .section .highlight-box-inner.no-image {
-    padding: 0;
+    padding: 0
 }
 .section .highlight-box-inner.no-image p {
-    padding: 0 20px;
+    padding: 0 20px
 }
 .section .highlight-box-inner.no-image div {
-    padding: 0 20px 20px;
+    padding: 0 20px 20px
 }
 .section ul {
-    margin-left: 20px;
+    margin-left: 20px
 }
 .section .box {
     border-style: solid;
@@ -5788,24 +5811,24 @@ div#footer-wrapper {
     border-color: #ceccca;
     box-sizing: border-box;
     background-color: #f8f8f8;
-    box-shadow: 0px 1px 0px 0px rgba(1, 1, 1, 0.3);
-    padding: 20px;
+    box-shadow: 0 1px 0 0 rgba(1, 1, 1, .3);
+    padding: 20px
 }
 .section .box h3 {
-    color: #333333;
+    color: #333;
     font-size: 18px;
     font-weight: 600;
-    letter-spacing: 0.18px;
+    letter-spacing: .18px;
     line-height: 20px;
     text-align: left;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 .section .box .meterial-item a span[class^=osicon-] {
     font-size: 40px;
     margin: 0;
     padding: 0;
     display: inline-block;
-    float: left;
+    float: left
 }
 .section .box .meterial-item a {
     display: inline-block;
@@ -5816,13 +5839,13 @@ div#footer-wrapper {
     vertical-align: middle;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: center
 }
 .section .box .meterial-item {
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 .align-right {
-    text-align: right;
+    text-align: right
 }
 .search_field {
     border-radius: 2px;
@@ -5849,7 +5872,7 @@ form input.st-search-input {
     right: 0;
     z-index: 99;
     height: 40px;
-    clear: both;
+    clear: both
 }
 .second-level-menu-wrapper.fixed {
     position: fixed;
@@ -5858,10 +5881,9 @@ form input.st-search-input {
     left: 0;
     z-index: 999;
     padding-bottom: 0;
-    background: url(/cms_backoffice/assets/201510021536/bg-about-us) center -80px;
-    background-color: #E6E6E6;
+    background: url(/cms_backoffice/assets/201510021536/bg-about-us) center -80px #E6E6E6;
     border-bottom: 1px solid #d6d6d6;
-    height: 50px;
+    height: 50px
 }
 .second-level-menu-wrapper.fixed span.title {
     opacity: 1
@@ -5876,6 +5898,9 @@ form input.st-search-input {
     text-align: center;
     transition: all .5s ease;
     opacity: 0
+}
+.benefits .benefit, .needs .need a {
+    transition: box-shadow .2s cubic-bezier(.215, .61, .355, 1)
 }
 body.landing-no-top {
     background: #fff
@@ -5913,23 +5938,24 @@ a:hover span.h6-product-tab {
     padding-right: 5px;
     vertical-align: bottom
 }
+.second-level-menu-wrapper.tabs .sub-navigation-bar li a, .sub-navigation-bar li a {
+    font-family: myriad-pro, arial, sans-serif;
+    line-height: 50px;
+    font-size: 13px;
+    text-align: center
+}
 .sub-navigation-bar {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: block
+    display: block;
+    float: right
 }
 .sub-navigation-bar li a {
     display: block;
-    line-height: 50px;
-    text-align: center
-}
-.sub-navigation-bar li a {
-    font-family: myriad-pro, arial, sans-serif;
-    font-size: 13px;
     font-weight: 400;
     color: gray;
-    margin-left: 30px;
+    margin-left: 30px
 }
 .sub-navigation-bar li a:hover {
     color: #c20;
@@ -5938,9 +5964,6 @@ a:hover span.h6-product-tab {
 .sub-navigation-bar li.active a {
     font-weight: 600;
     border-bottom: 1px solid gray
-}
-.sub-navigation-bar {
-    float: right
 }
 .sub-navigation-bar ul li {
     display: block;
@@ -5955,7 +5978,7 @@ a:hover span.h6-product-tab {
 .second-level-menu-wrapper .sub-navigation-bar a.active {
     font-weight: 600;
     border-bottom: 1px solid gray;
-    height: 38px;
+    height: 38px
 }
 .second-level-menu-wrapper.tabs {
     float: right;
@@ -5963,41 +5986,36 @@ a:hover span.h6-product-tab {
     height: 60px;
     clear: both;
     background-color: transparent;
-    overflow: hidden;
+    overflow: hidden
 }
 .second-level-menu-wrapper.tabs .sub-navigation-bar a.active {
-    background: white;
     box-shadow: 0 0 8px rgba(0, 0, 0, .3);
     color: #cc2100;
-    background: white;
+    background: #fff;
     height: 50px;
     font-weight: 600;
     margin: auto 5px;
-    border: none;
+    border: none
 }
 .second-level-menu-wrapper.tabs .sub-navigation-bar li a {
-    font-family: myriad-pro, arial, sans-serif;
-    line-height: 50px;
-    font-size: 13px;
     font-weight: 400;
-    text-align: center;
     display: block;
-    margin-left: 0px;
-    padding: 5px 20px;
+    margin-left: 0;
+    padding: 5px 20px
 }
 .second-level-menu-wrapper.tabs.fixed {
     position: fixed;
-    top: 0px;
+    top: 0;
     right: 0;
     left: 0;
     z-index: 999;
     padding-bottom: 0;
-    background: url('/cms_backoffice/assets/20150804115143/bg-about-us') center -70px;
+    background: url(/cms_backoffice/assets/20150804115143/bg-about-us) center -70px;
     border-bottom: 1px solid #d6d6d6;
-    padding-right: 28px;
+    padding-right: 28px
 }
 .second-level-menu-wrapper.tabs .navigation-bar li a:hover span, .second-level-menu-wrapper.tabs .navigation-bar li.active a span {
-    background-position: initial;
+    background-position: initial
 }
 .second-level-menu-wrapper.tabs .sub-navigation-bar {
     float: none;
@@ -6010,24 +6028,21 @@ a:hover span.h6-product-tab {
     justify-content: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center;
-}
-h1.slogan, h3.description {
-    font-weight: 400;
-    color: #fff
+    align-items: center
 }
 h1.slogan {
-    font-size: 52px;
-    margin-bottom: 7px;
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #c20;
     font-family: myriad-pro, Arial, sans-serif
 }
 h3.description {
-    text-shadow: 1px 1px #666;
-    font-size: 26px;
-    line-height: 32px;
-    padding-top: 30px
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px
 }
-.call-out-hero-home a.osbtn.osbtn-red.popup_link {
+.call-out-hero-home a.osbtn.osbtn-blue.popup_link, .call-out-hero-home a.osbtn.osbtn-red.popup_link {
     margin-top: 23px;
     margin-bottom: 65px;
     padding: 15px 30px;
@@ -6105,8 +6120,7 @@ h3.description {
 .benefits .benefit {
     width: 308px;
     display: inline-block;
-    padding: 10px 9px 20px;
-    transition: box-shadow .2s cubic-bezier(.215, .61, .355, 1)
+    padding: 10px 9px 20px
 }
 .benefits .benefit.bordered {
     border-left: 1px solid rgba(204, 204, 204, .3);
@@ -6323,8 +6337,10 @@ h3.description {
     padding: 50px 0
 }
 .needs .need a {
-    box-sizing: content-box;
-    transition: box-shadow .2s cubic-bezier(.215, .61, .355, 1)
+    box-sizing: content-box
+}
+.Partner, .mfp-container, img.mfp-img {
+    box-sizing: border-box
 }
 .needs .need h5 {
     display: table;
@@ -6413,8 +6429,7 @@ h3.description {
     display: table-cell;
     vertical-align: middle;
     box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .08);
-    height: 210px;
-    box-sizing: border-box
+    height: 210px
 }
 .Partners.Successful-Projects {
     background: url(/cms_backoffice/assets/201510021536/bg_partners) top no-repeat #313E41;
@@ -6673,8 +6688,7 @@ h3.description {
 .mfp-container {
     text-align: center;
     position: absolute;
-    left: 0;
-    box-sizing: border-box
+    left: 0
 }
 .mfp-container:before {
     display: inline-block;
@@ -6691,6 +6705,10 @@ h3.description {
     margin: 0 auto;
     text-align: left;
     z-index: 91045
+}
+.mfp-close, .mfp-preloader {
+    text-align: center;
+    position: absolute
 }
 .mfp-ajax-holder .mfp-content, .mfp-inline-holder .mfp-content {
     width: 100%;
@@ -6725,10 +6743,8 @@ h3.description {
 }
 .mfp-preloader {
     color: #ccc;
-    position: absolute;
     top: 50%;
     width: auto;
-    text-align: center;
     margin-top: -.8em;
     left: 8px;
     right: 8px;
@@ -6768,11 +6784,9 @@ button::-moz-focus-inner {
     width: 44px;
     height: 44px;
     line-height: 44px;
-    position: absolute;
     right: 0;
     top: 0;
     text-decoration: none;
-    text-align: center;
     opacity: .65;
     filter: alpha(opacity=65);
     padding: 0 0 18px 10px;
@@ -6901,7 +6915,6 @@ img.mfp-img {
     width: auto;
     height: auto;
     display: block;
-    box-sizing: border-box;
     padding: 40px 0;
     margin: 0 auto
 }
@@ -6964,11 +6977,11 @@ img.mfp-img {
 }
 a.magnific_popup_link.zoom {
     position: relative;
-    display: inline-block;
+    display: inline-block
 }
 a.magnific_popup_link.zoom:after {
     content: "";
-    background-image: url('/cms_backoffice/assets/20150306013343/overlay_screenshot_224.png');
+    background-image: url(/cms_backoffice/assets/20150306013343/overlay_screenshot_224.png);
     position: absolute;
     background-repeat: no-repeat;
     width: 46px;
@@ -6977,7 +6990,7 @@ a.magnific_popup_link.zoom:after {
     margin-left: -23px;
     left: 50%;
     margin-top: -23px;
-    top: 50%;
+    top: 50%
 }
 a.magnific_popup-close, a.magnific_popup-next, a.magnific_popup-prev {
     color: #f2f2f2;
@@ -7323,20 +7336,10 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     right: 0;
     top: 0
 }
-
-/** bali launch specific */
-.bali p {
+.bali ol, .bali p, .bali ul {
     font-size: 16px;
-    line-height: 22px;
-}
-.bali ul {
-    font-size: 16px;
-    line-height: 22px;
-}
-.bali ol {
-    font-size: 16px;
-    line-height: 22px;
+    line-height: 22px
 }
 .bali h2 {
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }

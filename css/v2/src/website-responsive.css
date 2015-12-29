@@ -78,6 +78,9 @@ v=201510021536
     .benefits {
         padding-bottom: 20px
     }
+    .benefits .osbtn {
+        margin-top: 20px;
+    }
     .customers-and-experts a span.partner-matrix-entry {
         width: 90px;
     }
@@ -220,7 +223,13 @@ v=201510021536
         padding: 10px 30px
     }
     .call-out-hero-home {
-        padding-top: 50px
+        padding-top: 50px;
+        background-position: center;
+        background-image: url(/cms_backoffice/assets/20151215163525/bg-mobile.jpg);
+        background-size: cover;
+    }
+    .call-out-hero-home .highlight {
+        min-height: 300px;
     }
     .lead {
         height: auto
@@ -734,6 +743,9 @@ v=201510021536
         height: 100%;
         z-index: 0
     }
+    .submenuhoverbox.solutions {
+        margin-top: 80px;
+    }
     .submenuhoverbox-firstcontent {
         margin: 0;
         float: none;
@@ -1209,19 +1221,11 @@ v=201510021536
     .what-is-it {
         display: none;
     }
-    .header-hero-wrapper.home-rev {
-        height: 430px;
-    }
     h1.slogan {
         margin-top: 20px;
-        font-size: 42px;
-        line-height: normal;
     }
     h3.description {
-        line-height: normal;
-        font-size: 24px;
-        font-weight: 300;
-        padding-top: 10px
+        padding-top: 10px;
     }
     .call-out-hero-home a.osbtn.osbtn-red.popup_link {
         margin-bottom: 0;
@@ -1278,6 +1282,9 @@ v=201510021536
     }
     .benefits {
         padding-bottom: 20px
+    }
+    .benefits .osbtn {
+        margin-left: 20px;
     }
     .customers-and-experts a span.partner-matrix-entry {
         width: 90px;

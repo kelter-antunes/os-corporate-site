@@ -5,8 +5,11 @@ var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 });*/
 
 $(window).load(function() {
-    $(".spacer-bg").width(840 - $("span[id*=ListSection]").outerWidth());
-    $('.navigation-bar').css('background-color', 'transparent');
+    if ($('a.logo[href^="/nextstep"]').length === 0) {
+        $(".spacer-bg").width(840 - $("span[id*=ListSection]").outerWidth() + 1);
+        $('.navigation-bar').css('background-color', 'transparent');
+    };
+
 
 });
 
