@@ -6733,7 +6733,8 @@ h3.description {
 }
 
 .span6.element-item{
-    position: initial!important;
+    position: initial !important;
+    color:black;
 }
  
 
