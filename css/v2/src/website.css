@@ -6727,13 +6727,13 @@ h3.description {
     content: ''
 }
 
-.forcePosition{
-    position: initial!important;
-}
-
 .expander.Comparer:hover {
     box-shadow: 0 3px 4px rgba(226, 226, 226, .58);
     border: 1px solid #E2E2E2
+}
+
+.span6.element-item{
+    position: initial!important;
 }
  
 
