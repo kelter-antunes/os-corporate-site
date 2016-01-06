@@ -6732,7 +6732,9 @@ h3.description {
 }
  
 
-
+.forceRelative{
+    position: relative!important;
+}
 
 @media only screen and (min-device-width:767px) {
     .case-study-customer-logo {
