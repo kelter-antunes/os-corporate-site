@@ -6726,15 +6726,16 @@ h3.description {
 .mfp-container:before, .mfp-figure:after {
     content: ''
 }
+
+.forcePosition{
+    position: initial!important;
+}
+
 .expander.Comparer:hover {
     box-shadow: 0 3px 4px rgba(226, 226, 226, .58);
     border: 1px solid #E2E2E2
 }
  
-
-.forcePosition{
-    position: initial!important;
-}
 
 @media only screen and (min-device-width:767px) {
     .case-study-customer-logo {
