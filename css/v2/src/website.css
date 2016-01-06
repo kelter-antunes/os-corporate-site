@@ -6732,8 +6732,8 @@ h3.description {
 }
  
 
-.forceRelative{
-    position: relative!important;
+.forcePosition{
+    position: initial!important;
 }
 
 @media only screen and (min-device-width:767px) {
