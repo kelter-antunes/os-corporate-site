@@ -6732,16 +6732,6 @@ h3.description {
 }
  
 
-.AllianceImage {
-    width: 20%;
-    display: inline-block;
-    margin: 10px;
-}
-
-.AllianceDiv {
-    border-top: 1px solid #E7ECED;
-}
-
 
 
 @media only screen and (min-device-width:767px) {
