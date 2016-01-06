@@ -6734,8 +6734,10 @@ h3.description {
 
 .span6.element-item{
     position: initial !important;
-    color:black;
+    
 }
+
+
  
 
 @media only screen and (min-device-width:767px) {
@@ -7418,4 +7420,9 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     height: 29px;
     right: 0;
     top: 0
+}
+
+
+.testing123{
+    position: relative;
 }
