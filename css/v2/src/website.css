@@ -4011,6 +4011,11 @@ h4.bot-line {
     color: #fff;
     text-decoration: none
 }
+
+.button-isotype.button-small {
+    padding: 4px 10px;
+}
+
 .button-isotype.is-checked, .button-isotype:active {
     background-color: #c20
 }
