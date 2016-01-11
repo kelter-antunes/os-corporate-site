@@ -5631,7 +5631,8 @@ a.osbtn-orange {
     height: 130px !important
 }
 .header-hero-wrapper.page-without-hero {
-    height: auto
+    height: auto;
+    padding-bottom: 40px;
 }
 .header-hero-wrapper.page-without-hero.page-company {
     padding-bottom: 40px
