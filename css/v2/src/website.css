@@ -3531,7 +3531,8 @@ h5.card-h a {
 }
 .apps-top {
     position: relative;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    margin-top: 40px;
 }
 .apps-top .image-holder {
     position: absolute;
@@ -5632,7 +5633,6 @@ a.osbtn-orange {
 }
 .header-hero-wrapper.page-without-hero {
     height: auto;
-    padding-bottom: 40px;
 }
 .header-hero-wrapper.page-without-hero.page-company {
     padding-bottom: 40px
