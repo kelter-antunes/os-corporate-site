@@ -3949,6 +3949,11 @@ h4.bot-line {
     color: #fff;
     text-decoration: none
 }
+
+.button-isotype.button-small {
+    padding: 4px 10px;
+}
+
 .button-isotype.is-checked, .button-isotype:active {
     background-color: #c20
 }
@@ -6665,20 +6670,13 @@ h3.description {
 .mfp-container:before, .mfp-figure:after {
     content: ''
 }
+
 .expander.Comparer:hover {
     box-shadow: 0 3px 4px rgba(226, 226, 226, .58);
     border: 1px solid #E2E2E2
 }
 
-.AllianceImage {
-    width: 20%;
-    display: inline-block;
-    margin: 10px;
-}
-
-.AllianceDiv {
-    border-top: 1px solid #E7ECED;
-}
+ 
 
 @media only screen and (min-device-width:767px) {
     .case-study-customer-logo {
@@ -7347,6 +7345,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     right: 0;
     top: 0
 }
+
 .bali ol, .bali p, .bali ul {
     font-size: 16px;
     line-height: 22px
