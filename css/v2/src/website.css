@@ -5282,12 +5282,14 @@ div.st-result .st-date {
     font-size: 16px;
     color: #384142;
     line-height: 18px;
-    font-style: italic
+    font-style: italic;
+    max-width: 100%;
 }
 .submenuhoverbox .box a {
     width: 100%;
     text-align: center;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    display: block;
 }
 .submenuhoverbox-line {
     border-right: 1px solid #e6e6e6;

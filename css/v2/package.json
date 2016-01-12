@@ -1,14 +1,15 @@
-{  
-  "name": "os-corporate-css",  
-  "version": "0.0.1",  
-    "author" : "kelter-antunes",  
-    "private" : true,  
-  "devDependencies": {  
-          "grunt" :                       "~0.4.*",  
-          "grunt-contrib-cssmin":         "*",  
-          "grunt-contrib-qunit":         "*",  
-          "grunt-contrib-jshint":         "*",  
-          "grunt-contrib-uglify":         "*",  
-          "matchdep":                     "*"  
-  }  
+{
+  "name": "os-corporate-css",
+  "version": "0.0.1",
+  "author": "kelter-antunes",
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.*",
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-qunit": "*",
+    "grunt-contrib-uglify": "*",
+    "matchdep": "*"
+  }
 }
