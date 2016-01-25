@@ -131,6 +131,9 @@ a.byline:hover {
 .content-layout-simplify {
     min-height: 300px
 }
+.page-content-wrapper{
+    /*padding-bottom: 40px;*/
+}
 .cta-wrapper-small-line {
     height: 5px;
     margin: 20px 0 10px
@@ -6461,6 +6464,16 @@ h3.description {
     vertical-align: middle;
     padding-left: 15px
 }
+
+img.premiere-logo {
+    display: none;
+}
+
+.Partner[data-ispremiere="True"] img.premiere-logo {
+    display: block;
+}
+
+
 .SeeMore {
     display: inline-block;
     font-weight: 700;
