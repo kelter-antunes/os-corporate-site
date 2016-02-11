@@ -94,7 +94,8 @@ osjs(".Popup").live("dialogopen", function(a, b) {
 (function($) {
     var options = $.lazyLoadXT;
 
-    options.forceEvent += 'loadmeeeee';
+    options.forceEvent += ' loadmeeeee';
+    options.forceEvent += ' hover-menu';
     options.edgeY = 200;
 
 })(window.jQuery || window.Zepto);
@@ -897,6 +898,9 @@ $(document).ready(function() {
 
     $("[data-option=dropdown-hover]").click(function(a) {
         a.preventDefault(), a.stopPropagation();
+
+        $(window).trigger('hover-menu');
+
         var b = $(this),
             menuName = $(b).attr("data-name"),
             c = $("[data-dropdown-wrapper='" + menuName + "']");
