@@ -457,26 +457,26 @@ eventer_Global(messageEvent_Global, function(e) {
                 var isSalesforceDownload = (pathName.indexOf('/salesforce1-vs-outsystems/') !== -1);
 
                 if (isAppContactUS) {
-                    trackEvent('CS - Submit Contact US Apps');
+                    osAnalytics.trackEvent('CS - Submit Contact US Apps');
 
                 } else if (isGlobalContactUS) {
-                    trackEvent('CS - Submit Contact US Global');
+                    osAnalytics.trackEvent('CS - Submit Contact US Global');
 
                 } else if (isOfficeContactUS) {
-                    trackEvent('CS - Submit Contact US Offices');
+                    osAnalytics.trackEvent('CS - Submit Contact US Offices');
 
                 } else if (isVersusLP) {
                     if ((pathName.indexOf('kony') !== -1)) {
-                        trackEvent('LP - Submit Demo Contact Us - Kony LP');
+                        osAnalytics.trackEvent('LP - Submit Demo Contact Us - Kony LP');
 
                     } else if ((pathName.indexOf('mendix') !== -1)) {
-                        trackEvent('LP - Submit Demo Contact Us - Mendix LP');
+                        osAnalytics.trackEvent('LP - Submit Demo Contact Us - Mendix LP');
 
                     } else if ((pathName.indexOf('appcelerator') !== -1)) {
-                        trackEvent('LP - Submit Demo Contact Us - Appcelerator LP');
+                        osAnalytics.trackEvent('LP - Submit Demo Contact Us - Appcelerator LP');
 
                     } else if (isSalesforceDownload) {
-                        trackEvent('LP - Download collateral', {
+                        osAnalytics.trackEvent('LP - Download collateral', {
                             'Document': 'OutSystems Platform and Force.com'
                         }, null);
                     }
