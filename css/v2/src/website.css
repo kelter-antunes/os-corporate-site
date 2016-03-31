@@ -4940,7 +4940,7 @@ div.Application_Menu div.Menu_DropDownPanel a, div.Application_Menu div.Menu_Dro
 .overlay, .submenuhover {
     right: 0;
     left: 0;
-    top: 80px
+    top: 0px
 }
 .image-container img {
     max-width: 100%;
@@ -5386,7 +5386,8 @@ div.st-result .st-date {
     text-decoration: underline
 }
 .overlay {
-    position: absolute;
+    position: fixed;
+    z-index: 9999;
     bottom: 0;
     background-color: rgba(0, 0, 0, .45);
     z-index: 100;
