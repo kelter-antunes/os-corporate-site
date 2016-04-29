@@ -521,7 +521,7 @@ $(function() {
 
         //var _gaq = _gaq || [];
         try {
-            _gaq.push(['_trackEvent', 'Apps', 'Try Now', appName]);
+            osAnalytics.trackEvent("Try Now", {category: "Apps", label: appName});
         } catch (err) {}
     });
 
