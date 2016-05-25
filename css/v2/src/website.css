@@ -6472,12 +6472,12 @@ img.global-logo{
     display: none;
 }
 
-.Partner[data-ispremiere="True"] img.premiere-logo {
+.Partner[data-ispremiere="True"].Partner[data-isGlobal="False"] img.premiere-logo {
       display: block;
     margin-top: 10px;
 }
 
-.Partner[data-isGlobal="True"] .Partner[data-ispremiere="False"] img.global-logo {
+.Partner[data-isGlobal="True"] img.global-logo {
     display: block;
     margin-top: 10px;
 }
