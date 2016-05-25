@@ -6472,11 +6472,13 @@ img.global-logo{
 }
 
 .Partner[data-ispremiere="True"] img.premiere-logo {
-    display: block;
+      display: block;
+    margin-top: 10px;
 }
 
 .Partner[data-isGlobal="True"] img.global-logo {
     display: block;
+    margin-top: 10px;
 }
 
 .SeeMore[data-website=False] {
