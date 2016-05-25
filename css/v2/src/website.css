@@ -6465,6 +6465,7 @@ h3.description {
 
 img.premiere-logo {
     display: none;
+      margin-top: 0px;
 }
 
 img.global-logo{
