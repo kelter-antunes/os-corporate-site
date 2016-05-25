@@ -6467,7 +6467,15 @@ img.premiere-logo {
     display: none;
 }
 
+img.global-logo{
+    display: none;
+}
+
 .Partner[data-ispremiere="True"] img.premiere-logo {
+    display: block;
+}
+
+.Partner[data-isGlobal="True"] img.global-logo {
     display: block;
 }
 
@@ -6693,7 +6701,7 @@ img.premiere-logo {
     border: 1px solid #E2E2E2
 }
 
- 
+
 
 @media only screen and (min-device-width:767px) {
     .case-study-customer-logo {
