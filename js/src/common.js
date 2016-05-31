@@ -511,7 +511,7 @@ eventer_Global(messageEvent_Global, function(e) {
 }, false);
 
 
-/* apps demo events */
+/* apps demo events 
 $(function() {
     $('a[href*="applicationname"]').click(function(event) {
         var appUrl = $(this).attr('href');
@@ -527,7 +527,7 @@ $(function() {
 
 });
 
-
+*/
 
 /*  Tracking Sign-ups in KISSMetrics - From anonymous to named user
  *
