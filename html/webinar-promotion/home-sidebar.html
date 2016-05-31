@@ -1,0 +1,22 @@
+<style type="text/css">
+.webinar-cta {
+    text-align: center;
+    margin-bottom: 20px;
+}
+</style>
+<div class="webinar-cta">
+    <a href="/forums/discussion/17664/webinar-troubleshooting-mobile-apps-performance/?src=forum"> <img src="/cms_backoffice/assets/20160303172148/troubleshoot-220.jpg" alt=""></a>
+</div>
+<script>
+$(function() {
+    var cta = $('.webinar-cta').remove();
+
+
+    if (window.location.pathname != '/forums/discussion/17664/webinar-troubleshooting-mobile-apps-performance/') {
+        $('.sidebar_holder').prepend(cta.show());
+    }
+
+
+
+});
+</script>
