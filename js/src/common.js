@@ -179,6 +179,56 @@ $(function() {
 
 
 
+//slider do badruz
+//Init bxslider after all images are loaded
+$(window).load(function() {
+    $('.slider1').bxSlider({
+        minSlides: 1,
+        maxSlides: 1,
+        slideMargin: 0,
+        onSliderLoad: function(){
+            console.log('loaded');
+            $('.customers-sublevel-menu .hero-placeholder > div.container').css('opacity', '1');
+        }
+    });
+    
+});
+
+$(document).on('click', '.slider_watch_btn', function() {
+    var v_idx = $(this).data('video-index');
+    $('.case-study-video-wrapper[data-video-index=' + v_idx + ']').fadeIn();
+    $('.case-study-videos').fadeIn();
+});
+
+
+$(document).on('click', '.close_vid_btn', function() {
+    $(this).closest('.case-study-videos').fadeOut();
+    $(this).closest('.case-study-video-wrapper').fadeOut();
+});
+
+
+//Detect a click outside the hero-placeholder and checks if the video container is being displayed, if yes, hides it
+$(document).click(function(event) { 
+    if(!$(event.target).closest('.hero-placeholder').length && !$(event.target).is('.hero-placeholder')) {
+        if($('.case-study-videos').is(":visible")) {
+            $('.case-study-videos').fadeOut();
+            $('.case-study-video-wrapper').fadeOut();
+        }
+    }        
+})
+
+//Detect "escape" key to close the video container
+$(document).keyup(function(e) {
+     if (e.keyCode == 27) { // escape key maps to keycode `27`
+        if($('.case-study-videos').is(":visible")) {
+            $('.case-study-videos').fadeOut();
+            $('.case-study-video-wrapper').fadeOut();
+        }
+    }
+});
+
+
+
 
 /* adjust breadcrumb margin top on new case studies version and solutions  */
 $(function() {

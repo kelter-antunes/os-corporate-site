@@ -17,6 +17,7 @@ module.exports = function(grunt) {
                     ],
                     'bundle/extra.js': [
                         'src/jquery.lazyloadxt.extra.min.js',
+                        'src/jquery.bxslider.js',
                         'src/common.min.js',
                         'src/os-inspectlet.min.js',
                         'src/jquery.panelslider.min.js',
