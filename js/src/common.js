@@ -88,8 +88,8 @@ osjs(".Popup").live("dialogopen", function(a, b) {
 
 /* Lazy Load XT v1.0.0 2014-01-16
  * http://ressio.github.io/lazy-load-xt
- * Licensed under MIT 
- * (C) 2014 RESS.io 
+ * Licensed under MIT
+ * (C) 2014 RESS.io
  */
 (function($) {
     var options = $.lazyLoadXT;
@@ -191,7 +191,7 @@ $(window).load(function() {
             $('.customers-sublevel-menu .hero-placeholder > div.container').css('opacity', '1');
         }
     });
-    
+
 });
 
 $(document).on('click', '.slider_watch_btn', function() {
@@ -208,13 +208,13 @@ $(document).on('click', '.close_vid_btn', function() {
 
 
 //Detect a click outside the hero-placeholder and checks if the video container is being displayed, if yes, hides it
-$(document).click(function(event) { 
+$(document).click(function(event) {
     if(!$(event.target).closest('.hero-placeholder').length && !$(event.target).is('.hero-placeholder')) {
         if($('.case-study-videos').is(":visible")) {
             $('.case-study-videos').fadeOut();
             $('.case-study-video-wrapper').fadeOut();
         }
-    }        
+    }
 })
 
 //Detect "escape" key to close the video container
@@ -235,7 +235,7 @@ $(function() {
     $('.case-studies-detail-new .Header_Nav_Breadcrumb').css('margin-top', 300 - $('.cs-title-box-topbar').height() + 15);
 });
 
-/** adjust header size if no second level menu 
+/** adjust header size if no second level menu
 $(function() {
 
     var pathname = window.location.pathname;
@@ -535,6 +535,7 @@ eventer_Global(messageEvent_Global, function(e) {
             }
             //marketo form resize
             else {
+              if (!$('#gnewtonIframe').length>0) {
                 var mktodata;
                 try {
                     mktodata = JSON.parse(e.data);
@@ -549,7 +550,7 @@ eventer_Global(messageEvent_Global, function(e) {
 
                         }
                     }
-                } catch (e) {}
+                } catch (e) {}}
 
             }
         }
@@ -561,7 +562,7 @@ eventer_Global(messageEvent_Global, function(e) {
 }, false);
 
 
-/* apps demo events 
+/* apps demo events
 $(function() {
     $('a[href*="applicationname"]').click(function(event) {
         var appUrl = $(this).attr('href');
@@ -671,23 +672,23 @@ $(function() {
 
 
 /* wistia events */
-// Category: Video 
-// Action: Start Watching 
-// Label: [Video Name] 
+// Category: Video
+// Action: Start Watching
+// Label: [Video Name]
 // Value:
 
-// Category: Video 
-// Action: Watched 50% 
-// Label: [Video Name] 
+// Category: Video
+// Action: Watched 50%
+// Label: [Video Name]
 // Value:
 
-// Category: Video 
-// Action: Watched 75% 
-// Label: [Video Name] 
+// Category: Video
+// Action: Watched 75%
+// Label: [Video Name]
 // Value:
 
 //enable Wistia Trackings
-/* 
+/*
 var eWT = true;
 $(function() {
 
