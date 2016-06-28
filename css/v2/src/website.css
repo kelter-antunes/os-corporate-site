@@ -514,6 +514,14 @@ a.tooltip-link {
 .osbtn, .osbtn-red {
     border-radius: 5px
 }
+
+
+.side_top_box_readcs {
+    padding: 10px 0 20px 0 !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 .osbtn, .osbtn-black, .osbtn-gray, .osbtn-red {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px
@@ -559,6 +567,7 @@ a.tooltip-link {
     background-color: #ccc;
     background-image: linear-gradient(top, #ccc, #aaa)
 }
+
 .osbtn:hover {
     -webkit-filter: none;
     filter: none;
@@ -569,6 +578,18 @@ a.tooltip-link {
 .osbtn:active {
     background-color: #aaa
 }
+
+.osbtn-light-gray{
+  background-image: linear-gradient(180deg, white 0%, rgba(234, 234, 234, 0.96) 100%);
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.28);
+  color: #37474f;
+  font-family: "Myriad-Pro";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 15px;
+}
+
 .osbtn-red {
     color: #fff !important;
     background-color: #c20;
@@ -7611,7 +7632,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 
 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
     position: absolute;
-    bottom: 40px;
+    bottom: -15px !important;
     background: white;
     left: 50%;
     width: auto;
@@ -7648,12 +7669,13 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     border-bottom: none;
 }
 
+
 .customers-sublevel-menu .hero-placeholder {
     -webkit-filter: none;
     filter: none;
     box-shadow: none;
     background-image: radial-gradient(50% 100%, #FFFFFF 51%, #ECEFF1 90%);
-    overflow: hidden;
+    overflow: visible !important;
     height: 380px;
 }
 
@@ -7697,26 +7719,27 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     z-index: 0;
 }
 
-.slider_watch_btn{
+.slider_watch_btn {
     position: absolute;
-    bottom: 10px;
-    right: 40px;
+    bottom: 27px;
+    right: 85px;
     z-index: 3;
 }
 
 .quote_img {
-    padding-right: 20px;
+    padding-right: 0px !important;
     border-right: 1px solid #b0bec5;
 }
 
 .quote_img img{
-    height: 30px;
+    height: 70px !important;
 }
 
 
 .quote_author {
-    font-size: 12px;
-    line-height: 17px;
+    padding-top: 15px;
+    font-size: 16px !important;
+    line-height: 20px !important;
     color: #333;
 }
 
@@ -7767,13 +7790,15 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 
-.close_vid_btn{
+.close_vid_btn {
     position: absolute;
     top: -40px;
-    right: 35px;
+    right: 0px !important;
     color: white;
+    opacity: 0.5;
     font-weight: 600;
     line-height: 19px;
+    font-size: 14px;
 }
 
 .close_vid_btn:hover{
@@ -7805,8 +7830,8 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 .CustomerBigCard {
     border: 1px solid #cfd8dc;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
-    height: 550px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.09);
+    height: 460px;
     position: relative;
 }
 
@@ -7814,6 +7839,9 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     bottom: 0;
     position: absolute;
     width: 100%;
+}
+.CustomerBigCardAuthor div {
+    vertical-align: bottom;
 }
 
 .CustomerBigCardAuthorName {
@@ -7831,14 +7859,20 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 .CustomerBigCardArea {
-    background-color: white;
+    background-color: #fff;
     margin-top: -40px;
-    opacity: 0.9;
-    padding: 10px 20px 10px 20px;
+    opacity: 0.99;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .CustomerBigCardContent {
     padding: 0px 25px 0px 25px;
+}
+
+.CustomerBigCardContent img {
+    height: 70px;
 }
 
 .CustomerBigCardDescription {
@@ -7857,17 +7891,26 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 .CustomerBigCardTitle {
+    display: table-cell;
+    vertical-align: middle;
+    height: 72px;
     color: #333;
     font-family: myriad-pro,Arial,sans-serif;
     font-size: 17px;
     font-weight: 700;
     line-height: 18px;
+    padding-top: 5px;
 }
 
 .CustomerBigCardTopCardImage {
-    opacity: 0.9;
-    width: 100%
-;
+    max-height: 54px;
+    opacity: .9;
+    width: 100%;
+}
+.CustomerSmallCardTopCardImage {
+    opacity: .9;
+    width: 100%;
+    max-height: 39px;
 }
 
 .SliderList .bx-pager-item {
@@ -7893,7 +7936,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 .SliderList .bx-wrapper .bx-next {
-    background: url(/cms_backoffice/assets/20160530151534/path-347-copy) no-repeat;
+    background: url(/cms_backoffice/assets/20160621154828/right_arrow) no-repeat;
     right: 10%;
 }
 .SliderList .bx-pager.bx-default-pager {
@@ -7903,19 +7946,46 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     top: 288px;
     width: 100%;
 }
+.big-btn-blue {
+    font-size: 20px;
+    padding: 15px 42px;
+    background-image: linear-gradient(-180deg,#008acf 0,#0168ac 100%);
+    border: 1px solid #005a88;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,.32);
+    border-radius: 4px;
+}
+.big-btn-blue:hover {
+    background-image: linear-gradient(-180deg, #008ACF 0%, #078BE2 100%);
+    box-shadow: 0px 12px 10px 0px rgba(0,0,0,0.32);
+    border-radius: 4px;
+}
+.big-btn-gray {
+    background: transparent;
+    background-image: linear-gradient(-90deg, rgba(0,0,0,0.44) 0%, #000000 100%);
+    border-radius: 4px;
+}
+.big-btn-gray:hover {
+    background-image: linear-gradient(-90deg, rgba(0,0,0,0.44) 0%, #000000 100%);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50), 0px 8px 6px 0px rgba(0,0,0,0.32);
+    border-radius: 4px;
+}
 
 .SliderList .bx-wrapper .bx-pager.bx-default-pager a {
-    background: none ;
+    background: 0;
     height: 100%;
-    text-indent: -0px ;
+    text-indent: 0;
     width: 100%;
+    position: relative;
 }
 
 .SliderList .bx-wrapper .bx-pager.bx-default-pager a img {
-    margin-top: 15px;
-    max-height: 40%;
-    max-width: 80%;
-    vertical-align: middle;
+    max-height: 55px;
+    position: absolute;
+    margin: -12px auto 0;
+    display: block;
+    top: 25%;
+    left: 0;
+    right: 0;
 }
 
 .SliderList .bx-wrapper .bx-pager.bx-default-pager a:hover, .SliderList .bx-wrapper .bx-pager.bx-default-pager a.active {
@@ -7942,7 +8012,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 .SliderList .bx-wrapper .bx-prev {
-    background: url(/cms_backoffice/assets/20160530151541/path-347) no-repeat;
+    background: url(/cms_backoffice/assets/20160621154828/left_arrow) no-repeat;
     left: 10%;
 }
 
@@ -7956,22 +8026,43 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     vertical-align: middle;
 }
 
-.SliderList .slider_watch_btn {
+.slider_watch_btn {
     position: absolute;
-    bottom: 10px;
-    right: 25%;
+    bottom: 27px !important;
+    right: 85px !important;
     z-index: 3;
+}
+.CustomerBigCardContent img {
+    height: 70px;
 }
 
 .SliderList .case-study-img {
     position: absolute;
     margin-left: -65px;
     z-index: 3;
+    bottom: 0;
 }
 .SliderList .bx-wrapper .case-study-img img {
     max-width: 100%;
-    max-height: 100%;
-    height: 288px;
+    height: 262px;
+}
+.side_bottom_box_text_CaseStudies {
+    vertical-align: middle;
+    padding: 10px 0px 10px 20px;
+    opacity: 0.65;
+    color: white;
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 400;
+    z-index: 1;
+    position: relative;
+}
+.side_top_box_CaseStudies {
+    width: 100%;
+    height: 255px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    position: relative;
 }
 
 .SliderList .case-study-quote-container {
@@ -7982,6 +8073,23 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     font-size: 32px;
     font-weight: 400;
     line-height: 37px;
+}
+.SliderList .case-study-quote {
+    color: #1d1c1c;
+    font-size: 34px;
+    line-height: 42px;
+    font-weight: 400;
+    font-family: "myriad-pro";
+    margin-top: 0px;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100%;
 }
 
 .SliderList .line-separator {
@@ -7999,6 +8107,15 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     font-size: 14px;
     font-weight: 400;
     line-height: 19px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.filter-section a {
+     -webkit-transition: all 0.2s ease-in-out;
+     -moz-transition: all 0.2s ease-in-out;
+     -o-transition: all 0.2s ease-in-out;
+     transition: all 0.2s ease-in-out;
 }
 
 .SliderList .filter-section a:hover {
@@ -8009,6 +8126,8 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     font-weight: 700;
     line-height: 19px;
     text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .SliderList .filter-section a:hover:before {
@@ -8031,6 +8150,8 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     font-size: 14px;
     font-weight: 700;
     line-height: 19px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .SliderList .filter-section a.active:before {
@@ -8126,6 +8247,9 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     position: relative ;
     margin-bottom: 25px;
 }
+.CustomerSmallCardImage img {
+    height: 60px;
+}
 
 .CustomerSmallCardArea {
     background-color: white;
@@ -8192,13 +8316,13 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     z-index: 9999;
 }
 
-@media  (max-width: 767px) {
-  .SliderList .sidebarfilters {
-    display: none;
-    visibility: hidden;
-  }
+.FilterCaseStudiesLabel{
+color: #596669;
+font-family: myriad-pro,Arial,sans-serif;
+font-size: 12px;
+font-weight: 400;
+line-height: 20px;
 }
-
 
 @media  (max-width:979px) {
 .SliderList .bx-wrapper .bx-controls-direction a {

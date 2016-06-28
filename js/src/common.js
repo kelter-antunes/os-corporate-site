@@ -181,7 +181,7 @@ $(function() {
 
 //slider do badruz
 //Init bxslider after all images are loaded
-$(window).load(function() {
+$( document ).ready(function() {
     $('.slider1').bxSlider({
         minSlides: 1,
         maxSlides: 1,
@@ -189,6 +189,7 @@ $(window).load(function() {
         onSliderLoad: function(){
             console.log('loaded');
             $('.customers-sublevel-menu .hero-placeholder > div.container').css('opacity', '1');
+            $('.ShowOnLoad').css('opacity', '1');
         }
     });
 
@@ -198,6 +199,7 @@ $(document).on('click', '.slider_watch_btn', function() {
     var v_idx = $(this).data('video-index');
     $('.case-study-video-wrapper[data-video-index=' + v_idx + ']').fadeIn();
     $('.case-study-videos').fadeIn();
+
 });
 
 

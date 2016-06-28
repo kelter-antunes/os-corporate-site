@@ -1305,6 +1305,11 @@
 				populatePager();
 				updatePagerActive(slider.active.index);
 			}
+			$('.slide:not(.bx-clone) .quote_img img').each(function( index ) {
+	index= index;
+	$('.bx-pager-item a[data-slide-index="' + index + '"]').empty();
+	$(this).clone().appendTo( '.bx-pager-item a[data-slide-index="' + index + '"]' )
+	});
 		}
 
 		/**
@@ -1337,11 +1342,6 @@
 			if (settings != undefined) options = settings;
 			el.destroySlider();
 			init();
-			$('.slide:not(.bx-clone) .quote_img img').each(function( index ) {
-	index= index;
-	$('.bx-pager-item a[data-slide-index="' + index + '"]').empty();
-	$(this).clone().appendTo( '.bx-pager-item a[data-slide-index="' + index + '"]' )
-	});
 		}
 
 		init();
