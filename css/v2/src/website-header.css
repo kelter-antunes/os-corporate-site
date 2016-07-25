@@ -164,7 +164,8 @@ body.mega-menu .navigation-bar li:not(.get-started) a:hover:before  {
     border-bottom: 1px solid gray
 }
 .navigation-bar-tail-logo {
-    margin-left: -82px
+    margin-left: -82px;
+    padding: 11px 0;
 }
 ul.navigation-bar {
     height: 50px;
@@ -179,7 +180,6 @@ ul.navigation-bar {
     background-color: black;
 }
 span.spacer-bg {
-    background-color: #000;
     height: 50px;
     width: 95px;
     display: inline-block;

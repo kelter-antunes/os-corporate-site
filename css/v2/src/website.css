@@ -4689,11 +4689,9 @@ div.cs-title-box-botbar-wrapper>div.no-image>div.case-study-customer-testimonial
     display: inline-block;
     width: 50px
 }
-.header-contact-us, .header-login {
+.header-contact-us, .header-login, .header-free-trial{
     font-family: myriad-pro;
-    font-size: 13px;
     color: #FFF !important;
-    padding: 0 15px 3px;
     line-height: 20px;
     display: inline-block;
     font-weight: 400
@@ -4706,12 +4704,16 @@ div.cs-title-box-botbar-wrapper>div.no-image>div.case-study-customer-testimonial
     color: #FFF !important;
     background-color: #606060
 }
-.header-login {
-    padding: 0 12px;
-    height: 23px;
-    line-height: 23px;
-    background: #A2A2A2;
-    font-size: 14px
+
+.header-login,
+.header-free-trial{
+    opacity: 0.44;
+    background-color: rgba(0, 0, 0, 0.53);
+    border: 1px solid rgba(236, 239, 241, 0.49);
+    border-radius: 0 0 4px 4px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 18px;
 }
 .header-contacts {
     height: 15px;
