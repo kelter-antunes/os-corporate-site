@@ -44,7 +44,7 @@ v=201510021536
 }
 .navigation-items {
     font-family: myriad-pro, Arial, sans-serif;
-    height: 50px;
+    height: 60px;
     float: left;
 }
 .navigation-search-outter {
@@ -87,7 +87,6 @@ span[id*=ListSection] {
     float: left;
     width: auto;
     position: relative;
-    overflow: hidden;
     white-space: nowrap;
 }
 .navigation-bar li a {
@@ -118,7 +117,7 @@ span[id*=ListSection] {
     color: #000;
     content: "";
     position: absolute;
-    bottom: -90px;
+    bottom: -100px;
     border-width: 100px;
     border-color: #000 #000 rgba(255,255,255,0);
     z-index: 999;
