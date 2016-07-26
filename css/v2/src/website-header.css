@@ -7,9 +7,7 @@ v=201510021536
     width: 100%;
     overflow: hidden;
     border: none;
-    background: -moz-linear-gradient(-180deg, #171717 0%, #202326 100%);
-    background: -webkit-linear-gradient(-180deg, #171717 0%, #202326 100%);
-    background: linear-gradient(-180deg, #171717 0%, #202326 100%);
+    background: transparent;
 }
 .navigation-inner {
     height: 50px;
@@ -30,7 +28,8 @@ v=201510021536
 }
 .navigation-longtail {
     width: 99999px;
-    height: auto
+    height: auto;
+    margin-top: 10px;
 }
 .navigation-longtail-end {
     width: 9999px;
@@ -195,7 +194,15 @@ span.spacer-bg {
 .navigation-bar li a span {
     position: relative;
     z-index: 999;
+    font-size: 16px;
 }
+
+.navigation-bar li a span.osicon-arrow-down:before {
+    padding: 7px;
+    font-size: 8px;
+    color: #ccc;
+}
+
 li.get-started {
     background-color: black;
     height: 50px;
