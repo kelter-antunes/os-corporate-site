@@ -6050,10 +6050,12 @@ a:hover span.h6-product-tab {
     border: none
 }
 .second-level-menu-wrapper.tabs .sub-navigation-bar li a {
-    font-weight: 400;
     display: block;
-    margin-left: 0;
-    padding: 5px 20px
+    margin-left: 30px;
+    color: #e7eced;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 40px;
 }
 .second-level-menu-wrapper.tabs.fixed {
     position: fixed;
