@@ -10,6 +10,10 @@ v=201510021536
     background-image: linear-gradient(-180deg, #171717 0%, #202326 100%);
 }
 
+.header-hero-wrapper.home .navigation-outter{
+    background: 0;
+}
+
 .navigation-inner {
     height: 50px;
     position: relative;
