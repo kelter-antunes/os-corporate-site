@@ -103,37 +103,18 @@ span[id*=ListSection] {
     z-index: 999;
     font-size: 15px;
     letter-spacing: .05em;
+     z-index: 10000;
 }
 
 .navigation-bar li a:hover,
-.navigation-bar li a span:hover,
-.navigation-bar li a span:hover:before {
+{
     background: rgba(255, 255, 255, 0.19);
     border-radius: 4px;
 }
 
-.navigation-bar li.active a {
-    color: #fff;
-    position: relative;
-    z-index: 999;
-}
-.navigation-bar li:not(.get-started) a:hover:before {
-    display: block;
-    /*color: #000;
-    content: "";
-    position: absolute;
-    bottom: -90px;
-    border-width: 100px;
-    border-color: #000 #000 rgba(255,255,255,0);
-    z-index: 999;
-    border-style: solid;
-    width: 0;
-    left: 50%;
-    margin-left: -100px;*/
-}
+
 .navigation-bar li.active:before {
     display: block;
-    /*
     color: #000;
     content: "";
     position: absolute;
@@ -144,7 +125,7 @@ span[id*=ListSection] {
     border-style: solid;
     width: 0;
     left: 50%;
-    margin-left: -100px;*/
+    margin-left: -100px;
 }
 body.mega-menu .navigation-bar li.active:before,
 body.mega-menu .navigation-bar li:not(.get-started) a:hover:before  {
