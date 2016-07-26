@@ -106,10 +106,10 @@ span[id*=ListSection] {
      z-index: 10000;
 }
 
-.navigation-bar li a:hover,
+.navigation-bar li a:hover
 {
-    background: rgba(255, 255, 255, 0.19);
-    border-radius: 4px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 7px;
 }
 
 
@@ -129,7 +129,8 @@ span[id*=ListSection] {
 }
 body.mega-menu .navigation-bar li.active:before,
 body.mega-menu .navigation-bar li:not(.get-started) a:hover:before  {
-    border-color: #000 #000 rgb(255, 255, 255);
+    border-color: transparent transparent #fff;
+    z-index: 10000;
 }
 
 .navigation-bar li.get-started a {
