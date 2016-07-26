@@ -4703,6 +4703,15 @@ div.cs-title-box-botbar-wrapper>div.no-image>div.case-study-customer-testimonial
     color: #FFF !important;
     background-color: #606060
 }
+
+.header-login,
+.header-free-trial{
+	font-family: myriad-pro;
+    color: #FFF !important;
+    display: inline-block;
+    opacity: 0.44;
+}
+
 .header-login{
     background-color: rgba(0, 0, 0, 0.13);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -4725,20 +4734,6 @@ div.cs-title-box-botbar-wrapper>div.no-image>div.case-study-customer-testimonial
     font-weight: 400;
 }
 
-.header-login,
-.header-free-trial{
-	font-family: myriad-pro;
-    color: #FFF !important;
-    display: inline-block;
-    opacity: 0.44;
-    background-color: rgba(0, 0, 0, 0.53);
-    border: 1px solid rgba(236, 239, 241, 0.49);
-    border-radius: 0 0 4px 4px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 12px;
-    margin: 5px;
-}
 .header-contacts {
     height: 15px;
     background-color: #f9f9fb;
@@ -6098,6 +6093,8 @@ h1.slogan {
 
 h1.slogan strong {
    font-weight: 600;
+   font-size: 47px;
+	line-height: 47px;
 }
 
 h3.description {
@@ -6121,7 +6118,6 @@ h3.description {
 .call-out-hero-home a.osbtn.osbtn-black.popup_link {
 	background-color: #000;
 	border-radius: 2px;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.28);
 	text-transform: uppercase;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 	color: white;
