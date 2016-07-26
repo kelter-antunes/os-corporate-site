@@ -7,7 +7,7 @@ v=201510021536
     width: 100%;
     overflow: hidden;
     border: none;
-    background: transparent;
+    background-image: linear-gradient(-180deg, #171717 0%, #202326 100%);
 }
 .navigation-inner {
     height: 50px;
@@ -155,7 +155,7 @@ body.mega-menu .navigation-bar li:not(.get-started) a:hover:before  {
     border-bottom: 1px solid gray
 }
 .navigation-bar-tail-logo {
-    margin-left: -82px;
+    margin-left: -55px;
     padding: 11px 0;
 }
 ul.navigation-bar {
