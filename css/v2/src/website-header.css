@@ -7,13 +7,9 @@ v=201510021536
     width: 100%;
     overflow: hidden;
     border: none;
-    background: 0;
-}
-
-body.landing-no-top .navigation-outter
-{
     background-image: linear-gradient(-180deg, #171717 0%, #202326 100%);
 }
+
 .navigation-inner {
     height: 50px;
     position: relative;

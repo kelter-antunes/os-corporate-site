@@ -5942,7 +5942,7 @@ form input.st-search-input {
 }
 .second-level-menu-wrapper span.title {
     font-family: myriad-pro,arial,sans-serif;
-    margin-left: 30px;
+    margin-left: 0px;
     font-size: 14px;
     font-weight: 400;
     line-height: 40px;
@@ -6513,7 +6513,8 @@ h3.description {
     top: 0PX;
     width: 100%;
     height: auto;
-    background: url(/cms_backoffice/assets/201510021536/hero_partners) center 0 no-repeat #000
+    background: url(/cms_backoffice/assets/201510021536/hero_partners) center 0 no-repeat #000;
+    background-size: cover;
 }
 .mfp-bg, .mfp-container, .mfp-wrap {
     top: 0;
@@ -7745,8 +7746,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 .header-hero-wrapper.customers-sublevel-menu > div.navigation-outter {
-    padding-bottom: 10px;
-    background-color: white;
+ 	background-image: linear-gradient(-180deg, #171717 0%, #202326 100%);
     border-bottom: none;
 }
 
