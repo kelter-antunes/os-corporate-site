@@ -6063,16 +6063,21 @@ a:hover span.h6-product-tab {
     align-items: center
 }
 h1.slogan {
-    font-size: 36px;
-    margin-bottom: 15px;
+    text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.38);
+    color: white;
     font-weight: 600;
-    color: #c20;
-    font-family: myriad-pro, Arial, sans-serif
+    font-size: 48px;
+    line-height: 48px;
+    font-family: myriad-pro, Arial, sans-serif;
+    margin-bottom: 25px;
 }
 h3.description {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.61);
+    color: white;
+    font-family: myriad-pro, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 27px;
 }
 .call-out-hero-home a.osbtn.osbtn-blue.popup_link, .call-out-hero-home a.osbtn.osbtn-red.popup_link {
     margin-top: 23px;
