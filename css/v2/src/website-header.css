@@ -147,10 +147,10 @@ body.mega-menu .navigation-bar li:not(.get-started) a:hover:before  {
 }
 .sub-navigation-bar li a {
     font-family: myriad-pro, arial, sans-serif;
-    font-size: 13px;
     font-weight: 400;
-    color: gray;
     margin-left: 30px;
+    color: #e7eced;
+    font-size: 14px;
 }
 .sub-navigation-bar li a:hover {
     color: #c20;

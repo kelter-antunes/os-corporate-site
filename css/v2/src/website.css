@@ -5991,7 +5991,8 @@ a:hover span.h6-product-tab {
 .second-level-menu-wrapper.tabs .sub-navigation-bar li a{
     font-family: myriad-pro, arial, sans-serif;
     line-height: 50px;
-    font-size: 13px;
+	color: #e7eced;
+	font-size: 14px;
     text-align: center
 }
 .sub-navigation-bar {
