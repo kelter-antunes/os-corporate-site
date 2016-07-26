@@ -40,8 +40,7 @@ v=201510021536
 }
 .navigation-bar-section {
     float: left;
-    background-color: #000;
-    height: 50px
+    height: 50px;
 }
 .navigation-items {
     font-family: myriad-pro, Arial, sans-serif;
@@ -97,7 +96,7 @@ span[id*=ListSection] {
     display: block;
     line-height: 50px;
     text-decoration: none;
-    color: #ccc;
+    color: #fff;
     overflow: hidden;
     position: relative;
     z-index: 999;
@@ -192,9 +191,7 @@ span.spacer-bg {
     display: flex;
     display: inline-block\9;
 }
-ul.navigation-bar li:not(.active) a:not(:hover) {
-    background-color: black;
-}
+
 .navigation-bar li a span {
     position: relative;
     z-index: 999;
