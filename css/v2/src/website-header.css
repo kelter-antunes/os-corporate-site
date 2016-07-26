@@ -111,23 +111,20 @@ span[id*=ListSection] {
     border-radius: 7px;
 }
 
-
-.navigation-bar li.active:before {
+body.mega-menu .navigation-bar li.active:before,
+body.mega-menu .navigation-bar li:not(.get-started) a:hover:before  {
     display: block;
     color: #000;
     content: "";
     position: absolute;
-    bottom: -100px;
+    bottom: -105px;
     border-width: 100px;
-    border-color: #000 #000 rgba(255,255,255,0);
+    /*border-color: #000 #000 rgba(255,255,255,0);*/
     z-index: 999;
     border-style: solid;
     width: 0;
     left: 50%;
     margin-left: -100px;
-}
-body.mega-menu .navigation-bar li.active:before,
-body.mega-menu .navigation-bar li:not(.get-started) a:hover:before  {
     border-color: transparent transparent #fff;
     z-index: 10000;
 }
@@ -189,11 +186,9 @@ span.spacer-bg {
 }
 
 .navigation-bar li a span.osicon-arrow-down:before {
-   padding: 7px;
+    padding-left: 7px;
     font-size: 7px;
     color: #fff;
-    position: absolute;
-    top: 0;
 }
 
 li.get-started {
