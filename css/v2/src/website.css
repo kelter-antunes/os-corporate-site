@@ -898,7 +898,14 @@ a.tooltip-link {
     filter: none
 }
 .header-hero-wrapper.home-rev {
-    height: auto
+    height: auto;
+    background-image: url(/cms_backoffice/assets/20160726105332/city_background_img);
+    background-position: center;
+    background-size: cover;
+    box-shadow: none;
+    background-repeat: no-repeat;
+    background-color: #CCD3DB;
+    position: relative;
 }
 .call-out-hero-home {
     background: url(/cms_backoffice/assets/20151215141941/outsystems-homepage-top.jpg) bottom center no-repeat #cdd3db;
