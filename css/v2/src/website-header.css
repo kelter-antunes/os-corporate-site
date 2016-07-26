@@ -171,7 +171,6 @@ ul.navigation-bar {
             align-content: space-between;
     width: 840px;
     box-sizing: border-box;
-    background-color: black;
 }
 span.spacer-bg {
     height: 50px;
@@ -190,9 +189,11 @@ span.spacer-bg {
 }
 
 .navigation-bar li a span.osicon-arrow-down:before {
-    padding: 7px;
-    font-size: 8px;
+   padding: 7px;
+    font-size: 7px;
     color: #fff;
+    position: absolute;
+    top: 0;
 }
 
 li.get-started {
