@@ -12,7 +12,8 @@ v=201510021536
 .navigation-inner {
     height: 50px;
     position: relative;
-    z-index: 999
+    z-index: 999;
+    margin-top: 10px;
 }
 .navigation-wrapper {
     padding-top: 30px
@@ -102,6 +103,13 @@ span[id*=ListSection] {
     font-size: 15px;
     letter-spacing: .05em;
 }
+
+.navigation-bar li a:hover,
+.navigation-bar li a span:hover,
+.navigation-bar li a span:hover:before {
+    color: #404040;
+}
+
 .navigation-bar li.active a {
     color: #fff;
     position: relative;
@@ -201,7 +209,7 @@ span.spacer-bg {
 .navigation-bar li a span.osicon-arrow-down:before {
     padding: 7px;
     font-size: 8px;
-    color: #ccc;
+    color: #fff;
 }
 
 li.get-started {
