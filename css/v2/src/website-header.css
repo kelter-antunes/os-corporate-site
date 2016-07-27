@@ -257,13 +257,15 @@ li.get-started a {
 
 .searchview-content {
     position: absolute;
-    top: 10px;
+    top: -10px;
     z-index: 3;
     width: 100%;
-    height: 60px;
-    background: rgba(66, 65, 65, 0.52);
+    height: 200px;
+    background: rgba(66,65,65,.52);
+    background: linear-gradient(to top, rgba(8, 8, 8, 0), rgb(21, 20, 20));
     border: none;
-    border-radius: 3px
+    border-radius: 3px;
+    margin-left: 28px;
 }
 
 .searchview-close {
