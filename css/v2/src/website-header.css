@@ -111,7 +111,12 @@ span[id*=ListSection] {
 }
 
 .navigation-bar li.active,
-.navigation-bar li a:hover
+.navigation-bar li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.header-hero-wrapper.home .navigation-bar li.active,
+.header-hero-wrapper.home .navigation-bar li a:hover
 {
     background: rgba(255,255,255,0.06);
     border-radius: 7px;
@@ -165,7 +170,7 @@ body.mega-menu .navigation-bar li:not(.get-started) a:hover:before  {
     padding: 11px 0;
 }
 ul.navigation-bar {
-    height: 50px;
+    height: 60px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -175,6 +180,12 @@ ul.navigation-bar {
     width: 840px;
     box-sizing: border-box;
 }
+
+ul.navigation-bar span:last-child {
+    height: 50px;
+    margin-top: 10px;
+}
+
 span.spacer-bg {
     height: 50px;
     width: 95px;
