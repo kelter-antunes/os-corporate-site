@@ -169,7 +169,8 @@ v=201510021536
         height: 100%
     }
     .navigation-bar-tail-logo {
-        margin-left: 0
+        margin-left: 15px;
+
     }
     .navigation-bar {
         display: none

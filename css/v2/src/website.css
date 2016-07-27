@@ -5301,7 +5301,9 @@ div.st-result .st-date {
 .submenuhover {
     position: absolute;
     margin-left: 28px;
-    padding: 30px 0
+    padding: 30px 0;
+    border: 1px solid #eceff1;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 -2px 7px #596669;
 }
 .submenuhoverbox .box {
     background: #F4F4F4;
@@ -5363,9 +5365,7 @@ div.st-result .st-date {
     list-style-type: none;
     font-size: 14px;
     color: #08C;
-    border-right: 1px solid #eceff1;
     margin-bottom: 20px;
-    padding-right: 20px
 }
 .submenuhoverbox ul.list li {
     padding: 5px 0
@@ -5388,7 +5388,7 @@ div.st-result .st-date {
 	line-height: 18px;
 }
 .submenuhoverbox ul li a:before {
-    content: "\e696";
+    content: "\e647";
     font-family: OS-Icon-Set;
     speak: none;
     font-style: normal;

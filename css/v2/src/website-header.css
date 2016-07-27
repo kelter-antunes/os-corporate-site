@@ -118,9 +118,8 @@ span[id*=ListSection] {
 .header-hero-wrapper:not(.home) .navigation-bar li.active{
     border-bottom: 2px solid #fff;
 }
-.header-hero-wrapper:not(.home) .navigation-bar li:hover a, 
-.header-hero-wrapper:not(.home) .navigation-bar li:hover a span.osicon-arrow-down:before{
-    color: #c20;
+.header-hero-wrapper:not(.home) .navigation-bar li:hover {
+    border-bottom: 2px solid #596669;
 }
 
 .header-hero-wrapper.home .navigation-bar li.active a,
@@ -166,8 +165,8 @@ body.mega-menu .navigation-bar li:not(.get-started) a:hover:before  {
     font-size: 14px;
 }
 .sub-navigation-bar li a:hover {
-    color: #c20;
-    text-decoration: none
+    border-bottom: 2px solid #29c6ea;
+    text-decoration: none;
 }
 .sub-navigation-bar li.active a {
     font-weight: 600;
