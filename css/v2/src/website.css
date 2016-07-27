@@ -4711,6 +4711,7 @@ div.cs-title-box-botbar-wrapper>div.no-image>div.case-study-customer-testimonial
     display: inline-block;
     opacity: 0.44;
     opacity: 1;
+    visibility: initial;
     transition: all .5s ease;
 }
 
