@@ -4710,6 +4710,7 @@ div.cs-title-box-botbar-wrapper>div.no-image>div.case-study-customer-testimonial
     color: #FFF !important;
     display: inline-block;
     opacity: 0.44;
+    visibility: initial;
 }
 
 .header-login{

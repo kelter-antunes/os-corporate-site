@@ -36,7 +36,7 @@ v=201510021536
     width: 99999px;
     height: auto;
     margin-top: 10px;
-    display: block;
+    visibility: initial;
 }
 
 
@@ -44,7 +44,7 @@ v=201510021536
 .header.with-search .header-login,
 .header.with-search .header-free-trial
 {
-    display: none;
+    visibility: hidden;
 }
 
 .navigation-longtail-end {
@@ -268,7 +268,7 @@ li.get-started a {
     z-index: 3;
     width: 38px;
     height: 49px;
-    right: 190px;
+    right: 35px;
     top: 6px;
     color: #fff;
     cursor: pointer;
@@ -304,7 +304,7 @@ input[type=search].searchform-input {
     font-size: 24px;
     line-height: 1.375;
     font-family: myriad-pro;
-    font-weight: 400;
+    font-weight: 100;
     letter-spacing: normal;
     height: 35px;
     color: #fff;
