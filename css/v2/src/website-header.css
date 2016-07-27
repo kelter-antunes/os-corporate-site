@@ -49,7 +49,7 @@ v=201510021536
 }
 .navigation-items {
     font-family: myriad-pro, Arial, sans-serif;
-    height: 60px;
+    height: 50px;
     float: left;
 }
 .navigation-search-outter {
@@ -115,12 +115,15 @@ span[id*=ListSection] {
      z-index: 10000;
 }
 
-.header-hero-wrapper:not(.home) .navigation-bar li.active,
-.header-hero-wrapper:not(.home) .navigation-bar li a:hover{
+.header-hero-wrapper:not(.home) .navigation-bar li.active{
     border-bottom: 2px solid #fff;
 }
+.header-hero-wrapper:not(.home) .navigation-bar li:hover a, 
+.header-hero-wrapper:not(.home) .navigation-bar li:hover a span.osicon-arrow-down:before{
+    color: #c20;
+}
 
-.header-hero-wrapper.home .navigation-bar li.active,
+.header-hero-wrapper.home .navigation-bar li.active a,
 .header-hero-wrapper.home .navigation-bar li a:hover
 {
     background: rgba(255,255,255,0.06);
@@ -133,7 +136,7 @@ body.mega-menu .navigation-bar li:not(.get-started) a:hover:before  {
     color: #000;
     content: "";
     position: absolute;
-    bottom: -105px;
+    bottom: -100px;
     border-width: 100px;
     /*border-color: #000 #000 rgba(255,255,255,0);*/
     z-index: 999;
@@ -172,10 +175,10 @@ body.mega-menu .navigation-bar li:not(.get-started) a:hover:before  {
 }
 .navigation-bar-tail-logo {
     margin-left: -55px;
-    padding: 11px 0;
+    padding: 5px 0;
 }
 ul.navigation-bar {
-    height: 60px;
+    height: 50px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
