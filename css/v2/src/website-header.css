@@ -115,8 +115,8 @@ span[id*=ListSection] {
      z-index: 10000;
 }
 
-.navigation-bar li.active,
-.navigation-bar li a:hover{
+.header-hero-wrapper:not(.home) .navigation-bar li.active,
+.header-hero-wrapper:not(.home) .navigation-bar li a:hover{
     border-bottom: 2px solid #fff;
 }
 
