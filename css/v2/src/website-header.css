@@ -87,9 +87,12 @@ span[id*=ListSection] {
     height: 50px;
 }
 
-.header-hero-wrapper:not(.home) .navigation-bar li{
+.navigation-bar li{
     height: 48px;
     margin-top: 18px;
+}
+
+.header-hero-wrapper:not(.home) .navigation-bar li{
     border-bottom: 2px solid #1d1f21;
 }
 .navigation-bar li, .sub-navigation-bar li {
