@@ -42,9 +42,9 @@ v=201510021536
 }
 
 
-.header.with-search .navigation-longtail,
-.header.with-search .header-login,
-.header.with-search .header-free-trial
+.with-search .navigation-longtail,
+.with-search .header-login,
+.with-search .header-free-trial
 {
     opacity: 0;
     visibility: hidden;
@@ -286,7 +286,7 @@ li.get-started a {
     visibility: visible
 }
 
-.header.with-search,.with-search .container.backgroungcontainerheader {
+.with-search,.with-search .container.backgroungcontainerheader {
     position: relative
 }
 
