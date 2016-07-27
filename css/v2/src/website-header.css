@@ -88,8 +88,9 @@ span[id*=ListSection] {
 }
 
 .navigation-bar li{
-    height: 100%;
+    height: 48px;
     margin-top: 18px;
+    border-bottom: 2px solid #1d1f21;
 }
 .navigation-bar li, .sub-navigation-bar li {
     margin: 0;
@@ -98,6 +99,7 @@ span[id*=ListSection] {
     width: auto;
     position: relative;
     white-space: nowrap;    
+
 }
 .navigation-bar li a {
     margin: 0;
@@ -164,7 +166,8 @@ body.mega-menu .navigation-bar li:not(.get-started) a:hover:before  {
     color: #e7eced;
     font-size: 14px;
 }
-.sub-navigation-bar li a:hover {
+.sub-navigation-bar li a:hover,
+.second-level-menu-wrapper .sub-navigation-bar a.active:hover {
     border-bottom: 2px solid #29c6ea;
     text-decoration: none;
 }
