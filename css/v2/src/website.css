@@ -915,6 +915,10 @@ a.tooltip-link {
     box-sizing: border-box;
     margin-top: 60px;
 }
+.home .call-out-hero-home {
+    margin: 0;
+}
+
 .call-out-hero-home .highlight {
     min-height: 500px;
     background-color: rgba(255, 255, 255, .85);
@@ -5703,6 +5707,11 @@ a.osbtn-orange {
     position: inherit;
     height: 80px
 }
+
+.home .navigation-inner {
+    height: 200px;
+}
+
 .navigation-outter {
     background-color: #e6e6e6;
     border-bottom: 1px solid #fff
