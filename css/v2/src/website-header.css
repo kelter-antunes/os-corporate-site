@@ -86,13 +86,18 @@ span[id*=ListSection] {
             align-items: center;
     height: 50px;
 }
+
+.navigation-bar li{
+    height: 100%;
+    margin-top: 18px;
+}
 .navigation-bar li, .sub-navigation-bar li {
     margin: 0;
     padding: 0;
     float: left;
     width: auto;
     position: relative;
-    white-space: nowrap;
+    white-space: nowrap;    
 }
 .navigation-bar li a {
     margin: 0;
@@ -183,7 +188,6 @@ ul.navigation-bar {
 
 ul.navigation-bar span:last-child {
     height: 50px;
-    margin-top: 10px;
 }
 
 span.spacer-bg {
