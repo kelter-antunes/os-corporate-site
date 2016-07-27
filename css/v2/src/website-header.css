@@ -36,7 +36,8 @@ v=201510021536
     width: 99999px;
     height: auto;
     margin-top: 10px;
-    visibility: initial;
+    opacity: 1;
+    transition: all .5s ease;
 }
 
 
@@ -44,7 +45,7 @@ v=201510021536
 .header.with-search .header-login,
 .header.with-search .header-free-trial
 {
-    visibility: hidden;
+    opacity: 0;
 }
 
 .navigation-longtail-end {
@@ -242,11 +243,12 @@ li.get-started a {
 /* search */ 
 
 .searchview {
-    display: none
+    opacity: 0;
+    transition: all .5s ease;
 }
 
 .with-search .searchview {
-    display: block
+    opacity: 1;
 }
 
 .searchview-content {
