@@ -261,8 +261,11 @@ li.get-started a {
     z-index: 3;
     width: 100%;
     height: 200px;
+    transition: all .5s ease;
     background: rgba(66,65,65,.52);
-    background: linear-gradient(to top, rgba(8, 8, 8, 0), rgb(21, 20, 20));
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 9%, rgba(0,0,0,0.65) 28%, rgba(0,0,0,0.65) 57%, rgba(0,0,0,0) 95%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 9%,rgba(0,0,0,0.65) 28%,rgba(0,0,0,0.65) 57%,rgba(0,0,0,0) 95%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 9%,rgba(0,0,0,0.65) 28%,rgba(0,0,0,0.65) 57%,rgba(0,0,0,0) 95%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     border: none;
     border-radius: 3px;
     margin-left: 28px;
@@ -276,8 +279,8 @@ li.get-started a {
     z-index: 3;
     width: 38px;
     height: 49px;
-    right: 35px;
-    top: 6px;
+    right: -12px;
+    top: -12px;
     color: #fff;
     cursor: pointer;
     -webkit-transition: opacity .2s cubic-bezier(.645,.045,.355,1);
@@ -302,13 +305,15 @@ li.get-started a {
     height: 35px;
     line-height: 35px;
     width: 100%;
-    padding-left: 30px;
+    padding-left: 0;
     box-sizing: border-box;
-    margin-top: 12px;
+    margin-top: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.49);
+    padding-bottom: 5px;
 }
 
 input[type=search].searchform-input {
-    width: 100%;
+    width: 90%;
     font-size: 24px;
     line-height: 1.375;
     font-family: myriad-pro;
@@ -323,7 +328,8 @@ input[type=search].searchform-input {
     margin: 0;
     padding: 0 40px 0 0;
     border-radius: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+
 }
 
 input[type=search].searchform-input:focus {
@@ -353,7 +359,7 @@ input[type=search].searchform-input:focus {
 }
 
 .searchview-close-left,.searchview-close-right {
-    height: 24px;
+    height: 20px;
     width: 1px;
     background: #fff;
     position: absolute;
