@@ -458,10 +458,10 @@ v=201510021536
         font-size: 16px
     }
     .mobile-search-input {
-        margin-top: 15px;
+        margin-top: 7px;
         position: absolute;
         right: 90px;
-        left: 15px
+        left: 7px
     }
     .mobile-search-cancel a {
         color: #CCC;
