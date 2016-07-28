@@ -5401,25 +5401,21 @@ div.st-result .st-date {
 	line-height: 18px;
 }
 .submenuhoverbox ul li a:before {
-    content: "\e647";
-    font-family: OS-Icon-Set;
-    speak: none;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin-right: 10px;
-    font-size: 9px;
-    float: left;
-    color: #C3C9CB
+    content: '-';
+    padding-right: 5px;
+    font-weight: 100;
+    font-size: 16px;
+    color: #c8cdd0;
 }
 .submenuhoverbox ul li a:hover {
     color: #263238;;
     font-weight: 600;
 }
+
+.submenuhoverbox ul li a:hover:before {
+    color: #000;
+}
+
 .solution-all-hero, .solution-hero {
     -webkit-filter: none;
     filter: none;
@@ -6033,10 +6029,7 @@ a:hover span.h6-product-tab {
 	font-weight: 400;
 	line-height: 38px;
 }
-.sub-navigation-bar li a:hover {
-    color: #c20;
-    text-decoration: none
-}
+
 .sub-navigation-bar li.active a {
     font-weight: 600;
     border-bottom: 1px solid gray
@@ -6053,8 +6046,8 @@ a:hover span.h6-product-tab {
 }
 .second-level-menu-wrapper .sub-navigation-bar a.active {
     font-weight: 600;
-    border-bottom: 2px solid #fff;
-    height: 38px
+    border-bottom: 3px solid #fff;
+    height: 37px
 }
 .second-level-menu-wrapper.tabs {
     float: right;

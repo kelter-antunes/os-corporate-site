@@ -199,7 +199,8 @@ body.mega-menu .navigation-bar li:not(.get-started) a:hover:before  {
 }
 .sub-navigation-bar li a:hover,
 .second-level-menu-wrapper .sub-navigation-bar a.active:hover {
-    border-bottom: 2px solid #596669;
+    height: 37px;
+    border-bottom: 3px solid #8a9ca0;
     text-decoration: none;
 }
 .sub-navigation-bar li.active a {
