@@ -5580,7 +5580,7 @@ a.Menu_SubMenuItem, a.Menu_SubMenuItem:hover, a.Menu_SubMenuItem:link, a.Menu_Su
     height: 100%;
     padding: 20px;
     position: absolute;
-    top: 0;
+    top: 50px;
     padding-left: 0;
     padding-top: 0;
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr '#000000', endColorstr '#313131');
@@ -5634,9 +5634,9 @@ a.Menu_SubMenuItem, a.Menu_SubMenuItem:hover, a.Menu_SubMenuItem:link, a.Menu_Su
     top: 0
 }
 .osicon-menu {
-    color: #c20;
-    font-size: 20px;
-    padding: 15px;
+    color: #fff;
+    font-size: 28px;
+    padding: 10px;
     margin-left: -10px
 }
 .osicon-search {
