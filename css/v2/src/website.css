@@ -4927,7 +4927,8 @@ div.Application_Menu div.Menu_DropDownPanel a, div.Application_Menu div.Menu_Dro
 }
 .Menu_DropDownArrow {
     position: relative;
-    top: -2px;
+    top: 0px;
+    left: -7px;
     font-size: 11px;
     line-height: 3px;
     padding-top: 1px;
