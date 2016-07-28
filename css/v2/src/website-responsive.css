@@ -81,6 +81,11 @@ v=201510021536
     }
     .benefits .osbtn {
         margin-top: 20px;
+        min-width: 200px;
+    }
+    .call-out-hero-home a.osbtn {
+        margin: 0 !important;
+        margin-top: 25px !important;
     }
     .customers-and-experts a span.partner-matrix-entry {
         width: 90px;
@@ -545,7 +550,7 @@ v=201510021536
         display: inline-block;
         width: 100%;
         border: 0;
-        border-bottom: 1px solid #262626;
+        border-bottom: 1px solid #596669;
         box-sizing: border-box;
         font-size: 16px;
         position: relative
@@ -563,9 +568,10 @@ v=201510021536
         border-bottom: 1px solid #3A3A3A
     }
     .Application_Menu .Menu_DropDownArrow {
-        position: absolute;
+       /* position: absolute;
         right: 120px;
-        top: 21px
+        top: 21px*/
+        display: none;
     }
 
     /* create an overlay so that you can close the menu on click (body) */
