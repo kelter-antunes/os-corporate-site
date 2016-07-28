@@ -284,7 +284,10 @@ li.get-started a {
     border: none;
     border-radius: 3px;
     margin-left: 28px;
-    height: 200px;
+}
+
+.home .searchview-content{
+     height: 200px;
 }
 
 .searchview-close {

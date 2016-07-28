@@ -1040,6 +1040,11 @@ a.item span.lean-more {
 .header-hero-wrapper.case-studies-detail .navigation-outter {
     height: 80px
 }
+
+.header-hero-wrapper.page-without-hero .navigation-outter{
+    min-height: 140px;
+}
+
 .case-studies-detail-new .Header_Nav_Breadcrumb {
     margin-top: 165px
 }

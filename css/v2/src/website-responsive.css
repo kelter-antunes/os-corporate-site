@@ -165,6 +165,11 @@ v=201510021536
     .header-hero-wrapper {
         padding-top: 0
     }
+
+    .navigation-inner{
+        margin-top: 0;
+    }
+    
     .navigation-outter {
         position: fixed;
         z-index: 9999;
