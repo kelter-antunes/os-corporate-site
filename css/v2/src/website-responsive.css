@@ -365,7 +365,8 @@ v=201510021536
         background-position: center;
         min-width: 100%;
         width: 100%;
-        height: 325px
+        height: 325px;
+        opacity: 0.9;
     }
     .header-hero-wrapper.case-studies-detail-new {
         height: 325px

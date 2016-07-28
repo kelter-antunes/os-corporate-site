@@ -2488,7 +2488,7 @@ a.ViewMoreLink {
 }
 .Header_Nav_Breadcrumb {
     background-color: #000;
-    opacity: .6;
+    opacity: .7;
     color: #FFF;
     width: auto;
     margin-top: 270px;
@@ -2498,7 +2498,7 @@ a.ViewMoreLink {
     margin-left: 42px;
     font-size: 12px;
     padding: 2px 10px;
-    margin-top: 165px !important;
+    margin-top: 185px !important;
 }
 .Header_Nav_Breadcrumb a, .Header_Nav_Breadcrumb a:link, .Header_Nav_Breadcrumb a:visited {
     color: #fff;
@@ -4588,7 +4588,7 @@ a.past-list-link:active h5, a.past-list-link:hover h5, a.past-list-link:link h5,
     right: 0;
     height: 100%;
     background-color: #000;
-    opacity: .7
+    opacity: .8
 }
 .cs-title-box-h-wrapper {
     position: absolute;
