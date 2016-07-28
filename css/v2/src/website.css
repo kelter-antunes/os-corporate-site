@@ -4618,7 +4618,7 @@ a.past-list-link:active h5, a.past-list-link:hover h5, a.past-list-link:link h5,
 }
 .cs-title-box-botbar-wrapper {
     position: absolute;
-    margin-top: 289px;
+    margin-top: 280px;
     width: 100%;
     z-index: 10
 }
@@ -5935,13 +5935,17 @@ form input.st-search-input {
     text-decoration: none
 }
 .second-level-menu-wrapper {
-    float: right;
+    float: left;
+    width: 100%;
+    opacity: 1;
+    visibility: initial;
     right: 0;
     z-index: 99;
     height: 40px;
     clear: both;
     background-image: linear-gradient(-90deg, #2F3439 0%, #313639 43%, #3C4649 100%), linear-gradient(0deg, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0.00) 100%);
 	box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.21);
+    transition: all .5s ease;
 }
 .second-level-menu-wrapper.fixed {
     position: fixed;
