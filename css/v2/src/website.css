@@ -2495,9 +2495,10 @@ a.ViewMoreLink {
     margin-bottom: 30px;
     position: absolute;
     z-index: 9999;
-    margin-left: 28px;
+    margin-left: 42px;
     font-size: 12px;
-    padding: 2px 10px
+    padding: 2px 10px;
+    margin-top: 165px !important;
 }
 .Header_Nav_Breadcrumb a, .Header_Nav_Breadcrumb a:link, .Header_Nav_Breadcrumb a:visited {
     color: #fff;
@@ -5937,15 +5938,12 @@ form input.st-search-input {
 .second-level-menu-wrapper {
     float: left;
     width: 100%;
-    opacity: 1;
-    visibility: initial;
     right: 0;
     z-index: 99;
     height: 40px;
     clear: both;
     background-image: linear-gradient(-90deg, #2F3439 0%, #313639 43%, #3C4649 100%), linear-gradient(0deg, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0.00) 100%);
 	box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.21);
-    transition: all .5s ease;
 }
 .second-level-menu-wrapper.fixed {
     position: fixed;
