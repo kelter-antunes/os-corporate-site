@@ -32,6 +32,7 @@ v=201510021536
 .navigation-bar-section.navigation-bar-tail-spacer a, .navigation-items {
     position: relative
 }
+
 .navigation-longtail {
     width: 99999px;
     height: auto;
@@ -41,6 +42,9 @@ v=201510021536
     transition: all .5s ease;
 }
 
+.header-hero-wrapper.home .navigation-longtail{
+    margin-top: 20px;
+}
 
 .with-search .navigation-longtail,
 .with-search .header-login,
