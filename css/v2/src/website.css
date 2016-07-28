@@ -4873,7 +4873,7 @@ a.Menu_SubMenuItem, a.Menu_SubMenuItem:hover, a.Menu_SubMenuItem:link, a.Menu_Su
     right: 50px;
     display: inline-block;
     height: 50px;
-    top: 18px;
+    top: 15px;
     color: #fff
 }
 .MenuSlider_IsOpen {
@@ -6131,7 +6131,7 @@ h3.description {
     font-family: myriad-pro, Arial, sans-serif;
     font-size: 26px;
     font-weight: 600;
-    line-height: 20px;
+    line-height: 30px;
 }
 
 .call-out-hero-home a.osbtn.osbtn-blue.popup_link, 
