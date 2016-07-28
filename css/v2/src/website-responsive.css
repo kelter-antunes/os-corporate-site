@@ -434,19 +434,21 @@ v=201510021536
         z-index: 99999
     }
     .mobile-search-bar {
-        height: 50px;
+        height: 30px;
+        margin: 10px;
         background-color: #000;
         line-height: 50px;
-        vertical-align: middle
+        vertical-align: middle;
+        border-bottom: 1px solid #969494;
     }
     .mobile-search-body-overlay {
         background-color: gray;
-        opacity: .3;
+        opacity: .5;
         height: 100%;
         width: 100%
     }
     input.search {
-        background-color: #3F3F3F;
+        background-color: transparent;
         border: 0;
         border-radius: 3px;
         padding: 5px;
@@ -467,11 +469,12 @@ v=201510021536
         text-decoration: none
     }
     .mobile-search-cancel {
-        width: 90px;
+        right: 35px;
+        top: -7px;
         position: absolute;
         display: inline-block;
         text-align: center;
-        right: 0
+        width: 0;
     }
     .mobile-body-no-scroll {
         overflow: hidden;
@@ -1234,7 +1237,7 @@ v=201510021536
         display: none;
     }
     h1.slogan {
-        margin-top: 20px;
+        margin: 20px 5px;
         font-size: 40px;
         line-height: 40px
     }
