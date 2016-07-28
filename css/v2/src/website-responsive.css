@@ -173,9 +173,11 @@ v=201510021536
     .MenuSlider_IsOpen .navigation-outter {
         height: 100%
     }
-    .navigation-bar-tail-logo {
+    .navigation-bar-tail-logo, 
+    .header-hero-wrapper.home .navigation-bar-tail-logo {
         margin-left: 15px;
         margin-top: 7px;
+        padding: 5px 0;
     }
     .navigation-bar {
         display: none
@@ -197,9 +199,14 @@ v=201510021536
         width: 100%;
         z-index: 10;
         background-color: #000;
-        box-shadow: 0 0 10px 0 #000;
+        box-shadow: 0 0 10px 0 #000;        
+    }
+
+    .navigation-longtail.
+    .header-hero-wrapper.home .navigation-longtail{
         margin-top: 0;
     }
+
     .navigation-bar-tail-spacer {
         width: 100%
     }
