@@ -175,7 +175,7 @@ v=201510021536
     }
     .navigation-bar-tail-logo {
         margin-left: 15px;
-        margin-top: 5px;
+        margin-top: 10px;
     }
     .navigation-bar {
         display: none
@@ -483,7 +483,7 @@ v=201510021536
     .MenuSlider_Toggler {
         display: inline-block;
         top: 0;
-        padding-top: 10px;
+        padding-top: 15px;
         right: 0;
         width: 50px;
         text-align: center
