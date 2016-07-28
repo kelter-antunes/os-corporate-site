@@ -560,18 +560,19 @@ v=201510021536
         border: 0;
         margin: 0;
         padding: 0;
-        background-color: #262626;
+        background-color: #263238;
         box-shadow: none;
         border-bottom: 0
     }
     .Application_Menu .Menu_DropDownPanel a, .Application_Menu .Menu_DropDownPanel a:link, .Application_Menu .Menu_DropDownPanel a:visited {
-        border-bottom: 1px solid #3A3A3A
+        border-bottom: none;
     }
-    .Application_Menu .Menu_DropDownArrow {
-       /* position: absolute;
-        right: 120px;
-        top: 21px*/
-        display: none;
+
+    .Application_Menu .Menu_DropDownArrow .osicon-arrow-down:before,
+    .Application_Menu .Menu_DropDownArrow .osicon-arrow-up:before {
+        position: absolute;
+        left: 7px;
+        top: -2px;
     }
 
     /* create an overlay so that you can close the menu on click (body) */

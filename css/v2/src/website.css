@@ -4778,7 +4778,8 @@ div.cs-title-box-botbar-wrapper>div.no-image>div.case-study-customer-testimonial
     margin-right: 8px
 }
 .Menu_TopMenu a, .Menu_TopMenu a:link, .Menu_TopMenu a:visited {
-    color: #C4C4C4;
+    color: #fff;
+    font-weight: 600;
     text-decoration: none;
     text-shadow: none;
     padding: 12px 20px;
@@ -4966,8 +4967,12 @@ div.Application_Menu div.Menu_DropDownPanel a, div.Application_Menu div.Menu_Dro
 .gs-per-result-labels, .gsc-refinementsArea, .gsc-tabsArea, .search-overlay, [data-dropdown-wrapper] {
     display: none
 }
-.Menu_DropDownPanel a.active, .Menu_DropDownPanel a.active:link, .Menu_DropDownPanel a.active:visited {
+.Menu_DropDownPanel a, .Menu_DropDownPanel a:link, .Menu_DropDownPanel a:visited {
     color: #fff
+}
+.Menu_DropDownPanel a.active, .Menu_DropDownPanel a.active:link, .Menu_DropDownPanel a.active:visited {
+    color: #c20;
+    font-weight: 600;
 }
 .Menu_DropDownPanel a:focus, .Menu_DropDownPanel a:hover {
     text-decoration: none
