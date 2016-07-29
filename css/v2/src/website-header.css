@@ -497,10 +497,9 @@ input[type=search].inpage-search-input {
 }
 
 .small-search {
-    margin-top: 15px;
+    margin-top: 11px;
     width: 31px;
     float: left;
-    padding-right: 30px
 }
 
 .search-wrapper .small-search input.search {
