@@ -4879,7 +4879,7 @@ a.Menu_SubMenuItem, a.Menu_SubMenuItem:hover, a.Menu_SubMenuItem:link, a.Menu_Su
     right: 50px;
     display: inline-block;
     height: 50px;
-    top: 15px;
+    top: 0px;
     color: #fff
 }
 .MenuSlider_IsOpen {
@@ -4889,10 +4889,10 @@ a.Menu_SubMenuItem, a.Menu_SubMenuItem:hover, a.Menu_SubMenuItem:link, a.Menu_Su
     position: relative
 }
 
-.MenuSlider_IsOpen .osicon-search,
 .MenuSlider_IsOpen .osicon-menu
 {
     display: none;
+    opacity: 0;
 }
 
 .MenuSlider_Toggler {
@@ -4913,32 +4913,39 @@ a.Menu_SubMenuItem, a.Menu_SubMenuItem:hover, a.Menu_SubMenuItem:link, a.Menu_Su
 
 .MenuSlider_Toggler .searchview-close-left, 
 .MenuSlider_Toggler .searchview-close-right {
+    opacity: 0;
     display: none;
-    height: 34px;
+    height: 27px;
     width: 2px;
     background: #fff;
     position: absolute;
-    top: 8px;
+    top: 13px;
     left: 18px;
     z-index: 1;
+    border-radius: 5PX;
+    transition: all .5s ease;
 }
 
 .MenuSlider_IsOpen .MenuSlider_Toggler .searchview-close-left, 
 .MenuSlider_IsOpen .MenuSlider_Toggler .searchview-close-right{
+    opacity: 1;
     display: block;
 }
 
 .osicon-menu {
+    display: block;
+    opacity: 1;
     color: #fff;
     font-size: 26px;
     padding: 10px;
     margin-left: -10px;
+    transition: all .5s ease;
 }
 .osicon-search {
     font-size: 20px;
     padding: 16px;
-    display: block;
 }
+
 div.Menu_DropDownPanel a, div.Menu_DropDownPanel a:link, div.Menu_DropDownPanel a:visited {
     height: auto
 }
