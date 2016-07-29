@@ -1041,10 +1041,6 @@ a.item span.lean-more {
     height: 80px
 }
 
-/*.header-hero-wrapper.page-without-hero .navigation-outter{
-    min-height: 140px;
-}*/
-
 .case-studies-detail-new .Header_Nav_Breadcrumb {
     margin-top: 165px
 }
@@ -5735,6 +5731,10 @@ a.osbtn-orange {
 .header-hero-wrapper.page-without-hero.page-company {
     padding-bottom: 40px
 }
+
+.header-hero-wrapper.solution-all-hero.page-without-hero.page-company{
+    height: 250px;
+}
 .submenuhover {
     margin: 0;
     background-color: #fff;
@@ -6086,8 +6086,8 @@ a:hover span.h6-product-tab {
 }
 .second-level-menu-wrapper .sub-navigation-bar a.active {
     font-weight: 600;
-    border-bottom: 3px solid #fff;
-    height: 37px
+    border-bottom: 2px solid #fff;
+    height: 38px
 }
 .second-level-menu-wrapper.tabs {
     float: right;
@@ -7802,6 +7802,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 .header-hero-wrapper.customers-sublevel-menu > div.navigation-outter {
  	background-image: linear-gradient(-180deg, #171717 0%, #202326 100%);
     border-bottom: none;
+    padding-bottom: 0 !important;
 }
 
 
