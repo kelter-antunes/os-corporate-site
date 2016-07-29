@@ -496,7 +496,7 @@ v=201510021536
     }
     .MenuSlider_Toggler {
         display: inline-block;
-        top: 0;
+        top: -10px;
         padding-top: 12px;
         right: 0;
         width: 50px;
