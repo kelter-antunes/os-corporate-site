@@ -4879,7 +4879,7 @@ a.Menu_SubMenuItem, a.Menu_SubMenuItem:hover, a.Menu_SubMenuItem:link, a.Menu_Su
     right: 50px;
     display: inline-block;
     height: 50px;
-    top: 0px;
+    top: 15px;
     color: #fff
 }
 .MenuSlider_IsOpen {
@@ -4919,7 +4919,7 @@ a.Menu_SubMenuItem, a.Menu_SubMenuItem:hover, a.Menu_SubMenuItem:link, a.Menu_Su
     width: 2px;
     background: #fff;
     position: absolute;
-    top: 13px;
+    top: 22px;
     left: 18px;
     z-index: 1;
     border-radius: 5PX;
