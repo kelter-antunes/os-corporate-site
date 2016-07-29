@@ -5730,7 +5730,7 @@ a.osbtn-orange {
     height: 130px !important
 }
 .header-hero-wrapper.page-without-hero {
-    height: auto;
+    height: 140px;
 }
 .header-hero-wrapper.page-without-hero.page-company {
     padding-bottom: 40px
