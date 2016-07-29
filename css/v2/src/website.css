@@ -4888,6 +4888,11 @@ a.Menu_SubMenuItem, a.Menu_SubMenuItem:hover, a.Menu_SubMenuItem:link, a.Menu_Su
     overflow: hidden;
     position: relative
 }
+
+.MenuSlider_IsOpen .osicon-search{
+    display: none;
+}
+
 .MenuSlider_Toggler {
     display: none;
     color: #000;
@@ -4903,6 +4908,25 @@ a.Menu_SubMenuItem, a.Menu_SubMenuItem:hover, a.Menu_SubMenuItem:link, a.Menu_Su
     position: absolute;
     top: 0
 }
+
+.MenuSlider_Toggler .searchview-close-left, 
+.MenuSlider_Toggler .searchview-close-right {
+    display: none;
+    height: 34px;
+    width: 2px;
+    background: #fff;
+    position: absolute;
+    display: block;
+    top: 8px;
+    left: 18px;
+    z-index: 1;
+}
+
+.MenuSlider_IsOpen .MenuSlider_Toggler .searchview-close-left, 
+.MenuSlider_IsOpen .MenuSlider_Toggler .searchview-close-right{
+    display: block;
+}
+
 .osicon-menu {
     color: #fff;
     font-size: 26px;
@@ -4911,7 +4935,8 @@ a.Menu_SubMenuItem, a.Menu_SubMenuItem:hover, a.Menu_SubMenuItem:link, a.Menu_Su
 }
 .osicon-search {
     font-size: 20px;
-    padding: 16px
+    padding: 16px;
+    display: block;
 }
 div.Menu_DropDownPanel a, div.Menu_DropDownPanel a:link, div.Menu_DropDownPanel a:visited {
     height: auto

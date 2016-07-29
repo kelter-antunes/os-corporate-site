@@ -167,7 +167,7 @@ body.mega-menu .navigation-bar li.active:before{
     color: #000;
     content: "";
     position: absolute;
-    bottom: -100px;
+    bottom: -104px;
     border-width: 100px;
     z-index: 999;
     border-style: solid;
