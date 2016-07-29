@@ -11,14 +11,13 @@ v=201510021536
 }
 
 .header-hero-wrapper.home .navigation-bar-tail-logo{
-    padding: 10px 0;
+    padding: 8px 0;
 }
 
 .header-hero-wrapper.home .navigation-outter{
     background: 0;
 }
 
-.header-hero-wrapper.home .navigation-bar li.active a,
 .header-hero-wrapper.home .navigation-bar li a:hover
 {
     background: rgba(255,255,255,0.06);
@@ -162,15 +161,14 @@ span[id*=ListSection] {
     border-bottom: 2px solid #596669;
 }
 
-body.mega-menu .navigation-bar li.active:before,
-body.mega-menu .navigation-bar li:not(.get-started) a:hover:before  {
+
+.navigation-bar li.active:before{
     display: block;
     color: #000;
     content: "";
     position: absolute;
     bottom: -100px;
     border-width: 100px;
-    /*border-color: #000 #000 rgba(255,255,255,0);*/
     z-index: 999;
     border-style: solid;
     width: 0;
@@ -178,6 +176,10 @@ body.mega-menu .navigation-bar li:not(.get-started) a:hover:before  {
     margin-left: -100px;
     border-color: transparent transparent #fff;
     z-index: 10000;
+}
+
+.header-hero-wrapper.home .navigation-bar li.active:before{
+   bottom: -94px;
 }
 
 .navigation-bar li.get-started a {
