@@ -4889,7 +4889,9 @@ a.Menu_SubMenuItem, a.Menu_SubMenuItem:hover, a.Menu_SubMenuItem:link, a.Menu_Su
     position: relative
 }
 
-.MenuSlider_IsOpen .osicon-search{
+.MenuSlider_IsOpen .osicon-search,
+.MenuSlider_IsOpen .osicon-menu
+{
     display: none;
 }
 
@@ -4916,7 +4918,6 @@ a.Menu_SubMenuItem, a.Menu_SubMenuItem:hover, a.Menu_SubMenuItem:link, a.Menu_Su
     width: 2px;
     background: #fff;
     position: absolute;
-    display: block;
     top: 8px;
     left: 18px;
     z-index: 1;
