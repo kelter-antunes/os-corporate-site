@@ -43,7 +43,7 @@ v=201510021536
     padding-top: 30px
 }
 .navigation {
-    position: asbolute;
+    position: absolute;
     width: 9999px;
     background-color: #000;
     height: 50px
