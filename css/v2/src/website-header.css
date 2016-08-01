@@ -503,6 +503,15 @@ input[type=search].inpage-search-input {
     float: left;
 }
 
+.small-search a{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: white;
+    padding: 0;
+    padding-top: 2px;
+}
+
 .search-wrapper .small-search input.search {
     background-color: #3C3C3C;
     border-color: #3C3C3C;
