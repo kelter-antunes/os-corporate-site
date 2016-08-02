@@ -37,7 +37,7 @@ v=201510021536
     height: 50px;
     position: relative;
     z-index: 999;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 .navigation-wrapper {
     padding-top: 30px
@@ -79,11 +79,11 @@ v=201510021536
 }
 .navigation-bar-section {
     float: left;
-    height: 50px;
+    height: 55px;
 }
 .navigation-items {
     font-family: myriad-pro, Arial, sans-serif;
-    height: 50px;
+    height: 55px;
     float: left;
 }
 .navigation-search-outter {
@@ -122,7 +122,7 @@ span[id*=ListSection] {
 }
 
 .navigation-bar li{
-    height: 48px;
+    height: 53px;
     margin-top: 18px;
 }
 

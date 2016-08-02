@@ -4720,11 +4720,12 @@ div.cs-title-box-botbar-wrapper>div.no-image>div.case-study-customer-testimonial
     visibility: initial;
     transition: all .5s ease;
     border-radius: 4px;
+    padding: 9px 20px;
+    margin: 0 5px;
 }
 
 .header-hero-wrapper:not(.home) .header-login,
 .header-hero-wrapper:not(.home) .header-free-trial{
-    margin-top: -8px;
     border-radius: 0 0 4px 4px;
 }
 
@@ -4734,7 +4735,6 @@ div.cs-title-box-botbar-wrapper>div.no-image>div.case-study-customer-testimonial
     font-size: 12px;
     font-weight: 400;
     line-height: 12px;
-    margin: 5px;
     width: 70px;
 }
 
@@ -4743,7 +4743,6 @@ div.cs-title-box-botbar-wrapper>div.no-image>div.case-study-customer-testimonial
     border: 1px solid rgba(255, 255, 255, 0.5); 
     font-size: 12px;
     line-height: 12px;
-    margin: 5px;
     width: 163px;
     font-weight: 400;
 }
