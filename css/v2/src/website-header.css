@@ -512,12 +512,16 @@ input[type=search].inpage-search-input {
     box-shadow: none;
     color: white;
     padding: 0;
-    padding-top: 2px;
+    padding-top: 4px;
 }
  
 .small-search a:hover, 
 .small-search a:link:hover {
     color: #e6e6e6;
+}
+
+.small-search .osicon-search{
+    font-size: 18px;
 }
 
 .search-wrapper .small-search input.search {
