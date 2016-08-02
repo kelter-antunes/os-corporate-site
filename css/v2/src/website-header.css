@@ -503,7 +503,12 @@ input[type=search].inpage-search-input {
     float: left;
 }
 
-.small-search a{
+.small-search a,
+.small-search a:hover,
+.small-search a:visited,
+.small-search a:link,
+.small-search a:link:hover,
+.small-search a:link:visited{
     background: transparent;
     border: none;
     box-shadow: none;
