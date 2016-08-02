@@ -504,10 +504,8 @@ input[type=search].inpage-search-input {
 }
 
 .small-search a,
-.small-search a:hover,
 .small-search a:visited,
 .small-search a:link,
-.small-search a:link:hover,
 .small-search a:link:visited{
     background: transparent;
     border: none;
@@ -515,6 +513,11 @@ input[type=search].inpage-search-input {
     color: white;
     padding: 0;
     padding-top: 2px;
+}
+ 
+.small-search a:hover, 
+.small-search a:link:hover {
+    color: #e6e6e6;
 }
 
 .search-wrapper .small-search input.search {
