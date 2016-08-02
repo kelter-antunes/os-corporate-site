@@ -499,8 +499,17 @@ input[type=search].inpage-search-input {
 
 .small-search {
     margin-top: 11px;
+    margin-left: 10px;
     width: 31px;
     float: left;
+}
+
+.header-hero-wrapper.home .small-search svg{
+    fill: #fff;
+}
+
+.header-hero-wrapper:not(.home) .small-search svg{
+    fill: #949fa3;
 }
 
 .small-search a,
