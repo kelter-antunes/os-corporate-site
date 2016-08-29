@@ -6366,12 +6366,12 @@ h3.description {
     min-height: 80px
 }
 .what-is-it {
-    background-color: #742211;
     padding-bottom: 70px;
     background-position: center top
 }
 
 .what-is-it .animated-section {
+    background-color: #742211;
     padding: 20px 0;
 }
 
@@ -6381,12 +6381,35 @@ h3.description {
     font-size: 18px;
     line-height: 36px;
 }
-.what-is-it h2 {
-    text-shadow: 0 2px 1px rgba(22, 22, 22, .5);
-    color: #fff;
-    font-weight: 400;
-    padding-top: 50px
+
+.what-is-it .what-can-you-build{
+    padding: 80px 0 50px;
 }
+.what-is-it .what-can-you-build h2{
+    color: #596669;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.what-is-it .what-can-you-build h3{
+    color: #596669;
+}
+
+.what-is-it .what-can-you-build .sample-app-desc{
+    font-size: 18px;
+    font-family: myriad-pro,Arial,sans-serif;
+    font-weight: 100;
+    text-align: center;
+    line-height: 28px;
+    color: #596669;
+    padding: 10px 0px;
+}
+
+.what-is-it .animated-section h4 strong,
+.what-is-it .sample-app-desc strong{
+    font-weight: 400;
+}
+
 .what-you-can-do {
     text-align: left;
     margin-top: 10px;
