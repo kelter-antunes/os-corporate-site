@@ -6188,36 +6188,27 @@ a:hover span.h6-product-tab {
 h1.slogan {
     text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.38);
     color: white;
-    font-weight: 600;
-    font-size: 48px;
+    font-weight: 100;
+    font-size: 55px;
     line-height: 56px;
     font-family: myriad-pro, Arial, sans-serif;
-    margin-bottom: 15px;
-}
-
-h1.slogan strong {
-   font-weight: 600;
-   font-size: 47px;
-	line-height: 47px;
+    margin-bottom: 20px;
 }
 
 h3.description {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.61);
     color: white;
     font-family: myriad-pro, Arial, sans-serif;
-    font-size: 26px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 400;
     line-height: 30px;
+    margin-bottom: 5px;
 }
 
-.call-out-hero-home a.osbtn.osbtn-blue.popup_link, 
-.call-out-hero-home a.osbtn.osbtn-black, 
-.call-out-hero-home a.osbtn.osbtn-red.popup_link {
-    margin-top: 23px;
-    margin-bottom: 65px;
-    padding: 15px 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5)
+.call-out-hero-home a.osbtn.osbtn-red{
+    background-image: none;
 }
+
 
 .call-out-hero-home a.osbtn.osbtn-black {
 	background-color: #000;
