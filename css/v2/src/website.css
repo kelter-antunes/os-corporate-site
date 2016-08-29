@@ -6366,10 +6366,20 @@ h3.description {
     min-height: 80px
 }
 .what-is-it {
-    background-image: url(/cms_backoffice/assets/201510021536/what-you-can-do-background);
     background-color: #742211;
     padding-bottom: 70px;
     background-position: center top
+}
+
+.what-is-it .animated-section {
+    padding: 20px 0;
+}
+
+.what-is-it .animated-section h4{
+    color: #fff;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 36px;
 }
 .what-is-it h2 {
     text-shadow: 0 2px 1px rgba(22, 22, 22, .5);
