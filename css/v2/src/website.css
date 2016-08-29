@@ -919,7 +919,7 @@ a.tooltip-link {
 .call-out-hero-ad{
     background-color: #fff;
     opacity: 0.7;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .call-out-hero-ad .container{
@@ -936,6 +936,20 @@ a.tooltip-link {
 .call-out-hero-ad h3 a{
     color: inherit;
     text-decoration: underline;
+}
+
+.call-out-hero-home .see-more-arrow{
+    padding-bottom: 25px;
+}
+
+.call-out-hero-home .osicon-arrow-down{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.call-out-hero-home .osicon-arrow-down:before{
+   margin: 50%;
 }
 
 .home .call-out-hero-home {
