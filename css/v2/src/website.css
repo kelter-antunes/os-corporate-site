@@ -898,7 +898,7 @@ a.tooltip-link {
     filter: none
 }
 .header-hero-wrapper.home-rev {
-    height: auto;
+    height: 100%;
     background-image: url(/cms_backoffice/assets/20160829170659/imgtop-mock-web2);
     background-position: center;
     background-size: cover;
