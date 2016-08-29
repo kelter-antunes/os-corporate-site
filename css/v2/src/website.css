@@ -5355,6 +5355,7 @@ div.st-result .st-date {
     margin-left: 28px;
     padding: 30px 0;
     border-bottom: 1px solid #eceff1;
+    top: 90px !important;
 	/*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 -2px 7px #596669;*/
 }
 .submenuhoverbox .box {
