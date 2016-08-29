@@ -922,14 +922,10 @@ a.tooltip-link {
     margin-bottom: 5%;
 }
 
-.call-out-hero-ad .container{
-    min-width: 1010px;
-}
-
 .call-out-hero-ad h3{
     margin-bottom: 0;
     padding: 25px 0;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
 }
 
