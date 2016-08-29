@@ -76,7 +76,7 @@ v=201510021536
 }
 .navigation-bar-section {
     float: left;
-    height: 55px;
+    height: 50px;
 }
 .navigation-items {
     font-family: myriad-pro, Arial, sans-serif;
@@ -123,7 +123,7 @@ span[id*=ListSection] {
 }
 
 .navigation-bar li{
-    height: 53px;
+    height: 48px;
     margin-top: 18px;
 }
 
@@ -162,13 +162,17 @@ span[id*=ListSection] {
     border-bottom: 2px solid #596669;
 }
 
+body.mega-menu .header-hero-wrapper:not(.home) .navigation-bar li.active{
+	border: none;
+}
+
 
 body.mega-menu .navigation-bar li.active:before{
     display: block;
     color: #000;
     content: "";
     position: absolute;
-    bottom: -104px;
+    bottom: -90px;
     border-width: 100px;
     z-index: 999;
     border-style: solid;
