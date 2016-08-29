@@ -187,8 +187,7 @@ body.mega-menu .header-hero-wrapper.home .navigation-bar li.active:before{
    bottom: -90px;
 }
 
-body.mega-menu .solution-all-hero .navigation-outter,
-body.mega-menu .case-studies-detail-new .navigation-outter {
+body.mega-menu .solution-all-hero .navigation-outter{
     height: 110px;
 }
 
