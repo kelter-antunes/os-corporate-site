@@ -7,9 +7,6 @@ v=201510021536
 
 /* HOMEPAGE STYLES */
 
-.header-hero-wrapper.home .navigation-bar-tail-logo{
-    padding: 8px 0;
-}
 
 .header-hero-wrapper.home .navigation-outter{
     background: 0;
@@ -125,6 +122,7 @@ span[id*=ListSection] {
 .navigation-bar li{
     height: 48px;
     margin-top: 18px;
+    border-bottom: 2px solid transparent;
 }
 
 .header-hero-wrapper:not(.home) .navigation-bar li{
@@ -220,8 +218,9 @@ body.mega-menu .solution-all-hero .navigation-outter{
 }
 .navigation-bar-tail-logo {
     margin-left: -55px;
-    padding: 5px 0;
+    padding: 8px 0;
 }
+
 ul.navigation-bar {
     height: 50px;
     display: -webkit-flex;
