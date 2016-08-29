@@ -6,9 +6,6 @@ v=201510021536
 
 
 /* HOMEPAGE STYLES */
-.header-hero-wrapper.home .navigation-longtail{
-    margin-top: 20px;
-}
 
 .header-hero-wrapper.home .navigation-bar-tail-logo{
     padding: 8px 0;
@@ -83,7 +80,7 @@ v=201510021536
 }
 .navigation-items {
     font-family: myriad-pro, Arial, sans-serif;
-    height: 55px;
+    height: 50px;
     float: left;
 }
 .navigation-search-outter {
@@ -119,6 +116,10 @@ span[id*=ListSection] {
         -ms-flex-align: center;
             align-items: center;
     height: 55px;
+}
+
+.navigation-items span[id*=ListSection]{
+    height: 50px;
 }
 
 .navigation-bar li{
@@ -179,7 +180,7 @@ body.mega-menu .navigation-bar li.active:before{
 }
 
 body.mega-menu .header-hero-wrapper.home .navigation-bar li.active:before{
-   bottom: -94px;
+   bottom: -90px;
 }
 
 body.mega-menu .solution-all-hero .navigation-outter,
