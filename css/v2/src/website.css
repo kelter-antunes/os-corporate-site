@@ -919,7 +919,6 @@ a.tooltip-link {
 .call-out-hero-ad{
     background-color: #fff;
     opacity: 0.7;
-    margin-bottom: 5%;
 }
 
 .call-out-hero-ad h3{
@@ -6442,10 +6441,12 @@ h3.description {
     line-height: 36px;
 }
 
-.what-is-it .what-can-you-build{
+.what-is-it .what-can-you-build,
+.what-is-it .why-we-are-1st{
     padding: 80px 0 50px;
 }
-.what-is-it .what-can-you-build h2{
+.what-is-it .what-can-you-build h2,
+.what-is-it .why-we-are-1st h2{
     color: #596669;
     font-weight: 600;
     margin: 10px 0;
@@ -6455,7 +6456,8 @@ h3.description {
     color: #596669;
 }
 
-.what-is-it .what-can-you-build .sample-app-desc{
+.what-is-it .what-can-you-build .description,
+.what-is-it .why-we-are-1st .description{
     font-size: 18px;
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 100;
