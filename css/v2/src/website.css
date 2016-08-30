@@ -6475,7 +6475,7 @@ h3.description {
     text-align: center;
     line-height: 28px;
     color: #596669;
-    padding: 5px 0px;
+    padding: 10px 0px;
 }
 
 .what-is-it .why-we-are-1st .title{
@@ -6485,7 +6485,7 @@ h3.description {
     text-align: center;
     line-height: 24px;
     color: #596669;
-    padding: 5px 0px;
+    padding: 10px 0px;
 }
 
 .what-is-it .why-we-are-1st .description{
@@ -6493,14 +6493,22 @@ h3.description {
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 400;
     text-align: center;
-    line-height: 28px;
+    line-height: 24px;
     color: #596669;
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 
 .what-is-it .animated-section h4 strong,
 .what-is-it .sample-app-desc strong{
     font-weight: 400;
+}
+
+.what-is-it .inspiration-video{
+	background-color: #3c3c41;
+}
+
+.what-is-it .inspiration-video > .container{
+	background-image: url(/cms_backoffice/assets/20160830132415/video-background-blur-3c3c41);
 }
 
 .what-you-can-do {
