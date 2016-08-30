@@ -6468,11 +6468,30 @@ h3.description {
 }
 
 
-.what-is-it .what-can-you-build .description,
-.what-is-it .why-we-are-1st .description{
+.what-is-it .what-can-you-build .description
     font-size: 18px;
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 100;
+    text-align: center;
+    line-height: 28px;
+    color: #596669;
+    padding: 10px 0px;
+}
+
+.what-is-it .why-we-are-1st .title{
+    font-size: 24px;
+    font-family: myriad-pro,Arial,sans-serif;
+    font-weight: 400;
+    text-align: center;
+    line-height: 28px;
+    color: #596669;
+    padding: 10px 0px;
+}
+
+.what-is-it .why-we-are-1st .description{
+    font-size: 14px;
+    font-family: myriad-pro,Arial,sans-serif;
+    font-weight: 400;
     text-align: center;
     line-height: 28px;
     color: #596669;
