@@ -6517,6 +6517,46 @@ h3.description {
 	margin-bottom: 50px;
 }
 
+.what-is-it .take-the-next-step{
+	background-color: #01070e;
+}
+
+.what-is-it .take-the-next-step > .container{
+	background-image: url(/cms_backoffice/assets/20160830143745/bg-blur-01070e);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.what-is-it .take-the-next-step h2{
+	color: #fff;
+}
+
+.what-is-it .take-the-next-step .span4{
+	background-color: #f0f3f5;
+}
+
+.what-is-it .take-the-next-step .title{
+ 	font-size: 28px;
+    font-family: myriad-pro,Arial,sans-serif;
+    font-weight: 400;
+    text-align: center;
+    line-height: 24px;
+    color: #596669;
+    padding: 5px 0px;
+}
+
+.what-is-it .take-the-next-step .description{
+	 font-size: 18px;
+    font-family: myriad-pro,Arial,sans-serif;
+    font-weight: 100;
+    text-align: center;
+    line-height: 22px;
+    color: #596669;
+    padding: 5px 0px;
+}
+
+
 .what-you-can-do {
     text-align: left;
     margin-top: 10px;
