@@ -6445,6 +6445,12 @@ h3.description {
 .what-is-it .why-we-are-1st{
     padding: 80px 0 50px;
 }
+
+
+.what-is-it .why-we-are-1st .row{
+	margin-bottom: 30px;
+}
+
 .what-is-it .what-can-you-build h2,
 .what-is-it .why-we-are-1st h2{
     color: #596669;
@@ -6455,6 +6461,12 @@ h3.description {
 .what-is-it .what-can-you-build h3{
     color: #596669;
 }
+
+.what-is-it .what-can-you-build img,
+.what-is-it .why-we-are-1st img{ 
+    max-width: 200px;
+}
+
 
 .what-is-it .what-can-you-build .description,
 .what-is-it .why-we-are-1st .description{
