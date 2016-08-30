@@ -6504,19 +6504,17 @@ h3.description {
 }
 
 .what-is-it .inspiration-video{
-	background-color: #3c3c41;
+	background-image: url(/cms_backoffice/assets/20160830135715/video-background-blur-3c3c411);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -130px;
+    padding: 50px 0;
 }
 
 .what-is-it .inspiration-video h2{
 	color: #fff;
-	margin: 50px 0;
-}
-
-.what-is-it .inspiration-video > .container{
-	background-image: url(/cms_backoffice/assets/20160830135715/video-background-blur-3c3c411);
-	background-size: contain;
-	background-repeat: no-repeat;
-
+	margin-bottom: 50px;
 }
 
 .what-you-can-do {
