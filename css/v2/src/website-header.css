@@ -10,6 +10,7 @@ v=201510021536
 
 .header-hero-wrapper.home .navigation-outter{
     background: 0;
+    position: absolute;
 }
 
 .header-hero-wrapper.home .navigation-bar li a:hover
