@@ -938,6 +938,41 @@ a.tooltip-link {
     padding-bottom: 25px;
 }
 
+.call-out-hero-home .see-more-arrow .arrow{
+    cursor: pointer;
+    -webkit-animation-name: upandDown;
+    animation-name: upandDown;
+    -webkit-animation-duration: 1000ms;
+    animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-transform: translateY(0) translateZ(0);
+    transform: translateY(0) translateZ(0);
+}
+
+@-webkit-keyframes upandDown {
+    0%, 100% {
+        -webkit-transform: translateY(0) translateZ(0);
+    }
+    50% {
+        -webkit-transform: translateY(7px) translateZ(0);
+    }
+}
+@keyframes upandDown {
+  0%, 100%   {  
+    transform: translateY(0) translateZ(0); 
+    }
+  50% { 
+    transform: translateY(7px) translateZ(0); 
+    }
+}
+
+.call-out-hero-home .see-more-arrow .arrow img{
+    position: absolute;
+    left: 50%;
+    transform: rotate(90deg);
+}
+
 .call-out-hero-home .osicon-arrow-down{
     color: #fff;
     font-size: 30px;
