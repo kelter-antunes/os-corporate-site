@@ -935,7 +935,8 @@ a.tooltip-link {
 }
 
 .call-out-hero-home .see-more-arrow{
-    padding-bottom: 25px;
+    padding: 2% 0 4%;
+    background: rgba(0,0,0,0.30);
 }
 
 .call-out-hero-home .see-more-arrow .arrow{
@@ -5821,8 +5822,25 @@ a.osbtn-orange {
     height: 80px
 }
 
+.navigation-inner .menu-overlay{
+    display: none;
+}
+
 .home .navigation-inner {
     height: 200px;
+    position: relative;
+}
+
+.home .navigation-inner .menu-overlay{
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
 }
 
 .navigation-outter {
@@ -6404,6 +6422,17 @@ h3.description {
 .what-is-it .animated-section {
     background-color: #742211;
     padding: 20px 0;
+    position: relative;
+}
+
+.what-is-it .animated-section .animated-section-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.5;
 }
 
 .what-is-it .animated-section h4{
