@@ -6507,8 +6507,16 @@ h3.description {
 	background-color: #3c3c41;
 }
 
+.what-is-it .inspiration-video h2{
+	margin-bottom: 50px;
+	color: #fff;
+}
+
 .what-is-it .inspiration-video > .container{
 	background-image: url(/cms_backoffice/assets/20160830132415/video-background-blur-3c3c41);
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 50px 0;
 }
 
 .what-you-can-do {
