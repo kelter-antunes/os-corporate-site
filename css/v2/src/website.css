@@ -6414,7 +6414,7 @@ h3.description {
     min-height: 80px
 }
 .what-is-it {
-    padding-bottom: 70px;
+    padding-bottom: 20px;
     background-position: center top
 }
 
@@ -6468,14 +6468,14 @@ h3.description {
 }
 
 
-.what-is-it .what-can-you-build .description
+.what-is-it .what-can-you-build .description{
     font-size: 18px;
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 100;
     text-align: center;
     line-height: 28px;
     color: #596669;
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 
 .what-is-it .why-we-are-1st .title{
@@ -6483,9 +6483,9 @@ h3.description {
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 400;
     text-align: center;
-    line-height: 28px;
+    line-height: 24px;
     color: #596669;
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 
 .what-is-it .why-we-are-1st .description{
