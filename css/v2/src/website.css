@@ -934,7 +934,8 @@ a.tooltip-link {
 }
 
 .call-out-hero-home .see-more-arrow{
-    padding: 2% 0 4%;
+    height: 60px;
+    padding-top: 80px;
     background: rgba(0,0,0,0.30);
 }
 
@@ -985,6 +986,22 @@ a.tooltip-link {
 
 .home .call-out-hero-home {
     margin: 0;
+    height: 100%
+}
+
+.home .call-out-hero-home .title-subtitle,
+.home .call-out-hero-home .align-bottom{
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.home .call-out-hero-home .title-subtitle{ 
+	top: 30%;
+}
+
+.home .call-out-hero-home .align-bottom{ 
+	bottom: 0;
 }
 
 .call-out-hero-home .highlight {
@@ -6460,9 +6477,12 @@ h3.description {
     color: #596669;
 }
 
-.what-is-it .what-can-you-build img,
-.what-is-it .why-we-are-1st img{ 
+.what-is-it .what-can-you-build img
     max-width: 200px;
+}
+
+.what-is-it .why-we-are-1st img{ 
+    max-width: 80px;
 }
 
 
