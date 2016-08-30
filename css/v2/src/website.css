@@ -6523,17 +6523,24 @@ h3.description {
 
 .what-is-it .take-the-next-step > .container{
 	background-image: url(/cms_backoffice/assets/20160830143745/bg-blur-01070e);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 70px 0;
 }
 
 .what-is-it .take-the-next-step h2{
 	color: #fff;
+	margin-bottom: 50px;
 }
 
 .what-is-it .take-the-next-step .span4{
 	background-color: #f0f3f5;
+	padding: 20px 27px;
+    max-width: 250px;
+    min-height: 240px;
+    position: relative;
+    margin-bottom: 30px;
 }
 
 .what-is-it .take-the-next-step .title{
@@ -6543,7 +6550,7 @@ h3.description {
     text-align: center;
     line-height: 24px;
     color: #596669;
-    padding: 5px 0px;
+    padding: 10px 0px;
 }
 
 .what-is-it .take-the-next-step .description{
@@ -6551,9 +6558,17 @@ h3.description {
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 100;
     text-align: center;
-    line-height: 22px;
+    line-height: 28px;
     color: #596669;
-    padding: 5px 0px;
+    padding: 10px 0px;
+}
+
+.what-is-it .take-the-next-step a.osbtn.osbtn-red{
+	position: absolute;
+    bottom: 30px;
+    width: 60%;
+    left: 0;
+    margin-left: 14%;
 }
 
 
