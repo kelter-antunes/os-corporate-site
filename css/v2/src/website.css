@@ -5548,7 +5548,6 @@ div.st-result .st-date {
 }
 .overlay {
     position: fixed;
-    z-index: 9999;
     bottom: 0;
     background-color: rgba(0, 0, 0, .45);
     transition: visibility 0s, opacity .5s ease;
@@ -6252,7 +6251,7 @@ h3.description {
 }
 
 .call-out-hero-home a.osbtn.osbtn-red{
-    background-image: none;
+   margin-top: 15px;
 }
 
 
@@ -6414,7 +6413,6 @@ h3.description {
     min-height: 80px
 }
 .what-is-it {
-    padding-bottom: 20px;
     background-position: center top
 }
 
@@ -6431,7 +6429,7 @@ h3.description {
     left: 0;
     bottom: 0;
     background: #000;
-    opacity: 0.5;
+    opacity: 0.25;
 }
 
 .what-is-it .animated-section h4{
@@ -6443,7 +6441,7 @@ h3.description {
 
 .what-is-it .what-can-you-build,
 .what-is-it .why-we-are-1st{
-    padding: 80px 0 50px;
+    padding: 70px 0;
 }
 
 
@@ -6509,7 +6507,7 @@ h3.description {
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: -130px;
-    padding: 50px 0;
+    padding: 70px 0;
 }
 
 .what-is-it .inspiration-video h2{
@@ -6518,14 +6516,14 @@ h3.description {
 }
 
 .what-is-it .take-the-next-step{
-	background-color: #01070e;
-}
-
-.what-is-it .take-the-next-step > .container{
 	background-image: url(/cms_backoffice/assets/20160830143745/bg-blur-01070e);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.what-is-it .take-the-next-step > .container{
+	
     padding: 70px 0;
 }
 
@@ -6571,6 +6569,26 @@ h3.description {
     margin-left: 14%;
 }
 
+.what-is-it .our-customers{
+	padding: 70px 0;
+}
+
+.what-is-it .our-customers h2{
+	 color: #596669;
+	 font-weight: 600;
+	 font-size: 30px;
+	 font-size: 28px;
+    font-family: myriad-pro,Arial,sans-serif;
+}
+
+.what-is-it .our-customers .description{
+	color: #596669;
+	font-weight: 400;
+	font-size: 18px;
+	padding-bottom: 15px 0;
+	font-size: 28px;
+    font-family: myriad-pro,Arial,sans-serif;
+}
 
 .what-you-can-do {
     text-align: left;
