@@ -6455,9 +6455,10 @@ h3.description {
     font-size: 18px;
     line-height: 36px;
     position: absolute;
-    top: 30%;
-    left: 25%;
-    right: 50%;
+    top: 130px;
+    left: 0;
+    right: 0;
+    bottom: 130px;
     z-index: 1;
 }
 
