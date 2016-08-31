@@ -970,7 +970,6 @@ a.tooltip-link {
 
 .call-out-hero-home .see-more-arrow .arrow img{
     position: absolute;
-    left: 50%;
     transform: rotate(90deg);
 }
 
@@ -6454,6 +6453,10 @@ h3.description {
     font-weight: 100;
     font-size: 18px;
     line-height: 36px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    right: 50%;
 }
 
 .what-is-it .what-can-you-build,
