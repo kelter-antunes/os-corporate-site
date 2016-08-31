@@ -6503,13 +6503,14 @@ h3.description {
 }
 
 .what-is-it .why-we-are-1st .title{
-    font-size: 24px;
+    font-size: 22px;
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 400;
     text-align: center;
-    line-height: 24px;
+    line-height: 26px;
     color: #596669;
     padding: 10px 0px;
+    padding-top: 20px;
 }
 
 .what-is-it .why-we-are-1st .description{
@@ -6517,7 +6518,7 @@ h3.description {
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 400;
     text-align: center;
-    line-height: 24px;
+    line-height: 22px;
     color: #596669;
     padding: 5px 0px;
 }
