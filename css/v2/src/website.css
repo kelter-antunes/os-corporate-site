@@ -6436,6 +6436,7 @@ h3.description {
     background-color: #742211;
     padding: 20px 0;
     position: relative;
+    z-index: 0;
 }
 
 .what-is-it .animated-section .animated-section-overlay{
@@ -6454,9 +6455,10 @@ h3.description {
     font-size: 18px;
     line-height: 36px;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 25%;
     right: 50%;
+    z-index: 1;
 }
 
 .what-is-it .what-can-you-build,
