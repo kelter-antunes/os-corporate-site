@@ -6509,8 +6509,7 @@ h3.description {
     text-align: center;
     line-height: 26px;
     color: #596669;
-    padding: 10px 0px;
-    padding-top: 20px;
+    padding: 10px 0 5px;
 }
 
 .what-is-it .why-we-are-1st .description{
@@ -6533,7 +6532,6 @@ h3.description {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: -130px;
     padding: 70px 0;
 }
 
