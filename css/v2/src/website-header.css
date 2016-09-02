@@ -121,13 +121,14 @@ span[id*=ListSection] {
 }
 
 .navigation-bar li{
-    height: 48px;
+    height: 47px;
     margin-top: 18px;
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
+    z-index: 10000;
 }
 
 .header-hero-wrapper:not(.home) .navigation-bar li{
-    border-bottom: 2px solid #1d1f21;
+    border-bottom: 3px solid #1d1f21;
 }
 .navigation-bar li, .sub-navigation-bar li {
     margin: 0;
@@ -135,7 +136,8 @@ span[id*=ListSection] {
     float: left;
     width: auto;
     position: relative;
-    white-space: nowrap;    
+    white-space: nowrap; 
+
 
 }
 .navigation-bar li a {
@@ -151,19 +153,18 @@ span[id*=ListSection] {
     z-index: 999;
     font-size: 15px;
     letter-spacing: .05em;
-     z-index: 10000;
 }
 
 .header-hero-wrapper:not(.home) .navigation-bar li.active{
-    border-bottom: 2px solid #fff;
+    border-bottom: 3px solid #fff;
 }
 .header-hero-wrapper:not(.home) .navigation-bar li:hover {
-    border-bottom: 2px solid #596669;
+    border-bottom: 3px solid #949fa3;
 }
 
-body.mega-menu .header-hero-wrapper:not(.home) .navigation-bar li.active{
+/*body.mega-menu .header-hero-wrapper:not(.home) .navigation-bar li.active{
 	border: none;
-}
+}*/
 
 
 body.mega-menu .navigation-bar li.active:before{
