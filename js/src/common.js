@@ -915,28 +915,28 @@ var initial;
 
 function hideDropDown() {
 
-    $('.navigation-bar li[class*="active"]').removeClass("active");
+    $('.navigation-bar li[class*="open"]').removeClass("open");
     $("[data-dropdown-wrapper]").hide();
     $('body').removeClass('mega-menu'); // same as below
 
     if (window.location.pathname !== '/') {
-        initial.addClass("active");
+        initial.addClass("open");
     };
 
 }
 
 function toggleDropdowMenu(a) {
-    var currentActive = $('.navigation-bar li[class*="active"]');
-    $('.navigation-bar li[class*="active"]').removeClass("active");
+    var currentActive = $('.navigation-bar li[class*="open"]');
+    $('.navigation-bar li[class*="open"]').removeClass("open");
     $("[data-dropdown-wrapper]").hide();
     $("[data-dropdown-wrapper='" + $(a).attr("data-name") + "']").toggle();
     $('body').addClass('mega-menu'); // This is used to override a CSS style that colides with the "active" CSS style used by the menu entries
-    if (a.parent().hasClass("active")) {
-        a.parent().removeClass("active");
-        currentActive.addClass("active");
+    if (a.parent().hasClass("open")) {
+        a.parent().removeClass("open");
+        currentActive.addClass("open");
     } else {
-        a.parent().addClass("active");
-        currentActive.removeClass("active");
+        a.parent().addClass("open");
+        currentActive.removeClass("open");
     }
 }
 
@@ -944,7 +944,7 @@ var mkto_resized = false;
 
 $(document).ready(function() {
 
-    initial = $('.navigation-bar li[class*="active"]');
+    initial = $('.navigation-bar li[class*="open"]');
 
     //add overlay
     $('body').append('<div class="overlay"></div>');
@@ -964,7 +964,7 @@ $(document).ready(function() {
             //$(this).get(0).click();
             //c.find('a').get(0).click();
         } else {
-            $(this).closest('ul').find('li.active').removeClass('active');
+            $(this).closest('ul').find('li.open').removeClass('open');
             toggleDropdowMenu(b);
             $("[data-dropdown-wrapper]").click(function(a) {
                 a.stopPropagation();
