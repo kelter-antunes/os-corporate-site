@@ -162,12 +162,17 @@ span[id*=ListSection] {
     border-bottom: 3px solid #949fa3;
 }
 
+.header-hero-wrapper:not(.home) .navigation-bar li.open:hover,
+.header-hero-wrapper:not(.home) .navigation-bar li.open.active:hover  {
+    border-bottom: 3px solid transparent;
+}
+
 /*body.mega-menu .header-hero-wrapper:not(.home) .navigation-bar li.active{
 	border: none;
 }*/
 
 
-body.mega-menu .navigation-bar li.active:before{
+body.mega-menu .navigation-bar li.open:before{
     display: block;
     color: #000;
     content: "";
@@ -181,6 +186,10 @@ body.mega-menu .navigation-bar li.active:before{
     margin-left: -100px;
     border-color: transparent transparent #fff;
     z-index: 10000;
+}
+
+body.mega-menu .navigation-bar li.open.active{
+     border-bottom: 3px solid transparent;
 }
 
 body.mega-menu .header-hero-wrapper.home .navigation-bar li.active:before{
