@@ -180,7 +180,6 @@ v=201510021536
     
     .navigation-outter {
         position: fixed;
-        z-index: 9999;
         top: 0
     }
     .MenuSlider_IsOpen .navigation-outter {
@@ -256,6 +255,10 @@ v=201510021536
         display: none;
     }
 
+    body.MenuSlider_IsOpen .home .navigation-inner .menu-overlay{
+        display: block;
+    }
+
     .home .call-out-hero-home .title-subtitle{
     	top: 10%;
         padding: 30px 10px;
@@ -277,6 +280,9 @@ v=201510021536
     .call-out-hero-home .highlight {
         min-height: 300px;
     }
+    .what-is-it h3{
+        font-weight: 400;
+    }
     .what-is-it .animated-section{
         padding: 50px 0;
     }
@@ -292,6 +298,19 @@ v=201510021536
         padding: 70px 10px;
     }
 
+    .what-is-it .what-can-you-build .description{
+        padding: 10px 20px;
+    }
+
+    .what-is-it .why-we-are-1st .description{
+        font-size: 16px;
+        padding: 5px 20px;
+    }
+
+    .what-is-it .our-customers .description{
+        padding: 10px 5px;
+    }
+
     .what-is-it .take-the-next-step {
         background-image: url(/cms_backoffice/assets/20160830143805/bg-blur-mob-blue);
         padding: 10px;
@@ -301,7 +320,7 @@ v=201510021536
         margin: 40px 0;
         max-width: none;
     }
-    
+
     .what-is-it .take-the-next-step h2{
         font-weight: 100;
         font-size: 28px;
