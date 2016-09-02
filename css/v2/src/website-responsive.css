@@ -109,7 +109,7 @@ v=201510021536
         margin-bottom: 10px
     }
     .call-out-hero-ad h3{
-    	padding: 10px;
+    	padding: 10px 20px;
     }
     h4 {
         font-size: 18px;
@@ -171,6 +171,7 @@ v=201510021536
 	.header-hero-wrapper.home{
 		background-image: url(/cms_backoffice/assets/20160829170636/imgtop-mock-mob);
 		background-position: initial;
+        height: auto;
 	}
     .navigation-inner{
         margin-top: 0;
@@ -251,10 +252,15 @@ v=201510021536
     }
     .home .call-out-hero-home .title-subtitle{
     	top: 10%;
+        padding-bottom: 20px;
     }
     .call-out-hero-home .see-more-arrow{
-    	padding-top: 20px;
-    	background: 0;
+    	padding-top: 0;
+        background: 0;
+        height: 30px;
+    }
+    .call-out-hero-home .see-more-arrow .arrow{
+        display: none;
     }
     .call-out-hero-home .highlight {
         min-height: 300px;
@@ -1257,12 +1263,12 @@ v=201510021536
         display: none;
     }
     h1.slogan {
-        margin: 20px 5px;
+        margin: 0;
         font-size: 40px;
         line-height: 46px;
     }
     h3.description {
-        padding: 10px;
+        padding: 15px 0;
         font-size: 22px;
     }
     .call-out-hero-home a.osbtn.osbtn-red.popup_link {
