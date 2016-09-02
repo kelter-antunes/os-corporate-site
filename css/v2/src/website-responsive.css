@@ -254,6 +254,12 @@ v=201510021536
     	top: 10%;
         padding-bottom: 20px;
     }
+
+    .home .call-out-hero-home .title-subtitle,
+    .home .call-out-hero-home .align-bottom{
+        position: relative;
+    }
+
     .call-out-hero-home .see-more-arrow{
     	padding-top: 0;
         background: 0;
