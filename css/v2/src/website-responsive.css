@@ -108,6 +108,9 @@ v=201510021536
         font-weight: 600;
         margin-bottom: 10px
     }
+    .call-out-hero-ad h3{
+    	padding: 10px;
+    }
     h4 {
         font-size: 18px;
         line-height: 24px;
@@ -165,7 +168,10 @@ v=201510021536
     .header-hero-wrapper {
         padding-top: 0
     }
-
+	.header-hero-wrapper.home{
+		background-image: url(/cms_backoffice/assets/20160829170636/imgtop-mock-mob);
+		background-position: initial;
+	}
     .navigation-inner{
         margin-top: 0;
     }
@@ -234,9 +240,6 @@ v=201510021536
         font-size: 20px;
         margin-bottom: 20px
     }
-    .header-hero-wrapper.home {
-        height: 535px;
-    }
     .osbtn-lg {
         padding: 10px 30px
     }
@@ -245,6 +248,13 @@ v=201510021536
         background-position: center;
         background-image: url(/cms_backoffice/assets/20151215163525/bg-mobile.jpg);
         background-size: cover;
+    }
+    .home .call-out-hero-home .title-subtitle{
+    	top: 10%;
+    }
+    .call-out-hero-home .see-more-arrow{
+    	padding-top: 20px;
+    	background: 0;
     }
     .call-out-hero-home .highlight {
         min-height: 300px;
@@ -1249,7 +1259,7 @@ v=201510021536
     h1.slogan {
         margin: 20px 5px;
         font-size: 40px;
-        line-height: 40px
+        line-height: 46px;
     }
     h3.description {
         padding: 10px;

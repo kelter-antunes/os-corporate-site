@@ -971,6 +971,7 @@ a.tooltip-link {
 .call-out-hero-home .see-more-arrow .arrow img{
     position: absolute;
     transform: rotate(90deg);
+    left: 47.5%;
 }
 
 .call-out-hero-home .osicon-arrow-down{
