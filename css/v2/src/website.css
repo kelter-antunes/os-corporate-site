@@ -1606,7 +1606,7 @@ body.landing-slim form#WebForm1 {
 .how-first-section {
     background: url(/cms_backoffice/assets/201510021536/bg-lightgrey-d9d9d9) top center repeat-y #c9c9c9;
     border-top: 0;
-    margin-top: -40px
+    margin-top: -50px
 }
 .how-bg-gray-dark, .how-bg-gray-light {
     background-repeat: repeat-y;
@@ -6093,7 +6093,7 @@ form input.st-search-input {
     position: fixed;
     top: 0;
     right: 0;
-    left: 0;
+    left: -15px;
     z-index: 999;
     padding-bottom: 0;
 	background-image: linear-gradient(to top, rgba(255, 255, 255, 0.07) 0%, transparent 100%), linear-gradient(to right, #2f3439 0%, #313639 43%, #3c4649 100%);
