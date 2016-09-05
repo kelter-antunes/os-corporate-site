@@ -905,9 +905,11 @@ $(document).ready(function() {
 });
 
 
+/** search bar **/
 
-
-
+function hideSearchBar(){
+ $('.header-hero-wrapper div[class*="with-search"]').removeClass("with-search");
+}
 
 
 /** dropdown menus **/
@@ -970,7 +972,8 @@ $(document).ready(function() {
                 a.stopPropagation();
             });
             $(document).on("click", function() {
-                hideDropDown(b)
+                hideDropDown(b);
+                hideSearchBar();
             });
         }
     });
