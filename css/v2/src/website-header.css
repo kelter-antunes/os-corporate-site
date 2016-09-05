@@ -303,10 +303,6 @@ li.get-started a {
     z-index: 3;
     width: 100%;
     transition: all .5s ease;
-    background: rgba(66,65,65,.52);
-    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 9%, rgba(0,0,0,0.65) 28%, rgba(0,0,0,0.65) 57%, rgba(0,0,0,0) 95%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 9%,rgba(0,0,0,0.65) 28%,rgba(0,0,0,0.65) 57%,rgba(0,0,0,0) 95%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 9%,rgba(0,0,0,0.65) 28%,rgba(0,0,0,0.65) 57%,rgba(0,0,0,0) 95%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     border: none;
     border-radius: 3px;
 }
