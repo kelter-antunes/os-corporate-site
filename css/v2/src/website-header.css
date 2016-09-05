@@ -56,6 +56,10 @@ v=201510021536
     transition: all .5s ease;
 }
 
+.navigation-longtail .span1{
+    width: 28px;
+}
+
 
 
 .with-search .navigation-longtail,

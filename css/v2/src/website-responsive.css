@@ -255,10 +255,6 @@ v=201510021536
         display: none;
     }
 
-    body.MenuSlider_IsOpen .home .navigation-inner .menu-overlay{
-        display: block;
-    }
-
     .home .call-out-hero-home .title-subtitle{
     	top: 10%;
         padding: 30px 10px;
