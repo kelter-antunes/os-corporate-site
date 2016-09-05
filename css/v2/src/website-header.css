@@ -43,6 +43,10 @@ v=201510021536
     background-color: #000;
     height: 50px
 }
+
+.navigation-bar-section.navigation-bar-tail-spacer a{
+    z-index: 9999;
+}
 .navigation-bar-section.navigation-bar-tail-spacer a, .navigation-items {
     position: relative
 }
@@ -233,7 +237,7 @@ body.mega-menu .solution-all-hero .navigation-outter{
 }
 .navigation-bar-tail-logo {
     margin-left: -55px;
-    padding: 8px 0;
+    padding: 7px 0;
     max-width: none;
 }
 
