@@ -6297,10 +6297,6 @@ h1.slogan h3.is-hidden {
     opacity: 0;
     -webkit-transform: translateX(-100%);
   }
-  70% {
-    opacity: 1;
-    -webkit-transform: translateX(10%);
-  }
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -6310,10 +6306,6 @@ h1.slogan h3.is-hidden {
   0% {
     opacity: 0;
     -moz-transform: translateX(-100%);
-  }
-  60% {
-    opacity: 1;
-    -moz-transform: translateX(10%);
   }
   100% {
     opacity: 1;
@@ -6328,14 +6320,6 @@ h1.slogan h3.is-hidden {
     -ms-transform: translateX(-100%);
     -o-transform: translateX(-100%);
     transform: translateX(-100%);
-  }
-  60% {
-    opacity: 1;
-    -webkit-transform: translateX(10%);
-    -moz-transform: translateX(10%);
-    -ms-transform: translateX(10%);
-    -o-transform: translateX(10%);
-    transform: translateX(10%);
   }
   100% {
     opacity: 1;
@@ -6769,7 +6753,7 @@ h1.slogan h3.is-hidden {
 
 .what-is-it .our-customers ul.our-services{
     list-style: none;
-    color: #596669;
+    color: #1f282d;
     font-weight: 400;
     font-size: 18px;
     font-family: myriad-pro,Arial,sans-serif;
@@ -6782,9 +6766,13 @@ h1.slogan h3.is-hidden {
 
 .what-is-it .our-customers ul.our-services li:before {
     content: '\2022';
-    margin-right: 0.5em;
-    color: #c20;
+    margin: 0 6px 0 3px;
     font-size: 1.5em;
+    color: #c20;
+}
+
+.what-is-it .our-customers ul.our-services li:first-child:before{
+    display: none;
 }
 
 .what-you-can-do {
