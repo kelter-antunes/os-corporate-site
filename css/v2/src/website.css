@@ -6409,16 +6409,25 @@ h1.slogan h3.is-hidden {
 }
 
 .call-out-hero-home .hero-home-buttons a.osbtn-red,
-.call-out-hero-home .hero-home-buttons a.osbtn-white,
-.what-is-it .take-the-next-step .cta-section a.osbtn-red, 
-.what-is-it .take-the-next-step .cta-section a.osbtn-white{
+.call-out-hero-home .hero-home-buttons a.osbtn-white{
     border-radius: 0;
     background-image: none;
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 0.2px;
-    margin: 5px;
+    margin: 5px 0px;
     padding: 10px 25px;
+}
+
+.what-is-it .take-the-next-step .cta-section a.osbtn-red, 
+.what-is-it .take-the-next-step .cta-section a.osbtn-white{
+    border-radius: 0;
+    background-image: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: .2px;
+    margin: 5px 20px;
+    padding: 15px 60px;
 }
 
 
@@ -6700,6 +6709,11 @@ h1.slogan h3.is-hidden {
 	margin-bottom: 30px;
 }
 
+.what-is-it .take-the-next-step h3{
+    margin-top: 80px;
+    font-size: 25px;
+    font-weight: 100;
+}
 
 
 .what-is-it .take-the-next-step .span4{
@@ -6844,8 +6858,8 @@ h1.slogan h3.is-hidden {
     height: 387px
 }
 .photo-quotes {
-    background-image: url(/cms_backoffice/assets/201510021536/Dark-photo-customers-bg1);
-    background-color: #000;
+    background-image: url(/cms_backoffice/assets/20160906142058/bg-quote-3b4a4c);
+    background-color: #3b4a4c;
     background-position: center top;
     background-repeat: no-repeat;
     text-align: center
