@@ -6267,8 +6267,6 @@ h1.slogan h3 {
   display: inline-block;
   position: absolute;
   white-space: nowrap;
-  left: 0;
-  top: 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.61);
   color: white;
   font-family: myriad-pro, Arial, sans-serif;
@@ -6276,6 +6274,7 @@ h1.slogan h3 {
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 5px;
+  margin-top: 15px;
 }
 
 h1.slogan h3.is-visible {
