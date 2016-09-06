@@ -935,7 +935,7 @@ a.tooltip-link {
 
 .call-out-hero-home .see-more-arrow{
     height: 60px;
-    padding-top: 80px;
+    padding-top: 60px;
     background: rgba(0,0,0,0.30);
 }
 
@@ -6401,8 +6401,24 @@ h1.slogan h3.is-hidden {
   }
 }
 
-.call-out-hero-home a.osbtn.osbtn-red{
-   margin-top: 15px;
+.call-out-hero-home .hero-home-buttons
+.what-is-it .take-the-next-step .cta-section{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.call-out-hero-home .hero-home-buttons a.osbtn-red,
+.call-out-hero-home .hero-home-buttons a.osbtn-white,
+.what-is-it .take-the-next-step .cta-section a.osbtn-red, 
+.what-is-it .take-the-next-step .cta-section a.osbtn-white{
+    border-radius: 0;
+    background-image: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    margin: 5px;
+    padding: 10px 25px;
 }
 
 
@@ -6568,24 +6584,15 @@ h1.slogan h3.is-hidden {
 }
 
 .what-is-it .animated-section {
-    background-color: #742211;
+    background-color: #f0f3f5;
     padding: 20px 0;
     position: relative;
     z-index: 0;
 }
 
-.what-is-it .animated-section .animated-section-overlay{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: #000;
-    opacity: 0.25;
-}
 
 .what-is-it .animated-section h4{
-    color: #fff;
+    color: #ccc;
     font-weight: 100;
     font-size: 18px;
     line-height: 36px;
@@ -6749,6 +6756,19 @@ h1.slogan h3.is-hidden {
 	padding: 15px 0;
     font-family: myriad-pro,Arial,sans-serif;
     line-height: 28px;
+}
+
+.what-is-it .our-customers ul.our-services{
+    list-style: none;
+    color: #596669;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: myriad-pro,Arial,sans-serif;
+    line-height: 26px;
+}
+
+.what-is-it .our-customers ul.our-services li{
+    display: inline;
 }
 
 .what-you-can-do {
