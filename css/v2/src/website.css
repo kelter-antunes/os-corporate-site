@@ -5845,9 +5845,9 @@ a.osbtn-orange {
 }
 
 .home .navigation-inner .menu-overlay{
-    display: none;
+    display: block;
     top: 0;
-    bottom: 0;
+    height: 150px;
     left: 0;
     right: 0;
     position: absolute;
@@ -6260,6 +6260,7 @@ h1.slogan .words-wrapper {
   display: inline-block;
   position: relative;
   text-align: left;
+  width: 100%;
 }
 
 h1.slogan h3 {
