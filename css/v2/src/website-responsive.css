@@ -265,6 +265,17 @@ v=201510021536
         position: relative;
     }
 
+    .home .call-out-hero-home .hero-home-buttons{
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .home .call-out-hero-home .hero-home-buttons a.osbtn-red,
+    .home .call-out-hero-home .hero-home-buttons a.osbtn-white{
+        padding: 10px 0;
+        width: 100%;
+    }
+
     .call-out-hero-home .see-more-arrow{
     	padding-top: 0;
         background: 0;

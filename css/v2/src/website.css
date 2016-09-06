@@ -5845,7 +5845,7 @@ a.osbtn-orange {
 }
 
 .home .navigation-inner .menu-overlay{
-    display: block;
+    display: none;
     top: 0;
     bottom: 0;
     left: 0;
@@ -6415,7 +6415,7 @@ h1.slogan h3.is-hidden {
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 0.2px;
-    margin: 5px 0px;
+    margin: 5px;
     padding: 10px 25px;
 }
 
@@ -6692,10 +6692,10 @@ h1.slogan h3.is-hidden {
 }
 
 .what-is-it .take-the-next-step{
-	background-image: url(/cms_backoffice/assets/20160830143745/bg-blur-01070e);
+	background-image: url(/cms_backoffice/assets/20160906150042/bg-blur-01070e1);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
 }
 
 .what-is-it .take-the-next-step > .container{
@@ -6746,7 +6746,7 @@ h1.slogan h3.is-hidden {
 }
 
 .what-is-it .our-customers{
-	padding: 70px 0;
+	padding: 90px 0;
 }
 
 .what-is-it .our-customers h2{
@@ -6778,6 +6778,13 @@ h1.slogan h3.is-hidden {
 
 .what-is-it .our-customers ul.our-services li{
     display: inline;
+}
+
+.what-is-it .our-customers ul.our-services li:before {
+    content: '\2022';
+    margin-right: 0.5em;
+    color: #c20;
+    font-size: 1.5em;
 }
 
 .what-you-can-do {
