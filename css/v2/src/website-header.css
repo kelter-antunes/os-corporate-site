@@ -25,6 +25,7 @@ v=201510021536
     width: 100%;
     overflow: hidden;
     border: none;
+    background-image: -webkit-linear-gradient(top, #171717 0%, #202326 100%);
     background-image: linear-gradient(-180deg, #171717 0%, #202326 100%);
 }
 
@@ -87,6 +88,7 @@ v=201510021536
     float: left;
     opacity: 1;
     visibility: initial;
+    -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
 .navigation-search-outter {
@@ -292,6 +294,7 @@ li.get-started a {
 
 .searchview {
     opacity: 0;
+    -webkit-transition: all .5s ease;
     transition: all .5s ease;
     visibility: hidden;
 }
@@ -306,6 +309,7 @@ li.get-started a {
     top: -10px;
     z-index: 3;
     width: 100%;
+    -webkit-transition: all .5s ease;
     transition: all .5s ease;
     border: none;
     border-radius: 3px;
@@ -498,6 +502,8 @@ input[type=search].searchform-input:focus {
 }
 
 .inpage-search-search-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     float: right
 }
