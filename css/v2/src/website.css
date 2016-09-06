@@ -6555,10 +6555,10 @@ h1.slogan h3.is-hidden {
 
 
 .what-is-it .animated-section h4{
-    color: #ccc;
-    font-weight: 100;
+    color: #333;
+    font-weight: 400;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 30px;
     position: absolute;
     top: 130px;
     left: 0;
