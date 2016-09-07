@@ -6601,6 +6601,11 @@ h1.slogan h3.is-hidden {
     z-index: 0;
 }
 
+.what-is-it .animated-section h2{
+    position: absolute;
+    top: 150px;
+}
+
 
 .what-is-it .animated-section h4{
     color: #333;
@@ -6608,7 +6613,7 @@ h1.slogan h3.is-hidden {
     font-size: 18px;
     line-height: 26px;
     position: absolute;
-    top: 210px;
+    top: 220px;
     left: 0;
     right: 0;
     bottom: 130px;
