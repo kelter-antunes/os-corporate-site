@@ -313,6 +313,27 @@ v=201510021536
         background-color: #c20;
     }
 
+    .what-is-it .photo-quotes .quote-photo{
+        width: 30%;
+        padding: 5px 10px;
+    }
+
+      .what-is-it .photo-quotes .quote-photo img{
+        float: right;
+    }
+
+    .what-is-it .photo-quotes .quote-info{
+        width: 70%;
+        padding: 5px 10px;
+    }
+
+    .what-is-it .photo-quotes h3 {
+        color: #fff;
+        font-size: 26px;
+        font-weight: 100;
+        line-height: 36px;
+    }
+
     .what-is-it .photo-quotes .m-scooch-bulleted a{
         margin: 0 8px;
         padding: 5px;
