@@ -6595,6 +6595,10 @@ h1.slogan h3.is-hidden {
     background-position: center top
 }
 
+.what-is-it > p {
+    display: none;
+}
+
 .what-is-it .animated-section {
     background-color: #f0f3f5;
     position: relative;

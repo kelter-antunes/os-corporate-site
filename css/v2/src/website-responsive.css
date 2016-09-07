@@ -85,7 +85,7 @@ v=201510021536
     }
     .call-out-hero-home a.osbtn {
         margin: 0 !important;
-        margin-top: 12px !important;
+        margin-top: 20px !important;
     }
     .customers-and-experts a span.partner-matrix-entry {
         width: 90px;
@@ -323,7 +323,7 @@ v=201510021536
     }
 
     .what-is-it .what-can-you-build .span3{
-
+        margin-bottom: 40px;
     }
 
     .what-is-it .what-can-you-build .description{
@@ -335,6 +335,20 @@ v=201510021536
         padding: 5px 20px;
     }
 
+     .what-is-it .why-we-are-1st h2{
+        margin: 0;
+     }
+
+    .what-is-it .why-we-are-1st .span3{
+        margin-bottom: 30px;
+    }
+
+    .what-is-it .why-we-are-1st .row,
+    .why-we-are-1st .span3:last-child,
+    .what-is-it .what-can-you-build .span3 {
+        margin-bottom: 0;
+    }
+
     .what-is-it .our-customers .description{
         padding: 10px 5px;
     }
@@ -343,6 +357,9 @@ v=201510021536
         background-image: url(/cms_backoffice/assets/20160830143805/bg-blur-mob-blue);
         padding: 10px;
     }
+    .what-is-it .take-the-next-step>.container{
+        padding-top: 30px 0;
+    }
 
     .what-is-it .take-the-next-step .span4{
         margin: 40px 0;
@@ -350,10 +367,44 @@ v=201510021536
     }
 
     .what-is-it .take-the-next-step h2{
-        font-weight: 100;
-        font-size: 28px;
-        padding: 0 60px;
+        font-weight: 600;
+        font-size: 26px;
         line-height: 34px;
+    }
+
+    .what-is-it .take-the-next-step h3{
+        margin-top: 20px;
+        padding: 0 20px;
+        font-size: 18px;
+    }
+
+    .what-is-it .take-the-next-step .cta-section a.osbtn-red,
+    .what-is-it .take-the-next-step .cta-section a.osbtn-white{
+        margin: 10px 0;
+    }
+
+    .what-is-it .inspiration-video{
+        padding: 40px 5px;
+    }
+
+    .what-is-it .our-customers{
+        padding: 40px 10px;
+    }
+
+    .what-is-it .our-customers h2,
+    .what-is-it .our-customers .description
+    {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .what-is-it .our-customers img{
+        padding: 0 5%;
+        max-width: 90%;
+    }
+
+    .what-is-it .our-services{
+        display: none;
     }
 
     .photo-quotes{
