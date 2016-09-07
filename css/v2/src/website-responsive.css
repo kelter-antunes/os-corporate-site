@@ -281,7 +281,7 @@ v=201510021536
         background: 0;
         height: 30px;
     }
-    .call-out-hero-home .see-more-arrow .arrow{
+    .call-out-hero-home .see-more-arrow{
         display: none;
     }
     .call-out-hero-home .highlight {
@@ -346,6 +346,7 @@ v=201510021536
         padding: 40px 20px 30px 20px;
         background-image: url(/cms_backoffice/assets/20160830111252/bg-blur-mob-red);
         background-color: #c20;
+        background-size: cover;
     }
 
     .photo-quotes .quote-photo{
@@ -359,7 +360,7 @@ v=201510021536
 
     .photo-quotes .quote-info{
         width: 70%;
-        padding: 10px 0px 10px 10px;
+        padding: 15px 0 15px 10px;
         color: #fff;
         font-weight: 100;
         font-size: 14px;
@@ -372,16 +373,26 @@ v=201510021536
         line-height: 36px;
     }
 
+    .photo-quotes .quote{
+        position: absolute;
+    }
+
+    .photo-quotes .quote .span12:last-child{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .photo-quotes .m-fluid .m-item{
+        min-height: 400px;
+    }
+
     .photo-quotes .m-scooch-bulleted a{
         margin: 0 8px;
         padding: 5px;
     } 
 
-    .photo-quotes .quote{
-        position: absolute;
-        top: 40px;
-        bottom: 40px;
-    }
+  
 
     .lead {
         height: auto
