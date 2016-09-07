@@ -980,7 +980,9 @@ a.tooltip-link {
      position: absolute;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
-    left: 47.5%;
+    left: 46%;
+    padding: 40px;
+    bottom: -60px;
 }
 
 .call-out-hero-home .osicon-arrow-down{
@@ -5849,7 +5851,7 @@ a.osbtn-orange {
 }
 
 .home .navigation-inner {
-    height: 400px;
+    height: 200px;
     position: relative;
 }
 
@@ -6366,7 +6368,18 @@ h1.slogan h3.is-hidden {
     display: flex;
 }
 
-.call-out-hero-home .hero-home-buttons a.osbtn-red,
+.call-out-hero-home .hero-home-buttons a.osbtn-red{
+    border-radius: 0;
+    background-image: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    margin: 5px;
+    padding: 10px 25px;
+    width: 180px;
+    background: #dd1f00;
+}
+
 .call-out-hero-home .hero-home-buttons a.osbtn-white{
     border-radius: 0;
     background-image: none;
@@ -6376,6 +6389,20 @@ h1.slogan h3.is-hidden {
     margin: 5px;
     padding: 10px 25px;
     width: 180px;
+    background: #000;
+    border-color: #dd1f00;
+}
+
+
+.call-out-hero-home .hero-home-buttons a.osbtn-red:hover,
+.call-out-hero-home .hero-home-buttons a.osbtn-red span:hover{
+    background: #cc1d00;
+}
+
+.call-out-hero-home .hero-home-buttons a.osbtn-white:hover,
+.call-out-hero-home .hero-home-buttons a.osbtn-white span:hover{
+    background: #f0f3f5;
+    border-color: #cc1d00;
 }
 
 .what-is-it .take-the-next-step .cta-section a.osbtn-red, 
