@@ -5764,9 +5764,7 @@ a.osbtn-white {
     border-width: 1px;
     border-radius: 5px
 }
-a.osbtn-white:hover {
-    background: #f7f7f7 !important
-}
+
 .osbtn-orange, a.osbtn-orange {
     background-color: #ef6c00;
     border-radius: 5px
@@ -6389,7 +6387,7 @@ h1.slogan h3.is-hidden {
     margin: 5px;
     padding: 10px 25px;
     width: 180px;
-    background: #000;
+    background: #fff;
     border-color: #dd1f00;
     color: #dd1f00 !important;
 }
@@ -6413,7 +6411,7 @@ h1.slogan h3.is-hidden {
     letter-spacing: .2px;
     margin: 5px 20px;
     padding: 15px 60px;
-    background: #000;
+    background: #fff;
     border-color: #dd1f00;
     color: #dd1f00 !important;
 }
