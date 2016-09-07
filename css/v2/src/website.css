@@ -6384,28 +6384,27 @@ h1.slogan h3.is-hidden {
     border-radius: 0;
     background-image: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 16px; 
     letter-spacing: 0.2px;
     margin: 5px;
     padding: 10px 25px;
     width: 180px;
     background: #000;
     border-color: #dd1f00;
+    color: #dd1f00 !important;
 }
 
-
-.call-out-hero-home .hero-home-buttons a.osbtn-red:hover,
-.call-out-hero-home .hero-home-buttons a.osbtn-red span:hover{
-    background: #cc1d00;
+.what-is-it .take-the-next-step .cta-section a.osbtn-red{
+    border-radius: 0;
+    background-image: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: .2px;
+    margin: 5px 20px;
+    padding: 15px 60px;
+    background: #dd1f00;
 }
 
-.call-out-hero-home .hero-home-buttons a.osbtn-white:hover,
-.call-out-hero-home .hero-home-buttons a.osbtn-white span:hover{
-    background: #f0f3f5;
-    border-color: #cc1d00;
-}
-
-.what-is-it .take-the-next-step .cta-section a.osbtn-red, 
 .what-is-it .take-the-next-step .cta-section a.osbtn-white{
     border-radius: 0;
     background-image: none;
@@ -6414,7 +6413,27 @@ h1.slogan h3.is-hidden {
     letter-spacing: .2px;
     margin: 5px 20px;
     padding: 15px 60px;
+    background: #000;
+    border-color: #dd1f00;
+    color: #dd1f00 !important;
 }
+
+.call-out-hero-home .hero-home-buttons a.osbtn-red:hover,
+.call-out-hero-home .hero-home-buttons a.osbtn-red span:hover,
+.what-is-it .take-the-next-step .cta-section a.osbtn-red:hover,
+.what-is-it .take-the-next-step .cta-section a.osbtn-red span:hover{
+    background: #cc1d00;
+}
+
+.call-out-hero-home .hero-home-buttons a.osbtn-white:hover,
+.call-out-hero-home .hero-home-buttons a.osbtn-white span:hover,
+.what-is-it .take-the-next-step .cta-section a.osbtn-white:hover,
+.what-is-it .take-the-next-step .cta-section a.osbtn-white span:hover{
+    background: #f0f3f5;
+    border-color: #cc1d00;
+    color: #cc1d00 !important;
+}
+
 
 
 .call-out-hero-home a.osbtn.osbtn-black {
