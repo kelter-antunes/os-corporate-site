@@ -342,8 +342,8 @@ v=201510021536
         line-height: 34px;
     }
 
-        .photo-quotes{
-        padding: 40px 30px 30px 30px;
+    .photo-quotes{
+        padding: 40px 20px 30px 20px;
         background-image: url(/cms_backoffice/assets/20160830111252/bg-blur-mob-red);
         background-color: #c20;
     }
@@ -359,7 +359,10 @@ v=201510021536
 
     .photo-quotes .quote-info{
         width: 70%;
-        padding: 5px 10px;
+        padding: 10px 0px 10px 10px;
+        color: #fff;
+        font-weight: 100;
+        font-size: 14px;
     }
 
     .photo-quotes h3 {
@@ -373,6 +376,12 @@ v=201510021536
         margin: 0 8px;
         padding: 5px;
     } 
+
+    .photo-quotes .quote{
+        position: absolute;
+        top: 40px;
+        bottom: 40px;
+    }
 
     .lead {
         height: auto
