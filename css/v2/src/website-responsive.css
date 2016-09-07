@@ -257,7 +257,7 @@ v=201510021536
 
     .home .call-out-hero-home .title-subtitle{
     	top: 10%;
-        padding: 30px 10px;
+        padding: 10px;
     }
 
     .home .call-out-hero-home .title-subtitle,
@@ -293,12 +293,30 @@ v=201510021536
     .what-is-it .animated-section{
         padding: 50px 0;
     }
+
+    .what-is-it .animated-section .content-box{
+        position: relative;
+        min-height: 200px;
+        padding: 30px 10px;
+        text-align: center;
+    }
     .what-is-it .animated-section h4{
         top: 0;
         bottom: 0;
         left: 10px;
         right: 10px;
     }
+
+    .what-is-it .photo-quotes{
+        padding: 40px 30px 30px 30px;
+        background-image: url(/cms_backoffice/assets/20160830111252/bg-blur-mob-red);
+        background-color: #c20;
+    }
+
+    .what-is-it .photo-quotes .m-scooch-bulleted a{
+        margin: 0 8px;
+        padding: 5px;
+    } 
 
     .what-is-it .what-can-you-build,
     .what-is-it .why-we-are-1st{
@@ -325,7 +343,7 @@ v=201510021536
 
     .what-is-it .take-the-next-step .span4{
         margin: 40px 0;
-        max-width: none;
+        max-width: none; 
     }
 
     .what-is-it .take-the-next-step h2{
