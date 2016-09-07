@@ -267,7 +267,7 @@ v=201510021536
 
     .home .call-out-hero-home .hero-home-buttons{
         position: relative;
-        margin-top: 30px;
+        padding: 20px 0;
     }
 
     .home .call-out-hero-home .hero-home-buttons a.osbtn-red,
@@ -291,15 +291,20 @@ v=201510021536
         font-weight: 400;
     }
     .what-is-it .animated-section{
-        padding: 50px 0;
+        padding: 40px 0;
     }
 
     .what-is-it .animated-section .content-box{
         position: relative;
         min-height: 200px;
-        padding: 30px 10px;
+        padding: 0px 10px;
         text-align: center;
     }
+
+     .what-is-it .animated-section h2{
+        margin-bottom: 25px;
+    }
+
     .what-is-it .animated-section h4{
         top: 0;
         bottom: 0;
@@ -309,7 +314,16 @@ v=201510021536
 
     .what-is-it .what-can-you-build,
     .what-is-it .why-we-are-1st{
-        padding: 70px 10px;
+        padding: 40px 10px;
+    }
+
+    .what-is-it .what-can-you-build h2{
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    .what-is-it .what-can-you-build .span3{
+
     }
 
     .what-is-it .what-can-you-build .description{
@@ -388,8 +402,9 @@ v=201510021536
     }
 
     .photo-quotes .m-scooch-bulleted a{
-        margin: 0 8px;
-        padding: 5px;
+        margin: 0 10px;
+        padding: 3px;
+        background-color: rgba(255,255,255,.6);
     } 
 
   
@@ -1395,9 +1410,18 @@ v=201510021536
     }
     h1.slogan {
         margin: 0;
-        font-size: 40px;
-        line-height: 46px;
+        font-size: 36px;
+        line-height: 44px;
     }
+
+    h1.slogan h3{
+        margin: 0;
+    }
+
+    h1.slogan .words-wrapper{
+        padding-top: 15px;
+    }
+
     h3.description {
         padding: 15px 0;
         font-size: 22px;
