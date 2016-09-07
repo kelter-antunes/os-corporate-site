@@ -1416,10 +1416,12 @@ v=201510021536
 
     h1.slogan h3{
         margin: 0;
+        white-space: normal;
     }
 
     h1.slogan .words-wrapper{
         padding-top: 15px;
+        min-height: 105px;
     }
 
     h3.description {
