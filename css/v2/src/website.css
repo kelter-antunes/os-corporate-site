@@ -5754,7 +5754,7 @@ a.ressourcelink {
     border-top-style: solid;
     border-color: #606060;
     border-width: 1px;
-    font-size: 12px;
+    font-size: 12px; 
     color: #606060
 }
 a.osbtn-white {
@@ -6359,7 +6359,7 @@ h1.slogan h3.is-hidden {
   }
 }
 
-.call-out-hero-home .hero-home-buttons
+.call-out-hero-home .hero-home-buttons,
 .what-is-it .take-the-next-step .cta-section{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6540,7 +6540,7 @@ h1.slogan h3.is-hidden {
     height: 180px
 }
 .benefits .benefit {
-    width: 308px;
+    width: 308px; 
     display: inline-block;
     padding: 10px 9px 20px
 }
@@ -6608,7 +6608,7 @@ h1.slogan h3.is-hidden {
 .what-is-it .animated-section .content-box{
     position: relative;
     min-height: 200px;
-    padding: 134px 0;
+    padding: 134px 0; 
 }
 
 .what-is-it .animated-section h2,
@@ -6648,7 +6648,7 @@ h1.slogan h3.is-hidden {
 }
 
 .what-is-it .what-can-you-build h3{
-    color: #596669;
+    color: #596669; 
 }
 
 .what-is-it .what-can-you-build img{
