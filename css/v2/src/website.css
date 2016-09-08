@@ -6716,8 +6716,7 @@ h1.slogan h3.is-hidden {
     background-position: bottom;
 }
 
-.what-is-it .take-the-next-step > .container{
-	
+.what-is-it .take-the-next-step > .container{	
     padding: 70px 0;
 }
 
@@ -6728,7 +6727,8 @@ h1.slogan h3.is-hidden {
 }
 
 .what-is-it .take-the-next-step h3{
-    margin-top: 80px;
+    margin-bottom: 40px;
+    margin-top: 50px;
     font-size: 25px;
     font-weight: 100;
 }
@@ -6934,6 +6934,9 @@ h1.slogan h3.is-hidden {
     width: 25px
 }
 
+.customers-and-experts{ 
+    margin: 20px 0;
+}
 .customers-and-experts a {
     display: block
 }
@@ -6960,7 +6963,7 @@ h1.slogan h3.is-hidden {
 .how-can-we-help {
     background-color: #F2F2F2;
     text-align: center
-}
+} 
 .needs {
     padding: 50px 0
 }
