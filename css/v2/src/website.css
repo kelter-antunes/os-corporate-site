@@ -890,7 +890,6 @@ a.tooltip-link {
     background-color: #35699B
 }
 .header-hero-wrapper {
-    height: 570px;
     box-shadow: 0 3px 3px #EBEBEB;
     filter: progid:DXImageTransform.Microsoft.Shadow(strength 3, direction 180, color '#ebebeb');
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength = 3, Direction = 180, Color ='#ebebeb')";
@@ -5828,10 +5827,9 @@ a.osbtn-orange {
 .about-us .header-hero-wrapper, .customers .header-hero-wrapper, .learn-and-support .header-hero-wrapper, .platform .header-hero-wrapper, .resources .header-hero-wrapper {
     height: 130px !important
 }
-.header-hero-wrapper.page-without-hero {
-    height: 130px;
-}
+
 .header-hero-wrapper.page-without-hero.page-company {
+    height: 130px;
     padding-bottom: 40px
 }
 
@@ -6807,6 +6805,10 @@ h1.slogan h3.is-hidden {
 
 .what-is-it .our-customers ul.our-services li:first-child:before{
     display: none;
+}
+
+.what-is-it .our-customers img{
+    padding: 10px;
 }
 
 .what-you-can-do {
