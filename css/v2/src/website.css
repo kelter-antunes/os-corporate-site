@@ -6366,11 +6366,6 @@ h1.slogan h3.is-hidden {
   }
 }
 
-.what-is-it .take-the-next-step .cta-section{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
 
 .call-out-hero-home .hero-home-buttons a.osbtn-red{
     border-radius: 0;
