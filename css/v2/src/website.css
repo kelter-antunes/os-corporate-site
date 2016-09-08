@@ -4822,10 +4822,17 @@ div.cs-title-box-botbar-wrapper>div.no-image>div.case-study-customer-testimonial
     border-bottom-left-radius: 4px;
     padding: 9px 20px;
     margin: 0 5px;
-    background-color: #fff;
+    background-color: #fff; 
     font-size: 12px;
     font-weight: 400;
     line-height: 12px;
+    background-image: none;
+}
+
+.header-free-trial.osbtn-gray:hover,
+.header-login.osbtn-gray:hover{
+    background-color: #fff;
+    opacity: .85;
 }
 
 .header-hero-wrapper:not(.home) .header-login,
