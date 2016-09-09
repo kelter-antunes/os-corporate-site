@@ -729,7 +729,8 @@ v=201510021536
         padding-top: 12px;
         right: 0;
         width: 50px;
-        text-align: center
+        text-align: center;
+        z-index: 99999;
     }
     .Menu_Container {
         margin-bottom: 44px;        /* iphone bottom toolbar */

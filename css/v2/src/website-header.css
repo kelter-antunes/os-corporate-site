@@ -85,7 +85,7 @@ v=201510021536
 .navigation-items {
     font-family: myriad-pro, Arial, sans-serif;
     height: 50px;
-    float: left;
+    float: right;
     opacity: 1;
     visibility: initial;
     -webkit-transition: all .5s ease;
@@ -238,7 +238,6 @@ body.mega-menu .solution-all-hero .navigation-outter{
     border-bottom: 1px solid gray
 }
 .navigation-bar-tail-logo {
-    margin-left: -55px;
     padding: 7px 0;
     max-width: none;
 }
@@ -251,7 +250,6 @@ ul.navigation-bar {
     -ms-flex-line-pack: justify;
             -webkit-align-content: space-between;
             align-content: space-between;
-    width: 840px;
     box-sizing: border-box;
 }
 

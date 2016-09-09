@@ -143,7 +143,7 @@
     });
   </script>
   <div class="animated-section">
-    <div class="container">
+    <div class="container">    
       <div class="row">
         <div class="span6 content-box">
           <h2>
@@ -152,14 +152,22 @@
           <h4>
            OutSystems is a low-code platform that lets you visually develop your entire application, easily integrate with existing systems, and add your own custom code when you need it. Crafted by engineers with an obsessive attention to detail, every aspect of our platform is designed to help you build and deliver better apps faster.  
           </h4>
-        </div>
+        </div>  
         <div class="span6">
-          &nbsp;
-        </div>
-      </div>
+        	<div class="motion-video">
+		      	<script src="//fast.wistia.com/embed/medias/kkmq5febek.jsonp" async></script>
+		      	<script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+		      	<div class="wistia_responsive_padding" style="padding:62.5% 0 0 0;position:relative;">
+		      		<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+		      			<div class="wistia_embed wistia_async_kkmq5febek videoFoam=true" style="height:100%;width:100%">&nbsp;
+	      			</div>
+	      		</div>
+	      	</div>
+	      </div>
+        </div>     
+      </div>      
     </div>
-  </div>
-  <script>
+        <script>
 			var performAnimation = function(elmPath){
 				var animate = false;
 				    var elem = $(elmPath);
@@ -176,13 +184,15 @@
 				    	elem.find('.inner').css('animation', 'none');
 				    }
 			}
+
 			$(window).scroll(function(){
 				performAnimation('.o-progress-circle.circle1');	
                 performAnimation('.o-progress-circle.circle2');	
                 performAnimation('.o-progress-circle.circle3');	
                 performAnimation('.o-progress-circle.circle4');	
 			});
-  </script>
+	    </script>
+  </div>
   <div class="what-can-you-build">
     <div class="container">
       <div class="row">
@@ -646,7 +656,8 @@
             Experience the speed
           </h2>
           <div class="cta-section">
-            <a class="osbtn osbtn-red" href="#"><span>Schedule a demo</span> </a> <a class="osbtn osbtn-white" href="#"><span>Try Now for Free</span> </a>
+            <a class="osbtn osbtn-red" href="/1/outsystems-platform-demo/"><span>Schedule a demo</span> </a> 
+            <a class="osbtn osbtn-white" href="/get-started/"><span>Try Now for Free</span> </a>
           </div>
         </div>
       </div>
