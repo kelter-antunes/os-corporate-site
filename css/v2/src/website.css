@@ -6607,7 +6607,7 @@ h1.slogan h3.is-hidden {
 .what-is-it .animated-section .content-box{
     position: relative;
     min-height: 200px;
-    padding: 134px 0; 
+    padding: 131px 0; 
 }
 
 .what-is-it .animated-section h2,
@@ -6676,11 +6676,11 @@ h1.slogan h3.is-hidden {
     text-align: center;
     line-height: 26px;
     color: #596669;
-    padding: 10px 0 5px;
+    padding: 10px 0;
 }
 
 .what-is-it .why-we-are-1st .description{
-    font-size: 14px;
+    font-size: 16px;
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 400;
     text-align: center;
