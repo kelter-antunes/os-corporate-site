@@ -1136,7 +1136,7 @@ a.item span.lean-more {
 }
 
 .case-studies-detail-new .Header_Nav_Breadcrumb {
-    margin-top: 165px !important;
+    margin-top: 165px;
 }
 .header-hero-wrapper.news {
     background: url(/img/bg_body.png?v=201510021536) top left repeat-x;
@@ -2592,7 +2592,7 @@ a.ViewMoreLink {
     z-index: 9999;
     font-size: 12px;
     padding: 2px 10px;
-    margin-top: 185px !important;
+    margin-top: 185px;
 }
 .Header_Nav_Breadcrumb a, .Header_Nav_Breadcrumb a:link, .Header_Nav_Breadcrumb a:visited {
     color: #fff;
