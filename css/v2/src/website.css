@@ -6108,8 +6108,8 @@ form input.st-search-input {
     position: fixed;
     top: 0;
     right: 0;
-    left: -14px;
-    padding-right: 14px;
+    /*left: -14px;
+    padding-right: 14px;*/
     z-index: 999;
     padding-bottom: 0;
 	background-image: linear-gradient(to top, rgba(255, 255, 255, 0.07) 0%, transparent 100%), linear-gradient(to right, #2f3439 0%, #313639 43%, #3c4649 100%);
@@ -8932,6 +8932,26 @@ font-family: myriad-pro,Arial,sans-serif;
 font-size: 12px;
 font-weight: 400;
 line-height: 20px;
+}
+
+
+@media screen and (max-height: 549px){
+    .home .call-out-hero-ad{
+        display: none;
+    }
+
+    .home .see-more-arrow{
+        background: none;
+    }
+}
+@media screen and (min-height: 550px){
+    .home .call-out-hero-ad{
+        display: block;
+    }
+
+    .home .see-more-arrow{
+        background: rgba(0,0,0,.3);
+    }      
 }
 
 @media  (max-width:979px) {

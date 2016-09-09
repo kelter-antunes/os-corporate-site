@@ -343,10 +343,19 @@ v=201510021536
         margin-bottom: 30px;
     }
 
-    .what-is-it .why-we-are-1st .row,
     .why-we-are-1st .span3:last-child,
     .what-is-it .what-can-you-build .span3 {
         margin-bottom: 0;
+
+    }
+
+    .what-is-it .why-we-are-1st .row{
+      margin-bottom: 0;
+      margin-top: 30px;
+    }
+
+    .what-is-it .why-we-are-1st .row:first-child {
+        margin-top: 0;
     }
 
     .what-is-it .our-customers .description{
@@ -404,6 +413,10 @@ v=201510021536
     }
 
     .what-is-it .our-services{
+        text-align: center;
+    }
+
+    .what-is-it .our-customers ul.our-services li:nth-child(3):before{
         display: none;
     }
 
