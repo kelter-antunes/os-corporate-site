@@ -2586,12 +2586,13 @@ a.ViewMoreLink {
     opacity: .7;
     color: #FFF;
     width: auto;
+    margin-top: 270px;
     margin-bottom: 30px;
     position: absolute;
     z-index: 9999;
     font-size: 12px;
     padding: 2px 10px;
-    margin-top: 270px;
+    margin-top: 185px;
 }
 .Header_Nav_Breadcrumb a, .Header_Nav_Breadcrumb a:link, .Header_Nav_Breadcrumb a:visited {
     color: #fff;
