@@ -1136,7 +1136,7 @@ a.item span.lean-more {
 }
 
 .case-studies-detail-new .Header_Nav_Breadcrumb {
-    margin-top: 165px
+    margin-top: 165px !important;
 }
 .header-hero-wrapper.news {
     background: url(/img/bg_body.png?v=201510021536) top left repeat-x;
@@ -4673,7 +4673,7 @@ a.past-list-link:active h5, a.past-list-link:hover h5, a.past-list-link:link h5,
 }
 .cs-title-box {
     position: relative;
-    height: 290px
+    height: 300px
 }
 .cs-title-box-topbar {
     position: absolute;
@@ -4714,7 +4714,7 @@ a.past-list-link:active h5, a.past-list-link:hover h5, a.past-list-link:link h5,
 }
 .cs-title-box-botbar-wrapper {
     position: absolute;
-    margin-top: 290px;
+    margin-top: 300px;
     width: 100%;
 }
 div.cs-title-box-botbar-wrapper>div.no-image>div.case-study-title-image {
