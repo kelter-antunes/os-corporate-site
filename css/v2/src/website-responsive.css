@@ -1524,19 +1524,14 @@ v=201510021536
     .customers-and-experts {
         padding-top: 0;
     }
-    .customers-and-experts img {
-        height: auto !important;
-        width: auto !important;
-    }
+
     .second-level-menu-wrapper {
         display: none;
     }
     .arch-instructions .parallax {
         background: none !important;
     }
-    .customers-and-experts a span.customer-matrix-entry {
-        width: 90px;
-    }
+
     .SliderList .sidebarfilters {
       display: none;
       visibility: hidden;
