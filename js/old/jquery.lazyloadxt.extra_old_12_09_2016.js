@@ -1,6 +1,6 @@
-/*! Lazy Load XT v1.1.0 2016-01-12
+/*! Lazy Load XT v1.0.0 2014-01-16
  * http://ressio.github.io/lazy-load-xt
- * (C) 2016 RESS.io
+ * (C) 2014 RESS.io
  * Licensed under MIT */
 
 (function ($, window, document, undefined) {
@@ -20,8 +20,8 @@
             forceLoad: forceLoad, // force auto load all images
 
             loadEvent: 'pageshow', // check AJAX-loaded content in jQueryMobile
-            updateEvent: 'load orientationchange resize scroll touchmove focus', // page-modified events
-            forceEvent: 'lazyloadall', // force loading of all elements
+            updateEvent: 'load orientationchange resize scroll touchmove', // page-modified events
+            forceEvent: '', // force loading of all elements
 
             //onstart: null,
             oninit: {removeClass: 'lazy'}, // init handler
@@ -66,13 +66,6 @@
         return obj[prop] === undefined ? options[prop] : obj[prop];
     }
 
-    /**
-     * @returns {number}
-     */
-    function scrollTop() {
-        var scroll = window.pageYOffset;
-        return (scroll === undefined) ? docElement.scrollTop : scroll;
-    }
 
     /**
      * Add new elements to lazy-load list:
@@ -86,7 +79,6 @@
         var blankImage = getOrDef(overrides, 'blankImage'),
             checkDuplicates = getOrDef(overrides, 'checkDuplicates'),
             scrollContainer = getOrDef(overrides, 'scrollContainer'),
-            forceShow = getOrDef(overrides, 'show'),
             elementOptionsOverrides = {},
             prop;
 
@@ -97,21 +89,19 @@
             elementOptionsOverrides[prop] = getOrDef(overrides, prop);
         }
 
-        return this.each(function (index, el) {
-            if (el === window) {
+        return this.each(function () {
+            if (this === window) {
                 $(options.selector).lazyLoadXT(overrides);
             } else {
-                var duplicate = checkDuplicates && $data(el, dataLazied),
-                    $el = $(el).data(dataLazied, forceShow ? -1 : 1);
-
                 // prevent duplicates
-                if (duplicate) {
-                    queueCheckLazyElements();
+                if (checkDuplicates && $data(this, dataLazied)) {
                     return;
                 }
 
-                if (blankImage && el.tagName === 'IMG' && !el.src) {
-                    el.src = blankImage;
+                var $el = $(this).data(dataLazied, 1);
+
+                if (blankImage && $el[0].tagName === 'IMG' && !this.src) {
+                    this.src = blankImage;
                 }
 
                 // clone elementOptionsOverrides object
@@ -120,7 +110,6 @@
                 triggerEvent('init', $el);
 
                 elements.push($el);
-                queueCheckLazyElements();
             }
         });
     };
@@ -137,12 +126,9 @@
             if ($isFunction(handler)) {
                 handler.call($el[0]);
             } else {
-                if (handler.addClass) {
-                    $el.addClass(handler.addClass);
-                }
-                if (handler.removeClass) {
-                    $el.removeClass(handler.removeClass);
-                }
+                $el
+                    .addClass(handler.addClass || '')
+                    .removeClass(handler.removeClass || '');
             }
         }
 
@@ -175,9 +161,9 @@
 
         topLazy = Infinity;
 
-        var viewportTop = scrollTop(),
-            viewportHeight = window.innerHeight || docElement.clientHeight,
-            viewportWidth = window.innerWidth || docElement.clientWidth,
+        var viewportTop = $window.scrollTop(),
+            viewportHeight = window.innerHeight || $window.height(),
+            viewportWidth = window.innerWidth || $window.width(),
             i,
             length;
 
@@ -186,7 +172,7 @@
                 el = $el[0],
                 objData = $el[lazyLoadXT],
                 removeNode = false,
-                visible = force || $data(el, dataLazied) < 0,
+                visible = force,
                 topEdge;
 
             // remove items that are not in DOM
@@ -206,14 +192,12 @@
                 }
 
                 if (visible) {
-                    $el.on(load_error, triggerLoadOrError);
-
                     triggerEvent('show', $el);
 
                     var srcAttr = objData.srcAttr,
                         src = $isFunction(srcAttr) ? srcAttr($el) : el.getAttribute(srcAttr);
-
                     if (src) {
+                        $el.on(load_error, triggerLoadOrError);
                         el.src = src;
                     }
 
@@ -226,7 +210,6 @@
             }
 
             if (removeNode) {
-                $data(el, dataLazied, 0);
                 elements.splice(i--, 1);
                 length--;
             }
@@ -263,7 +246,7 @@
 
         // fast check for scroll event without new visible elements
         if (e && e.type === 'scroll' && e.currentTarget === window) {
-            if (topLazy >= scrollTop()) {
+            if (topLazy >= $window.scrollTop()) {
                 return;
             }
         }
@@ -280,6 +263,7 @@
      */
     function initLazyElements() {
         $window.lazyLoadXT();
+        queueCheckLazyElements();
     }
 
 
@@ -298,18 +282,16 @@
         triggerEvent('start', $window);
 
         $window
+            .on(options.loadEvent, initLazyElements)
             .on(options.updateEvent, queueCheckLazyElements)
             .on(options.forceEvent, forceLoadAll);
 
-        $(document).on(options.updateEvent, queueCheckLazyElements);
-
         if (options.autoInit) {
-            $window.on(options.loadEvent, initLazyElements);
             initLazyElements(); // standard initialization
         }
     });
 
-})(window.jQuery || window.Zepto || window.$, window, document);
+})(window.jQuery || window.Zepto, window, document);
 
 
 (function ($) {
@@ -320,24 +302,18 @@
 
     $(document).on('lazyshow', 'video', function (e, $el) {
         var srcAttr = $el.lazyLoadXT.srcAttr,
-            isFuncSrcAttr = $.isFunction(srcAttr),
-            changed = false;
+            isFuncSrcAttr = $.isFunction(srcAttr);
 
-        $el.attr('poster', $el.attr(options.videoPoster));
-        $el.children('source,track')
-            .each(function (index, el) {
-                var $child = $(el),
-                    src = isFuncSrcAttr ? srcAttr($child) : $child.attr(srcAttr);
-                if (src) {
-                    $child.attr('src', src);
-                    changed = true;
-                }
+        $el
+            .attr('poster', $el.attr(options.videoPoster))
+            .children('source,track')
+            .each(function () {
+                var $child = $(this);
+                $child.attr('src', isFuncSrcAttr ? srcAttr($child) : $child.attr(srcAttr));
             });
 
         // reload video
-        if (changed) {
-            this.load();
-        }
+        this.load();
     });
 
-})(window.jQuery || window.Zepto || window.$);
+})(window.jQuery || window.Zepto);
