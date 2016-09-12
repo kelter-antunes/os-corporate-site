@@ -99,9 +99,7 @@ osjs(".Popup").live("dialogopen", function(a, b) {
 
 })(window.jQuery || window.Zepto);
 
-$('.what-is-it .animated-section video#wistia_19')
-    .removeClass('lazy-hidden')
-    .addClass('lazy-loaded');
+console.log('call plugin lazyLoadXT');
 
 /* home page, filter customers logos by visitor country */
 $(function() {
