@@ -126,6 +126,14 @@ v=201510021536
         margin-bottom: 10px
     }
 
+    .container.header{
+        background: #000;
+        top: 0;
+        position: fixed;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
     /**PartnersMobile*/
     .HeroPartnersPage {
         background: none;
@@ -191,6 +199,20 @@ v=201510021536
         margin-top: 7px;
         padding: 5px 0;
     }
+
+    .header-hero-wrapper .navigation-outter{
+        background: 0;
+        position: fixed;
+        width: 100%;
+        background: #000;
+        height: auto;
+        z-index: 10;
+    }
+
+    .header-hero-wrapper .navigation-inner{
+        height: auto;
+    }
+
     .navigation-bar {
         display: none
     }
@@ -447,7 +469,7 @@ v=201510021536
 
     .photo-quotes h3 {
         color: #fff;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 100;
         line-height: 36px;
     }
@@ -565,6 +587,7 @@ v=201510021536
     }
 
     /** customers **/
+
     .header-hero-wrapper.customers-hero {
         height: 0;
         margin-top: 50px
@@ -584,7 +607,6 @@ v=201510021536
         line-height: 50px
     }
     .customer-matrix-entry-nodetail img, .customer-matrix-entry img {
-        width: 108px;
         height: auto
     }
     .customer-line-wrapper {
