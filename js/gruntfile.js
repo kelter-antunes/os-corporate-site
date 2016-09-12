@@ -16,6 +16,7 @@ module.exports = function(grunt) {
                         'src/jquery.animate-enhanced.min.js'
                     ],
                     'bundle/extra.js': [
+                        'src/jquery.lazyloadxt.extra.min.js',
                         'src/jquery.bxslider.js',
                         'src/common.min.js',
                         'src/os-inspectlet.min.js',

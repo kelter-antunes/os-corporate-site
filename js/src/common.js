@@ -85,7 +85,19 @@ osjs(".Popup").live("dialogopen", function(a, b) {
 });
 
 
+/* Lazy Load XT v1.0.0 2014-01-16
+ * http://ressio.github.io/lazy-load-xt
+ * Licensed under MIT
+ * (C) 2014 RESS.io
+ */
+(function($) {
+    var options = $.lazyLoadXT;
 
+    options.forceEvent += ' loadmeeeee';
+    options.forceEvent += ' hover-menu';
+    options.edgeY = 200;
+
+})(window.jQuery || window.Zepto);
 
 
 
