@@ -6389,7 +6389,7 @@ h1.slogan h3.is-hidden {
     color: #dd1f00 !important;
 }
 
-.home .what-is-it .take-the-next-step .cta-section a.osbtn-red{
+.what-is-it .take-the-next-step .cta-section a.osbtn-red{
     border-radius: 0;
     background-image: none;
     text-transform: uppercase;
@@ -6400,7 +6400,7 @@ h1.slogan h3.is-hidden {
     background: #dd1f00;
 }
 
-.home .what-is-it .take-the-next-step .cta-section a.osbtn-white{
+.what-is-it .take-the-next-step .cta-section a.osbtn-white{
     border-radius: 0;
     background-image: none;
     text-transform: uppercase;
@@ -6415,15 +6415,15 @@ h1.slogan h3.is-hidden {
 
 .call-out-hero-home .hero-home-buttons a.osbtn-red:hover,
 .call-out-hero-home .hero-home-buttons a.osbtn-red span:hover,
-.home .what-is-it .take-the-next-step .cta-section a.osbtn-red:hover,
-.home .what-is-it .take-the-next-step .cta-section a.osbtn-red span:hover{
+.what-is-it .take-the-next-step .cta-section a.osbtn-red:hover,
+.what-is-it .take-the-next-step .cta-section a.osbtn-red span:hover{
     background: #cc1d00;
 }
 
 .call-out-hero-home .hero-home-buttons a.osbtn-white:hover,
 .call-out-hero-home .hero-home-buttons a.osbtn-white span:hover,
-.home .what-is-it .take-the-next-step .cta-section a.osbtn-white:hover,
-.home .what-is-it .take-the-next-step .cta-section a.osbtn-white span:hover{
+.what-is-it .take-the-next-step .cta-section a.osbtn-white:hover,
+.what-is-it .take-the-next-step .cta-section a.osbtn-white span:hover{
     background: #f0f3f5;
     border-color: #cc1d00;
     color: #cc1d00 !important;
@@ -6589,32 +6589,32 @@ h1.slogan h3.is-hidden {
     min-height: 80px
 }
 
-.what-is-it {
+.what-is-it.widget {
     background-image: url(/cms_backoffice/assets/201510021536/what-you-can-do-background);
     background-color: #742211;
     padding-bottom: 70px;
     background-position: center top;
 }
 
-.home .what-is-it {
+.what-is-it {
     background-position: center top
 }
 
-.home .what-is-it > p {
+.what-is-it > p {
     display: none;
 }
 
-.home .what-is-it .animated-section {
+.what-is-it .animated-section {
     background-color: #f4f4f8;
     position: relative;
     z-index: 0;
 }
 
-.home .what-is-it .animated-section > .container{
+.what-is-it .animated-section > .container{
     position: relative;
 }
 
-.home .what-is-it .animated-section .motion-video{
+.what-is-it .animated-section .motion-video{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -6622,63 +6622,63 @@ h1.slogan h3.is-hidden {
     left: 180px;
 }
 
-.home .what-is-it .animated-section .content-box{
+.what-is-it .animated-section .content-box{
     position: relative;
     min-height: 200px;
     padding: 131px 0; 
     z-index: 1;
 }
 
-.home .what-is-it .animated-section h2,
-.home .what-is-it .animated-section h4{
+.what-is-it .animated-section h2,
+.what-is-it .animated-section h4{
     color: #596669;
 }
 
-.home .what-is-it .animated-section h4{
+.what-is-it .animated-section h4{
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
 }
 
-.home .what-is-it .what-can-you-build,
-.home .what-is-it .why-we-are-1st{
+.what-is-it .what-can-you-build,
+.what-is-it .why-we-are-1st{
     padding: 70px 0;
 }
 
 
-.home .what-is-it .why-we-are-1st .row{
+.what-is-it .why-we-are-1st .row{
 	margin-bottom: 30px;
 }
 
-.home .what-is-it .why-we-are-1st .row:last-child{
+.what-is-it .why-we-are-1st .row:last-child{
     margin-bottom: 0px;
 }
 
-.home .what-is-it .what-can-you-build h2,
-.home .what-is-it .why-we-are-1st h2{
+.what-is-it .what-can-you-build h2,
+.what-is-it .why-we-are-1st h2{
     color: #596669;
     font-weight: 600;
     margin: 10px 0;
 }
 
-.home .what-is-it .what-can-you-build h2{
+.what-is-it .what-can-you-build h2{
     margin-top: 0;
 }
 
-.home .what-is-it .what-can-you-build h3{
+.what-is-it .what-can-you-build h3{
     color: #596669; 
 }
 
-.home .what-is-it .what-can-you-build img{
+.what-is-it .what-can-you-build img{
     max-width: 200px;
 }
 
-.home .what-is-it .why-we-are-1st img{ 
+.what-is-it .why-we-are-1st img{ 
     max-width: 80px;
 }
 
 
-.home .what-is-it .what-can-you-build .description{
+.what-is-it .what-can-you-build .description{
     font-size: 18px;
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 100;
@@ -6688,7 +6688,7 @@ h1.slogan h3.is-hidden {
     padding: 10px 0px;
 }
 
-.home .what-is-it .why-we-are-1st .title{
+.what-is-it .why-we-are-1st .title{
     font-size: 24px;
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 400;
@@ -6698,7 +6698,7 @@ h1.slogan h3.is-hidden {
     padding: 10px 0;
 }
 
-.home .what-is-it .why-we-are-1st .description{
+.what-is-it .why-we-are-1st .description{
     font-size: 16px;
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 400;
@@ -6708,12 +6708,12 @@ h1.slogan h3.is-hidden {
     padding: 5px 0px;
 }
 
-.home .what-is-it .animated-section h4 strong,
-.home .what-is-it .sample-app-desc strong{
+.what-is-it .animated-section h4 strong,
+.what-is-it .sample-app-desc strong{
     font-weight: 400;
 }
 
-.home .what-is-it .inspiration-video{
+.what-is-it .inspiration-video{
 	background-image: url(/cms_backoffice/assets/20160830135715/video-background-blur-3c3c411);
     background-size: cover;
     background-repeat: no-repeat;
@@ -6721,29 +6721,29 @@ h1.slogan h3.is-hidden {
     padding: 70px 0;
 }
 
-.home .what-is-it .inspiration-video h2{
+.what-is-it .inspiration-video h2{
 	color: #fff;
 	margin-bottom: 50px;
 }
 
-.home .what-is-it .take-the-next-step{
+.what-is-it .take-the-next-step{
 	background-image: url(/cms_backoffice/assets/20160906150042/bg-blur-01070e1);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
-.home .what-is-it .take-the-next-step > .container{	
+.what-is-it .take-the-next-step > .container{	
     padding: 70px 0;
 }
 
-.home .what-is-it .take-the-next-step h2,
-.home .what-is-it .take-the-next-step h3{
+.what-is-it .take-the-next-step h2,
+.what-is-it .take-the-next-step h3{
 	color: #fff;
 	margin-bottom: 30px;
 }
 
-.home .what-is-it .take-the-next-step h3{
+.what-is-it .take-the-next-step h3{
     margin-bottom: 40px;
     margin-top: 50px;
     font-size: 25px;
@@ -6751,7 +6751,7 @@ h1.slogan h3.is-hidden {
 }
 
 
-.home .what-is-it .take-the-next-step .span4{
+.what-is-it .take-the-next-step .span4{
 	background-color: #f0f3f5;
 	padding: 20px 27px;
     max-width: 250px;
@@ -6760,7 +6760,7 @@ h1.slogan h3.is-hidden {
     margin-bottom: 30px;
 }
 
-.home .what-is-it .take-the-next-step .title{
+.what-is-it .take-the-next-step .title{
  	font-size: 28px;
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 400;
@@ -6770,7 +6770,7 @@ h1.slogan h3.is-hidden {
     padding: 10px 0px;
 }
 
-.home .what-is-it .take-the-next-step .description{
+.what-is-it .take-the-next-step .description{
 	 font-size: 18px;
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 100;
@@ -6780,11 +6780,11 @@ h1.slogan h3.is-hidden {
     padding: 10px 0px;
 }
 
-.home .what-is-it .our-customers{
+.what-is-it .our-customers{
 	padding: 90px 0;
 }
 
-.home .what-is-it .our-customers h2{
+.what-is-it .our-customers h2{
 	 color: #596669;
 	 font-weight: 600;
 	 font-size: 30px;
@@ -6793,7 +6793,7 @@ h1.slogan h3.is-hidden {
     margin-bottom: 0;
 }
 
-.home .what-is-it .our-customers .description{
+.what-is-it .our-customers .description{
 	color: #596669;
 	font-weight: 400;
 	font-size: 18px;
@@ -6802,7 +6802,7 @@ h1.slogan h3.is-hidden {
     line-height: 28px;
 }
 
-.home .what-is-it .our-customers ul.our-services{
+.what-is-it .our-customers ul.our-services{
     list-style: none;
     color: #596669;
     font-weight: 400;
@@ -6811,22 +6811,22 @@ h1.slogan h3.is-hidden {
     line-height: 26px;
 }
 
-.home .what-is-it .our-customers ul.our-services li{
+.what-is-it .our-customers ul.our-services li{
     display: inline;
 }
 
-.home .what-is-it .our-customers ul.our-services li:before {
+.what-is-it .our-customers ul.our-services li:before {
     content: '\2022';
     margin: 0 6px 0 3px;
     font-size: 1.5em;
     color: #c20;
 }
 
-.home .what-is-it .our-customers ul.our-services li:first-child:before{
+.what-is-it .our-customers ul.our-services li:first-child:before{
     display: none;
 }
 
-.home .what-is-it .our-customers img{
+.what-is-it .our-customers img{
     padding: 10px;
 }
 
