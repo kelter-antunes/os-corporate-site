@@ -204,13 +204,13 @@ v=201510021536
         background: 0;
         position: fixed;
         width: 100%;
-        background: #000;
-        height: auto;
-        z-index: 10;
+        z-index: 999;
     }
 
     .header-hero-wrapper .navigation-inner{
-        height: auto;
+        height: 50px;
+        background: #000;
+
     }
 
     .navigation-bar {
