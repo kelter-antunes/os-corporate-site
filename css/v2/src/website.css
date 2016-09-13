@@ -912,6 +912,11 @@ a.tooltip-link {
     background-color: #CCD3DB;
     position: relative;
 }
+
+.header-hero-wrapper.home-rev.get-out{
+
+}
+
 .call-out-hero-home {
     background: url(/cms_backoffice/assets/20151215141941/outsystems-homepage-top.jpg) bottom center no-repeat #cdd3db;
     position: relative;
@@ -6278,19 +6283,24 @@ h1.slogan .words-wrapper {
   width: 100%;
 }
 
-h1.slogan h3 {
+h1.slogan h3,
+h3.get-out-subtitle{
   opacity:0;
   display: inline-block;
   position: absolute;
   white-space: nowrap;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.61);
-  color: white;
+  color: #fff;
   font-family: myriad-pro, Arial, sans-serif;
   font-size: 25px;
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 5px;
   margin-top: 15px;
+}
+
+h3.get-out-subtitle{
+    opacity: 1;
 }
 
 h1.slogan h3.is-visible {
@@ -6369,7 +6379,7 @@ h1.slogan h3.is-hidden {
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 0.2px;
-    margin: 5px;
+    margin: 5px 0;
     padding: 10px 25px;
     width: 180px;
     background: #dd1f00;

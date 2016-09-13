@@ -1,0 +1,161 @@
+<style type="text/css">
+  .call-out-hero-home {
+    background: none;
+    border: none;
+  }
+  body .header-hero-wrapper.home-rev:before {
+    content: "";
+    position: absolute;
+    /*background-color: rgba(204, 211, 219, 0.5);*/
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  @media screen and (max-width: 767px) {
+    body .header-hero-wrapper.home-rev:before {
+      content: "";
+      position: absolute;
+      background-color: rgba(204, 211, 219, 0.26);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    body span.forrester-logo {
+      padding-left: 0px !important;
+      margin-bottom: 20px;
+    }
+    body .forrester-banner {
+      text-align: left;
+    }
+    body .forrester-banner .span12 {
+      margin: 0;
+    }
+    body span.banner-text {
+      padding-left: 0;
+      display: block;
+      padding-right: 70px;
+      position: relative;
+    }
+    span.banner-arrow-right {
+      padding: 0;
+      position: absolute;
+      right: 10px;
+      top: -95px;
+    }
+    body .forrester-banner .banner-text span.title {
+      display: block;
+      line-height: 28px;
+    }
+    body .forrester-banner .banner-text span.desc {
+      display: block;
+      height: auto;
+      line-height: 22px;
+    }
+    body .bottom-hero-promo .container {
+      padding: 0;
+    }
+    body .bottom-hero-promo .container .span4 {
+      border: 1px solid white;
+      margin-bottom: 0;
+      padding: 20px 0;
+    }
+    body .bottom-hero-promo {
+      border: none;
+      box-shadow: none;
+    }
+  }
+  @media only screen and (max-device-width:767px) and (orientation:landscape) {
+    span.banner-arrow-right {
+      padding: 0;
+      position: absolute;
+      right: 0;
+      top: -70px;
+    }
+    body .header-hero-wrapper.home-rev {
+      background-position: top;
+    }
+  }
+</style>
+<div class="call-out-hero-home" id="wt8_wtcall_out_hero">
+  <div class="container title-subtitle">
+    <div class="row">
+      <div class="span12" style="margin-left: 0;padding: 0 25px;">
+        <h1 class="slogan">
+          Build Enterprise-Grade Apps Fast <br>
+          <span class="words-wrapper">
+          	   <h3 class="is-visible">...really, much faster</h3>
+          	   <h3>... you probably should see this</h3>
+          	   <h3>... could make the Kessel Run in less than twelve parsecs</h3>
+          	   <h3>... how about a native mobile app in 4 weeks?</h3>
+          	   <h3>... apps that go to 11 </h3>
+          	   <h3>...finally, fast meets enterprise-grade </h3>
+          </span>
+        </h1>
+        <script>
+        	var isLast = function(word) {
+              return $(word).next().length > 0 ? false : true;
+            }
+            var getNext = function(word) {
+              return $(word).next();
+            }
+            var getVisible = function () {
+              return document.getElementsByClassName('is-visible');
+            }
+            var getFirst =  function() {
+              var node = $('.words-wrapper').children().first();
+              return node;
+            }
+            var switchWords = function(current, next) {
+              $(current).removeClass('is-visible').addClass('is-hidden');
+              $(next).removeClass('is-hidden').addClass('is-visible');
+            }
+            var getStarted = function() {
+              //We start by getting the visible element and its sibling
+              var first = getVisible();
+              var next = getNext(first);
+              //If our element has a sibling, it's not the last of the list. We switch the classes
+              if (next.length !== 0) {
+                 switchWords(first,next);
+              } else {
+                //The element is the last of the list. We remove the visible class of the current element
+                $(first).removeClass('is-visible').addClass('is-hidden');
+                //And we get the first element of the list, and we give it the visible class. And it starts again.
+                var newEl = getFirst();
+                $(newEl).removeClass('is-hidden').addClass('is-visible');
+              }
+            }
+            var init = function() {
+              setInterval(function() {getStarted()}, 5000);
+            }
+            init();
+        </script>
+        <div class="hero-home-buttons">
+          <a class="osbtn osbtn-red" href="/platform/"><span>Try Now for Free</span> </a> <a class="osbtn osbtn-white" href="/get-started/"><span>Explore the platform</span> </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="align-bottom">
+    <div class="call-out-hero-ad">
+      <div class="container">
+        <h3>
+          The #1 low-code platform for digital transformation - build mobile apps, web portals, mission critical systems and more. <a>Download Forrester Report</a>
+        </h3>
+      </div>
+    </div>
+    <div class="see-more-arrow">
+      <div class="arrow align-center">
+        <img src="/cms_backoffice/assets/20160412140429/arrow-right" />
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+ $('.see-more-arrow .arrow').click(function () {
+        $('body,html').animate({
+            scrollTop: $('.header-hero-wrapper.home').outerHeight()
+        }, 800);
+});
+</script>

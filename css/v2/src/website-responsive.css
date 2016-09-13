@@ -202,7 +202,7 @@ v=201510021536
 
     .header-hero-wrapper .navigation-outter{
         background: 0;
-        position: fixed;
+        position: fixed !important;
         width: 100%;
         z-index: 999;
     }
@@ -704,13 +704,17 @@ v=201510021536
         background-color: #000;
         line-height: 50px;
         vertical-align: middle;
-        border-bottom: 1px solid #969494;
+        border-bottom: 1px solid #fff;
+        z-index: 1;
     }
     .mobile-search-body-overlay {
-        background-color: gray;
+        background-color: #000;
+        position: absolute;
         opacity: .5;
-        height: 100%;
-        width: 100%
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
     input.search {
         background-color: transparent;
@@ -720,13 +724,15 @@ v=201510021536
         width: 100%;
         display: table-cell;
         vertical-align: middle;
-        font-size: 16px
+        font-size: 16px;
+        z-index: 1;
     }
     .mobile-search-input {
         margin-top: 7px;
         position: absolute;
         right: 90px;
-        left: 7px
+        left: 7px;
+        z-index: 1;
     }
     .mobile-search-cancel a {
         color: #CCC;
@@ -743,7 +749,6 @@ v=201510021536
     }
     .mobile-body-no-scroll {
         overflow: hidden;
-        position: fixed;
         width: 100%;
     }
     .MenuSlider_Toggler {
