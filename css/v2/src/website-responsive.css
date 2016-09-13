@@ -289,7 +289,7 @@ v=201510021536
 
     .home .call-out-hero-home .hero-home-buttons{
         position: relative;
-        padding: 20px 0;
+        /*padding: 20px 0;*/
     }
 
     .home .call-out-hero-home .hero-home-buttons a.osbtn-red,
@@ -1513,13 +1513,22 @@ v=201510021536
     }
 
     h1.slogan h3{
-        margin: 0;
-        white-space: normal;
+        margin: 0;      
     }
 
     h1.slogan .words-wrapper{
         padding-top: 15px;
         min-height: 105px;
+    }
+
+    h1.slogan h3,
+    h3.get-out-subtitle{
+        font-size: 21px;
+        white-space: normal;
+    }
+
+    h3.get-out-subtitle:last-child{
+        font-size: 18px;
     }
 
     position: absolute;
