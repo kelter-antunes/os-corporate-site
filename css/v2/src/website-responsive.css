@@ -314,6 +314,7 @@ v=201510021536
     }
     .what-is-it .animated-section{
         padding: 40px 0;
+        padding-bottom: 0;
     }
 
     .what-is-it .animated-section .content-box{
@@ -444,7 +445,7 @@ v=201510021536
     }
 
     .photo-quotes{
-        padding: 40px 20px 30px 20px;
+        padding: 30px 20px;
         background-image: url(/cms_backoffice/assets/20160830111252/bg-blur-mob-red);
         background-color: #c20;
         background-size: cover;
@@ -469,9 +470,9 @@ v=201510021536
 
     .photo-quotes h3 {
         color: #fff;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 100;
-        line-height: 36px;
+        line-height: 30px;
     }
 
     .photo-quotes .quote{
@@ -483,6 +484,10 @@ v=201510021536
         align-items: center;
     }
 
+    .photo-quotes .quote .span12{
+       margin-bottom: 0;
+    }
+
     .photo-quotes .quote .span12:last-child{
         display: -webkit-box;
         display: -ms-flexbox;
@@ -490,7 +495,11 @@ v=201510021536
     }
 
     .photo-quotes .m-fluid .m-item{
-        min-height: 400px;
+        min-height: 290px;
+    }
+
+    .photo-quotes .m-scooch-controls{
+        padding: 0;
     }
 
     .photo-quotes .m-scooch-bulleted a{
