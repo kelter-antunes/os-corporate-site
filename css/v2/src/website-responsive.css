@@ -195,7 +195,7 @@ v=201510021536
     }
     .navigation-bar-tail-logo, 
     .header-hero-wrapper.home .navigation-bar-tail-logo {
-        margin-left: 15px;
+        margin-left: 0;
         margin-top: 7px;
         padding: 5px 0;
     }
