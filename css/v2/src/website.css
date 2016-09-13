@@ -8454,7 +8454,109 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     cursor:pointer;
 }
 
+/* PLATFORM PAGE sep2016 */
 
+.welcome-to-outsystems{
+    background-color: #f0f3f5;
+    background-image: url(/cms_backoffice/assets/20160913161312/low-code);
+    background-size: cover;
+}
+
+.welcome-to-outsystems .welcome-to-os-nav{
+    opacity: 0.7;
+    background-color: #000;
+    height: 60px;
+}
+
+.welcome-to-outsystems .welcome-to-os-nav ul.page-nav{
+    display: flex;
+}
+
+.welcome-to-outsystems .welcome-to-os-nav ul.page-nav li{
+    display: inline;
+    width: auto;
+    position: relative;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    margin: 0 auto;
+}
+
+.welcome-to-outsystems .welcome-to-os-nav ul.page-nav li a{
+    font-family: myriad-pro,arial,sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    margin: 20px 0;
+    padding: 0px 10px;
+    line-height: 18px;
+    border-right: 1px solid #d3dadb;
+}
+
+.welcome-to-outsystems .welcome-to-os-nav ul.page-nav li.active{
+    border-bottom: 2px solid #c20;
+}
+
+.welcome-to-outsystems .welcome-to-os-nav ul.page-nav li a:hover{
+    text-decoration: none;
+}
+
+.welcome-to-outsystems .welcome-to-os-nav ul.page-nav li:last-child a{
+    border-right: none;
+}
+
+.welcome-to-outsystems .welcome-to-os-arrow{
+    height: 40px;
+    padding: 35px 0;
+}
+
+
+.welcome-to-outsystems .welcome-to-os-arrow .arrow{
+    cursor: pointer;
+    -webkit-animation-name: upandDown;
+    animation-name: upandDown;
+    -webkit-animation-duration: 1000ms;
+    animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-transform: translateY(0) translateZ(0);
+    transform: translateY(0) translateZ(0);
+}
+
+.welcome-to-outsystems .welcome-to-os-arrow .arrow img{
+    left: 48%;
+    padding: 20px;
+    bottom: -60px;
+    position: absolute;
+}
+
+
+.unbeatable-speedf0f3f5.low-code,
+.real-time-performance
+{
+    background-color: #fff;
+    padding: 70px 0;
+}
+
+.integrate-with-everything,
+.enterprise-grade{
+    background-color: #f0f3f5;
+    padding: 70px 0;
+}
+
+.great-ux-by-default{
+    background-color: #fff;
+    background-image: url();
+    background-size: cover;
+    padding: 70px 0;
+}
+
+.unbreakable-deployment{
+   opacity: 0.75;
+   background-color: #130e0b;
+   padding: 70px 0;
+}
 
 
 @media only screen and (max-device-width: 767px) and (orientation: portrait){
@@ -8999,6 +9101,6 @@ line-height: 20px;
 @media  (max-width:979px) {
 .SliderList .bx-wrapper .bx-controls-direction a {
    display: none;
-}
+    }
 }
 /*End case-studies*/
