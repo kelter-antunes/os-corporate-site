@@ -6283,8 +6283,7 @@ h1.slogan .words-wrapper {
   width: 100%;
 }
 
-h1.slogan h3,
-h3.get-out-subtitle{
+h1.slogan h3{
   opacity:0;
   display: inline-block;
   position: absolute;
@@ -6300,7 +6299,13 @@ h3.get-out-subtitle{
 }
 
 h3.get-out-subtitle{
-    opacity: 1;
+    font-family: myriad-pro, Arial, sans-serif;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    white-space: nowrap;
+    line-height: 30px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.61);
 }
 
 h1.slogan h3.is-visible {
