@@ -251,7 +251,12 @@ $(function() {
 
 /** Sticky second level menu **/
 $(document).ready(function() {
+    FixStickyTopMenu();
+    FixStickyBottomMenu();
+    
+});
 
+function FixStickyTopMenu(){
     var pathname = window.location.pathname;
 
     if (!$.browser.mobile) {
@@ -283,46 +288,41 @@ $(document).ready(function() {
         };
         $(window).load(fixMenu).scroll(fixMenu);
 
-
-
-
         $('.second-level-menu-wrapper .sub-navigation-bar a[href="' + pathname + '"]').addClass('active');
 
+    }
+}
 
-        /*
-                $('.sub-navigation-bar a').each(function(index, el) {
-                    var currEl = $(el);
+function FixStickyBottomMenu(){
+    var pathname = window.location.pathname;
 
-                    if (
-                        (pathname === '/platform/' && pathname === currEl.attr('href')) ||
-                        (pathname === '/customers/' && pathname === currEl.attr('href')) ||
-                        (pathname === '/partners/' && pathname === currEl.attr('href')) ||
-                        (pathname === '/platform/whats-new-in-platform-9-amsterdam/' && pathname === currEl.attr('href')) ||
-                        (pathname === '/platform/whats-new-in-platform-9-bali/' && pathname === currEl.attr('href')) ||
-                        (pathname === '/platform/sap/' && pathname === currEl.attr('href'))
+    if (!$.browser.mobile) {
 
+        var sticky = $('.welcome-to-os-nav');
+        var $body = $('body');
+        if (sticky.length == 0) {
+            return;
+        }
+        var top = -1;
+        var fixMenuBtm = function() {
+            if (top == -1) {
+                top = sticky.offset().top;
+            }
+            var scroll = $(window).scrollTop();
 
-                    ) {
-                        currEl.addClass('active');
+            if (scroll >= top) {
+                sticky.addClass('fixed');
 
-                    } else if ((currEl.attr('href') !== '/platform/sap/' &&
-                            currEl.attr('href') !== '/platform/' &&
-                            currEl.attr('href') !== '/customers/' &&
-                            currEl.attr('href') !== '/partners/' &&
-                            currEl.attr('href') !== '/platform/whats-new-in-platform-9-amsterdam/' &&
-                            currEl.attr('href') !== '/platform/whats-new-in-platform-9-bali/') &&
-                        pathname.indexOf(currEl.attr('href')) !== -1) {
-                        currEl.addClass('active');
+            } else {
+                sticky.removeClass('fixed');
+            }
+        };
+        $(window).load(fixMenuBtm).scroll(fixMenuBtm);
 
-
-                    }
-                });
-        */
+        $('.welcome-to-os-nav .page-nav li a[href="' + window.location.hash + '"]').addClass('active');
 
     }
-});
-
-
+}
 
 function IsEmail(email) {
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;

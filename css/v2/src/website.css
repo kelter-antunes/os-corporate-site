@@ -8456,16 +8456,37 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 
 /* PLATFORM PAGE sep2016 */
 
-.welcome-to-outsystems{
+.welcome-to-outsystems{    
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.welcome-to-outsystems .welcome-to-os-hero{
     background-color: #f0f3f5;
     background-image: url(/cms_backoffice/assets/20160913161312/low-code);
     background-size: cover;
+    position: absolute;
+    top: 80px;
+    bottom: 60px;
+    width: 100%;
 }
 
 .welcome-to-outsystems .welcome-to-os-nav{
-    opacity: 0.7;
+    opacity: .7;
     background-color: #000;
     height: 60px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.welcome-to-outsystems .welcome-to-os-nav.fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    padding-bottom: 0;
 }
 
 .welcome-to-outsystems .welcome-to-os-nav ul.page-nav{
@@ -8509,9 +8530,10 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 .welcome-to-outsystems .welcome-to-os-arrow{
     height: 40px;
     padding: 35px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 60px;
 }
-
-
 .welcome-to-outsystems .welcome-to-os-arrow .arrow{
     cursor: pointer;
     -webkit-animation-name: upandDown;
