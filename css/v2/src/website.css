@@ -8555,51 +8555,115 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 
 .platform-page-content h2{
     color: #57666f;
-    font-family: "Myriad Set Pro";
-    font-size: 35px;
+    font-family: myriad-pro,arial,sans-serif;
+    font-size: 38px;
     font-weight: 100;
-    line-height: 38px;
+    line-height: 32px;
+    margin-bottom: 30px;
 }
 
 .platform-page-content .caption{
     color: #596669;
-    font-family: "Myriad Set Pro";
-    font-size: 16px;
+    font-family: myriad-pro,arial,sans-serif;
+    font-size: 20px;
     font-weight: 100;
     letter-spacing: -0.23px;
+    line-height: 26px;
+}
+
+.platform-page-content a{
+    color: #08c;
+    font-family: myriad-pro,arial,sans-serif;
+    font-size: 16px;
     line-height: 24px;
 }
 
 .platform-page-content .title{
     color: #596669;
-    font-family: "Myriad Set Pro";
-    font-size: 20px;
+    font-family: myriad-pro,arial,sans-serif;
+    font-size: 22px;
     line-height: 22px;
+    line-height: 28px;
+    padding: 0 60px;
 }
 
 .platform-page-content .description{
     color: #596669;
-    font-family: "Myriad Set Pro";
+    font-family: myriad-pro,arial,sans-serif;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 400;
     letter-spacing: -0.23px;
     line-height: 24px;
+    padding: 20px 0;
 }
 
 .platform-page-content ul li{
     color: #596669;
-    font-family: "Myriad Set Pro";
+    font-family: myriad-pro,arial,sans-serif;
     font-size: 16px;
     font-weight: 100;
     letter-spacing: -0.23px;
     line-height: 24px;
+    margin: 18px 0;
+}
+
+.platform-page-content .unbeatable-speed h2{
+    padding: 0 100px;
+}
+
+.platform-page-content .unbeatable-speed a.spicy{
+    padding: 5px 10px;
+}
+
+.platform-page-content .unbeatable-speed a.spicy img{
+    position: absolute;
+}
+
+.platform-page-content .unbeatable-speed a.spicy span{
+    margin-left: 25px;
+}
+
+.platform-page-content .unbeatable-speed .animation {
+    position: relative;
+}
+
+.platform-page-content .unbeatable-speed .animation img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.platform-page-content .enterprise-grade ul{
+    display: flex;
+    list-style: none;
+}
+
+.platform-page-content .enterprise-grade ul li{
+    margin:auto;
+}
+
+.platform-page-content .great-ux-by-default{
+    background-color: #460101;
+    background-image: url(/cms_backoffice/assets/20160914161644/background1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.platform-page-content .great-ux-by-default h2,
+.platform-page-content .great-ux-by-default .caption,
+.platform-page-content .great-ux-by-default .title,
+.platform-page-content .great-ux-by-default .description{
+    color: #fff;
 }
 
 .platform-page-content ul li.spicy{
     font-weight: 400;
 }
 
-.unbeatable-speed.low-code,
+.unbeatable-speed,
 .real-time-performance,
 .low-code
 {

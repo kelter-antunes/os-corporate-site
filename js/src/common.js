@@ -330,16 +330,15 @@ function FixStickyBottomMenu(){
 
 function ToggleStickyBottomMenu(){
      //@author sbe     
-     if (!$.browser.mobile) {
-        var scrl = $(window).scrollTop();
-        var sections = [];
-        $('.welcome-to-os-nav .page-nav li a').each(function(i){
-            sections.push($(this).attr('href'));
-        });                  
+     if (!$.browser.mobile) {  
 
+            var toggleClass = function(){
+            var scrl = $(window).scrollTop();
+            var sections = [];
+            $('.welcome-to-os-nav .page-nav li a').each(function(i){
+                sections.push($(this).attr('href'));
+            });   
 
-        var toggleClass = function(){
-          
             $.each(sections, function( index, value) {
                 var sectionsLenght = sections.length;
                 var currSection = $('div'+value);
