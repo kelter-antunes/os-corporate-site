@@ -252,8 +252,7 @@ $(function() {
 /** Sticky second level menu **/
 $(document).ready(function() {
     FixStickyTopMenu();
-    FixStickyBottomMenu();
-    
+    FixStickyBottomMenu();    
 });
 
 function FixStickyTopMenu(){
@@ -310,16 +309,20 @@ function FixStickyBottomMenu(){
             }
             var scroll = $(window).scrollTop();
 
+           
+             if(scroll <= 50){
+                $('.page-nav li').removeClass('active');
+            }
+           
             if (scroll >= top) {
                 sticky.addClass('fixed');
-
-            } else {
-                sticky.removeClass('fixed');
+            } else{
+                sticky.removeClass('fixed');           
             }
         };
         $(window).load(fixMenuBtm).scroll(fixMenuBtm);
 
-        $('.welcome-to-os-nav .page-nav li a[href="' + window.location.hash + '"]').addClass('active');
+        $('.welcome-to-os-nav .page-nav li a[href="' + window.location.hash + '"]').parent().addClass('active');
 
     }
 }
