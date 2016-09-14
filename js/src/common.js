@@ -252,7 +252,8 @@ $(function() {
 /** Sticky second level menu **/
 $(document).ready(function() {
     FixStickyTopMenu();
-    FixStickyBottomMenu();    
+    FixStickyBottomMenu(); 
+    ToggleStickyBottomMenu();   
 });
 
 function FixStickyTopMenu(){
@@ -324,6 +325,37 @@ function FixStickyBottomMenu(){
 
         $('.welcome-to-os-nav .page-nav li a[href="' + window.location.hash + '"]').parent().addClass('active');
 
+    }
+}
+
+function ToggleStickyBottomMenu(){
+     //@author sbe     
+     if (!$.browser.mobile) {
+        var scrl = $(window).scrollTop();
+        var sections = [];
+        $('.welcome-to-os-nav .page-nav li a').each(function(i){
+            sections.push($(this).attr('href'));
+        });                  
+
+
+        var toggleClass = function(){
+          
+            $.each(sections, function( index, value) {
+                var sectionsLenght = sections.length;
+                var currSection = $('div'+value);
+                var top = currSection.offset().top-60;
+                var bottom = top + currSection.outerHeight();
+
+                if(scrl >= top && scrl < bottom){  
+                    console.log('%o %o %o %o', value, top, scrl, bottom);    
+                    $('.page-nav li').removeClass('active');    
+                    $('.page-nav li a[href="'+value+'"]').parent().addClass('active');
+                    window.location.hash = value;
+                }
+            });
+       }
+
+        $(window).load(toggleClass).scroll(toggleClass);
     }
 }
 

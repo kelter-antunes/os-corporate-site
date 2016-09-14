@@ -8553,9 +8553,55 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     position: absolute;
 }
 
+.platform-page-content h2{
+    color: #57666f;
+    font-family: "Myriad Set Pro";
+    font-size: 35px;
+    font-weight: 100;
+    line-height: 38px;
+}
 
-.unbeatable-speedf0f3f5.low-code,
-.real-time-performance
+.platform-page-content .caption{
+    color: #596669;
+    font-family: "Myriad Set Pro";
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: -0.23px;
+    line-height: 24px;
+}
+
+.platform-page-content .title{
+    color: #596669;
+    font-family: "Myriad Set Pro";
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.platform-page-content .description{
+    color: #596669;
+    font-family: "Myriad Set Pro";
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: -0.23px;
+    line-height: 24px;
+}
+
+.platform-page-content ul li{
+    color: #596669;
+    font-family: "Myriad Set Pro";
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: -0.23px;
+    line-height: 24px;
+}
+
+.platform-page-content ul li.spicy{
+    font-weight: 400;
+}
+
+.unbeatable-speed.low-code,
+.real-time-performance,
+.low-code
 {
     background-color: #fff;
     padding: 70px 0;
