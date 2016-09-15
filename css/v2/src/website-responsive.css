@@ -438,6 +438,7 @@ v=201510021536
 
     .what-is-it .our-services{
         text-align: center;
+        padding: 0 40px;
     }
 
     .what-is-it .our-customers ul.our-services li:nth-child(3):before{

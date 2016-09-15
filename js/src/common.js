@@ -332,30 +332,43 @@ function ToggleStickyBottomMenu(){
      //@author sbe     
      if (!$.browser.mobile) {  
 
-            var toggleClass = function(){
-            var scrl = $(window).scrollTop();
-            var sections = [];
-            $('.welcome-to-os-nav .page-nav li a').each(function(i){
-                sections.push($(this).attr('href'));
-            });   
+        $(document).on("scroll", onScroll);
 
-            $.each(sections, function( index, value) {
-                var sectionsLenght = sections.length;
-                var currSection = $('div'+value);
-                var top = currSection.offset().top-60;
-                var bottom = top + currSection.outerHeight();
+        $('.page-nav li a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            $(document).off("scroll");
 
-                if(scrl >= top && scrl < bottom){  
-                    console.log('%o %o %o %o', value, top, scrl, bottom);    
-                    $('.page-nav li').removeClass('active');    
-                    $('.page-nav li a[href="'+value+'"]').parent().addClass('active');
-                    window.location.hash = value;
+            $('a').each(function () {
+                $(this).parent().removeClass('active');
+            })
+            $(this).parent().addClass('active');
+
+            var target = this.hash;
+            $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top+2
+            }, 500, 'swing', function () {
+                window.location.hash = target;
+                $(document).on("scroll", onScroll);
+            });
+        });
+
+        function onScroll(event){
+            var scrollPosition = $(document).scrollTop();
+            $('.page-nav li a').each(function () {
+                var currentLink = $(this);
+                var refElement = $(currentLink.attr("href"));
+                if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+                    $('.page-nav li').removeClass("active");
+                    currentLink.parent().addClass("active");
+                    window.location.hash = currentLink.attr("href");
+                }
+                else{
+                    currentLink.parent().removeClass("active");
                 }
             });
-       }
-
-        $(window).load(toggleClass).scroll(toggleClass);
-    }
+        }
+    }    
 }
 
 function IsEmail(email) {

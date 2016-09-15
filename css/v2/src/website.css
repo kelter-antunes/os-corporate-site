@@ -8473,7 +8473,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 .welcome-to-outsystems .welcome-to-os-nav{
-    opacity: .7;
+    opacity: .8;
     background-color: #000;
     height: 60px;
     position: absolute;
@@ -8607,6 +8607,65 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     margin: 18px 0;
 }
 
+@-webkit-keyframes righttoleft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(0) translateY(0) translateZ(0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(-30%) translateY(0) translateZ(0);
+    }
+}
+
+@keyframes righttoleft {
+    0% {
+        opacity: 0;
+        transform: translateX(0) translateY(0) translateZ(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-30%) translateY(0) translateZ(0);
+    }
+}
+
+.platform-page-content .unbeatable-speed .animate {
+    -webkit-animation-duration: 1000ms;
+    animation-duration: 1000ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    visibility: hidden;
+    will-change: transform;
+}
+
+.platform-page-content .unbeatable-speed .quote-section{
+    padding: 25px 0;
+    border-bottom: 1px solid #d5d5d5;
+    border-top: 1px solid #d5d5d5;
+}
+
+.platform-page-content .unbeatable-speed .text{
+    color: #596669;
+    font-family: myriad-pro,arial,sans-serif;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: 100;
+    padding-right: 175px;
+}
+
+.platform-page-content .unbeatable-speed .author{
+    color: #596669;
+    font-family: myriad-pro,arial,sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: -0.23px;
+    line-height: 24px;
+    padding-top: 10px;
+}
+
+
 .platform-page-content .unbeatable-speed h2{
     padding: 0 100px;
 }
@@ -8629,11 +8688,16 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 
 .platform-page-content .unbeatable-speed .animation img{
     position: absolute;
-    height: 100%;
-    width: 100%;
-
+    height: 800px;
+    margin-top: -235px;
+    left: 35px;
 }
 
+.platform-page-content .unbeatable-speed .right-to-left {
+    -webkit-animation-name: righttoleft;
+    animation-name: righttoleft;
+    visibility: visible !important;
+}
 
 .platform-page-content .enterprise-grade ul{
     display: flex;
@@ -8650,14 +8714,102 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+.platform-page-content .great-ux-by-default h3{
+    color: #fff;
+    font-family: myriad-pro,arial,sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 27px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
+
+.platform-page-content .great-ux-by-default .animated-section{
+    padding: 250px 0;
+    z-index: 0;
+}
+
+.platform-page-content .great-ux-by-default .animated-section .span4{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -300px;
+    z-index: 1;
+}
+
+.platform-page-content .great-ux-by-default .animated-section img{
+    position: relative;
+}
+
+
+@-webkit-keyframes bottomup {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(0) translateY(0) translateZ(0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0) translateY(300px) translateZ(0);
+    }
+}
+
+@keyframes bottomup {
+    0% {
+        opacity: 0;
+        transform: translateX(0) translateY(0) translateZ(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) translateY(300px) translateZ(0);
+    }
+}
+
+
+.platform-page-content .great-ux-by-default .animate{
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    visibility: hidden;
+    will-change: transform;
+    -webkit-animation-name: bottomup;
+    animation-name: bottomup;
+    visibility: visible !important;
+}
+
+.platform-page-content .great-ux-by-default .animate.bottom-up-1{
+    -webkit-animation-duration: 700ms;
+    animation-duration: 700ms;
+}
+.platform-page-content .great-ux-by-default .animate.bottom-up-2{
+    -webkit-animation-duration: 1000ms;
+    animation-duration: 1000ms;
+}
+.platform-page-content .great-ux-by-default .animate.bottom-up-3 {
+    -webkit-animation-duration: 1200ms;
+    animation-duration: 1200ms;
+}
+
+.platform-page-content .great-ux-by-default .scnd-caption{
+    padding: 0 200px;
 }
 
 .platform-page-content .great-ux-by-default h2,
 .platform-page-content .great-ux-by-default .caption,
 .platform-page-content .great-ux-by-default .title,
-.platform-page-content .great-ux-by-default .description{
+.platform-page-content .great-ux-by-default .description,
+.platform-page-content .great-ux-by-default .scnd-caption,
+.platform-page-content .great-ux-by-default a,
+.platform-page-content .unbreakable-deployment h2,
+.platform-page-content .unbreakable-deployment .caption,
+.platform-page-content .unbreakable-deployment ul li{
     color: #fff;
 }
+
 
 .platform-page-content ul li.spicy{
     font-weight: 400;
