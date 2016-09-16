@@ -8459,14 +8459,17 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 .welcome-to-outsystems{    
     position: absolute;
     width: 100%;
+    top: 0;
     bottom: 0;
 }
 
 .welcome-to-outsystems .welcome-to-os-hero{
     position: absolute;
-    top: 10px;
+    top: 80px;
     bottom: 60px;
     width: 100%;
+    background: #000;
+    opacity: 0.5;
 }
 
 .welcome-to-outsystems .welcome-to-os-nav{
