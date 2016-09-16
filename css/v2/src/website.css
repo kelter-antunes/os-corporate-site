@@ -8463,17 +8463,13 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 .welcome-to-outsystems .welcome-to-os-hero{
-    background-color: #f0f3f5;
-    background-image: url(/cms_backoffice/assets/20160913161312/low-code);
-    background-size: cover;
     position: absolute;
-    top: 80px;
+    top: 10px;
     bottom: 60px;
     width: 100%;
 }
 
 .welcome-to-outsystems .welcome-to-os-nav{
-    opacity: .8;
     background-color: #000;
     height: 60px;
     position: absolute;
@@ -8569,6 +8565,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     font-weight: 100;
     letter-spacing: -0.23px;
     line-height: 26px;
+    padding: 0 100px;
 }
 
 .platform-page-content a{
@@ -8607,6 +8604,10 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     margin: 18px 0;
 }
 
+.platform-page-content strong {
+    font-weight: 400;
+}
+
 @-webkit-keyframes righttoleft {
     0% {
         opacity: 0;
@@ -8640,13 +8641,19 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     will-change: transform;
 }
 
-.platform-page-content .unbeatable-speed .quote-section{
+.platform-page-content .unbeatable-speed .quote-section,
+.platform-page-content .enterprise-grade .enterprise-grade-facts{
     padding: 25px 0;
     border-bottom: 1px solid #d5d5d5;
     border-top: 1px solid #d5d5d5;
 }
 
-.platform-page-content .unbeatable-speed .text{
+.platform-page-content .enterprise-grade .title{
+    padding: 0;
+}
+
+.platform-page-content .unbeatable-speed .text,
+.platform-page-content .enterprise-grade .text{
     color: #596669;
     font-family: myriad-pro,arial,sans-serif;
     line-height: 30px;
@@ -8708,6 +8715,18 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     margin:auto;
 }
 
+.platform-page-content ul li.spicy img
+{
+    position: absolute; 
+    position: absolute;
+    left: -25px;
+    max-width: 16px; 
+}
+
+.platform-page-content .integrate-with-everything ul li.spicy{
+    font-weight: 400;
+}
+
 .platform-page-content .great-ux-by-default{
     background-color: #460101;
     background-image: url(/cms_backoffice/assets/20160914161644/background1);
@@ -8721,7 +8740,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 .platform-page-content .great-ux-by-default h3{
     color: #fff;
     font-family: myriad-pro,arial,sans-serif;
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 100;
     line-height: 27px;
     border-top: 1px solid #fff;
@@ -8754,7 +8773,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 
     100% {
         opacity: 1;
-        -webkit-transform: translateX(0) translateY(300px) translateZ(0);
+        -webkit-transform: translateX(0) translateY(-300px) translateZ(0);
     }
 }
 
@@ -8766,7 +8785,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 
     100% {
         opacity: 1;
-        transform: translateX(0) translateY(300px) translateZ(0);
+        transform: translateX(0) translateY(-300px) translateZ(0);
     }
 }
 
@@ -8798,6 +8817,15 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     padding: 0 200px;
 }
 
+.platform-page-content .great-ux-by-default .learn-more-cta {
+    margin: 20px 0;
+}
+
+.platform-page-content .great-ux-by-default .learn-more-cta img{
+    margin-top: -4px;
+    padding: 0 5px;
+}
+
 .platform-page-content .great-ux-by-default h2,
 .platform-page-content .great-ux-by-default .caption,
 .platform-page-content .great-ux-by-default .title,
@@ -8811,8 +8839,35 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 
-.platform-page-content ul li.spicy{
-    font-weight: 400;
+.platform-page-content .low-code ul li.spicy,
+.platform-page-content .integrate-with-everything ul li.spicy,
+.platform-page-content .unbreakable-deployment ul li.spicy,
+.platform-page-content .real-time-performance ul li.spicy{
+    list-style: none;    
+    position: relative;
+}
+
+.platform-page-content .low-code ul {
+    padding: 0 20px;
+}
+
+.platform-page-content .low-code ul li,
+.platform-page-content .unbreakable-deployment ul li,
+.platform-page-content .real-time-performance ul li {
+    margin: 30px 0;
+}
+
+.platform-page-content .low-code img{
+    max-width: 280px;
+}
+
+.platform-page-content .unbreakable-deployment ul,
+.platform-page-content .real-time-performance ul{
+    padding: 0 15px;
+}
+
+.platform-page-content .real-time-performance .caption{
+    padding: 0 50px;
 }
 
 .unbeatable-speed,

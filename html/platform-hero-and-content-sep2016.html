@@ -29,16 +29,26 @@
           <div class="description">
             Deliver apps with one click and make changes just as rapidly. OutSystems automatically tracks all changes and handles database scripts and deployment processes to make your life a little bit easier.
           </div>
-          <a href="#"><span>See what happens when I click the button?</span></a>
+          <div class="learn-more-cta">
+            <a href="#"><span>See what happens when I click the button?</span> <img src="/cms_backoffice/assets/20160916085647/_blank" /> </a>
+          </div>
         </div>
         <div class="span4 animation animate" data-transition="right-to-left">
           <img src="/cms_backoffice/assets/20160914174613/service_studio" /> 
           <script type="text/javascript">
               $(window).scroll(function() {  
                    var topOfWindow = $(window).scrollTop(); 
-                   $('.animate').each(function () {      
+                   $('.unbeatable-speed .animate').each(function () {      
                       var imagePos = $(this).offset().top;
                       if (imagePos < topOfWindow + 600) {
+                          var effect = $(this).data('transition');
+                          $(this).addClass(effect);
+                      }
+                  });
+                  $('.great-ux-by-default .animate').each(function () {      
+                      var imagePos = $(this).offset().top;
+                      if (imagePos == topOfWindow) {
+                          console.log('animate screens');
                           var effect = $(this).data('transition');
                           $(this).addClass(effect);
                       }
@@ -81,13 +91,15 @@
       </div>
       <div class="row top30 quote-section">
         <div class="span2">
-          <img src="" />
+          <img src="/cms_backoffice/assets/20160915133901/quote_img" />
         </div>
         <div class="span10">
           <div class="text">
-          We reduced our development hours by 75% and got to market 
-3x faster using OutSystems.”</div>
-          <div class="author">David Lightfoot -  VP of Product Management at FICO </div>
+            We reduced our development hours by 75% and got to market <strong>3x faster</strong> using OutSystems.&rdquo;
+          </div>
+          <div class="author">
+            David Lightfoot - VP of Product Management at FICO
+          </div>
         </div>
       </div>
     </div>
@@ -114,7 +126,10 @@
             <li>Connect with popular cloud service</li>
             <li>Use OutSystems with existing databases</li>
             <li>Integrate OutSystems with your enterprise applications</li>
-            <li class="spicy">Integrate with SOAP web services and REST APIs with no coding. <a class="watch-video-cta" href="#">Watch the video</a></li>
+            <li class="spicy">
+              <img src="/cms_backoffice/assets/20160914161344/pepper"/>
+              <span>Integrate with SOAP web services and REST APIs with no coding. </span><a class="watch-video-cta" href="#">Watch the video</a>
+            </li>
           </ul>
         </div>
         <div class="span7">
@@ -123,7 +138,12 @@
       </div>
       <div class="row top30">
         <div class="span12 align-center">
-          <a class="learn-more-cta" href="#">Learn more about integration with OutSystems</a>
+          <div class="learn-more-cta">
+            <a href="#">
+              <span>Go deeper: Learn more about integration with OutSystems</span> 
+              <img src="/cms_backoffice/assets/20160916085647/_blank" /> 
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -142,37 +162,37 @@
       </div>
       <div class="row top30">
         <div class="span2 align-center">
-          <img src="" />
+          <img src="/cms_backoffice/assets/20160915152327/001" />
           <div class="description">
             Out-of-the-box themes, patterns and controls for beautiful mobile and web experiences
           </div>
         </div>
         <div class="span2 align-center">
-          <img src="" />
+          <img src="/cms_backoffice/assets/20160915152327/002" />
           <div class="description">
             Sub-80 millisecond response times for smooth-as-butter UIs
           </div>
         </div>
         <div class="span2 align-center">
-          <img src="" />
+          <img src="/cms_backoffice/assets/20160915152327/003" />
           <div class="description">
             Drag-and-drop editor with pixel-perfect control
           </div>
         </div>
         <div class="span2 align-center">
-          <img src="" />
+          <img src="/cms_backoffice/assets/20160915152327/004" />
           <div class="description">
             Develop once for all form factors with a visual, responsive framework
           </div>
         </div>
         <div class="span2 align-center">
-          <img src="" />
+          <img src="/cms_backoffice/assets/20160915152327/005" />
           <div class="description">
             See results immediately and test on-device
           </div>
         </div>
         <div class="span2 align-center">
-          <img src="" />
+          <img src="/cms_backoffice/assets/20160915152327/006" />
           <div class="description">
             Simple extensibility so you can include your own UI code
           </div>
@@ -184,10 +204,23 @@
             Check out the mobile UI gallery
           </h3>
           <div class="scnd-caption">
-            We analyzed the world’s leading apps and crafted over 60 beautiful UX widgets that can be added to an app with just a few clicks.
+            We analyzed the world&rsquo;s leading apps and crafted over 60 beautiful UX widgets that can be added to an app with just a few clicks.
           </div>
-          <a class="learn-more-cta" href="#">Learn more about SILK UI</a>
+          <div class="learn-more-cta">
+            <a href="#"><span>Go deeper: Learn more about SILK UI</span> <img src="/cms_backoffice/assets/20160916085647/_blank" /> </a>
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="row top30 animated-section">
+      <div class="span4">
+        <img class="animate" data-transition="bottom-up-2" src="/cms_backoffice/assets/20160916084302/left_screen1" />
+      </div>
+      <div class="span4" style="z-index: 2">
+        <img class="animate" data-transition="bottom-up-1" src="/cms_backoffice/assets/20160916084250/first_screen1" />
+      </div>
+      <div class="span4">
+        <img class="animate" data-transition="bottom-up-3" src="/cms_backoffice/assets/20160916084242/right_screen1" />
       </div>
     </div>
   </div>
@@ -206,84 +239,118 @@
       <div class="row top30">
         <div class="span4">
           <ul>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
+            <li>Wrap your existing code and <strong> drag-and-drop into your visual models</strong></li>
+            <li>Create your own reusable  <strong>extensions for any layer</strong> of your application</li>
+            <li>No proprietary data models - your data is  <strong>easy to understand and access from other tools</strong></li>
           </ul>
         </div>
         <div class="span4">
           <ul>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li class="spicy">&nbsp;</li>
+            <li>No runtime interpreters or engines and code  <strong>optimized for unbeatable performance</strong></li>
+            <li>Simple integration with  <strong>native device capabilities</strong></li>
+            <li class="spicy">
+              <img src="/cms_backoffice/assets/20160914161344/pepper"/>
+              <span>Standard .NET or Java code with  <strong>HTML, CSS, JavaScript</strong> means No lock-in.</span><br>
+              <a href="#">Go deeper: see what no lock-in really means</a>
+            </li>
           </ul>
         </div>
         <div class="span4">
-          <img src="" />
+          <img src="/cms_backoffice/assets/20160916092701/low-code-img" />
         </div>
-      </div>
-      <div class="row top30">
-        <div class="span12 align-center">
-          <a class="learn-more-cta" href="#">Learn more about integration with OutSystems</a>
-        </div>
-      </div>
+      </div> 
     </div>
   </div>
   <div class="enterprise-grade" id="enterprise-grade">
-      <div class="container">
-        <div class="row">
-          <div class="span12 align-center">
-            <h2>
-              Enterprise-Grade: peace of mind
-            </h2>
-            <div class="caption">
-              The kind of enterprise-grade that is powering banks and satellite systems - but that you don&rsquo;t need to develop from scratch because it&rsquo;s built into the platform.
-            </div>
-          </div>
-        </div>
-        <div class="row top30">
-          <div class="span12 align-center">
-            <ul>
-              <li class="align-center"><img src="" />
-                <div class="title">&nbsp;
-                </div>
-                <div class="description">
-                  &nbsp;
-                </div>
-              </li>
-              <li class="align-center"><img src="" />
-                <div class="title">&nbsp;
-                </div>
-                <div class="description">
-                  &nbsp;
-                </div>
-              </li>
-              <li class="align-center"><img src="" />
-                <div class="title">&nbsp;
-                </div>
-                <div class="description">
-                  &nbsp;
-                </div>
-              </li>
-              <li class="align-center"><img src="" />
-                <div class="title">&nbsp;
-                </div>
-                <div class="description">
-                  &nbsp;
-                </div>
-              </li>
-              <li class="align-center"><img src="" />
-                <div class="title">&nbsp;
-                </div>
-                <div class="description">
-                  &nbsp;
-                </div>
-              </li>
-            </ul>
+    <div class="container">
+      <div class="row">
+        <div class="span12 align-center">
+          <h2>
+            Enterprise-Grade: peace of mind
+          </h2>
+          <div class="caption">
+            The kind of enterprise-grade that is powering banks and satellite systems - but that you don&rsquo;t need to develop from scratch because it&rsquo;s built into the platform.
           </div>
         </div>
       </div>
-  </div>
+      <div class="row top60">
+        <div class="align-center">
+          <ul>
+            <li class="align-center"><img src="/cms_backoffice/assets/20160916121107/eg_1" />
+              <div class="title">Security</div>
+              <div class="description">
+                Your apps are safe all the way from design to deployment with the latest security features.<br>
+              </div>
+              <div class="learn-more-cta">
+                <a href="#">
+                  <span>Learn more</span> 
+                  <img src="/cms_backoffice/assets/20160916085647/_blank" /> 
+                </a>
+              </div>
+            </li>
+            <li class="align-center"><img src="/cms_backoffice/assets/20160916121107/eg_2" />
+              <div class="title">Scability</div>
+              <div class="description">
+                Your apps are safe all the way from design to deployment with the latest security features.<br>
+              </div>
+              <div class="learn-more-cta">
+                <a href="#">
+                  <span>Learn more</span> 
+                  <img src="/cms_backoffice/assets/20160916085647/_blank" /> 
+                </a>
+              </div>
+            </li>
+            <li class="align-center"><img src="/cms_backoffice/assets/20160916121107/eg_3" />
+              <div class="title">Performace</div>
+              <div class="description">
+                Your apps are safe all the way from design to deployment with the latest security features.<br>
+              </div>
+              <div class="learn-more-cta">
+                <a href="#">
+                  <span>Learn more</span> 
+                  <img src="/cms_backoffice/assets/20160916085647/_blank" /> 
+                </a>
+              </div>
+            </li>
+            <li class="align-center"><img src="/cms_backoffice/assets/20160916121107/eg_4" />
+              <div class="title">Governance</div>
+              <div class="description">
+                Your apps are safe all the way from design to deployment with the latest security features.<br>
+              </div>
+              <div class="learn-more-cta">
+                <a href="#">
+                  <span>Learn more</span> 
+                  <img src="/cms_backoffice/assets/20160916085647/_blank" /> 
+                </a>
+              </div>
+            </li>
+            <li class="align-center"><img src="/cms_backoffice/assets/20160916121107/eg_5" />
+              <div class="title">Flexible Deployment</div>
+              <div class="description">
+                Your apps are safe all the way from design to deployment with the latest security features.<br>
+              </div>
+              <div class="learn-more-cta">
+                <a href="#">
+                  <span>Learn more</span> 
+                  <img src="/cms_backoffice/assets/20160916085647/_blank" /> 
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row top60 enterprise-grade-facts">
+        <div class="span2">
+          <img src="/cms_backoffice/assets/20160915133901/quote_img" />
+        </div>
+        <div class="span10">
+          <div class="text">
+           Van Ameyde systems <strong>supports 16 different countries</strong> and their unique claims handling requiremenets with <strong>over 835,000 running process</strong>  instances with more than 6,550,00 activities in flight.
+          </div>
+        </div>
+    </div>
+	  </div>  
+	</div>
   <div class="unbreakable-deployment" id="unbreakable-deployment">
     <div class="container">
       <div class="row">
@@ -297,20 +364,23 @@
         </div>
       </div>
       <div class="row top30">
-        <div class="span5">
+        <div class="span4">
           <ul>
             <li>Automated impact assessment across all layers of your application</li>
             <li>Automated rollback with a single-click</li>
             <li>Automated impact assessment across all layers of your application</li>
-            <li class="spicy">Make deep changes to your applications&#39; data model, APIs and architecture, knowing that all dependencies will be automatically updated.</li>
+            <li class="spicy">
+              <img src="/cms_backoffice/assets/20160914161344/pepper"/>
+              <span>Make deep changes to your applications&#39; data model, APIs and architecture, knowing that all dependencies will be automatically updated.</span>
+            </li>        
           </ul>
         </div>
-        <div class="span7">
+        <div class="span8">
           &nbsp;
         </div>
       </div>
     </div>
-  </div>
+  </div>  
   <div class="real-time-performance" id="real-time-performance">
     <div class="container">
       <div class="row">
@@ -324,15 +394,18 @@
         </div>
       </div>
       <div class="row top30">
-        <div class="span7">
+        <div class="span8">
           &nbsp;
         </div>
-        <div class="span5">
+        <div class="span4">
           <ul>
             <li>Automatic instrumentation of all layers of your mobile and web apps - even your own custom code!</li>
             <li>Monitor your applications and the performance impact as their usage grows</li>
             <li>Customizable performance dashboards</li>
-            <li class="spicy">Real-time performance reports with drill-down</li>
+            <li class="spicy">
+              <img src="/cms_backoffice/assets/20160914161344/pepper"/>
+              <span>Real-time performance reports with drill-down</span>
+            </li>  
           </ul>
         </div>
       </div>
@@ -353,3 +426,4 @@
     </div>
   </div>
 </div>
+
