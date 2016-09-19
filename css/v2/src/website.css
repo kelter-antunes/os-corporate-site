@@ -8463,13 +8463,29 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     bottom: 0;
 }
 
+.welcome-to-outsystems h1{
+    color: #fff;
+    font-family: myriad-pro,arial,sans-serif;
+    font-size: 56px;
+    font-weight: 100;
+    line-height: 38px;
+    position: absolute;
+    top: 45%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    -webkit-transform: translate(-50%, -45%);
+    transform: translate(-50%, -45%);
+    white-space: nowrap;
+    z-index: 1;
+
+}
+
 .welcome-to-outsystems .welcome-to-os-hero{
     position: absolute;
     top: 80px;
     bottom: 60px;
     width: 100%;
     background: #000;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .welcome-to-outsystems .welcome-to-os-nav{
@@ -8489,6 +8505,8 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 .welcome-to-outsystems .welcome-to-os-nav ul.page-nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -8526,13 +8544,31 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     border-right: none;
 }
 
+.welcome-to-outsystems .welcome-to-os-more{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+     -webkit-transform: translateX(-50%);
+}
+
+.welcome-to-outsystems .welcome-to-os-more h3{
+    color: #fff;
+    font-family: myriad-pro,arial,sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 22px;
+}
+
 .welcome-to-outsystems .welcome-to-os-arrow{
     height: 40px;
-    padding: 35px 0;
     position: absolute;
-    width: 100%;
-    bottom: 60px;
+    bottom: 90px;
+    left: 50%;
+     -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
+
 .welcome-to-outsystems .welcome-to-os-arrow .arrow{
     cursor: pointer;
     -webkit-animation-name: upandDown;
@@ -8543,13 +8579,11 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     animation-iteration-count: infinite;
     -webkit-transform: translateY(0) translateZ(0);
     transform: translateY(0) translateZ(0);
+    padding: 30px;
 }
 
 .welcome-to-outsystems .welcome-to-os-arrow .arrow img{
-    left: 48%;
-    padding: 20px;
     bottom: -60px;
-    position: absolute;
 }
 
 .platform-page-content h2{
@@ -8665,6 +8699,15 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     padding-right: 175px;
 }
 
+.platform-page-content .enterprise-grade .enterprise-grade-facts img{
+    padding: 8px 0;
+    width: 100%;
+}
+
+.platform-page-content .enterprise-grade .text{
+    font-size: 22px;
+}
+
 .platform-page-content .unbeatable-speed .author{
     color: #596669;
     font-family: myriad-pro,arial,sans-serif;
@@ -8710,12 +8753,18 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 .platform-page-content .enterprise-grade ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
 }
 
 .platform-page-content .enterprise-grade ul li{
     margin:auto;
+}
+
+.platform-page-content .enterprise-grade .text{
+    padding: 0 20px 0 0;
 }
 
 .platform-page-content ul li.spicy img
@@ -8738,6 +8787,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
+    padding: 70px 0;
 }
 
 .platform-page-content .great-ux-by-default h3{
@@ -8837,7 +8887,8 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 .platform-page-content .great-ux-by-default a,
 .platform-page-content .unbreakable-deployment h2,
 .platform-page-content .unbreakable-deployment .caption,
-.platform-page-content .unbreakable-deployment ul li{
+.platform-page-content .unbreakable-deployment ul li,
+.platform-page-content .experience-the-speed h2{
     color: #fff;
 }
 
@@ -8852,6 +8903,10 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 
 .platform-page-content .low-code ul {
     padding: 0 20px;
+}
+
+.platform-page-content .low-code a{
+    white-space: nowrap;
 }
 
 .platform-page-content .low-code ul li,
@@ -8873,6 +8928,70 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     padding: 0 50px;
 }
 
+.platform-page-content .experience-the-speed{
+    background-color: #ccc;
+    background-image: url(/cms_backoffice/assets/20160916164523/imagem_);
+    background-size: cover; 
+    padding: 70px 0;   
+    position: relative;
+    z-index: 0;
+}
+
+.platform-page-content .experience-the-speed > .container{
+    position:  relative;
+    z-index: 2;
+}
+
+
+.platform-page-content .experience-the-speed .experience-the-speed-overlay{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .5;
+    z-index: 1;
+}
+
+.platform-page-content .experience-the-speed .experience-the-speed-ctas a.osbtn-red{
+    border-radius: 0;
+    background-image: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: .2px;
+    margin: 5px 20px;
+    padding: 15px 60px;
+    background: #dd1f00;
+    border: 1px solid #dd1f00;
+}
+
+.platform-page-content .experience-the-speed .experience-the-speed-ctas a.osbtn-white{
+    border-radius: 0;
+    background-image: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: .2px;
+    line-height: 20px;
+    margin: 5px 20px;
+    padding: 15px 60px;
+    background: #fff;
+    border-color: #dd1f00;
+    color: #dd1f00 !important;
+}
+
+.platform-page-content .experience-the-speed .experience-the-speed-ctas a.osbtn-red:hover,
+.platform-page-content .experience-the-speed .experience-the-speed-ctas a.osbtn-red span:hover{
+    background: #cc1d00;
+}
+
+.platform-page-content .experience-the-speed .experience-the-speed-ctas a.osbtn-white:hover,
+.platform-page-content .experience-the-speed .experience-the-speed-ctas a.osbtn-white span:hover{
+    background: #f0f3f5;
+    border-color: #cc1d00;
+    color: #cc1d00 !important;
+    border-color: #dd1f00;
+}
+
 .unbeatable-speed,
 .real-time-performance,
 .low-code
@@ -8887,12 +9006,6 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     padding: 70px 0;
 }
 
-.great-ux-by-default{
-    background-color: #fff;
-    background-image: url();
-    background-size: cover;
-    padding: 70px 0;
-}
 
 .unbreakable-deployment{
    opacity: 0.75;
