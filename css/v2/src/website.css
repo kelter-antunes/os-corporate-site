@@ -8669,7 +8669,24 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     }
 }
 
-.platform-page-content .unbeatable-speed .animate {
+.platform-page-content .unbeatable-speed .animation {
+    position: relative;
+}
+
+.platform-page-content .unbeatable-speed .animation img{
+    position: absolute;
+    height: 800px;
+    margin-top: -235px;
+    left: 35px;
+}
+
+.platform-page-content .right-to-left {
+    -webkit-animation-name: righttoleft;
+    animation-name: righttoleft;
+    visibility: visible !important;
+}
+
+.platform-page-content .unbeatable-speed  .animate{
     -webkit-animation-duration: 1000ms;
     animation-duration: 1000ms;
     -webkit-animation-fill-mode: both;
@@ -8677,6 +8694,8 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     visibility: hidden;
     will-change: transform;
 }
+
+
 
 .platform-page-content .unbeatable-speed .quote-section,
 .platform-page-content .enterprise-grade .enterprise-grade-facts{
@@ -8723,33 +8742,19 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     padding: 0 100px;
 }
 
-.platform-page-content .unbeatable-speed a.spicy{
+.platform-page-content .unbeatable-speed a.spicy,
+.platform-page-content .low-code a.spicy{
     padding: 5px 10px;
 }
 
-.platform-page-content .unbeatable-speed a.spicy img{
+.platform-page-content .unbeatable-speed a.spicy img,
+.platform-page-content .low-code a.spicy img{
     position: absolute;
 }
 
-.platform-page-content .unbeatable-speed a.spicy span{
+.platform-page-content .unbeatable-speed a.spicy span,
+.platform-page-content .low-code a.spicy span{
     margin-left: 25px;
-}
-
-.platform-page-content .unbeatable-speed .animation {
-    position: relative;
-}
-
-.platform-page-content .unbeatable-speed .animation img{
-    position: absolute;
-    height: 800px;
-    margin-top: -235px;
-    left: 35px;
-}
-
-.platform-page-content .unbeatable-speed .right-to-left {
-    -webkit-animation-name: righttoleft;
-    animation-name: righttoleft;
-    visibility: visible !important;
 }
 
 .platform-page-content .enterprise-grade ul{
@@ -8801,6 +8806,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 .platform-page-content .great-ux-by-default .animated-section{
+    position: relative;
     padding: 250px 0;
     z-index: 0;
 }
@@ -8842,36 +8848,54 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     }
 }
 
-
-.platform-page-content .great-ux-by-default .animate{
+.platform-page-content .scr-1.animate {
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     visibility: hidden;
     will-change: transform;
+}
+
+
+.platform-page-content .scr-2.animate {
+    -webkit-animation-duration: 1500ms;
+    animation-duration: 1500ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    visibility: hidden;
+    will-change: transform;
+}
+
+
+.platform-page-content .scr-3.animate {
+    -webkit-animation-duration: 1800ms;
+    animation-duration: 1800ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    visibility: hidden;
+    will-change: transform;
+}
+
+
+.platform-page-content .great-ux-by-default .bottom-up{
     -webkit-animation-name: bottomup;
     animation-name: bottomup;
     visibility: visible !important;
 }
-
-.platform-page-content .great-ux-by-default .animate.bottom-up-1{
-    -webkit-animation-duration: 700ms;
-    animation-duration: 700ms;
-}
-.platform-page-content .great-ux-by-default .animate.bottom-up-2{
-    -webkit-animation-duration: 1000ms;
-    animation-duration: 1000ms;
-}
-.platform-page-content .great-ux-by-default .animate.bottom-up-3 {
-    -webkit-animation-duration: 1200ms;
-    animation-duration: 1200ms;
-}
-
 .platform-page-content .great-ux-by-default .scnd-caption{
     padding: 0 200px;
 }
 
 .platform-page-content .great-ux-by-default .learn-more-cta {
     margin: 20px 0;
+}
+
+.platform-page-content .great-ux-by-default .learn-more-cta span{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -.23px;
+    font-family: myriad-pro,arial,sans-serif;
 }
 
 .platform-page-content .great-ux-by-default .learn-more-cta img{
