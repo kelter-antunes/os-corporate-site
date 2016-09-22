@@ -1,0 +1,56 @@
+<style type="text/css">
+  body{
+    overflow-x: hidden;
+  }
+  form{
+    height: 80%;
+  }
+  form > div.top70{
+    margin: 0;
+  }
+  .header-hero-wrapper{
+    height: 100%;
+    background-color: #f0f3f5;
+    /* background-image: url(/cms_backoffice/assets/20160921163837/whats-new-hero);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 0;
+    position: relative;
+  }
+  .second-level-menu-wrapper{
+    display: none;
+  }
+</style>
+<div class="whats-new">
+  <div class="whats-new-hero">
+    <div class="container">
+      <div class="row">
+        <div class="span5">
+          <h1>
+            What&rsquo;s New
+            <br />
+            with OutSystems 10
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span5 content">
+        At OutSystems, we’re constantly challenging ourselves to simplify the complex.With OutSystems 10, we’re raising the bar once again. We have blurred the line between pure native app functionality and what can now be achieved with a low-code platform. The result is some amazing technology!
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="whats-new-arrow">
+    <div class="arrow">
+      <img src="/cms_backoffice/assets/20160913165834/fill-1" />
+    </div>
+  </div>
+  <script>
+  	 $('.arrow').click(function () {
+            $('body,html').animate({
+                scrollTop: $('.header-hero-wrapper').outerHeight()
+            }, 800);
+    });
+  </script>
+</div>

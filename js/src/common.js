@@ -330,9 +330,18 @@ function FixStickyBottomMenu(){
 
 function ToggleStickyBottomMenu(){
      //@author sbe     
-     if (!$.browser.mobile) {  
+       if (!$.browser.mobile) {  
 
         $(document).on("scroll", onScroll);
+
+        var navigateTo =  function(hash){
+                if(history.replaceState) {
+                    history.replaceState(null, null, hash);
+                }
+                else {
+                    location.hash = hash;
+                }
+        };
 
         $('.page-nav li a[href^="#"]').on('click', function (e) {
             e.preventDefault();
@@ -346,22 +355,28 @@ function ToggleStickyBottomMenu(){
             var target = this.hash;
             $target = $(target);
             $('html, body').stop().animate({
-                'scrollTop': $target.offset().top+2
-            }, 500, 'swing', function () {
-                window.location.hash = target;
-                $(document).on("scroll", onScroll);
+                'scrollTop': $target.offset().top-60
+            }, 500, 'swing', function () {                           
+                $(document).on("scroll", onScroll); 
+                navigateTo(target);
             });
         });
 
         function onScroll(event){
             var scrollPosition = $(document).scrollTop();
             $('.page-nav li a').each(function () {
+
                 var currentLink = $(this);
                 var refElement = $(currentLink.attr("href"));
-                if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+                var elemTop = refElement.position().top;
+                var elemBottom = refElement.position().top + refElement.height();
+
+                console.log('%o - %o %o %o', currentLink.attr("href"), elemTop, scrollPosition, elemBottom);
+                
+                if (elemTop-500 <= scrollPosition && elemBottom+500 > scrollPosition) {
                     $('.page-nav li').removeClass("active");
                     currentLink.parent().addClass("active");
-                    window.location.hash = currentLink.attr("href");
+                    //navigateTo(currentLink.attr("href"));
                 }
                 else{
                     currentLink.parent().removeClass("active");

@@ -6721,7 +6721,7 @@ h1.slogan h3.is-hidden {
     padding: 10px 0;
 }
 
-.what-is-it .why-we-are-1st .description{
+.what-is-it .why-we-are-1st .description, .what-is-it .our-people .about{
     font-size: 16px;
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 400;
@@ -6807,11 +6807,32 @@ h1.slogan h3.is-hidden {
 	padding: 90px 0;
 }
 
+.what-is-it .our-customers .our-people .about {
+    background: #c20;
+    color: #fff;
+    border: 2px solid #c20;
+    width: 200px;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 0 10px 10px 10px;
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+
+.what-is-it .our-customers .our-people .about.visible{
+    opacity: 1;
+}
+
+.what-is-it .our-customers .our-people .about,
+.what-is-it .our-customers .our-people a{
+    position: absolute;
+}
+
 .what-is-it .our-customers h2{
-	 color: #596669;
-	 font-weight: 600;
-	 font-size: 30px;
-	 font-size: 28px;
+	color: #596669;
+	font-weight: 600;
+	font-size: 30px;
+	font-size: 28px;
     font-family: myriad-pro,Arial,sans-serif;
     margin-bottom: 0;
 }
@@ -8456,36 +8477,158 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 
 /* PLATFORM PAGE sep2016 */
 
-.welcome-to-outsystems{    
+.whats-new{
     position: absolute;
     width: 100%;
-    top: 0;
+    top: 80px;
     bottom: 0;
 }
 
-.welcome-to-outsystems h1{
-    color: #fff;
+.whats-new  h1{
+    color: #596669;
     font-family: myriad-pro,arial,sans-serif;
-    font-size: 56px;
+    font-size: 48px;
     font-weight: 100;
-    line-height: 38px;
+    line-height: 60px;
+}
+
+.welcome-to-outsystems{    
     position: absolute;
-    top: 45%;  /* position the top  edge of the element at the middle of the parent */
+    width: 100%;
+    top: 80px;
+    bottom: 0;
+}
+
+.whats-new .whats-new-hero{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.whats-new .whats-new-hero > .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.welcome-to-outsystems .welcome-to-os-title{
+    position: absolute;
+    top: 25%;  /* position the top  edge of the element at the middle of the parent */
     left: 50%; /* position the left edge of the element at the middle of the parent */
-    -webkit-transform: translate(-50%, -45%);
-    transform: translate(-50%, -45%);
+    -webkit-transform: translate(-50%, -25%);
+    transform: translate(-50%, -25%);
     white-space: nowrap;
     z-index: 1;
 
 }
 
+.welcome-to-outsystems .welcome-to-os-title .switcher {
+  color: #fff;
+  font-family: myriad-pro,arial,sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+  line-height: 60px;
+}
+
+.welcome-to-outsystems .welcome-to-os-title .words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+.welcome-to-outsystems .welcome-to-os-title .words-wrapper span {
+  opacity: 0;
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+  font-weight: 400;
+  width: 200px;
+}
+.welcome-to-outsystems .welcome-to-os-title .words-wrapper .is-visible {
+  position: relative;
+  opacity: 1;
+  -webkit-animation: push-down 0.6s;
+  animation: push-down 0.6s;
+}
+.welcome-to-outsystems .welcome-to-os-title .words-wrapper .is-hidden {
+  -webkit-animation: push-up 0.6s;
+  animation: push-up 0.6s;
+}
+
+@-webkit-keyframes push-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes push-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes push-up {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: translateY(110%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+  }
+}
+@keyframes push-up {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: translateX(110%);
+    transform: translateY(110%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+}
+
 .welcome-to-outsystems .welcome-to-os-hero{
     position: absolute;
-    top: 80px;
+    top: 0;
     bottom: 60px;
     width: 100%;
     background: #000;
-    opacity: 0.6;
+    opacity: 0.3;
 }
 
 .welcome-to-outsystems .welcome-to-os-nav{
@@ -8511,7 +8654,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 .welcome-to-outsystems .welcome-to-os-nav ul.page-nav li{
-    display: inline;
+    display: inline-block;
     width: auto;
     position: relative;
     white-space: nowrap;
@@ -8527,13 +8670,13 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     font-weight: 400;
     display: block;
     margin: 20px 0;
-    padding: 0px 10px;
-    line-height: 18px;
+    padding: 0px 10px 0 8px;
+    line-height: 17px;
     border-right: 1px solid #d3dadb;
 }
 
 .welcome-to-outsystems .welcome-to-os-nav ul.page-nav li.active{
-    border-bottom: 2px solid #c20;
+    border-bottom: 3px solid #c20;
 }
 
 .welcome-to-outsystems .welcome-to-os-nav ul.page-nav li a:hover{
@@ -8560,6 +8703,15 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     line-height: 22px;
 }
 
+.whats-new .whats-new-arrow{
+    height: 40px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+     -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
 .welcome-to-outsystems .welcome-to-os-arrow{
     height: 40px;
     position: absolute;
@@ -8569,6 +8721,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     transform: translateX(-50%);
 }
 
+.whats-new .whats-new-arrow .arrow,
 .welcome-to-outsystems .welcome-to-os-arrow .arrow{
     cursor: pointer;
     -webkit-animation-name: upandDown;
@@ -8582,11 +8735,13 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     padding: 30px;
 }
 
+.whats-new .whats-new-arrow .arrow img,
 .welcome-to-outsystems .welcome-to-os-arrow .arrow img{
     bottom: -60px;
 }
 
-.platform-page-content h2{
+.platform-page-content h2,
+.whats-new-page-content h2{
     color: #57666f;
     font-family: myriad-pro,arial,sans-serif;
     font-size: 38px;
@@ -8621,7 +8776,8 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     padding: 0 60px;
 }
 
-.platform-page-content .description{
+.platform-page-content .description,
+.platform-page-content .unbeatable-speed .learn-more-cta > span{
     color: #596669;
     font-family: myriad-pro,arial,sans-serif;
     font-size: 16px;
@@ -8676,8 +8832,8 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 .platform-page-content .unbeatable-speed .animation img{
     position: absolute;
     height: 800px;
-    margin-top: -235px;
-    left: 35px;
+    margin-top: -290px;
+    left: -45px;
 }
 
 .platform-page-content .right-to-left {
@@ -8772,11 +8928,16 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     padding: 0 20px 0 0;
 }
 
+.platform-page-content .enterprise-grade .description{
+    padding: 5px 0;
+}
+
 .platform-page-content ul li.spicy img
 {
     position: absolute; 
     position: absolute;
     left: -25px;
+    top: 2px;
     max-width: 16px; 
 }
 
@@ -8802,13 +8963,17 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     font-weight: 100;
     line-height: 27px;
     border-top: 1px solid #fff;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .platform-page-content .great-ux-by-default .animated-section{
     position: relative;
-    padding: 250px 0;
+    padding: 300px 0 0;
     z-index: 0;
+}
+
+.platform-page-content .great-ux-by-default .animated-section > .span12{
+     margin: 0;
 }
 
 .platform-page-content .great-ux-by-default .animated-section .span4{
@@ -8819,32 +8984,47 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     z-index: 1;
 }
 
-.platform-page-content .great-ux-by-default .animated-section img{
-    position: relative;
+.platform-page-content .great-ux-by-default .animated-section img.scr-1{
+    position: absolute;
+    z-index: 1;
+    left: 25px;
+    margin: 0 150px;
+}
+
+.platform-page-content .great-ux-by-default .animated-section img.scr-2{
+    position: absolute;
+    left: 25px;
+    bottom: -370px;
+}
+
+.platform-page-content .great-ux-by-default .animated-section img.scr-3{
+    position: absolute;
+    right: 0;
+    bottom: -370px;
 }
 
 
 @-webkit-keyframes bottomup {
     0% {
         opacity: 0;
-        -webkit-transform: translateX(0) translateY(0) translateZ(0);
+        -webkit-transform: translateY(0);
     }
 
     100% {
         opacity: 1;
-        -webkit-transform: translateX(0) translateY(-300px) translateZ(0);
+        -webkit-transform: translateY(-300px);
     }
 }
 
 @keyframes bottomup {
     0% {
         opacity: 0;
-        transform: translateX(0) translateY(0) translateZ(0);
+        transform: translateY(0);
     }
 
     100% {
         opacity: 1;
-        transform: translateX(0) translateY(-300px) translateZ(0);
+        transform: translateY(-300px);
     }
 }
 
@@ -8911,8 +9091,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 .platform-page-content .great-ux-by-default a,
 .platform-page-content .unbreakable-deployment h2,
 .platform-page-content .unbreakable-deployment .caption,
-.platform-page-content .unbreakable-deployment ul li,
-.platform-page-content .experience-the-speed h2{
+.platform-page-content .unbreakable-deployment ul li{
     color: #fff;
 }
 
@@ -8952,7 +9131,11 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     padding: 0 50px;
 }
 
-.platform-page-content .experience-the-speed{
+.platform-page-content .low-code .caption{
+    padding: 0 60px;
+}
+
+.experience-the-speed{
     background-color: #ccc;
     background-image: url(/cms_backoffice/assets/20160916164523/imagem_);
     background-size: cover; 
@@ -8961,13 +9144,17 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     z-index: 0;
 }
 
-.platform-page-content .experience-the-speed > .container{
+.experience-the-speed h2{
+    color:  #fff;
+}
+
+.experience-the-speed > .container{
     position:  relative;
     z-index: 2;
 }
 
 
-.platform-page-content .experience-the-speed .experience-the-speed-overlay{
+.experience-the-speed .experience-the-speed-overlay{
     position: absolute;
     width: 100%;
     top: 0;
@@ -8977,7 +9164,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     z-index: 1;
 }
 
-.platform-page-content .experience-the-speed .experience-the-speed-ctas a.osbtn-red{
+.experience-the-speed .experience-the-speed-ctas a.osbtn-red{
     border-radius: 0;
     background-image: none;
     text-transform: uppercase;
@@ -8989,7 +9176,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     border: 1px solid #dd1f00;
 }
 
-.platform-page-content .experience-the-speed .experience-the-speed-ctas a.osbtn-white{
+.experience-the-speed .experience-the-speed-ctas a.osbtn-white{
     border-radius: 0;
     background-image: none;
     text-transform: uppercase;
@@ -9003,29 +9190,45 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     color: #dd1f00 !important;
 }
 
-.platform-page-content .experience-the-speed .experience-the-speed-ctas a.osbtn-red:hover,
-.platform-page-content .experience-the-speed .experience-the-speed-ctas a.osbtn-red span:hover{
+.experience-the-speed .experience-the-speed-ctas a.osbtn-red:hover,
+.experience-the-speed .experience-the-speed-ctas a.osbtn-red span:hover{
     background: #cc1d00;
 }
 
-.platform-page-content .experience-the-speed .experience-the-speed-ctas a.osbtn-white:hover,
-.platform-page-content .experience-the-speed .experience-the-speed-ctas a.osbtn-white span:hover{
+.experience-the-speed .experience-the-speed-ctas a.osbtn-white:hover,
+.experience-the-speed .experience-the-speed-ctas a.osbtn-white span:hover{
     background: #f0f3f5;
     border-color: #cc1d00;
     color: #cc1d00 !important;
     border-color: #dd1f00;
 }
 
+.whats-new .content,
+.whats-new-page-content .content{
+    color: #596669;
+    font-size: 18px;
+    letter-spacing: -.23px;
+    line-height: 26px;
+    font-weight: 100;
+    font-family: myriad-pro,arial,sans-serif;
+    padding: 0;
+}
+
 .unbeatable-speed,
 .real-time-performance,
-.low-code
+.low-code,
+.cross-platform-native
 {
     background-color: #fff;
     padding: 70px 0;
 }
 
 .integrate-with-everything,
-.enterprise-grade{
+.enterprise-grade,
+.ultra-smooth-ux,
+.sophisticated-offline,
+.bridge-the-skill-gap
+{
     background-color: #f0f3f5;
     padding: 70px 0;
 }
