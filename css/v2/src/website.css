@@ -8494,9 +8494,8 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 
 .welcome-to-outsystems{    
     position: absolute;
+    height: 564px;
     width: 100%;
-    top: 80px;
-    bottom: 0;
 }
 
 .whats-new .whats-new-hero{
@@ -8516,10 +8515,10 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 
 .welcome-to-outsystems .welcome-to-os-title{
     position: absolute;
-    top: 25%;  /* position the top  edge of the element at the middle of the parent */
-    left: 50%; /* position the left edge of the element at the middle of the parent */
-    -webkit-transform: translate(-50%, -25%);
-    transform: translate(-50%, -25%);
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translateX(-50%);
     white-space: nowrap;
     z-index: 1;
 
@@ -8546,7 +8545,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
   left: 0;
   top: 0;
   font-weight: 400;
-  width: 200px;
+  width: 150px;
 }
 .welcome-to-outsystems .welcome-to-os-title .words-wrapper .is-visible {
   position: relative;
@@ -8801,29 +8800,53 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     font-weight: 400;
 }
 
-@-webkit-keyframes righttoleft {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(0) translateY(0) translateZ(0);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(-30%) translateY(0) translateZ(0);
-    }
+@-webkit-keyframes righttoleftone {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    50%, 75%, 100% {opacity: 0;}
 }
 
-@keyframes righttoleft {
-    0% {
-        opacity: 0;
-        transform: translateX(0) translateY(0) translateZ(0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(-30%) translateY(0) translateZ(0);
-    }
+@keyframes righttoleftone {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    50%, 75%, 100% {opacity: 0;}
 }
+
+@-webkit-keyframes righttolefttwo {
+    0%,25% {opacity: 0;}
+    50% {opacity: 1;}
+    75%,100% {opacity: 0;}
+}
+
+@keyframes righttolefttwo {
+    0%,25% {opacity: 0;}
+    50% {opacity: 1;}
+    75%,100% {opacity: 0;}
+}
+
+@-webkit-keyframes righttoleftthree {
+    0%,25%,50% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes righttoleftthree {
+    0%,25%,50% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+
+@-webkit-keyframes righttoleftfour {
+    0% {opacity: 1;}
+    25%, 50%, 75%, 100% {opacity: 0;}
+}
+
+@keyframes righttoleftfour {
+    0% {opacity: 1;}
+    25%, 50%, 75%, 100% {opacity: 0;}
+}
+
 
 .platform-page-content .unbeatable-speed .animation {
     position: relative;
@@ -8836,15 +8859,34 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     left: -45px;
 }
 
-.platform-page-content .right-to-left {
-    -webkit-animation-name: righttoleft;
-    animation-name: righttoleft;
+.platform-page-content .right-to-left-1 {
+    -webkit-animation-name: righttoleftone;
+    animation-name: righttoleftone;
     visibility: visible !important;
 }
 
+.platform-page-content .right-to-left-2 {
+    -webkit-animation-name: righttolefttwo;
+    animation-name: righttolefttwo;
+    visibility: visible !important;
+}
+
+.platform-page-content .right-to-left-3 {
+    -webkit-animation-name: righttoleftthree;
+    animation-name: righttoleftthree;
+    visibility: visible !important;
+}
+
+.platform-page-content .right-to-left-4 {
+    -webkit-animation-name: righttoleftfour;
+    animation-name: righttoleftfour;
+    visibility: visible !important;
+}
 .platform-page-content .unbeatable-speed  .animate{
-    -webkit-animation-duration: 1000ms;
-    animation-duration: 1000ms;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+    -webkit-animation-duration: 4000ms;
+    animation-duration: 4000ms;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     visibility: hidden;
@@ -9217,7 +9259,8 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 .unbeatable-speed,
 .real-time-performance,
 .low-code,
-.cross-platform-native
+.cross-platform-native,
+.simplified-deployment
 {
     background-color: #fff;
     padding: 70px 0;
@@ -9233,6 +9276,42 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     padding: 70px 0;
 }
 
+
+.ultra-smooth-ux .content{
+    padding: 50px 0;
+}
+
+.sophisticated-offline .content{
+    padding-top: 120px;
+}
+
+.ultra-smooth-ux img,
+.sophisticated-offline img{
+    max-width: 530px;
+    padding-left: 30px;
+}
+
+.bridge-the-skill-gap img{
+    max-height: 350px;
+}
+
+.bridge-the-skill-gap .content{
+    padding: 90px 0 50px 0;
+}
+
+.sensors-and-more{    
+    position: relative;
+    background-color: #fff;
+    padding-bottom: 350px;
+}
+
+.sensors-and-more img{
+    max-width: 1200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
 
 .unbreakable-deployment{
    opacity: 0.75;
