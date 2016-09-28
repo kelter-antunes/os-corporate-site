@@ -585,7 +585,7 @@ a.tooltip-link {
   border-radius: 2px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.28);
   color: #37474f;
-  font-family: "Myriad-Pro";
+  font-family: myriad-pro,arial,sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 15px;
@@ -904,7 +904,7 @@ a.tooltip-link {
 }
 .header-hero-wrapper.home-rev {
     height: 100%;
-    background-image: url(/cms_backoffice/assets/20160906155411/imgtop-mock-web3);
+    background-image: url(/cms_backoffice/assets/20160926160914/outer_space);
     background-position: center;
     background-size: cover;
     box-shadow: none;
@@ -1139,6 +1139,11 @@ a.item span.lean-more {
 .case-studies-detail-new .Header_Nav_Breadcrumb {
     margin-top: 165px;
 }
+
+.case-studies-detail .Header_Nav_Breadcrumb {
+    margin-top: 270px;
+}
+
 .header-hero-wrapper.news {
     background: url(/img/bg_body.png?v=201510021536) top left repeat-x;
     height: 150px;
@@ -4073,7 +4078,7 @@ h4.bot-line {
     background: #aaa;
     border: none;
     border-radius: 20px;
-    font-family: myriad-pro;
+     font-family: myriad-pro,arial,sans-serif;
     font-size: 14px;
     cursor: pointer
 }
@@ -4809,7 +4814,7 @@ div.cs-title-box-botbar-wrapper>div.no-image>div.case-study-customer-testimonial
     font-size: 12px;
     line-height: 12px;
     font-weight: 400;
-    font-family: myriad-pro;
+     font-family: myriad-pro,arial,sans-serif;
     color: #000!important;
     display: inline-block;
     opacity: 0.7;
@@ -4851,7 +4856,7 @@ div.cs-title-box-botbar-wrapper>div.no-image>div.case-study-customer-testimonial
     background-color: #f9f9fb;
     border: 2px;
     border-radius: 20px;
-    font-family: myriad-pro;
+     font-family: myriad-pro,arial,sans-serif;
     font-size: 13px;
     font-weight: 700;
     color: #666;
@@ -5170,7 +5175,7 @@ h2.webinar_title {
     line-height: 34px
 }
 div.Popup {
-    z-index: 9999 !important;
+    z-index: 10000 !important;
     border: none !important;
     background-color: transparent !important
 }
@@ -5253,7 +5258,7 @@ div.st-result .st-date {
     padding-top: 5px
 }
 .swiftype-widget .autocomplete, .swiftype-widget .autocomplete ul {
-    font-family: myriad-pro;
+     font-family: myriad-pro,arial,sans-serif;
     background-color: #fff;
     display: block;
     padding: 0;
@@ -5534,7 +5539,7 @@ div.st-result .st-date {
     -ms-flex-pack: start;
     justify-content: flex-start;
 	color: #384142;
-	font-family: "Myriad Pro";
+	font-family: myriad-pro, arial, sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 18px;
@@ -5833,7 +5838,7 @@ a.osbtn-orange {
 }
 
 .header-hero-wrapper.solution-all-hero.page-without-hero.page-company{
-    height: 250px;
+    height: 290px;
 }
 .submenuhover {
     margin: 0;
@@ -5881,7 +5886,7 @@ body.mega-menu .home .navigation-inner{
     padding-top: 0
 }
 .secondary-menu a, .secondary-menu span {
-    font-family: myriad-pro;
+     font-family: myriad-pro,arial,sans-serif;
     font-size: 13px;
     color: #000;
     padding: 0 15px 5px;
@@ -6410,7 +6415,7 @@ h1.slogan h3.is-hidden {
     color: #dd1f00 !important;
 }
 
-.what-is-it .take-the-next-step .cta-section a.osbtn-red{
+.what-is-os .take-the-next-step .cta-section a.osbtn-red{
     border-radius: 0;
     background-image: none;
     text-transform: uppercase;
@@ -6422,7 +6427,7 @@ h1.slogan h3.is-hidden {
     border: 1px solid #dd1f00;
 }
 
-.what-is-it .take-the-next-step .cta-section a.osbtn-white{
+.what-is-os .take-the-next-step .cta-section a.osbtn-white{
     border-radius: 0;
     background-image: none;
     text-transform: uppercase;
@@ -6437,15 +6442,15 @@ h1.slogan h3.is-hidden {
 
 .call-out-hero-home .hero-home-buttons a.osbtn-red:hover,
 .call-out-hero-home .hero-home-buttons a.osbtn-red span:hover,
-.what-is-it .take-the-next-step .cta-section a.osbtn-red:hover,
-.what-is-it .take-the-next-step .cta-section a.osbtn-red span:hover{
+.what-is-os .take-the-next-step .cta-section a.osbtn-red:hover,
+.what-is-os .take-the-next-step .cta-section a.osbtn-red span:hover{
     background: #cc1d00;
 }
 
 .call-out-hero-home .hero-home-buttons a.osbtn-white:hover,
 .call-out-hero-home .hero-home-buttons a.osbtn-white span:hover,
-.what-is-it .take-the-next-step .cta-section a.osbtn-white:hover,
-.what-is-it .take-the-next-step .cta-section a.osbtn-white span:hover{
+.what-is-os .take-the-next-step .cta-section a.osbtn-white:hover,
+.what-is-os .take-the-next-step .cta-section a.osbtn-white span:hover{
     background: #f0f3f5;
     border-color: #cc1d00;
     color: #cc1d00 !important;
@@ -6460,7 +6465,7 @@ h1.slogan h3.is-hidden {
 	text-transform: uppercase;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 	color: white;
-	font-family: "myriad-pro";
+	 font-family: myriad-pro,arial,sans-serif;
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 20px;
@@ -6478,7 +6483,7 @@ h1.slogan h3.is-hidden {
 	text-transform: uppercase;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 	color: white;
-	font-family: "myriad-pro";
+	 font-family: myriad-pro,arial,sans-serif;
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 20px;
@@ -6612,6 +6617,20 @@ h1.slogan h3.is-hidden {
     min-height: 80px
 }
 
+.what-is-it {
+    background-position: center top;
+    background-image: url(/cms_backoffice/assets/201510021536/what-you-can-do-background);
+    background-color: #742211;
+    padding-bottom: 70px;
+}
+
+.what-is-it h2 {
+    text-shadow: 0 2px 1px rgba(22,22,22,.5);
+    color: #fff;
+    font-weight: 400;
+    padding-top: 50px;
+}
+
 .what-is-it.widget {
     background-image: url(/cms_backoffice/assets/201510021536/what-you-can-do-background);
     background-color: #742211;
@@ -6619,25 +6638,22 @@ h1.slogan h3.is-hidden {
     background-position: center top;
 }
 
-.what-is-it {
-    background-position: center top
-}
 
-.what-is-it > p {
+.what-is-os > p {
     display: none;
 }
 
-.what-is-it .animated-section {
+.what-is-os .animated-section {
     background-color: #f4f4f8;
     position: relative;
     z-index: 0;
 }
 
-.what-is-it .animated-section > .container{
+.what-is-os .animated-section > .container{
     position: relative;
 }
 
-.what-is-it .animated-section .motion-video{
+.what-is-os .animated-section .motion-video{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -6645,63 +6661,67 @@ h1.slogan h3.is-hidden {
     left: 180px;
 }
 
-.what-is-it .animated-section .content-box{
+.what-is-os .animated-section .content-box{
     position: relative;
     min-height: 200px;
-    padding: 131px 0; 
+    padding: 90px 0; 
     z-index: 1;
 }
 
-.what-is-it .animated-section h2,
-.what-is-it .animated-section h4{
+.what-is-os .animated-section h2,
+.what-is-os .animated-section h4{
     color: #596669;
 }
 
-.what-is-it .animated-section h4{
+.what-is-os .animated-section h4{
     font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 30px;
 }
 
-.what-is-it .what-can-you-build,
-.what-is-it .why-we-are-1st{
+.what-is-os .animated-section h4 p{
+    padding-right: 30px;
+}
+
+.what-is-os .what-can-you-build,
+.what-is-os .why-we-are-1st{
     padding: 70px 0;
 }
 
 
-.what-is-it .why-we-are-1st .row{
+.what-is-os .why-we-are-1st .row{
 	margin-bottom: 30px;
 }
 
-.what-is-it .why-we-are-1st .row:last-child{
+.what-is-os .why-we-are-1st .row:last-child{
     margin-bottom: 0px;
 }
 
-.what-is-it .what-can-you-build h2,
-.what-is-it .why-we-are-1st h2{
+.what-is-os .what-can-you-build h2,
+.what-is-os .why-we-are-1st h2{
     color: #596669;
     font-weight: 600;
     margin: 10px 0;
 }
 
-.what-is-it .what-can-you-build h2{
+.what-is-os .what-can-you-build h2{
     margin-top: 0;
 }
 
-.what-is-it .what-can-you-build h3{
+.what-is-os .what-can-you-build h3{
     color: #596669; 
 }
 
-.what-is-it .what-can-you-build img{
+.what-is-os .what-can-you-build img{
     max-width: 200px;
 }
 
-.what-is-it .why-we-are-1st img{ 
-    max-width: 80px;
+.what-is-os .why-we-are-1st img{ 
+    max-width: 100px;
 }
 
 
-.what-is-it .what-can-you-build .description{
+.what-is-os .what-can-you-build .description{
     font-size: 18px;
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 100;
@@ -6711,7 +6731,7 @@ h1.slogan h3.is-hidden {
     padding: 10px 0px;
 }
 
-.what-is-it .why-we-are-1st .title{
+.what-is-os .why-we-are-1st .title{
     font-size: 24px;
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 400;
@@ -6721,7 +6741,7 @@ h1.slogan h3.is-hidden {
     padding: 10px 0;
 }
 
-.what-is-it .why-we-are-1st .description, .what-is-it .our-people .about{
+.what-is-os .why-we-are-1st .description, .what-is-os .our-people .about{
     font-size: 16px;
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 400;
@@ -6731,12 +6751,12 @@ h1.slogan h3.is-hidden {
     padding: 5px 0px;
 }
 
-.what-is-it .animated-section h4 strong,
-.what-is-it .sample-app-desc strong{
+.what-is-os .animated-section h4 strong,
+.what-is-os .sample-app-desc strong{
     font-weight: 400;
 }
 
-.what-is-it .inspiration-video{
+.what-is-os .inspiration-video{
 	background-image: url(/cms_backoffice/assets/20160830135715/video-background-blur-3c3c411);
     background-size: cover;
     background-repeat: no-repeat;
@@ -6744,29 +6764,29 @@ h1.slogan h3.is-hidden {
     padding: 70px 0;
 }
 
-.what-is-it .inspiration-video h2{
+.what-is-os .inspiration-video h2{
 	color: #fff;
 	margin-bottom: 50px;
 }
 
-.what-is-it .take-the-next-step{
+.what-is-os .take-the-next-step{
 	background-image: url(/cms_backoffice/assets/20160906150042/bg-blur-01070e1);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
-.what-is-it .take-the-next-step > .container{	
+.what-is-os .take-the-next-step > .container{	
     padding: 70px 0;
 }
 
-.what-is-it .take-the-next-step h2,
-.what-is-it .take-the-next-step h3{
+.what-is-os .take-the-next-step h2,
+.what-is-os .take-the-next-step h3{
 	color: #fff;
 	margin-bottom: 30px;
 }
 
-.what-is-it .take-the-next-step h3{
+.what-is-os .take-the-next-step h3{
     margin-bottom: 40px;
     margin-top: 50px;
     font-size: 25px;
@@ -6774,7 +6794,7 @@ h1.slogan h3.is-hidden {
 }
 
 
-.what-is-it .take-the-next-step .span4{
+.what-is-os .take-the-next-step .span4{
 	background-color: #f0f3f5;
 	padding: 20px 27px;
     max-width: 250px;
@@ -6783,7 +6803,7 @@ h1.slogan h3.is-hidden {
     margin-bottom: 30px;
 }
 
-.what-is-it .take-the-next-step .title{
+.what-is-os .take-the-next-step .title{
  	font-size: 28px;
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 400;
@@ -6793,7 +6813,7 @@ h1.slogan h3.is-hidden {
     padding: 10px 0px;
 }
 
-.what-is-it .take-the-next-step .description{
+.what-is-os .take-the-next-step .description{
 	 font-size: 18px;
     font-family: myriad-pro,Arial,sans-serif;
     font-weight: 100;
@@ -6803,11 +6823,11 @@ h1.slogan h3.is-hidden {
     padding: 10px 0px;
 }
 
-.what-is-it .our-customers{
+.what-is-os .our-customers{
 	padding: 90px 0;
 }
 
-.what-is-it .our-customers .our-people .about {
+.what-is-os .our-customers .our-people .about {
     background: #c20;
     color: #fff;
     border: 2px solid #c20;
@@ -6819,16 +6839,16 @@ h1.slogan h3.is-hidden {
     transition: all .5s ease-out;
 }
 
-.what-is-it .our-customers .our-people .about.visible{
+.what-is-os .our-customers .our-people .about.visible{
     opacity: 1;
 }
 
-.what-is-it .our-customers .our-people .about,
-.what-is-it .our-customers .our-people a{
+.what-is-os .our-customers .our-people .about,
+.what-is-os .our-customers .our-people a{
     position: absolute;
 }
 
-.what-is-it .our-customers h2{
+.what-is-os .our-customers h2{
 	color: #596669;
 	font-weight: 600;
 	font-size: 30px;
@@ -6837,7 +6857,7 @@ h1.slogan h3.is-hidden {
     margin-bottom: 0;
 }
 
-.what-is-it .our-customers .description{
+.what-is-os .our-customers .description{
 	color: #596669;
 	font-weight: 400;
 	font-size: 18px;
@@ -6846,7 +6866,7 @@ h1.slogan h3.is-hidden {
     line-height: 28px;
 }
 
-.what-is-it .our-customers ul.our-services{
+.what-is-os .our-customers ul.our-services{
     list-style: none;
     color: #596669;
     font-weight: 400;
@@ -6855,22 +6875,22 @@ h1.slogan h3.is-hidden {
     line-height: 26px;
 }
 
-.what-is-it .our-customers ul.our-services li{
+.what-is-os .our-customers ul.our-services li{
     display: inline;
 }
 
-.what-is-it .our-customers ul.our-services li:before {
+.what-is-os .our-customers ul.our-services li:before {
     content: '\2022';
     margin: 0 6px 0 3px;
     font-size: 1.5em;
     color: #c20;
 }
 
-.what-is-it .our-customers ul.our-services li:first-child:before{
+.what-is-os .our-customers ul.our-services li:first-child:before{
     display: none;
 }
 
-.what-is-it .our-customers img{
+.what-is-os .our-customers img{
     padding: 10px;
 }
 
@@ -6999,17 +7019,35 @@ h1.slogan h3.is-hidden {
     width: 25px
 }
 
-.customers-and-experts{ 
-    margin: 20px 0;
+.customers-and-experts {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
 }
+
+
+.what-is-os .customers-and-experts{ 
+    margin: 20px 0;
+    padding: 0;
+}
+
+
 .customers-and-experts a {
     display: block
 }
 .customers-and-experts a:hover {
     text-decoration: none
 }
+
 .customers-and-experts a span.customer-matrix-entry, 
 .customers-and-experts a span.partner-matrix-entry {
+    margin: 0 0 3px 5px;
+    border: 1px solid #f4f4f4;
+    display: inline-block;
+}
+
+.what-is-os .customers-and-experts a span.customer-matrix-entry, 
+.what-is-os .customers-and-experts a span.partner-matrix-entry {
     margin: 0 0 10px 10px;
     padding: 10px;
     border: none;
@@ -7018,8 +7056,13 @@ h1.slogan h3.is-hidden {
 .customers-and-experts a span.customer-matrix-entry {
     display: none
 }
-.customers-and-experts a span.customer-matrix-entry img, 
-.customers-and-experts a span.partner-matrix-entry img {
+
+.customers-and-experts a span.customer-matrix-entry img, .customers-and-experts a span.partner-matrix-entry img {
+    height: 69px;
+}
+
+.what-is-os .customers-and-experts a span.customer-matrix-entry img, 
+.what-is-os .customers-and-experts a span.partner-matrix-entry img {
     height: 49px
 }
 .customers-and-experts a span.partner-matrix-entry {
@@ -7111,7 +7154,7 @@ h1.slogan h3.is-hidden {
 .PartnerPageSubtitle {
     text-align: center;
     color: #353535;
-    font-family: Myriad-Pro;
+     font-family: myriad-pro,arial,sans-serif;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
@@ -7189,7 +7232,7 @@ img.global-logo{
     font-family: OS-Icon-Set
 }
 .PartnershipTable, .PartnershipTable div {
-    font-family: Myriad-Pro
+     font-family: myriad-pro,arial,sans-serif;
 }
 .m-carousel-pagination.PartnersPagination a {
     border: 1px solid #e1e1e1;
@@ -7294,14 +7337,14 @@ img.global-logo{
 .PartnershipTable .Subtitle {
     border-bottom: 1px solid #e7eced;
     color: #000;
-    font-family: Myriad-Pro;
+     font-family: myriad-pro,arial,sans-serif;
     font-size: 18px;
     font-weight: 600
 }
 .PartnershipTable .Title {
     padding-top: 30px;
     color: #000;
-    font-family: Myriad-Pro;
+    font-family: myriad-pro,arial,sans-serif;
     font-size: 28px;
     font-weight: 400
 }
@@ -7338,7 +7381,7 @@ img.global-logo{
     font-size: 12px
 }
 .expander.Comparer {
-    font-family: Myriad-Pro;
+     font-family: myriad-pro,arial,sans-serif;
     color: gray;
     font-size: 15px;
     font-weight: 400;
@@ -8358,7 +8401,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     font-size: 34px;
     line-height: 42px;
     font-weight: 400;
-    font-family: "myriad-pro";
+    font-family: myriad-pro,arial,sans-serif;
     margin-top: -30px;
     display: -webkit-flexbox;
     display: -ms-flexbox;
@@ -8477,14 +8520,20 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 
 /* PLATFORM PAGE sep2016 */
 
-.whats-new{
+.whats-new,
+.build-mobile-apps{
     position: absolute;
+    min-height: 560px;
     width: 100%;
     top: 80px;
     bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
-.whats-new  h1{
+.whats-new  h1,
+.build-mobile-apps h1{
     color: #596669;
     font-family: myriad-pro,arial,sans-serif;
     font-size: 48px;
@@ -8494,17 +8543,30 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 
 .welcome-to-outsystems{    
     position: absolute;
-    height: 564px;
+    top: 0;
+    bottom: 0;
     width: 100%;
 }
 
-.whats-new .whats-new-hero{
+.whats-new .whats-new-hero,
+.build-mobile-apps .build-mobile-apps-hero{
     position: relative;
     width: 100%;
     height: 100%;
+    z-index: 0;
 }
 
-.whats-new .whats-new-hero > .container{
+.whats-new .whats-new-video{
+    position: absolute;
+    left: 45%;
+    width: 760px;
+    height: 546px;
+    -ms-flex-item-align: center;
+        align-self: center;
+}
+
+.whats-new .whats-new-hero > .container,
+.build-mobile-apps .build-mobile-apps-hero > .container{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -8515,7 +8577,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 
 .welcome-to-outsystems .welcome-to-os-title{
     position: absolute;
-    top: 50px;
+    top: 125px;
     left: 50%;
     -webkit-transform: translate(-50%);
     transform: translateX(-50%);
@@ -8702,7 +8764,8 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     line-height: 22px;
 }
 
-.whats-new .whats-new-arrow{
+.whats-new .whats-new-arrow,
+.build-mobile-apps .build-mobile-apps-arrow{
     height: 40px;
     position: absolute;
     bottom: 40px;
@@ -8739,8 +8802,33 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     bottom: -60px;
 }
 
+.whats-new-page-content .cross-platform-native .topic{
+    margin-top: 20px;
+}
+
+.whats-new-page-content .cross-platform-native h3 {
+    color: #57666f;
+    font-family: myriad-pro,Arial,sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+.whats-new-page-content img.topic_image{
+    border-bottom: 2px solid #ccc;
+    max-width: 250px;
+}
+
+.whats-new-page-content div.topic_title{
+    color: #596669;
+    font-family: myriad-pro,arial,sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+
 .platform-page-content h2,
-.whats-new-page-content h2{
+.whats-new-page-content h2,
+.build-mobile-apps-content h2{
     color: #57666f;
     font-family: myriad-pro,arial,sans-serif;
     font-size: 38px;
@@ -8838,13 +8926,13 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 
 
 @-webkit-keyframes righttoleftfour {
-    0% {opacity: 1;}
-    25%, 50%, 75%, 100% {opacity: 0;}
+    25%, 50%, 75% {opacity: 0;}
+    100%, 0% {opacity: 1;}
 }
 
 @keyframes righttoleftfour {
-    0% {opacity: 1;}
-    25%, 50%, 75%, 100% {opacity: 0;}
+    25%, 50%, 75% {opacity: 0;}
+    100%, 0% {opacity: 1;}
 }
 
 
@@ -8856,7 +8944,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     position: absolute;
     height: 800px;
     margin-top: -290px;
-    left: -45px;
+    left: -125px;
 }
 
 .platform-page-content .right-to-left-1 {
@@ -8885,8 +8973,8 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 .platform-page-content .unbeatable-speed  .animate{
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
-    -webkit-animation-duration: 4000ms;
-    animation-duration: 4000ms;
+    -webkit-animation-duration: 12000ms;
+    animation-duration: 12000ms;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     visibility: hidden;
@@ -8981,6 +9069,16 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     left: -25px;
     top: 2px;
     max-width: 16px; 
+}
+
+.platform-page-content .integrate-with-everything img{
+    float: right;
+}
+
+.platform-page-content .integrate-with-everything ul li{
+    position: relative;
+    padding-right: 60px;
+    margin: 22px 0;
 }
 
 .platform-page-content .integrate-with-everything ul li.spicy{
@@ -9246,7 +9344,9 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 .whats-new .content,
-.whats-new-page-content .content{
+.whats-new-page-content .content,
+.build-mobile-apps .content,
+.build-mobile-apps-content .content{
     color: #596669;
     font-size: 18px;
     letter-spacing: -.23px;
@@ -9260,25 +9360,22 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 .real-time-performance,
 .low-code,
 .cross-platform-native,
-.simplified-deployment
-{
-    background-color: #fff;
-    padding: 70px 0;
-}
-
+.simplified-deployment,
 .integrate-with-everything,
 .enterprise-grade,
 .ultra-smooth-ux,
 .sophisticated-offline,
-.bridge-the-skill-gap
+.bridge-the-skill-gap,
+.world-class-front-ends,
+.back-ends-made-easy
 {
-    background-color: #f0f3f5;
-    padding: 70px 0;
+    padding: 70px 0;    
+    overflow-x: hidden;
 }
 
 
 .ultra-smooth-ux .content{
-    padding: 50px 0;
+    padding: 80px 0;
 }
 
 .sophisticated-offline .content{
@@ -9295,14 +9392,11 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     max-height: 350px;
 }
 
-.bridge-the-skill-gap .content{
-    padding: 90px 0 50px 0;
-}
-
 .sensors-and-more{    
     position: relative;
     background-color: #fff;
-    padding-bottom: 350px;
+    padding-bottom: 390px;
+    padding-top: 70px;
 }
 
 .sensors-and-more img{
@@ -9596,7 +9690,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     font-size: 34px;
     line-height: 42px;
     font-weight: 400;
-    font-family: "myriad-pro";
+    font-family: myriad-pro,arial,sans-serif;
     margin-top: 0px;
     display: -webkit-flexbox;
     display: -ms-flexbox;

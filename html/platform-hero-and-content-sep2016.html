@@ -1,3 +1,15 @@
+<style type="text/css">
+  .unbeatable-speed,
+  .real-time-performance,
+  .low-code{
+    background-color: #fff;
+  }
+  .integrate-with-everything,
+  .enterprise-grade
+  {
+    background-color: #f0f3f5;
+  }
+</style>
 <div class="platform-page-content">
   <div class="unbeatable-speed" id="unbeatable-speed">
     <div class="container">
@@ -7,7 +19,7 @@
             Unbeatable Speed
           </h2>
           <div class="caption">
-            Every aspect of OutSystems Platform is crafted to help you build better apps faster. From high-productivity visual development to powerful tools to deploy and manage your apps, OutSystems helps you deliver applications quickly and make changes easily.
+            Every aspect of OutSystems is crafted to help you build better apps faster. From high-productivity visual development to powerful tools to deploy and manage your apps, OutSystems helps you deliver applications quickly and make changes easily.
           </div>
         </div>
       </div>
@@ -21,7 +33,7 @@
             Drag and drop the functionality you need for UI, business processes, logic, and data models to create full-stack, cross-platform apps. No lock-in ever. Add your own code when needed.
           </div>
           <div class="learn-more-cta">
-            <a href="#"><span>See what visual development looks like</span></a>
+            <a class="popup_link" href="/platform/full-stack-visual-development/"><span>See what visual development looks like</span></a>
           </div>
         </div>
         <div class="span4 align-center">
@@ -33,12 +45,22 @@
             Deliver apps and update them with one click. OutSystems automatically tracks all changes and handles database scripts and deployment processes - making life a little easier.
           </div>
           <div class="learn-more-cta">
-            <a href="#"><span>See what happens when you click the button</span></a>
+            <a class="popup_link" href="/platform/single-click-deployment/"><span>See what happens when you click the button</span></a>
           </div>
         </div>
-        <div class="span4 animation animate" data-transition="right-to-left">
-          <img src="/cms_backoffice/assets/20160914174613/service_studio" /> 
-          <script type="text/javascript">
+        <div class="span4 animation animate" data-transition="right-to-left-1">
+          <img src="/cms_backoffice/assets/20160923110852/process-min" />
+        </div>
+        <div class="span4 animation animate" data-transition="right-to-left-2">
+          <img src="/cms_backoffice/assets/20160923110903/user_interface-min" />
+        </div>
+        <div class="span4 animation animate" data-transition="right-to-left-3">
+          <img src="/cms_backoffice/assets/20160923110843/business_logic-min" />
+        </div>
+        <div class="span4 animation animate" data-transition="right-to-left-4">
+          <img src="/cms_backoffice/assets/20160923110925/data_model-min" />
+        </div>
+        <script type="text/javascript">
               $(window).scroll(function() {  
                    var topOfWindow = $(window).scrollTop(); 
                     $('.unbeatable-speed .animate').each(function () {      
@@ -50,21 +72,22 @@
                   });
                   $('.great-ux-by-default .animate').each(function () {      
                       var imagePos = $(this).offset().top;
-                      if (imagePos < topOfWindow + 1030) {
+                      if (imagePos < topOfWindow + 1100) {
                           console.log('animate screens');
                           var effect = $(this).data('transition');
                           $(this).addClass(effect);
                       }
                   });
               });              
-          </script>
-        </div>
+        </script>
       </div>
       <div class="row top30">
         <div class="span4 align-center">
-          <img src="/cms_backoffice/assets/20160914155432/icon_003" />
+          <img src="/cms_backoffice/assets/20160926110638/mobile_made_easy" />
           <div class="title">
-            Mobile <br>Made Easy
+            Mobile
+            <br />
+            Made Easy
           </div>
           <div class="description">
             Replace the complex world of building apps with offline data synchronization, native device access, and on-device business logic with ultra-fast visual modeling.
@@ -78,9 +101,9 @@
             Feedback
           </div>
           <div class="description">
-            Make your apps better, faster. Users can share voice and written feedback right inside the application. Since seeing is believing, watch this fun demonstration.
+            Make your apps better, faster. Users can share voice and written feedback right inside the application, simplifying the whole change management process.
           </div>
-          <a class="spicy" href="#"> <img src="/cms_backoffice/assets/20160914161331/pepper" /> <span>Watch the video</span> </a>
+          <a class="spicy popup_link" href="/platform/in-app-feedback/"> <img src="/cms_backoffice/assets/20160914161331/pepper" /> <span>Watch in-app feedback in action</span></a>
         </div>
         <div class="span4 align-center">
           <img src="/cms_backoffice/assets/20160914155438/icon_005" />
@@ -93,10 +116,10 @@
         </div>
       </div>
       <div class="row top60 quote-section">
-        <div class="span2">
+        <div class="span2 %MOBILE% align-center %/MOBILE%">
           <img src="/cms_backoffice/assets/20160915133901/quote_img" />
         </div>
-        <div class="span10">
+        <div class="span10 %MOBILE% align-center %/MOBILE%">
           <div class="text">
             We reduced our development hours by 75% and got to market <strong>3x faster</strong> using OutSystems.&rdquo;
           </div>
@@ -112,7 +135,7 @@
       <div class="row">
         <div class="span12 align-center">
           <h2>
-            Integrate with Everything (it's easy!)
+            Integrate with Everything (it&#39;s easy!)
           </h2>
           <div class="caption">
             Core ERP and CRM solutions. Aging legacy systems. Custom apps that track satellites and power factories. These are just a few examples of real projects where OutSystems made it extremely easy to integrate external enterprise systems, databases, or custom apps.
@@ -122,22 +145,17 @@
       <div class="row top30">
         <div class="span5">
           <ul>
-            <li>Choose from a wide variety of pre-built open-source connectors or build your own in Java or .NET</li>
-            <li class="spicy">
-              <img src="/cms_backoffice/assets/20160914161344/pepper" />
-              <span>Integrate with SOAP web services and REST APIs with no coding. </span>
-              <a class="watch-video-cta" href="#">Watch the video</a>
-            </li>
+            <li>Choose from a wide variety of pre-built open-source connectors or build your own</li>
+            <li class="spicy"><img src="/cms_backoffice/assets/20160914161344/pepper" /> <span>Integrate with SOAP web services and REST APIs with no coding. </span> <a class="watch-video-cta popup_link" href="/platform/cloud-services-rest/">Watch how easy it is</a></li>
             <li>Develop your own back-end as a service and connect with popular cloud services</li>
             <li>Orchestrate data across your systems with workflow and business logic</li>
-            <li> Automate consumption of external REST services.</li>
           </ul>
         </div>
         <div class="span7">
-          &nbsp;
+          <img src="/cms_backoffice/assets/20160923112001/integration_gif_256c_03" />
         </div>
       </div>
-      <div class="row top30">
+      <div class="row">
         <div class="span12 align-center">
           <div class="learn-more-cta">
             <a href="https://success.outsystems.com/Evaluation/Integration" target="_blank"><span>Go deeper: learn more about integration with OutSystems</span> <img src="/cms_backoffice/assets/20160916085647/_blank" /> </a>
@@ -202,18 +220,21 @@
             Check out the mobile UI gallery!
           </h3>
           <div class="scnd-caption">
-            We analyzed the world&rsquo;s leading apps and crafted a library of beautiful UX widgets that can be added to an app with just a few clicks.
+            We analyzed the world&rsquo;s leading apps and crafted a library of beautiful UI&nbsp;widgets that can be added to an app with just a few clicks.
           </div>
           <div class="learn-more-cta">
-            <a href="https://labs.outsystems.net/silkui" target="_blank"><span>Go deeper: learn more about SILK UI</span> <img src="/cms_backoffice/assets/20160916085647/_blank" /> </a>
+            <a href="https://labs.outsystems.net/p10silkui/Patterns.aspx" target="_blank"><span>Go deeper: learn more about the SILK UI patterns</span>&nbsp;<img src="/cms_backoffice/assets/20160916085647/_blank" /> </a>
           </div>
         </div>
       </div>
-      <div class="row top30 animated-section">
+      <div class="row top30 %WEB% animated-section %/WEB%">
         <div class="span12">
-          <img class="animate scr-2" data-transition="bottom-up" src="/cms_backoffice/assets/20160919163911/silk_interace_2_190px" /> 
-          <img class="animate scr-1" data-transition="bottom-up" src="/cms_backoffice/assets/20160919164009/silk_interace_680px" /> 
-          <img class="animate scr-3" data-transition="bottom-up" src="/cms_backoffice/assets/20160919163921/silk_interace_3_190px" />
+          %WEB%
+          <img class="animate scr-2" data-transition="bottom-up" src="/cms_backoffice/assets/20160921101059/silk_interace_2_190px1" /> <img class="animate scr-1" data-transition="bottom-up" src="/cms_backoffice/assets/20160919164009/silk_interace_680px" /> <img class="animate scr-3" data-transition="bottom-up" src="/cms_backoffice/assets/20160921101048/silk_interace_3_190px_2" />
+          %/WEB%
+          %MOBILE% 
+          <img src="/cms_backoffice/assets/20160928110810/silk_ui_mobile" />
+          %/MOBILE%
         </div>
       </div>
     </div>
@@ -230,7 +251,7 @@
           </div>
         </div>
       </div>
-      <div class="row top30">
+      <div class="row %WEB% top30 %/WEB%">
         <div class="span4">
           <ul>
             <li>Wrap your existing code then drag-and-drop into your visual models</li>
@@ -245,7 +266,7 @@
       <div class="row top30">
         <div class="span12 align-center">
           <div class="learn-more-cta">
-            <a class="spicy" href="https://success.outsystems.com/Evaluation/Architecture/5_Standard_architecture_with_no_lock-in" target="_blank"><img src="/cms_backoffice/assets/20160914161344/pepper" /> <span>Go Deeper: see what no-lock in really means </span> </a>
+            <a class="spicy" href="https://success.outsystems.com/Evaluation/Developing_with_OutSystems_Platform/00_Will_I_hit_a_wall_when_developing" target="_blank"><img src="/cms_backoffice/assets/20160914161344/pepper" />&nbsp;<span>Go Deeper: see how you can extend your apps with code</span></a>
           </div>
         </div>
       </div>
@@ -284,17 +305,17 @@
               <div class="title">Performance
               </div>
               <div class="description">
-                  <a href="https://success.outsystems.com/Evaluation/Performance" target="_blank"><span>Learn more</span></a>
+                <a href="https://success.outsystems.com/Evaluation/Performance" target="_blank"><span>Learn more</span></a>
               </div>
             </li>
-            <li class="align-center"><img src="/cms_backoffice/assets/20160919163032/004_red" />
+            <li class="align-center"><img src="/cms_backoffice/assets/20160926110711/architecture" />
               <div class="title">Architecture
               </div>
               <div class="description">
-                 <a href="https://success.outsystems.com/Evaluation/Architecture" target="_blank"><span>Learn more</span></a>
+                <a href="https://success.outsystems.com/Evaluation/Architecture" target="_blank"><span>Learn more</span></a>
               </div>
             </li>
-            <li class="align-center"><img src="/cms_backoffice/assets/20160919163032/005_red" />
+            <li class="align-center"><img src=" /cms_backoffice/assets/20160926111447/deployment" />
               <div class="title">Flexible Deployment
               </div>
               <div class="description">
@@ -305,12 +326,12 @@
         </div>
       </div>
       <div class="row top60 enterprise-grade-facts">
-        <div class="span3">
+        <div class="span3 %MOBILE% align-center %/MOBILE%">
           <img src="/cms_backoffice/assets/20160916172500/logo_van(1)" />
         </div>
-        <div class="span9">
+        <div class="span9 %MOBILE% align-center %/MOBILE%">
           <div class="text">
-          Van Ameyde created a system that <strong>supports 16 different countries</strong> and their unique claims handling requirements with <strong>over 835,000 running process</strong> instances and more than 6,550,00 activities in flight.
+            Van Ameyde created a system that <strong>supports 16 different countries</strong> and their unique claims handling requirements with <strong>over 835,000 running process</strong> instances and more than 6,550,00 activities in flight.
           </div>
         </div>
       </div>
@@ -328,19 +349,16 @@
           </div>
         </div>
       </div>
-      <div class="row top30">
+      <div class="row %WEB% top30 %/WEB%">
         <div class="span4">
           <ul>
             <li>Automated impact assessment across all layers of your application</li>
             <li>Rollback with a single-click</li>
             <li>Easy staging across environments with a single-click, including all database change scripts</li>
-            <li class="spicy">
-                <img src="/cms_backoffice/assets/20160914161344/pepper" /> 
-                <span>Automatic dependency updates so you can make major changes to applications, data models, APIs, and architecture. OutSystems covers the rest.</span>
-            </li>
+            <li class="spicy"><img src="/cms_backoffice/assets/20160914161344/pepper" /> <span>Automatic dependency updates so you can make major changes to applications, data models, APIs, and architecture. OutSystems covers the rest.</span></li>
           </ul>
         </div>
-        <div class="span8">
+        <div class="span8 %WEB% top20 %/WEB% %MOBILE% top50 %/MOBILE%">
           <script src="//fast.wistia.com/embed/medias/cylzp3c4b6.jsonp" async></script>
           <script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
           <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
@@ -359,14 +377,14 @@
       <div class="row">
         <div class="span12 align-center">
           <h2>
-            Metrics That Matter
+            Metrics that Matter
           </h2>
           <div class="caption">
             Ensure that your apps are always running at peak performance. Real-time data helps you easily identify anything that needs to be corrected or optimized keeping costs down and users delighted.
           </div>
         </div>
       </div>
-      <div class="row top30">
+      <div class="row %WEB% top50 %/WEB%">
         <div class="span8">
           <script src="//fast.wistia.com/embed/medias/2af1s88qq6.jsonp" async></script>
           <script src="//fast.wistia.com/assets/external/E-v1.js" async></script>

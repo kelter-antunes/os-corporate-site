@@ -364,7 +364,7 @@ input[type=search].searchform-input {
     width: 90%;
     font-size: 22px;
     line-height: 1.375;
-    font-family: myriad-pro;
+     font-family: myriad-pro,arial,sans-serif;
     font-weight: 100;
     letter-spacing: normal;
     height: 35px;
