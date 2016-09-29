@@ -515,6 +515,10 @@ v=201510021536
         bottom: 0;
     }
 
+    #footer-wrapper {
+        margin-top: -50px;
+    }
+
     .welcome-to-outsystems .welcome-to-os-nav,
     .platform-page-content .unbeatable-speed .animation{
         display: none;
@@ -530,7 +534,7 @@ v=201510021536
 
 
     .platform-page-content .caption{
-        padding: 0 20px !important;
+        padding: 0 10px !important;
     }
 
     .platform-page-content h2 {
@@ -556,22 +560,27 @@ v=201510021536
         flex-direction: column;
     }
 
+    .platform-page-content .enterprise-grade .text{
+        padding: 0;
+    }
+
     .platform-page-content .great-ux-by-default .scnd-caption{
         padding: 0;
     }
 
     .platform-page-content .great-ux-by-default .span2 {
         display: flex;
-        padding: 0 20px;
+        padding: 0 10px;
         margin-bottom: 0;
     }  
 
-    .great-ux-by-default .span2:nth-child(odd) {
-        flex-direction: row-reverse;
-    }
-
     .platform-page-content .great-ux-by-default .description{
         text-align: left;
+    }
+
+    .platform-page-content .great-ux-by-default .span2 img {
+        width: 100px;
+        height: 100px;
     }
 
     .platform-page-content .unbeatable-speed .text{
@@ -582,7 +591,7 @@ v=201510021536
         padding-right: 0;
     }
 
-    .platform-page-content .integrate-with-everything img{
+    .platform-page-content .integrate-with-everything .span7 img{
         padding: 30px 0;
     }
 
@@ -600,6 +609,65 @@ v=201510021536
 
     .platform-page-content .great-ux-by-default{
         padding-bottom: 0;
+    }
+
+    .platform-page-content .great-ux-by-default .span12:last-child {
+        margin-bottom: 0;
+    }
+
+    .welcome-to-outsystems .welcome-to-os-title{
+        width: 90%;
+        white-space: normal;
+        top: 100px;
+    }
+
+    .welcome-to-outsystems .welcome-to-os-title .switcher{
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .welcome-to-outsystems img.frame,
+    .welcome-to-outsystems img.gif{
+        max-width: 500px;
+    }
+
+    .whats-new-page-content .content,
+    .web-apps-and-portals-content .content,
+    .build-mobile-apps-content .content{
+        padding: 0 !important;
+        text-align: center;
+    }
+
+    .whats-new-page-content .ultra-smooth-ux .span7{
+        min-height: 0 !important;
+    }
+
+    .whats-new-page-content img#iphone{
+        width: 60%;
+        right: 0;
+        position: relative;
+        padding-top: 40px;
+        float: right;
+    }
+
+    .whats-new-page-content img#ipad{
+        width: 100%;
+        padding: 0;
+    }
+
+    .whats-new h1{
+            font-size: 40px;
+        line-height: 44px;
+    }
+    .whats-new .whats-new-video{
+        width: 100%;
+        top: 350px;
+        left: 0;
+    }
+
+    .whats-new .whats-new-hero>.container{
+        width: 90%;
+        top: 200px;
     }
 
     .lead {

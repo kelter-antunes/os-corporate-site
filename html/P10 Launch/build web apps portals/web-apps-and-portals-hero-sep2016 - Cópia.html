@@ -1,0 +1,60 @@
+<style type="text/css">
+  body{
+    overflow-x: hidden;
+  }
+  form{
+    height: 75%;
+  }
+  form > div.top70{
+    margin: 0;
+  }
+  .header-hero-wrapper{
+    height: 100%;
+    background-color: #f0f3f5;
+    /* background-image: url(/cms_backoffice/assets/20160921163837/whats-new-hero);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 0;
+    position: relative;
+    min-height: 640px;
+  }
+  .second-level-menu-wrapper{
+    display: none;
+  }
+  .web-apps-and-portals-hero img{
+    position: absolute;
+    top: -100px;
+    right: -60px;
+    width: 1000px;
+  }
+  @media screen and (max-width: 767px){
+    .header-hero-wrapper{
+      min-height: 750px;
+    }
+  }
+</style>
+<div class="web-apps-and-portals">
+  <div class="web-apps-and-portals-hero">
+    <div class="container">
+      <div class="row">
+        <div class="span6">
+          <h1>
+            Build Web Applications and Portals
+          </h1>
+          <div class="content" style="%WEB% width:82%; %/WEB%">
+            Cut your development time in half and start delivering new business innovation today. OutSystems makes it easy to build web apps and portals that delight customers and streamline processes. Full-stack and enterprise-grade, unlock your back office and bring new solutions to market in a fraction of the time (and cost).
+          </div>
+        </div>
+      </div>
+      <img alt="web-apps-portals" src="/cms_backoffice/assets/20160928193245/web-apps-portals-hero1" style="width: 780px; height: 473px;" />
+    </div>
+  </div>
+  <script>
+  	 $('.arrow').click(function () {
+            $('body,html').animate({
+                scrollTop: $('.header-hero-wrapper').outerHeight()
+            }, 800);
+    });
+  </script>
+</div>

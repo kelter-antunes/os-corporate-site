@@ -8521,6 +8521,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 /* PLATFORM PAGE sep2016 */
 
 .whats-new,
+.web-apps-and-portals,
 .build-mobile-apps{
     position: absolute;
     min-height: 560px;
@@ -8533,6 +8534,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 .whats-new  h1,
+.web-apps-and-portals h1,
 .build-mobile-apps h1{
     color: #596669;
     font-family: myriad-pro,arial,sans-serif;
@@ -8549,6 +8551,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 .whats-new .whats-new-hero,
+.web-apps-and-portals .web-apps-and-portals-hero,
 .build-mobile-apps .build-mobile-apps-hero{
     position: relative;
     width: 100%;
@@ -8566,6 +8569,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 .whats-new .whats-new-hero > .container,
+.web-apps-and-portals .web-apps-and-portals-hero > .container,
 .build-mobile-apps .build-mobile-apps-hero > .container{
     position: absolute;
     top: 50%;
@@ -8765,6 +8769,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 .whats-new .whats-new-arrow,
+.web-apps-and-portals .web-apps-and-portals-arrow,
 .build-mobile-apps .build-mobile-apps-arrow{
     height: 40px;
     position: absolute;
@@ -8828,12 +8833,13 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 
 .platform-page-content h2,
 .whats-new-page-content h2,
+.web-apps-and-portals-content h2,
 .build-mobile-apps-content h2{
     color: #57666f;
     font-family: myriad-pro,arial,sans-serif;
     font-size: 38px;
     font-weight: 100;
-    line-height: 32px;
+    line-height: 44px;
     margin-bottom: 30px;
 }
 
@@ -9345,6 +9351,9 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 
 .whats-new .content,
 .whats-new-page-content .content,
+.build-mobile-apps .content,
+.web-apps-and-portals .content,
+.web-apps-and-portals-content .content,
 .build-mobile-apps .content,
 .build-mobile-apps-content .content{
     color: #596669;

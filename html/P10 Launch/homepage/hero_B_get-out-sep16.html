@@ -12,7 +12,20 @@
     left: 0;
     right: 0;
   }
+  .header-hero-wrapper.home-rev{
+    background-image: url(/cms_backoffice/assets/20160913105209/imgtop-mock-web4);
+  }
+  .home .navigation-inner .menu-overlay{
+    display: none;
+  }
+  .call-out-hero-ad{
+    opacity: .8;
+  }
   @media screen and (max-width: 767px) {
+    .header-hero-wrapper.home-rev{
+      background-image: url(/cms_backoffice/assets/20160913105226/imgtop-mock-mob3);
+      background-position: center;
+    }
     body .header-hero-wrapper.home-rev:before {
       content: "";
       position: absolute;
@@ -83,54 +96,18 @@
     <div class="row">
       <div class="span12" style="margin-left: 0;padding: 0 25px;">
         <h1 class="slogan">
-          Build Enterprise-Grade Apps Fast <br>
-          <span class="words-wrapper">
-          	   <h3 class="is-visible">...really, much faster</h3>
-          	   <h3>... you probably should see this</h3>
-          	   <h3>... could make the Kessel Run in less than twelve parsecs</h3>
-          	   <h3>... how about a native mobile app in 4 weeks?</h3>
-          	   <h3>... apps that go to 11 </h3>
-          	   <h3>...finally, fast meets enterprise-grade </h3>
-          </span>
+          Get Out
         </h1>
-        <script>
-        	var isLast = function(word) {
-              return $(word).next().length > 0 ? false : true;
-            }
-            var getNext = function(word) {
-              return $(word).next();
-            }
-            var getVisible = function () {
-              return document.getElementsByClassName('is-visible');
-            }
-            var getFirst =  function() {
-              var node = $('.words-wrapper').children().first();
-              return node;
-            }
-            var switchWords = function(current, next) {
-              $(current).removeClass('is-visible').addClass('is-hidden');
-              $(next).removeClass('is-hidden').addClass('is-visible');
-            }
-            var getStarted = function() {
-              //We start by getting the visible element and its sibling
-              var first = getVisible();
-              var next = getNext(first);
-              //If our element has a sibling, it's not the last of the list. We switch the classes
-              if (next.length !== 0) {
-                 switchWords(first,next);
-              } else {
-                //The element is the last of the list. We remove the visible class of the current element
-                $(first).removeClass('is-visible').addClass('is-hidden');
-                //And we get the first element of the list, and we give it the visible class. And it starts again.
-                var newEl = getFirst();
-                $(newEl).removeClass('is-hidden').addClass('is-visible');
-              }
-            }
-            var init = function() {
-              setInterval(function() {getStarted()}, 5000);
-            }
-            init();
-        </script>
+      </div>
+      <div class="span12" style="margin-left: 0;padding: 0 25px;">
+        <h3 class="get-out-subtitle">
+          Build enterprise apps incredibly fast with the #1 low-code platform.
+        </h3>
+        <h3 class="get-out-subtitle">
+          Code less - Build more - Get OutSystems
+        </h3>
+      </div>
+      <div class="span12" style="margin-left: 0;padding: 0 25px;">
         <div class="hero-home-buttons">
           <a class="osbtn osbtn-red" id="get-started-top" href="/get-started/"><span>Try Now for Free</span> </a> 
           <a class="osbtn osbtn-white" id="explore-platform" href="/platform/" ><span>Explore the platform</span> </a>
@@ -142,7 +119,7 @@
     <div class="call-out-hero-ad">
       <div class="container">
         <h3>
-          The #1 low-code platform for digital transformation - build mobile apps, web portals, mission critical systems and more. 
+          The #1 low-code platform for digital transformation - build mobile apps, web portals, mission critical systems and more.  %MOBILE% <br> %/MOBILE%
           <a href="https://www.outsystems.com/1/forrester-low-code-development-platforms/">Download Forrester Report</a>
         </h3>
       </div>

@@ -1,0 +1,137 @@
+<style type="text/css">
+  body{
+    overflow-x: hidden;
+  }
+  form{
+    height: 640px;
+  }
+  form > div.top70{
+    margin: 0;
+  }
+  .header-hero-wrapper{
+    height: 644px;
+    background-color: #f0f3f5;
+    background-image: url(/cms_backoffice/assets/20160923095720/background2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 0;
+    position: relative;
+  }
+  .second-level-menu-wrapper{
+    display: none;
+  }
+  .welcome-to-outsystems img.frame{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 700px;
+  }
+  .welcome-to-outsystems img.gif{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 700px;
+  }
+  .header-hero-wrapper:not(.home) .small-search svg{
+    fill: #fff;
+  }
+  .header-hero-wrapper .navigation-outter{
+    background: transparent;
+  }
+  .header-hero-wrapper:not(.home) .navigation-bar li{
+    border-bottom: 3px solid transparent;
+  }
+  .header-hero-wrapper:not(.home) .navigation-bar li:hover {
+    border-bottom: 3px solid rgba(255,255,255,0.26);
+  }
+</style>
+<div class="welcome-to-outsystems">
+  <div class="welcome-to-os-title">
+    <div class="switcher">
+      Everything you need to
+      <div class="words-wrapper">
+        <span class="is-visible">build</span> <span>deploy</span> <span>manage</span> <span>change</span>
+      </div>
+      <br />
+      enterprise apps incredibly fast.
+    </div>
+  </div>
+  <img class="frame" src="/cms_backoffice/assets/20160923101508/interface_890px" /> <img class="gif" src="/cms_backoffice/assets/20160923095642/plataforma_gif_05" />
+  <div class="welcome-to-os-hero">
+    &nbsp;
+  </div>
+  <div class="welcome-to-os-nav">
+    <div class="container">
+      <ul class="page-nav">
+        <li><a href="#unbeatable-speed">Unbeatable Speed</a></li>
+        <li><a href="#integrate-with-everything">Integrate with Everything</a></li>
+        <li><a href="#great-ux-by-default">Great UX by Default</a></li>
+        <li><a href="#low-code">Low-Code</a></li>
+        <li><a href="#enterprise-grade">Enterprise-Grade</a></li>
+        <li><a href="#unbreakable-deployment">Unbreakable Deployment</a></li>
+        <li><a href="#real-time-performance">Metrics that Matter</a></li>
+      </ul>
+    </div>
+  </div>
+  <script>
+     $('.arrow').click(function () {
+            $('body,html').animate({
+                scrollTop: ($('.header-hero-wrapper').outerHeight() - 60)
+            }, 800);
+            setTimeout(function(){
+            	$('.page-nav li a[href="#unbeatable-speed"]').parent().addClass('active');
+                window.location.hash = "#unbeatable-speed";
+            }, 800);
+    });
+    	$(function() {
+              $('.page-nav a[href*=#]').click(function(event) {
+                event.preventDefault();
+                $('.page-nav li').removeClass('active');
+                $(this).parent().addClass('active');
+                $('html, body').animate({
+                  scrollTop: $($(this.hash)).offset().top - 60
+                }, 1200, 'swing'); //scroll page to focus on form
+               //  window.location.hash = this.hash;
+              });
+            });
+            var isLast = function(word) {
+  return $(word).next().length > 0 ? false : true;
+}
+var getNext = function(word) {
+  return $(word).next();
+}
+var getVisible = function () {
+  return document.getElementsByClassName('is-visible');
+}
+var getFirst =  function() {
+  var node = $('.words-wrapper').children().first();
+  return node;
+}
+var switchWords = function(current, next) {
+  $(current).removeClass('is-visible').addClass('is-hidden');
+  $(next).removeClass('is-hidden').addClass('is-visible');
+}
+var getStarted = function() {
+  //We start by getting the visible element and its sibling
+  var first = getVisible();
+  var next = getNext(first);
+  //If our element has a sibling, it's not the last of the list. We switch the classes
+  if (next.length !== 0) {
+     switchWords(first,next);
+  } else {
+    //The element is the last of the list. We remove the visible class of the current element
+    $(first).removeClass('is-visible').addClass('is-hidden');
+    //And we get the first element of the list, and we give it the visible class. And it starts again.
+    var newEl = getFirst();
+    $(newEl).removeClass('is-hidden').addClass('is-visible');
+  }
+}
+var init = function() {
+  setInterval(function() {getStarted()}, 2000);
+}
+init();
+  </script>
+</div>
