@@ -347,7 +347,7 @@ function ToggleStickyBottomMenu(){
             e.preventDefault();
             $(document).off("scroll");
 
-            $('a').each(function () {
+            $(this).each(function () {
                 $(this).parent().removeClass('active');
             })
             $(this).parent().addClass('active');

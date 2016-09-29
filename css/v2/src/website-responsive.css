@@ -391,7 +391,7 @@ v=201510021536
     }
     
     .what-is-os .take-the-next-step>.container{
-        padding: 30px 0;
+        padding: 40px 0;
     }
 
     .what-is-os .take-the-next-step .span4{
@@ -480,6 +480,8 @@ v=201510021536
         position: absolute;
         top: 0;
         bottom: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -524,8 +526,30 @@ v=201510021536
         display: none;
     }
 
-    .platform-page-content > div{
-        padding: 30px 0;
+    .platform-page-content > div,
+    .web-apps-and-portals-content > div,
+    .whats-new-page-content > div{
+        padding: 40px 0;
+        overflow-x: hidden;
+    }
+
+    .whats-new-page-content .learn-more-cta{
+        font-size: 18px;
+        padding: 0 15px;
+    }
+
+    .whats-new-page-content .sensors-and-more{
+        padding-bottom: 410px;
+        padding-top: 40px;
+    }
+
+    .whats-new-page-content .sensors-and-more img{
+        bottom: -25px;
+    }
+
+    .whats-new-page-content .sophisticated-offline img{
+        width: 100%;
+        padding: 0;
     }
 
     .platform-page-content div.learn-more-cta{
@@ -556,8 +580,6 @@ v=201510021536
         padding: 0 20px !important;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
     }
 
     .platform-page-content .enterprise-grade .text{
@@ -643,7 +665,6 @@ v=201510021536
     }
 
     .whats-new-page-content img#iphone{
-        width: 60%;
         right: 0;
         position: relative;
         padding-top: 40px;
@@ -655,6 +676,13 @@ v=201510021536
         padding: 0;
     }
 
+     .whats-new-page-content video#interface{
+        position: absolute;
+        top: 112px;
+        right: 40px;
+        width: 154px;
+        border: 1px solid #c7c2c2;
+    }
     .whats-new h1{
             font-size: 40px;
         line-height: 44px;
@@ -668,6 +696,17 @@ v=201510021536
     .whats-new .whats-new-hero>.container{
         width: 90%;
         top: 200px;
+    }
+
+    .web-apps-and-portals-content h2{
+        text-align: center;
+    }
+
+    .web-apps-and-portals-content .continuous-delivery .row{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .lead {

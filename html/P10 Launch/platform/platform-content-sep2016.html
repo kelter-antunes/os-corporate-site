@@ -9,6 +9,24 @@
   {
     background-color: #f0f3f5;
   }
+  span.img-caption.caption1 {
+    position: absolute;
+    top: -25px;
+    left: 155px;
+    text-align: right;
+  }
+  span.img-caption.caption2 {
+    position: absolute;
+    top: 65px;
+    left: 140px;
+    text-align: right;
+ }
+ span.img-caption.caption3{
+    position: absolute;
+    text-align: left;
+    right: -5px;
+    top: -15px;
+ }
 </style>
 <div class="platform-page-content">
   <div class="unbeatable-speed" id="unbeatable-speed">
@@ -223,18 +241,13 @@
             We analyzed the world&rsquo;s leading apps and crafted a library of beautiful UI&nbsp;widgets that can be added to an app with just a few clicks.
           </div>
           <div class="learn-more-cta">
-            <a href="https://labs.outsystems.net/p10silkui/Patterns.aspx" target="_blank"><span>Go deeper: learn more about the SILK UI patterns</span>&nbsp;<img src="/cms_backoffice/assets/20160916085647/_blank" /> </a>
+            <a href="https://silkui.outsystems.com/Patterns.aspx" target="_blank"><span>Go deeper: learn more about the SILK UI patterns</span>&nbsp;<img src="/cms_backoffice/assets/20160916085647/_blank" /> </a>
           </div>
         </div>
       </div>
       <div class="row top30 %WEB% animated-section %/WEB%">
         <div class="span12 %MOBILE% align-center %/MOBILE%">
-          %WEB%
-          <img class="animate scr-2" data-transition="bottom-up" src="/cms_backoffice/assets/20160921101059/silk_interace_2_190px1" /> <img class="animate scr-1" data-transition="bottom-up" src="/cms_backoffice/assets/20160919164009/silk_interace_680px" /> <img class="animate scr-3" data-transition="bottom-up" src="/cms_backoffice/assets/20160921101048/silk_interace_3_190px_2" />
-          %/WEB%
-          %MOBILE% 
-          <img src="/cms_backoffice/assets/20160928110810/silk_ui_mobile" />
-          %/MOBILE%
+          %WEB% <img class="animate scr-2" data-transition="bottom-up" src="/cms_backoffice/assets/20160921101059/silk_interace_2_190px1" /> <img class="animate scr-1" data-transition="bottom-up" src="/cms_backoffice/assets/20160919164009/silk_interace_680px" /> <img class="animate scr-3" data-transition="bottom-up" src="/cms_backoffice/assets/20160921101048/silk_interace_3_190px_2" /> %/WEB% %MOBILE% <img src="/cms_backoffice/assets/20160928110810/silk_ui_mobile" /> %/MOBILE%
         </div>
       </div>
     </div>
@@ -252,6 +265,7 @@
         </div>
       </div>
       <div class="row %WEB% top30 %/WEB%">
+        %MOBILE%
         <div class="span4">
           <ul>
             <li>Wrap your existing code then drag-and-drop into your visual models</li>
@@ -259,11 +273,19 @@
             <li>No runtime interpreters so your code is optimized for unbeatable performance</li>
           </ul>
         </div>
-        <div class="span8">
+        <div class="span8 align-center">
           <img src="/cms_backoffice/assets/20160916092701/low-code-img" />
         </div>
+        %/MOBILE% %WEB%
+        <div class="span12 top50 align-center" style="position: relative;">
+          <span class="img-caption caption1">No runtime interpreters or engines and code <br> <strong>optimized for unbeatable performance</strong></span>
+              <span class="img-caption caption2">Create your own reusable <strong>extensions  <br> to use in any layer</strong> of your application</span>
+              <span class="img-caption caption3">Wrap your existing code and<br> <strong>drag-and-drop into your visual model</strong></span>
+          <img src="/cms_backoffice/assets/20160929132003/low-code-image" />
+        </div>
+        %/WEB%
       </div>
-      <div class="row top30">
+      <div class="row %MOBILE% top30 %/MOBILE%">
         <div class="span12 align-center">
           <div class="learn-more-cta">
             <a class="spicy" href="https://success.outsystems.com/Evaluation/Developing_with_OutSystems_Platform/00_Will_I_hit_a_wall_when_developing" target="_blank"><img src="/cms_backoffice/assets/20160914161344/pepper" />&nbsp;<span>Go Deeper: see how you can extend your apps with code</span></a>
@@ -284,7 +306,7 @@
           </div>
         </div>
       </div>
-      <div class="row top60">
+      <div class="row %WEB% top60 %/WEB%">
         <div class="align-center">
           <ul>
             <li class="align-center"><img src="/cms_backoffice/assets/20160919163032/001_red" />
@@ -301,6 +323,7 @@
                 <a href="https://success.outsystems.com/Evaluation/Scalability" target="_blank"><span>Learn more</span></a>
               </div>
             </li>
+            %MOBILE% </ul><ul> %/MOBILE%
             <li class="align-center"><img src="/cms_backoffice/assets/20160919163032/003_red" />
               <div class="title">Performance
               </div>
@@ -315,6 +338,7 @@
                 <a href="https://success.outsystems.com/Evaluation/Architecture" target="_blank"><span>Learn more</span></a>
               </div>
             </li>
+            %MOBILE% </ul><ul> %/MOBILE%
             <li class="align-center"><img src=" /cms_backoffice/assets/20160926111447/deployment" />
               <div class="title">Flexible Deployment
               </div>

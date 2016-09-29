@@ -8559,7 +8559,8 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     z-index: 0;
 }
 
-.whats-new .whats-new-video{
+.whats-new .whats-new-video,
+.whats-new .whats-new-video-fallback{
     position: absolute;
     left: 45%;
     width: 760px;
@@ -8821,14 +8822,22 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 
 .whats-new-page-content img.topic_image{
     border-bottom: 2px solid #ccc;
-    max-width: 250px;
+    max-width: 200px;
 }
 
 .whats-new-page-content div.topic_title{
     color: #596669;
     font-family: myriad-pro,arial,sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
+}
+
+.whats-new-page-content div.topic_caption{
+    color: #596669;
+    font-family: myriad-pro,arial,sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 20px 5px;
 }
 
 .platform-page-content h2,
@@ -8880,7 +8889,8 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     padding: 20px 0;
 }
 
-.platform-page-content ul li{
+.platform-page-content ul li,
+.platform-page-content .img-caption{
     color: #596669;
     font-family: myriad-pro,arial,sans-serif;
     font-size: 16px;
@@ -9265,7 +9275,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 }
 
 .platform-page-content .low-code img{
-    max-width: 280px;
+    max-width: 980px;
 }
 
 .platform-page-content .unbreakable-deployment ul,
@@ -9376,7 +9386,9 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 .sophisticated-offline,
 .bridge-the-skill-gap,
 .world-class-front-ends,
-.back-ends-made-easy
+.back-ends-made-easy,
+.web-apps-and-portals-content > div,
+.whats-new-page-content > div
 {
     padding: 70px 0;    
     overflow-x: hidden;
@@ -9404,7 +9416,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 .sensors-and-more{    
     position: relative;
     background-color: #fff;
-    padding-bottom: 390px;
+    padding-bottom: 390px !important;
     padding-top: 70px;
 }
 

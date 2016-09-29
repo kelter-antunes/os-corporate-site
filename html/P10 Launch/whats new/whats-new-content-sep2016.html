@@ -28,6 +28,13 @@
   img#skills{
     max-width: 980px;
   }
+  video#interface{
+    position: absolute;
+    bottom: 50px;
+    right: 38px;
+    width: 156px;
+    border: 1px solid #c7c2c2;
+  }
 </style>
 <div class="whats-new-page-content">
   <div class="cross-platform-native">
@@ -47,41 +54,49 @@
         </div>
       </div>
       <div class="row top30">
-        <div class="span3">
-          <div class="topic_title" style="text-align: center;">
-            Server-Side and
-            <br />
-            Client-Side Logic
+        <div class="span3 %MOBILE% top20 %/MOBILE% align-center">
+          <div class="topic_title">
+            Server-Side and Client-Side Logic
           </div>
-          <p style="text-align: center;">
-            <img alt="client-side-logic" class="topic_image" src="/cms_backoffice/assets/20160928180029/mobile-1-server-client-a" style="width: 224px; height: 115px;" />
-          </p>
-        </div>
-        <div class="span3">
-          <div class="topic_title" style="text-align: center;">
-            Database and
-            <br />
-            Local Storage
+          <div class="topic_content">
+            <img alt="Server-Side and Client-Side Logic" class="topic_image" src=" /cms_backoffice/assets/20160929153710/xnative_service_client" />     
+            <div class="topic_caption">
+              Client-side logic is cached and pushed to the device, eliminating communication overhead 
+            </div>
           </div>
-          <p style="text-align: center;">
-            <img alt="Local Storage" class="topic_image" src="  /cms_backoffice/assets/20160928180049/mobile-2-database-a" style="width: 224px; height: 115px;" />
-          </p>
         </div>
-        <div class="span3">
-          <div class="topic_title" style="text-align: center;">
+        <div class="span3 %MOBILE% top20 %/MOBILE% align-center">
+          <div class="topic_title">
+            Database and Local Storage
+          </div>      
+          <div class="topic_content">
+            <img alt="  Database and Local Storage" class="topic_image" src=" /cms_backoffice/assets/20160929153712/xnative_database"  />    
+            <div class="topic_caption">                            
+                Offline data is modeled with local storage entities that can be queried just like a relational database
+            </div>
+          </div>
+        </div>
+        <div class="span3 %MOBILE% top20 %/MOBILE% align-center">
+          <div class="topic_title">
             Asynchronous
+          </div>       
+          <div class="topic_content">
+            <img alt="Asynchronous" class="topic_image" src="/cms_backoffice/assets/20160929153713/xnative_asynch" />
+            <div class="topic_caption">                           
+                An app executing a server-side action continues to run and respond to user input
+            </div>
           </div>
-          <p style="text-align: center;">
-            <img alt="asynchronous-mobile" class="topic_image" src=" /cms_backoffice/assets/20160928180108/mobile-3-asynchronous-a" style="width: 224px; height: 115px;" />
-          </p>
         </div>
-        <div class="span3">
-          <div class="topic_title" style="text-align: center;">
+        <div class="span3 %MOBILE% top20 %/MOBILE% align-center">
+          <div class="topic_title">
             Reactive
+          </div>  
+          <div class="topic_content">
+             <img alt="Reactive" class="topic_image" src=" /cms_backoffice/assets/20160929153711/xnative_reactive"  /> 
+             <div class="topic_caption"> 
+                UI elements update immediately when the data they are bound to changes
+            </div>
           </div>
-          <p style="text-align: center;">
-            <img alt="mobile-reactive" class="topic_image" src="  /cms_backoffice/assets/20160928180109/mobile-4-reactive2" style="width: 224px; height: 115px;" />
-          </p>
         </div>
       </div>
     </div>
@@ -105,7 +120,10 @@
           </p>
         </div>
         <div class="span7">
-          <img id="ipad" src="/cms_backoffice/assets/20160927170647/ipad_mockup" /> <img id="iphone" src="  /cms_backoffice/assets/20160927170720/iphone_frame" />
+          <img id="ipad" src="/cms_backoffice/assets/20160927170647/ipad_mockup" /> <img id="iphone" src="  /cms_backoffice/assets/20160929140257/iphone_fallback_img" />
+          <video autoplay="" id="interface" loop="">
+            <source src="/cms_backoffice/assets/20160929111854/interface-animated" type="video/mp4" />
+          </video>
         </div>
       </div>
     </div>
@@ -124,8 +142,9 @@
           Access any device-native capability just by dragging from the set of intuitive native libraries. Leverage new native sensors or capabilities with an open source plugin. Publish new native extensions as visual components that can be reused or shared by the entire community in the Forge. OutSystems takes care of understanding dependencies and integrity and updating the native component when needed.
         </div>
       </div>
-      %WEB% <img src="/cms_backoffice/assets/20160926180041/sensors2" /> %/WEB% %MOBILE% <img src="/cms_backoffice/assets/20160928110949/sensors_and_more_mobile" /> %/MOBILE%
+      %WEB% <img src="/cms_backoffice/assets/20160926180041/sensors2" /> %/WEB%
     </div>
+    %MOBILE% <img src=" /cms_backoffice/assets/20160929142016/sensors_mob" /> %/MOBILE%
   </div>
   <div class="sophisticated-offline">
     <div class="container">
@@ -185,14 +204,21 @@
           </h2>
         </div>
       </div>
-      <div class="row top20">
+      <div class="row %WEB% top20 %/WEB%">
         <div class="span12 align-center content">
           Reduce your backlog for mobile app development now and empower your developers to do more with the skillsets they already have. All they have to do is drag and drop components, a world-class UX, device computation business logic, and complex device data models into the development environment. Then, they generate their mobile apps for submission to the store with one click. Develop and deploy the kind of mobile once thought only possible in Silicon Valley.
         </div>
       </div>
-      <div class="row top50">
+      <div class="row %WEB% top50 %/WEB%">
         <div class="span12 align-center">
-          %WEB% <img id="skills" src="/cms_backoffice/assets/20160927172259/comp_bridgetheskillgap" /> %/WEB% %MOBILE% <img id="skills" src="/cms_backoffice/assets/20160928152950/bridge-the-skill-gap_responsive" style="mad-width:none;" /> %/MOBILE%
+          %WEB% <img id="skills" src="/cms_backoffice/assets/20160927172259/comp_bridgetheskillgap" /> %/WEB% %MOBILE% <img id="skills" src="/cms_backoffice/assets/20160928152950/bridge-the-skill-gap_responsive" style="max-width:none;" /> %/MOBILE%
+        </div>
+      </div>
+      <div class="row %WEB% top50 %/WEB%">
+        <div class="span12 align-center">
+          <div class="learn-more-cta">
+            <a href="https://success.outsystems.com/Documentation/P10/Getting_Started/01_New_in_OutSystems_10" target="_blank"><span>Go deeper: Learn more about all the new functionality in OutSystems 10</span> <img src="/cms_backoffice/assets/20160916085647/_blank" /> </a>
+          </div>
         </div>
       </div>
     </div>

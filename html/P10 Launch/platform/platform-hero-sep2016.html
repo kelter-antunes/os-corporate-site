@@ -21,6 +21,26 @@
   .second-level-menu-wrapper{
     display: none;
   }
+  .welcome-to-outsystems a.osbtn{
+    cursor: pointer;
+    font-family: myriad-pro, Arial, sans-serif;
+    color: #fff;
+    border-radius: 0;
+    background-image: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .5px;
+    padding: 15px 40px;
+    background: #dd1f00;
+    border: 1px solid #dd1f00;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1;
+  }
   .welcome-to-outsystems img.frame{
     position: absolute;
     bottom: 0;
@@ -47,6 +67,15 @@
   .header-hero-wrapper:not(.home) .navigation-bar li:hover {
     border-bottom: 3px solid rgba(255,255,255,0.26);
   }
+  @media screen and (max-width:767px) {
+    .welcome-to-outsystems img.frame,
+    .welcome-to-outsystems img.gif{
+      max-width: 320px;
+    }
+    .header-hero-wrapper{
+      height: 594px;
+    }
+  }
 </style>
 <div class="welcome-to-outsystems">
   <div class="welcome-to-os-title">
@@ -59,7 +88,7 @@
       enterprise apps incredibly fast.
     </div>
   </div>
-  <img class="frame" src="/cms_backoffice/assets/20160923101508/interface_890px" /> <img class="gif" src="/cms_backoffice/assets/20160923095642/plataforma_gif_05" />
+  <a class="osbtn" href="#">watch 2-min overview</a> <img class="frame" src="/cms_backoffice/assets/20160923101508/interface_890px" /> <img class="gif" src="/cms_backoffice/assets/20160923095642/plataforma_gif_05" />
   <div class="welcome-to-os-hero">
     &nbsp;
   </div>
@@ -82,11 +111,11 @@
                 scrollTop: ($('.header-hero-wrapper').outerHeight() - 60)
             }, 800);
             setTimeout(function(){
-            	$('.page-nav li a[href="#unbeatable-speed"]').parent().addClass('active');
+              $('.page-nav li a[href="#unbeatable-speed"]').parent().addClass('active');
                 window.location.hash = "#unbeatable-speed";
             }, 800);
     });
-    	$(function() {
+      $(function() {
               $('.page-nav a[href*=#]').click(function(event) {
                 event.preventDefault();
                 $('.page-nav li').removeClass('active');

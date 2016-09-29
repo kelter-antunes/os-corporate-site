@@ -24,13 +24,23 @@
   }
   .web-apps-and-portals-hero img{
     position: absolute;
-    top: -100px;
+    top: 0px;
     right: -60px;
-    width: 1000px;
+    width: 780px;
+    height: 473px;
   }
   @media screen and (max-width: 767px){
     .header-hero-wrapper{
-      min-height: 750px;
+      min-height: 715px;
+    }
+    .web-apps-and-portals .web-apps-and-portals-hero>.container{
+      top: 35%;
+      width: 90%;
+    }
+    .web-apps-and-portals-hero img{
+      width: 780px;
+      top: 95%;
+      height: auto;
     }
   }
 </style>
@@ -47,11 +57,11 @@
           </div>
         </div>
       </div>
-      <img alt="web-apps-portals" src="/cms_backoffice/assets/20160928193245/web-apps-portals-hero1" style="width: 780px; height: 473px;" />
+      <img alt="web-apps-portals" src="/cms_backoffice/assets/20160928193245/web-apps-portals-hero1" />
     </div>
   </div>
   <script>
-  	 $('.arrow').click(function () {
+     $('.arrow').click(function () {
             $('body,html').animate({
                 scrollTop: $('.header-hero-wrapper').outerHeight()
             }, 800);
