@@ -517,6 +517,12 @@ v=201510021536
         bottom: 0;
     }
 
+    .welcome-to-outsystems a#overview{
+        bottom: 190px;
+        top: auto !important;
+        width: 200px;
+    }
+
     #footer-wrapper {
         margin-top: -50px;
     }
@@ -527,10 +533,11 @@ v=201510021536
     }
 
     .platform-page-content > div,
+    .build-mobile-apps-content > div,
     .web-apps-and-portals-content > div,
     .whats-new-page-content > div{
         padding: 40px 0;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     .whats-new-page-content .learn-more-cta{
@@ -641,11 +648,15 @@ v=201510021536
         width: 90%;
         white-space: normal;
         top: 100px;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+        transform: translateX(-50%);
     }
 
     .welcome-to-outsystems .welcome-to-os-title .switcher{
         font-size: 40px;
-        line-height: 45px;
+        line-height: 46px;
+        text-align: center;
     }
 
     .welcome-to-outsystems img.frame,
@@ -698,11 +709,28 @@ v=201510021536
         top: 200px;
     }
 
+    .build-mobile-apps .build-mobile-apps-hero > .container{
+        width: 90%;
+        top: 40%;
+    }
+
+     .build-mobile-apps .build-mobile-apps-hero img{
+        position: absolute;
+        bottom: 0;
+        max-width: 130%;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+        transform: translateX(-50%);
+    }
+
     .web-apps-and-portals-content h2{
         text-align: center;
     }
 
-    .web-apps-and-portals-content .continuous-delivery .row{
+    .build-mobile-apps-content .sophisticated-offline .row,
+     .build-mobile-apps-content .world-class-front-ends .row,
+    .web-apps-and-portals-content .continuous-delivery .row,
+    .whats-new-page-content .sophisticated-offline .row{
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;

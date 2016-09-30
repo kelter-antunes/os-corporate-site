@@ -29,22 +29,65 @@
     right: 0;
     z-index: 0;
   }
+  .world-class-front-ends .span7{
+    position: relative;
+    min-height: 450px;
+  }
+  img#ipad{
+    position: absolute;
+    top: 0;
+    max-width: 475px;
+  }
+  img#iphone {
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    max-width: 300px;
+  }
+  img#skills{
+    max-width: 980px;
+  }
+  video#interface{
+    position: absolute;
+    bottom: 50px;
+    right: 38px;
+    width: 156px;
+    border: 1px solid #c7c2c2;
+  }
+  
+  @media screen and (max-width: 767px){
+    .back-ends-made-easy img{
+      position: relative; 
+    }
+    .back-ends-made-easy .span5{
+      padding: 0;  
+    }
+    .sophisticated-offline img{
+      max-width:  100%;
+      padding:  0;
+    }
+    img#ipad {
+      max-width:  100%;
+    }
+  }
 </style>
 <div class="build-mobile-apps-content">
   <div class="world-class-front-ends">
     <div class="container">
       <div class="row">
-        <div class="span12 align-center">
-          <h2>
-            World-Class Front-Ends
-          </h2>
+        <div class="span7">
+          <img id="ipad" src="/cms_backoffice/assets/20160927170647/ipad_mockup" /> <img id="iphone" src="  /cms_backoffice/assets/20160929140257/iphone_fallback_img" />
+          <video autoplay="" id="interface" loop="">
+            <source src="/cms_backoffice/assets/20160929111854/interface-animated" type="video/mp4" />
+          </video>
         </div>
-      </div>
-      <div class="row">
-        <div class="span12 content">
-          <p>
+        <div class="span5 %MOBILE% align-center %/MOBILE% %WEB% top100 %/WEB%">
+         <h2>
+            World-Class %MOBILE% <br> %/MOBILE% Front-Ends
+          </h2>
+          <div clasS="content">
             OutSystems gives you the best of both worlds: drag-and-drop simplicity or use your own code. Either way, you can build experiences users will love. Response times of under 80 milliseconds for smooth-as-butter UIs and more than 70 out-of-the-box themes, patterns, and controls for beautiful mobile and web experiences.
-          </p>
+          </div>
         </div>
       </div>
     </div>
@@ -52,9 +95,9 @@
   <div class="back-ends-made-easy">
     <div class="container">
       <div class="row">
-        <div class="span5">
+        <div class="span5 %MOBILE% align-center %/MOBILE%">
           <h2>
-            Back-ends Made Easy
+            Back-ends %MOBILE% <br> %/MOBILE% Made Easy
           </h2>
           <div class="content">
             From core ERP and CRM solutions to aging legacy systems and custom apps that do things like track satellites and ships - OutSystems makes it easy for you to integrate with any external enterprise system, database, or custom app.
@@ -86,18 +129,16 @@
   <div class="sophisticated-offline">
     <div class="container">
       <div class="row">
-        <div class="span12 align-center">
-          <h2>
-            Secure and Sophisticated Offline
-          </h2>
-        </div>
-      </div>
-      <div class="row">
         <div class="span7">
           <img src="/cms_backoffice/assets/20160922173612/nexus9-offline" />
         </div>
-        <div class="span5 content">
-          Develop mobile apps that run seamlessly whether the user is online or offline&mdash;using existing skillsets&mdash;incredibly fast. With support for offline data caching, complex offline data access and synchronization patterns and everything in between, you can quickly deploy apps to field operations. Are they out of network for long periods? No problem; apps built with OutSystems can handle that.
+        <div class="span5 %MOBILE% align-center %/MOBILE% %WEB% top40 %/WEB%">
+          <h2>
+            Secure and %WEB% <br> %/WEB% Sophisticated Offline
+          </h2>
+          <div class="content">
+             Develop mobile apps that run seamlessly whether the user is online or offline&mdash;using existing skillsets&mdash;incredibly fast. With support for offline data caching, complex offline data access and synchronization patterns and everything in between, you can quickly deploy apps to field operations. Are they out of network for long periods? No problem; apps built with OutSystems can handle that.
+          </div>         
         </div>
       </div>
     </div>
