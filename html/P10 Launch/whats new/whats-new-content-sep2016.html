@@ -14,6 +14,10 @@
     position: relative;
     min-height: 450px;
   }
+  .whats-new-page-content .sensors-and-more img{
+    max-width: 900px;
+    left: 52%;
+  }
   img#ipad{
     position: absolute;
     top: 0;
@@ -35,6 +39,15 @@
     width: 156px;
     border: 1px solid #c7c2c2;
   }
+  @media screen and (max-width: 767px){
+    .whats-new-page-content .sensors-and-more{
+        padding-bottom: 200px !important;
+    }
+    .whats-new-page-content .sensors-and-more img{
+      max-width: 420px;
+    }
+
+  }
 </style>
 <div class="whats-new-page-content">
   <div class="cross-platform-native">
@@ -42,7 +55,7 @@
       <div class="row">
         <div class="span12 align-center">
           <h2>
-            Cross-Platform Native
+            Cross-Platform Native Experience
           </h2>
         </div>
       </div>
@@ -59,42 +72,42 @@
             Server-Side and Client-Side Logic
           </div>
           <div class="topic_content">
-            <img alt="Server-Side and Client-Side Logic" class="topic_image" src=" /cms_backoffice/assets/20160929153710/xnative_service_client" />     
+            <img alt="Server-Side and Client-Side Logic" class="topic_image" src=" /cms_backoffice/assets/20160929153710/xnative_service_client" />
             <div class="topic_caption">
-              Client-side logic is cached and pushed to the device, eliminating communication overhead 
+              Client-side logic is cached and pushed to the device, eliminating communication overhead
             </div>
           </div>
         </div>
         <div class="span3 %MOBILE% top20 %/MOBILE% align-center">
           <div class="topic_title">
             Database and Local Storage
-          </div>      
+          </div>
           <div class="topic_content">
-            <img alt="  Database and Local Storage" class="topic_image" src=" /cms_backoffice/assets/20160929153712/xnative_database"  />    
-            <div class="topic_caption">                            
-                Offline data is modeled with local storage entities that can be queried just like a relational database
+            <img alt="  Database and Local Storage" class="topic_image" src=" /cms_backoffice/assets/20160929153712/xnative_database" />
+            <div class="topic_caption">
+              Offline data is modeled with local storage entities that can be queried just like a relational database
             </div>
           </div>
         </div>
         <div class="span3 %MOBILE% top20 %/MOBILE% align-center">
           <div class="topic_title">
             Asynchronous
-          </div>       
+          </div>
           <div class="topic_content">
             <img alt="Asynchronous" class="topic_image" src="/cms_backoffice/assets/20160929153713/xnative_asynch" />
-            <div class="topic_caption">                           
-                An app executing a server-side action continues to run and respond to user input
+            <div class="topic_caption">
+              An app executing a server-side action continues to run and respond to user input
             </div>
           </div>
         </div>
         <div class="span3 %MOBILE% top20 %/MOBILE% align-center">
           <div class="topic_title">
             Reactive
-          </div>  
+          </div>
           <div class="topic_content">
-             <img alt="Reactive" class="topic_image" src=" /cms_backoffice/assets/20160929153711/xnative_reactive"  /> 
-             <div class="topic_caption"> 
-                UI elements update immediately when the data they are bound to changes
+            <img alt="Reactive" class="topic_image" src=" /cms_backoffice/assets/20160929153711/xnative_reactive" />
+            <div class="topic_caption">
+              UI elements update immediately when the data they are bound to changes
             </div>
           </div>
         </div>
@@ -110,11 +123,11 @@
           </h2>
           <div class="content">
             <p>
-            For months, we researched and analyzed 70 of the top mobile apps to dissect the &ldquo;best of the best&rdquo; and then applied what we learned to OutSystems 10. The result was 64 widgets, the latest JavaScript and CSS technology, ultra-smooth responses in less than 80 milliseconds, and beautiful themes.
-          </p>
-          <p>
-            You now have everything needed to not only build amazing mobile experiences, but also add unique touches with custom code.
-          </p>
+              For months, we researched and analyzed 56 of the top mobile apps to dissect the &ldquo;best of the best&rdquo; and then applied what we learned to OutSystems 10. The result was 64 widgets, the latest JavaScript and CSS technology, ultra-smooth responses in less than 80 milliseconds, and beautiful themes.
+            </p>
+            <p>
+              You now have everything needed to not only build amazing mobile experiences, but also add unique touches with custom code.
+            </p>
           </div>
         </div>
         <div class="span7">
@@ -131,30 +144,32 @@
       <div class="row">
         <div class="span12 align-center">
           <h2>
-            Sensors and More
+            Beacons and Sensors and More... Oh My!
           </h2>
         </div>
       </div>
       <div class="row">
         <div class="span12 bot30 align-center content">
-          Access any device-native capability just by dragging from the set of intuitive native libraries. Leverage new native sensors or capabilities with an open source plugin. Publish new native extensions as visual components that can be reused or shared by the entire community in the Forge. OutSystems takes care of understanding dependencies and integrity and updating the native component when needed.
+          Need to add a sensor feature to your app? How about accessing the device camera or calendar? With OutSystems 10, any device-native capability is just a drag-and-drop away with an almost limitless world of components for you to use. Jump right in and leverage the huge out-of-box library, build your own, or access an ever-growing selection of open-source and Forge components.
         </div>
       </div>
-      %WEB% <img src="/cms_backoffice/assets/20160926180041/sensors2" /> %/WEB%
+      %WEB% <img src="/cms_backoffice/assets/20160930184109/sensorsandmore_interface_2" /> %/WEB%
     </div>
-    %MOBILE% <img src=" /cms_backoffice/assets/20160929142016/sensors_mob" /> %/MOBILE%
+    %MOBILE% <img src="/cms_backoffice/assets/20160930184109/sensorsandmore_interface_2" /> %/MOBILE%
   </div>
   <div class="sophisticated-offline">
     <div class="container">
-      <div class="row">  
+      <div class="row">
         <div class="span7">
-          <img src="/cms_backoffice/assets/20160922173612/nexus9-offline" />
+          <img src="/cms_backoffice/assets/20161003105050/nexus" />
         </div>
-        <div class="span5 %WEB% top80 %/WEB% %MOBILE% align-center %/MOBILE%">
-          <h2>Sophisticated Offline</h2>
+        <div class="span5 %WEB% top40 %/WEB% %MOBILE% align-center %/MOBILE%">
+          <h2>
+            Off the Grid? %MOBILE% <br> %/MOBILE% No problem.
+          </h2>
           <div class="content">
-             Develop mobile apps that run seamlessly whether the user is online or offline&mdash;using existing skillsets&mdash;incredibly fast. With support for offline data caching, complex offline data access and synchronization patterns and everything in between, you can quickly deploy apps to field operations. Are they out of network for long periods? No problem; apps built with OutSystems can handle that.
-          </div>        
+             OutSystems 10 makes one of the biggest challenges facing mobile developers easy: offline apps. Now you can develop mobile apps that run seamlessly no matter what kind of connectivity your users have. With support for offline data caching, complex offline data access and synchronization patterns and everything in between, you can quickly deploy apps that go everywhere and perform great.
+          </div>
         </div>
       </div>
     </div>
@@ -164,14 +179,14 @@
       <div class="row">
         <div class="span12  align-center">
           <h2>
-            Simplified Deployment
+            How About a 3 Day Vacation?
           </h2>
         </div>
       </div>
       <div class="row">
         <div class="span12 align-center content">
           <p>
-            One click and OutSystems 10 takes care of deployment, even preparing the installation package for the App Store or Google Play. Just add your developer certificates. But what if your app needs updating later? One click and the next time users go into the app, it will update automatically. No need to re-submit anything.
+            We’ve just added a lot more free time to your calendar.  OutSystems 10 includes a bunch of time saving features that make testing, deploying and updating your apps a breeze. One click takes care of deployment, even preparing the installation package for the App Store or Google Play...just add your developer certificates and your done. Update your app later? Not a problem.  OutSystems makes it easy to update your app automatically over the network without having to re-submit anything to the app stores.
           </p>
         </div>
       </div>
@@ -187,24 +202,24 @@
       <div class="row">
         <div class="span12 align-center">
           <h2>
-            Bridge the Skill Gap
+            Bridge the Skills Gap
           </h2>
         </div>
       </div>
       <div class="row">
         <div class="span12 align-center content">
-          Reduce your backlog for mobile app development now and empower your developers to do more with the skillsets they already have. All they have to do is drag and drop components, a world-class UX, device computation business logic, and complex device data models into the development environment. Then, they generate their mobile apps for submission to the store with one click. Develop and deploy the kind of mobile once thought only possible in Silicon Valley.
+          Reduce your backlog for mobile app development now and empower your developers to do more with the skillsets they already have. All they have to do is drag-and-drop components, a world-class UX, device computation business logic, and complex device data models into the development environment. Then, they generate their mobile apps for submission to the store with one click. Develop and deploy the kind of mobile once thought only possible in Silicon Valley.
         </div>
       </div>
       <div class="row %WEB% top50 %/WEB%">
         <div class="span12 align-center">
-          %WEB% <img id="skills" src="/cms_backoffice/assets/20160927172259/comp_bridgetheskillgap" /> %/WEB% %MOBILE% <img id="skills" src="/cms_backoffice/assets/20160928152950/bridge-the-skill-gap_responsive" style="max-width:none;" /> %/MOBILE%
+          %WEB% <img id="skills" src="/cms_backoffice/assets/20160927172259/comp_bridgetheskillgap" /> %/WEB% %MOBILE% <img id="skills" src="/cms_backoffice/assets/20160928152950/bridge-the-skill-gap_responsive" style="max-width:100%;" /> %/MOBILE%
         </div>
       </div>
       <div class="row %WEB% top50 %/WEB%">
         <div class="span12 align-center">
           <div class="learn-more-cta">
-            <a href="https://success.outsystems.com/Documentation/P10/Getting_Started/01_New_in_OutSystems_10" target="_blank"><span>Go deeper: Learn more about all the new functionality in OutSystems 10</span> <img src="/cms_backoffice/assets/20160916085647/_blank" /> </a>
+            <a href="https://success.outsystems.com/Documentation/10/Getting_Started/01_New_in_OutSystems_10" target="_blank" style="font-size:18px;"><span>Go deeper: Learn more about all the new functionality in OutSystems 10</span> <img src="/cms_backoffice/assets/20160916085647/_blank" /> </a>
           </div>
         </div>
       </div>
@@ -221,7 +236,7 @@
             Experience the Speed
           </h2>
           <div class="experience-the-speed-ctas">
-            <a class="osbtn osbtn-red" href="/1/outsystems-platform-demo/"><span>Schedule a demo</span> </a> <a class="osbtn osbtn-white" href="/get-started/"><span>Try Now for Free</span> </a>
+             <a class="osbtn osbtn-red" href="/schedule-demo/"><span>Schedule a demo</span> </a> <a class="osbtn osbtn-white" href="/get-started/"><span>Try Now for Free</span> </a>
           </div>
         </div>
       </div>

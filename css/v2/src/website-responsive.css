@@ -694,19 +694,26 @@ v=201510021536
         width: 154px;
         border: 1px solid #c7c2c2;
     }
+    .whats-new{
+        top: 0;
+        margin-top: 80px;
+    }
     .whats-new h1{
             font-size: 40px;
         line-height: 44px;
     }
     .whats-new .whats-new-video{
         width: 100%;
-        top: 350px;
         left: 0;
+        bottom: 0;
+        height: auto;
     }
 
     .whats-new .whats-new-hero>.container{
         width: 90%;
-        top: 200px;
+        top: 0;
+        -webkit-transform: translate(-50%,0);
+        transform: translate(-50%,0);
     }
 
     .build-mobile-apps .build-mobile-apps-hero > .container{

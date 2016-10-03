@@ -8524,6 +8524,7 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 .web-apps-and-portals,
 .build-mobile-apps{
     position: absolute;
+    overflow: hidden;
     min-height: 560px;
     width: 100%;
     top: 80px;
@@ -8565,8 +8566,6 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
     left: 45%;
     width: 760px;
     height: 546px;
-    -ms-flex-item-align: center;
-        align-self: center;
 }
 
 .whats-new .whats-new-hero > .container,
@@ -9407,16 +9406,17 @@ div.Popup .ui-dialog .ui-resizable-ne, div.Popup.ui-dialog .ui-resizable-ne {
 .sensors-and-more{    
     position: relative;
     background-color: #fff;
-    padding-bottom: 390px !important;
+    padding-bottom: 420px !important;
+    overflow: hidden;
     padding-top: 70px;
 }
 
 .sensors-and-more img{
-    max-width: 1200px;
+    max-width: 980px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0;
+    bottom: -120px;
 }
 
 .unbreakable-deployment{
