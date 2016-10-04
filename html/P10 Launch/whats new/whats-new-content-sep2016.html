@@ -32,21 +32,22 @@
   img#skills{
     max-width: 980px;
   }
-  video#interface{
+  #interface{
     position: absolute;
     bottom: 50px;
     right: 38px;
     width: 156px;
-    border: 1px solid #c7c2c2;
   }
   @media screen and (max-width: 767px){
     .whats-new-page-content .sensors-and-more{
-        padding-bottom: 200px !important;
+      padding-bottom: 200px !important;
     }
     .whats-new-page-content .sensors-and-more img{
       max-width: 420px;
     }
-
+    #interface{
+      top:96px;
+    }
   }
 </style>
 <div class="whats-new-page-content">
@@ -131,10 +132,9 @@
           </div>
         </div>
         <div class="span7">
-          <img id="ipad" src="/cms_backoffice/assets/20160927170647/ipad_mockup" /> <img id="iphone" src="/cms_backoffice/assets/20161004092055/iphonefallback" />
-          <video autoplay="" id="interface" loop="">
-            <source src="/cms_backoffice/assets/20160929111854/interface-animated" type="video/mp4" />
-          </video>
+          <img id="ipad" src="/cms_backoffice/assets/20160927170647/ipad_mockup" /> <img id="iphone" src="/cms_backoffice/assets/20161004092055/iphonefallback" /> 
+          <script>
+videoInliner("https://cdn.rawgit.com/outsystems-cx/os-corporate-site/master/img/interface-animated-s/", "/cms_backoffice/assets/20160929111854/interface-animated", "interface");</script>
         </div>
       </div>
     </div>
@@ -165,10 +165,12 @@
         </div>
         <div class="span5 %WEB% top40 %/WEB% %MOBILE% align-center %/MOBILE%">
           <h2>
-            Off the Grid? %MOBILE% <br> %/MOBILE% No problem.
+            Off the Grid? %MOBILE%
+            <br />
+            %/MOBILE% No problem.
           </h2>
           <div class="content">
-             OutSystems 10 makes one of the biggest challenges facing mobile developers easy: offline apps. Now you can develop mobile apps that run seamlessly no matter what kind of connectivity your users have. With support for offline data caching, complex offline data access and synchronization patterns and everything in between, you can quickly deploy apps that go everywhere and perform great.
+            OutSystems 10 makes one of the biggest challenges facing mobile developers easy: offline apps. Now you can develop mobile apps that run seamlessly no matter what kind of connectivity your users have. With support for offline data caching, complex offline data access and synchronization patterns and everything in between, you can quickly deploy apps that go everywhere and perform great.
           </div>
         </div>
       </div>
@@ -186,7 +188,7 @@
       <div class="row">
         <div class="span12 align-center content">
           <p>
-            We’ve just added a lot more free time to your calendar.  OutSystems 10 includes a bunch of time saving features that make testing, deploying and updating your apps a breeze. One click takes care of deployment, even preparing the installation package for the App Store or Google Play...just add your developer certificates and your done. Update your app later? Not a problem.  OutSystems makes it easy to update your app automatically over the network without having to re-submit anything to the app stores.
+            We&rsquo;ve just added a lot more free time to your calendar. OutSystems 10 includes a bunch of time saving features that make testing, deploying and updating your apps a breeze. One click takes care of deployment, even preparing the installation package for the App Store or Google Play... just add your developer certificates and you&#39;re done. Update your app later? Not a problem. OutSystems makes it easy to update your app automatically over the network without having to re-submit anything to the app stores.
           </p>
         </div>
       </div>
@@ -219,7 +221,7 @@
       <div class="row %WEB% top50 %/WEB%">
         <div class="span12 align-center">
           <div class="learn-more-cta">
-            <a href="https://success.outsystems.com/Documentation/10/Getting_Started/01_New_in_OutSystems_10" target="_blank" style="font-size:18px;"><span>Go deeper: Learn more about all the new functionality in OutSystems 10</span> <img src="/cms_backoffice/assets/20160916085647/_blank" /> </a>
+            <a href="https://success.outsystems.com/Documentation/10/Getting_Started/01_New_in_OutSystems_10" style="font-size:18px;" target="_blank"><span>Go deeper: Learn more about all the new functionality in OutSystems 10</span> <img src="/cms_backoffice/assets/20160916085647/_blank" /> </a>
           </div>
         </div>
       </div>
@@ -236,7 +238,7 @@
             Experience the Speed
           </h2>
           <div class="experience-the-speed-ctas">
-             <a class="osbtn osbtn-red" href="/schedule-demo/"><span>Schedule a demo</span> </a> <a class="osbtn osbtn-white" href="/get-started/"><span>Try Now for Free</span> </a>
+            <a class="osbtn osbtn-red" href="/schedule-demo/"><span>Schedule a demo</span> </a> <a class="osbtn osbtn-white" href="/get-started/"><span>Try Now for Free</span> </a>
           </div>
         </div>
       </div>

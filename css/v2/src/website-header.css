@@ -27,6 +27,7 @@ v=201510021536
     border: none;
     background-image: -webkit-linear-gradient(top, #171717 0%, #202326 100%);
     background-image: linear-gradient(-180deg, #171717 0%, #202326 100%);
+    background-image: #000;
 }
 
 .navigation-inner {
