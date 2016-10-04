@@ -1,14 +1,18 @@
 <div class="what-is-os">
   <style type="text/css">
     .circle {
-      width: 100%;
-      height: 100%;
+      width: 120px;
+      height: 120px;
     }
     .o-progress-circle {
       display: inline-block;
       position: relative;
       width: 120px;
       height: 120px;
+    }
+    .o-progress-circle__fill{
+      max-height: 120px;
+      max-width: 120px;
     }
     .o-progress-circle__fill circle {
       fill: none;
@@ -164,7 +168,7 @@
   if (isMobile === true) {
          document.write('<img class="animated-section-gif" src="/cms_backoffice/assets/20160913093043/os_homepagegif_25fps" />');
         } else {
-           document.write('<video autoplay="" id="outsystems-defined-video" loop="" style="height:500px;width:476px"> <source src="http://extranetqa.outsystems.com/cms_backoffice/assets/20161003135057/outsystems_defined_video" type="video/mp4" /> </video>')
+           document.write('<video autoplay="" id="outsystems-defined-video" muted="true" loop="" style="height:500px;width:476px"> <source src="/cms_backoffice/assets/20161003135057/outsystems_defined_video" type="video/mp4" /> </video>')
         }
           </script>
         </div>
