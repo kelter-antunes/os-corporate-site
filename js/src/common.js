@@ -1015,7 +1015,7 @@ $(document).ready(function() {
     //add overlay
     $('body').append('<div class="overlay"></div>');
 
-    $("[data-option=dropdown-hover]").on("click tap", function(a) {
+    $("[data-option=dropdown-hover]").on("click", function(a) {
         a.preventDefault(), a.stopPropagation();
 
         $(window).trigger('hover-menu');
@@ -1035,7 +1035,7 @@ $(document).ready(function() {
             $("[data-dropdown-wrapper]").click(function(a) {
                 a.stopPropagation();
             });
-            $(document).on("click tap", function() {
+            $('.overlay').on("click tap", function() {
                 hideDropDown(b);
                 hideSearchBar();
             });
