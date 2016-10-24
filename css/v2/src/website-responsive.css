@@ -1749,22 +1749,22 @@ v=201510021536
     .call-out-hero-home .featured {
         display: none;
     }
-    h1.slogan {
+    div.slogan {
         margin: 0;
         font-size: 36px;
         line-height: 44px;
     }
 
-    h1.slogan h3{
+    div.slogan h3{
         margin: 0;      
     }
 
-    h1.slogan .words-wrapper{
+    div.slogan .words-wrapper{
         padding-top: 15px;
         min-height: 105px;
     }
 
-    h1.slogan h3,
+    div.slogan h3,
     h3.get-out-subtitle{
         font-size: 21px;
         white-space: normal;

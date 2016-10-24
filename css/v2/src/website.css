@@ -6268,28 +6268,29 @@ a:hover span.h6-product-tab {
     align-items: center
 }
 
-h1.slogan {
+div.slogan {
     color: #fff;
     font-weight: 100;
     font-size: 55px;
     line-height: 56px;
     font-family: myriad-pro, Arial, sans-serif;
     margin-bottom: 20px;
-    text-shadow: 0 1px 2px rgba(0,0,0,.61)
+    text-shadow: 0 1px 2px rgba(0,0,0,.61);
+    margin: 0;
+    margin-bottom: 20px;
 }
 
-h1.slogan .words-wrapper {
+div.slogan .words-wrapper {
   display: inline-block;
   position: relative;
   text-align: left;
   width: 100%;
 }
 
-h1.slogan h3{
+div.slogan h3{
   opacity:0;
   display: inline-block;
   position: absolute;
-  white-space: nowrap;
   text-shadow: 0 1px 2px rgba(0,0,0,.61);
   color: #fff;
   font-family: myriad-pro, Arial, sans-serif;
@@ -6318,7 +6319,7 @@ h3.get-out-subtitle:last-child{
   margin-bottom: 30px;
 }
 
-h1.slogan h3.is-visible {
+div.slogan h3.is-visible {
     position:relative;
     opacity:1;
     -webkit-animation: push-in 1s;
@@ -6326,7 +6327,7 @@ h1.slogan h3.is-visible {
     animation: push-in 1s;
 }
 
-h1.slogan h3.is-hidden {
+div.slogan h3.is-hidden {
     -webkit-animation: push-out 1s;
     -moz-animation: push-out 1s;
     animation: push-out 1s;
